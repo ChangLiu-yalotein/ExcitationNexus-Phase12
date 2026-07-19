@@ -1,0 +1,167 @@
+{
+  "aggregate_std": "sample standard deviation, ddof=1",
+  "common_assets": {
+    "config": "/home/changliu/ExcitationNexus/equiformer_v3_model/configs/dual_tower/b2_1_naive_dual_tower.yml",
+    "dataset_source": "/home/changliu/ExcitationNexus/equiformer_v3_model/equiformer_v3/datasets/dual_tower.py",
+    "model_source": "/home/changliu/ExcitationNexus/equiformer_v3_model/equiformer_v3/models/naive_dual_tower.py",
+    "normalizers": "/home/changliu/ExcitationNexus/equiformer_v3_model/checkpoints/2026-04-25-09-33-52/normalizers.pt",
+    "test_db": "/home/changliu/ExcitationNexus/equiformer_v3_model/data/dual_tower_7316/dft_dual_tower_test.db",
+    "train_db": "/home/changliu/ExcitationNexus/equiformer_v3_model/data/dual_tower_7316/dft_dual_tower_train.db",
+    "trainer_source": "/home/changliu/ExcitationNexus/equiformer_v3_model/equiformer_v3/src/fairchem/core/trainers/b2_1_trainer.py",
+    "val_db": "/home/changliu/ExcitationNexus/equiformer_v3_model/data/dual_tower_7316/dft_dual_tower_val.db",
+    "wrapper": "/home/changliu/ExcitationNexus/equiformer_v3_model/scripts/run_b2_1_training_wrapper.py"
+  },
+  "expected_sha256": {
+    "common": {
+      "config": "7105581bd564f1d7cbf9a4699c0e391f3a929d65c5d439293a7533a4fe03c809",
+      "dataset_source": "276176074e36028574e7ce6e4952de31bc61d376fb184ee6fbf4ce699d1eae3a",
+      "model_source": "0ff5c6dcb27cc17b717a91c8c869edb9aa727b6582a5bdac5dd293e774a9ed0f",
+      "normalizers": "e30fb92f981a735283fb2b6ca67cbdb3dfc4f92fd7590fb43419070f3f0014dd",
+      "test_db": "c2cd07a48624969bf377cdc5981ac24b3ef2988fa542a5f06e1026931ea5bba7",
+      "train_db": "63e0589e4880de974eca72fe6e2f8cf5bc83054a523b84f372d23ff2d3c64538",
+      "trainer_source": "4f64b76fa202c0abf82be5d9c54cf53cfa6358968145bbd3fdd7f089787f1668",
+      "val_db": "1328eae14e8a30e3f1ff6708a3c0f257ac916c5c9f640fab5872e4e2f850c8c3",
+      "wrapper": "471dedc378088857d01f5d6db97135e20d4123ccc7e0288c08634e616f86127a"
+    },
+    "seeds": {
+      "123": {
+        "checkpoint": "9076765f5e9ccfa83ac08c3af9dda198a9c71c515b5f73c7707ff97b43dac903",
+        "evaluation_results": "5b76c6be304500bfd38a14148465e380671bf7c35375b022b6727ce0593f586a",
+        "test_predictions": "1ec2641e96baba7f3c98350dadd17b928f47c795cc8426cf26f0b6ece5faead5",
+        "test_predictions_without_sid": "d19bbfc8daa6028c5c6f874e14769213cc15ffffa203c091d51b6499b3e15aa8",
+        "training_log": "55fb719ab7b282be20bafa72c7cf715d4a19185d7a8f1f2713981dbb86c7990c",
+        "val_predictions": "4bee4708606f2c9feb3d7dd6abb007446dd37514a17df336ed008f91791cd056"
+      },
+      "456": {
+        "checkpoint": "e09404d0cc38f3b90c3ce4073b3a64b45087b59c03079f78b64578bf7cbd8ddc",
+        "evaluation_results": "ed932cb9b0e52a6edafffddc80c6aa4b4f9b668c1f05e07eb2e7caec313c6049",
+        "test_predictions": "7ef4b77105dcca1926588abe3873900c0a3c8646d70c92624d7c53fcbe589baa",
+        "test_predictions_without_sid": "0cf429530955202321c75041f1225d68c293bb46536bbb827284ba5093c78460",
+        "training_log": "48cf22c4e6a5a0f9881e9a44efb306a8825e7a251bf5d041148e027c14775c36",
+        "val_predictions": "191a25b9803430e06cf26c680a6a2827194fbb160778797d774123145242eafa"
+      }
+    }
+  },
+  "failure_policy": "No restart, seed replacement, tuning, or post-test selection.",
+  "final673_access": false,
+  "forbidden": [
+    "final673",
+    "new15016",
+    "B2-0",
+    "B2-2a",
+    "seed42 rerun",
+    "target-derived inputs"
+  ],
+  "gate": "1-A3",
+  "historical_results": {
+    "123": {
+      "checkpoint_epoch": 80.0,
+      "checkpoint_kind": "final_epoch80",
+      "checkpoint_val_metrics": null,
+      "test": {
+        "mae": 0.0813705250620842,
+        "mse": 0.01642703264951706,
+        "num_samples": 1098,
+        "rmse": 0.128167986869812
+      },
+      "training_wall_seconds": 10472.588618516922,
+      "validation_independent": {
+        "mae": 0.07899866998195648,
+        "mse": 0.014115353114902973,
+        "num_samples": 1098,
+        "rmse": 0.11880805343389511
+      }
+    },
+    "456": {
+      "checkpoint_epoch": null,
+      "checkpoint_kind": "best_validation",
+      "checkpoint_val_metrics": {
+        "energy_mae": {
+          "metric": 0.0791873200054186,
+          "numel": 138,
+          "total": 1508.0433221831918
+        },
+        "energy_mse": {
+          "metric": 0.015459344802049758,
+          "numel": 138,
+          "total": 294.4077624102356
+        },
+        "loss": {
+          "metric": 0.0791873200054186,
+          "numel": 138,
+          "total": 1508.0433221831918
+        }
+      },
+      "test": {
+        "mae": 0.08026598393917084,
+        "mse": 0.015347524546086788,
+        "num_samples": 1098,
+        "rmse": 0.1238851249217987
+      },
+      "training_wall_seconds": 9796.260706424713,
+      "validation_independent": {
+        "mae": 0.07943741232156754,
+        "mse": 0.01553953718394041,
+        "num_samples": 1098,
+        "rmse": 0.12465768307447433
+      }
+    }
+  },
+  "model_contract": {
+    "architecture": "shared EquiformerV3 graph-scalar towers plus 1->64 projection and late fusion",
+    "checkpoint_state_tensor_elements": 1075318,
+    "max_neighbors": 20,
+    "max_radius_angstrom": 8.0,
+    "normalization_mean_eV": 0.800596,
+    "normalization_stdev_eV": 0.19427,
+    "parameter_count": 1065570
+  },
+  "new15016_access": false,
+  "objective": "Exactly one B2-1 reproduction each for seeds 123 and 456 on separate GPUs.",
+  "output_roots": {
+    "123": "/home/changliu/ExcitationNexus/12_Phase4_Multitask_OOD_Training/runs/gate1a3_b21_seed123",
+    "456": "/home/changliu/ExcitationNexus/12_Phase4_Multitask_OOD_Training/runs/gate1a3_b21_seed456"
+  },
+  "reproduction_tolerance_mae_eV_aggregate_mean": 0.001,
+  "reproduction_tolerance_mae_eV_per_seed": 0.001,
+  "seed_assets": {
+    "123": {
+      "checkpoint": "/home/changliu/ExcitationNexus/equiformer_v3_model/checkpoints/2026-04-25-09-33-52/checkpoint.pt",
+      "evaluation_results": "/home/changliu/ExcitationNexus/equiformer_v3_model/logs/b2_1_seed123_gpu1_isolated_20260425_093310/eval_final/evaluation_results.json",
+      "test_predictions": "/home/changliu/ExcitationNexus/equiformer_v3_model/logs/b2_1_seed123_gpu1_isolated_20260425_093310/eval_final/test_predictions_with_sid.csv",
+      "test_predictions_without_sid": "/home/changliu/ExcitationNexus/equiformer_v3_model/logs/b2_1_seed123_gpu1_isolated_20260425_093310/eval_final/test_predictions.csv",
+      "training_log": "/home/changliu/ExcitationNexus/equiformer_v3_model/logs/b2_1_seed123_gpu1_isolated_20260425_093310/training.log",
+      "val_predictions": "/home/changliu/ExcitationNexus/equiformer_v3_model/logs/b2_1_seed123_gpu1_isolated_20260425_093310/eval_final/val_predictions.csv"
+    },
+    "456": {
+      "checkpoint": "/home/changliu/ExcitationNexus/equiformer_v3_model/checkpoints/2026-04-25-09-33-52/best_checkpoint.pt",
+      "evaluation_results": "/home/changliu/ExcitationNexus/equiformer_v3_model/logs/b2_1_seed456_gpu2_isolated_20260425_093315/eval_final/evaluation_results.json",
+      "test_predictions": "/home/changliu/ExcitationNexus/equiformer_v3_model/logs/b2_1_seed456_gpu2_isolated_20260425_093315/eval_final/test_predictions_with_sid.csv",
+      "test_predictions_without_sid": "/home/changliu/ExcitationNexus/equiformer_v3_model/logs/b2_1_seed456_gpu2_isolated_20260425_093315/eval_final/test_predictions.csv",
+      "training_log": "/home/changliu/ExcitationNexus/equiformer_v3_model/logs/b2_1_seed456_gpu2_isolated_20260425_093315/training.log",
+      "val_predictions": "/home/changliu/ExcitationNexus/equiformer_v3_model/logs/b2_1_seed456_gpu2_isolated_20260425_093315/eval_final/val_predictions.csv"
+    }
+  },
+  "seed_to_physical_gpu": {
+    "123": 0,
+    "456": 1
+  },
+  "seeds": [
+    123,
+    456
+  ],
+  "status": "PREREGISTERED_BEFORE_INFERENCE_OR_TRAINING",
+  "training_contract": {
+    "batch_size": 8,
+    "checkpoint_selection": "historical batch-macro validation MAE",
+    "early_stop": false,
+    "epochs": 80,
+    "hyperparameter_search": false,
+    "independent_output_directories": true,
+    "optimizer": "AdamW",
+    "restart_on_bad_metric": false,
+    "runs_per_seed": 1,
+    "test_after_training_only": true
+  },
+  "version": "v1"
+}

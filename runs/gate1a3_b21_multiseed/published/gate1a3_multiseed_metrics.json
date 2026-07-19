@@ -1,0 +1,265 @@
+{
+  "aggregate": {
+    "absolute_mean_delta_eV": 0.0012860397497812814,
+    "historical_mean_mae_eV": 0.07940903802712758,
+    "historical_sample_std_mae_eV_ddof1": 0.0025025339119785065,
+    "mean_within_0p001_eV": false,
+    "new_mean_mae_eV": 0.0781229982773463,
+    "new_sample_std_mae_eV_ddof1": 0.0013170132399967678
+  },
+  "checkpoints": {
+    "123": {
+      "best_epoch": 30,
+      "best_epoch_candidates_from_rounded_log": [
+        30
+      ],
+      "best_val_batch_macro_mae": 0.07692655869692132,
+      "mtime_epoch_seconds": 1784463455.4959455,
+      "path": "/home/changliu/ExcitationNexus/12_Phase4_Multitask_OOD_Training/runs/gate1a3_b21_seed123/formal_training/checkpoints/gate1a3-b21-seed123-20260719/best_checkpoint.pt",
+      "sha256": "7c4a38df74e5bee1d1f9a46be6cf4ab2b79a81d674732fb306d8f71baf67a12d",
+      "state_tensor_elements": 1075318
+    },
+    "456": {
+      "best_epoch": 13,
+      "best_epoch_candidates_from_rounded_log": [
+        12,
+        13,
+        14
+      ],
+      "best_val_batch_macro_mae": 0.07929280910478986,
+      "mtime_epoch_seconds": 1784461532.0849416,
+      "path": "/home/changliu/ExcitationNexus/12_Phase4_Multitask_OOD_Training/runs/gate1a3_b21_seed456/formal_training/checkpoints/gate1a3-b21-seed456-20260719/best_checkpoint.pt",
+      "sha256": "4a23b4fc6683e4e6a9fce02b6ca387ee8c2fa3bd07de9695a59875e160102cfb",
+      "state_tensor_elements": 1075318
+    }
+  },
+  "final673_accessed": false,
+  "formal_training_runs": {
+    "123": 1,
+    "456": 1
+  },
+  "gate": "1-A3",
+  "new15016_accessed": false,
+  "paired_comparison": {
+    "error_difference_definition": "cheap_abs_error_minus_b21_abs_error",
+    "interpretation": "Post hoc audit on an already inspected test set. Confidence intervals are descriptive and do not replace the locked p=0.145 project wording.",
+    "locked_project_comparison_p": 0.145,
+    "paired_records": 1097,
+    "seed123": {
+      "b21": {
+        "mae": 0.07970401469991348,
+        "n_records": 1097,
+        "r2": 0.6395750651125358,
+        "rmse": 0.1260034749589801
+      },
+      "cheap": {
+        "mae": 0.07020991155682628,
+        "n_records": 1097,
+        "r2": 0.7574868831588407,
+        "rmse": 0.10335767339729517
+      },
+      "paired_error_difference": {
+        "bootstrap_seed": 20260719,
+        "ci95_percentile_eV": [
+          -0.014325359333307393,
+          -0.004765633478931822
+        ],
+        "mean_eV": -0.009494103143087206,
+        "n_resamples": 10000
+      }
+    },
+    "seed42": {
+      "b21": {
+        "mae": 0.07748756768072791,
+        "n_records": 1097,
+        "r2": 0.6540259713798231,
+        "rmse": 0.12345163819514829
+      },
+      "cheap": {
+        "mae": 0.07020991155682628,
+        "n_records": 1097,
+        "r2": 0.7574868831588407,
+        "rmse": 0.10335767339729517
+      },
+      "paired_error_difference": {
+        "bootstrap_seed": 20260719,
+        "ci95_percentile_eV": [
+          -0.012209556341876617,
+          -0.0026498863384989742
+        ],
+        "mean_eV": -0.007277656123901622,
+        "n_resamples": 10000
+      }
+    },
+    "seed456": {
+      "b21": {
+        "mae": 0.07734009903802253,
+        "n_records": 1097,
+        "r2": 0.6542550298800527,
+        "rmse": 0.12341076470936467
+      },
+      "cheap": {
+        "mae": 0.07020991155682628,
+        "n_records": 1097,
+        "r2": 0.7574868831588407,
+        "rmse": 0.10335767339729517
+      },
+      "paired_error_difference": {
+        "bootstrap_seed": 20260719,
+        "ci95_percentile_eV": [
+          -0.011829576538608838,
+          -0.0026190744703734605
+        ],
+        "mean_eV": -0.007130187481196243,
+        "n_resamples": 10000
+      }
+    },
+    "three_seed_ensemble": {
+      "b21": {
+        "mae": 0.0741149457130847,
+        "n_records": 1097,
+        "r2": 0.6723348680359058,
+        "rmse": 0.12014071784292497
+      },
+      "cheap": {
+        "mae": 0.07020991155682628,
+        "n_records": 1097,
+        "r2": 0.7574868831588407,
+        "rmse": 0.10335767339729517
+      },
+      "paired_error_difference": {
+        "bootstrap_seed": 20260719,
+        "ci95_percentile_eV": [
+          -0.00852346577805659,
+          0.0005099794850721533
+        ],
+        "mean_eV": -0.0039050341562584167,
+        "n_resamples": 10000
+      }
+    }
+  },
+  "per_seed": {
+    "123": {
+      "absolute_mae_delta_eV": 0.0017302557826042175,
+      "historical": {
+        "mae": 0.0813705250620842,
+        "mse": 0.01642703264951706,
+        "num_samples": 1098,
+        "rmse": 0.128167986869812
+      },
+      "new": {
+        "mae": 0.07964026927947998,
+        "n_records": 1098,
+        "r2": 0.639890193939209,
+        "rmse": 0.12594642574399698
+      },
+      "within_0p001_eV": false
+    },
+    "42": {
+      "absolute_mae_delta_eV": 0.0008628666400909424,
+      "historical": {
+        "mae": 0.07659060508012772
+      },
+      "new": {
+        "mae": 0.07745347172021866,
+        "n_records": 1098,
+        "r2": 0.6542971134185791,
+        "rmse": 0.12340133565776104
+      },
+      "within_0p001_eV": true
+    },
+    "456": {
+      "absolute_mae_delta_eV": 0.002990730106830597,
+      "historical": {
+        "mae": 0.08026598393917084,
+        "mse": 0.015347524546086788,
+        "num_samples": 1098,
+        "rmse": 0.1238851249217987
+      },
+      "new": {
+        "mae": 0.07727525383234024,
+        "n_records": 1098,
+        "r2": 0.6545584201812744,
+        "rmse": 0.12335469706932478
+      },
+      "within_0p001_eV": false
+    }
+  },
+  "published_nonself_sha256": {
+    "runs/gate1a3_b21_multiseed/published/gate1a3_cheap_vs_b21_multiseed_paired_1097.csv": "c66476f4a7b79006f5ce39a922973e435b7f65428d5372a37c24a2b03b5e90b7",
+    "runs/gate1a3_b21_multiseed/published/gate1a3_seed123_formal_test_predictions_1098.csv": "105a3b740ef143997476db4336e9ea72ab10bf8a25d0f2fa73b91a1afddd7a4a",
+    "runs/gate1a3_b21_multiseed/published/gate1a3_seed456_formal_test_predictions_1098.csv": "193157491c542460a72fe9a0ff5690d343e2aa06e5e18a6c6a66a06331997abf"
+  },
+  "rerun_performed": false,
+  "status": "FAILED_REPRODUCTION",
+  "test_inference_runs": {
+    "123": 1,
+    "456": 1
+  },
+  "training_processes": {
+    "123": {
+      "best_checkpoints": [
+        "/home/changliu/ExcitationNexus/12_Phase4_Multitask_OOD_Training/runs/gate1a3_b21_seed123/formal_training/checkpoints/gate1a3-b21-seed123-20260719/best_checkpoint.pt"
+      ],
+      "command": [
+        "/home/changliu/miniconda3/envs/ML/bin/python",
+        "/home/changliu/ExcitationNexus/equiformer_v3_model/scripts/run_b2_1_training_wrapper.py",
+        "--config-yml",
+        "/home/changliu/ExcitationNexus/equiformer_v3_model/configs/dual_tower/b2_1_naive_dual_tower.yml",
+        "--mode",
+        "train",
+        "--num-gpus",
+        "1",
+        "--seed",
+        "123",
+        "--identifier",
+        "gate1a3_b21_seed123",
+        "--timestamp-id",
+        "gate1a3-b21-seed123-20260719",
+        "--run-dir",
+        "/home/changliu/ExcitationNexus/12_Phase4_Multitask_OOD_Training/runs/gate1a3_b21_seed123/formal_training"
+      ],
+      "finished_utc": "2026-07-19T14:01:11.011524+00:00",
+      "max_temperature_c_observed": 84,
+      "peak_memory_mib_observed": 14837,
+      "physical_gpu": 0,
+      "pid": 111955,
+      "returncode": 0,
+      "seed": 123,
+      "status": "TRAINING_COMPLETE",
+      "wall_seconds": 9937.557457964867
+    },
+    "456": {
+      "best_checkpoints": [
+        "/home/changliu/ExcitationNexus/12_Phase4_Multitask_OOD_Training/runs/gate1a3_b21_seed456/formal_training/checkpoints/gate1a3-b21-seed456-20260719/best_checkpoint.pt"
+      ],
+      "command": [
+        "/home/changliu/miniconda3/envs/ML/bin/python",
+        "/home/changliu/ExcitationNexus/equiformer_v3_model/scripts/run_b2_1_training_wrapper.py",
+        "--config-yml",
+        "/home/changliu/ExcitationNexus/equiformer_v3_model/configs/dual_tower/b2_1_naive_dual_tower.yml",
+        "--mode",
+        "train",
+        "--num-gpus",
+        "1",
+        "--seed",
+        "456",
+        "--identifier",
+        "gate1a3_b21_seed456",
+        "--timestamp-id",
+        "gate1a3-b21-seed456-20260719",
+        "--run-dir",
+        "/home/changliu/ExcitationNexus/12_Phase4_Multitask_OOD_Training/runs/gate1a3_b21_seed456/formal_training"
+      ],
+      "finished_utc": "2026-07-19T14:18:45.009267+00:00",
+      "max_temperature_c_observed": 90,
+      "peak_memory_mib_observed": 14821,
+      "physical_gpu": 1,
+      "pid": 111954,
+      "returncode": 0,
+      "seed": 456,
+      "status": "TRAINING_COMPLETE",
+      "wall_seconds": 10991.556188157294
+    }
+  }
+}

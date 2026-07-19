@@ -1,0 +1,191 @@
+{
+  "common_assets": {
+    "config": {
+      "path": "/home/changliu/ExcitationNexus/equiformer_v3_model/configs/dual_tower/b2_1_naive_dual_tower.yml",
+      "sha256": "7105581bd564f1d7cbf9a4699c0e391f3a929d65c5d439293a7533a4fe03c809"
+    },
+    "dataset_source": {
+      "path": "/home/changliu/ExcitationNexus/equiformer_v3_model/equiformer_v3/datasets/dual_tower.py",
+      "sha256": "276176074e36028574e7ce6e4952de31bc61d376fb184ee6fbf4ce699d1eae3a"
+    },
+    "model_source": {
+      "path": "/home/changliu/ExcitationNexus/equiformer_v3_model/equiformer_v3/models/naive_dual_tower.py",
+      "sha256": "0ff5c6dcb27cc17b717a91c8c869edb9aa727b6582a5bdac5dd293e774a9ed0f"
+    },
+    "normalizers": {
+      "path": "/home/changliu/ExcitationNexus/equiformer_v3_model/checkpoints/2026-04-25-09-33-52/normalizers.pt",
+      "sha256": "e30fb92f981a735283fb2b6ca67cbdb3dfc4f92fd7590fb43419070f3f0014dd"
+    },
+    "test_db": {
+      "path": "/home/changliu/ExcitationNexus/equiformer_v3_model/data/dual_tower_7316/dft_dual_tower_test.db",
+      "sha256": "c2cd07a48624969bf377cdc5981ac24b3ef2988fa542a5f06e1026931ea5bba7"
+    },
+    "train_db": {
+      "path": "/home/changliu/ExcitationNexus/equiformer_v3_model/data/dual_tower_7316/dft_dual_tower_train.db",
+      "sha256": "63e0589e4880de974eca72fe6e2f8cf5bc83054a523b84f372d23ff2d3c64538"
+    },
+    "trainer_source": {
+      "path": "/home/changliu/ExcitationNexus/equiformer_v3_model/equiformer_v3/src/fairchem/core/trainers/b2_1_trainer.py",
+      "sha256": "4f64b76fa202c0abf82be5d9c54cf53cfa6358968145bbd3fdd7f089787f1668"
+    },
+    "val_db": {
+      "path": "/home/changliu/ExcitationNexus/equiformer_v3_model/data/dual_tower_7316/dft_dual_tower_val.db",
+      "sha256": "1328eae14e8a30e3f1ff6708a3c0f257ac916c5c9f640fab5872e4e2f850c8c3"
+    },
+    "wrapper": {
+      "path": "/home/changliu/ExcitationNexus/equiformer_v3_model/scripts/run_b2_1_training_wrapper.py",
+      "sha256": "471dedc378088857d01f5d6db97135e20d4123ccc7e0288c08634e616f86127a"
+    }
+  },
+  "final673_accessed": false,
+  "gate": "1-A3",
+  "historical_protocol_limitations": [
+    "Validation selection is batch-macro and overweights the final two-record batch.",
+    "B2-1 uses 7,316 records while cheap Layer G uses 7,313.",
+    "Cheap paired comparisons are restricted to the common 1,097 test SIDs."
+  ],
+  "historical_three_seed": {
+    "maes_eV": [
+      0.07659060508012772,
+      0.0813705250620842,
+      0.08026598393917084
+    ],
+    "mean_mae_eV": 0.07940903802712758,
+    "sample_std_mae_eV_ddof1": 0.0025025339119785065
+  },
+  "new15016_accessed": false,
+  "seeds": {
+    "123": {
+      "checkpoint_epoch": 80.0,
+      "checkpoint_kind": "final_epoch80",
+      "checkpoint_seed": 123,
+      "checkpoint_step": 51200,
+      "checkpoint_val_metrics": null,
+      "historical_evaluation": {
+        "checkpoint": "/home/changliu/ExcitationNexus/equiformer_v3_model/checkpoints/2026-04-25-09-33-52/checkpoint.pt",
+        "config": "/home/changliu/ExcitationNexus/equiformer_v3_model/configs/dual_tower/b2_1_naive_dual_tower.yml",
+        "device": "cuda",
+        "test_metrics": {
+          "mae": 0.0813705250620842,
+          "mse": 0.01642703264951706,
+          "num_samples": 1098,
+          "rmse": 0.128167986869812
+        },
+        "val_metrics": {
+          "mae": 0.07899866998195648,
+          "mse": 0.014115353114902973,
+          "num_samples": 1098,
+          "rmse": 0.11880805343389511
+        }
+      },
+      "log_summary": {
+        "best_epoch_from_rounded_log": 17,
+        "best_val_batch_macro_mae_rounded_log": 0.0764,
+        "completed_80_epochs": true,
+        "final_val_batch_macro_mae_rounded_log": 0.0788,
+        "validation_epoch_count": 80,
+        "wall_seconds": 10472.588618516922
+      },
+      "paths": {
+        "checkpoint": "/home/changliu/ExcitationNexus/equiformer_v3_model/checkpoints/2026-04-25-09-33-52/checkpoint.pt",
+        "evaluation_results": "/home/changliu/ExcitationNexus/equiformer_v3_model/logs/b2_1_seed123_gpu1_isolated_20260425_093310/eval_final/evaluation_results.json",
+        "test_predictions": "/home/changliu/ExcitationNexus/equiformer_v3_model/logs/b2_1_seed123_gpu1_isolated_20260425_093310/eval_final/test_predictions_with_sid.csv",
+        "test_predictions_without_sid": "/home/changliu/ExcitationNexus/equiformer_v3_model/logs/b2_1_seed123_gpu1_isolated_20260425_093310/eval_final/test_predictions.csv",
+        "training_log": "/home/changliu/ExcitationNexus/equiformer_v3_model/logs/b2_1_seed123_gpu1_isolated_20260425_093310/training.log",
+        "val_predictions": "/home/changliu/ExcitationNexus/equiformer_v3_model/logs/b2_1_seed123_gpu1_isolated_20260425_093310/eval_final/val_predictions.csv"
+      },
+      "sha256": {
+        "checkpoint": "9076765f5e9ccfa83ac08c3af9dda198a9c71c515b5f73c7707ff97b43dac903",
+        "evaluation_results": "5b76c6be304500bfd38a14148465e380671bf7c35375b022b6727ce0593f586a",
+        "test_predictions": "1ec2641e96baba7f3c98350dadd17b928f47c795cc8426cf26f0b6ece5faead5",
+        "test_predictions_without_sid": "d19bbfc8daa6028c5c6f874e14769213cc15ffffa203c091d51b6499b3e15aa8",
+        "training_log": "55fb719ab7b282be20bafa72c7cf715d4a19185d7a8f1f2713981dbb86c7990c",
+        "val_predictions": "4bee4708606f2c9feb3d7dd6abb007446dd37514a17df336ed008f91791cd056"
+      },
+      "state_tensor_elements": 1075318
+    },
+    "456": {
+      "checkpoint_epoch": null,
+      "checkpoint_kind": "best_validation",
+      "checkpoint_seed": 456,
+      "checkpoint_step": null,
+      "checkpoint_val_metrics": {
+        "energy_mae": {
+          "metric": 0.0791873200054186,
+          "numel": 138,
+          "total": 1508.0433221831918
+        },
+        "energy_mse": {
+          "metric": 0.015459344802049758,
+          "numel": 138,
+          "total": 294.4077624102356
+        },
+        "loss": {
+          "metric": 0.0791873200054186,
+          "numel": 138,
+          "total": 1508.0433221831918
+        }
+      },
+      "historical_evaluation": {
+        "checkpoint": "/home/changliu/ExcitationNexus/equiformer_v3_model/checkpoints/2026-04-25-09-33-52/best_checkpoint.pt",
+        "config": "/home/changliu/ExcitationNexus/equiformer_v3_model/configs/dual_tower/b2_1_naive_dual_tower.yml",
+        "device": "cuda",
+        "test_metrics": {
+          "mae": 0.08026598393917084,
+          "mse": 0.015347524546086788,
+          "num_samples": 1098,
+          "rmse": 0.1238851249217987
+        },
+        "val_metrics": {
+          "mae": 0.07943741232156754,
+          "mse": 0.01553953718394041,
+          "num_samples": 1098,
+          "rmse": 0.12465768307447433
+        }
+      },
+      "log_summary": {
+        "best_epoch_from_rounded_log": 23,
+        "best_val_batch_macro_mae_rounded_log": 0.0792,
+        "completed_80_epochs": true,
+        "final_val_batch_macro_mae_rounded_log": 0.0818,
+        "validation_epoch_count": 80,
+        "wall_seconds": 9796.260706424713
+      },
+      "paths": {
+        "checkpoint": "/home/changliu/ExcitationNexus/equiformer_v3_model/checkpoints/2026-04-25-09-33-52/best_checkpoint.pt",
+        "evaluation_results": "/home/changliu/ExcitationNexus/equiformer_v3_model/logs/b2_1_seed456_gpu2_isolated_20260425_093315/eval_final/evaluation_results.json",
+        "test_predictions": "/home/changliu/ExcitationNexus/equiformer_v3_model/logs/b2_1_seed456_gpu2_isolated_20260425_093315/eval_final/test_predictions_with_sid.csv",
+        "test_predictions_without_sid": "/home/changliu/ExcitationNexus/equiformer_v3_model/logs/b2_1_seed456_gpu2_isolated_20260425_093315/eval_final/test_predictions.csv",
+        "training_log": "/home/changliu/ExcitationNexus/equiformer_v3_model/logs/b2_1_seed456_gpu2_isolated_20260425_093315/training.log",
+        "val_predictions": "/home/changliu/ExcitationNexus/equiformer_v3_model/logs/b2_1_seed456_gpu2_isolated_20260425_093315/eval_final/val_predictions.csv"
+      },
+      "sha256": {
+        "checkpoint": "e09404d0cc38f3b90c3ce4073b3a64b45087b59c03079f78b64578bf7cbd8ddc",
+        "evaluation_results": "ed932cb9b0e52a6edafffddc80c6aa4b4f9b668c1f05e07eb2e7caec313c6049",
+        "test_predictions": "7ef4b77105dcca1926588abe3873900c0a3c8646d70c92624d7c53fcbe589baa",
+        "test_predictions_without_sid": "0cf429530955202321c75041f1225d68c293bb46536bbb827284ba5093c78460",
+        "training_log": "48cf22c4e6a5a0f9881e9a44efb306a8825e7a251bf5d041148e027c14775c36",
+        "val_predictions": "191a25b9803430e06cf26c680a6a2827194fbb160778797d774123145242eafa"
+      },
+      "state_tensor_elements": 1075318
+    }
+  },
+  "shared_checkpoint_collision": {
+    "causality": "Both jobs used the same timestamp-id and wrote the same directory.",
+    "directory": "/home/changliu/ExcitationNexus/equiformer_v3_model/checkpoints/2026-04-25-09-33-52",
+    "present": true,
+    "seed123_policy": "Use final epoch-80 checkpoint.pt; historical best was overwritten/unavailable.",
+    "seed456_policy": "Use best_checkpoint.pt."
+  },
+  "split_counts": {
+    "test": 1098,
+    "train": 5120,
+    "val": 1098
+  },
+  "split_order_sha256": {
+    "test": "d51bffb7975c4fd99714f61b350879179dd0797df2079cb2fcd50e4bc8fe8b5c",
+    "train": "1a7f013bd218fe489cc6da663a795d174944a2336cf10a401f652e33ea06674c",
+    "val": "b46bd49bd27298bc3544019e46a78e04564c8cb8de216e8f9680d5d756f37e7d"
+  },
+  "status": "ASSET_AUDIT_PASS"
+}

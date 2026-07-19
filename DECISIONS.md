@@ -57,3 +57,14 @@
 - Count 1,065,570 model parameters separately from 1,075,318 checkpoint state tensor elements including buffers.
 - Preserve the historical batch-macro validation/checkpoint behavior as a reproduction limitation; correct it only in a separately named future protocol.
 - Classify Gate 1-A2 as REPRODUCED_NUMERIC; do not claim bitwise identity or cheap-model statistical superiority.
+
+## Gate 1-A3 decisions
+
+- Run seeds 123 and 456 exactly once in isolated output directories on separate physical GPUs; never rerun seed42 or tune after observing results.
+- Preserve the historical checkpoint collision: seed123 historical inference uses the surviving epoch-80 `checkpoint.pt`; seed456 uses `best_checkpoint.pt`.
+- Freeze the exact historical three-seed MAEs and recompute mean/sample standard deviation rather than using rounded legacy summaries.
+- Keep batch-macro validation selection for reproduction and restrict cheap/B2-1 paired analysis to the common 1,097 test SIDs.
+- Treat first-validation success as a launch gate only; no final reproduction status is assigned until both 80-epoch runs and fixed test inference finish.
+- Freeze Gate 1-A3 as `FAILED_REPRODUCTION`; do not rerun or select lower results to convert it to success.
+- Use the newly reproduced three-seed values as the engineering baseline for future Phase 12 comparisons, while retaining historical values as provenance rather than silently replacing them.
+- Treat the 1,097-SID cheap/ensemble bootstrap as descriptive because the test set was already inspected; retain the locked p=0.145 publication wording.

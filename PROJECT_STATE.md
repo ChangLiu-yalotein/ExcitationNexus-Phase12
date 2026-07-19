@@ -1,6 +1,6 @@
 # Phase 12 project state
 
-Current stage: **GATE1A2_REPRODUCED_NUMERIC**; Gate 1-A3 requires a new instruction.
+Current stage: **GATE1A3_FAILED_REPRODUCTION**; fixed seeds 123/456 completed without reruns.
 
 ## Frozen facts
 
@@ -47,3 +47,16 @@ Project and EquiformerV3 directories are not Git worktrees; source commit proven
 - Original B2-1 uses 5,120/1,098/1,098 records; its three additional SIDs explain the difference from Layer G 7,313.
 - The implemented model uses shared graph-level scalar energy projections, not intermediate atom-embedding pooling; parameter count is 1,065,570.
 - No other seed, new15016, final673, B2-0, B2-2a, or hyperparameter search was run.
+
+## Gate 1-A3 result
+
+- Historical seeds 123/456 assets passed audit; the shared checkpoint-directory collision is explicitly preserved.
+- V1 preregistration was frozen before inference/training with aggregate SHA-256 `9765a811d782c3d05b82ae7c53a19b11435e9ae0a9ce5f2fa5d6389a129366e3`.
+- Historical exact seed123/456 test MAEs are 0.0813705250620842 and 0.08026598393917084 eV; the historical exact three-seed mean/sample std is 0.07940903802712758 ± 0.0025025339119785065 eV.
+- 41 tests, both CPU forward smokes, and both 1,098-SID historical checkpoint inferences passed.
+- Seed123 completed 80 epochs on physical GPU 0; seed456 completed 80 epochs on physical GPU 1. Both produced independent best checkpoints and fixed 1,098-SID test predictions.
+- New seed123/456 test MAEs are 0.07964026927947998 and 0.07727525383234024 eV. Their historical absolute deltas, 0.0017302557826042175 and 0.002990730106830597 eV, exceed the 0.0010 eV tolerance.
+- The new exact three-seed mean/sample std is 0.0781229982773463 ± 0.0013170132399967678 eV; its mean differs from the historical exact aggregate by 0.0012860397497812814 eV.
+- Gate 1-A3 is `FAILED_REPRODUCTION`: training succeeded technically, but seeds 123/456 and the aggregate mean did not numerically reproduce within the preregistered threshold.
+- The three-seed B2-1 ensemble MAE on 1,097 common SIDs is 0.0741149457130847 eV versus cheap 0.07020991155682628 eV; paired bootstrap CI crosses zero, so no superiority claim is made.
+- No seed42 rerun, new15016, final673, B2-0, B2-2a, tuning, or result-driven restart is permitted.

@@ -23,7 +23,7 @@
 
 - [x] Gate 1-A1: strict historical reproduction of the 0.0702 no-dipole cheap champion.
 - [x] Gate 1-A2: numerically reproduce frozen B2-1 seed42 checkpoint and one 80-epoch training run.
-- [ ] Gate 1-A3: reproduce B2-1 three-seed 0.0750 ± 0.0025 eV result.
+- [x] Gate 1-A3: fixed seeds 123/456 completed; status `FAILED_REPRODUCTION` because both seeds and the aggregate mean exceeded the preregistered 0.0010 eV tolerance.
 
 ## BLOCKED
 

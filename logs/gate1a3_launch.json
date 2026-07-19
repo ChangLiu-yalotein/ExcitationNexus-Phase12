@@ -1,0 +1,120 @@
+{
+  "final673_accessed": false,
+  "gpu_inventory_before_launch": [
+    {
+      "compute_process": false,
+      "free": true,
+      "index": 0,
+      "memory_used_mib": 15,
+      "name": "NVIDIA GeForce RTX 3090",
+      "temperature_c": 40,
+      "utilization_percent": 0,
+      "uuid": "GPU-5343f59b-d72e-7137-0eb0-e4b743f5a285"
+    },
+    {
+      "compute_process": false,
+      "free": true,
+      "index": 1,
+      "memory_used_mib": 15,
+      "name": "NVIDIA GeForce RTX 3090",
+      "temperature_c": 40,
+      "utilization_percent": 0,
+      "uuid": "GPU-3e88f35f-f294-dd8d-847a-6f594ba5bee3"
+    },
+    {
+      "compute_process": false,
+      "free": true,
+      "index": 2,
+      "memory_used_mib": 15,
+      "name": "NVIDIA GeForce RTX 3090",
+      "temperature_c": 34,
+      "utilization_percent": 0,
+      "uuid": "GPU-9f6dde6d-019f-6ead-113a-75616bdd8605"
+    },
+    {
+      "compute_process": false,
+      "free": true,
+      "index": 3,
+      "memory_used_mib": 15,
+      "name": "NVIDIA GeForce RTX 3090",
+      "temperature_c": 36,
+      "utilization_percent": 0,
+      "uuid": "GPU-0356627d-ea83-0201-f4bf-ebaade0f0554"
+    },
+    {
+      "compute_process": false,
+      "free": true,
+      "index": 4,
+      "memory_used_mib": 15,
+      "name": "NVIDIA GeForce RTX 3090",
+      "temperature_c": 35,
+      "utilization_percent": 0,
+      "uuid": "GPU-743c09fb-b133-73bb-ec99-5d5e399d7421"
+    },
+    {
+      "compute_process": false,
+      "free": true,
+      "index": 5,
+      "memory_used_mib": 15,
+      "name": "NVIDIA GeForce RTX 3090",
+      "temperature_c": 33,
+      "utilization_percent": 0,
+      "uuid": "GPU-9a161448-8977-d079-3fd1-e379897cbc02"
+    },
+    {
+      "compute_process": false,
+      "free": true,
+      "index": 6,
+      "memory_used_mib": 15,
+      "name": "NVIDIA GeForce RTX 3090",
+      "temperature_c": 31,
+      "utilization_percent": 0,
+      "uuid": "GPU-87e15bf2-c1f5-b2b8-4ee8-bcc32185c937"
+    }
+  ],
+  "launched_utc": "2026-07-19T11:15:33.418040+00:00",
+  "new15016_accessed": false,
+  "seeds": {
+    "123": {
+      "command": [
+        "/home/changliu/miniconda3/envs/ML/bin/python",
+        "/home/changliu/ExcitationNexus/12_Phase4_Multitask_OOD_Training/scripts/gate1a3_launch_b21_seeds123_456.py",
+        "--config",
+        "configs/gate1a3_b21_seeds123_456_reproduction_v1.json",
+        "--worker",
+        "--seed",
+        "123",
+        "--physical-gpu",
+        "0",
+        "--output-dir",
+        "/home/changliu/ExcitationNexus/12_Phase4_Multitask_OOD_Training/runs/gate1a3_b21_seed123/formal_training"
+      ],
+      "launcher_pid": 111952,
+      "output_dir": "/home/changliu/ExcitationNexus/12_Phase4_Multitask_OOD_Training/runs/gate1a3_b21_seed123/formal_training",
+      "physical_gpu": 0,
+      "training_log": "/home/changliu/ExcitationNexus/12_Phase4_Multitask_OOD_Training/runs/gate1a3_b21_seed123/formal_training/training.log",
+      "worker_log": "/home/changliu/ExcitationNexus/12_Phase4_Multitask_OOD_Training/logs/gate1a3_seed123_worker.log"
+    },
+    "456": {
+      "command": [
+        "/home/changliu/miniconda3/envs/ML/bin/python",
+        "/home/changliu/ExcitationNexus/12_Phase4_Multitask_OOD_Training/scripts/gate1a3_launch_b21_seeds123_456.py",
+        "--config",
+        "configs/gate1a3_b21_seeds123_456_reproduction_v1.json",
+        "--worker",
+        "--seed",
+        "456",
+        "--physical-gpu",
+        "1",
+        "--output-dir",
+        "/home/changliu/ExcitationNexus/12_Phase4_Multitask_OOD_Training/runs/gate1a3_b21_seed456/formal_training"
+      ],
+      "launcher_pid": 111953,
+      "output_dir": "/home/changliu/ExcitationNexus/12_Phase4_Multitask_OOD_Training/runs/gate1a3_b21_seed456/formal_training",
+      "physical_gpu": 1,
+      "training_log": "/home/changliu/ExcitationNexus/12_Phase4_Multitask_OOD_Training/runs/gate1a3_b21_seed456/formal_training/training.log",
+      "worker_log": "/home/changliu/ExcitationNexus/12_Phase4_Multitask_OOD_Training/logs/gate1a3_seed456_worker.log"
+    }
+  },
+  "status": "LAUNCHED"
+}

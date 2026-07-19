@@ -54,6 +54,11 @@ runs/gate1a2_b21_seed42/**
 !runs/gate1a2_b21_seed42/published/
 !runs/gate1a2_b21_seed42/published/*.json
 !runs/gate1a2_b21_seed42/published/*.csv
+!runs/gate1a3_b21_multiseed/
+runs/gate1a3_b21_multiseed/**
+!runs/gate1a3_b21_multiseed/published/
+!runs/gate1a3_b21_multiseed/published/*.json
+!runs/gate1a3_b21_multiseed/published/*.csv
 tmp/
 temp/
 *.tmp
