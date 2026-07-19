@@ -26,9 +26,12 @@ actual_table="$(sha256sum /home/changliu/ExcitationNexus_Data_v2/tables/molecule
 sha256sum -c data_registry/gate0c_split_sha256.txt >/dev/null
 
 mapfile -t publish_candidates < <(git ls-files --cached --others --exclude-standard)
-if printf '%s\0' "${publish_candidates[@]}" | xargs -0 -r find -maxdepth 0 -type f -size +20M -print | grep -q .; then
-  echo "unapproved file over 20 MiB" >&2; exit 6
-fi
+for candidate in "${publish_candidates[@]}"; do
+  if [[ -f "$candidate" ]] && (( $(stat -c %s "$candidate") > 20 * 1024 * 1024 )); then
+    echo "unapproved file over 20 MiB: $candidate" >&2
+    exit 6
+  fi
+done
 if printf '%s\n' "${publish_candidates[@]}" | grep -Eqi '(^|/)(\.env($|\.)|.*(token|credential|private_key).*|id_(rsa|ed25519).*|.*\.(pem|key)$)'; then
   echo "sensitive filename detected" >&2; exit 6
 fi
