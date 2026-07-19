@@ -48,3 +48,12 @@
 - Require an independently sealed confirmation split for future superiority claims because Layer G test has already been inspected.
 - Treat PM6 embedded `basename` as a pre-renumbering alias; use filename SID as the frozen join key, supported by atom-count and cross-fidelity checks.
 - Keep historical PM6 energy only for old7313 reproduction; it remains disabled for new15016.
+
+## Gate 1-A2 decisions
+
+- Use original B2-1 ASE databases (5,120/1,098/1,098) for strict protocol reproduction; use only 1,097 common test SIDs for cheap pairing.
+- Freeze both historical seed42 prediction vectors because the original run-level and later SID-regenerated artifacts differ; do not select the lower value post hoc.
+- Describe the implemented B2-1 faithfully as shared graph-level scalar energy projection plus late fusion, not intermediate atom-embedding pooling.
+- Count 1,065,570 model parameters separately from 1,075,318 checkpoint state tensor elements including buffers.
+- Preserve the historical batch-macro validation/checkpoint behavior as a reproduction limitation; correct it only in a separately named future protocol.
+- Classify Gate 1-A2 as REPRODUCED_NUMERIC; do not claim bitwise identity or cheap-model statistical superiority.

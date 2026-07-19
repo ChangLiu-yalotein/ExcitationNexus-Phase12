@@ -22,7 +22,7 @@
 ## TODO
 
 - [x] Gate 1-A1: strict historical reproduction of the 0.0702 no-dipole cheap champion.
-- [ ] Gate 1-A2: reproduce frozen B2-1 seed42 under a new instruction.
+- [x] Gate 1-A2: numerically reproduce frozen B2-1 seed42 checkpoint and one 80-epoch training run.
 - [ ] Gate 1-A3: reproduce B2-1 three-seed 0.0750 ± 0.0025 eV result.
 
 ## BLOCKED

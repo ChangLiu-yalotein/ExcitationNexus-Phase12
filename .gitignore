@@ -49,6 +49,11 @@ runs/**
 !runs/gate1a1_cheap_reproduction/
 !runs/gate1a1_cheap_reproduction/*.json
 !runs/gate1a1_cheap_reproduction/*.csv
+!runs/gate1a2_b21_seed42/
+runs/gate1a2_b21_seed42/**
+!runs/gate1a2_b21_seed42/published/
+!runs/gate1a2_b21_seed42/published/*.json
+!runs/gate1a2_b21_seed42/published/*.csv
 tmp/
 temp/
 *.tmp

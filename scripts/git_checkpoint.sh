@@ -25,13 +25,14 @@ actual_table="$(sha256sum /home/changliu/ExcitationNexus_Data_v2/tables/molecule
 [[ "$actual_table" == "$expected_table" ]] || { echo "frozen table hash mismatch" >&2; exit 5; }
 sha256sum -c data_registry/gate0c_split_sha256.txt >/dev/null
 
-if find . -path ./.git -prune -o -type f -size +20M -print | grep -q .; then
+mapfile -t publish_candidates < <(git ls-files --cached --others --exclude-standard)
+if printf '%s\0' "${publish_candidates[@]}" | xargs -0 -r find -maxdepth 0 -type f -size +20M -print | grep -q .; then
   echo "unapproved file over 20 MiB" >&2; exit 6
 fi
-if find . -path ./.git -prune -o -type f -print | grep -Eqi '(^|/)(\.env($|\.)|.*(token|credential|private_key).*|id_(rsa|ed25519).*|.*\.(pem|key)$)'; then
+if printf '%s\n' "${publish_candidates[@]}" | grep -Eqi '(^|/)(\.env($|\.)|.*(token|credential|private_key).*|id_(rsa|ed25519).*|.*\.(pem|key)$)'; then
   echo "sensitive filename detected" >&2; exit 6
 fi
-if find . -path ./.git -prune -o -type f -print | grep -Eqi '(final673|final[_-]?blind|sealed[_-]?set|/(raw_compact|tables|checkpoints?)/|\.(pt|pth|ckpt|onnx|safetensors)$)'; then
+if printf '%s\n' "${publish_candidates[@]}" | grep -Eqi '(final673|final[_-]?blind|sealed[_-]?set|/(raw_compact|tables|checkpoints?)/|\.(pt|pth|ckpt|onnx|safetensors)$)'; then
   echo "raw/sealed/checkpoint filename detected" >&2; exit 6
 fi
 if rg -l --hidden -g '!.git/**' -g '!__pycache__/**' -g '!.pytest_cache/**' \
@@ -47,7 +48,9 @@ git add -- .gitignore AGENTS.md README.md pyproject.toml \
   src tests scripts configs data_registry manifests reports logs \
   PROJECT_STATE.md TODO.md DECISIONS.md RUN_REGISTRY.csv \
   runs/gate1a1_cheap_reproduction/*.json \
-  runs/gate1a1_cheap_reproduction/*.csv
+  runs/gate1a1_cheap_reproduction/*.csv \
+  runs/gate1a2_b21_seed42/published/*.json \
+  runs/gate1a2_b21_seed42/published/*.csv
 
 if git diff --cached --quiet; then
   echo "no changes; checkpoint skipped"
@@ -65,6 +68,8 @@ fi
 git commit -m "gate(${GATE_ID}): ${OUTCOME}"
 if [[ "${GATE_ID,,}" == "gate1a1" ]]; then
   tag="gate1a1-cheap-reproduction-$(date -u +%Y%m%d)"
+elif [[ "${GATE_ID,,}" == "gate1a2" ]]; then
+  tag="gate1a2-b21-seed42-reproduction-$(date -u +%Y%m%d)"
 else
   tag="$(printf '%s' "$GATE_ID" | tr '[:upper:]' '[:lower:]')-done-$(date -u +%Y%m%d)"
 fi

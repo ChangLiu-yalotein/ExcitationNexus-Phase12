@@ -1,0 +1,102 @@
+{
+  "gate": "1-A2",
+  "version": "v3",
+  "status": "PREREGISTERED_BEFORE_FORMAL_RUN",
+  "objective": "Reproduce the historical B2-1 seed42 protocol without tuning or changing the historical assets.",
+  "historical_assets": {
+    "config": "/home/changliu/ExcitationNexus/equiformer_v3_model/configs/dual_tower/b2_1_naive_dual_tower.yml",
+    "train_db": "/home/changliu/ExcitationNexus/equiformer_v3_model/data/dual_tower_7316/dft_dual_tower_train.db",
+    "val_db": "/home/changliu/ExcitationNexus/equiformer_v3_model/data/dual_tower_7316/dft_dual_tower_val.db",
+    "test_db": "/home/changliu/ExcitationNexus/equiformer_v3_model/data/dual_tower_7316/dft_dual_tower_test.db",
+    "best_checkpoint": "/home/changliu/ExcitationNexus/equiformer_v3_model/checkpoints/2026-04-25-05-26-24/best_checkpoint.pt",
+    "normalizers": "/home/changliu/ExcitationNexus/equiformer_v3_model/checkpoints/2026-04-25-05-26-24/normalizers.pt",
+    "model_source": "/home/changliu/ExcitationNexus/equiformer_v3_model/equiformer_v3/models/naive_dual_tower.py",
+    "dataset_source": "/home/changliu/ExcitationNexus/equiformer_v3_model/equiformer_v3/datasets/dual_tower.py",
+    "trainer_source": "/home/changliu/ExcitationNexus/equiformer_v3_model/equiformer_v3/src/fairchem/core/trainers/b2_1_trainer.py",
+    "wrapper": "/home/changliu/ExcitationNexus/equiformer_v3_model/scripts/run_b2_1_training_wrapper.py",
+    "historical_predictions": "/home/changliu/ExcitationNexus/equiformer_v3_model/logs/b2_1_seed42_full_single_gpu_gpu1_20260425_052537/eval_final/test_predictions_with_sid.csv",
+    "historical_metrics": "/home/changliu/ExcitationNexus/equiformer_v3_model/logs/b2_1_seed42_full_single_gpu_gpu1_20260425_052537/eval_final/evaluation_results.json",
+    "historical_training_log": "/home/changliu/ExcitationNexus/equiformer_v3_model/logs/b2_1_seed42_full_single_gpu_gpu1_20260425_052537/training.log",
+    "layer_g_manifest": "/home/changliu/ExcitationNexus/equiformer_v3_model/manifests/split_paired_7313_seed42.json",
+    "historical_predictions_without_sid": "/home/changliu/ExcitationNexus/equiformer_v3_model/logs/b2_1_seed42_full_single_gpu_gpu1_20260425_052537/eval_final/test_predictions.csv"
+  },
+  "expected_sha256": {
+    "config": "7105581bd564f1d7cbf9a4699c0e391f3a929d65c5d439293a7533a4fe03c809",
+    "train_db": "63e0589e4880de974eca72fe6e2f8cf5bc83054a523b84f372d23ff2d3c64538",
+    "val_db": "1328eae14e8a30e3f1ff6708a3c0f257ac916c5c9f640fab5872e4e2f850c8c3",
+    "test_db": "c2cd07a48624969bf377cdc5981ac24b3ef2988fa542a5f06e1026931ea5bba7",
+    "best_checkpoint": "d32a9fd6f9f5ff2064955b3cc007128cdb47d2b6caa63426eae50abb398795af",
+    "normalizers": "e30fb92f981a735283fb2b6ca67cbdb3dfc4f92fd7590fb43419070f3f0014dd",
+    "model_source": "0ff5c6dcb27cc17b717a91c8c869edb9aa727b6582a5bdac5dd293e774a9ed0f",
+    "dataset_source": "276176074e36028574e7ce6e4952de31bc61d376fb184ee6fbf4ce699d1eae3a",
+    "trainer_source": "4f64b76fa202c0abf82be5d9c54cf53cfa6358968145bbd3fdd7f089787f1668",
+    "wrapper": "471dedc378088857d01f5d6db97135e20d4123ccc7e0288c08634e616f86127a",
+    "historical_predictions": "13d46b6eaa82300ae92f4e22adc8a55f99999fff283d309a9dccdc597720db9a",
+    "historical_metrics": "f751df6401bb3fe091283160a17d97f746658c2f3040c6c7de8fc2b0c3071f04",
+    "historical_training_log": "419a33d259cff90f58032e59b898ea857bc9b095586fe0ccb90273c553b7303d",
+    "layer_g_manifest": "2bd3526b756122575cf7607bdc20b2ca16d558db6274df4e251edadeee369db5",
+    "historical_predictions_without_sid": "afc8aac0317cdb8d6acaff9c73ff955de2d69cc1cfc0e1fd9fa85a1d808bd738"
+  },
+  "historical_result": {
+    "test_mae": 0.07659060508012772,
+    "test_rmse": 0.12215884029865265,
+    "test_records": 1098,
+    "validation_mae_from_independent_inference": 0.07801476120948792,
+    "checkpoint_selection_val_batch_macro_mae": 0.07783559350755767,
+    "sid_vector_recomputed_test_mae": 0.07656088892531875,
+    "provenance_note": "The 09:11 metrics/test_predictions pair and the 13:38 SID-regenerated vector differ numerically. The former is the primary historical run metric; the latter is the formal paired-comparison vector. Both are frozen."
+  },
+  "split_contract": {
+    "strict_b21_db_counts": {
+      "train": 5120,
+      "val": 1098,
+      "test": 1098
+    },
+    "layer_g_counts": {
+      "train": 5118,
+      "val": 1098,
+      "test": 1097
+    },
+    "policy": "Use original 7316 DBs for strict B2-1 reproduction; use only the 1097 common test SIDs for cheap pairing."
+  },
+  "model_contract": {
+    "architecture": "shared EquiformerV3 produces one graph-level scalar energy per donor/acceptor; each scalar is projected 1->64, late-concatenated, then fused by MLP and energy head",
+    "parameter_count": 1065570,
+    "max_radius_angstrom": 8.0,
+    "max_neighbors": 20,
+    "geometry": "DFT S0 ASE DB coordinates",
+    "target": "historical eb_eV, reported as fixed-epsilon screened Coulomb proxy",
+    "normalization_mean_eV": 0.800596,
+    "normalization_stdev_eV": 0.19427,
+    "checkpoint_state_tensor_elements": 1075318
+  },
+  "training_contract": {
+    "seed": 42,
+    "formal_training_runs": 1,
+    "batch_size": 8,
+    "max_epochs": 80,
+    "optimizer": "AdamW",
+    "lr_initial": 0.001,
+    "scheduler": "warmup then milestones [2000,4000,6000], gamma 0.5",
+    "ema_decay": 0.999,
+    "clip_grad_norm": 10.0,
+    "amp": false,
+    "checkpoint_selection": "historical best validation energy_mae",
+    "historical_metric_limitation": "validation implementation averages batch means equally",
+    "test_for_early_stopping_or_selection": false,
+    "hyperparameter_search": false
+  },
+  "reproduction_tolerance_mae_eV": 0.001,
+  "forbidden_inputs": [
+    "final673",
+    "new15016",
+    "TDDFT/Multiwfn features",
+    "target-derived transforms"
+  ],
+  "final673_access": false,
+  "new15016_access": false,
+  "other_seed_access": false,
+  "output_root": "/home/changliu/ExcitationNexus/12_Phase4_Multitask_OOD_Training/runs/gate1a2_b21_seed42",
+  "supersedes": "v2",
+  "supersession_reason": "Correct model parameter count: parameters exclude checkpoint buffers."
+}

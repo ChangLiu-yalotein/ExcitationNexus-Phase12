@@ -1,0 +1,6 @@
+/home/changliu/ExcitationNexus/equiformer_v3_model/equiformer_v3/src/fairchem/experimental/models/equiformer_v3/layer_norm.py:53: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @torch.cuda.amp.autocast(enabled=False)
+/home/changliu/ExcitationNexus/equiformer_v3_model/equiformer_v3/src/fairchem/experimental/models/equiformer_v3/layer_norm.py:147: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @torch.cuda.amp.autocast(enabled=False)
+/home/changliu/ExcitationNexus/equiformer_v3_model/equiformer_v3/src/fairchem/experimental/models/equiformer_v3/layer_norm.py:246: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @torch.cuda.amp.autocast(enabled=False)

@@ -1,0 +1,77 @@
+{
+  "b21_db_minus_layer_g": {
+    "test": [
+      "D-33_A-79"
+    ],
+    "train": [
+      "D-113_A-136",
+      "D-90_A-117"
+    ],
+    "val": []
+  },
+  "checkpoint_selection": {
+    "artifact": "best_checkpoint.pt",
+    "historical_val_batches": 138,
+    "historical_val_metric": 0.07783559350755767,
+    "known_limitation": "B2_1Trainer.validate averages batch means equally; the final two-record batch is overweighted.",
+    "test_used_for_checkpoint_selection": false
+  },
+  "final673_accessed": false,
+  "formal_protocol_note": "Strict B2-1 reproduction uses the original 7316 ASE DBs. Cheap pairing uses the 1097-SID intersection only.",
+  "historical_db_counts": {
+    "test": 1098,
+    "train": 5120,
+    "val": 1098
+  },
+  "historical_db_order_sha256": {
+    "test": "d51bffb7975c4fd99714f61b350879179dd0797df2079cb2fcd50e4bc8fe8b5c",
+    "train": "1a7f013bd218fe489cc6da663a795d174944a2336cf10a401f652e33ea06674c",
+    "val": "b46bd49bd27298bc3544019e46a78e04564c8cb8de216e8f9680d5d756f37e7d"
+  },
+  "historical_db_unique_total": 7316,
+  "historical_original_vector_metrics": {
+    "mae": 0.07659060103825135,
+    "n_records": 1098,
+    "r2": 0.6612236198959415,
+    "rmse": 0.12215884257627824
+  },
+  "historical_prediction_order_matches_test_db": true,
+  "historical_sid_vector_metrics": {
+    "mae": 0.07656088892531875,
+    "n_records": 1098,
+    "r2": 0.6617075686153282,
+    "rmse": 0.12207155823914684
+  },
+  "historical_vector_max_abs_prediction_delta": 0.008220299999999958,
+  "historical_vector_policy": "Original 09:11 metrics are the run-level result; the later SID vector is the paired-comparison asset. Both are retained.",
+  "layer_g_counts": {
+    "test": 1097,
+    "train": 5118,
+    "val": 1098
+  },
+  "layer_g_minus_b21_db": {
+    "test": [],
+    "train": [],
+    "val": []
+  },
+  "new15016_accessed": false,
+  "observed_sha256": {
+    "best_checkpoint": "d32a9fd6f9f5ff2064955b3cc007128cdb47d2b6caa63426eae50abb398795af",
+    "config": "7105581bd564f1d7cbf9a4699c0e391f3a929d65c5d439293a7533a4fe03c809",
+    "dataset_source": "276176074e36028574e7ce6e4952de31bc61d376fb184ee6fbf4ce699d1eae3a",
+    "historical_metrics": "f751df6401bb3fe091283160a17d97f746658c2f3040c6c7de8fc2b0c3071f04",
+    "historical_predictions": "13d46b6eaa82300ae92f4e22adc8a55f99999fff283d309a9dccdc597720db9a",
+    "historical_predictions_without_sid": "afc8aac0317cdb8d6acaff9c73ff955de2d69cc1cfc0e1fd9fa85a1d808bd738",
+    "historical_training_log": "419a33d259cff90f58032e59b898ea857bc9b095586fe0ccb90273c553b7303d",
+    "layer_g_manifest": "2bd3526b756122575cf7607bdc20b2ca16d558db6274df4e251edadeee369db5",
+    "model_source": "0ff5c6dcb27cc17b717a91c8c869edb9aa727b6582a5bdac5dd293e774a9ed0f",
+    "normalizers": "e30fb92f981a735283fb2b6ca67cbdb3dfc4f92fd7590fb43419070f3f0014dd",
+    "test_db": "c2cd07a48624969bf377cdc5981ac24b3ef2988fa542a5f06e1026931ea5bba7",
+    "train_db": "63e0589e4880de974eca72fe6e2f8cf5bc83054a523b84f372d23ff2d3c64538",
+    "trainer_source": "4f64b76fa202c0abf82be5d9c54cf53cfa6358968145bbd3fdd7f089787f1668",
+    "val_db": "1328eae14e8a30e3f1ff6708a3c0f257ac916c5c9f640fab5872e4e2f850c8c3",
+    "wrapper": "471dedc378088857d01f5d6db97135e20d4123ccc7e0288c08634e616f86127a"
+  },
+  "parameter_count_from_checkpoint": 1075318,
+  "status": "ASSET_AUDIT_PASS"
+}

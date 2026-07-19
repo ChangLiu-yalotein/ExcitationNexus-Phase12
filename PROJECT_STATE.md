@@ -1,6 +1,6 @@
 # Phase 12 project state
 
-Current stage: **GATE1A1_REPRODUCED_STRICT**; Gate 1-A2 B2-1 seed42 reproduction requires a new instruction.
+Current stage: **GATE1A2_REPRODUCED_NUMERIC**; Gate 1-A3 requires a new instruction.
 
 ## Frozen facts
 
@@ -37,3 +37,13 @@ Project and EquiformerV3 directories are not Git worktrees; source commit proven
 - New and historical prediction CSVs are byte-identical; SHA-256 `16a7e9a8c60176ae0f5c2f31ca6be10ece374967131996a1da6096b0d06818ea`.
 - The result is strict historical reproduction, not leakage-corrected confirmation: the old workflow inspected test metrics when selecting the no-dipole champion.
 - No B2-1, new15016, final673, extra seed, hyperparameter search, or checkpoint was run.
+
+## Gate 1-A2 result
+
+- Historical B2-1 seed42 checkpoint inference reproduced the 1,098-SID vector numerically: MAE 0.07656089216470718 eV.
+- Exactly one seed42 training completed 80 epochs / 51,200 steps on physical GPU 0.
+- New test MAE/RMSE/R²: 0.07745347172021866 / 0.12340133565776104 / 0.6542971134185791 on 1,098 records.
+- Absolute MAE difference from the original historical run is 0.0008628666400909424 eV, within the 0.0010 eV numeric-reproduction tolerance.
+- Original B2-1 uses 5,120/1,098/1,098 records; its three additional SIDs explain the difference from Layer G 7,313.
+- The implemented model uses shared graph-level scalar energy projections, not intermediate atom-embedding pooling; parameter count is 1,065,570.
+- No other seed, new15016, final673, B2-0, B2-2a, or hyperparameter search was run.

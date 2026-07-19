@@ -1,0 +1,36 @@
+/home/changliu/ExcitationNexus/equiformer_v3_model/equiformer_v3/src/fairchem/experimental/models/equiformer_v3/layer_norm.py:53: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @torch.cuda.amp.autocast(enabled=False)
+/home/changliu/ExcitationNexus/equiformer_v3_model/equiformer_v3/src/fairchem/experimental/models/equiformer_v3/layer_norm.py:147: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @torch.cuda.amp.autocast(enabled=False)
+/home/changliu/ExcitationNexus/equiformer_v3_model/equiformer_v3/src/fairchem/experimental/models/equiformer_v3/layer_norm.py:246: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @torch.cuda.amp.autocast(enabled=False)
+WARNING:root:Disabled BalancedBatchSampler because num_replicas=1.
+WARNING:root:Failed to get data sizes, falling back to uniform partitioning. BalancedBatchSampler requires a dataset.
+WARNING:root:Disabled BalancedBatchSampler because num_replicas=1.
+WARNING:root:Failed to get data sizes, falling back to uniform partitioning. BalancedBatchSampler requires a dataset.
+{
+  "checkpoint_sha256": "e893da44bcc0a2b9ef756381e2c550c9083737ffae6f3d99072062a3680b66e2",
+  "device": "cuda:0",
+  "final673_accessed": false,
+  "historical_metrics": {
+    "mae": 0.07656088892531875,
+    "n_records": 1098,
+    "r2": 0.6617075686153282,
+    "rmse": 0.12207155823914684
+  },
+  "historical_prediction_sha256": "13d46b6eaa82300ae92f4e22adc8a55f99999fff283d309a9dccdc597720db9a",
+  "inference_wall_seconds": 15.27734161913395,
+  "max_abs_prediction_delta": 0.2097436818228149,
+  "max_abs_truth_delta": 5.691528315310279e-08,
+  "metrics": {
+    "mae": 0.07745347172021866,
+    "n_records": 1098,
+    "r2": 0.6542971134185791,
+    "rmse": 0.12340133565776104
+  },
+  "new15016_accessed": false,
+  "parameter_count": 1065570,
+  "prediction_sha256": "134e9ac1d51a72c77d2b62745bcd55f062dba2b656e599a5c9554eb1d89e01d3",
+  "status": "REPRODUCED_NUMERIC",
+  "throughput_records_per_second": 71.87113905776508
+}

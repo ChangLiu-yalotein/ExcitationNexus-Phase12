@@ -1,0 +1,14 @@
+{
+  "aggregate_sha256": "d7e9137d489335b9b601dbddfeabeac25c7aa664558b07d2f66557b9b24ae226",
+  "files": {
+    "configs/gate1a2_b21_seed42_reproduction_v3.json": "57ee04678e933dbc254f4f497c0da66b513b3d523d1d6f38bbca69c5bc458fa8",
+    "data_registry/gate1a2_historical_asset_registry_v3.json": "959a1176c45abd55d7624a32c2f61c8de682dfed81968a522aa803b6cfe557aa",
+    "reports/gate1a2_reproduction_preregistration_v3.md": "4e544cf62eaa85c2f4ac4601bf2b17c1b3a84999bbb53493015c0c7771b8315d"
+  },
+  "gate": "1-A2",
+  "locked_utc": "2026-07-19T07:25:17.170061+00:00",
+  "post_lock_policy": "v3 files must not change; corrections require v4",
+  "status": "FROZEN_BEFORE_INFERENCE_AND_TRAINING",
+  "supersedes": "v2",
+  "version": "v3"
+}

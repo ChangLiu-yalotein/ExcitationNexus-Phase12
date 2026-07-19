@@ -1,0 +1,210 @@
+{
+  "asset_audit": {
+    "b21_db_minus_layer_g": {
+      "test": [
+        "D-33_A-79"
+      ],
+      "train": [
+        "D-113_A-136",
+        "D-90_A-117"
+      ],
+      "val": []
+    },
+    "checkpoint_selection": {
+      "artifact": "best_checkpoint.pt",
+      "historical_val_batches": 138,
+      "historical_val_metric": 0.07783559350755767,
+      "known_limitation": "B2_1Trainer.validate averages batch means equally; the final two-record batch is overweighted.",
+      "test_used_for_checkpoint_selection": false
+    },
+    "final673_accessed": false,
+    "formal_protocol_note": "Strict B2-1 reproduction uses the original 7316 ASE DBs. Cheap pairing uses the 1097-SID intersection only.",
+    "historical_db_counts": {
+      "test": 1098,
+      "train": 5120,
+      "val": 1098
+    },
+    "historical_db_order_sha256": {
+      "test": "d51bffb7975c4fd99714f61b350879179dd0797df2079cb2fcd50e4bc8fe8b5c",
+      "train": "1a7f013bd218fe489cc6da663a795d174944a2336cf10a401f652e33ea06674c",
+      "val": "b46bd49bd27298bc3544019e46a78e04564c8cb8de216e8f9680d5d756f37e7d"
+    },
+    "historical_db_unique_total": 7316,
+    "historical_original_vector_metrics": {
+      "mae": 0.07659060103825135,
+      "n_records": 1098,
+      "r2": 0.6612236198959415,
+      "rmse": 0.12215884257627824
+    },
+    "historical_prediction_order_matches_test_db": true,
+    "historical_sid_vector_metrics": {
+      "mae": 0.07656088892531875,
+      "n_records": 1098,
+      "r2": 0.6617075686153282,
+      "rmse": 0.12207155823914684
+    },
+    "historical_vector_max_abs_prediction_delta": 0.008220299999999958,
+    "historical_vector_policy": "Original 09:11 metrics are the run-level result; the later SID vector is the paired-comparison asset. Both are retained.",
+    "layer_g_counts": {
+      "test": 1097,
+      "train": 5118,
+      "val": 1098
+    },
+    "layer_g_minus_b21_db": {
+      "test": [],
+      "train": [],
+      "val": []
+    },
+    "new15016_accessed": false,
+    "observed_sha256": {
+      "best_checkpoint": "d32a9fd6f9f5ff2064955b3cc007128cdb47d2b6caa63426eae50abb398795af",
+      "config": "7105581bd564f1d7cbf9a4699c0e391f3a929d65c5d439293a7533a4fe03c809",
+      "dataset_source": "276176074e36028574e7ce6e4952de31bc61d376fb184ee6fbf4ce699d1eae3a",
+      "historical_metrics": "f751df6401bb3fe091283160a17d97f746658c2f3040c6c7de8fc2b0c3071f04",
+      "historical_predictions": "13d46b6eaa82300ae92f4e22adc8a55f99999fff283d309a9dccdc597720db9a",
+      "historical_predictions_without_sid": "afc8aac0317cdb8d6acaff9c73ff955de2d69cc1cfc0e1fd9fa85a1d808bd738",
+      "historical_training_log": "419a33d259cff90f58032e59b898ea857bc9b095586fe0ccb90273c553b7303d",
+      "layer_g_manifest": "2bd3526b756122575cf7607bdc20b2ca16d558db6274df4e251edadeee369db5",
+      "model_source": "0ff5c6dcb27cc17b717a91c8c869edb9aa727b6582a5bdac5dd293e774a9ed0f",
+      "normalizers": "e30fb92f981a735283fb2b6ca67cbdb3dfc4f92fd7590fb43419070f3f0014dd",
+      "test_db": "c2cd07a48624969bf377cdc5981ac24b3ef2988fa542a5f06e1026931ea5bba7",
+      "train_db": "63e0589e4880de974eca72fe6e2f8cf5bc83054a523b84f372d23ff2d3c64538",
+      "trainer_source": "4f64b76fa202c0abf82be5d9c54cf53cfa6358968145bbd3fdd7f089787f1668",
+      "val_db": "1328eae14e8a30e3f1ff6708a3c0f257ac916c5c9f640fab5872e4e2f850c8c3",
+      "wrapper": "471dedc378088857d01f5d6db97135e20d4123ccc7e0288c08634e616f86127a"
+    },
+    "parameter_count_from_checkpoint": 1075318,
+    "status": "ASSET_AUDIT_PASS"
+  },
+  "checkpoint_committed_to_git": false,
+  "cpu_smoke": {
+    "adapter_scope": "CPU smoke only; historical GPU behavior unchanged",
+    "attempt1": "BLOCKED_CPU_HISTORICAL_HARDCODED_CUDA",
+    "attempt2": "CPU_SMOKE_PASS",
+    "finite": true,
+    "parameter_count": 1065570,
+    "shape": [
+      2
+    ]
+  },
+  "environment": {
+    "cuda": "12.8",
+    "numpy": "2.2.6",
+    "pandas": "2.3.3",
+    "platform": "Linux-6.8.0-86-generic-x86_64-with-glibc2.39",
+    "python": "3.10.19",
+    "scikit_learn": "1.7.2",
+    "scipy": "1.15.3",
+    "torch": "2.8.0+cu128"
+  },
+  "final673_accessed": false,
+  "formal_training": {
+    "absolute_mae_delta_vs_original": 0.0008628666400909424,
+    "absolute_mae_delta_vs_sid_vector": 0.0008925827948999127,
+    "best_epoch": 80,
+    "best_val_batch_macro_mae": 0.07653653435409069,
+    "checkpoint_sha256": "e893da44bcc0a2b9ef756381e2c550c9083737ffae6f3d99072062a3680b66e2",
+    "historical_original_test_mae": 0.07659060508012772,
+    "historical_sid_vector_test_mae": 0.07656088892531875,
+    "metrics": {
+      "mae": 0.07745347172021866,
+      "n_records": 1098,
+      "r2": 0.6542971134185791,
+      "rmse": 0.12340133565776104
+    },
+    "parameter_count": 1065570,
+    "peak_gpu_memory_mib": {
+      "qualifier": "maximum observed by external polling; not continuous profiler peak",
+      "value": 14767
+    },
+    "physical_gpu_id": 0,
+    "prediction_sha256": "134e9ac1d51a72c77d2b62745bcd55f062dba2b656e599a5c9554eb1d89e01d3",
+    "wall_seconds": 9941.873630168848
+  },
+  "gate": "1-A2",
+  "gpu": {
+    "continuous_peak_profiler": false,
+    "maximum_observed_memory_mib": 14767,
+    "model": "NVIDIA GeForce RTX 3090",
+    "physical_id": 0
+  },
+  "historical_checkpoint_inference": {
+    "checkpoint_sha256": "d32a9fd6f9f5ff2064955b3cc007128cdb47d2b6caa63426eae50abb398795af",
+    "device": "cuda:0",
+    "final673_accessed": false,
+    "historical_metrics": {
+      "mae": 0.07656088892531875,
+      "n_records": 1098,
+      "r2": 0.6617075686153282,
+      "rmse": 0.12207155823914684
+    },
+    "historical_prediction_sha256": "13d46b6eaa82300ae92f4e22adc8a55f99999fff283d309a9dccdc597720db9a",
+    "inference_wall_seconds": 15.245785639621317,
+    "max_abs_prediction_delta": 3.554031372532407e-07,
+    "max_abs_truth_delta": 5.691528315310279e-08,
+    "metrics": {
+      "mae": 0.07656089216470718,
+      "n_records": 1098,
+      "r2": 0.6617075800895691,
+      "rmse": 0.12207155608497411
+    },
+    "new15016_accessed": false,
+    "parameter_count": 1065570,
+    "prediction_sha256": "5adc8187a5c19eb0883838a6c60c320f6f657fd3d1f862d8a5150a1b8049153c",
+    "status": "REPRODUCED_NUMERIC",
+    "throughput_records_per_second": 72.01989926439505
+  },
+  "new15016_accessed": false,
+  "paired_comparison": {
+    "b21_new_training": {
+      "mae": 0.07748756768072791,
+      "n_records": 1097,
+      "r2": 0.6540259713798231,
+      "rmse": 0.12345163819514829
+    },
+    "cheap": {
+      "mae": 0.07020991155682628,
+      "n_records": 1097,
+      "r2": 0.7574868831588407,
+      "rmse": 0.10335767339729517
+    },
+    "delta_mae_cheap_minus_b21_eV": -0.007277656123901632,
+    "excluded_b21_only_test_sid": [
+      "D-33_A-79"
+    ],
+    "interpretation": "Audit-only paired calculation on an already inspected test set; no new superiority claim.",
+    "locked_project_comparison_p": 0.145,
+    "max_abs_truth_delta_eV": 1.0209538858774181e-07,
+    "nominal_same_pair_wilcoxon_p": 0.013949873834921597,
+    "nominal_same_pair_wilcoxon_statistic": 275322.0,
+    "paired_records": 1097
+  },
+  "preregistration_history": {
+    "v1_preserved": true,
+    "v2_preserved": true,
+    "v3_formal": true
+  },
+  "preregistration_lock": {
+    "aggregate_sha256": "d7e9137d489335b9b601dbddfeabeac25c7aa664558b07d2f66557b9b24ae226",
+    "files": {
+      "configs/gate1a2_b21_seed42_reproduction_v3.json": "57ee04678e933dbc254f4f497c0da66b513b3d523d1d6f38bbca69c5bc458fa8",
+      "data_registry/gate1a2_historical_asset_registry_v3.json": "959a1176c45abd55d7624a32c2f61c8de682dfed81968a522aa803b6cfe557aa",
+      "reports/gate1a2_reproduction_preregistration_v3.md": "4e544cf62eaa85c2f4ac4601bf2b17c1b3a84999bbb53493015c0c7771b8315d"
+    },
+    "gate": "1-A2",
+    "locked_utc": "2026-07-19T07:25:17.170061+00:00",
+    "post_lock_policy": "v3 files must not change; corrections require v4",
+    "status": "FROZEN_BEFORE_INFERENCE_AND_TRAINING",
+    "supersedes": "v2",
+    "version": "v3"
+  },
+  "scope": {
+    "b2_0": false,
+    "b2_2a": false,
+    "final673": false,
+    "formal_training_runs": 1,
+    "new15016": false,
+    "other_seeds": false
+  },
+  "status": "REPRODUCED_NUMERIC"
+}
