@@ -1,0 +1,43 @@
+{
+  "final673_accessed": false,
+  "historical_complete_run_log_found": false,
+  "historical_model_dump_found": false,
+  "historical_prediction_order_matches_test": true,
+  "historical_prediction_rows": 1097,
+  "historical_selection_limitation": "The Stage 2C script selected best_config using test MAE across configurations; the fixed B reproduction is historical reproduction, not leakage-corrected model selection.",
+  "observed_hashes": {
+    "historical_predictions": "16a7e9a8c60176ae0f5c2f31ca6be10ece374967131996a1da6096b0d06818ea",
+    "historical_script": "e541d753583c9911d2628d21bd16d15d669347967dc6356f0dd60e63a27627a0",
+    "split": "2bd3526b756122575cf7607bdc20b2ca16d558db6274df4e251edadeee369db5",
+    "structures": "9804e89ab76f67db4ce3e7950ef095eaf3873bfb6dc00ee0a6624861ae882bf4",
+    "teacher": "04a3148803b507c41e415083fd6078e788aefa1706c20ad1ca23cb7145d2a56d"
+  },
+  "pm6_basename_mismatch_count": 7309,
+  "pm6_basename_mismatch_ids_sha256": "57c56c20a7d41a867224251819bf0f91e257bbe6379596421233a7ab687c299c",
+  "pm6_identity_crosscheck": {
+    "atom_count_comparable": 7296,
+    "interpretation": "The embedded basename is a stale pre-renumbering alias. Current filename SID is supported by total-atom agreement and is the frozen model identity.",
+    "matches_current_filename_sid_structure": 7296,
+    "matches_embedded_old_basename_structure": 2,
+    "pm6_dft_embedded_old_basename_equal": 7309
+  },
+  "pm6_missing": [
+    "D-132_A-138",
+    "D-157_A-107",
+    "D-83_A-102"
+  ],
+  "pm6_parse_failures": [
+    "D-83_A-262"
+  ],
+  "pm6_present": 7309,
+  "python": "3.10.19",
+  "split_counts": {
+    "test": 1097,
+    "train": 5118,
+    "val": 1098
+  },
+  "split_unique": 7313,
+  "status": "ASSET_AUDIT_PASS",
+  "structure_coverage": 7313,
+  "teacher_coverage": 7313
+}

@@ -39,3 +39,12 @@
 - Fit train-only group-weighted normalization per split.
 - Preserve unknown roles: for 387 no-donor-labelled records, never infer donor atoms; use unknown pooling and role-presence flags.
 - TinyRoleAware3D is plumbing-only; smoke weights are not scientific hyperparameters.
+
+## Gate 1-A1 decisions
+
+- Reproduce only the fixed historical `B_direct_C1.5_no_dipole` configuration once; no test-guided rerun or tuning.
+- Treat the byte-identical prediction vector as `REPRODUCED_STRICT` historical reproduction.
+- Do not reinterpret the historical post-test-selected champion as leakage-corrected model selection.
+- Require an independently sealed confirmation split for future superiority claims because Layer G test has already been inspected.
+- Treat PM6 embedded `basename` as a pre-renumbering alias; use filename SID as the frozen join key, supported by atom-count and cross-fidelity checks.
+- Keep historical PM6 energy only for old7313 reproduction; it remains disabled for new15016.

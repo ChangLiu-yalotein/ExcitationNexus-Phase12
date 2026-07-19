@@ -21,8 +21,9 @@
 
 ## TODO
 
-- [ ] Gate 1-A under a new instruction: reproduce frozen B2-1 and 0.0702 no-dipole champion protocols before new-data baselines.
-- [ ] After smoke only: reproduce B2-1 and 0.0702 champion.
+- [x] Gate 1-A1: strict historical reproduction of the 0.0702 no-dipole cheap champion.
+- [ ] Gate 1-A2: reproduce frozen B2-1 seed42 under a new instruction.
+- [ ] Gate 1-A3: reproduce B2-1 three-seed 0.0750 ± 0.0025 eV result.
 
 ## BLOCKED
 

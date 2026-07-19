@@ -1,0 +1,104 @@
+{
+  "gate": "1-A1",
+  "version": "v1",
+  "status": "PREREGISTERED_HISTORICAL_REPRODUCTION",
+  "model_name": "B_direct_C1.5_no_dipole",
+  "target": "eb_eV",
+  "target_role": "label_only",
+  "historical_assets": {
+    "split_manifest": "/home/changliu/ExcitationNexus/equiformer_v3_model/manifests/split_paired_7313_seed42.json",
+    "teacher_table": "/home/changliu/ExcitationNexus/05_Phase2_Baseline_Protocol/tables/teacher_table_7316_all.csv",
+    "structure_registry": "/home/changliu/ExcitationNexus/DA_data/structure_60k_sorted.jsonl",
+    "pm6_energy_dir": "/home/changliu/ExcitationNexus/DA_data/semi/Energy",
+    "dft_energy_dir": "/home/changliu/ExcitationNexus/DA_data/DFT/Energy",
+    "historical_script": "/home/changliu/ExcitationNexus/11_Phase3D_Cheap_to_Expensive_Roadmap/scripts/run_stage2c_delta_learning.py",
+    "historical_predictions": "/home/changliu/ExcitationNexus/11_Phase3D_Cheap_to_Expensive_Roadmap/data/stage2c_delta_learning_outputs/stage2c_predictions_direct_C1.5_no_dipole.csv"
+  },
+  "expected_sha256": {
+    "split": "2bd3526b756122575cf7607bdc20b2ca16d558db6274df4e251edadeee369db5",
+    "teacher": "04a3148803b507c41e415083fd6078e788aefa1706c20ad1ca23cb7145d2a56d",
+    "structures": "9804e89ab76f67db4ce3e7950ef095eaf3873bfb6dc00ee0a6624861ae882bf4",
+    "historical_script": "e541d753583c9911d2628d21bd16d15d669347967dc6356f0dd60e63a27627a0",
+    "historical_predictions": "16a7e9a8c60176ae0f5c2f31ca6be10ece374967131996a1da6096b0d06818ea"
+  },
+  "hash_key_to_asset": {
+    "split": "split_manifest",
+    "teacher": "teacher_table",
+    "structures": "structure_registry",
+    "historical_script": "historical_script",
+    "historical_predictions": "historical_predictions"
+  },
+  "split": {
+    "name": "Layer G split_paired_7313_seed42",
+    "train": 5118,
+    "val": 1098,
+    "test": 1097,
+    "generate_new_split": false
+  },
+  "features": {
+    "tier0_rdkit_descriptors": 20,
+    "morgan_radius": 2,
+    "morgan_nbits": 512,
+    "morgan_include_chirality": false,
+    "pm6_no_dipole_columns": [
+      "pm6_homo_hartree",
+      "pm6_lumo_hartree",
+      "pm6_homo_lumo_gap_hartree",
+      "pm6_homo_lumo_gap_ev",
+      "pm6_pm6_energy_hartree",
+      "pm6_num_atoms",
+      "pm6_normal_termination",
+      "pm6_n_warnings",
+      "pm6_missing_flag"
+    ],
+    "total_features": 541,
+    "dipole_enabled": false,
+    "pm6_energy_historical_exception": "Retained only to reproduce the frozen old7313 protocol; not authorized for new15016 input."
+  },
+  "preprocessing": {
+    "imputer": "SimpleImputer(strategy=median)",
+    "scaler": "StandardScaler",
+    "fit_scope": "train_only_5118"
+  },
+  "model": {
+    "n_estimators": 500,
+    "max_depth": 6,
+    "learning_rate": 0.05,
+    "tree_method": "hist",
+    "device": "cuda",
+    "random_state": 42,
+    "verbosity": 0
+  },
+  "early_stopping": null,
+  "formal_runs": 1,
+  "hyperparameter_search": false,
+  "historical_result": {
+    "test_mae": 0.07020991162281436,
+    "test_rmse": 0.1033576733887722,
+    "test_r2": 0.7574868831988364,
+    "prediction_sha256": "16a7e9a8c60176ae0f5c2f31ca6be10ece374967131996a1da6096b0d06818ea"
+  },
+  "status_thresholds": {
+    "numeric_reproduction_max_abs_mae_delta_eV": 0.001,
+    "strict_requires_exact_id_aligned_prediction_vector": true
+  },
+  "selection_limitation": {
+    "historical_test_used_to_select_best_across_configs": true,
+    "this_run_is_fixed_config_only": true,
+    "classification": "historical reproduction",
+    "leakage_corrected_design": "Select feature family using train/validation only, freeze it, then evaluate a genuinely untouched test once. Because Layer G test has already been inspected, a new sealed confirmation split is required for a fully prospective claim."
+  },
+  "forbidden_inputs": [
+    "coulomb_attraction_eV",
+    "coulomb_attraction_au",
+    "tddft_*",
+    "multiwfn_*",
+    "wavelength and target-equivalent transforms",
+    "all dipole fields",
+    "final673 membership or labels",
+    "donor_id and acceptor_id"
+  ],
+  "final673_access": false,
+  "new15016_access": false,
+  "b2_1_run": false
+}

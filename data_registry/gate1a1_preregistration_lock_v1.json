@@ -1,0 +1,14 @@
+{
+  "aggregate_sha256": "8f00704c7fd09f1867af1ed41159e6ef433a9e647af73559532171e6eaa45725",
+  "files": {
+    "configs/gate1a1_cheap_reproduction_v1.json": "530a545e2f110af47ceee5ce8bd0d04b2db6c8659f582559fe610ecea3a3ebfe",
+    "data_registry/gate1a1_feature_columns_v1.json": "1e5f162f4dcec4c0118b6c858a07aec85872c1ec8dc4bb34acea10e0c1cd7e3e",
+    "data_registry/gate1a1_historical_asset_registry.json": "31044169a3a2085b5d9c3387fe99dbbc109b4372890b1311fba6eff20c0882b4",
+    "reports/gate1a1_reproduction_preregistration.md": "c8e04b61db0d3bf41722b720be1d2675ce7ed3de93bf7f0943786eb5928b4dfe"
+  },
+  "gate": "1-A1",
+  "locked_utc": "2026-07-19T06:31:18.063883+00:00",
+  "post_lock_policy": "v1 files must not be changed after formal training begins; corrections require v2",
+  "status": "FROZEN_BEFORE_TRAINING",
+  "version": "v1"
+}

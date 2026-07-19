@@ -1,0 +1,52 @@
+{
+  "version": "v1",
+  "generated_utc": "2026-07-19T06:14:47Z",
+  "assets": [
+    {
+      "role": "Layer G split",
+      "path": "/home/changliu/ExcitationNexus/equiformer_v3_model/manifests/split_paired_7313_seed42.json",
+      "sha256": "2bd3526b756122575cf7607bdc20b2ca16d558db6274df4e251edadeee369db5",
+      "counts": {"train": 5118, "val": 1098, "test": 1097}
+    },
+    {
+      "role": "historical labels",
+      "path": "/home/changliu/ExcitationNexus/05_Phase2_Baseline_Protocol/tables/teacher_table_7316_all.csv",
+      "sha256": "04a3148803b507c41e415083fd6078e788aefa1706c20ad1ca23cb7145d2a56d"
+    },
+    {
+      "role": "SMILES registry",
+      "path": "/home/changliu/ExcitationNexus/DA_data/structure_60k_sorted.jsonl",
+      "sha256": "9804e89ab76f67db4ce3e7950ef095eaf3873bfb6dc00ee0a6624861ae882bf4"
+    },
+    {
+      "role": "PM6 scalar directory",
+      "path": "/home/changliu/ExcitationNexus/DA_data/semi/Energy",
+      "coverage_observed": {"readable": 7309, "missing": 3, "parse_failure": 1},
+      "identity_note": "Embedded basename is the unique pre-renumbering alias; filename SID is validated by total-atom agreement against the current structure registry."
+    },
+    {
+      "role": "historical implementation",
+      "path": "/home/changliu/ExcitationNexus/11_Phase3D_Cheap_to_Expensive_Roadmap/scripts/run_stage2c_delta_learning.py",
+      "sha256": "e541d753583c9911d2628d21bd16d15d669347967dc6356f0dd60e63a27627a0"
+    },
+    {
+      "role": "historical prediction vector",
+      "path": "/home/changliu/ExcitationNexus/11_Phase3D_Cheap_to_Expensive_Roadmap/data/stage2c_delta_learning_outputs/stage2c_predictions_direct_C1.5_no_dipole.csv",
+      "sha256": "16a7e9a8c60176ae0f5c2f31ca6be10ece374967131996a1da6096b0d06818ea",
+      "rows": 1097
+    }
+  ],
+  "historical_environment": {
+    "python": "3.10.19",
+    "numpy": "2.2.6",
+    "pandas": "2.3.3",
+    "scikit_learn": "1.7.2",
+    "xgboost": "3.2.0",
+    "rdkit": "2025.09.6"
+  },
+  "current_environment_matches_historical": true,
+  "model_dump_available": false,
+  "complete_stage2c_run_log_available": false,
+  "prediction_vector_available": true,
+  "selection_limitation": "Historical Stage 2C selected best_config by minimum test MAE across multiple configurations."
+}

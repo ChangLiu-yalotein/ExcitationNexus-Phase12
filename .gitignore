@@ -46,6 +46,9 @@ events.out.tfevents.*
 
 # Runtime outputs (registries/reports remain tracked)
 runs/**
+!runs/gate1a1_cheap_reproduction/
+!runs/gate1a1_cheap_reproduction/*.json
+!runs/gate1a1_cheap_reproduction/*.csv
 tmp/
 temp/
 *.tmp

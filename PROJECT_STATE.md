@@ -1,6 +1,6 @@
 # Phase 12 project state
 
-Current stage: **GATE0D_DONE**; Gate 1-A baseline reproduction is ready under a new instruction.
+Current stage: **GATE1A1_REPRODUCED_STRICT**; Gate 1-A2 B2-1 seed42 reproduction requires a new instruction.
 
 ## Frozen facts
 
@@ -29,3 +29,11 @@ Six immutable target-blind grouped splits are frozen in `data_registry/SPLIT_REG
 No formal epoch, model comparison, checkpoint selection, final673 access, or frozen split modification occurred.
 
 Project and EquiformerV3 directories are not Git worktrees; source commit provenance remains unavailable and must not be fabricated.
+
+## Gate 1-A1 result
+
+- Historical `B_direct_C1.5_no_dipole` was reproduced once on physical GPU 0.
+- Test MAE/RMSE/R²: 0.07020991162281436 / 0.1033576733887722 / 0.7574868831988364 on 1,097 records.
+- New and historical prediction CSVs are byte-identical; SHA-256 `16a7e9a8c60176ae0f5c2f31ca6be10ece374967131996a1da6096b0d06818ea`.
+- The result is strict historical reproduction, not leakage-corrected confirmation: the old workflow inspected test metrics when selecting the no-dipole champion.
+- No B2-1, new15016, final673, extra seed, hyperparameter search, or checkpoint was run.

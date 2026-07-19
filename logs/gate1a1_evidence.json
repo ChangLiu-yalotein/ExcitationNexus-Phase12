@@ -1,0 +1,149 @@
+{
+  "asset_audit": {
+    "final673_accessed": false,
+    "historical_complete_run_log_found": false,
+    "historical_model_dump_found": false,
+    "historical_prediction_order_matches_test": true,
+    "historical_prediction_rows": 1097,
+    "historical_selection_limitation": "The Stage 2C script selected best_config using test MAE across configurations; the fixed B reproduction is historical reproduction, not leakage-corrected model selection.",
+    "observed_hashes": {
+      "historical_predictions": "16a7e9a8c60176ae0f5c2f31ca6be10ece374967131996a1da6096b0d06818ea",
+      "historical_script": "e541d753583c9911d2628d21bd16d15d669347967dc6356f0dd60e63a27627a0",
+      "split": "2bd3526b756122575cf7607bdc20b2ca16d558db6274df4e251edadeee369db5",
+      "structures": "9804e89ab76f67db4ce3e7950ef095eaf3873bfb6dc00ee0a6624861ae882bf4",
+      "teacher": "04a3148803b507c41e415083fd6078e788aefa1706c20ad1ca23cb7145d2a56d"
+    },
+    "pm6_basename_mismatch_count": 7309,
+    "pm6_basename_mismatch_ids_sha256": "57c56c20a7d41a867224251819bf0f91e257bbe6379596421233a7ab687c299c",
+    "pm6_identity_crosscheck": {
+      "atom_count_comparable": 7296,
+      "interpretation": "The embedded basename is a stale pre-renumbering alias. Current filename SID is supported by total-atom agreement and is the frozen model identity.",
+      "matches_current_filename_sid_structure": 7296,
+      "matches_embedded_old_basename_structure": 2,
+      "pm6_dft_embedded_old_basename_equal": 7309
+    },
+    "pm6_missing": [
+      "D-132_A-138",
+      "D-157_A-107",
+      "D-83_A-102"
+    ],
+    "pm6_parse_failures": [
+      "D-83_A-262"
+    ],
+    "pm6_present": 7309,
+    "python": "3.10.19",
+    "split_counts": {
+      "test": 1097,
+      "train": 5118,
+      "val": 1098
+    },
+    "split_unique": 7313,
+    "status": "ASSET_AUDIT_PASS",
+    "structure_coverage": 7313,
+    "teacher_coverage": 7313
+  },
+  "cpu_smoke": {
+    "features": 541,
+    "prediction_count": 8,
+    "records": 7313,
+    "status": "CPU_SMOKE_PASS",
+    "test_used": false
+  },
+  "formal_run": {
+    "environment": {
+      "cuda_visible_devices": "0",
+      "numpy": "2.2.6",
+      "pandas": "2.3.3",
+      "physical_gpu_id": "0",
+      "platform": "Linux-6.8.0-86-generic-x86_64-with-glibc2.39",
+      "python": "3.10.19",
+      "rdkit": "2025.09.6",
+      "scikit_learn": "1.7.2",
+      "xgboost": "3.2.0"
+    },
+    "formal_models_trained": 1,
+    "metrics": {
+      "absolute_mae_delta": 0.0,
+      "checkpoint_saved": false,
+      "feature_columns_sha256": "ac31990f3a45f2dad441cbabe94601094e445d7686ed65982404f21fb81e252a",
+      "feature_count": 541,
+      "final673_accessed": false,
+      "historical_test_mae": 0.07020991162281436,
+      "historical_test_selection_limitation": true,
+      "imputer_fit_scope": "train_only_5118",
+      "new_prediction_sha256": "16a7e9a8c60176ae0f5c2f31ca6be10ece374967131996a1da6096b0d06818ea",
+      "old_new_exact_prediction_vector_match": true,
+      "old_new_max_abs_prediction_delta": 5.7189941449209414e-08,
+      "old_prediction_sha256": "16a7e9a8c60176ae0f5c2f31ca6be10ece374967131996a1da6096b0d06818ea",
+      "peak_process_gpu_memory_mib_observed": 370,
+      "scaler_fit_scope": "train_only_5118",
+      "status": "REPRODUCED_STRICT",
+      "strict_evidence": "Serialized ID-aligned prediction CSV is byte-identical to the historical vector.",
+      "test": {
+        "mae": 0.07020991162281436,
+        "n_records": 1097,
+        "r2": 0.7574868831988364,
+        "rmse": 0.1033576733887722
+      },
+      "test_used_for_fit_or_early_stopping": false,
+      "train": {
+        "mae": 0.03243142377937654,
+        "n_records": 5118,
+        "r2": 0.9485807200997725,
+        "rmse": 0.04404783813039372
+      },
+      "val": {
+        "mae": 0.0719305354805247,
+        "n_records": 1098,
+        "r2": 0.6809708158025116,
+        "rmse": 0.1124846772750741
+      },
+      "wall_seconds": 43.113010614179075
+    },
+    "model_parameters": {
+      "device": "cuda",
+      "learning_rate": 0.05,
+      "max_depth": 6,
+      "n_estimators": 500,
+      "random_state": 42,
+      "tree_method": "hist",
+      "verbosity": 0
+    },
+    "no_model_selection_or_hyperparameter_search": true,
+    "split_counts": {
+      "test": 1097,
+      "train": 5118,
+      "val": 1098
+    },
+    "status": "REPRODUCED_STRICT"
+  },
+  "gate": "1-A1",
+  "preregistration_lock": {
+    "aggregate_sha256": "8f00704c7fd09f1867af1ed41159e6ef433a9e647af73559532171e6eaa45725",
+    "files": {
+      "configs/gate1a1_cheap_reproduction_v1.json": "530a545e2f110af47ceee5ce8bd0d04b2db6c8659f582559fe610ecea3a3ebfe",
+      "data_registry/gate1a1_feature_columns_v1.json": "1e5f162f4dcec4c0118b6c858a07aec85872c1ec8dc4bb34acea10e0c1cd7e3e",
+      "data_registry/gate1a1_historical_asset_registry.json": "31044169a3a2085b5d9c3387fe99dbbc109b4372890b1311fba6eff20c0882b4",
+      "reports/gate1a1_reproduction_preregistration.md": "c8e04b61db0d3bf41722b720be1d2675ce7ed3de93bf7f0943786eb5928b4dfe"
+    },
+    "gate": "1-A1",
+    "locked_utc": "2026-07-19T06:31:18.063883+00:00",
+    "post_lock_policy": "v1 files must not be changed after formal training begins; corrections require v2",
+    "status": "FROZEN_BEFORE_TRAINING",
+    "version": "v1"
+  },
+  "repository_private_verified": {
+    "anonymous_http_status": 404,
+    "verified_utc": "2026-07-19T06:14:47Z"
+  },
+  "scope": {
+    "b2_1_run": false,
+    "checkpoint_saved": false,
+    "final673_accessed": false,
+    "formal_models_trained": 1,
+    "hyperparameter_search": false,
+    "new15016_accessed": false
+  },
+  "status": "REPRODUCED_STRICT",
+  "strict_basis": "New and historical ID-aligned prediction CSVs are byte-identical and have the same SHA-256."
+}

@@ -45,7 +45,9 @@ export PYTHONPATH="$ROOT/src:${PYTHONPATH:-}"
 
 git add -- .gitignore AGENTS.md README.md pyproject.toml \
   src tests scripts configs data_registry manifests reports logs \
-  PROJECT_STATE.md TODO.md DECISIONS.md RUN_REGISTRY.csv
+  PROJECT_STATE.md TODO.md DECISIONS.md RUN_REGISTRY.csv \
+  runs/gate1a1_cheap_reproduction/*.json \
+  runs/gate1a1_cheap_reproduction/*.csv
 
 if git diff --cached --quiet; then
   echo "no changes; checkpoint skipped"
@@ -61,7 +63,11 @@ if git remote get-url origin >/dev/null 2>&1; then
 fi
 
 git commit -m "gate(${GATE_ID}): ${OUTCOME}"
-tag="$(printf '%s' "$GATE_ID" | tr '[:upper:]' '[:lower:]')-done-$(date -u +%Y%m%d)"
+if [[ "${GATE_ID,,}" == "gate1a1" ]]; then
+  tag="gate1a1-cheap-reproduction-$(date -u +%Y%m%d)"
+else
+  tag="$(printf '%s' "$GATE_ID" | tr '[:upper:]' '[:lower:]')-done-$(date -u +%Y%m%d)"
+fi
 if git rev-parse "$tag" >/dev/null 2>&1; then
   echo "published tag already exists: $tag" >&2; exit 8
 fi

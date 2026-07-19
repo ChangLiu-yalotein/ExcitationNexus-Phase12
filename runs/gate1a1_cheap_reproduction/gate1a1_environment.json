@@ -1,0 +1,11 @@
+{
+  "cuda_visible_devices": "0",
+  "numpy": "2.2.6",
+  "pandas": "2.3.3",
+  "physical_gpu_id": "0",
+  "platform": "Linux-6.8.0-86-generic-x86_64-with-glibc2.39",
+  "python": "3.10.19",
+  "rdkit": "2025.09.6",
+  "scikit_learn": "1.7.2",
+  "xgboost": "3.2.0"
+}
