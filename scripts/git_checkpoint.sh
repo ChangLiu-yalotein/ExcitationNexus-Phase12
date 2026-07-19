@@ -58,7 +58,8 @@ git add -- .gitignore AGENTS.md README.md pyproject.toml \
   runs/gate1a3_b21_multiseed/published/*.csv \
   runs/gate1b1_new_iid_cheap_baselines/test_unlock_v1.json \
   runs/gate1b1_new_iid_cheap_baselines/published/*.json \
-  runs/gate1b1_new_iid_cheap_baselines/published/*.csv
+  runs/gate1b1_new_iid_cheap_baselines/published/*.csv \
+  runs/gate1b2_3d_admission/published/*.json
 
 if git diff --cached --quiet; then
   echo "no changes; checkpoint skipped"
@@ -82,6 +83,8 @@ elif [[ "${GATE_ID,,}" == "gate1a3" ]]; then
   tag="gate1a3-b21-multiseed-reproduction-$(date -u +%Y%m%d)"
 elif [[ "${GATE_ID,,}" == "gate1b1" ]]; then
   tag="gate1b1-new-iid-cheap-baselines-$(date -u +%Y%m%d)"
+elif [[ "${GATE_ID,,}" == "gate1b2" ]]; then
+  tag="gate1b2-3d-baseline-admission-$(date -u +%Y%m%d)"
 else
   tag="$(printf '%s' "$GATE_ID" | tr '[:upper:]' '[:lower:]')-done-$(date -u +%Y%m%d)"
 fi

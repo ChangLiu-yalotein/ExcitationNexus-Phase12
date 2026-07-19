@@ -1,0 +1,100 @@
+/home/changliu/ExcitationNexus/12_Phase4_Multitask_OOD_Training/scripts/gate1b2_train_smoke_3d.py:169: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:835.)
+  two_batch_losses.append(float(loss))
+{
+  "status": "GPU_ADMISSION_SMOKE_COMPLETE",
+  "model": "m3_dau_shared",
+  "physical_gpu": 1,
+  "seed": 42,
+  "parameters": 36461,
+  "two_batch_losses": [
+    0.6929956078529358,
+    0.5186745524406433
+  ],
+  "parameter_changed": true,
+  "invariance": {
+    "translation_max_abs_delta": 1.7881393432617188e-07,
+    "rotation_max_abs_delta": 1.1920928955078125e-07
+  },
+  "epochs": [
+    {
+      "epoch": 1,
+      "train_loss": 0.42491900830646046,
+      "validation": {
+        "valid_count": 128,
+        "record_mae": 0.14273058844264597,
+        "record_rmse": 0.17620792153617224,
+        "record_r2": {
+          "value": -0.02479109726654327,
+          "reason": null
+        },
+        "group_macro_mae": 0.14273058844264597,
+        "group_macro_rmse": 0.17620792153617224,
+        "group_macro_r2": {
+          "value": -0.02479109726654327,
+          "reason": null
+        },
+        "spearman": 0.2290789232741256,
+        "kendall": 0.1316437007874016,
+        "worst_decile_error": 0.35519332266770876,
+        "worst_group_mae": 0.4344257712364197
+      }
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.4105075063998811,
+      "validation": {
+        "valid_count": 128,
+        "record_mae": 0.1374238779535517,
+        "record_rmse": 0.1701805202029235,
+        "record_r2": {
+          "value": 0.04411822662346443,
+          "reason": null
+        },
+        "group_macro_mae": 0.1374238779535517,
+        "group_macro_rmse": 0.1701805202029235,
+        "group_macro_r2": {
+          "value": 0.04411822662346443,
+          "reason": null
+        },
+        "spearman": 0.373586568394067,
+        "kendall": 0.2541830708661418,
+        "worst_decile_error": 0.3563367644181618,
+        "worst_group_mae": 0.4786779284477234
+      }
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.4187434366904199,
+      "validation": {
+        "valid_count": 128,
+        "record_mae": 0.13960151781793684,
+        "record_rmse": 0.17232278897629133,
+        "record_r2": {
+          "value": 0.019901066342138063,
+          "reason": null
+        },
+        "group_macro_mae": 0.13960151781793684,
+        "group_macro_rmse": 0.17232278897629133,
+        "group_macro_r2": {
+          "value": 0.019901066342138063,
+          "reason": null
+        },
+        "spearman": 0.35179568760300306,
+        "kendall": 0.23302165354330712,
+        "worst_decile_error": 0.35700076245344603,
+        "worst_group_mae": 0.4685431718826294
+      }
+    }
+  ],
+  "wall_seconds_3epochs": 373.239904277958,
+  "train_records": 512,
+  "val_records": 128,
+  "graphs_per_second_train_approx": 4.115315598345335,
+  "peak_gpu_memory_mib": 76.19482421875,
+  "peak_rss_kib": 1855168,
+  "checkpoint_sha256": "74200e3030fd3294477ea0749968d7077fc571c3bc284fffb0795053c4c828a8",
+  "checkpoint_scientific_status": "PLUMBING_ONLY",
+  "test_target_accessed": false,
+  "final673_accessed": false
+}

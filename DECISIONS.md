@@ -79,3 +79,13 @@
 - Freeze all validation/model hashes before a one-time test unlock; never rerun or select models from test strata.
 - Treat the identical three-seed XGBoost vectors as evidence that the inherited no-subsampling configuration is deterministic, not as independent stochastic replicates.
 - Record that C1.5-safe did not improve MAE over C0 under the frozen baseline; make no PM6-orbital gain claim.
+
+## Gate 1-B2 decisions
+
+- Keep original D/A/unknown annotations as the primary analysis; allow uniquely graph-resolved roles only as a predeclared sensitivity view.
+- Preserve all 387 empty-donor records and explicit unknown pooling. Never fold unknown into donor/acceptor or drop an unresolved record.
+- Classify the 189 records with multiple element/bond-equivalent atom sets as `UNRESOLVED_AMBIGUOUS`; do not select a role map from performance.
+- Restrict M3 inputs to atomic number, DFT S0 coordinates, explicit original role, distances, and role-presence flags; exclude every scalar quantum property and target equivalent.
+- Use the same backbone family and optimization contract for M3-Merged and M3-DAU-Shared; parameter difference must remain within 5%.
+- Name the separated model `M3-DAU-Shared`; it is not old B2-1. Its donor/acceptor/unknown calls share weights and empty roles use zero embeddings with presence flags.
+- Treat Gate 1-B2 checkpoints and three-epoch validation as plumbing-only. Formal hyperparameters and test access remain unfrozen until Gate 1-B3 preregistration.

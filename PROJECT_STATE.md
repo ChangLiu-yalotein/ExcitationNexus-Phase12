@@ -1,6 +1,6 @@
 # Phase 12 project state
 
-Current stage: **GATE1B1_DONE**; leakage-safe new15016 grouped-IID cheap baselines are frozen.
+Current stage: **GATE1B2_READY_FOR_FULL_TRAINING**; role-safe Merged/DAU 3D baselines passed admission.
 
 ## Frozen facts
 
@@ -70,3 +70,12 @@ Project and EquiformerV3 directories are not Git worktrees; source commit proven
 - C1.5-safe did not improve group-macro MAE over C0, so no PM6-orbital benefit is claimed.
 - Test targets were accessed exactly once after all eight models, validation metrics, and hashes were frozen; no test-guided retraining occurred.
 - Results describe `J_eh_screened_eV_eps3p5 proxy` on new15016 grouped IID only, not experimental Eb, catalytic performance, or direct progress over old Layer G.
+
+## Gate 1-B2 result
+
+- Original role classes reproduce 14,263 pure D/A, 366 D+A+unknown, and 387 empty-donor+unknown records.
+- Conservative label-free graph governance resolves 198/387 empty-donor records to one unique/symmetry-equivalent atom set; 189 remain ambiguous. Original roles are primary, resolved roles sensitivity-only, and no record is removed.
+- The target-free DFT cache/registry covers 15,016 records, 3,524,839 atoms, and 3,738,352 source bonds; maximum PDB/JSON rounding delta is within 0.000501 Å.
+- M3-Merged and M3-DAU-Shared share a distance-only backbone and differ by only 0.621% in parameters (36,689 vs 36,461).
+- Twelve CPU tests and both GPU two-batch/three-epoch smokes passed with finite gradients, real parameter changes, and translation/rotation/permutation invariance.
+- Three-epoch validation is plumbing-only and cannot rank architectures. No test target, final673, formal multi-seed run, scalar quantum input, or paper checkpoint was used.

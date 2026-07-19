@@ -65,6 +65,10 @@ runs/gate1b1_new_iid_cheap_baselines/**
 !runs/gate1b1_new_iid_cheap_baselines/published/
 !runs/gate1b1_new_iid_cheap_baselines/published/*.json
 !runs/gate1b1_new_iid_cheap_baselines/published/*.csv
+!runs/gate1b2_3d_admission/
+runs/gate1b2_3d_admission/**
+!runs/gate1b2_3d_admission/published/
+!runs/gate1b2_3d_admission/published/*.json
 tmp/
 temp/
 *.tmp

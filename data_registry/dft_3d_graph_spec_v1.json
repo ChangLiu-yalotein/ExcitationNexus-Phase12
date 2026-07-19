@@ -1,0 +1,37 @@
+{
+  "allowed_fields": [
+    "element/atomic_number",
+    "DFT S0 coordinates",
+    "explicit original role",
+    "bond topology"
+  ],
+  "atoms": 3524839,
+  "bonds": 3738352,
+  "cache_path": "/home/changliu/ExcitationNexus/12_Phase4_Multitask_OOD_Training/runs/gate1b2_3d_admission/dft_graph_cache_v1.npz",
+  "cache_sha256": "d7ca8d4ad6dda694e202e0ff94f5822d6b72404f8e5997acf986ee45f0202aa5",
+  "cache_uploaded_to_github": false,
+  "created_utc": "2026-07-19T16:18:12.277872+00:00",
+  "final673_accessed": false,
+  "forbidden_fields": [
+    "DFT scalar properties",
+    "PM6 scalar properties",
+    "TDDFT/Multiwfn",
+    "target",
+    "IDs as model inputs",
+    "partition embedding"
+  ],
+  "manifest_sha256": "f4572f2c1896d4228dd9eff67220adb7d0a02ad79b70c66766e6da876541c3f2",
+  "partition_counts": {
+    "historical_quarantine": 1,
+    "test": 2319,
+    "train": 10387,
+    "val": 2309
+  },
+  "pdb_json_max_delta_angstrom": 0.0005000000000006111,
+  "records": 15016,
+  "registry_path": "/home/changliu/ExcitationNexus/12_Phase4_Multitask_OOD_Training/data_registry/dft_3d_graph_registry_v1.parquet",
+  "registry_sha256": "46cac9b4851d48251da7b2e363790df58b32f48cfebb9c014a3996ff1d97c6b5",
+  "role_manifest_sha256": "07c5de642d9560e002fd0d462f07fd367bf5e89e7bc01b20ef20be9543ece2ea",
+  "target_fields_read": false,
+  "version": "v1"
+}

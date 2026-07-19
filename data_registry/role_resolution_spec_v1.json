@@ -1,0 +1,24 @@
+{
+  "classes": {
+    "D_A_unknown": 366,
+    "empty_donor_unknown": 387,
+    "pure_DA": 14263
+  },
+  "created_utc": "2026-07-19T16:15:23.651110+00:00",
+  "empty_donor_status": {
+    "RESOLVED_UNIQUE_OR_SYMMETRY_EQUIVALENT": 198,
+    "UNRESOLVED_AMBIGUOUS": 189
+  },
+  "final673_accessed": false,
+  "formal_charge_boundary": "component formal charge is checked; charged components are insufficient because DFT atom JSON lacks per-atom formal charge",
+  "hydrogen_rule": "inherit donor only when bonded exclusively to resolved donor heavy atoms",
+  "manifest_sha256": "f4572f2c1896d4228dd9eff67220adb7d0a02ad79b70c66766e6da876541c3f2",
+  "mapping": "donor non-placeholder neutral element formula constrains original-unknown induced element/bond graph; complete VF2 mappings into full heavy graph",
+  "original_roles_are_primary": true,
+  "resolution_rule": "RESOLVED only if all symmetry mappings yield one atom-index set; second distinct set is ambiguous",
+  "resolved_roles_sensitivity_only": true,
+  "table_sha256": "e7587b1546039f099a4dbd0d352e98885bb2ebdbdcfa18884dd4355eed815a83",
+  "target_fields_read": false,
+  "unknown_never_inferred": true,
+  "version": "v1"
+}

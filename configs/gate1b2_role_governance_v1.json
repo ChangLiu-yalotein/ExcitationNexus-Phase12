@@ -1,0 +1,14 @@
+{
+  "version": "v1",
+  "records": 15016,
+  "empty_donor_unknown_expected": 387,
+  "original_roles_primary": true,
+  "resolved_roles_sensitivity_only": true,
+  "unknown_never_inferred": true,
+  "resolution_method": "component-formula-constrained full-graph VF2",
+  "charged_component_policy": "UNRESOLVED_INSUFFICIENT_EVIDENCE",
+  "ambiguous_mapping_policy": "retain original unknown",
+  "sidecar_conflict_policy": "retain explicit conflict flag",
+  "target_fields_allowed": false,
+  "final673_access": false
+}

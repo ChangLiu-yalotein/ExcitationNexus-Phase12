@@ -1,0 +1,36 @@
+{
+  "gate": "1-B2",
+  "status": "GATE1B2_READY_FOR_FULL_TRAINING",
+  "records": 15016,
+  "atoms": 3524839,
+  "bonds": 3738352,
+  "graph_cache_sha256": "d7ca8d4ad6dda694e202e0ff94f5822d6b72404f8e5997acf986ee45f0202aa5",
+  "graph_cache_uploaded_to_github": false,
+  "graph_registry_sha256": "46cac9b4851d48251da7b2e363790df58b32f48cfebb9c014a3996ff1d97c6b5",
+  "role_manifest_sha256": "07c5de642d9560e002fd0d462f07fd367bf5e89e7bc01b20ef20be9543ece2ea",
+  "role_resolution": {
+    "empty_donor_unknown": 387,
+    "resolved_unique_or_symmetry_equivalent": 198,
+    "unresolved_ambiguous": 189,
+    "original_roles_primary": true,
+    "resolved_roles_sensitivity_only": true
+  },
+  "models": {
+    "m3_merged": {
+      "parameters": 36689,
+      "physical_gpu": 0,
+      "result_sha256": "f8c5a3700ed3825c6a717e0f82c6b43ebd261dce4ab2ee8e263c3813387f87de"
+    },
+    "m3_dau_shared": {
+      "parameters": 36461,
+      "physical_gpu": 1,
+      "result_sha256": "4e5917a24af95e8c17feeb16573706907f098e12b9acd0c1f1c21cc507304b40"
+    }
+  },
+  "cpu_contract_tests": 12,
+  "parameter_relative_difference": 0.006214396685655101,
+  "test_target_accessed": false,
+  "final673_accessed": false,
+  "formal_training_started": false,
+  "checkpoints_scientific_status": "PLUMBING_ONLY"
+}

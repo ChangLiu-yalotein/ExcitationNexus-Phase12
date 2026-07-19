@@ -1,0 +1,31 @@
+{
+  "version": "v1",
+  "status": "ADMISSION_SMOKE_ONLY_NOT_FORMAL_TRAINING",
+  "manifest": "manifests/split_iid_group_seed42_v1.csv",
+  "manifest_sha256": "f4572f2c1896d4228dd9eff67220adb7d0a02ad79b70c66766e6da876541c3f2",
+  "table": "/home/changliu/ExcitationNexus_Data_v2/tables/molecule_values_v3.parquet",
+  "table_sha256": "e7587b1546039f099a4dbd0d352e98885bb2ebdbdcfa18884dd4355eed815a83",
+  "graph_cache": "runs/gate1b2_3d_admission/dft_graph_cache_v1.npz",
+  "graph_registry": "data_registry/dft_3d_graph_registry_v1.parquet",
+  "primary_target_from_contract": "tddft_coulomb_attraction_eV_eps3p5_proxy",
+  "primary_report_name": "J_eh_screened_eV_eps3p5 proxy",
+  "input_fields": ["atomic_number", "dft_s0_coordinates", "explicit_original_role", "radius_distance", "role_presence_flags"],
+  "forbidden_inputs": ["all_scalar_quantum_properties", "TDDFT", "Multiwfn", "target_equivalents", "component_ID_lookup", "partition_embedding", "final673"],
+  "model_common": {"hidden_dim": 48, "num_rbf": 16, "layers": 2, "cutoff_angstrom": 5.0, "max_neighbors": 32},
+  "models": {
+    "m3_merged": {"head_width": 128},
+    "m3_dau_shared": {"head_width": 44, "backbone_invocations_per_forward": 3}
+  },
+  "optimizer": {"name": "AdamW", "learning_rate": 0.001, "weight_decay": 0.0001},
+  "loss": "group-weighted SmoothL1 in train-normalized target space",
+  "seed": 42,
+  "batch_size": 4,
+  "gradient_clip_norm": 5.0,
+  "max_epochs": 3,
+  "smoke_train_records": 512,
+  "smoke_val_records": 128,
+  "subset_rule": "lowest SHA-256(molecule_id) within partition; target-blind",
+  "test_target_access": false,
+  "checkpoint_status": "plumbing-only; not a paper checkpoint",
+  "formal_hyperparameters_frozen": false
+}
