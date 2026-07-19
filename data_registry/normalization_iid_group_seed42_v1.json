@@ -1,0 +1,216 @@
+{
+  "input_tiers": {
+    "tier1_pm6_3d": [
+      "pm6_homo_hartree",
+      "pm6_lumo_hartree",
+      "pm6_gap_ev"
+    ],
+    "tier2_dft_3d": [
+      "dft_homo_hartree",
+      "dft_lumo_hartree",
+      "dft_gap_ev",
+      "dft_dipole_debye"
+    ]
+  },
+  "inputs": {
+    "dft_dipole_debye": {
+      "count": 10387,
+      "effective_weight": 10248.0,
+      "fallback": null,
+      "mean": 5.401223185011709,
+      "std": 3.053947403012058
+    },
+    "dft_gap_ev": {
+      "count": 10387,
+      "effective_weight": 10248.0,
+      "fallback": null,
+      "mean": 2.302182855191256,
+      "std": 0.45978989595137376
+    },
+    "dft_homo_hartree": {
+      "count": 10387,
+      "effective_weight": 10248.0,
+      "fallback": null,
+      "mean": -0.19402881245120995,
+      "std": 0.009278823358822613
+    },
+    "dft_lumo_hartree": {
+      "count": 10387,
+      "effective_weight": 10248.0,
+      "fallback": null,
+      "mean": -0.10942512099921937,
+      "std": 0.016021286524553223
+    },
+    "pm6_gap_ev": {
+      "count": 10387,
+      "effective_weight": 10248.0,
+      "fallback": null,
+      "mean": 6.1898107254480665,
+      "std": 0.469586554755237
+    },
+    "pm6_homo_hartree": {
+      "count": 10387,
+      "effective_weight": 10248.0,
+      "fallback": null,
+      "mean": -0.3053342847384855,
+      "std": 0.010225855453971967
+    },
+    "pm6_lumo_hartree": {
+      "count": 10387,
+      "effective_weight": 10248.0,
+      "fallback": null,
+      "mean": -0.07786293618266979,
+      "std": 0.015599368025710141
+    }
+  },
+  "manifest_sha256": "f4572f2c1896d4228dd9eff67220adb7d0a02ad79b70c66766e6da876541c3f2",
+  "pm6_dipole_enabled": false,
+  "scope": "partition=train only",
+  "split_name": "iid_group_seed42_v1",
+  "table_sha256": "e7587b1546039f099a4dbd0d352e98885bb2ebdbdcfa18884dd4355eed815a83",
+  "targets": {
+    "tddft_D_index_angstrom": {
+      "count": 10387,
+      "effective_weight": 10248.0,
+      "fallback": null,
+      "mean": 4.282885050741608,
+      "std": 4.125201178636372
+    },
+    "tddft_EDI": {
+      "count": 10387,
+      "effective_weight": 10248.0,
+      "fallback": null,
+      "mean": 4.830779420374707,
+      "std": 1.0592258870694171
+    },
+    "tddft_HDI": {
+      "count": 10387,
+      "effective_weight": 10248.0,
+      "fallback": null,
+      "mean": 4.789760603695029,
+      "std": 1.2792812883374984
+    },
+    "tddft_H_CT_angstrom": {
+      "count": 10387,
+      "effective_weight": 10248.0,
+      "fallback": null,
+      "mean": 5.443555051392141,
+      "std": 2.136065210419622
+    },
+    "tddft_Q_D_to_A_au": {
+      "count": 10387,
+      "effective_weight": 10248.0,
+      "fallback": null,
+      "mean": -0.0031025541406453287,
+      "std": 0.0015657573946913992
+    },
+    "tddft_Sm": {
+      "count": 10387,
+      "effective_weight": 10248.0,
+      "fallback": null,
+      "mean": 0.3771537343058808,
+      "std": 0.15102141018455567
+    },
+    "tddft_Sr": {
+      "count": 10387,
+      "effective_weight": 10248.0,
+      "fallback": null,
+      "mean": 0.6500700655412438,
+      "std": 0.17272302220399027
+    },
+    "tddft_coulomb_attraction_au": {
+      "count": 10387,
+      "effective_weight": 10248.0,
+      "fallback": null,
+      "mean": 0.08496968244210251,
+      "std": 0.02233423678688929
+    },
+    "tddft_coulomb_attraction_eV": {
+      "count": 10387,
+      "effective_weight": 10248.0,
+      "fallback": null,
+      "mean": 2.3121425301522245,
+      "std": 0.6077456070332857
+    },
+    "tddft_coulomb_attraction_eV_eps3p5_proxy": {
+      "count": 10387,
+      "effective_weight": 10248.0,
+      "fallback": null,
+      "mean": 0.6606121514720642,
+      "std": 0.17364160200951018
+    },
+    "tddft_dipole_change_norm_au": {
+      "count": 10387,
+      "effective_weight": 10248.0,
+      "fallback": null,
+      "mean": 8.094999225539942,
+      "std": 7.804533025578476
+    },
+    "tddft_electron_on_acceptor_fraction": {
+      "count": 5376,
+      "effective_weight": 5308.0,
+      "fallback": null,
+      "mean": 0.670834561076925,
+      "std": 0.3965605630942458
+    },
+    "tddft_electron_on_donor_fraction": {
+      "count": 5376,
+      "effective_weight": 5308.0,
+      "fallback": null,
+      "mean": 0.32809985947592807,
+      "std": 0.39639099920912424
+    },
+    "tddft_excitation_energy_ev": {
+      "count": 10387,
+      "effective_weight": 10248.0,
+      "fallback": null,
+      "mean": 2.502650142304189,
+      "std": 0.33944788975191026
+    },
+    "tddft_hole_on_acceptor_fraction": {
+      "count": 5376,
+      "effective_weight": 5308.0,
+      "fallback": null,
+      "mean": 0.3996613835712829,
+      "std": 0.38148563808538616
+    },
+    "tddft_hole_on_donor_fraction": {
+      "count": 5376,
+      "effective_weight": 5308.0,
+      "fallback": null,
+      "mean": 0.5982399981353659,
+      "std": 0.3828596371566305
+    },
+    "tddft_oscillator_strength": {
+      "count": 10387,
+      "effective_weight": 10248.0,
+      "fallback": null,
+      "mean": 1.809402552530575,
+      "std": 1.0108955497633259
+    },
+    "tddft_t_index_angstrom": {
+      "count": 10387,
+      "effective_weight": 10248.0,
+      "fallback": null,
+      "mean": -1.1606691956154047,
+      "std": 4.271172073592155
+    },
+    "tddft_transition_dipole_au": {
+      "count": 10387,
+      "effective_weight": 10248.0,
+      "fallback": null,
+      "mean": 4.65050127934485,
+      "std": 2.2897951442374977
+    },
+    "tddft_wavelength_nm": {
+      "count": 10387,
+      "effective_weight": 10248.0,
+      "fallback": null,
+      "mean": 505.3418497918292,
+      "std": 76.30951859582085
+    }
+  },
+  "train_effective_structure_weight": 10248.0,
+  "train_records": 10387,
+  "weighting": "group_weight"
+}

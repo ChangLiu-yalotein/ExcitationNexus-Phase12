@@ -1,0 +1,32 @@
+{
+  "batch_size": 4,
+  "batches": 2,
+  "checkpoint_saved": false,
+  "ddp_used": false,
+  "dtype": "float32",
+  "epoch_run": false,
+  "gpu_name": "NVIDIA GeForce RTX 3090",
+  "gradients_finite": true,
+  "loss_finite": true,
+  "losses": [
+    0.9885917901992798,
+    0.5924403667449951
+  ],
+  "output_shape_per_task": [
+    4
+  ],
+  "output_task_count": 17,
+  "parameter_changed": true,
+  "peak_allocated_bytes": 34295296,
+  "peak_allocated_gib": 0.03193998336791992,
+  "peak_reserved_bytes": 48234496,
+  "peak_reserved_gib": 0.044921875,
+  "physical_gpu_id": 0,
+  "primary_head_gradient_nonzero": true,
+  "process_device": "cuda:0",
+  "rotation_invariant": true,
+  "shared_trunk_gradient_nonzero": true,
+  "status": "GPU_DONE",
+  "translation_invariant": true,
+  "wall_seconds": 1.6428935527801514
+}

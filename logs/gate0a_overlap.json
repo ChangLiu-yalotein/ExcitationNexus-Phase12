@@ -1,0 +1,53 @@
+{
+  "set_sizes": {
+    "new15016": 15016,
+    "old7316": 7316,
+    "external2698": 2698,
+    "final673": 673,
+    "legacy3371": 3371
+  },
+  "normalized_id_intersections": {
+    "new_old": 0,
+    "new_external": 0,
+    "new_final": 0,
+    "new_legacy": 0,
+    "old_external": 0,
+    "external_final": 0,
+    "legacy_external": 2698,
+    "legacy_final": 673
+  },
+  "rdkit_canonical_smiles_intersections": {
+    "new_old": 17,
+    "new_external": 1,
+    "new_final": 0,
+    "new_legacy": 1,
+    "old_external": 17,
+    "external_final": 18,
+    "legacy_external": 2659,
+    "legacy_final": 670
+  },
+  "row_level_identity_overlap": {
+    "new_old": 17,
+    "new_external": 1,
+    "new_final": 0,
+    "new_legacy": 1,
+    "old_rows_matching_external": 17,
+    "external_rows_matching_old": 17,
+    "external_rows_matching_final": 18,
+    "final_rows_matching_external": 18,
+    "legacy_rows_matching_external": 2716,
+    "external_rows_matching_legacy": 2698,
+    "legacy_rows_matching_final": 691,
+    "final_rows_matching_legacy": 673
+  },
+  "identity_method": [
+    "normalized molecule_id: D-<n>_A-<n> and D<n>_A<n> mapped to D<n>_A<n>",
+    "RDKit canonical SMILES after Chem.RemoveHs, isomericSmiles=True, SHA-256"
+  ],
+  "rdkit_version": "2025.09.6",
+  "registry_rows_parsed": 64543,
+  "registry_malformed_rows": 0,
+  "historical_ids_with_registry_smiles": 10687,
+  "historical_ids_without_registry_smiles": 0,
+  "historical_smiles_canonicalization_failures": 0
+}

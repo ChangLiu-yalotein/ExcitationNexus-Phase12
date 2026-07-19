@@ -1,0 +1,7 @@
+{
+  "split_version": "v1",
+  "preregistration_path": "configs/gate0c_split_preregistration_v1.json",
+  "preregistration_sha256": "4ba010e21a600a9ea1552eeb88d791b68e0898ce258373ee120d9ea72282c45a",
+  "locked_utc": "2026-07-18T00:00:00Z",
+  "lock_policy": "immutable_v1; corrections require an explicit v2"
+}

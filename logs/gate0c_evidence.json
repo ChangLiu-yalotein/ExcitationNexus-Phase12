@@ -1,0 +1,141 @@
+{
+  "gate": "0-C",
+  "global_checks": {
+    "all_split_checks_pass": true,
+    "final673_aggregate_id_overlap_zero_from_sealed_gate0b": true,
+    "final673_aggregate_structure_overlap_zero_from_sealed_gate0b": true,
+    "final673_per_sample_artifact_created": false,
+    "repeat_generation_identical_assignment": true,
+    "shuffled_input_identical_assignment": true,
+    "target_used_for_split": false,
+    "time_split_status": "BLOCKED_NO_TRUSTED_TIMESTAMP"
+  },
+  "hashes": {
+    "split_acceptor_cold_v1.csv": "659992cc7413094fd17da2281902aa74f261307d98648a973254bd472b5ecc65",
+    "split_both_cold_external_test_v1.csv": "f74f40c4a2f5e7d91214ebdabc3e8f2d1a48a3c106509bb8ab7a3c846b83cb16",
+    "split_donor_cold_v1.csv": "505e4bbe4ed20900ed66721d20df5442854c0f0ea04f5885df330bde111427cd",
+    "split_full_scaffold_cold_v1.csv": "d395020eccfa6e8b73d50bc788a11261d308403a731a9e448040ffe7d238a897",
+    "split_iid_group_seed42_v1.csv": "f4572f2c1896d4228dd9eff67220adb7d0a02ad79b70c66766e6da876541c3f2",
+    "split_pair_cold_v1.csv": "06aaee7d7756957bc42f7d4e221ffd5b20916be69b3116c3bbbe017eb02f4825"
+  },
+  "input_order_independence_by_split": {
+    "acceptor_cold_v1": true,
+    "both_cold_external_test_v1": true,
+    "donor_cold_v1": true,
+    "full_scaffold_cold_v1": true,
+    "iid_group_seed42_v1": true,
+    "pair_cold_v1": true
+  },
+  "overall_status": "DONE",
+  "reproduction_by_split": {
+    "acceptor_cold_v1": true,
+    "both_cold_external_test_v1": true,
+    "donor_cold_v1": true,
+    "full_scaffold_cold_v1": true,
+    "iid_group_seed42_v1": true,
+    "pair_cold_v1": true
+  },
+  "split_status": {
+    "acceptor_cold_v1": {
+      "checks": {
+        "acceptor_identity_zero_overlap": true,
+        "acceptor_minimum_power": true,
+        "allowed_partitions": true,
+        "group_weights_sum_one": true,
+        "historical_train_overlap_17_train_only": true,
+        "molecule_id_unique": true,
+        "no_final_membership_columns": true,
+        "no_tier3_target_columns": true,
+        "partition_coverage": true,
+        "quarantine_exactly_one": true,
+        "records_15016": true,
+        "structure_zero_leakage": true
+      },
+      "status": "DONE"
+    },
+    "both_cold_external_test_v1": {
+      "checks": {
+        "allowed_partitions": true,
+        "both_cold_power": true,
+        "both_cold_test_acceptor_zero_overlap": true,
+        "both_cold_test_donor_zero_overlap": true,
+        "buffer_explicit": true,
+        "group_weights_sum_one": true,
+        "historical_train_overlap_17_train_only": true,
+        "molecule_id_unique": true,
+        "no_final_membership_columns": true,
+        "no_tier3_target_columns": true,
+        "partition_coverage": true,
+        "quarantine_exactly_one": true,
+        "records_15016": true,
+        "structure_zero_leakage": true
+      },
+      "status": "DONE"
+    },
+    "donor_cold_v1": {
+      "checks": {
+        "allowed_partitions": true,
+        "donor_identity_zero_overlap": true,
+        "donor_minimum_power": true,
+        "group_weights_sum_one": true,
+        "historical_train_overlap_17_train_only": true,
+        "molecule_id_unique": true,
+        "no_final_membership_columns": true,
+        "no_tier3_target_columns": true,
+        "partition_coverage": true,
+        "quarantine_exactly_one": true,
+        "records_15016": true,
+        "structure_zero_leakage": true
+      },
+      "status": "DONE"
+    },
+    "full_scaffold_cold_v1": {
+      "checks": {
+        "allowed_partitions": true,
+        "group_weights_sum_one": true,
+        "historical_train_overlap_17_train_only": true,
+        "molecule_id_unique": true,
+        "no_final_membership_columns": true,
+        "no_tier3_target_columns": true,
+        "partition_coverage": true,
+        "quarantine_exactly_one": true,
+        "records_15016": true,
+        "scaffold_identity_zero_overlap": true,
+        "structure_zero_leakage": true
+      },
+      "status": "DONE"
+    },
+    "iid_group_seed42_v1": {
+      "checks": {
+        "allowed_partitions": true,
+        "group_weights_sum_one": true,
+        "historical_train_overlap_17_train_only": true,
+        "molecule_id_unique": true,
+        "no_final_membership_columns": true,
+        "no_tier3_target_columns": true,
+        "partition_coverage": true,
+        "quarantine_exactly_one": true,
+        "records_15016": true,
+        "structure_zero_leakage": true
+      },
+      "status": "DONE"
+    },
+    "pair_cold_v1": {
+      "checks": {
+        "allowed_partitions": true,
+        "group_weights_sum_one": true,
+        "historical_train_overlap_17_train_only": true,
+        "molecule_id_unique": true,
+        "no_final_membership_columns": true,
+        "no_tier3_target_columns": true,
+        "pair_identity_zero_overlap": true,
+        "pair_seen_components_support_ge5": true,
+        "partition_coverage": true,
+        "quarantine_exactly_one": true,
+        "records_15016": true,
+        "structure_zero_leakage": true
+      },
+      "status": "DONE"
+    }
+  }
+}

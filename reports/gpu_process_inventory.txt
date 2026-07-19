@@ -1,0 +1,5 @@
+Observed: 2026-07-18 13:43:00 UTC
+No NVIDIA compute processes were present on GPUs 0-6.
+PID 7361, user root, type G, command /usr/lib/xorg/Xorg, 4 MiB on each GPU.
+This display process is not a compute process and was not modified.
+nvidia-smi pmon confirmed only Xorg; no process was killed or signalled.

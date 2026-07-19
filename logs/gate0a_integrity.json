@@ -1,0 +1,399 @@
+{
+  "parquet_rows": 15016,
+  "csv_rows": 15016,
+  "molecule_id_unique": true,
+  "normalized_id_unique": true,
+  "canonical_smiles_sha256_unique": false,
+  "canonical_smiles_rdkit_hash_unique": false,
+  "canonical_smiles_stored_hash_unique_count": 14639,
+  "canonical_smiles_rdkit_hash_unique_count": 14639,
+  "canonical_smiles_rdkit_duplicate_groups": 372,
+  "canonical_smiles_rdkit_rows_in_duplicate_groups": 749,
+  "canonical_smiles_rdkit_extra_rows": 377,
+  "rdkit_canonicalization_failures": 0,
+  "sidecar_conflict_ids": [
+    "D81_A28"
+  ],
+  "primary_non_null": 15016,
+  "all_pm6_semantics_unresolved": true,
+  "upload_manifest": {
+    "manifest_rows": 165176,
+    "manifest_id_counts": {
+      "pm6": 15016,
+      "dft": 15016,
+      "tddft": 15016
+    },
+    "directory_id_counts": {
+      "pm6": 15016,
+      "dft": 15016,
+      "tddft": 15016
+    },
+    "fidelity_id_sets_equal": true,
+    "directory_sets_match_manifest": true,
+    "unknown_fidelity_rows": 0,
+    "duplicate_target_paths": 0,
+    "missing_files": 0,
+    "empty_files": 0,
+    "size_mismatches": 0,
+    "first_missing_paths": [],
+    "first_empty_paths": [],
+    "first_size_mismatch_paths": []
+  },
+  "completeness": {
+    "molecule_id": {
+      "non_null": 15016,
+      "total": 15016,
+      "fraction": 1.0
+    },
+    "donor_id": {
+      "non_null": 15016,
+      "total": 15016,
+      "fraction": 1.0
+    },
+    "acceptor_id": {
+      "non_null": 15016,
+      "total": 15016,
+      "fraction": 1.0
+    },
+    "canonical_smiles": {
+      "non_null": 15016,
+      "total": 15016,
+      "fraction": 1.0
+    },
+    "canonical_smiles_sha256": {
+      "non_null": 15016,
+      "total": 15016,
+      "fraction": 1.0
+    },
+    "donor_smiles": {
+      "non_null": 15016,
+      "total": 15016,
+      "fraction": 1.0
+    },
+    "acceptor_smiles": {
+      "non_null": 15016,
+      "total": 15016,
+      "fraction": 1.0
+    },
+    "num_atoms_total": {
+      "non_null": 15016,
+      "total": 15016,
+      "fraction": 1.0
+    },
+    "pm6_num_atoms_total": {
+      "non_null": 15016,
+      "total": 15016,
+      "fraction": 1.0
+    },
+    "pm6_num_donor_atoms": {
+      "non_null": 15016,
+      "total": 15016,
+      "fraction": 1.0
+    },
+    "pm6_num_acceptor_atoms": {
+      "non_null": 15016,
+      "total": 15016,
+      "fraction": 1.0
+    },
+    "pm6_atom_count": {
+      "non_null": 15016,
+      "total": 15016,
+      "fraction": 1.0
+    },
+    "dft_atom_count": {
+      "non_null": 15016,
+      "total": 15016,
+      "fraction": 1.0
+    },
+    "pm6_homo_hartree": {
+      "non_null": 15016,
+      "total": 15016,
+      "fraction": 1.0
+    },
+    "pm6_lumo_hartree": {
+      "non_null": 15016,
+      "total": 15016,
+      "fraction": 1.0
+    },
+    "pm6_gap_hartree": {
+      "non_null": 15016,
+      "total": 15016,
+      "fraction": 1.0
+    },
+    "pm6_gap_ev": {
+      "non_null": 15016,
+      "total": 15016,
+      "fraction": 1.0
+    },
+    "pm6_dipole_debye": {
+      "non_null": 15016,
+      "total": 15016,
+      "fraction": 1.0
+    },
+    "pm6_energy_raw": {
+      "non_null": 15016,
+      "total": 15016,
+      "fraction": 1.0
+    },
+    "pm6_energy_semantics_unresolved": {
+      "non_null": 15016,
+      "total": 15016,
+      "fraction": 1.0
+    },
+    "dft_scf_energy_hartree": {
+      "non_null": 15016,
+      "total": 15016,
+      "fraction": 1.0
+    },
+    "dft_homo_hartree": {
+      "non_null": 15016,
+      "total": 15016,
+      "fraction": 1.0
+    },
+    "dft_lumo_hartree": {
+      "non_null": 15016,
+      "total": 15016,
+      "fraction": 1.0
+    },
+    "dft_gap_hartree": {
+      "non_null": 15016,
+      "total": 15016,
+      "fraction": 1.0
+    },
+    "dft_gap_ev": {
+      "non_null": 15016,
+      "total": 15016,
+      "fraction": 1.0
+    },
+    "dft_dipole_debye": {
+      "non_null": 15016,
+      "total": 15016,
+      "fraction": 1.0
+    },
+    "dft_charge": {
+      "non_null": 15016,
+      "total": 15016,
+      "fraction": 1.0
+    },
+    "dft_multiplicity": {
+      "non_null": 15016,
+      "total": 15016,
+      "fraction": 1.0
+    },
+    "dft_normal_termination": {
+      "non_null": 15016,
+      "total": 15016,
+      "fraction": 1.0
+    },
+    "tddft_excitation_energy_ev": {
+      "non_null": 15016,
+      "total": 15016,
+      "fraction": 1.0
+    },
+    "tddft_wavelength_nm": {
+      "non_null": 15016,
+      "total": 15016,
+      "fraction": 1.0
+    },
+    "tddft_oscillator_strength": {
+      "non_null": 15016,
+      "total": 15016,
+      "fraction": 1.0
+    },
+    "tddft_transition_dipole_au": {
+      "non_null": 15016,
+      "total": 15016,
+      "fraction": 1.0
+    },
+    "tddft_coulomb_attraction_au": {
+      "non_null": 15016,
+      "total": 15016,
+      "fraction": 1.0
+    },
+    "tddft_coulomb_attraction_eV": {
+      "non_null": 15016,
+      "total": 15016,
+      "fraction": 1.0
+    },
+    "tddft_coulomb_attraction_eV_eps3p5_proxy": {
+      "non_null": 15016,
+      "total": 15016,
+      "fraction": 1.0
+    },
+    "tddft_Sm": {
+      "non_null": 15016,
+      "total": 15016,
+      "fraction": 1.0
+    },
+    "tddft_Sr": {
+      "non_null": 15016,
+      "total": 15016,
+      "fraction": 1.0
+    },
+    "tddft_D_index_angstrom": {
+      "non_null": 15016,
+      "total": 15016,
+      "fraction": 1.0
+    },
+    "tddft_D_au_original": {
+      "non_null": 15016,
+      "total": 15016,
+      "fraction": 1.0
+    },
+    "tddft_H_CT_angstrom": {
+      "non_null": 15016,
+      "total": 15016,
+      "fraction": 1.0
+    },
+    "tddft_t_index_angstrom": {
+      "non_null": 15016,
+      "total": 15016,
+      "fraction": 1.0
+    },
+    "tddft_HDI": {
+      "non_null": 15016,
+      "total": 15016,
+      "fraction": 1.0
+    },
+    "tddft_EDI": {
+      "non_null": 15016,
+      "total": 15016,
+      "fraction": 1.0
+    },
+    "tddft_hole_on_donor_fraction": {
+      "non_null": 7750,
+      "total": 15016,
+      "fraction": 0.5161161427810336
+    },
+    "tddft_hole_on_acceptor_fraction": {
+      "non_null": 7750,
+      "total": 15016,
+      "fraction": 0.5161161427810336
+    },
+    "tddft_electron_on_donor_fraction": {
+      "non_null": 7750,
+      "total": 15016,
+      "fraction": 0.5161161427810336
+    },
+    "tddft_electron_on_acceptor_fraction": {
+      "non_null": 7750,
+      "total": 15016,
+      "fraction": 0.5161161427810336
+    },
+    "tddft_Q_D_to_A_au": {
+      "non_null": 15016,
+      "total": 15016,
+      "fraction": 1.0
+    },
+    "tddft_Q_A_to_D_au": {
+      "non_null": 0,
+      "total": 15016,
+      "fraction": 0.0
+    },
+    "tddft_net_CT_D_to_A_au": {
+      "non_null": 0,
+      "total": 15016,
+      "fraction": 0.0
+    },
+    "tddft_dipole_change_norm_au": {
+      "non_null": 15016,
+      "total": 15016,
+      "fraction": 1.0
+    },
+    "tddft_nstates": {
+      "non_null": 15016,
+      "total": 15016,
+      "fraction": 1.0
+    },
+    "tddft_root": {
+      "non_null": 15016,
+      "total": 15016,
+      "fraction": 1.0
+    },
+    "tddft_normal_termination": {
+      "non_null": 15016,
+      "total": 15016,
+      "fraction": 1.0
+    },
+    "tddft_multiwfn_version": {
+      "non_null": 15016,
+      "total": 15016,
+      "fraction": 1.0
+    },
+    "pm6_method": {
+      "non_null": 15016,
+      "total": 15016,
+      "fraction": 1.0
+    },
+    "pm6_labeling_method": {
+      "non_null": 15016,
+      "total": 15016,
+      "fraction": 1.0
+    },
+    "dft_method": {
+      "non_null": 15016,
+      "total": 15016,
+      "fraction": 1.0
+    },
+    "dft_basis": {
+      "non_null": 15016,
+      "total": 15016,
+      "fraction": 1.0
+    },
+    "dft_program": {
+      "non_null": 15016,
+      "total": 15016,
+      "fraction": 1.0
+    },
+    "dft_source_geometry": {
+      "non_null": 15016,
+      "total": 15016,
+      "fraction": 1.0
+    },
+    "tddft_method": {
+      "non_null": 15016,
+      "total": 15016,
+      "fraction": 1.0
+    },
+    "tddft_basis": {
+      "non_null": 15016,
+      "total": 15016,
+      "fraction": 1.0
+    },
+    "tddft_task": {
+      "non_null": 15016,
+      "total": 15016,
+      "fraction": 1.0
+    },
+    "pm6_source_path": {
+      "non_null": 15016,
+      "total": 15016,
+      "fraction": 1.0
+    },
+    "dft_selected_source": {
+      "non_null": 15016,
+      "total": 15016,
+      "fraction": 1.0
+    },
+    "dft_source_path": {
+      "non_null": 15016,
+      "total": 15016,
+      "fraction": 1.0
+    },
+    "tddft_selected_source": {
+      "non_null": 15016,
+      "total": 15016,
+      "fraction": 1.0
+    },
+    "tddft_source_path": {
+      "non_null": 15016,
+      "total": 15016,
+      "fraction": 1.0
+    },
+    "sidecar_conflict_flag": {
+      "non_null": 15016,
+      "total": 15016,
+      "fraction": 1.0
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "dataset_name": "ExcitationNexus final15016",
+  "data_root": "/home/changliu/ExcitationNexus_Data_v2",
+  "table": "/home/changliu/ExcitationNexus_Data_v2/tables/molecule_values_v3.parquet",
+  "parquet_sha256": "e7587b1546039f099a4dbd0d352e98885bb2ebdbdcfa18884dd4355eed815a83",
+  "rows": 15016,
+  "identity_column": "molecule_id",
+  "canonical_identity_column": "canonical_smiles_sha256",
+  "generated_by": "/home/changliu/ExcitationNexus/12_Phase4_Multitask_OOD_Training/scripts/gate0a_audit.py",
+  "rdkit_version": "2025.09.6"
+}

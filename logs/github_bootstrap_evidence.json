@@ -1,0 +1,22 @@
+{
+  "authentication": "repository-scoped ED25519 deploy key; no token",
+  "final_checkpoint": null,
+  "first_push": null,
+  "force_push_used": false,
+  "preaudit": {
+    "approx_size_mib": 81,
+    "file_count": 161,
+    "files_over_20_mib": 0,
+    "largest_file_bytes": 10531309,
+    "model_or_checkpoint_files": 0,
+    "raw_or_sealed_filename_hits": 0,
+    "secret_content_pattern_hits": 0,
+    "secret_filename_hits": 0,
+    "was_git_worktree": false
+  },
+  "remote": "git@github-excitationnexus:ChangLiu-yalotein/ExcitationNexus-Phase12.git",
+  "remote_empty": true,
+  "ssh_authentication_passed": true,
+  "status": "GITHUB_BOOTSTRAP_AUTHENTICATED_REMOTE_EMPTY",
+  "target": "/home/changliu/ExcitationNexus/12_Phase4_Multitask_OOD_Training"
+}

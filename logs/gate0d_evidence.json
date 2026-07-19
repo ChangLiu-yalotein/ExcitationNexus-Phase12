@@ -1,0 +1,223 @@
+{
+  "checkpoint_saved": false,
+  "code_snapshot": {
+    "aggregate_sha256": "432cebe0fdd1088ec798fc130968fab0f37e3dd635deaa3833f29b104649b392",
+    "file": "data_registry/gate0d_code_snapshot_sha256.txt",
+    "file_count": 34
+  },
+  "cpu": {
+    "counts": {
+      "acceptor_cold_v1": {
+        "historical_quarantine": 1,
+        "test": 2237,
+        "train": 10543,
+        "val": 2235
+      },
+      "both_cold_external_test_v1": {
+        "buffer": 3291,
+        "historical_quarantine": 1,
+        "test": 587,
+        "train": 9345,
+        "val": 1792
+      },
+      "donor_cold_v1": {
+        "historical_quarantine": 1,
+        "test": 2251,
+        "train": 10530,
+        "val": 2234
+      },
+      "full_scaffold_cold_v1": {
+        "historical_quarantine": 1,
+        "test": 2250,
+        "train": 10511,
+        "val": 2254
+      },
+      "iid_group_seed42_v1": {
+        "historical_quarantine": 1,
+        "test": 2319,
+        "train": 10387,
+        "val": 2309
+      },
+      "pair_cold_v1": {
+        "historical_quarantine": 1,
+        "test": 2309,
+        "train": 10387,
+        "val": 2319
+      }
+    },
+    "graph_samples": 72,
+    "max_rss_kib": 1368164,
+    "normalization": {
+      "files": [
+        "normalization_iid_group_seed42_v1.json",
+        "normalization_donor_cold_v1.json",
+        "normalization_acceptor_cold_v1.json",
+        "normalization_pair_cold_v1.json",
+        "normalization_both_cold_external_test_v1.json",
+        "normalization_full_scaffold_cold_v1.json"
+      ],
+      "group_weighted": true,
+      "nontrain_mutation_invariant": true,
+      "train_only": true
+    },
+    "role_audit": {
+      "donor_acceptor_plus_unknown_records": 366,
+      "no_acceptor_records": 0,
+      "no_donor_with_explicit_unknown_records": 387,
+      "pm6_and_dft_identical": true,
+      "policy": "explicit unknown pooling; zero empty-donor vector plus presence flag; never infer role",
+      "pure_donor_acceptor_records": 14263
+    },
+    "status": "CPU_DONE",
+    "synthetic": {
+      "group_macro_mae": 2.5,
+      "record_mae": 2.0,
+      "weighted_masked_mae": 2.5
+    },
+    "tiny_model": {
+      "class": "TinyRoleAware3DMultitaskModel",
+      "gradients_finite_nonzero": true,
+      "loss_finite": true,
+      "output_shapes": {
+        "tddft_D_index_angstrom": [
+          4
+        ],
+        "tddft_EDI": [
+          4
+        ],
+        "tddft_HDI": [
+          4
+        ],
+        "tddft_H_CT_angstrom": [
+          4
+        ],
+        "tddft_Q_D_to_A_au": [
+          4
+        ],
+        "tddft_Sm": [
+          4
+        ],
+        "tddft_Sr": [
+          4
+        ],
+        "tddft_coulomb_attraction_eV_eps3p5_proxy": [
+          4
+        ],
+        "tddft_dipole_change_norm_au": [
+          4
+        ],
+        "tddft_electron_on_acceptor_fraction": [
+          4
+        ],
+        "tddft_electron_on_donor_fraction": [
+          4
+        ],
+        "tddft_excitation_energy_ev": [
+          4
+        ],
+        "tddft_hole_on_acceptor_fraction": [
+          4
+        ],
+        "tddft_hole_on_donor_fraction": [
+          4
+        ],
+        "tddft_oscillator_strength": [
+          4
+        ],
+        "tddft_t_index_angstrom": [
+          4
+        ],
+        "tddft_transition_dipole_au": [
+          4
+        ]
+      },
+      "parameters": 25969,
+      "plumbing_only": true,
+      "rotation_invariant": true,
+      "tasks": [
+        "tddft_coulomb_attraction_eV_eps3p5_proxy",
+        "tddft_excitation_energy_ev",
+        "tddft_oscillator_strength",
+        "tddft_transition_dipole_au",
+        "tddft_Sm",
+        "tddft_Sr",
+        "tddft_D_index_angstrom",
+        "tddft_H_CT_angstrom",
+        "tddft_t_index_angstrom",
+        "tddft_HDI",
+        "tddft_EDI",
+        "tddft_Q_D_to_A_au",
+        "tddft_dipole_change_norm_au",
+        "tddft_hole_on_donor_fraction",
+        "tddft_hole_on_acceptor_fraction",
+        "tddft_electron_on_donor_fraction",
+        "tddft_electron_on_acceptor_fraction"
+      ],
+      "translation_invariant": true
+    },
+    "unit_tests": {
+      "failed": 0,
+      "passed": 33
+    },
+    "wall_seconds": 5.60684061050415
+  },
+  "failed_attempts_retained": [
+    "logs/gate0d_cpu_smoke_attempt1_failed.log",
+    "logs/gate0d_cpu_smoke_attempt2_failed.log",
+    "logs/gate0d_gpu_smoke_attempt1_failed.log",
+    "logs/gate0d_gpu_smoke_attempt2_failed.log"
+  ],
+  "final673_accessed": false,
+  "formal_epoch_run": false,
+  "frozen_splits_modified": false,
+  "gate": "0-D",
+  "gate1a_ready": true,
+  "generated_utc": "2026-07-19T03:32:51.914774+00:00",
+  "gpu": {
+    "batch_size": 4,
+    "batches": 2,
+    "checkpoint_saved": false,
+    "ddp_used": false,
+    "dtype": "float32",
+    "epoch_run": false,
+    "gpu_name": "NVIDIA GeForce RTX 3090",
+    "gradients_finite": true,
+    "loss_finite": true,
+    "losses": [
+      0.9885917901992798,
+      0.5924403667449951
+    ],
+    "output_shape_per_task": [
+      4
+    ],
+    "output_task_count": 17,
+    "parameter_changed": true,
+    "peak_allocated_bytes": 34295296,
+    "peak_allocated_gib": 0.03193998336791992,
+    "peak_reserved_bytes": 48234496,
+    "peak_reserved_gib": 0.044921875,
+    "physical_gpu_id": 0,
+    "primary_head_gradient_nonzero": true,
+    "process_device": "cuda:0",
+    "rotation_invariant": true,
+    "shared_trunk_gradient_nonzero": true,
+    "status": "GPU_DONE",
+    "translation_invariant": true,
+    "wall_seconds": 1.6428935527801514
+  },
+  "iid_metadata": {
+    "filename_seed_label_is_historical": true,
+    "selected_candidate_seed": 123
+  },
+  "input_hashes": {
+    "acceptor_cold_v1": "659992cc7413094fd17da2281902aa74f261307d98648a973254bd472b5ecc65",
+    "both_cold_external_test_v1": "f74f40c4a2f5e7d91214ebdabc3e8f2d1a48a3c106509bb8ab7a3c846b83cb16",
+    "donor_cold_v1": "505e4bbe4ed20900ed66721d20df5442854c0f0ea04f5885df330bde111427cd",
+    "full_scaffold_cold_v1": "d395020eccfa6e8b73d50bc788a11261d308403a731a9e448040ffe7d238a897",
+    "iid_group_seed42_v1": "f4572f2c1896d4228dd9eff67220adb7d0a02ad79b70c66766e6da876541c3f2",
+    "pair_cold_v1": "06aaee7d7756957bc42f7d4e221ffd5b20916be69b3116c3bbbe017eb02f4825",
+    "table": "e7587b1546039f099a4dbd0d352e98885bb2ebdbdcfa18884dd4355eed815a83"
+  },
+  "raw_data_modified": false,
+  "status": "GATE0D_DONE"
+}

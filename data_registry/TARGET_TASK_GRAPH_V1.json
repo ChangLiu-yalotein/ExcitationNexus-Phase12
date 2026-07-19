@@ -1,0 +1,30 @@
+{
+  "version": "v1",
+  "primary": ["tddft_coulomb_attraction_eV_eps3p5_proxy"],
+  "primary_report_name": "J_eh_screened_eV_eps3p5 proxy",
+  "secondary": [
+    "tddft_excitation_energy_ev", "tddft_oscillator_strength",
+    "tddft_transition_dipole_au", "tddft_Sm", "tddft_Sr",
+    "tddft_D_index_angstrom", "tddft_H_CT_angstrom",
+    "tddft_t_index_angstrom", "tddft_HDI", "tddft_EDI",
+    "tddft_Q_D_to_A_au", "tddft_dipole_change_norm_au"
+  ],
+  "masked_auxiliary": [
+    "tddft_hole_on_donor_fraction", "tddft_hole_on_acceptor_fraction",
+    "tddft_electron_on_donor_fraction", "tddft_electron_on_acceptor_fraction"
+  ],
+  "report_only_deterministic": [
+    "tddft_wavelength_nm", "tddft_coulomb_attraction_au",
+    "tddft_coulomb_attraction_eV"
+  ],
+  "disabled": [
+    "tddft_Q_A_to_D_au", "tddft_net_CT_D_to_A_au", "pm6_energy_raw",
+    "provenance/control fields"
+  ],
+  "optimization_tasks": "primary + secondary + masked_auxiliary",
+  "smoke_weight_status": "SMOKE_ONLY_NOT_FROZEN_FOR_EXPERIMENTS",
+  "deterministic_dependency_notes": {
+    "tddft_wavelength_nm": "deterministic transform of excitation energy",
+    "coulomb_family": "au, eV, and eps3p5 proxy are unit/dielectric transforms"
+  }
+}

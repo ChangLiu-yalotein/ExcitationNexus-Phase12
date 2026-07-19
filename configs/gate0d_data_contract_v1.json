@@ -1,0 +1,14 @@
+{
+  "version": "v1",
+  "table_path": "/home/changliu/ExcitationNexus_Data_v2/tables/molecule_values_v3.parquet",
+  "table_sha256": "e7587b1546039f099a4dbd0d352e98885bb2ebdbdcfa18884dd4355eed815a83",
+  "raw_root": "/home/changliu/ExcitationNexus_Data_v2/raw_compact",
+  "allowed_partitions": ["train", "val", "test"],
+  "forbidden_partitions": ["buffer", "historical_quarantine"],
+  "views": ["table_only", "tier0_2d", "tier1_pm6_3d", "tier2_dft_3d"],
+  "default_view": "tier1_pm6_3d",
+  "pm6_dipole_enabled": false,
+  "graph": {"cutoff_angstrom": 5.0, "max_neighbors": 32},
+  "iid_metadata": {"selected_candidate_seed": 123, "filename_seed_label_is_historical": true},
+  "final673_access": false
+}

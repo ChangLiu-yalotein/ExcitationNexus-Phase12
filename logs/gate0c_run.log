@@ -1,0 +1,7 @@
+2026-07-18T15:00:00Z Gate 0-C start; seven GPUs observed idle; CUDA_VISIBLE_DEVICES=empty.
+2026-07-18T15:05:00Z input parquet SHA-256 verified.
+2026-07-18T15:10:00Z preregistration v1 locked before solving: 4ba010e21a600a9ea1552eeb88d791b68e0898ce258373ee120d9ea72282c45a.
+2026-07-18T15:30:00Z six target-blind grouped manifests generated.
+2026-07-18T15:52:00Z independent verification, repeated generation, and shuffled-input generation passed.
+2026-07-18T16:01:31Z post-freeze diagnostics completed; assignments unchanged.
+2026-07-18T16:07:40Z final hash verification passed; Gate 0-C DONE.

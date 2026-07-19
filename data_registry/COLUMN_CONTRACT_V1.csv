@@ -1,0 +1,72 @@
+column_name,cost_tier,allowed_as_input,allowed_as_target,leakage_reason,missing_fraction,unit
+molecule_id,Tier 0,False,no,IDs/hash are grouping-only,0.0,dimensionless/identifier/provenance
+donor_id,Tier 0,False,no,IDs/hash are grouping-only,0.0,dimensionless/identifier/provenance
+acceptor_id,Tier 0,False,no,IDs/hash are grouping-only,0.0,dimensionless/identifier/provenance
+canonical_smiles,Tier 0,True,no,low-cost structure/size input,0.0,dimensionless/identifier/provenance
+canonical_smiles_sha256,Tier 0,False,no,IDs/hash are grouping-only,0.0,dimensionless/identifier/provenance
+donor_smiles,Tier 0,True,no,low-cost structure/size input,0.0,dimensionless/identifier/provenance
+acceptor_smiles,Tier 0,True,no,low-cost structure/size input,0.0,dimensionless/identifier/provenance
+num_atoms_total,Tier 0,True,no,low-cost structure/size input,0.0,dimensionless/identifier/provenance
+pm6_num_atoms_total,Tier 0,True,no,low-cost structure/size input,0.0,dimensionless/identifier/provenance
+pm6_num_donor_atoms,Tier 0,True,no,low-cost structure/size input,0.0,dimensionless/identifier/provenance
+pm6_num_acceptor_atoms,Tier 0,True,no,low-cost structure/size input,0.0,dimensionless/identifier/provenance
+pm6_atom_count,Tier 0,True,no,low-cost structure/size input,0.0,dimensionless/identifier/provenance
+dft_atom_count,Tier 0,True,no,low-cost structure/size input,0.0,dimensionless/identifier/provenance
+pm6_homo_hartree,Tier 1.5,True,no,allowed cheap-quantum input; dipole requires ablation,0.0,Hartree
+pm6_lumo_hartree,Tier 1.5,True,no,allowed cheap-quantum input; dipole requires ablation,0.0,Hartree
+pm6_gap_hartree,Tier 1.5,True,no,allowed cheap-quantum input; dipole requires ablation,0.0,Hartree
+pm6_gap_ev,Tier 1.5,True,no,allowed cheap-quantum input; dipole requires ablation,0.0,eV
+pm6_dipole_debye,Tier 1.5,True,no,allowed cheap-quantum input; dipole requires ablation,0.0,Debye
+pm6_energy_raw,Tier 1.5,False,no,semantic unresolved/provenance disabled,0.0,unresolved/Hartree-like
+pm6_energy_semantics_unresolved,Tier 1.5,False,no,semantic unresolved/provenance disabled,0.0,dimensionless/identifier/provenance
+dft_scf_energy_hartree,Tier 2,True,no,allowed only in explicit high-cost tier,0.0,Hartree
+dft_homo_hartree,Tier 2,True,no,allowed only in explicit high-cost tier,0.0,Hartree
+dft_lumo_hartree,Tier 2,True,no,allowed only in explicit high-cost tier,0.0,Hartree
+dft_gap_hartree,Tier 2,True,no,allowed only in explicit high-cost tier,0.0,Hartree
+dft_gap_ev,Tier 2,True,no,allowed only in explicit high-cost tier,0.0,eV
+dft_dipole_debye,Tier 2,True,no,allowed only in explicit high-cost tier,0.0,Debye
+dft_charge,Tier 2,False,no,provenance/control disabled,0.0,dimensionless/identifier/provenance
+dft_multiplicity,Tier 2,False,no,provenance/control disabled,0.0,dimensionless/identifier/provenance
+dft_normal_termination,Tier 2,False,no,provenance/control disabled,0.0,dimensionless/identifier/provenance
+tddft_excitation_energy_ev,Tier 3,False,secondary,TDDFT/Multiwfn supervision; target leakage if input,0.0,eV
+tddft_wavelength_nm,Tier 3,False,secondary,TDDFT/Multiwfn supervision; target leakage if input,0.0,nm
+tddft_oscillator_strength,Tier 3,False,secondary,TDDFT/Multiwfn supervision; target leakage if input,0.0,dimensionless/identifier/provenance
+tddft_transition_dipole_au,Tier 3,False,secondary,TDDFT/Multiwfn supervision; target leakage if input,0.0,a.u.
+tddft_coulomb_attraction_au,Tier 3,False,secondary,TDDFT/Multiwfn supervision; target leakage if input,0.0,a.u.
+tddft_coulomb_attraction_eV,Tier 3,False,secondary,TDDFT/Multiwfn supervision; target leakage if input,0.0,eV
+tddft_coulomb_attraction_eV_eps3p5_proxy,Tier 3,False,primary,TDDFT/Multiwfn supervision; target leakage if input,0.0,eV
+tddft_Sm,Tier 3,False,secondary,TDDFT/Multiwfn supervision; target leakage if input,0.0,dimensionless/identifier/provenance
+tddft_Sr,Tier 3,False,secondary,TDDFT/Multiwfn supervision; target leakage if input,0.0,dimensionless/identifier/provenance
+tddft_D_index_angstrom,Tier 3,False,secondary,TDDFT/Multiwfn supervision; target leakage if input,0.0,angstrom
+tddft_D_au_original,Tier 3,False,no,TDDFT/Multiwfn supervision; target leakage if input,0.0,angstrom (source naming legacy)
+tddft_H_CT_angstrom,Tier 3,False,secondary,TDDFT/Multiwfn supervision; target leakage if input,0.0,angstrom
+tddft_t_index_angstrom,Tier 3,False,secondary,TDDFT/Multiwfn supervision; target leakage if input,0.0,angstrom
+tddft_HDI,Tier 3,False,secondary,TDDFT/Multiwfn supervision; target leakage if input,0.0,dimensionless/identifier/provenance
+tddft_EDI,Tier 3,False,secondary,TDDFT/Multiwfn supervision; target leakage if input,0.0,dimensionless/identifier/provenance
+tddft_hole_on_donor_fraction,Tier 3,False,masked_auxiliary,TDDFT/Multiwfn supervision; target leakage if input,0.48388386,dimensionless/identifier/provenance
+tddft_hole_on_acceptor_fraction,Tier 3,False,masked_auxiliary,TDDFT/Multiwfn supervision; target leakage if input,0.48388386,dimensionless/identifier/provenance
+tddft_electron_on_donor_fraction,Tier 3,False,masked_auxiliary,TDDFT/Multiwfn supervision; target leakage if input,0.48388386,dimensionless/identifier/provenance
+tddft_electron_on_acceptor_fraction,Tier 3,False,masked_auxiliary,TDDFT/Multiwfn supervision; target leakage if input,0.48388386,dimensionless/identifier/provenance
+tddft_Q_D_to_A_au,Tier 3,False,secondary,TDDFT/Multiwfn supervision; target leakage if input,0.0,a.u.
+tddft_Q_A_to_D_au,Tier 3,False,no,TDDFT/Multiwfn supervision; target leakage if input,1.0,a.u.
+tddft_net_CT_D_to_A_au,Tier 3,False,no,TDDFT/Multiwfn supervision; target leakage if input,1.0,a.u.
+tddft_dipole_change_norm_au,Tier 3,False,secondary,TDDFT/Multiwfn supervision; target leakage if input,0.0,a.u.
+tddft_nstates,Tier 3,False,no,TDDFT/Multiwfn supervision; target leakage if input,0.0,dimensionless/identifier/provenance
+tddft_root,Tier 3,False,no,TDDFT/Multiwfn supervision; target leakage if input,0.0,dimensionless/identifier/provenance
+tddft_normal_termination,Tier 3,False,no,TDDFT/Multiwfn supervision; target leakage if input,0.0,dimensionless/identifier/provenance
+tddft_multiwfn_version,Tier 3,False,no,TDDFT/Multiwfn supervision; target leakage if input,0.0,dimensionless/identifier/provenance
+pm6_method,Tier 1.5,False,no,semantic unresolved/provenance disabled,0.0,dimensionless/identifier/provenance
+pm6_labeling_method,Tier 1.5,False,no,semantic unresolved/provenance disabled,0.0,dimensionless/identifier/provenance
+dft_method,Tier 2,False,no,provenance/control disabled,0.0,dimensionless/identifier/provenance
+dft_basis,Tier 2,False,no,provenance/control disabled,0.0,dimensionless/identifier/provenance
+dft_program,Tier 2,False,no,provenance/control disabled,0.0,dimensionless/identifier/provenance
+dft_source_geometry,Tier 2,False,no,provenance/control disabled,0.0,dimensionless/identifier/provenance
+tddft_method,Tier 3,False,no,TDDFT/Multiwfn supervision; target leakage if input,0.0,dimensionless/identifier/provenance
+tddft_basis,Tier 3,False,no,TDDFT/Multiwfn supervision; target leakage if input,0.0,dimensionless/identifier/provenance
+tddft_task,Tier 3,False,no,TDDFT/Multiwfn supervision; target leakage if input,0.0,dimensionless/identifier/provenance
+pm6_source_path,Tier 1.5,False,no,semantic unresolved/provenance disabled,0.0,dimensionless/identifier/provenance
+dft_selected_source,Tier 2,False,no,provenance/control disabled,0.0,dimensionless/identifier/provenance
+dft_source_path,Tier 2,False,no,provenance/control disabled,0.0,dimensionless/identifier/provenance
+tddft_selected_source,Tier 3,False,no,TDDFT/Multiwfn supervision; target leakage if input,0.0,dimensionless/identifier/provenance
+tddft_source_path,Tier 3,False,no,TDDFT/Multiwfn supervision; target leakage if input,0.0,dimensionless/identifier/provenance
+sidecar_conflict_flag,Provenance,False,no,not a predictive feature,0.0,dimensionless/identifier/provenance

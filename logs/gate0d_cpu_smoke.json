@@ -1,0 +1,641 @@
+{
+  "counts": {
+    "acceptor_cold_v1": {
+      "historical_quarantine": 1,
+      "test": 2237,
+      "train": 10543,
+      "val": 2235
+    },
+    "both_cold_external_test_v1": {
+      "buffer": 3291,
+      "historical_quarantine": 1,
+      "test": 587,
+      "train": 9345,
+      "val": 1792
+    },
+    "donor_cold_v1": {
+      "historical_quarantine": 1,
+      "test": 2251,
+      "train": 10530,
+      "val": 2234
+    },
+    "full_scaffold_cold_v1": {
+      "historical_quarantine": 1,
+      "test": 2250,
+      "train": 10511,
+      "val": 2254
+    },
+    "iid_group_seed42_v1": {
+      "historical_quarantine": 1,
+      "test": 2319,
+      "train": 10387,
+      "val": 2309
+    },
+    "pair_cold_v1": {
+      "historical_quarantine": 1,
+      "test": 2309,
+      "train": 10387,
+      "val": 2319
+    }
+  },
+  "cuda_used": false,
+  "final673_accessed": false,
+  "frozen_splits_modified": false,
+  "graph_smoke": {
+    "samples": 72,
+    "summary": [
+      {
+        "acceptor_atoms_min": 20,
+        "atoms_max": 124,
+        "atoms_min": 112,
+        "donor_atoms_min": 92,
+        "edges_max": 3019,
+        "edges_min": 2504,
+        "partition": "test",
+        "samples": 2,
+        "split": "acceptor_cold_v1",
+        "unknown_atoms_max": 0,
+        "view": "tier1_pm6_3d"
+      },
+      {
+        "acceptor_atoms_min": 20,
+        "atoms_max": 124,
+        "atoms_min": 112,
+        "donor_atoms_min": 92,
+        "edges_max": 2770,
+        "edges_min": 2516,
+        "partition": "test",
+        "samples": 2,
+        "split": "acceptor_cold_v1",
+        "unknown_atoms_max": 0,
+        "view": "tier2_dft_3d"
+      },
+      {
+        "acceptor_atoms_min": 21,
+        "atoms_max": 126,
+        "atoms_min": 125,
+        "donor_atoms_min": 84,
+        "edges_max": 3092,
+        "edges_min": 2801,
+        "partition": "train",
+        "samples": 2,
+        "split": "acceptor_cold_v1",
+        "unknown_atoms_max": 8,
+        "view": "tier1_pm6_3d"
+      },
+      {
+        "acceptor_atoms_min": 21,
+        "atoms_max": 126,
+        "atoms_min": 125,
+        "donor_atoms_min": 84,
+        "edges_max": 2920,
+        "edges_min": 2689,
+        "partition": "train",
+        "samples": 2,
+        "split": "acceptor_cold_v1",
+        "unknown_atoms_max": 8,
+        "view": "tier2_dft_3d"
+      },
+      {
+        "acceptor_atoms_min": 18,
+        "atoms_max": 125,
+        "atoms_min": 122,
+        "donor_atoms_min": 104,
+        "edges_max": 3064,
+        "edges_min": 2815,
+        "partition": "val",
+        "samples": 2,
+        "split": "acceptor_cold_v1",
+        "unknown_atoms_max": 0,
+        "view": "tier1_pm6_3d"
+      },
+      {
+        "acceptor_atoms_min": 18,
+        "atoms_max": 125,
+        "atoms_min": 122,
+        "donor_atoms_min": 104,
+        "edges_max": 2716,
+        "edges_min": 2633,
+        "partition": "val",
+        "samples": 2,
+        "split": "acceptor_cold_v1",
+        "unknown_atoms_max": 0,
+        "view": "tier2_dft_3d"
+      },
+      {
+        "acceptor_atoms_min": 124,
+        "atoms_max": 134,
+        "atoms_min": 132,
+        "donor_atoms_min": 0,
+        "edges_max": 2990,
+        "edges_min": 2823,
+        "partition": "test",
+        "samples": 2,
+        "split": "both_cold_external_test_v1",
+        "unknown_atoms_max": 8,
+        "view": "tier1_pm6_3d"
+      },
+      {
+        "acceptor_atoms_min": 124,
+        "atoms_max": 134,
+        "atoms_min": 132,
+        "donor_atoms_min": 0,
+        "edges_max": 2944,
+        "edges_min": 2702,
+        "partition": "test",
+        "samples": 2,
+        "split": "both_cold_external_test_v1",
+        "unknown_atoms_max": 8,
+        "view": "tier2_dft_3d"
+      },
+      {
+        "acceptor_atoms_min": 18,
+        "atoms_max": 122,
+        "atoms_min": 112,
+        "donor_atoms_min": 92,
+        "edges_max": 2815,
+        "edges_min": 2504,
+        "partition": "train",
+        "samples": 2,
+        "split": "both_cold_external_test_v1",
+        "unknown_atoms_max": 0,
+        "view": "tier1_pm6_3d"
+      },
+      {
+        "acceptor_atoms_min": 18,
+        "atoms_max": 122,
+        "atoms_min": 112,
+        "donor_atoms_min": 92,
+        "edges_max": 2633,
+        "edges_min": 2516,
+        "partition": "train",
+        "samples": 2,
+        "split": "both_cold_external_test_v1",
+        "unknown_atoms_max": 0,
+        "view": "tier2_dft_3d"
+      },
+      {
+        "acceptor_atoms_min": 22,
+        "atoms_max": 127,
+        "atoms_min": 126,
+        "donor_atoms_min": 104,
+        "edges_max": 3009,
+        "edges_min": 2810,
+        "partition": "val",
+        "samples": 2,
+        "split": "both_cold_external_test_v1",
+        "unknown_atoms_max": 0,
+        "view": "tier1_pm6_3d"
+      },
+      {
+        "acceptor_atoms_min": 22,
+        "atoms_max": 127,
+        "atoms_min": 126,
+        "donor_atoms_min": 104,
+        "edges_max": 2859,
+        "edges_min": 2727,
+        "partition": "val",
+        "samples": 2,
+        "split": "both_cold_external_test_v1",
+        "unknown_atoms_max": 0,
+        "view": "tier2_dft_3d"
+      },
+      {
+        "acceptor_atoms_min": 18,
+        "atoms_max": 125,
+        "atoms_min": 122,
+        "donor_atoms_min": 104,
+        "edges_max": 3064,
+        "edges_min": 2815,
+        "partition": "test",
+        "samples": 2,
+        "split": "donor_cold_v1",
+        "unknown_atoms_max": 0,
+        "view": "tier1_pm6_3d"
+      },
+      {
+        "acceptor_atoms_min": 18,
+        "atoms_max": 125,
+        "atoms_min": 122,
+        "donor_atoms_min": 104,
+        "edges_max": 2716,
+        "edges_min": 2633,
+        "partition": "test",
+        "samples": 2,
+        "split": "donor_cold_v1",
+        "unknown_atoms_max": 0,
+        "view": "tier2_dft_3d"
+      },
+      {
+        "acceptor_atoms_min": 20,
+        "atoms_max": 124,
+        "atoms_min": 112,
+        "donor_atoms_min": 92,
+        "edges_max": 3019,
+        "edges_min": 2504,
+        "partition": "train",
+        "samples": 2,
+        "split": "donor_cold_v1",
+        "unknown_atoms_max": 0,
+        "view": "tier1_pm6_3d"
+      },
+      {
+        "acceptor_atoms_min": 20,
+        "atoms_max": 124,
+        "atoms_min": 112,
+        "donor_atoms_min": 92,
+        "edges_max": 2770,
+        "edges_min": 2516,
+        "partition": "train",
+        "samples": 2,
+        "split": "donor_cold_v1",
+        "unknown_atoms_max": 0,
+        "view": "tier2_dft_3d"
+      },
+      {
+        "acceptor_atoms_min": 91,
+        "atoms_max": 132,
+        "atoms_min": 127,
+        "donor_atoms_min": 19,
+        "edges_max": 3161,
+        "edges_min": 2772,
+        "partition": "val",
+        "samples": 2,
+        "split": "donor_cold_v1",
+        "unknown_atoms_max": 0,
+        "view": "tier1_pm6_3d"
+      },
+      {
+        "acceptor_atoms_min": 91,
+        "atoms_max": 132,
+        "atoms_min": 127,
+        "donor_atoms_min": 19,
+        "edges_max": 2982,
+        "edges_min": 2720,
+        "partition": "val",
+        "samples": 2,
+        "split": "donor_cold_v1",
+        "unknown_atoms_max": 0,
+        "view": "tier2_dft_3d"
+      },
+      {
+        "acceptor_atoms_min": 21,
+        "atoms_max": 126,
+        "atoms_min": 125,
+        "donor_atoms_min": 104,
+        "edges_max": 3020,
+        "edges_min": 2801,
+        "partition": "test",
+        "samples": 2,
+        "split": "full_scaffold_cold_v1",
+        "unknown_atoms_max": 0,
+        "view": "tier1_pm6_3d"
+      },
+      {
+        "acceptor_atoms_min": 21,
+        "atoms_max": 126,
+        "atoms_min": 125,
+        "donor_atoms_min": 104,
+        "edges_max": 2788,
+        "edges_min": 2689,
+        "partition": "test",
+        "samples": 2,
+        "split": "full_scaffold_cold_v1",
+        "unknown_atoms_max": 0,
+        "view": "tier2_dft_3d"
+      },
+      {
+        "acceptor_atoms_min": 18,
+        "atoms_max": 122,
+        "atoms_min": 112,
+        "donor_atoms_min": 92,
+        "edges_max": 2815,
+        "edges_min": 2504,
+        "partition": "train",
+        "samples": 2,
+        "split": "full_scaffold_cold_v1",
+        "unknown_atoms_max": 0,
+        "view": "tier1_pm6_3d"
+      },
+      {
+        "acceptor_atoms_min": 18,
+        "atoms_max": 122,
+        "atoms_min": 112,
+        "donor_atoms_min": 92,
+        "edges_max": 2633,
+        "edges_min": 2516,
+        "partition": "train",
+        "samples": 2,
+        "split": "full_scaffold_cold_v1",
+        "unknown_atoms_max": 0,
+        "view": "tier2_dft_3d"
+      },
+      {
+        "acceptor_atoms_min": 14,
+        "atoms_max": 130,
+        "atoms_min": 130,
+        "donor_atoms_min": 114,
+        "edges_max": 3093,
+        "edges_min": 2910,
+        "partition": "val",
+        "samples": 2,
+        "split": "full_scaffold_cold_v1",
+        "unknown_atoms_max": 0,
+        "view": "tier1_pm6_3d"
+      },
+      {
+        "acceptor_atoms_min": 14,
+        "atoms_max": 130,
+        "atoms_min": 130,
+        "donor_atoms_min": 114,
+        "edges_max": 2920,
+        "edges_min": 2910,
+        "partition": "val",
+        "samples": 2,
+        "split": "full_scaffold_cold_v1",
+        "unknown_atoms_max": 0,
+        "view": "tier2_dft_3d"
+      },
+      {
+        "acceptor_atoms_min": 22,
+        "atoms_max": 126,
+        "atoms_min": 126,
+        "donor_atoms_min": 84,
+        "edges_max": 3092,
+        "edges_min": 2960,
+        "partition": "test",
+        "samples": 2,
+        "split": "iid_group_seed42_v1",
+        "unknown_atoms_max": 8,
+        "view": "tier1_pm6_3d"
+      },
+      {
+        "acceptor_atoms_min": 22,
+        "atoms_max": 126,
+        "atoms_min": 126,
+        "donor_atoms_min": 84,
+        "edges_max": 2920,
+        "edges_min": 2757,
+        "partition": "test",
+        "samples": 2,
+        "split": "iid_group_seed42_v1",
+        "unknown_atoms_max": 8,
+        "view": "tier2_dft_3d"
+      },
+      {
+        "acceptor_atoms_min": 18,
+        "atoms_max": 122,
+        "atoms_min": 112,
+        "donor_atoms_min": 92,
+        "edges_max": 2815,
+        "edges_min": 2504,
+        "partition": "train",
+        "samples": 2,
+        "split": "iid_group_seed42_v1",
+        "unknown_atoms_max": 0,
+        "view": "tier1_pm6_3d"
+      },
+      {
+        "acceptor_atoms_min": 18,
+        "atoms_max": 122,
+        "atoms_min": 112,
+        "donor_atoms_min": 92,
+        "edges_max": 2633,
+        "edges_min": 2516,
+        "partition": "train",
+        "samples": 2,
+        "split": "iid_group_seed42_v1",
+        "unknown_atoms_max": 0,
+        "view": "tier2_dft_3d"
+      },
+      {
+        "acceptor_atoms_min": 20,
+        "atoms_max": 126,
+        "atoms_min": 124,
+        "donor_atoms_min": 92,
+        "edges_max": 3149,
+        "edges_min": 3019,
+        "partition": "val",
+        "samples": 2,
+        "split": "iid_group_seed42_v1",
+        "unknown_atoms_max": 0,
+        "view": "tier1_pm6_3d"
+      },
+      {
+        "acceptor_atoms_min": 20,
+        "atoms_max": 126,
+        "atoms_min": 124,
+        "donor_atoms_min": 92,
+        "edges_max": 2799,
+        "edges_min": 2770,
+        "partition": "val",
+        "samples": 2,
+        "split": "iid_group_seed42_v1",
+        "unknown_atoms_max": 0,
+        "view": "tier2_dft_3d"
+      },
+      {
+        "acceptor_atoms_min": 21,
+        "atoms_max": 126,
+        "atoms_min": 125,
+        "donor_atoms_min": 92,
+        "edges_max": 3149,
+        "edges_min": 2801,
+        "partition": "test",
+        "samples": 2,
+        "split": "pair_cold_v1",
+        "unknown_atoms_max": 0,
+        "view": "tier1_pm6_3d"
+      },
+      {
+        "acceptor_atoms_min": 21,
+        "atoms_max": 126,
+        "atoms_min": 125,
+        "donor_atoms_min": 92,
+        "edges_max": 2799,
+        "edges_min": 2689,
+        "partition": "test",
+        "samples": 2,
+        "split": "pair_cold_v1",
+        "unknown_atoms_max": 0,
+        "view": "tier2_dft_3d"
+      },
+      {
+        "acceptor_atoms_min": 20,
+        "atoms_max": 125,
+        "atoms_min": 112,
+        "donor_atoms_min": 92,
+        "edges_max": 3064,
+        "edges_min": 2504,
+        "partition": "train",
+        "samples": 2,
+        "split": "pair_cold_v1",
+        "unknown_atoms_max": 0,
+        "view": "tier1_pm6_3d"
+      },
+      {
+        "acceptor_atoms_min": 20,
+        "atoms_max": 125,
+        "atoms_min": 112,
+        "donor_atoms_min": 92,
+        "edges_max": 2716,
+        "edges_min": 2516,
+        "partition": "train",
+        "samples": 2,
+        "split": "pair_cold_v1",
+        "unknown_atoms_max": 0,
+        "view": "tier2_dft_3d"
+      },
+      {
+        "acceptor_atoms_min": 18,
+        "atoms_max": 124,
+        "atoms_min": 122,
+        "donor_atoms_min": 104,
+        "edges_max": 3019,
+        "edges_min": 2815,
+        "partition": "val",
+        "samples": 2,
+        "split": "pair_cold_v1",
+        "unknown_atoms_max": 0,
+        "view": "tier1_pm6_3d"
+      },
+      {
+        "acceptor_atoms_min": 18,
+        "atoms_max": 124,
+        "atoms_min": 122,
+        "donor_atoms_min": 104,
+        "edges_max": 2770,
+        "edges_min": 2633,
+        "partition": "val",
+        "samples": 2,
+        "split": "pair_cold_v1",
+        "unknown_atoms_max": 0,
+        "view": "tier2_dft_3d"
+      }
+    ]
+  },
+  "hashes": {
+    "acceptor_cold_v1": "659992cc7413094fd17da2281902aa74f261307d98648a973254bd472b5ecc65",
+    "both_cold_external_test_v1": "f74f40c4a2f5e7d91214ebdabc3e8f2d1a48a3c106509bb8ab7a3c846b83cb16",
+    "donor_cold_v1": "505e4bbe4ed20900ed66721d20df5442854c0f0ea04f5885df330bde111427cd",
+    "full_scaffold_cold_v1": "d395020eccfa6e8b73d50bc788a11261d308403a731a9e448040ffe7d238a897",
+    "iid_group_seed42_v1": "f4572f2c1896d4228dd9eff67220adb7d0a02ad79b70c66766e6da876541c3f2",
+    "pair_cold_v1": "06aaee7d7756957bc42f7d4e221ffd5b20916be69b3116c3bbbe017eb02f4825",
+    "table": "e7587b1546039f099a4dbd0d352e98885bb2ebdbdcfa18884dd4355eed815a83"
+  },
+  "join_seconds": 1.1507594585418701,
+  "max_rss_kib": 1368164,
+  "normalization": {
+    "files": [
+      "normalization_iid_group_seed42_v1.json",
+      "normalization_donor_cold_v1.json",
+      "normalization_acceptor_cold_v1.json",
+      "normalization_pair_cold_v1.json",
+      "normalization_both_cold_external_test_v1.json",
+      "normalization_full_scaffold_cold_v1.json"
+    ],
+    "group_weighted": true,
+    "nontrain_mutation_invariant": true,
+    "train_only": true
+  },
+  "role_audit": {
+    "donor_acceptor_plus_unknown_records": 366,
+    "no_acceptor_records": 0,
+    "no_donor_with_explicit_unknown_records": 387,
+    "pm6_and_dft_identical": true,
+    "policy": "explicit unknown pooling; zero empty-donor vector plus presence flag; never infer role",
+    "pure_donor_acceptor_records": 14263
+  },
+  "status": "CPU_DONE",
+  "synthetic": {
+    "group_macro_mae": 2.5,
+    "record_mae": 2.0,
+    "weighted_masked_mae": 2.5
+  },
+  "tiny_model": {
+    "class": "TinyRoleAware3DMultitaskModel",
+    "gradients_finite_nonzero": true,
+    "loss_finite": true,
+    "output_shapes": {
+      "tddft_D_index_angstrom": [
+        4
+      ],
+      "tddft_EDI": [
+        4
+      ],
+      "tddft_HDI": [
+        4
+      ],
+      "tddft_H_CT_angstrom": [
+        4
+      ],
+      "tddft_Q_D_to_A_au": [
+        4
+      ],
+      "tddft_Sm": [
+        4
+      ],
+      "tddft_Sr": [
+        4
+      ],
+      "tddft_coulomb_attraction_eV_eps3p5_proxy": [
+        4
+      ],
+      "tddft_dipole_change_norm_au": [
+        4
+      ],
+      "tddft_electron_on_acceptor_fraction": [
+        4
+      ],
+      "tddft_electron_on_donor_fraction": [
+        4
+      ],
+      "tddft_excitation_energy_ev": [
+        4
+      ],
+      "tddft_hole_on_acceptor_fraction": [
+        4
+      ],
+      "tddft_hole_on_donor_fraction": [
+        4
+      ],
+      "tddft_oscillator_strength": [
+        4
+      ],
+      "tddft_t_index_angstrom": [
+        4
+      ],
+      "tddft_transition_dipole_au": [
+        4
+      ]
+    },
+    "parameters": 25969,
+    "plumbing_only": true,
+    "rotation_invariant": true,
+    "tasks": [
+      "tddft_coulomb_attraction_eV_eps3p5_proxy",
+      "tddft_excitation_energy_ev",
+      "tddft_oscillator_strength",
+      "tddft_transition_dipole_au",
+      "tddft_Sm",
+      "tddft_Sr",
+      "tddft_D_index_angstrom",
+      "tddft_H_CT_angstrom",
+      "tddft_t_index_angstrom",
+      "tddft_HDI",
+      "tddft_EDI",
+      "tddft_Q_D_to_A_au",
+      "tddft_dipole_change_norm_au",
+      "tddft_hole_on_donor_fraction",
+      "tddft_hole_on_acceptor_fraction",
+      "tddft_electron_on_donor_fraction",
+      "tddft_electron_on_acceptor_fraction"
+    ],
+    "translation_invariant": true
+  },
+  "unit_tests": {
+    "failed": 0,
+    "passed": 33
+  },
+  "wall_seconds": 5.60684061050415
+}

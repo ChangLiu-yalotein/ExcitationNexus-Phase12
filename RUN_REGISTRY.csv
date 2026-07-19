@@ -1,0 +1,5 @@
+run_id,phase,kind,status,start_utc,end_utc,gpu_ids,command,primary_result,evidence
+gate0a-20260718,12,read_only_audit,BLOCKED,2026-07-18T13:43:00Z,2026-07-18T13:52:00Z,NONE,verify_server_dataset.py + gate0a_audit.py,"file integrity passed; identity/split gate blocked",reports/final_dataset_integrity_audit.md
+gate0b-20260718,12,structure_governance,DONE,2026-07-18T14:55:07.364387+00:00,2026-07-18T14:58:17.786984+00:00,NONE,scripts/gate0b_structure_governance.py,"15016 records / 14639 structures / RETAIN_REPLICATES_WITH_GROUP_WEIGHT",logs/gate0b_evidence.json
+gate0c-20260718,12,immutable_grouped_split_generation,DONE,2026-07-18T15:00:00Z,2026-07-18T16:07:40Z,NONE,"gate0c_generate_splits.py + gate0c_verify_splits.py + gate0c_postfreeze_diagnostics.py","6 splits DONE; zero required identity leakage; reproducible and input-order invariant",logs/gate0c_evidence.json
+gate0d-20260719,12,training_infrastructure_smoke,GATE0D_DONE,2026-07-19T03:18:32Z,2026-07-19T03:33:34Z,0,"pytest + gate0d_cpu_smoke.py + gate0d_gpu_smoke.py","33 tests; 6 joins; 72 raw graphs; 2 GPU batches; snapshot 432cebe0",logs/gate0d_evidence.json

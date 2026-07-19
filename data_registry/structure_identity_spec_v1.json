@@ -1,0 +1,39 @@
+{
+  "version": "v1",
+  "rdkit_version": "2025.09.6",
+  "full_structure_algorithm": [
+    "Chem.MolFromSmiles",
+    "Chem.RemoveHs",
+    "Chem.MolToSmiles(canonical=True,isomericSmiles=True)",
+    "SHA-256 canonical string"
+  ],
+  "component_placeholder_rule": "replace [A] with [*], parse sanitize=False, sanitize with SANITIZE_ALL excluding SANITIZE_KEKULIZE, then MolToSmiles(canonical=True,isomericSmiles=True,kekuleSmiles=False)",
+  "pair_identity_string": "donor canonical + >> + acceptor canonical",
+  "role_aware_identity_string": "full canonical + ||D: + donor canonical + ||A: + acceptor canonical",
+  "hash_rule": "hash only frozen identity string; RDKit version is metadata, not hash content",
+  "group_weight": "1 / structure_group_size",
+  "partition_invariant": "one structure_group_id_v1 remains wholly in one partition",
+  "geometry_mapping": "index+element+role+bond exact match, else complete role-aware graph isomorphism; truncation/failure UNRESOLVED",
+  "meaningful_target_tolerances": {
+    "tddft_coulomb_attraction_eV_eps3p5_proxy": 0.001,
+    "tddft_excitation_energy_ev": 0.001,
+    "tddft_wavelength_nm": 0.1,
+    "tddft_oscillator_strength": 0.0001,
+    "tddft_transition_dipole_au": 0.0001,
+    "tddft_coulomb_attraction_au": 1e-05,
+    "tddft_coulomb_attraction_eV": 0.001,
+    "tddft_Sm": 1e-05,
+    "tddft_Sr": 1e-05,
+    "tddft_D_index_angstrom": 0.001,
+    "tddft_H_CT_angstrom": 0.001,
+    "tddft_t_index_angstrom": 0.001,
+    "tddft_HDI": 0.001,
+    "tddft_EDI": 0.001,
+    "tddft_Q_D_to_A_au": 1e-05,
+    "tddft_dipole_change_norm_au": 0.001,
+    "tddft_hole_on_donor_fraction": 1e-05,
+    "tddft_hole_on_acceptor_fraction": 1e-05,
+    "tddft_electron_on_donor_fraction": 1e-05,
+    "tddft_electron_on_acceptor_fraction": 1e-05
+  }
+}

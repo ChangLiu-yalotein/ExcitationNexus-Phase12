@@ -1,0 +1,312 @@
+{
+  "gate": "0-B",
+  "status": "DONE",
+  "generated_utc": "2026-07-18T14:58:17.783546+00:00",
+  "python": "3.10.19",
+  "rdkit_version": "2025.09.6",
+  "calculation_records": 15016,
+  "canonical_structure_groups": 14639,
+  "structure_size_distribution": {
+    "1": 14267,
+    "2": 369,
+    "3": 1,
+    "4": 2
+  },
+  "duplicate_groups": 372,
+  "duplicate_records": 749,
+  "extra_records": 377,
+  "expected_distribution_match": true,
+  "stored_hash_comparison": {
+    "exact_hash_matches": 0,
+    "mismatches": 15016,
+    "stored_hash_matches_direct_source_string": 15016,
+    "partition_equal": true,
+    "new_to_stored_max_partitions": 1,
+    "stored_to_new_max_partitions": 1,
+    "reason_if_hash_differs": "V1 hashes RDKit RemoveHs canonical output; source hashes stored explicit-H canonical string"
+  },
+  "duplicate_audit": {
+    "role_inconsistent_groups": 219,
+    "atom_count_inconsistent_groups": 0,
+    "sidecar_inconsistent_groups": 0,
+    "dft_pdb_json_inconsistent_groups": 0,
+    "geometry_unresolved_groups": 0,
+    "heavy_atom_rmsd_summary": {
+      "count": 372.0,
+      "mean": 0.21758462389950908,
+      "std": 1.01278910674903,
+      "min": 2.230853662118533e-07,
+      "50%": 0.0010794863432472643,
+      "90%": 0.2991091862096972,
+      "95%": 0.7994360917268841,
+      "99%": 5.506373140759095,
+      "max": 10.298962795075514
+    },
+    "d81_a28_in_duplicate_group": false,
+    "strict_representative_eligible_groups": 12
+  },
+  "target_dispersion": {
+    "primary_name": "J_eh_screened_eV_eps3p5 proxy",
+    "primary_column": "tddft_coulomb_attraction_eV_eps3p5_proxy",
+    "primary_range_bins": {
+      "le_1e-6_eV": 32,
+      "gt_1e-6_le_1e-3_eV": 212,
+      "gt_1e-3_le_1e-2_eV": 76,
+      "gt_1e-2_eV": 52
+    },
+    "primary_meaningful_disagreement_groups": 128,
+    "all_target_meaningful_disagreement_group_target_pairs": 3370,
+    "groups_with_any_meaningful_target_disagreement": 330,
+    "per_target_summary": {
+      "tddft_D_index_angstrom": {
+        "groups": 372,
+        "meaningful_groups": 248,
+        "median_range": 0.002000000000000446,
+        "max_range": 13.433999999999997
+      },
+      "tddft_EDI": {
+        "groups": 372,
+        "meaningful_groups": 191,
+        "median_range": 0.009999999999999787,
+        "max_range": 1.4100000000000001
+      },
+      "tddft_HDI": {
+        "groups": 372,
+        "meaningful_groups": 173,
+        "median_range": 0.0,
+        "max_range": 1.8599999999999999
+      },
+      "tddft_H_CT_angstrom": {
+        "groups": 372,
+        "meaningful_groups": 217,
+        "median_range": 0.0019999999999997797,
+        "max_range": 6.581
+      },
+      "tddft_Q_D_to_A_au": {
+        "groups": 372,
+        "meaningful_groups": 40,
+        "median_range": 0.0,
+        "max_range": 0.0019329999999999998
+      },
+      "tddft_Sm": {
+        "groups": 372,
+        "meaningful_groups": 303,
+        "median_range": 0.000130000000000019,
+        "max_range": 0.44699000000000005
+      },
+      "tddft_Sr": {
+        "groups": 372,
+        "meaningful_groups": 305,
+        "median_range": 0.00014999999999998348,
+        "max_range": 0.46653999999999995
+      },
+      "tddft_coulomb_attraction_au": {
+        "groups": 372,
+        "meaningful_groups": 254,
+        "median_range": 3.400000000000278e-05,
+        "max_range": 0.050338
+      },
+      "tddft_coulomb_attraction_eV": {
+        "groups": 372,
+        "meaningful_groups": 181,
+        "median_range": 0.0009329999999999616,
+        "max_range": 1.369778
+      },
+      "tddft_coulomb_attraction_eV_eps3p5_proxy": {
+        "groups": 372,
+        "meaningful_groups": 128,
+        "median_range": 0.0002665714285714216,
+        "max_range": 0.39136514285714286
+      },
+      "tddft_dipole_change_norm_au": {
+        "groups": 372,
+        "meaningful_groups": 269,
+        "median_range": 0.005410000000001247,
+        "max_range": 24.621442000000002
+      },
+      "tddft_electron_on_acceptor_fraction": {
+        "groups": 372,
+        "meaningful_groups": 54,
+        "median_range": 0.0,
+        "max_range": 0.07428624556278511
+      },
+      "tddft_electron_on_donor_fraction": {
+        "groups": 372,
+        "meaningful_groups": 52,
+        "median_range": 0.0,
+        "max_range": 0.07428624556278463
+      },
+      "tddft_excitation_energy_ev": {
+        "groups": 372,
+        "meaningful_groups": 45,
+        "median_range": 0.0,
+        "max_range": 0.18000000000000016
+      },
+      "tddft_hole_on_acceptor_fraction": {
+        "groups": 372,
+        "meaningful_groups": 69,
+        "median_range": 8.673617379884035e-19,
+        "max_range": 0.6805084704286648
+      },
+      "tddft_hole_on_donor_fraction": {
+        "groups": 372,
+        "meaningful_groups": 68,
+        "median_range": 0.0,
+        "max_range": 0.6805084704286645
+      },
+      "tddft_oscillator_strength": {
+        "groups": 372,
+        "meaningful_groups": 176,
+        "median_range": 9.999999999998899e-05,
+        "max_range": 2.5555
+      },
+      "tddft_t_index_angstrom": {
+        "groups": 372,
+        "meaningful_groups": 250,
+        "median_range": 0.0034999999999998366,
+        "max_range": 17.055
+      },
+      "tddft_transition_dipole_au": {
+        "groups": 372,
+        "meaningful_groups": 290,
+        "median_range": 0.0008242541386100921,
+        "max_range": 6.601358606196095
+      },
+      "tddft_wavelength_nm": {
+        "groups": 372,
+        "meaningful_groups": 57,
+        "median_range": 0.009999999999990905,
+        "max_range": 38.35000000000002
+      }
+    }
+  },
+  "replicate_strategy_comparison": {
+    "deterministic_representative": {
+      "output_records": 14639,
+      "records_removed_from_training_view": 377,
+      "strictly_eligible_duplicate_groups": 12,
+      "ineligible_duplicate_groups": 360
+    },
+    "retain_replicates_group_weight": {
+      "output_records": 15016,
+      "effective_total_group_weight": 14639.0,
+      "effective_duplicate_group_weight": 372.0,
+      "group_weight_min": 0.25,
+      "group_weight_max": 1.0
+    },
+    "group_target_aggregation": {
+      "output_structure_rows": 14639,
+      "groups_requiring_aggregation": 372,
+      "role_inconsistent_groups": 219,
+      "groups_with_any_meaningful_target_disagreement": 330,
+      "strictly_eligible_duplicate_groups": 12
+    }
+  },
+  "component_feasibility": {
+    "donor_structure": {
+      "unique": 154,
+      "singleton_entities": 0,
+      "low_frequency_le5_entities": 3,
+      "median_records_per_entity": 82.5,
+      "p95_records_per_entity": 192.35,
+      "max_records_per_entity": 216
+    },
+    "acceptor_structure": {
+      "unique": 352,
+      "singleton_entities": 1,
+      "low_frequency_le5_entities": 4,
+      "median_records_per_entity": 33.0,
+      "p95_records_per_entity": 91.0,
+      "max_records_per_entity": 165
+    },
+    "ordered_structure_pair": {
+      "unique": 14861,
+      "singleton_entities": 14706,
+      "low_frequency_le5_entities": 14861,
+      "median_records_per_entity": 1.0,
+      "p95_records_per_entity": 1.0,
+      "max_records_per_entity": 2
+    },
+    "full_structure": {
+      "unique": 14639,
+      "singleton_entities": 14267,
+      "low_frequency_le5_entities": 14639,
+      "median_records_per_entity": 1.0,
+      "p95_records_per_entity": 1.0,
+      "max_records_per_entity": 4
+    },
+    "donor_scaffold": {
+      "unique": 117,
+      "singleton_entities": 0,
+      "low_frequency_le5_entities": 3,
+      "median_records_per_entity": 98.0,
+      "p95_records_per_entity": 369.99999999999994,
+      "max_records_per_entity": 947
+    },
+    "acceptor_scaffold": {
+      "unique": 285,
+      "singleton_entities": 0,
+      "low_frequency_le5_entities": 3,
+      "median_records_per_entity": 43.0,
+      "p95_records_per_entity": 99.60000000000002,
+      "max_records_per_entity": 416
+    },
+    "full_scaffold": {
+      "unique": 10005,
+      "singleton_entities": 7564,
+      "low_frequency_le5_entities": 9782,
+      "median_records_per_entity": 1.0,
+      "p95_records_per_entity": 4.0,
+      "max_records_per_entity": 40
+    },
+    "unique_donor_ids": 155,
+    "unique_acceptor_ids": 354,
+    "unique_id_pairs": 15016,
+    "donor_id_multi_structure_count": 0,
+    "acceptor_id_multi_structure_count": 0,
+    "donor_structure_alias_groups": 1,
+    "acceptor_structure_alias_groups": 2,
+    "scaffold_parse_failures": {
+      "donor": 0,
+      "acceptor": 0,
+      "full": 0
+    }
+  },
+  "historical": {
+    "new_vs_final_id_intersection_aggregate": 0,
+    "new_vs_final_structure_intersection_aggregate": 0,
+    "new_vs_external_structure_groups": 1,
+    "new_vs_old_structure_groups": 17,
+    "external_vs_final_structure_groups": 18,
+    "old_vs_external_structure_groups": 17,
+    "quarantine_group_count": 18,
+    "quarantine_new_record_count": 18,
+    "final_per_sample_artifact_emitted": false
+  },
+  "replicate_policy": {
+    "recommendation": "RETAIN_REPLICATES_WITH_GROUP_WEIGHT",
+    "reason": "role/geometry uncertainty or meaningful target dispersion exists; aggregation could erase distinct records"
+  },
+  "time_split": {
+    "status": "BLOCKED_NO_TRUSTED_TIMESTAMP",
+    "candidate_field_non_null_counts": {
+      "pm6_metadata.extraction_date": 15016,
+      "dft_metadata.timestamp_utc": 15016,
+      "dft_json.timestamp": 15016,
+      "tddft_properties.timestamp_utc": 15016
+    },
+    "candidate_field_unique_counts": {
+      "pm6_metadata.extraction_date": 15016,
+      "dft_metadata.timestamp_utc": 15016,
+      "dft_json.timestamp": 15016,
+      "tddft_properties.timestamp_utc": 15016
+    },
+    "reason": "available fields are extraction/derived JSON timestamps without immutable generation or scheduler provenance; filesystem mtime forbidden",
+    "trusted_generation_timestamp": false,
+    "trusted_submission_or_completion_timestamp": false,
+    "trusted_batch_or_version_identifier": false
+  },
+  "split_generated": false,
+  "training_or_cuda_compute_run": false,
+  "raw_data_modified": false
+}

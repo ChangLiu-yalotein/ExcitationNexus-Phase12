@@ -1,0 +1,31 @@
+/home/changliu/ExcitationNexus/12_Phase4_Multitask_OOD_Training/src/excitationnexus_phase12/metrics.py:30: ConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  "spearman":float(spearmanr(y,p).statistic) if len(y)>1 else float("nan"),
+{
+  "status": "CPU_DONE",
+  "tests": 33,
+  "graphs": 72,
+  "wall_seconds": 5.60684061050415
+}
+	Command being timed: "/home/changliu/miniconda3/envs/ML/bin/python scripts/gate0d_cpu_smoke.py"
+	User time (seconds): 98.62
+	System time (seconds): 2.14
+	Percent of CPU this job got: 1026%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:09.82
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1368164
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 8
+	Minor (reclaiming a frame) page faults: 296295
+	Voluntary context switches: 13120
+	Involuntary context switches: 438
+	Swaps: 0
+	File system inputs: 1792
+	File system outputs: 168
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

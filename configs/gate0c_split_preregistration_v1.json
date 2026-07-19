@@ -1,0 +1,73 @@
+{
+  "split_version": "v1",
+  "created_utc": "2026-07-18T00:00:00Z",
+  "input_parquet": "/home/changliu/ExcitationNexus_Data_v2/tables/molecule_values_v3.parquet",
+  "input_parquet_sha256": "e7587b1546039f099a4dbd0d352e98885bb2ebdbdcfa18884dd4355eed815a83",
+  "identity_specification": "structure_identity_spec_v1.json",
+  "candidate_seeds": [42, 123, 456, 789, 2026],
+  "target_proportions": {"train": 0.70, "val": 0.15, "test": 0.15},
+  "assignment_objectives": [
+    "zero_identity_leakage",
+    "satisfy_preregistered_minimum_power",
+    "minimize_absolute_record_count_error",
+    "minimize_absolute_effective_structure_weight_error",
+    "stable_sha256_tie_break"
+  ],
+  "minimum_sample_power": {
+    "donor_cold_val_donor_structures": 15,
+    "donor_cold_test_donor_structures": 15,
+    "acceptor_cold_val_acceptor_structures": 30,
+    "acceptor_cold_test_acceptor_structures": 30,
+    "pair_cold_component_train_record_support": 5,
+    "both_cold_test_records": 500,
+    "both_cold_test_effective_structure_groups": 450,
+    "both_cold_test_donor_structures": 15,
+    "both_cold_test_acceptor_structures": 30,
+    "both_cold_retained_train_records": 7000,
+    "both_cold_retained_val_records": 1000
+  },
+  "both_cold_objective": [
+    "zero_identity_leakage",
+    "satisfy_minimum_power",
+    "maximize_train_val_test_retained_records",
+    "minimize_buffer_records",
+    "test_fraction_between_0.05_and_0.10_then_nearest_0.075",
+    "stable_sha256_tie_break"
+  ],
+  "historical_policy": {
+    "HISTORICAL_MODEL_SELECTION_QUARANTINE": "historical_quarantine_all_splits",
+    "HISTORICAL_TRAIN_OVERLAP": "forced_train_all_splits_new15016_only",
+    "old7316_external2698_legacy3371_merged_for_training": false,
+    "final673_access": "aggregate_sealed_check_only"
+  },
+  "leakage_invariants": [
+    "structure_group_never_crosses_partition",
+    "regime_identity_sets_are_disjoint",
+    "quarantine_never_enters_model_partition",
+    "historical_train_overlap_is_train_only",
+    "pair_cold_val_test_components_have_train_support",
+    "both_cold_test_components_absent_from_train_and_val",
+    "manifest_contains_no_target_or_final_membership"
+  ],
+  "solver_tie_break_rules": {
+    "unit_order": "sha256(seed_colon_assignment_unit_id)",
+    "candidate_selection": "lexicographic_objective_then_seed_then_sha256",
+    "input_order_independent": true
+  },
+  "forbidden_columns": [
+    "tddft_*",
+    "multiwfn_*",
+    "target_*",
+    "J_eh_screened_eV_eps3p5_proxy",
+    "in_final673",
+    "final673_*",
+    "filesystem_mtime"
+  ],
+  "post_freeze_diagnostic_policy": {
+    "diagnostics_run_only_after_manifest_hash_freeze": true,
+    "diagnostics_may_not_modify_or_resolve_splits": true,
+    "target_imbalance_does_not_trigger_v1_regeneration": true,
+    "morgan": {"radius": 2, "nBits": 2048, "useChirality": true}
+  },
+  "time_split_status": "BLOCKED_NO_TRUSTED_TIMESTAMP"
+}

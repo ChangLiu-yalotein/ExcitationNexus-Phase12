@@ -1,0 +1,17 @@
+{
+  "status": "SMOKE_ONLY_NOT_SCIENTIFICALLY_TUNED",
+  "seed": 42,
+  "base_loss": "smooth_l1",
+  "primary_weight": 1.0,
+  "secondary_total_weight": 0.5,
+  "auxiliary_total_weight": 0.1,
+  "batch_size": 4,
+  "gpu_max_batches": 2,
+  "dtype": "float32",
+  "pm6_dipole_enabled": false,
+  "hidden_dim": 32,
+  "num_rbf": 16,
+  "message_layers": 2,
+  "gpu_peak_memory_target_gib": 8,
+  "gpu_wall_time_limit_seconds": 300
+}

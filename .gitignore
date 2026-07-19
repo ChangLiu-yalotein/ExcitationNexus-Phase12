@@ -1,0 +1,53 @@
+# Python/runtime caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Environments and local configuration
+.venv/
+venv/
+env/
+.env
+.env.*
+!.env.example
+
+# Secrets and private keys
+*.pem
+*.key
+id_rsa*
+id_ed25519*
+*credential*
+*token*
+
+# Raw/external/sealed data
+raw_compact/
+tables/
+external_data/
+*final673*
+*final_blind*
+*sealed_set*
+
+# Model and experiment binaries
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.safetensors
+checkpoints/
+wandb/
+.wandb/
+lightning_logs/
+tensorboard/
+events.out.tfevents.*
+
+# Runtime outputs (registries/reports remain tracked)
+runs/**
+tmp/
+temp/
+*.tmp
+*.swp
+.DS_Store

@@ -1,0 +1,7 @@
+2026-07-18T14:55:07.364387+00:00 Gate 0-B started CPU-only
+records=15016 structures=14639 duplicates=372
+geometry_unresolved_groups=0
+component_conflicts donor=0 acceptor=0
+replicate_policy=RETAIN_REPLICATES_WITH_GROUP_WEIGHT
+status=DONE
+2026-07-18T14:58:17.786984+00:00 stopped before split/training
