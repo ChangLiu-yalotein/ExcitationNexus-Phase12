@@ -1,0 +1,194 @@
+{
+  "baseline_assets": {
+    "baseline_gate.json": {
+      "path": "runs/gate1b1_new_iid_cheap_baselines/baselines/baseline_gate.json",
+      "sha256": "13a3d66094dda66a5c3c9b76a85f62fef9169d4c8ac35b4112f96fabbd65272c"
+    },
+    "preprocessor_c0.npz": {
+      "path": "runs/gate1b1_new_iid_cheap_baselines/baselines/preprocessor_c0.npz",
+      "sha256": "af5dec974bcfe7a75e67dae4483a8c62516260fd0ce1a7676c12b699bfaa67f3"
+    },
+    "preprocessor_c1p5.npz": {
+      "path": "runs/gate1b1_new_iid_cheap_baselines/baselines/preprocessor_c1p5.npz",
+      "sha256": "d3e4cbcf516ee21ccd0762b566396de2d6c3e8b1c0b5756a6e4926c2e5bd66ad"
+    },
+    "ridge_c0.json": {
+      "path": "runs/gate1b1_new_iid_cheap_baselines/baselines/ridge_c0.json",
+      "sha256": "bcf43d6e896bb6e23d5d333ab47a17d7dbc86f233a750fc89a1cda03b970cd07"
+    },
+    "ridge_c0.npz": {
+      "path": "runs/gate1b1_new_iid_cheap_baselines/baselines/ridge_c0.npz",
+      "sha256": "604f37fecdf327eb7e9879dbd1b341e9b69775790267e5875a04872fd8615b85"
+    },
+    "weighted_median.json": {
+      "path": "runs/gate1b1_new_iid_cheap_baselines/baselines/weighted_median.json",
+      "sha256": "2b0f4603b519084b5685615c4154b8c2141ae7e70959af343c4177d2c5334a32"
+    }
+  },
+  "config_sha256": "f3bc6a8774846850cedadbb4da9717bc1b1c5ff4b8e6ecfb7cad2560a8d9dcb5",
+  "feature_cache_sha256": "7bb1a6af207364b186c072ab6d013d278e294633255b2235ef789e040e75d058",
+  "gate": "1-B1",
+  "manifest_sha256": "f4572f2c1896d4228dd9eff67220adb7d0a02ad79b70c66766e6da876541c3f2",
+  "models_frozen": 8,
+  "seed_results": {
+    "123": {
+      "path": "runs/gate1b1_new_iid_cheap_baselines/seed123/seed_result.json",
+      "sha256": "b045eec919e4e526c83168a434a2d41aadb1011da406598ee8ac0da59183080f",
+      "validation": {
+        "xgb_c0": {
+          "max_temperature_c_observed": 49,
+          "model_path": "runs/gate1b1_new_iid_cheap_baselines/seed123/xgb_c0.json",
+          "model_sha256": "c92a73423c5ea58bb8e110aaf65600d0cc3e1d98e2219a097560b8e2d945af68",
+          "peak_gpu_memory_mib_observed": 395,
+          "peak_rss_kib": 521180,
+          "prediction_path": "runs/gate1b1_new_iid_cheap_baselines/seed123/xgb_c0_val_predictions.csv",
+          "prediction_sha256": "9444cc99c1afa4cd019762430dc6651f302e2fcebc0b3975d2e13bc9148e268f",
+          "preprocessor_sha256": "af5dec974bcfe7a75e67dae4483a8c62516260fd0ce1a7676c12b699bfaa67f3",
+          "sample_weight_sum": 10248.0,
+          "training_wall_seconds": 3.140779171604663,
+          "validation": {
+            "group_macro_mae": 0.08666170350723043,
+            "group_macro_r2": 0.5565817883779794,
+            "group_macro_rmse": 0.11631562122964482,
+            "groups": 2195,
+            "record_mae": 0.08680688273249484,
+            "record_r2": 0.5523889897517131,
+            "record_rmse": 0.11643028829097893,
+            "records": 2309
+          },
+          "validation_inference_wall_seconds": 0.0486200051382184
+        },
+        "xgb_c1p5_safe": {
+          "max_temperature_c_observed": 57,
+          "model_path": "runs/gate1b1_new_iid_cheap_baselines/seed123/xgb_c1p5_safe.json",
+          "model_sha256": "4a3f572cf88f3e8cbfe78af3c5207420e759ff86e8322562708c7977eca9fb56",
+          "peak_gpu_memory_mib_observed": 395,
+          "peak_rss_kib": 713752,
+          "prediction_path": "runs/gate1b1_new_iid_cheap_baselines/seed123/xgb_c1p5_safe_val_predictions.csv",
+          "prediction_sha256": "26d4443f09b5e7a3beee2e7401554dbfb7c6fe55e99ecad6a325e7e0eaaba9ae",
+          "preprocessor_sha256": "d3e4cbcf516ee21ccd0762b566396de2d6c3e8b1c0b5756a6e4926c2e5bd66ad",
+          "sample_weight_sum": 10248.0,
+          "training_wall_seconds": 1.5893746339716017,
+          "validation": {
+            "group_macro_mae": 0.08687422100927289,
+            "group_macro_r2": 0.5541270013788682,
+            "group_macro_rmse": 0.11663714161373669,
+            "groups": 2195,
+            "record_mae": 0.08695540425285882,
+            "record_r2": 0.5511398853939911,
+            "record_rmse": 0.11659263043253318,
+            "records": 2309
+          },
+          "validation_inference_wall_seconds": 0.04129408299922943
+        }
+      }
+    },
+    "42": {
+      "path": "runs/gate1b1_new_iid_cheap_baselines/seed42/seed_result.json",
+      "sha256": "cdb07fd788972b565fefc309768729afb336b6a3b93a90c7194599f99b272977",
+      "validation": {
+        "xgb_c0": {
+          "max_temperature_c_observed": 44,
+          "model_path": "runs/gate1b1_new_iid_cheap_baselines/seed42/xgb_c0.json",
+          "model_sha256": "c92a73423c5ea58bb8e110aaf65600d0cc3e1d98e2219a097560b8e2d945af68",
+          "peak_gpu_memory_mib_observed": 395,
+          "peak_rss_kib": 522592,
+          "prediction_path": "runs/gate1b1_new_iid_cheap_baselines/seed42/xgb_c0_val_predictions.csv",
+          "prediction_sha256": "9444cc99c1afa4cd019762430dc6651f302e2fcebc0b3975d2e13bc9148e268f",
+          "preprocessor_sha256": "af5dec974bcfe7a75e67dae4483a8c62516260fd0ce1a7676c12b699bfaa67f3",
+          "sample_weight_sum": 10248.0,
+          "training_wall_seconds": 3.2344633359462023,
+          "validation": {
+            "group_macro_mae": 0.08666170350723043,
+            "group_macro_r2": 0.5565817883779794,
+            "group_macro_rmse": 0.11631562122964482,
+            "groups": 2195,
+            "record_mae": 0.08680688273249484,
+            "record_r2": 0.5523889897517131,
+            "record_rmse": 0.11643028829097893,
+            "records": 2309
+          },
+          "validation_inference_wall_seconds": 0.048559295013546944
+        },
+        "xgb_c1p5_safe": {
+          "max_temperature_c_observed": 45,
+          "model_path": "runs/gate1b1_new_iid_cheap_baselines/seed42/xgb_c1p5_safe.json",
+          "model_sha256": "4a3f572cf88f3e8cbfe78af3c5207420e759ff86e8322562708c7977eca9fb56",
+          "peak_gpu_memory_mib_observed": 395,
+          "peak_rss_kib": 717212,
+          "prediction_path": "runs/gate1b1_new_iid_cheap_baselines/seed42/xgb_c1p5_safe_val_predictions.csv",
+          "prediction_sha256": "26d4443f09b5e7a3beee2e7401554dbfb7c6fe55e99ecad6a325e7e0eaaba9ae",
+          "preprocessor_sha256": "d3e4cbcf516ee21ccd0762b566396de2d6c3e8b1c0b5756a6e4926c2e5bd66ad",
+          "sample_weight_sum": 10248.0,
+          "training_wall_seconds": 1.6173800630494952,
+          "validation": {
+            "group_macro_mae": 0.08687422100927289,
+            "group_macro_r2": 0.5541270013788682,
+            "group_macro_rmse": 0.11663714161373669,
+            "groups": 2195,
+            "record_mae": 0.08695540425285882,
+            "record_r2": 0.5511398853939911,
+            "record_rmse": 0.11659263043253318,
+            "records": 2309
+          },
+          "validation_inference_wall_seconds": 0.08414385793730617
+        }
+      }
+    },
+    "456": {
+      "path": "runs/gate1b1_new_iid_cheap_baselines/seed456/seed_result.json",
+      "sha256": "4d62d9e755ebbb5873df07ce15cc724d0aa69ac79f199a36b6e079b0a09114de",
+      "validation": {
+        "xgb_c0": {
+          "max_temperature_c_observed": 48,
+          "model_path": "runs/gate1b1_new_iid_cheap_baselines/seed456/xgb_c0.json",
+          "model_sha256": "c92a73423c5ea58bb8e110aaf65600d0cc3e1d98e2219a097560b8e2d945af68",
+          "peak_gpu_memory_mib_observed": 395,
+          "peak_rss_kib": 515368,
+          "prediction_path": "runs/gate1b1_new_iid_cheap_baselines/seed456/xgb_c0_val_predictions.csv",
+          "prediction_sha256": "9444cc99c1afa4cd019762430dc6651f302e2fcebc0b3975d2e13bc9148e268f",
+          "preprocessor_sha256": "af5dec974bcfe7a75e67dae4483a8c62516260fd0ce1a7676c12b699bfaa67f3",
+          "sample_weight_sum": 10248.0,
+          "training_wall_seconds": 3.1080927839502692,
+          "validation": {
+            "group_macro_mae": 0.08666170350723043,
+            "group_macro_r2": 0.5565817883779794,
+            "group_macro_rmse": 0.11631562122964482,
+            "groups": 2195,
+            "record_mae": 0.08680688273249484,
+            "record_r2": 0.5523889897517131,
+            "record_rmse": 0.11643028829097893,
+            "records": 2309
+          },
+          "validation_inference_wall_seconds": 0.06209235917776823
+        },
+        "xgb_c1p5_safe": {
+          "max_temperature_c_observed": 50,
+          "model_path": "runs/gate1b1_new_iid_cheap_baselines/seed456/xgb_c1p5_safe.json",
+          "model_sha256": "4a3f572cf88f3e8cbfe78af3c5207420e759ff86e8322562708c7977eca9fb56",
+          "peak_gpu_memory_mib_observed": 395,
+          "peak_rss_kib": 705892,
+          "prediction_path": "runs/gate1b1_new_iid_cheap_baselines/seed456/xgb_c1p5_safe_val_predictions.csv",
+          "prediction_sha256": "26d4443f09b5e7a3beee2e7401554dbfb7c6fe55e99ecad6a325e7e0eaaba9ae",
+          "preprocessor_sha256": "d3e4cbcf516ee21ccd0762b566396de2d6c3e8b1c0b5756a6e4926c2e5bd66ad",
+          "sample_weight_sum": 10248.0,
+          "training_wall_seconds": 1.6327129709534347,
+          "validation": {
+            "group_macro_mae": 0.08687422100927289,
+            "group_macro_r2": 0.5541270013788682,
+            "group_macro_rmse": 0.11663714161373669,
+            "groups": 2195,
+            "record_mae": 0.08695540425285882,
+            "record_r2": 0.5511398853939911,
+            "record_rmse": 0.11659263043253318,
+            "records": 2309
+          },
+          "validation_inference_wall_seconds": 0.06729405792430043
+        }
+      }
+    }
+  },
+  "status": "TEST_UNLOCKED_ONCE_AFTER_ALL_MODELS_FROZEN",
+  "test_guided_change": false,
+  "unlocked_utc": "2026-07-19T15:46:38.275319+00:00"
+}

@@ -24,6 +24,7 @@
 - [x] Gate 1-A1: strict historical reproduction of the 0.0702 no-dipole cheap champion.
 - [x] Gate 1-A2: numerically reproduce frozen B2-1 seed42 checkpoint and one 80-epoch training run.
 - [x] Gate 1-A3: fixed seeds 123/456 completed; status `FAILED_REPRODUCTION` because both seeds and the aggregate mean exceeded the preregistered 0.0010 eV tolerance.
+- [x] Gate 1-B1: establish leakage-safe median, Ridge-C0, XGBoost-C0, and XGBoost-C1.5-safe baselines on the frozen new15016 grouped-IID split with one-time test evaluation.
 
 ## BLOCKED
 

@@ -1,0 +1,15 @@
+{
+  "aggregate_sha256": "66f5fca8d7b16228f8f4e54b47d0a3ba5c63bf47a5ffdd39e94470c7b6e7963e",
+  "files": {
+    "configs/gate1b1_new_iid_cheap_baselines_v1.json": "f3bc6a8774846850cedadbb4da9717bc1b1c5ff4b8e6ecfb7cad2560a8d9dcb5",
+    "data_registry/gate1b1_feature_mapping_v1.csv": "f1ae1c5aadad24f6bb12cfdba5d6816c03e6c2c0bb9dea172c22ca355c749277",
+    "reports/gate1_historical_claim_reconciliation.md": "4837f5e8307c802d92187903b51c1ae7a3b8ecd21cdaeae9c682e5542a83184d",
+    "reports/gate1b1_feature_admission_audit.md": "ec35c50888e1abd46684801d813ed3bd1f5f8cb6206a581077f3192ff7bb446a",
+    "reports/gate1b1_preregistration.md": "8fe358f46e795be36998ace5d1d1015bee14976123bb5ecca69c3f26be4836e7"
+  },
+  "gate": "1-B1",
+  "locked_utc": "2026-07-19T15:38:44.842672+00:00",
+  "post_lock_policy": "Corrections require explicit v2; never overwrite v1.",
+  "status": "FROZEN_BEFORE_TRAINING",
+  "version": "v1"
+}

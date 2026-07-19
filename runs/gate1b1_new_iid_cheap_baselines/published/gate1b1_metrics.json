@@ -1,0 +1,1433 @@
+{
+  "inference_wall_seconds": {
+    "ridge_c0": 0.002440114039927721,
+    "xgb_c0_seed123": 0.003049984574317932,
+    "xgb_c0_seed42": 0.010784989222884178,
+    "xgb_c0_seed456": 0.02088926685974002,
+    "xgb_c1p5_safe_seed123": 0.01788607193157077,
+    "xgb_c1p5_safe_seed42": 0.0034026848152279854,
+    "xgb_c1p5_safe_seed456": 0.003060345072299242
+  },
+  "overall": {
+    "ridge_c0": {
+      "group_macro_mae": 0.09038723102475772,
+      "group_macro_r2": 0.5412552780166489,
+      "group_macro_rmse": 0.11854981186124629,
+      "groups": 2195,
+      "record_mae": 0.09144758049291558,
+      "record_r2": 0.5370893993916732,
+      "record_rmse": 0.12006071785880373,
+      "records": 2319
+    },
+    "weighted_median": {
+      "group_macro_mae": 0.1417444436706801,
+      "group_macro_r2": -0.00013154914788748862,
+      "group_macro_rmse": 0.1750426551969713,
+      "groups": 2195,
+      "record_mae": 0.14311316318610237,
+      "record_r2": -6.354804871544495e-05,
+      "record_rmse": 0.1764680844500663,
+      "records": 2319
+    },
+    "xgb_c0_seed123": {
+      "group_macro_mae": 0.08418147504486073,
+      "group_macro_r2": 0.5738742181827322,
+      "group_macro_rmse": 0.11425737293628414,
+      "groups": 2195,
+      "record_mae": 0.08529916331644269,
+      "record_r2": 0.5691812186053202,
+      "record_rmse": 0.11582430065198343,
+      "records": 2319
+    },
+    "xgb_c0_seed42": {
+      "group_macro_mae": 0.08418147504486073,
+      "group_macro_r2": 0.5738742181827322,
+      "group_macro_rmse": 0.11425737293628414,
+      "groups": 2195,
+      "record_mae": 0.08529916331644269,
+      "record_r2": 0.5691812186053202,
+      "record_rmse": 0.11582430065198343,
+      "records": 2319
+    },
+    "xgb_c0_seed456": {
+      "group_macro_mae": 0.08418147504486073,
+      "group_macro_r2": 0.5738742181827322,
+      "group_macro_rmse": 0.11425737293628414,
+      "groups": 2195,
+      "record_mae": 0.08529916331644269,
+      "record_r2": 0.5691812186053202,
+      "record_rmse": 0.11582430065198343,
+      "records": 2319
+    },
+    "xgb_c1p5_safe_seed123": {
+      "group_macro_mae": 0.08424036915672115,
+      "group_macro_r2": 0.5769770344628578,
+      "group_macro_rmse": 0.11384063289478673,
+      "groups": 2195,
+      "record_mae": 0.08537139472113793,
+      "record_r2": 0.5719740341154389,
+      "record_rmse": 0.11544827033168008,
+      "records": 2319
+    },
+    "xgb_c1p5_safe_seed42": {
+      "group_macro_mae": 0.08424036915672115,
+      "group_macro_r2": 0.5769770344628578,
+      "group_macro_rmse": 0.11384063289478673,
+      "groups": 2195,
+      "record_mae": 0.08537139472113793,
+      "record_r2": 0.5719740341154389,
+      "record_rmse": 0.11544827033168008,
+      "records": 2319
+    },
+    "xgb_c1p5_safe_seed456": {
+      "group_macro_mae": 0.08424036915672115,
+      "group_macro_r2": 0.5769770344628578,
+      "group_macro_rmse": 0.11384063289478673,
+      "groups": 2195,
+      "record_mae": 0.08537139472113793,
+      "record_r2": 0.5719740341154389,
+      "record_rmse": 0.11544827033168008,
+      "records": 2319
+    }
+  },
+  "prediction_sha256": "be9afad741bb97e0032a850753829f254e2cc34c1d19fb0e86af46f2f5e99908",
+  "primary_report_name": "J_eh_screened_eV_eps3p5 proxy",
+  "status": "GATE1B1_DONE",
+  "strata": {
+    "ridge_c0": {
+      "acceptor_frequency_1": {
+        "group_macro_mae": 0.30569263054439,
+        "group_macro_r2": null,
+        "group_macro_rmse": 0.30569263054439,
+        "groups": 1,
+        "record_mae": 0.30569263054439,
+        "record_r2": null,
+        "record_rmse": 0.30569263054439,
+        "records": 1
+      },
+      "acceptor_frequency_2-5": {
+        "group_macro_mae": 0.18791321315692713,
+        "group_macro_r2": -17.857791077757497,
+        "group_macro_rmse": 0.20481928182131323,
+        "groups": 3,
+        "record_mae": 0.1646666491162436,
+        "record_r2": -14.315813610194398,
+        "record_rmse": 0.18361913383804546,
+        "records": 4
+      },
+      "acceptor_frequency_6-20": {
+        "group_macro_mae": 0.07653515374484013,
+        "group_macro_r2": 0.40837971980364873,
+        "group_macro_rmse": 0.10566822688466022,
+        "groups": 475,
+        "record_mae": 0.07653515374484011,
+        "record_r2": 0.40837971980364873,
+        "record_rmse": 0.10566822688466022,
+        "records": 475
+      },
+      "acceptor_frequency_>20": {
+        "group_macro_mae": 0.09418326926702118,
+        "group_macro_r2": 0.5479231197532484,
+        "group_macro_rmse": 0.1221372619629512,
+        "groups": 1732,
+        "record_mae": 0.0950235899441342,
+        "record_r2": 0.5466986052561877,
+        "record_rmse": 0.12316151417881557,
+        "records": 1839
+      },
+      "donor_acceptor_unknown": {
+        "group_macro_mae": 0.09149640308693585,
+        "group_macro_r2": 0.5405752759896487,
+        "group_macro_rmse": 0.11974196978800057,
+        "groups": 2131,
+        "record_mae": 0.09252255238138309,
+        "record_r2": 0.5362724296988781,
+        "record_rmse": 0.12122064408892307,
+        "records": 2253
+      },
+      "donor_frequency_1": {
+        "groups": 0,
+        "reason": "EMPTY_STRATUM",
+        "records": 0
+      },
+      "donor_frequency_2-5": {
+        "groups": 0,
+        "reason": "EMPTY_STRATUM",
+        "records": 0
+      },
+      "donor_frequency_6-20": {
+        "group_macro_mae": 0.1142839644449699,
+        "group_macro_r2": 0.21335036834832088,
+        "group_macro_rmse": 0.13491201416502405,
+        "groups": 17,
+        "record_mae": 0.1088201277745756,
+        "record_r2": 0.20319509558003956,
+        "record_rmse": 0.12922190220335797,
+        "records": 19
+      },
+      "donor_frequency_>20": {
+        "group_macro_mae": 0.09020070923038508,
+        "group_macro_r2": 0.5431794427198117,
+        "group_macro_rmse": 0.11841320742966821,
+        "groups": 2178,
+        "record_mae": 0.09130406814580622,
+        "record_r2": 0.5389355496130834,
+        "record_rmse": 0.11998212544535368,
+        "records": 2300
+      },
+      "empty_donor_unknown": {
+        "group_macro_mae": 0.05345526751691955,
+        "group_macro_r2": 0.32182918841609576,
+        "group_macro_rmse": 0.06778667874727512,
+        "groups": 64,
+        "record_mae": 0.0547519492093206,
+        "record_r2": 0.29606811327853266,
+        "record_rmse": 0.06972001388633664,
+        "records": 66
+      },
+      "pure_donor_acceptor": {
+        "groups": 0,
+        "reason": "EMPTY_STRATUM",
+        "records": 0
+      },
+      "replicated_structure": {
+        "group_macro_mae": 0.1102174763203876,
+        "group_macro_r2": 0.42528983195070824,
+        "group_macro_rmse": 0.1442093182746343,
+        "groups": 124,
+        "record_mae": 0.11021747632038757,
+        "record_r2": 0.42528983195070824,
+        "record_rmse": 0.1442093182746343,
+        "records": 248
+      },
+      "singleton_structure": {
+        "group_macro_mae": 0.08919990585978517,
+        "group_macro_r2": 0.5456674248489215,
+        "group_macro_rmse": 0.11683479003896378,
+        "groups": 2071,
+        "record_mae": 0.08919990585978518,
+        "record_r2": 0.5456674248489215,
+        "record_rmse": 0.11683479003896378,
+        "records": 2071
+      },
+      "train_quartile_target_bin_1": {
+        "group_macro_mae": 0.12422748046355352,
+        "group_macro_r2": -3.594274134052963,
+        "group_macro_rmse": 0.15938723630402835,
+        "groups": 562,
+        "record_mae": 0.12495090635921408,
+        "record_r2": -3.545796724449133,
+        "record_rmse": 0.16047876502915334,
+        "records": 619
+      },
+      "train_quartile_target_bin_2": {
+        "group_macro_mae": 0.0673615863480326,
+        "group_macro_r2": -5.279471325172177,
+        "group_macro_rmse": 0.08726205483791304,
+        "groups": 549,
+        "record_mae": 0.06696168802803035,
+        "record_r2": -5.209768755891158,
+        "record_rmse": 0.08673013237563086,
+        "records": 566
+      },
+      "train_quartile_target_bin_3": {
+        "group_macro_mae": 0.06856076028528668,
+        "group_macro_r2": -5.372776631553158,
+        "group_macro_rmse": 0.08695430428341293,
+        "groups": 516,
+        "record_mae": 0.06960639188682925,
+        "record_r2": -5.537994805478392,
+        "record_rmse": 0.08818336000471906,
+        "records": 542
+      },
+      "train_quartile_target_bin_4": {
+        "group_macro_mae": 0.09881945193719253,
+        "group_macro_r2": -1.1730542812595868,
+        "group_macro_rmse": 0.12214760072325247,
+        "groups": 569,
+        "record_mae": 0.09982322348005249,
+        "record_r2": -1.1983610127797664,
+        "record_rmse": 0.1233933992638756,
+        "records": 592
+      }
+    },
+    "weighted_median": {
+      "acceptor_frequency_1": {
+        "group_macro_mae": 0.2930897142857143,
+        "group_macro_r2": null,
+        "group_macro_rmse": 0.2930897142857143,
+        "groups": 1,
+        "record_mae": 0.2930897142857143,
+        "record_r2": null,
+        "record_rmse": 0.2930897142857143,
+        "records": 1
+      },
+      "acceptor_frequency_2-5": {
+        "group_macro_mae": 0.27973952380952377,
+        "group_macro_r2": -35.176838467643755,
+        "group_macro_rmse": 0.28368784900918076,
+        "groups": 3,
+        "record_mae": 0.26641114285714285,
+        "record_r2": -32.2410349797472,
+        "record_rmse": 0.2705111476291368,
+        "records": 4
+      },
+      "acceptor_frequency_6-20": {
+        "group_macro_mae": 0.1124917672180451,
+        "group_macro_r2": -0.12653699899616622,
+        "group_macro_rmse": 0.14581279123264515,
+        "groups": 475,
+        "record_mae": 0.11249176721804512,
+        "record_r2": -0.12653699899616622,
+        "record_rmse": 0.14581279123264512,
+        "records": 475
+      },
+      "acceptor_frequency_>20": {
+        "group_macro_mae": 0.14990574422632794,
+        "group_macro_r2": -0.00835725749566718,
+        "group_macro_rmse": 0.18241025289640744,
+        "groups": 1732,
+        "record_mae": 0.15067270348792045,
+        "record_r2": -0.0032499667523504527,
+        "record_rmse": 0.18322556473182913,
+        "records": 1839
+      },
+      "donor_acceptor_unknown": {
+        "group_macro_mae": 0.14352540785680765,
+        "group_macro_r2": -4.7879049613896996e-08,
+        "group_macro_rmse": 0.17666040712967448,
+        "groups": 2131,
+        "record_mae": 0.14485497837803565,
+        "record_r2": -0.0003974740529579801,
+        "record_rmse": 0.1780456723324114,
+        "records": 2253
+      },
+      "donor_frequency_1": {
+        "groups": 0,
+        "reason": "EMPTY_STRATUM",
+        "records": 0
+      },
+      "donor_frequency_2-5": {
+        "groups": 0,
+        "reason": "EMPTY_STRATUM",
+        "records": 0
+      },
+      "donor_frequency_6-20": {
+        "group_macro_mae": 0.13506515966386554,
+        "group_macro_r2": -0.0032183555243188167,
+        "group_macro_rmse": 0.15235534296640393,
+        "groups": 17,
+        "record_mae": 0.12477733834586467,
+        "record_r2": -0.0012261573999730047,
+        "record_rmse": 0.14485257638263613,
+        "records": 19
+      },
+      "donor_frequency_>20": {
+        "group_macro_mae": 0.141796577659714,
+        "group_macro_r2": -0.00012462595871265414,
+        "group_macro_rmse": 0.17520818299215415,
+        "groups": 2178,
+        "record_mae": 0.14326463304347825,
+        "record_r2": -6.828962091742774e-05,
+        "record_rmse": 0.17670570069142,
+        "records": 2300
+      },
+      "empty_donor_unknown": {
+        "group_macro_mae": 0.08244390178571429,
+        "group_macro_r2": -0.726048531689482,
+        "group_macro_rmse": 0.1081437214117368,
+        "groups": 64,
+        "record_mae": 0.0836539264069264,
+        "record_r2": -0.7449302594464824,
+        "record_rmse": 0.10976937280314937,
+        "records": 66
+      },
+      "pure_donor_acceptor": {
+        "groups": 0,
+        "reason": "EMPTY_STRATUM",
+        "records": 0
+      },
+      "replicated_structure": {
+        "group_macro_mae": 0.16734170622119818,
+        "group_macro_r2": -0.10569563905171342,
+        "group_macro_rmse": 0.2000261065774373,
+        "groups": 124,
+        "record_mae": 0.16734170622119815,
+        "record_r2": -0.10569563905171342,
+        "record_rmse": 0.2000261065774373,
+        "records": 248
+      },
+      "singleton_structure": {
+        "group_macro_mae": 0.14021182148030628,
+        "group_macro_r2": -0.0011315003449741123,
+        "group_macro_rmse": 0.17343262902980747,
+        "groups": 2071,
+        "record_mae": 0.14021182148030625,
+        "record_r2": -0.0011315003449741123,
+        "record_rmse": 0.17343262902980747,
+        "records": 2071
+      },
+      "train_quartile_target_bin_1": {
+        "group_macro_mae": 0.21807999364514488,
+        "group_macro_r2": -8.600852039784382,
+        "group_macro_rmse": 0.23040928483557266,
+        "groups": 562,
+        "record_mae": 0.21910230371567044,
+        "record_r2": -8.473615471780581,
+        "record_rmse": 0.23167034444794152,
+        "records": 619
+      },
+      "train_quartile_target_bin_2": {
+        "group_macro_mae": 0.056105580275826177,
+        "group_macro_r2": -2.595878297032665,
+        "group_macro_rmse": 0.0660338147403139,
+        "groups": 549,
+        "record_mae": 0.05644227359919233,
+        "record_r2": -2.629931328954756,
+        "record_rmse": 0.06631037743094405,
+        "records": 566
+      },
+      "train_quartile_target_bin_3": {
+        "group_macro_mae": 0.05772490088593577,
+        "group_macro_r2": -2.8084389473915707,
+        "group_macro_rmse": 0.0672202673361541,
+        "groups": 516,
+        "record_mae": 0.05737205956773853,
+        "record_r2": -2.767353057517819,
+        "record_rmse": 0.06693950829484617,
+        "records": 542
+      },
+      "train_quartile_target_bin_4": {
+        "group_macro_mae": 0.22492634145116744,
+        "group_macro_r2": -7.368538071687206,
+        "group_macro_rmse": 0.23970354202121902,
+        "groups": 569,
+        "record_mae": 0.22502215588803087,
+        "record_r2": -7.310813734259359,
+        "record_rmse": 0.239918753367263,
+        "records": 592
+      }
+    },
+    "xgb_c0_seed123": {
+      "acceptor_frequency_1": {
+        "group_macro_mae": 0.2778331811577933,
+        "group_macro_r2": null,
+        "group_macro_rmse": 0.2778331811577933,
+        "groups": 1,
+        "record_mae": 0.2778331811577933,
+        "record_r2": null,
+        "record_rmse": 0.2778331811577933,
+        "records": 1
+      },
+      "acceptor_frequency_2-5": {
+        "group_macro_mae": 0.2244408865603492,
+        "group_macro_r2": -29.48606823029246,
+        "group_macro_rmse": 0.26042108120743734,
+        "groups": 3,
+        "record_mae": 0.19070872308131623,
+        "record_r2": -23.01555866288535,
+        "record_rmse": 0.22992926187681495,
+        "records": 4
+      },
+      "acceptor_frequency_6-20": {
+        "group_macro_mae": 0.071591685242757,
+        "group_macro_r2": 0.4564864180716949,
+        "group_macro_rmse": 0.10128102647021305,
+        "groups": 475,
+        "record_mae": 0.071591685242757,
+        "record_r2": 0.4564864180716949,
+        "record_rmse": 0.10128102647021305,
+        "records": 475
+      },
+      "acceptor_frequency_>20": {
+        "group_macro_mae": 0.08767459378614492,
+        "group_macro_r2": 0.5778241757578391,
+        "group_macro_rmse": 0.11802899555589992,
+        "groups": 1732,
+        "record_mae": 0.08850573201035235,
+        "record_r2": 0.5783290001563774,
+        "record_rmse": 0.11878684807434063,
+        "records": 1839
+      },
+      "donor_acceptor_unknown": {
+        "group_macro_mae": 0.08526857481188212,
+        "group_macro_r2": 0.5731703647200274,
+        "group_macro_rmse": 0.11541612768914081,
+        "groups": 2131,
+        "record_mae": 0.08627754272375385,
+        "record_r2": 0.5691951569710115,
+        "record_rmse": 0.11683835052837002,
+        "records": 2253
+      },
+      "donor_frequency_1": {
+        "groups": 0,
+        "reason": "EMPTY_STRATUM",
+        "records": 0
+      },
+      "donor_frequency_2-5": {
+        "groups": 0,
+        "reason": "EMPTY_STRATUM",
+        "records": 0
+      },
+      "donor_frequency_6-20": {
+        "group_macro_mae": 0.09807582815314542,
+        "group_macro_r2": 0.3658482469598804,
+        "group_macro_rmse": 0.12113134875828116,
+        "groups": 17,
+        "record_mae": 0.09212319514525563,
+        "record_r2": 0.36469160857789173,
+        "record_rmse": 0.11538581616894286,
+        "records": 19
+      },
+      "donor_frequency_>20": {
+        "group_macro_mae": 0.08407302508947008,
+        "group_macro_r2": 0.575093408335674,
+        "group_macro_rmse": 0.11420209198073553,
+        "groups": 2178,
+        "record_mae": 0.08524279087959599,
+        "record_r2": 0.5703102234049474,
+        "record_rmse": 0.11582791600214674,
+        "records": 2300
+      },
+      "empty_donor_unknown": {
+        "group_macro_mae": 0.04798444998982124,
+        "group_macro_r2": 0.3811239115996953,
+        "group_macro_rmse": 0.06475549991962598,
+        "groups": 64,
+        "record_mae": 0.051900848094139265,
+        "record_r2": 0.22358151792308834,
+        "record_rmse": 0.0732217456022471,
+        "records": 66
+      },
+      "pure_donor_acceptor": {
+        "groups": 0,
+        "reason": "EMPTY_STRATUM",
+        "records": 0
+      },
+      "replicated_structure": {
+        "group_macro_mae": 0.10508404844646192,
+        "group_macro_r2": 0.45290426636111014,
+        "group_macro_rmse": 0.1407020896225931,
+        "groups": 124,
+        "record_mae": 0.10508404844646188,
+        "record_r2": 0.45290426636111014,
+        "record_rmse": 0.1407020896225931,
+        "records": 248
+      },
+      "singleton_structure": {
+        "group_macro_mae": 0.0829299448170488,
+        "group_macro_r2": 0.5789281418364156,
+        "group_macro_rmse": 0.11247690375785784,
+        "groups": 2071,
+        "record_mae": 0.0829299448170488,
+        "record_r2": 0.5789281418364156,
+        "record_rmse": 0.11247690375785784,
+        "records": 2071
+      },
+      "train_quartile_target_bin_1": {
+        "group_macro_mae": 0.11037243915447172,
+        "group_macro_r2": -2.959201387120424,
+        "group_macro_rmse": 0.14796155402846345,
+        "groups": 562,
+        "record_mae": 0.1108179438839619,
+        "record_r2": -2.9349294412914286,
+        "record_rmse": 0.14930730018641228,
+        "records": 619
+      },
+      "train_quartile_target_bin_2": {
+        "group_macro_mae": 0.062365569753545604,
+        "group_macro_r2": -4.720302016238775,
+        "group_macro_rmse": 0.0832862626466076,
+        "groups": 549,
+        "record_mae": 0.062488107191938404,
+        "record_r2": -4.73140352103409,
+        "record_rmse": 0.08332259523523988,
+        "records": 566
+      },
+      "train_quartile_target_bin_3": {
+        "group_macro_mae": 0.06594490271557102,
+        "group_macro_r2": -5.159092394963426,
+        "group_macro_rmse": 0.08548405124399334,
+        "groups": 516,
+        "record_mae": 0.06762435404389823,
+        "record_r2": -5.436702608776492,
+        "record_rmse": 0.08749758754778944,
+        "records": 542
+      },
+      "train_quartile_target_bin_4": {
+        "group_macro_mae": 0.09579784851470438,
+        "group_macro_r2": -1.2457078028116157,
+        "group_macro_rmse": 0.12417274371411435,
+        "groups": 569,
+        "record_mae": 0.09660774308146658,
+        "record_r2": -1.2515515963471966,
+        "record_rmse": 0.1248772635927549,
+        "records": 592
+      }
+    },
+    "xgb_c0_seed42": {
+      "acceptor_frequency_1": {
+        "group_macro_mae": 0.2778331811577933,
+        "group_macro_r2": null,
+        "group_macro_rmse": 0.2778331811577933,
+        "groups": 1,
+        "record_mae": 0.2778331811577933,
+        "record_r2": null,
+        "record_rmse": 0.2778331811577933,
+        "records": 1
+      },
+      "acceptor_frequency_2-5": {
+        "group_macro_mae": 0.2244408865603492,
+        "group_macro_r2": -29.48606823029246,
+        "group_macro_rmse": 0.26042108120743734,
+        "groups": 3,
+        "record_mae": 0.19070872308131623,
+        "record_r2": -23.01555866288535,
+        "record_rmse": 0.22992926187681495,
+        "records": 4
+      },
+      "acceptor_frequency_6-20": {
+        "group_macro_mae": 0.071591685242757,
+        "group_macro_r2": 0.4564864180716949,
+        "group_macro_rmse": 0.10128102647021305,
+        "groups": 475,
+        "record_mae": 0.071591685242757,
+        "record_r2": 0.4564864180716949,
+        "record_rmse": 0.10128102647021305,
+        "records": 475
+      },
+      "acceptor_frequency_>20": {
+        "group_macro_mae": 0.08767459378614492,
+        "group_macro_r2": 0.5778241757578391,
+        "group_macro_rmse": 0.11802899555589992,
+        "groups": 1732,
+        "record_mae": 0.08850573201035235,
+        "record_r2": 0.5783290001563774,
+        "record_rmse": 0.11878684807434063,
+        "records": 1839
+      },
+      "donor_acceptor_unknown": {
+        "group_macro_mae": 0.08526857481188212,
+        "group_macro_r2": 0.5731703647200274,
+        "group_macro_rmse": 0.11541612768914081,
+        "groups": 2131,
+        "record_mae": 0.08627754272375385,
+        "record_r2": 0.5691951569710115,
+        "record_rmse": 0.11683835052837002,
+        "records": 2253
+      },
+      "donor_frequency_1": {
+        "groups": 0,
+        "reason": "EMPTY_STRATUM",
+        "records": 0
+      },
+      "donor_frequency_2-5": {
+        "groups": 0,
+        "reason": "EMPTY_STRATUM",
+        "records": 0
+      },
+      "donor_frequency_6-20": {
+        "group_macro_mae": 0.09807582815314542,
+        "group_macro_r2": 0.3658482469598804,
+        "group_macro_rmse": 0.12113134875828116,
+        "groups": 17,
+        "record_mae": 0.09212319514525563,
+        "record_r2": 0.36469160857789173,
+        "record_rmse": 0.11538581616894286,
+        "records": 19
+      },
+      "donor_frequency_>20": {
+        "group_macro_mae": 0.08407302508947008,
+        "group_macro_r2": 0.575093408335674,
+        "group_macro_rmse": 0.11420209198073553,
+        "groups": 2178,
+        "record_mae": 0.08524279087959599,
+        "record_r2": 0.5703102234049474,
+        "record_rmse": 0.11582791600214674,
+        "records": 2300
+      },
+      "empty_donor_unknown": {
+        "group_macro_mae": 0.04798444998982124,
+        "group_macro_r2": 0.3811239115996953,
+        "group_macro_rmse": 0.06475549991962598,
+        "groups": 64,
+        "record_mae": 0.051900848094139265,
+        "record_r2": 0.22358151792308834,
+        "record_rmse": 0.0732217456022471,
+        "records": 66
+      },
+      "pure_donor_acceptor": {
+        "groups": 0,
+        "reason": "EMPTY_STRATUM",
+        "records": 0
+      },
+      "replicated_structure": {
+        "group_macro_mae": 0.10508404844646192,
+        "group_macro_r2": 0.45290426636111014,
+        "group_macro_rmse": 0.1407020896225931,
+        "groups": 124,
+        "record_mae": 0.10508404844646188,
+        "record_r2": 0.45290426636111014,
+        "record_rmse": 0.1407020896225931,
+        "records": 248
+      },
+      "singleton_structure": {
+        "group_macro_mae": 0.0829299448170488,
+        "group_macro_r2": 0.5789281418364156,
+        "group_macro_rmse": 0.11247690375785784,
+        "groups": 2071,
+        "record_mae": 0.0829299448170488,
+        "record_r2": 0.5789281418364156,
+        "record_rmse": 0.11247690375785784,
+        "records": 2071
+      },
+      "train_quartile_target_bin_1": {
+        "group_macro_mae": 0.11037243915447172,
+        "group_macro_r2": -2.959201387120424,
+        "group_macro_rmse": 0.14796155402846345,
+        "groups": 562,
+        "record_mae": 0.1108179438839619,
+        "record_r2": -2.9349294412914286,
+        "record_rmse": 0.14930730018641228,
+        "records": 619
+      },
+      "train_quartile_target_bin_2": {
+        "group_macro_mae": 0.062365569753545604,
+        "group_macro_r2": -4.720302016238775,
+        "group_macro_rmse": 0.0832862626466076,
+        "groups": 549,
+        "record_mae": 0.062488107191938404,
+        "record_r2": -4.73140352103409,
+        "record_rmse": 0.08332259523523988,
+        "records": 566
+      },
+      "train_quartile_target_bin_3": {
+        "group_macro_mae": 0.06594490271557102,
+        "group_macro_r2": -5.159092394963426,
+        "group_macro_rmse": 0.08548405124399334,
+        "groups": 516,
+        "record_mae": 0.06762435404389823,
+        "record_r2": -5.436702608776492,
+        "record_rmse": 0.08749758754778944,
+        "records": 542
+      },
+      "train_quartile_target_bin_4": {
+        "group_macro_mae": 0.09579784851470438,
+        "group_macro_r2": -1.2457078028116157,
+        "group_macro_rmse": 0.12417274371411435,
+        "groups": 569,
+        "record_mae": 0.09660774308146658,
+        "record_r2": -1.2515515963471966,
+        "record_rmse": 0.1248772635927549,
+        "records": 592
+      }
+    },
+    "xgb_c0_seed456": {
+      "acceptor_frequency_1": {
+        "group_macro_mae": 0.2778331811577933,
+        "group_macro_r2": null,
+        "group_macro_rmse": 0.2778331811577933,
+        "groups": 1,
+        "record_mae": 0.2778331811577933,
+        "record_r2": null,
+        "record_rmse": 0.2778331811577933,
+        "records": 1
+      },
+      "acceptor_frequency_2-5": {
+        "group_macro_mae": 0.2244408865603492,
+        "group_macro_r2": -29.48606823029246,
+        "group_macro_rmse": 0.26042108120743734,
+        "groups": 3,
+        "record_mae": 0.19070872308131623,
+        "record_r2": -23.01555866288535,
+        "record_rmse": 0.22992926187681495,
+        "records": 4
+      },
+      "acceptor_frequency_6-20": {
+        "group_macro_mae": 0.071591685242757,
+        "group_macro_r2": 0.4564864180716949,
+        "group_macro_rmse": 0.10128102647021305,
+        "groups": 475,
+        "record_mae": 0.071591685242757,
+        "record_r2": 0.4564864180716949,
+        "record_rmse": 0.10128102647021305,
+        "records": 475
+      },
+      "acceptor_frequency_>20": {
+        "group_macro_mae": 0.08767459378614492,
+        "group_macro_r2": 0.5778241757578391,
+        "group_macro_rmse": 0.11802899555589992,
+        "groups": 1732,
+        "record_mae": 0.08850573201035235,
+        "record_r2": 0.5783290001563774,
+        "record_rmse": 0.11878684807434063,
+        "records": 1839
+      },
+      "donor_acceptor_unknown": {
+        "group_macro_mae": 0.08526857481188212,
+        "group_macro_r2": 0.5731703647200274,
+        "group_macro_rmse": 0.11541612768914081,
+        "groups": 2131,
+        "record_mae": 0.08627754272375385,
+        "record_r2": 0.5691951569710115,
+        "record_rmse": 0.11683835052837002,
+        "records": 2253
+      },
+      "donor_frequency_1": {
+        "groups": 0,
+        "reason": "EMPTY_STRATUM",
+        "records": 0
+      },
+      "donor_frequency_2-5": {
+        "groups": 0,
+        "reason": "EMPTY_STRATUM",
+        "records": 0
+      },
+      "donor_frequency_6-20": {
+        "group_macro_mae": 0.09807582815314542,
+        "group_macro_r2": 0.3658482469598804,
+        "group_macro_rmse": 0.12113134875828116,
+        "groups": 17,
+        "record_mae": 0.09212319514525563,
+        "record_r2": 0.36469160857789173,
+        "record_rmse": 0.11538581616894286,
+        "records": 19
+      },
+      "donor_frequency_>20": {
+        "group_macro_mae": 0.08407302508947008,
+        "group_macro_r2": 0.575093408335674,
+        "group_macro_rmse": 0.11420209198073553,
+        "groups": 2178,
+        "record_mae": 0.08524279087959599,
+        "record_r2": 0.5703102234049474,
+        "record_rmse": 0.11582791600214674,
+        "records": 2300
+      },
+      "empty_donor_unknown": {
+        "group_macro_mae": 0.04798444998982124,
+        "group_macro_r2": 0.3811239115996953,
+        "group_macro_rmse": 0.06475549991962598,
+        "groups": 64,
+        "record_mae": 0.051900848094139265,
+        "record_r2": 0.22358151792308834,
+        "record_rmse": 0.0732217456022471,
+        "records": 66
+      },
+      "pure_donor_acceptor": {
+        "groups": 0,
+        "reason": "EMPTY_STRATUM",
+        "records": 0
+      },
+      "replicated_structure": {
+        "group_macro_mae": 0.10508404844646192,
+        "group_macro_r2": 0.45290426636111014,
+        "group_macro_rmse": 0.1407020896225931,
+        "groups": 124,
+        "record_mae": 0.10508404844646188,
+        "record_r2": 0.45290426636111014,
+        "record_rmse": 0.1407020896225931,
+        "records": 248
+      },
+      "singleton_structure": {
+        "group_macro_mae": 0.0829299448170488,
+        "group_macro_r2": 0.5789281418364156,
+        "group_macro_rmse": 0.11247690375785784,
+        "groups": 2071,
+        "record_mae": 0.0829299448170488,
+        "record_r2": 0.5789281418364156,
+        "record_rmse": 0.11247690375785784,
+        "records": 2071
+      },
+      "train_quartile_target_bin_1": {
+        "group_macro_mae": 0.11037243915447172,
+        "group_macro_r2": -2.959201387120424,
+        "group_macro_rmse": 0.14796155402846345,
+        "groups": 562,
+        "record_mae": 0.1108179438839619,
+        "record_r2": -2.9349294412914286,
+        "record_rmse": 0.14930730018641228,
+        "records": 619
+      },
+      "train_quartile_target_bin_2": {
+        "group_macro_mae": 0.062365569753545604,
+        "group_macro_r2": -4.720302016238775,
+        "group_macro_rmse": 0.0832862626466076,
+        "groups": 549,
+        "record_mae": 0.062488107191938404,
+        "record_r2": -4.73140352103409,
+        "record_rmse": 0.08332259523523988,
+        "records": 566
+      },
+      "train_quartile_target_bin_3": {
+        "group_macro_mae": 0.06594490271557102,
+        "group_macro_r2": -5.159092394963426,
+        "group_macro_rmse": 0.08548405124399334,
+        "groups": 516,
+        "record_mae": 0.06762435404389823,
+        "record_r2": -5.436702608776492,
+        "record_rmse": 0.08749758754778944,
+        "records": 542
+      },
+      "train_quartile_target_bin_4": {
+        "group_macro_mae": 0.09579784851470438,
+        "group_macro_r2": -1.2457078028116157,
+        "group_macro_rmse": 0.12417274371411435,
+        "groups": 569,
+        "record_mae": 0.09660774308146658,
+        "record_r2": -1.2515515963471966,
+        "record_rmse": 0.1248772635927549,
+        "records": 592
+      }
+    },
+    "xgb_c1p5_safe_seed123": {
+      "acceptor_frequency_1": {
+        "group_macro_mae": 0.22392966105052403,
+        "group_macro_r2": null,
+        "group_macro_rmse": 0.22392966105052403,
+        "groups": 1,
+        "record_mae": 0.22392966105052403,
+        "record_r2": null,
+        "record_rmse": 0.22392966105052403,
+        "records": 1
+      },
+      "acceptor_frequency_2-5": {
+        "group_macro_mae": 0.21763932107216966,
+        "group_macro_r2": -26.072217204150657,
+        "group_macro_rmse": 0.24540722348825628,
+        "groups": 3,
+        "record_mae": 0.19437437893268036,
+        "record_r2": -21.280777520172112,
+        "record_rmse": 0.2214690635221145,
+        "records": 4
+      },
+      "acceptor_frequency_6-20": {
+        "group_macro_mae": 0.07388991357669915,
+        "group_macro_r2": 0.4191408924329937,
+        "group_macro_rmse": 0.10470279984352647,
+        "groups": 475,
+        "record_mae": 0.07388991357669916,
+        "record_r2": 0.4191408924329937,
+        "record_rmse": 0.10470279984352646,
+        "records": 475
+      },
+      "acceptor_frequency_>20": {
+        "group_macro_mae": 0.08719566849159441,
+        "group_macro_r2": 0.5862863893803161,
+        "group_macro_rmse": 0.11684010421511781,
+        "groups": 1732,
+        "record_mae": 0.08802453955008456,
+        "record_r2": 0.5863588881642297,
+        "record_rmse": 0.11765038164887066,
+        "records": 1839
+      },
+      "donor_acceptor_unknown": {
+        "group_macro_mae": 0.0852747271011259,
+        "group_macro_r2": 0.5766261250289413,
+        "group_macro_rmse": 0.11494795370046931,
+        "groups": 2131,
+        "record_mae": 0.08627447745132882,
+        "record_r2": 0.5725512424604025,
+        "record_rmse": 0.11638235964593303,
+        "records": 2253
+      },
+      "donor_frequency_1": {
+        "groups": 0,
+        "reason": "EMPTY_STRATUM",
+        "records": 0
+      },
+      "donor_frequency_2-5": {
+        "groups": 0,
+        "reason": "EMPTY_STRATUM",
+        "records": 0
+      },
+      "donor_frequency_6-20": {
+        "group_macro_mae": 0.09928969027751634,
+        "group_macro_r2": 0.34088378789517004,
+        "group_macro_rmse": 0.12349260483065257,
+        "groups": 17,
+        "record_mae": 0.09207317386053558,
+        "record_r2": 0.3441416073034278,
+        "record_rmse": 0.11723712795566732,
+        "records": 19
+      },
+      "donor_frequency_>20": {
+        "group_macro_mae": 0.08412290429948814,
+        "group_macro_r2": 0.5783614011105069,
+        "group_macro_rmse": 0.11376207528969089,
+        "groups": 2178,
+        "record_mae": 0.08531603219781246,
+        "record_r2": 0.5732324980343222,
+        "record_rmse": 0.11543337736359248,
+        "records": 2300
+      },
+      "empty_donor_unknown": {
+        "group_macro_mae": 0.04979948197661979,
+        "group_macro_r2": 0.3322862365772673,
+        "group_macro_rmse": 0.06726203042465383,
+        "groups": 64,
+        "record_mae": 0.05454343424962196,
+        "record_r2": 0.14036577158630148,
+        "record_rmse": 0.07704580471987964,
+        "records": 66
+      },
+      "pure_donor_acceptor": {
+        "groups": 0,
+        "reason": "EMPTY_STRATUM",
+        "records": 0
+      },
+      "replicated_structure": {
+        "group_macro_mae": 0.10539237144609641,
+        "group_macro_r2": 0.45134903456864517,
+        "group_macro_rmse": 0.14090193496680817,
+        "groups": 124,
+        "record_mae": 0.10539237144609638,
+        "record_r2": 0.45134903456864517,
+        "record_rmse": 0.14090193496680817,
+        "records": 248
+      },
+      "singleton_structure": {
+        "group_macro_mae": 0.08297390450974745,
+        "group_macro_r2": 0.5823935795203816,
+        "group_macro_rmse": 0.11201310287667714,
+        "groups": 2071,
+        "record_mae": 0.08297390450974745,
+        "record_r2": 0.5823935795203816,
+        "record_rmse": 0.11201310287667715,
+        "records": 2071
+      },
+      "train_quartile_target_bin_1": {
+        "group_macro_mae": 0.11016877929666287,
+        "group_macro_r2": -2.973231780052376,
+        "group_macro_rmse": 0.14822349104864063,
+        "groups": 562,
+        "record_mae": 0.11034150767256935,
+        "record_r2": -2.9290747117582896,
+        "record_rmse": 0.14919618265869253,
+        "records": 619
+      },
+      "train_quartile_target_bin_2": {
+        "group_macro_mae": 0.06335011716799868,
+        "group_macro_r2": -4.673256760704959,
+        "group_macro_rmse": 0.08294307159484131,
+        "groups": 549,
+        "record_mae": 0.06328204135196681,
+        "record_r2": -4.6598001115414345,
+        "record_rmse": 0.08280047763042188,
+        "records": 566
+      },
+      "train_quartile_target_bin_3": {
+        "group_macro_mae": 0.06588774671139934,
+        "group_macro_r2": -5.100068832142751,
+        "group_macro_rmse": 0.08507346155415846,
+        "groups": 516,
+        "record_mae": 0.06795865969241942,
+        "record_r2": -5.489418937990964,
+        "record_rmse": 0.0878551577382453,
+        "records": 542
+      },
+      "train_quartile_target_bin_4": {
+        "group_macro_mae": 0.09531721430796988,
+        "group_macro_r2": -1.198331966061379,
+        "group_macro_rmse": 0.12285597727032865,
+        "groups": 569,
+        "record_mae": 0.09632371984880725,
+        "record_r2": -1.2110578967591672,
+        "record_rmse": 0.12374922253268451,
+        "records": 592
+      }
+    },
+    "xgb_c1p5_safe_seed42": {
+      "acceptor_frequency_1": {
+        "group_macro_mae": 0.22392966105052403,
+        "group_macro_r2": null,
+        "group_macro_rmse": 0.22392966105052403,
+        "groups": 1,
+        "record_mae": 0.22392966105052403,
+        "record_r2": null,
+        "record_rmse": 0.22392966105052403,
+        "records": 1
+      },
+      "acceptor_frequency_2-5": {
+        "group_macro_mae": 0.21763932107216966,
+        "group_macro_r2": -26.072217204150657,
+        "group_macro_rmse": 0.24540722348825628,
+        "groups": 3,
+        "record_mae": 0.19437437893268036,
+        "record_r2": -21.280777520172112,
+        "record_rmse": 0.2214690635221145,
+        "records": 4
+      },
+      "acceptor_frequency_6-20": {
+        "group_macro_mae": 0.07388991357669915,
+        "group_macro_r2": 0.4191408924329937,
+        "group_macro_rmse": 0.10470279984352647,
+        "groups": 475,
+        "record_mae": 0.07388991357669916,
+        "record_r2": 0.4191408924329937,
+        "record_rmse": 0.10470279984352646,
+        "records": 475
+      },
+      "acceptor_frequency_>20": {
+        "group_macro_mae": 0.08719566849159441,
+        "group_macro_r2": 0.5862863893803161,
+        "group_macro_rmse": 0.11684010421511781,
+        "groups": 1732,
+        "record_mae": 0.08802453955008456,
+        "record_r2": 0.5863588881642297,
+        "record_rmse": 0.11765038164887066,
+        "records": 1839
+      },
+      "donor_acceptor_unknown": {
+        "group_macro_mae": 0.0852747271011259,
+        "group_macro_r2": 0.5766261250289413,
+        "group_macro_rmse": 0.11494795370046931,
+        "groups": 2131,
+        "record_mae": 0.08627447745132882,
+        "record_r2": 0.5725512424604025,
+        "record_rmse": 0.11638235964593303,
+        "records": 2253
+      },
+      "donor_frequency_1": {
+        "groups": 0,
+        "reason": "EMPTY_STRATUM",
+        "records": 0
+      },
+      "donor_frequency_2-5": {
+        "groups": 0,
+        "reason": "EMPTY_STRATUM",
+        "records": 0
+      },
+      "donor_frequency_6-20": {
+        "group_macro_mae": 0.09928969027751634,
+        "group_macro_r2": 0.34088378789517004,
+        "group_macro_rmse": 0.12349260483065257,
+        "groups": 17,
+        "record_mae": 0.09207317386053558,
+        "record_r2": 0.3441416073034278,
+        "record_rmse": 0.11723712795566732,
+        "records": 19
+      },
+      "donor_frequency_>20": {
+        "group_macro_mae": 0.08412290429948814,
+        "group_macro_r2": 0.5783614011105069,
+        "group_macro_rmse": 0.11376207528969089,
+        "groups": 2178,
+        "record_mae": 0.08531603219781246,
+        "record_r2": 0.5732324980343222,
+        "record_rmse": 0.11543337736359248,
+        "records": 2300
+      },
+      "empty_donor_unknown": {
+        "group_macro_mae": 0.04979948197661979,
+        "group_macro_r2": 0.3322862365772673,
+        "group_macro_rmse": 0.06726203042465383,
+        "groups": 64,
+        "record_mae": 0.05454343424962196,
+        "record_r2": 0.14036577158630148,
+        "record_rmse": 0.07704580471987964,
+        "records": 66
+      },
+      "pure_donor_acceptor": {
+        "groups": 0,
+        "reason": "EMPTY_STRATUM",
+        "records": 0
+      },
+      "replicated_structure": {
+        "group_macro_mae": 0.10539237144609641,
+        "group_macro_r2": 0.45134903456864517,
+        "group_macro_rmse": 0.14090193496680817,
+        "groups": 124,
+        "record_mae": 0.10539237144609638,
+        "record_r2": 0.45134903456864517,
+        "record_rmse": 0.14090193496680817,
+        "records": 248
+      },
+      "singleton_structure": {
+        "group_macro_mae": 0.08297390450974745,
+        "group_macro_r2": 0.5823935795203816,
+        "group_macro_rmse": 0.11201310287667714,
+        "groups": 2071,
+        "record_mae": 0.08297390450974745,
+        "record_r2": 0.5823935795203816,
+        "record_rmse": 0.11201310287667715,
+        "records": 2071
+      },
+      "train_quartile_target_bin_1": {
+        "group_macro_mae": 0.11016877929666287,
+        "group_macro_r2": -2.973231780052376,
+        "group_macro_rmse": 0.14822349104864063,
+        "groups": 562,
+        "record_mae": 0.11034150767256935,
+        "record_r2": -2.9290747117582896,
+        "record_rmse": 0.14919618265869253,
+        "records": 619
+      },
+      "train_quartile_target_bin_2": {
+        "group_macro_mae": 0.06335011716799868,
+        "group_macro_r2": -4.673256760704959,
+        "group_macro_rmse": 0.08294307159484131,
+        "groups": 549,
+        "record_mae": 0.06328204135196681,
+        "record_r2": -4.6598001115414345,
+        "record_rmse": 0.08280047763042188,
+        "records": 566
+      },
+      "train_quartile_target_bin_3": {
+        "group_macro_mae": 0.06588774671139934,
+        "group_macro_r2": -5.100068832142751,
+        "group_macro_rmse": 0.08507346155415846,
+        "groups": 516,
+        "record_mae": 0.06795865969241942,
+        "record_r2": -5.489418937990964,
+        "record_rmse": 0.0878551577382453,
+        "records": 542
+      },
+      "train_quartile_target_bin_4": {
+        "group_macro_mae": 0.09531721430796988,
+        "group_macro_r2": -1.198331966061379,
+        "group_macro_rmse": 0.12285597727032865,
+        "groups": 569,
+        "record_mae": 0.09632371984880725,
+        "record_r2": -1.2110578967591672,
+        "record_rmse": 0.12374922253268451,
+        "records": 592
+      }
+    },
+    "xgb_c1p5_safe_seed456": {
+      "acceptor_frequency_1": {
+        "group_macro_mae": 0.22392966105052403,
+        "group_macro_r2": null,
+        "group_macro_rmse": 0.22392966105052403,
+        "groups": 1,
+        "record_mae": 0.22392966105052403,
+        "record_r2": null,
+        "record_rmse": 0.22392966105052403,
+        "records": 1
+      },
+      "acceptor_frequency_2-5": {
+        "group_macro_mae": 0.21763932107216966,
+        "group_macro_r2": -26.072217204150657,
+        "group_macro_rmse": 0.24540722348825628,
+        "groups": 3,
+        "record_mae": 0.19437437893268036,
+        "record_r2": -21.280777520172112,
+        "record_rmse": 0.2214690635221145,
+        "records": 4
+      },
+      "acceptor_frequency_6-20": {
+        "group_macro_mae": 0.07388991357669915,
+        "group_macro_r2": 0.4191408924329937,
+        "group_macro_rmse": 0.10470279984352647,
+        "groups": 475,
+        "record_mae": 0.07388991357669916,
+        "record_r2": 0.4191408924329937,
+        "record_rmse": 0.10470279984352646,
+        "records": 475
+      },
+      "acceptor_frequency_>20": {
+        "group_macro_mae": 0.08719566849159441,
+        "group_macro_r2": 0.5862863893803161,
+        "group_macro_rmse": 0.11684010421511781,
+        "groups": 1732,
+        "record_mae": 0.08802453955008456,
+        "record_r2": 0.5863588881642297,
+        "record_rmse": 0.11765038164887066,
+        "records": 1839
+      },
+      "donor_acceptor_unknown": {
+        "group_macro_mae": 0.0852747271011259,
+        "group_macro_r2": 0.5766261250289413,
+        "group_macro_rmse": 0.11494795370046931,
+        "groups": 2131,
+        "record_mae": 0.08627447745132882,
+        "record_r2": 0.5725512424604025,
+        "record_rmse": 0.11638235964593303,
+        "records": 2253
+      },
+      "donor_frequency_1": {
+        "groups": 0,
+        "reason": "EMPTY_STRATUM",
+        "records": 0
+      },
+      "donor_frequency_2-5": {
+        "groups": 0,
+        "reason": "EMPTY_STRATUM",
+        "records": 0
+      },
+      "donor_frequency_6-20": {
+        "group_macro_mae": 0.09928969027751634,
+        "group_macro_r2": 0.34088378789517004,
+        "group_macro_rmse": 0.12349260483065257,
+        "groups": 17,
+        "record_mae": 0.09207317386053558,
+        "record_r2": 0.3441416073034278,
+        "record_rmse": 0.11723712795566732,
+        "records": 19
+      },
+      "donor_frequency_>20": {
+        "group_macro_mae": 0.08412290429948814,
+        "group_macro_r2": 0.5783614011105069,
+        "group_macro_rmse": 0.11376207528969089,
+        "groups": 2178,
+        "record_mae": 0.08531603219781246,
+        "record_r2": 0.5732324980343222,
+        "record_rmse": 0.11543337736359248,
+        "records": 2300
+      },
+      "empty_donor_unknown": {
+        "group_macro_mae": 0.04979948197661979,
+        "group_macro_r2": 0.3322862365772673,
+        "group_macro_rmse": 0.06726203042465383,
+        "groups": 64,
+        "record_mae": 0.05454343424962196,
+        "record_r2": 0.14036577158630148,
+        "record_rmse": 0.07704580471987964,
+        "records": 66
+      },
+      "pure_donor_acceptor": {
+        "groups": 0,
+        "reason": "EMPTY_STRATUM",
+        "records": 0
+      },
+      "replicated_structure": {
+        "group_macro_mae": 0.10539237144609641,
+        "group_macro_r2": 0.45134903456864517,
+        "group_macro_rmse": 0.14090193496680817,
+        "groups": 124,
+        "record_mae": 0.10539237144609638,
+        "record_r2": 0.45134903456864517,
+        "record_rmse": 0.14090193496680817,
+        "records": 248
+      },
+      "singleton_structure": {
+        "group_macro_mae": 0.08297390450974745,
+        "group_macro_r2": 0.5823935795203816,
+        "group_macro_rmse": 0.11201310287667714,
+        "groups": 2071,
+        "record_mae": 0.08297390450974745,
+        "record_r2": 0.5823935795203816,
+        "record_rmse": 0.11201310287667715,
+        "records": 2071
+      },
+      "train_quartile_target_bin_1": {
+        "group_macro_mae": 0.11016877929666287,
+        "group_macro_r2": -2.973231780052376,
+        "group_macro_rmse": 0.14822349104864063,
+        "groups": 562,
+        "record_mae": 0.11034150767256935,
+        "record_r2": -2.9290747117582896,
+        "record_rmse": 0.14919618265869253,
+        "records": 619
+      },
+      "train_quartile_target_bin_2": {
+        "group_macro_mae": 0.06335011716799868,
+        "group_macro_r2": -4.673256760704959,
+        "group_macro_rmse": 0.08294307159484131,
+        "groups": 549,
+        "record_mae": 0.06328204135196681,
+        "record_r2": -4.6598001115414345,
+        "record_rmse": 0.08280047763042188,
+        "records": 566
+      },
+      "train_quartile_target_bin_3": {
+        "group_macro_mae": 0.06588774671139934,
+        "group_macro_r2": -5.100068832142751,
+        "group_macro_rmse": 0.08507346155415846,
+        "groups": 516,
+        "record_mae": 0.06795865969241942,
+        "record_r2": -5.489418937990964,
+        "record_rmse": 0.0878551577382453,
+        "records": 542
+      },
+      "train_quartile_target_bin_4": {
+        "group_macro_mae": 0.09531721430796988,
+        "group_macro_r2": -1.198331966061379,
+        "group_macro_rmse": 0.12285597727032865,
+        "groups": 569,
+        "record_mae": 0.09632371984880725,
+        "record_r2": -1.2110578967591672,
+        "record_rmse": 0.12374922253268451,
+        "records": 592
+      }
+    }
+  },
+  "test_effective_groups": 2195.0,
+  "test_evaluations": 1,
+  "test_guided_retraining": false,
+  "test_records": 2319,
+  "test_unlock_sha256": "a771dd6347465622d2f3607db428ecf2e8b16e49b5cff8e7c470e9e5200392a7",
+  "three_seed_aggregates": {
+    "xgb_c0_group_macro_mae": {
+      "mean": 0.08418147504486073,
+      "sample_std_ddof1": 0.0,
+      "values": [
+        0.08418147504486073,
+        0.08418147504486073,
+        0.08418147504486073
+      ]
+    },
+    "xgb_c0_group_macro_rmse": {
+      "mean": 0.11425737293628414,
+      "sample_std_ddof1": 0.0,
+      "values": [
+        0.11425737293628414,
+        0.11425737293628414,
+        0.11425737293628414
+      ]
+    },
+    "xgb_c0_record_mae": {
+      "mean": 0.08529916331644267,
+      "sample_std_ddof1": 1.6996749443881478e-17,
+      "values": [
+        0.08529916331644269,
+        0.08529916331644269,
+        0.08529916331644269
+      ]
+    },
+    "xgb_c0_record_rmse": {
+      "mean": 0.11582430065198342,
+      "sample_std_ddof1": 1.6996749443881478e-17,
+      "values": [
+        0.11582430065198343,
+        0.11582430065198343,
+        0.11582430065198343
+      ]
+    },
+    "xgb_c1p5_safe_group_macro_mae": {
+      "mean": 0.08424036915672113,
+      "sample_std_ddof1": 1.6996749443881478e-17,
+      "values": [
+        0.08424036915672115,
+        0.08424036915672115,
+        0.08424036915672115
+      ]
+    },
+    "xgb_c1p5_safe_group_macro_rmse": {
+      "mean": 0.11384063289478673,
+      "sample_std_ddof1": 0.0,
+      "values": [
+        0.11384063289478673,
+        0.11384063289478673,
+        0.11384063289478673
+      ]
+    },
+    "xgb_c1p5_safe_record_mae": {
+      "mean": 0.08537139472113793,
+      "sample_std_ddof1": 0.0,
+      "values": [
+        0.08537139472113793,
+        0.08537139472113793,
+        0.08537139472113793
+      ]
+    },
+    "xgb_c1p5_safe_record_rmse": {
+      "mean": 0.11544827033168008,
+      "sample_std_ddof1": 0.0,
+      "values": [
+        0.11544827033168008,
+        0.11544827033168008,
+        0.11544827033168008
+      ]
+    }
+  }
+}

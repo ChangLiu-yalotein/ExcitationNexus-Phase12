@@ -1,6 +1,6 @@
 # Phase 12 project state
 
-Current stage: **GATE1A3_FAILED_REPRODUCTION**; fixed seeds 123/456 completed without reruns.
+Current stage: **GATE1B1_DONE**; leakage-safe new15016 grouped-IID cheap baselines are frozen.
 
 ## Frozen facts
 
@@ -60,3 +60,13 @@ Project and EquiformerV3 directories are not Git worktrees; source commit proven
 - Gate 1-A3 is `FAILED_REPRODUCTION`: training succeeded technically, but seeds 123/456 and the aggregate mean did not numerically reproduce within the preregistered threshold.
 - The three-seed B2-1 ensemble MAE on 1,097 common SIDs is 0.0741149457130847 eV versus cheap 0.07020991155682628 eV; paired bootstrap CI crosses zero, so no superiority claim is made.
 - No seed42 rerun, new15016, final673, B2-0, B2-2a, tuning, or result-driven restart is permitted.
+
+## Gate 1-B1 result
+
+- The frozen IID manifest retained 10,387/2,309/2,319 train/val/test records, one historical-quarantine record, and 10,248/2,195/2,195 effective structure groups.
+- C0-open uses 20 deterministic RDKit descriptors and 512 Morgan bits; C1.5-safe adds only resolved PM6 HOMO, LUMO, and gap. `pm6_energy_raw`, dipoles, DFT, and all TDDFT/Multiwfn fields remain forbidden.
+- On the one-time 2,319-record / 2,195-group test, weighted median, Ridge-C0, XGBoost-C0, and XGBoost-C1.5-safe group-macro MAEs are 0.141744444, 0.090387231, 0.084181475, and 0.084240369 eV, respectively.
+- The three XGBoost seeds are prediction-identical because the frozen historical transfer configuration has no row/feature subsampling; random seed is operationally inert in this protocol.
+- C1.5-safe did not improve group-macro MAE over C0, so no PM6-orbital benefit is claimed.
+- Test targets were accessed exactly once after all eight models, validation metrics, and hashes were frozen; no test-guided retraining occurred.
+- Results describe `J_eh_screened_eV_eps3p5 proxy` on new15016 grouped IID only, not experimental Eb, catalytic performance, or direct progress over old Layer G.

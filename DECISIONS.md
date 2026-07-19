@@ -68,3 +68,14 @@
 - Freeze Gate 1-A3 as `FAILED_REPRODUCTION`; do not rerun or select lower results to convert it to success.
 - Use the newly reproduced three-seed values as the engineering baseline for future Phase 12 comparisons, while retaining historical values as provenance rather than silently replacing them.
 - Treat the 1,097-SID cheap/ensemble bootstrap as descriptive because the test set was already inspected; retain the locked p=0.145 publication wording.
+
+## Gate 1-B1 decisions
+
+- Mark the rounded historical `0.0750 ± 0.0025`, `13.5%`, p-value, Cohen's d, and `58% improved` claims as `SUPERSEDED_PENDING_RECOMPUTATION`; retain provenance without using them in the paper until prediction-vector reconciliation.
+- Bind new IID experiments to manifest SHA-256 `f4572f2c1896d4228dd9eff67220adb7d0a02ad79b70c66766e6da876541c3f2`, not its historical seed-labelled filename.
+- Keep the single historical-quarantine row outside every Dataset and all 17 historical-train-overlap rows train-only.
+- Admit only deterministic RDKit 2D/Morgan features for C0 and resolved PM6 HOMO/LUMO/gap for C1.5-safe; permanently reject `pm6_energy_raw`, dipole, DFT, and Tier 3 inputs in this baseline.
+- Use structure-group-macro MAE as the primary validation metric and group weights for all fitted models.
+- Freeze all validation/model hashes before a one-time test unlock; never rerun or select models from test strata.
+- Treat the identical three-seed XGBoost vectors as evidence that the inherited no-subsampling configuration is deterministic, not as independent stochastic replicates.
+- Record that C1.5-safe did not improve MAE over C0 under the frozen baseline; make no PM6-orbital gain claim.

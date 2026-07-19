@@ -1,0 +1,21 @@
+{
+  "completed_utc": "2026-07-19T15:46:51.714477+00:00",
+  "final673_accessed": false,
+  "gate": "1-B1",
+  "gpu_physical_ids": [
+    0,
+    1,
+    2
+  ],
+  "metrics_path": "runs/gate1b1_new_iid_cheap_baselines/published/gate1b1_metrics.json",
+  "metrics_sha256": "342ee37012e05f0d767451c722e0622cfd9d880f9f9dd14b8343abae56b12330",
+  "prediction_path": "runs/gate1b1_new_iid_cheap_baselines/published/gate1b1_test_predictions_once.csv",
+  "prediction_sha256": "be9afad741bb97e0032a850753829f254e2cc34c1d19fb0e86af46f2f5e99908",
+  "quarantine_dataset_created": false,
+  "report_path": "/home/changliu/ExcitationNexus/12_Phase4_Multitask_OOD_Training/reports/gate1b1_new_iid_cheap_baselines.md",
+  "report_sha256": "078a87a1388c72b61cb6c2d45d3eb45e14222d2b17c151a0d86a892716df03e6",
+  "status": "GATE1B1_DONE",
+  "test_guided_retraining": false,
+  "test_unlock": "runs/gate1b1_new_iid_cheap_baselines/test_unlock_v1.json",
+  "test_unlock_sha256": "a771dd6347465622d2f3607db428ecf2e8b16e49b5cff8e7c470e9e5200392a7"
+}

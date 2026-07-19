@@ -1,0 +1,54 @@
+{
+  "device": "cuda",
+  "models": {
+    "xgb_c0": {
+      "max_temperature_c_observed": 44,
+      "model_path": "runs/gate1b1_new_iid_cheap_baselines/seed42/xgb_c0.json",
+      "model_sha256": "c92a73423c5ea58bb8e110aaf65600d0cc3e1d98e2219a097560b8e2d945af68",
+      "peak_gpu_memory_mib_observed": 395,
+      "peak_rss_kib": 522592,
+      "prediction_path": "runs/gate1b1_new_iid_cheap_baselines/seed42/xgb_c0_val_predictions.csv",
+      "prediction_sha256": "9444cc99c1afa4cd019762430dc6651f302e2fcebc0b3975d2e13bc9148e268f",
+      "preprocessor_sha256": "af5dec974bcfe7a75e67dae4483a8c62516260fd0ce1a7676c12b699bfaa67f3",
+      "sample_weight_sum": 10248.0,
+      "training_wall_seconds": 3.2344633359462023,
+      "validation": {
+        "group_macro_mae": 0.08666170350723043,
+        "group_macro_r2": 0.5565817883779794,
+        "group_macro_rmse": 0.11631562122964482,
+        "groups": 2195,
+        "record_mae": 0.08680688273249484,
+        "record_r2": 0.5523889897517131,
+        "record_rmse": 0.11643028829097893,
+        "records": 2309
+      },
+      "validation_inference_wall_seconds": 0.048559295013546944
+    },
+    "xgb_c1p5_safe": {
+      "max_temperature_c_observed": 45,
+      "model_path": "runs/gate1b1_new_iid_cheap_baselines/seed42/xgb_c1p5_safe.json",
+      "model_sha256": "4a3f572cf88f3e8cbfe78af3c5207420e759ff86e8322562708c7977eca9fb56",
+      "peak_gpu_memory_mib_observed": 395,
+      "peak_rss_kib": 717212,
+      "prediction_path": "runs/gate1b1_new_iid_cheap_baselines/seed42/xgb_c1p5_safe_val_predictions.csv",
+      "prediction_sha256": "26d4443f09b5e7a3beee2e7401554dbfb7c6fe55e99ecad6a325e7e0eaaba9ae",
+      "preprocessor_sha256": "d3e4cbcf516ee21ccd0762b566396de2d6c3e8b1c0b5756a6e4926c2e5bd66ad",
+      "sample_weight_sum": 10248.0,
+      "training_wall_seconds": 1.6173800630494952,
+      "validation": {
+        "group_macro_mae": 0.08687422100927289,
+        "group_macro_r2": 0.5541270013788682,
+        "group_macro_rmse": 0.11663714161373669,
+        "groups": 2195,
+        "record_mae": 0.08695540425285882,
+        "record_r2": 0.5511398853939911,
+        "record_rmse": 0.11659263043253318,
+        "records": 2309
+      },
+      "validation_inference_wall_seconds": 0.08414385793730617
+    }
+  },
+  "physical_gpu": 0,
+  "seed": 42,
+  "test_target_accessed": false
+}

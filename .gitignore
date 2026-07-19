@@ -59,6 +59,12 @@ runs/gate1a3_b21_multiseed/**
 !runs/gate1a3_b21_multiseed/published/
 !runs/gate1a3_b21_multiseed/published/*.json
 !runs/gate1a3_b21_multiseed/published/*.csv
+!runs/gate1b1_new_iid_cheap_baselines/
+runs/gate1b1_new_iid_cheap_baselines/**
+!runs/gate1b1_new_iid_cheap_baselines/test_unlock_v1.json
+!runs/gate1b1_new_iid_cheap_baselines/published/
+!runs/gate1b1_new_iid_cheap_baselines/published/*.json
+!runs/gate1b1_new_iid_cheap_baselines/published/*.csv
 tmp/
 temp/
 *.tmp
