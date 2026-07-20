@@ -1,0 +1,34 @@
+{
+  "unlock_version": "v1",
+  "status": "TEST_UNLOCKED_ONCE_AFTER_SIX_MODELS_FROZEN",
+  "authorized_by_user": true,
+  "unlocked_utc": "2026-07-20T07:14:15Z",
+  "formal_config_sha256": "cab3b912e1441f10e392cd37d733e33eead9edf4beec38052b3ab48250c115c7",
+  "model_registry_sha256": "24f3347d3acbd4746313f72ad86c4243bd45c663f78ec5c95770e6b42d319757",
+  "preunlock_audit_sha256": "dfe8d012609ec4921f708e04ecfe3240c47fe8ab4a2345109af41c13f3494d49",
+  "environment_registry_sha256": "f81b8c443eb6d59e5748ea3838d88aeeeaee2b6114a3c98ba937e07720987c33",
+  "evaluation_code_sha256": "fc45bfe4e2356ecad23f7af5737dfba65a33966c06a1a3c9b7c03f39c76e646a",
+  "evaluation_wrapper_sha256": "ba39c62dc9fdc57122f5be3e430df75ad2009034b2ca3bfe7426ecf3a6640a7f",
+  "models": {
+    "m3_merged_seed42": {"checkpoint_sha256": "ac828c4b20977a0896e9c7200a1e9706ac1cf08639e4de1cd705596b0c010bfa", "validation_predictions_sha256": "30ce359f08f7919d35b09c2ce0937952be5c2415bfed4f6269a54e0999546fc0"},
+    "m3_merged_seed123": {"checkpoint_sha256": "8de1a39fdd38f47fac7ce8b1f9046162deeac5e779b899d8a2289af5a1cc5da7", "validation_predictions_sha256": "5f0d3cca89bcebf87dfab6fa514d0edddb8d3abc4790f3ab5e93db20fefe7468"},
+    "m3_merged_seed456": {"checkpoint_sha256": "e400621ac7925de4684727b8dc6f21ef947d70f12cb840023447c4704e56c947", "validation_predictions_sha256": "2f94134a9207eba79393091f3a86cc03c84a760dfafa274700b3d89b6052a870"},
+    "m3_dau_shared_seed42": {"checkpoint_sha256": "615de1762e3c6fdaa536538cd44f3631fbe395d5cd356ffabf0e61ce9fd06390", "validation_predictions_sha256": "01307a1035bd41f0447aae5e46796bb71b1781fbecfb1a742d4ec91f2442d6e1"},
+    "m3_dau_shared_seed123": {"checkpoint_sha256": "6cfe9a8b6ad0bb71f9f464c995b18da6e9ab4a1a4f054ed8aba203ed40e29a99", "validation_predictions_sha256": "9a3be620634b4ef6dc9d2afd17c15a166f252e493d6b3d375d1c5b58ae96747d"},
+    "m3_dau_shared_seed456": {"checkpoint_sha256": "113e12956589244c24be78d9d18d68daee2e7d86aab6347818cfb5d8c28cf76a", "validation_predictions_sha256": "3589d27ccfc6c9d03fc1a9129eb15da2a298fe5d85ea06406844ba71256bbba3"}
+  },
+  "xgboost_c0": {
+    "prediction_file": "runs/gate1b1_new_iid_cheap_baselines/published/gate1b1_test_predictions_once.csv",
+    "prediction_file_sha256": "be9afad741bb97e0032a850753829f254e2cc34c1d19fb0e86af46f2f5e99908",
+    "three_seed_predictions_identical": true,
+    "comparison_column": "xgb_c0_seed42"
+  },
+  "test_records": 2319,
+  "test_structure_groups": 2195,
+  "physical_gpu": 2,
+  "evaluation_count_allowed": 1,
+  "bootstrap": {"unit": "structure_group_id_v1", "iterations": 10000, "seed": 20260720},
+  "retraining_allowed": false,
+  "configuration_changes_allowed": false,
+  "final673_access": false
+}

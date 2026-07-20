@@ -1,0 +1,44 @@
+{
+  "version": "v1",
+  "status": "PREREGISTERED_TRAIN_VAL_ONLY_COMMON_BUDGET_CALIBRATION",
+  "manifest": "manifests/split_iid_group_seed42_v1.csv",
+  "manifest_sha256": "f4572f2c1896d4228dd9eff67220adb7d0a02ad79b70c66766e6da876541c3f2",
+  "table": "/home/changliu/ExcitationNexus_Data_v2/tables/molecule_values_v3.parquet",
+  "table_sha256": "e7587b1546039f099a4dbd0d352e98885bb2ebdbdcfa18884dd4355eed815a83",
+  "graph_cache": "runs/gate1b2_3d_admission/dft_graph_cache_v1.npz",
+  "graph_registry": "data_registry/dft_3d_graph_registry_v1.parquet",
+  "edge_cache_registry": "data_registry/gate1b3_edge_cache_registry.json",
+  "primary_target": "tddft_coulomb_attraction_eV_eps3p5_proxy",
+  "primary_report_name": "J_eh_screened_eV_eps3p5 proxy",
+  "roles": "original explicit D/A/U only",
+  "models": {
+    "m3_merged": {"parameters": 36689, "head_width": 128},
+    "m3_dau_shared": {"parameters": 36461, "head_width": 44}
+  },
+  "model_common": {"hidden_dim": 48, "num_rbf": 16, "layers": 2, "cutoff_angstrom": 5.0, "max_neighbors": 32},
+  "optimizer": {"name": "AdamW", "learning_rate": 0.001, "weight_decay": 0.0001},
+  "scheduler": {"name": "none"},
+  "batch_size": 16,
+  "precision": "FP32",
+  "gradient_clip_norm": 5.0,
+  "loss": "group-weighted SmoothL1 in train-normalized target space",
+  "selection_metric": "validation structure-group-macro MAE",
+  "calibration": {
+    "seed": 20260720,
+    "train_records": 2048,
+    "val_records": 512,
+    "subset_rule": "lowest SHA-256(molecule_id), target-blind",
+    "max_epochs": 12,
+    "minimum_epochs": 4,
+    "patience": 3,
+    "min_delta_eV": 0.001
+  },
+  "formal_budget_rule": {
+    "max_epochs": "max(30, min(80, 3 * max(calibration_best_epoch_merged, calibration_best_epoch_dau)))",
+    "minimum_epochs": 15,
+    "patience": 10,
+    "min_delta_eV": 0.0001
+  },
+  "test_target_access": false,
+  "final673_access": false
+}

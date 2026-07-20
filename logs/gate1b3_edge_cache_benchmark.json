@@ -1,0 +1,16 @@
+{
+  "atom_order_mismatch": 0,
+  "cache_disk_bytes": 104202275,
+  "cached_graphs_per_second": 172.4445154654258,
+  "cached_seconds": 1.4845354710705578,
+  "dynamic_graphs_per_second": 6.0394068745549125,
+  "dynamic_seconds": 42.3882684702985,
+  "edge_mismatch": 0,
+  "gpu_waiting_time_seconds": 0.0,
+  "peak_rss_kib": 1567764,
+  "sampling": "partition/role/atom-count stratified; SHA-256 tie-break",
+  "speedup": 28.55322038194926,
+  "torch_cdist_threads": 1,
+  "verified_edges": 1354037,
+  "verified_records": 256
+}

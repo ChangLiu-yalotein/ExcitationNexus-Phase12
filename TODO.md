@@ -26,6 +26,8 @@
 - [x] Gate 1-A3: fixed seeds 123/456 completed; status `FAILED_REPRODUCTION` because both seeds and the aggregate mean exceeded the preregistered 0.0010 eV tolerance.
 - [x] Gate 1-B1: establish leakage-safe median, Ridge-C0, XGBoost-C0, and XGBoost-C1.5-safe baselines on the frozen new15016 grouped-IID split with one-time test evaluation.
 - [x] Gate 1-B2: govern empty-donor roles, freeze a target-free DFT graph registry, and admit parameter-matched M3-Merged/M3-DAU-Shared through CPU and three-epoch GPU smoke.
+- [x] Gate 1-B3: freeze six formal IID checkpoints and complete the one-time test, ensembles, XGBoost-C0 pairing, and structure-group bootstrap.
+- [x] Gate 1-B3: complete the preregistered 198-record graph-supported role-candidate input sensitivity with frozen checkpoints and no retraining.
 
 ## BLOCKED
 

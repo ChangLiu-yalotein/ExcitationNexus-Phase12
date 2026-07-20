@@ -1,0 +1,95 @@
+{
+  "cpu_tests_before_wave1": {
+    "failed": 0,
+    "passed": 78
+  },
+  "edge_cache": {
+    "atom_order_mismatch": 0,
+    "edge_mismatch": 0,
+    "records": 15016,
+    "speedup": 28.55322038194926,
+    "verification_records": 256
+  },
+  "final673_accessed": false,
+  "final_verification": {
+    "full_pytest_failed": 0,
+    "full_pytest_passed": 88,
+    "standard_evaluator_message": "one-time test output already exists; refusing second evaluation",
+    "standard_evaluator_second_call_exit_code": 1,
+    "standard_evaluator_second_call_fail_closed": true
+  },
+  "initial_wave1_launch": {
+    "epochs_started": 0,
+    "log_bytes_each": 0,
+    "pids": [
+      1167848,
+      1167849,
+      1167850
+    ],
+    "run_directories_created": 0,
+    "scientific_rerun": false,
+    "status": "INFRASTRUCTURE_ZERO_PROGRESS"
+  },
+  "role_sensitivity": {
+    "candidate_records": 198,
+    "final673_accessed": false,
+    "max_original_reconciliation_eV": 1.1920928966180355e-07,
+    "parameters_updated": false,
+    "partition_counts": {
+      "test": 32,
+      "train": 140,
+      "val": 26
+    },
+    "prediction_sha256": "3034ec966e091cb06022bb63d0fe73adc137434fa631676a442c556bf6173294",
+    "quarantine_inference_records": 0,
+    "result_sha256": "445fef0922e8d70d0bb9d69f180f4c9c9d3f8896977dbd0650a9b25ca0241d9b",
+    "test_parquet_target_read": false,
+    "training_performed": false,
+    "unresolved_ambiguous_excluded": 189
+  },
+  "scientific_conclusion": "NEGATIVE_3D_ARCHITECTURE_RESULT_UNDER_FROZEN_IID_PROTOCOL",
+  "status": "GATE1B3_DONE",
+  "test_evaluation": {
+    "final673_accessed": false,
+    "m3_dau_shared_ensemble_group_macro_mae_eV": 0.08854613716585205,
+    "m3_merged_ensemble_group_macro_mae_eV": 0.08766406500328516,
+    "metrics_sha256": "ecf0d6e8c24972802820b9dd864c856294aabd711545abbf50d7146fcc97d159",
+    "predictions_sha256": "77f6d1baa1d3f4dc3c976d6c7004ba4f68fa3013d894dd68433fc9b4c1cf68a8",
+    "records": 2319,
+    "report_sha256": "49d1dcaecc3fe5fb9ec119a086bd9a8aea55d462831212e8abaaed56d1e0dcf8",
+    "status": "COMPLETE_NO_RERUN",
+    "structure_groups": 2195,
+    "test_guided_retraining": false,
+    "unlock_sha256": "6c2448d56ba74aede6afd3a6cf2adc29a82e2c68f2de9e0e9e1cd7c6f4abbb53",
+    "xgboost_c0_group_macro_mae_eV": 0.0841814749671331
+  },
+  "test_target_accessed": false,
+  "wave1_relaunch": {
+    "all_checkpoints_loadable": true,
+    "all_runs_36_epochs": true,
+    "failure_keyword_hits": 0,
+    "pids": [
+      1175413,
+      1175415,
+      1175417
+    ],
+    "protocol_changed": false,
+    "reason": "execution environment reclaimed children when launch shell exited",
+    "status": "FROZEN_COMPLETE",
+    "validation_ids_per_run": 2309
+  },
+  "wave2_launch": {
+    "all_first_validation_complete": true,
+    "physical_gpus": [
+      0,
+      1,
+      2
+    ],
+    "pids": [
+      1311980,
+      1311982,
+      1311984
+    ],
+    "protocol_changed": false
+  }
+}

@@ -89,3 +89,14 @@
 - Use the same backbone family and optimization contract for M3-Merged and M3-DAU-Shared; parameter difference must remain within 5%.
 - Name the separated model `M3-DAU-Shared`; it is not old B2-1. Its donor/acceptor/unknown calls share weights and empty roles use zero embeddings with presence flags.
 - Treat Gate 1-B2 checkpoints and three-epoch validation as plumbing-only. Formal hyperparameters and test access remain unfrozen until Gate 1-B3 preregistration.
+
+
+## Gate 1-B3 decisions
+
+- Freeze original explicit D/A/U roles, seeds 42/123/456, the common budget, and validation group-macro checkpoint selection before formal training.
+- Preserve all six formal results without result-driven reruns; DAU seed42 epoch-33 patience stopping is compliant.
+- Unlock IID test exactly once after all model/config/environment hashes are frozen; prohibit second evaluation and test-guided retraining.
+- Record that both 3D ensembles are worse than XGBoost-C0 under paired group bootstrap, while Merged versus DAU crosses zero; do not claim role-separation benefit.
+- Keep resolved-role inference sensitivity-only; it cannot replace the original-role primary result.
+- Freeze Gate 1-B3 as `NEGATIVE_3D_ARCHITECTURE_RESULT_UNDER_FROZEN_IID_PROTOCOL`; diagnose error mechanisms before adding attention, Engram, or larger equivariant models.
+- Treat the 198 graph-supported role candidates as a robustness perturbation only. Their large prediction shifts expose role-definition sensitivity and cannot replace original roles or justify retraining.

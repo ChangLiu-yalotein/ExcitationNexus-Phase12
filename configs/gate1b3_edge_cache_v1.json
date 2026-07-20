@@ -1,0 +1,18 @@
+{
+  "version": "v1",
+  "status": "TARGET_FREE_EDGE_CACHE_CONTRACT",
+  "graph_cache": "runs/gate1b2_3d_admission/dft_graph_cache_v1.npz",
+  "graph_registry": "data_registry/dft_3d_graph_registry_v1.parquet",
+  "model_common": {
+    "cutoff_angstrom": 5.0,
+    "max_neighbors": 32
+  },
+  "edge_cache": {
+    "root": "runs/gate1b3_edge_cache/shards",
+    "registry": "data_registry/gate1b3_edge_cache_registry.json",
+    "shard_size": 512,
+    "verification_records": 256
+  },
+  "forbidden_inputs": ["all targets", "TDDFT", "Multiwfn", "final673"],
+  "target_columns_read": []
+}

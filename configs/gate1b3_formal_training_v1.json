@@ -1,0 +1,48 @@
+{
+  "version": "v1",
+  "status": "PREREGISTERED_BEFORE_FORMAL_EPOCHS",
+  "manifest": "manifests/split_iid_group_seed42_v1.csv",
+  "manifest_sha256": "f4572f2c1896d4228dd9eff67220adb7d0a02ad79b70c66766e6da876541c3f2",
+  "table": "/home/changliu/ExcitationNexus_Data_v2/tables/molecule_values_v3.parquet",
+  "table_sha256": "e7587b1546039f099a4dbd0d352e98885bb2ebdbdcfa18884dd4355eed815a83",
+  "graph_cache": "runs/gate1b2_3d_admission/dft_graph_cache_v1.npz",
+  "graph_registry": "data_registry/dft_3d_graph_registry_v1.parquet",
+  "edge_cache_registry": "data_registry/gate1b3_edge_cache_registry.json",
+  "primary_target": "tddft_coulomb_attraction_eV_eps3p5_proxy",
+  "primary_report_name": "J_eh_screened_eV_eps3p5 proxy",
+  "roles": "original explicit D/A/U only",
+  "empty_donor": "zero donor vector plus presence flag",
+  "unknown": "independent pooling; never reassigned to donor or acceptor",
+  "seeds": [42, 123, 456],
+  "models": {
+    "m3_merged": {"parameters": 36689, "head_width": 128},
+    "m3_dau_shared": {"parameters": 36461, "head_width": 44}
+  },
+  "model_common": {"hidden_dim": 48, "num_rbf": 16, "layers": 2, "cutoff_angstrom": 5.0, "max_neighbors": 32},
+  "optimizer": {"name": "AdamW", "learning_rate": 0.001, "weight_decay": 0.0001},
+  "scheduler": {"name": "none"},
+  "batch_size": 16,
+  "precision": "FP32",
+  "gradient_clip_norm": 5.0,
+  "loss": "group-weighted SmoothL1 in train-normalized target space",
+  "group_weight": "1 / structure_group_size",
+  "data_order": "molecule_id-stable dataset; per-run seeded DataLoader shuffle",
+  "selection_metric": "validation structure-group-macro MAE",
+  "validation_record_mae": "report-only; never used for checkpoint selection",
+  "formal_budget": {"max_epochs": 36, "minimum_epochs": 15, "patience": 10, "min_delta_eV": 0.0001},
+  "budget_derivation": {
+    "rule": "max(30, min(80, 3 * max(calibration best epochs)))",
+    "merged_best_epoch": 12,
+    "dau_best_epoch": 12,
+    "derived_common_max_epochs": 36
+  },
+  "gpu_waves": {
+    "wave1": {"model": "m3_merged", "seed_to_physical_gpu": {"42": 0, "123": 1, "456": 2}},
+    "wave2": {"model": "m3_dau_shared", "seed_to_physical_gpu": {"42": 0, "123": 1, "456": 2}}
+  },
+  "scientific_rerun_policy": "no rerun for unfavorable results; documented infrastructure failure only with identical config",
+  "test_unlock": "only after six checkpoints, hashes, validation predictions/metrics, model/config/environment registry",
+  "test_target_access": false,
+  "final673_access": false,
+  "resolved_role_sensitivity": "post-freeze inference only; no retraining"
+}

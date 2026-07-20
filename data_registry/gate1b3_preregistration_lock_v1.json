@@ -1,0 +1,22 @@
+{
+  "lock_version": "v1",
+  "status": "LOCKED_BEFORE_ANY_FORMAL_EPOCH",
+  "formal_config": "configs/gate1b3_formal_training_v1.json",
+  "formal_config_sha256": "cab3b912e1441f10e392cd37d733e33eead9edf4beec38052b3ab48250c115c7",
+  "calibration_config_sha256": "0469b553d810e8a3db6a13e7744a04eeac07bb9f23400d2f5e51f745cfe28234",
+  "calibration_lock_sha256": "5016152242e825ad6ddfec7e23d9b4019edcfe647c389394eb11defc9f85831d",
+  "calibration_metrics": {
+    "m3_merged_sha256": "87b10b1f96a721785243baab30dc71330dd5bf866bff76588868f1f3652ca447",
+    "m3_dau_shared_sha256": "cddbb2d6a29cd7a8a383e077e4a08e2770e4caaa9765ff2e5d5146a0ff2bbf81"
+  },
+  "calibration_checkpoint_sha256": {
+    "m3_merged": "4b7cf69b49f0192e7154957047ee589b71ecbad0fa72c8c67f416c844feed7dc",
+    "m3_dau_shared": "3d1f0a684be4d3bf8e8c483ee3d45ee6eedacc891e8cfab15ffaa014e66bb922"
+  },
+  "edge_cache_registry_sha256": "c47e0b11fcb9785f88e78074665bca568dc463bcab345166758a72ea20ff4a0d",
+  "edge_cache_aggregate_sha256": "58081396cf1f3e225e9f6409e715b9b3c040ef38e64b11070b7eea519871702b",
+  "common_formal_budget": {"max_epochs": 36, "minimum_epochs": 15, "patience": 10, "min_delta_eV": 0.0001},
+  "seeds": [42, 123, 456],
+  "test_target_access": false,
+  "final673_access": false
+}

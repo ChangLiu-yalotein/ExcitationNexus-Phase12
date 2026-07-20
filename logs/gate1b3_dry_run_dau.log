@@ -1,0 +1,25 @@
+/home/changliu/ExcitationNexus/12_Phase4_Multitask_OOD_Training/scripts/gate1b3_train.py:99: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:835.)
+  losses.append(float(loss)); previous = time.perf_counter()
+{"best_epoch": 1, "best_group_macro_mae": 0.12185764033347368, "epoch": 1, "epoch_wall_seconds": 0.6728567518293858, "gpu": {"memory_used_mib": 613, "temperature_c": 47, "utilization_percent": 4}, "improved": true, "loader_wait_seconds": 0.07371485000476241, "train_loss": 1.4114159941673279, "validation": {"group_macro_mae": 0.12185764033347368, "group_macro_r2": {"reason": null, "value": -0.0788347390968065}, "group_macro_rmse": 0.15529700497713683, "kendall": 0.09274193548387098, "record_mae": 0.12185764033347368, "record_r2": {"reason": null, "value": -0.0788347390968065}, "record_rmse": 0.15529700497713683, "spearman": 0.12170087976539588, "valid_count": 32, "worst_decile_error": 0.3088984861969948, "worst_group_mae": 0.4470492899417877}}
+{
+  "status": "TRAIN_VAL_COMPLETE_TEST_LOCKED",
+  "mode": "dry_run",
+  "model": "m3_dau_shared",
+  "seed": 42,
+  "physical_gpu": 1,
+  "parameters": 36461,
+  "train_records": 32,
+  "val_records": 32,
+  "epochs_completed": 1,
+  "best_epoch": 1,
+  "best_validation_group_macro_mae": 0.12185764033347368,
+  "best_checkpoint_sha256": "ae733220fdc1a81234a461b32f63920954cf2b5851365651bc5aa9e8a40267fb",
+  "wall_seconds": 0.7731796731241047,
+  "graphs_per_second_train_approx": 41.38753398767069,
+  "cpu_loader_wait_seconds": 0.07371485000476241,
+  "peak_gpu_memory_mib": 197.65185546875,
+  "peak_rss_kib": 1846820,
+  "test_target_accessed": false,
+  "final673_accessed": false
+}

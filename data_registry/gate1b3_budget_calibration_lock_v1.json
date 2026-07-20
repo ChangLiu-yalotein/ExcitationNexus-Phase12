@@ -1,0 +1,17 @@
+{
+  "lock_version": "v1",
+  "status": "LOCKED_BEFORE_CALIBRATION_EPOCHS",
+  "calibration_config": "configs/gate1b3_budget_calibration_v1.json",
+  "calibration_config_sha256": "0469b553d810e8a3db6a13e7744a04eeac07bb9f23400d2f5e51f745cfe28234",
+  "edge_cache_config_sha256": "1de5600da6fd750fa0c0ebeb867369e361cebe54a2f0c421ed186aafea62153f",
+  "edge_cache_registry_sha256": "c47e0b11fcb9785f88e78074665bca568dc463bcab345166758a72ea20ff4a0d",
+  "edge_cache_aggregate_sha256": "58081396cf1f3e225e9f6409e715b9b3c040ef38e64b11070b7eea519871702b",
+  "graph_registry_sha256": "46cac9b4851d48251da7b2e363790df58b32f48cfebb9c014a3996ff1d97c6b5",
+  "graph_cache_sha256": "d7ca8d4ad6dda694e202e0ff94f5822d6b72404f8e5997acf986ee45f0202aa5",
+  "iid_manifest_sha256": "f4572f2c1896d4228dd9eff67220adb7d0a02ad79b70c66766e6da876541c3f2",
+  "table_sha256": "e7587b1546039f099a4dbd0d352e98885bb2ebdbdcfa18884dd4355eed815a83",
+  "test_target_access": false,
+  "final673_access": false,
+  "formal_budget_rule_frozen": true,
+  "calibration_targets": "train/val only"
+}

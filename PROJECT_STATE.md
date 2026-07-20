@@ -1,6 +1,6 @@
 # Phase 12 project state
 
-Current stage: **GATE1B2_READY_FOR_FULL_TRAINING**; role-safe Merged/DAU 3D baselines passed admission.
+Current stage: **GATE1B3_DONE**; six formal IID checkpoints, their one-time test predictions, and the preregistered role sensitivity are frozen.
 
 ## Frozen facts
 
@@ -79,3 +79,13 @@ Project and EquiformerV3 directories are not Git worktrees; source commit proven
 - M3-Merged and M3-DAU-Shared share a distance-only backbone and differ by only 0.621% in parameters (36,689 vs 36,461).
 - Twelve CPU tests and both GPU two-batch/three-epoch smokes passed with finite gradients, real parameter changes, and translation/rotation/permutation invariance.
 - Three-epoch validation is plumbing-only and cannot rank architectures. No test target, final673, formal multi-seed run, scalar quantum input, or paper checkpoint was used.
+
+
+## Gate 1-B3 final result
+
+- Six formal M3 checkpoints were trained once under the frozen common budget and original explicit D/A/U roles.
+- On 2,319 IID records / 2,195 groups, XGBoost-C0, M3-Merged ensemble, and M3-DAU-Shared ensemble group-macro MAEs are 0.084181475, 0.087664065, and 0.088546137 eV.
+- Paired structure-group bootstrap shows both 3D ensembles are worse than XGBoost-C0; Merged versus DAU crosses zero, so no explicit D/A/U separation benefit is claimed.
+- No retraining, second test evaluation, or final673 access occurred.
+- The 198 graph-supported role-candidate perturbations changed ensemble predictions materially (median absolute delta 0.07105 eV Merged; 0.05932 eV DAU), documenting role-definition sensitivity without treating candidates as ground truth.
+- Final scientific status: `NEGATIVE_3D_ARCHITECTURE_RESULT_UNDER_FROZEN_IID_PROTOCOL`.

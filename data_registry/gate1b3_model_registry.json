@@ -1,0 +1,90 @@
+{
+  "final673_accessed": false,
+  "formal_config_sha256": "cab3b912e1441f10e392cd37d733e33eead9edf4beec38052b3ab48250c115c7",
+  "preregistration_lock_sha256": "4106fd5e5af06167b23b2ce88ef908d3dbdf83ac668b3304eb7c5c0cc169a65f",
+  "primary_roles": "original explicit D/A/U",
+  "registry_version": "v1",
+  "role_sensitivity": {
+    "candidate_records": 198,
+    "result_sha256": "445fef0922e8d70d0bb9d69f180f4c9c9d3f8896977dbd0650a9b25ca0241d9b",
+    "status": "COMPLETE_NO_RETRAINING",
+    "unresolved_ambiguous_excluded": 189
+  },
+  "scientific_conclusion": "NEGATIVE_3D_ARCHITECTURE_RESULT_UNDER_FROZEN_IID_PROTOCOL",
+  "status": "GATE1B3_DONE",
+  "test_evaluation": {
+    "final673_accessed": false,
+    "m3_dau_shared_ensemble_group_macro_mae_eV": 0.08854613716585205,
+    "m3_merged_ensemble_group_macro_mae_eV": 0.08766406500328516,
+    "metrics_sha256": "ecf0d6e8c24972802820b9dd864c856294aabd711545abbf50d7146fcc97d159",
+    "predictions_sha256": "77f6d1baa1d3f4dc3c976d6c7004ba4f68fa3013d894dd68433fc9b4c1cf68a8",
+    "records": 2319,
+    "report_sha256": "49d1dcaecc3fe5fb9ec119a086bd9a8aea55d462831212e8abaaed56d1e0dcf8",
+    "status": "COMPLETE_NO_RERUN",
+    "structure_groups": 2195,
+    "test_guided_retraining": false,
+    "unlock_sha256": "6c2448d56ba74aede6afd3a6cf2adc29a82e2c68f2de9e0e9e1cd7c6f4abbb53",
+    "xgboost_c0_group_macro_mae_eV": 0.0841814749671331
+  },
+  "test_target_accessed": false,
+  "validation_id_order_sha256": "2f655247799532b10228ca943068ca3e9b336eab741189b330d1edfb3b937b61",
+  "validation_records_per_run": 2309,
+  "wave1": {
+    "model": "m3_merged",
+    "runs": {
+      "123": {
+        "best_epoch": 36,
+        "best_validation_group_macro_mae": 0.09204386074545715,
+        "checkpoint_sha256": "8de1a39fdd38f47fac7ce8b1f9046162deeac5e779b899d8a2289af5a1cc5da7",
+        "epochs": 36,
+        "validation_predictions_sha256": "5f0d3cca89bcebf87dfab6fa514d0edddb8d3abc4790f3ab5e93db20fefe7468"
+      },
+      "42": {
+        "best_epoch": 28,
+        "best_validation_group_macro_mae": 0.09161215357669122,
+        "checkpoint_sha256": "ac828c4b20977a0896e9c7200a1e9706ac1cf08639e4de1cd705596b0c010bfa",
+        "epochs": 36,
+        "validation_predictions_sha256": "30ce359f08f7919d35b09c2ce0937952be5c2415bfed4f6269a54e0999546fc0"
+      },
+      "456": {
+        "best_epoch": 36,
+        "best_validation_group_macro_mae": 0.09214155700796015,
+        "checkpoint_sha256": "e400621ac7925de4684727b8dc6f21ef947d70f12cb840023447c4704e56c947",
+        "epochs": 36,
+        "validation_predictions_sha256": "2f94134a9207eba79393091f3a86cc03c84a760dfafa274700b3d89b6052a870"
+      }
+    },
+    "status": "FROZEN_COMPLETE"
+  },
+  "wave2": {
+    "model": "m3_dau_shared",
+    "runs": {
+      "123": {
+        "best_epoch": 32,
+        "best_validation_group_macro_mae": 0.09217187759205529,
+        "checkpoint_sha256": "6cfe9a8b6ad0bb71f9f464c995b18da6e9ab4a1a4f054ed8aba203ed40e29a99",
+        "epochs": 36,
+        "metrics_sha256": "1f7c08c3269cd02ff6b28fbe7a55b85085256ba9c2892e4b493bb282e381f567",
+        "validation_predictions_sha256": "9a3be620634b4ef6dc9d2afd17c15a166f252e493d6b3d375d1c5b58ae96747d"
+      },
+      "42": {
+        "best_epoch": 23,
+        "best_validation_group_macro_mae": 0.0934238952187851,
+        "checkpoint_sha256": "615de1762e3c6fdaa536538cd44f3631fbe395d5cd356ffabf0e61ce9fd06390",
+        "epochs": 33,
+        "metrics_sha256": "5c550494c083a5f0a19aad74c44b07ee9c168f58ef54c590be3003adb9c1585a",
+        "stop_reason": "preregistered patience after minimum epoch",
+        "validation_predictions_sha256": "01307a1035bd41f0447aae5e46796bb71b1781fbecfb1a742d4ec91f2442d6e1"
+      },
+      "456": {
+        "best_epoch": 36,
+        "best_validation_group_macro_mae": 0.09274888091926423,
+        "checkpoint_sha256": "113e12956589244c24be78d9d18d68daee2e7d86aab6347818cfb5d8c28cf76a",
+        "epochs": 36,
+        "metrics_sha256": "6d52ac68d1575136d6a055e6649ee20c34be2ea1553f13960e994fef838c7319",
+        "validation_predictions_sha256": "3589d27ccfc6c9d03fc1a9129eb15da2a298fe5d85ea06406844ba71256bbba3"
+      }
+    },
+    "status": "FROZEN_COMPLETE"
+  }
+}

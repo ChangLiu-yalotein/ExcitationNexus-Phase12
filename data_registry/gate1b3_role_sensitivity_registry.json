@@ -1,0 +1,26 @@
+{
+  "candidate_records": 198,
+  "config_sha256": "13dadecf3677925e8a5e459affb4b009fc119348415e477bc26f32c034d92604",
+  "final673_accessed": false,
+  "frozen_model_registry_sha256": "8e730c20e40119da5ec97c7818171f276d8574384d9b1e24e819bb4501f24ee3",
+  "frozen_test_metrics_sha256": "ecf0d6e8c24972802820b9dd864c856294aabd711545abbf50d7146fcc97d159",
+  "frozen_test_predictions_sha256": "77f6d1baa1d3f4dc3c976d6c7004ba4f68fa3013d894dd68433fc9b4c1cf68a8",
+  "frozen_test_unlock_sha256": "6c2448d56ba74aede6afd3a6cf2adc29a82e2c68f2de9e0e9e1cd7c6f4abbb53",
+  "original_prediction_max_abs_reconciliation_eV": 1.1920928966180355e-07,
+  "parameters_updated": false,
+  "partition_counts": {
+    "test": 32,
+    "train": 140,
+    "val": 26
+  },
+  "prediction_sha256": "3034ec966e091cb06022bb63d0fe73adc137434fa631676a442c556bf6173294",
+  "quarantine_inference_records": 0,
+  "result_sha256": "445fef0922e8d70d0bb9d69f180f4c9c9d3f8896977dbd0650a9b25ca0241d9b",
+  "scientific_role": "secondary robustness analysis only",
+  "status": "ROLE_SENSITIVITY_COMPLETE_NO_RETRAINING",
+  "test_parquet_target_read": false,
+  "test_y_true_source": "frozen Gate1B3 test-once artifact",
+  "training_performed": false,
+  "unresolved_ambiguous_excluded": 189,
+  "version": "v1"
+}

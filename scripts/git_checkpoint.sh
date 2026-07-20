@@ -85,6 +85,8 @@ elif [[ "${GATE_ID,,}" == "gate1b1" ]]; then
   tag="gate1b1-new-iid-cheap-baselines-$(date -u +%Y%m%d)"
 elif [[ "${GATE_ID,,}" == "gate1b2" ]]; then
   tag="gate1b2-3d-baseline-admission-$(date -u +%Y%m%d)"
+elif [[ "${GATE_ID,,}" == "gate1b3" ]]; then
+  tag="gate1b3-iid-3d-baselines-$(date -u +%Y%m%d)"
 else
   tag="$(printf '%s' "$GATE_ID" | tr '[:upper:]' '[:lower:]')-done-$(date -u +%Y%m%d)"
 fi
