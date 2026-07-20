@@ -100,3 +100,12 @@
 - Keep resolved-role inference sensitivity-only; it cannot replace the original-role primary result.
 - Freeze Gate 1-B3 as `NEGATIVE_3D_ARCHITECTURE_RESULT_UNDER_FROZEN_IID_PROTOCOL`; diagnose error mechanisms before adding attention, Engram, or larger equivariant models.
 - Treat the 198 graph-supported role candidates as a robustness perturbation only. Their large prediction shifts expose role-definition sensitivity and cannot replace original roles or justify retraining.
+
+## Gate 1-C1 decisions
+
+- Freeze `GATE1C1_DONE_STOP_PURE_3D`: do not scale or continue a pure-3D model family under the current role contract.
+- Do not reinterpret `STOP_PURE_3D` as absence of geometric signal; validation counterfactuals and duplicate groups show geometry dependence.
+- Reject `SCALE_3D` because both architectures do not satisfy the preregistered underfit rule.
+- Reject `FUSE_2D_3D` at this gate because only target Q4, not two distinct adequately powered subgroups, shows stable 3D advantage. Oracle-min remains non-deployable.
+- Preserve original roles as primary. Graph-supported role candidates remain robustness perturbations, never ground truth.
+- Any future fusion must be separately preregistered and select weights on validation only; Gate 1-C1 authorizes no further training.

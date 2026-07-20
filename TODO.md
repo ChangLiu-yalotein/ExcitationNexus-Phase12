@@ -29,6 +29,8 @@
 - [x] Gate 1-B3: freeze six formal IID checkpoints and complete the one-time test, ensembles, XGBoost-C0 pairing, and structure-group bootstrap.
 - [x] Gate 1-B3: complete the preregistered 198-record graph-supported role-candidate input sensitivity with frozen checkpoints and no retraining.
 
+- [x] Gate 1-C1: diagnose frozen IID error mechanisms and geometry value; final decision `STOP_PURE_3D`.
+
 ## BLOCKED
 
 - [!] Time/prospective split: `BLOCKED_NO_TRUSTED_TIMESTAMP`.

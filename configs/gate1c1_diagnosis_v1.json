@@ -1,0 +1,123 @@
+{
+  "version": "v1",
+  "status": "PREREGISTERED_BEFORE_DIAGNOSIS",
+  "head_sha256": "1577089103d17bafcf2b395bbc2ee3e79eec5316",
+  "gate1b3_tag": "gate1b3-iid-3d-baselines-20260720",
+  "scientific_scope": "diagnosis only; no training, test inference, model selection, or final673 access",
+  "primary_target_report_name": "J_eh_screened_eV_eps3p5 proxy",
+  "frozen_inputs": {
+    "iid_manifest": {
+      "path": "manifests/split_iid_group_seed42_v1.csv",
+      "sha256": "f4572f2c1896d4228dd9eff67220adb7d0a02ad79b70c66766e6da876541c3f2"
+    },
+    "gate1b1_test_predictions": {
+      "path": "runs/gate1b1_new_iid_cheap_baselines/published/gate1b1_test_predictions_once.csv",
+      "sha256": "be9afad741bb97e0032a850753829f254e2cc34c1d19fb0e86af46f2f5e99908"
+    },
+    "gate1b3_test_predictions": {
+      "path": "runs/gate1b3_test_once/gate1b3_test_predictions_once.csv",
+      "sha256": "77f6d1baa1d3f4dc3c976d6c7004ba4f68fa3013d894dd68433fc9b4c1cf68a8"
+    },
+    "gate1b3_test_metrics": {
+      "path": "runs/gate1b3_test_once/metrics.json",
+      "sha256": "ecf0d6e8c24972802820b9dd864c856294aabd711545abbf50d7146fcc97d159"
+    },
+    "role_sensitivity_predictions": {
+      "path": "runs/gate1b3_role_sensitivity/paired_role_sensitivity_predictions.csv",
+      "sha256": "3034ec966e091cb06022bb63d0fe73adc137434fa631676a442c556bf6173294"
+    },
+    "gate1b1_features": {
+      "path": "runs/gate1b1_new_iid_cheap_baselines/features_v1.parquet",
+      "sha256": "7bb1a6af207364b186c072ab6d013d278e294633255b2235ef789e040e75d058"
+    },
+    "duplicate_groups": {
+      "path": "manifests/duplicate_structure_groups_v1.csv",
+      "sha256": "4eb0acc520e9e03b5914cffc0c5998116e5aea0888bb9827599a06df32fe36d8"
+    },
+    "formal_config": {
+      "path": "configs/gate1b3_formal_training_v1.json",
+      "sha256": "cab3b912e1441f10e392cd37d733e33eead9edf4beec38052b3ab48250c115c7"
+    },
+    "frozen_model_registry": {
+      "path": "data_registry/gate1b3_model_registry.json",
+      "sha256": "7d98443d719a2162552ea7968a8ed144b26a0c21db306b20be4e7022cf8d76bf"
+    }
+  },
+  "models": ["xgboost_c0", "m3_merged_ensemble", "m3_dau_shared_ensemble"],
+  "test_records": 2319,
+  "test_structure_groups": 2195,
+  "error_definitions": {
+    "correct_threshold_eV": 0.05,
+    "unique_advantage_margin_eV": 0.01,
+    "oracle": "per-record minimum absolute error; diagnostic upper bound only"
+  },
+  "bootstrap": {
+    "unit": "structure_group_id_v1",
+    "iterations": 10000,
+    "seed": 20260720,
+    "interval": "percentile_95"
+  },
+  "subgroup_policy": {
+    "minimum_records": 50,
+    "minimum_structure_groups": 30,
+    "underpowered_action": "report estimates but forbid directional decision claims",
+    "similarity_bins": [0.0, 0.4, 0.6, 0.8, 1.0000001],
+    "similarity_underpowered_merge": "merge adjacent bins from low to high until both minima are met; merge a final underpowered remainder into its previous bin",
+    "heavy_atom_bins": [0, 60, 90, 120, 1000000],
+    "donor_atom_bins": [-1, 0, 100, 180, 1000000],
+    "acceptor_atom_bins": [-1, 20, 40, 1000000],
+    "unknown_fraction_bins": [-0.0000001, 0.0, 0.1, 1.0000001],
+    "molecular_weight_bins": [0, 1000, 1500, 1000000],
+    "heteroatom_fraction_bins": [0, 0.1, 0.2, 1.0000001],
+    "component_frequency_bins": [0, 1, 5, 20, 1000000],
+    "formal_charge_groups": ["negative", "zero", "positive"],
+    "target_bins": "quartiles computed once from the already-frozen test truth"
+  },
+  "learning_dynamics_rules": {
+    "underfit": "best epoch >= 90% of maximum and final-five validation slope is negative",
+    "overfit": "post-best train loss decreases >=5% while final validation MAE is >=2% above best",
+    "unstable": "seed CV of best validation MAE >5% or within-run last-ten validation SD >0.01 eV",
+    "otherwise": "representation_or_capacity_limited_or_inconclusive"
+  },
+  "duplicate_geometry_scope": {
+    "all_372": ["geometry RMSD versus primary target range", "same versus different role-aware identity strata"],
+    "frozen_val_test_only": ["geometry RMSD versus M3 prediction range", "target range versus model error"],
+    "no_new_train_or_test_inference": true
+  },
+  "validation_counterfactuals": {
+    "partition": "val only",
+    "models": ["m3_merged", "m3_dau_shared"],
+    "seeds": [42, 123, 456],
+    "conditions": [
+      "original",
+      "zero_coordinates",
+      "global_rotation_translation",
+      "gaussian_noise_0.01A",
+      "gaussian_noise_0.05A",
+      "gaussian_noise_0.10A",
+      "DA_separation_0.10A",
+      "DA_separation_0.50A",
+      "DA_separation_1.00A"
+    ],
+    "random_seed": 20260720,
+    "edge_policy": "keep frozen edge indices to isolate distance-channel response",
+    "global_transform": "fixed orthonormal rotation and translation [1.25,-0.75,0.50] angstrom",
+    "DA_separation": "move donor and acceptor centroids apart symmetrically along their centroid axis; unknown atoms unchanged; empty roles skipped",
+    "test_counterfactuals_forbidden": true
+  },
+  "decision_matrix": {
+    "SCALE_3D": "stable geometry signal plus both architectures satisfy underfit rule plus physically ordered counterfactual response",
+    "FUSE_2D_3D": "at least two preregistered adequately powered subgroups show 3D-minus-XGBoost group-bootstrap CI below zero and oracle group-macro gain >=0.005 eV",
+    "STOP_PURE_3D": "neither prior condition holds, or geometry-label association is weak while role perturbation median is comparable to model MAE",
+    "priority": ["SCALE_3D", "FUSE_2D_3D", "STOP_PURE_3D"],
+    "exactly_one_required": true
+  },
+  "forbidden": [
+    "model training or parameter update",
+    "new test inference or test counterfactual",
+    "test-driven subgroup addition or bin edits",
+    "stacking or fusion-weight fitting",
+    "final673 access",
+    "calling graph-supported role candidates ground truth"
+  ]
+}

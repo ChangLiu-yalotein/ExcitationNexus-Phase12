@@ -1,0 +1,14 @@
+{
+  "version": "v1",
+  "status": "LOCKED_BEFORE_DIAGNOSIS",
+  "locked_utc": "2026-07-20T09:02:06Z",
+  "config_path": "configs/gate1c1_diagnosis_v1.json",
+  "config_sha256": "1ea8a3f703a33255ce1a81e0b9911b2646f69970266beda11faa480323dd59df",
+  "head_at_lock": "1577089103d17bafcf2b395bbc2ee3e79eec5316",
+  "test_inference_allowed": false,
+  "test_artifact_analysis_allowed": true,
+  "validation_counterfactual_allowed": true,
+  "training_allowed": false,
+  "final673_access": false,
+  "silent_v1_edits_forbidden": true
+}

@@ -1,6 +1,6 @@
 # Phase 12 project state
 
-Current stage: **GATE1B3_DONE**; six formal IID checkpoints, their one-time test predictions, and the preregistered role sensitivity are frozen.
+Current stage: **GATE1C1_DONE_STOP_PURE_3D**; IID error mechanisms and validation-only geometry counterfactuals are frozen.
 
 ## Frozen facts
 
@@ -89,3 +89,12 @@ Project and EquiformerV3 directories are not Git worktrees; source commit proven
 - No retraining, second test evaluation, or final673 access occurred.
 - The 198 graph-supported role-candidate perturbations changed ensemble predictions materially (median absolute delta 0.07105 eV Merged; 0.05932 eV DAU), documenting role-definition sensitivity without treating candidates as ground truth.
 - Final scientific status: `NEGATIVE_3D_ARCHITECTURE_RESULT_UNDER_FROZEN_IID_PROTOCOL`.
+
+## Gate 1-C1 result
+
+- Gate 1-C1 used only frozen test prediction artifacts; it created no new test predictions and ran counterfactuals on validation only.
+- Geometry is real but insufficient to justify scaling: duplicate-group geometry RMSD versus target range has strong association, and zeroing coordinates strongly degrades validation predictions.
+- Only three of six formal runs meet the preregistered underfit rule; both architectures therefore do not meet `SCALE_3D`.
+- The only adequately powered stable 3D-winning subgroup is target Q4. Two model wins in that one subgroup do not satisfy the requirement for two distinct subgroups, so `FUSE_2D_3D` is not admitted.
+- Role-candidate perturbations are 67.0%–81.1% of the corresponding IID MAE, confirming a major role-definition stability risk.
+- Final status: `GATE1C1_DONE_STOP_PURE_3D`. This pauses the pure-3D path; it does not claim that geometry is physically irrelevant.
