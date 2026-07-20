@@ -1,0 +1,12 @@
+{
+  "buffer_dataset_created": false,
+  "final673_accessed": false,
+  "model_registry_sha256": "d7bbaa5158f42043455911f0277aaf7f066a0c6dda16e16cb7530a497ab5745c",
+  "models": 20,
+  "physical_gpu": "0",
+  "preprocessors": 10,
+  "quarantine_dataset_created": false,
+  "status": "VALIDATION_AND_20_BASELINE_ARTIFACTS_FROZEN",
+  "test_target_accessed": false,
+  "xgboost_runs": 10
+}

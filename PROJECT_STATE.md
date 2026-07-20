@@ -98,3 +98,13 @@ Project and EquiformerV3 directories are not Git worktrees; source commit proven
 - The only adequately powered stable 3D-winning subgroup is target Q4. Two model wins in that one subgroup do not satisfy the requirement for two distinct subgroups, so `FUSE_2D_3D` is not admitted.
 - Role-candidate perturbations are 67.0%–81.1% of the corresponding IID MAE, confirming a major role-definition stability risk.
 - Final status: `GATE1C1_DONE_STOP_PURE_3D`. This pauses the pure-3D path; it does not claim that geometry is physically irrelevant.
+
+## Gate 2-A result
+
+- Five frozen OOD protocols each contain weighted median, Ridge-C0, XGBoost-C0, and XGBoost-C1.5-safe, for 20 frozen baseline assets.
+- XGBoost-C0 structure-group-macro MAEs are 0.084589716 donor-cold, 0.098030360 acceptor-cold, 0.085474007 pair-cold, 0.084398558 both-cold, and 0.081749508 eV full-scaffold-cold.
+- Only acceptor-cold shows clear descriptive degradation from IID under independent structure-group bootstrap. Cross-protocol comparisons are not paired.
+- C1.5-safe satisfies no protocol's preregistered PM6-orbital gain criterion.
+- All 20 assets and ten preprocessors were frozen before one deduplicated 7,669-ID Arrow target read; the evaluator now fails closed.
+- Both-cold buffer and historical quarantine received no Dataset, prediction, or metric; `final673` remained sealed.
+- Final status: `GATE2A_DONE_OOD_BASELINES`.

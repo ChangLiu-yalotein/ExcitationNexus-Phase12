@@ -109,3 +109,13 @@
 - Reject `FUSE_2D_3D` at this gate because only target Q4, not two distinct adequately powered subgroups, shows stable 3D advantage. Oracle-min remains non-deployable.
 - Preserve original roles as primary. Graph-supported role candidates remain robustness perturbations, never ground truth.
 - Any future fusion must be separately preregistered and select weights on validation only; Gate 1-C1 authorizes no further training.
+
+## Gate 2-A decisions
+
+- Keep XGBoost-C0 primary; C1.5-safe remains a secondary PM6 orbital control.
+- Keep 512-bit non-chiral training Morgan features separate from 2048-bit chirality-enabled OOD diagnostics; diagnostics never enter models.
+- Join labels only to each protocol's train/val rows. After all 20 assets freeze, evaluate the deduplicated union of five test sets with one Arrow target read and fail closed thereafter.
+- Use paired structure-group bootstrap only within a protocol and independent structure-group bootstrap for IID-to-OOD descriptive degradation.
+- Record acceptor-cold as the only clear C0 degradation; other protocol difference CIs cross zero.
+- Make no PM6 orbital gain claim; acceptor-cold C1.5-safe is significantly worse.
+- Preserve both-cold's 587-group limitation/3,291-record buffer and do not overstate the 75.60%-singleton scaffold protocol.

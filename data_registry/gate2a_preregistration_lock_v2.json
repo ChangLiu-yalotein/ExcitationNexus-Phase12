@@ -1,0 +1,24 @@
+{
+  "gate": "2-A",
+  "status": "V2_LOCKED_BEFORE_ANY_MODEL_FIT_OR_TEST_TARGET_ACCESS",
+  "locked_utc": "2026-07-20T09:56:00Z",
+  "supersedes_execution_lock": "data_registry/gate2a_preregistration_lock_v1.json",
+  "v1_lock_sha256": "d24ed1aba029502e8ae9ef90e7dca6a68259902a0047fa80f2f678e10680653e",
+  "reason": "V1 stopped at target-free component fingerprint parsing before any model fit; V2 adopts the frozen Gate 0-C non-kekulizing fallback parser.",
+  "scientific_contract_changed": false,
+  "files": {
+    "configs/gate2a_ood_baselines_v1.json": "8cc80cb3a69e8a0594d846c3f64bb4e15ccf4c63cc01b6fa312b83fb95bb5096",
+    "scripts/gate2a_train_ood_baselines.py": "0c6288ee6eb362a790e60596b50e1fb8777a9444ec0a08339dc8eccd2addc940",
+    "scripts/gate2a_evaluate_once.py": "869ddb89ffdb8865e0a540b15c808c25e55a9a75274bff8552fa090f8aadb44a",
+    "tests/test_gate2a_contract.py": "f111b81091b36d4e7668417e6997a2735c3385bf050b4aaef3ca0002814c7560",
+    "reports/gate2a_preregistration.md": "a8c01b8994479f7f9c90e7dca6a68259902a0047fa80f2f678e10680653e"
+  },
+  "v1_failure": {
+    "model_fits": 0,
+    "test_target_reads": 0,
+    "similarity_assets_completed": 0,
+    "evidence": "logs/gate2a_training.log"
+  },
+  "test_target_accessed": false,
+  "final673_accessed": false
+}

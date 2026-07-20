@@ -34,3 +34,5 @@
 ## BLOCKED
 
 - [!] Time/prospective split: `BLOCKED_NO_TRUSTED_TIMESTAMP`.
+
+- [x] Gate 2-A: freeze 20 cheap/multi-fidelity assets and complete one-time evaluation on five OOD protocols.

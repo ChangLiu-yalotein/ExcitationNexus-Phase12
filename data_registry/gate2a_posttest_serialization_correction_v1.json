@@ -1,0 +1,15 @@
+{
+  "created_utc": "2026-07-20T10:08:00Z",
+  "evaluator_sha256_after": "39a5e0408ae4b393108b3e3ede701d0d01f1d63983771c7a95df75b3d94ad422",
+  "gate": "2-A",
+  "metrics_sha256_after": "7cf8761f6dc1d7f478930cbf93985971df6d4464d4773374aea51b08f18bf606",
+  "metrics_sha256_before": "efcda52e7f57d5dab06520d91aa6f41417d8c5e15afb2717a9bbbb6a7afb338e",
+  "posttest_engineering_followup": "Package-safe imports added after checkpoint pytest failed before commit; no evaluator rerun, predictions, or metrics changed.",
+  "prediction_sha256_unchanged": "69ce44003dac256ba5659bc54e54b923745aadd49f5fe755b28219c484729383",
+  "predictions_changed": false,
+  "reason": "Six undefined constant-input Spearman values were serialized as non-standard NaN; converted to JSON null.",
+  "scientific_metrics_changed": false,
+  "standard_test_evaluator_rerun": false,
+  "status": "POSTTEST_SERIALIZATION_CORRECTION_ONLY",
+  "train_script_sha256_after_package_import_fix": "9ee00087d2175557c039623a63f29552e1354d4310aaa33f962431a339c03727"
+}

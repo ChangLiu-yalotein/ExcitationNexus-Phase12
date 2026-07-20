@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/home/changliu/ExcitationNexus/12_Phase4_Multitask_OOD_Training/scripts/gate2a_train_ood_baselines.py", line 254, in <module>
+    main()
+  File "/home/changliu/ExcitationNexus/12_Phase4_Multitask_OOD_Training/scripts/gate2a_train_ood_baselines.py", line 250, in main
+    print(json.dumps(train_all(args.config, args.run_root), indent=2, sort_keys=True))
+  File "/home/changliu/ExcitationNexus/12_Phase4_Multitask_OOD_Training/scripts/gate2a_train_ood_baselines.py", line 203, in train_all
+    raise RuntimeError("test/buffer/quarantine target entered training frame")
+RuntimeError: test/buffer/quarantine target entered training frame

@@ -1,0 +1,22 @@
+/home/changliu/ExcitationNexus/12_Phase4_Multitask_OOD_Training/scripts/gate2a_evaluate_once.py:164: ConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  metrics["xgb_c0"]["similarity_error_spearman"] = {view: float(spearmanr(frame[f"nearest_train_{view}_morgan2048_chiral"], np.abs(predictions["xgb_c0"] - frame.primary_true)).statistic)
+/home/changliu/ExcitationNexus/12_Phase4_Multitask_OOD_Training/scripts/gate2a_evaluate_once.py:164: ConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  metrics["xgb_c0"]["similarity_error_spearman"] = {view: float(spearmanr(frame[f"nearest_train_{view}_morgan2048_chiral"], np.abs(predictions["xgb_c0"] - frame.primary_true)).statistic)
+/home/changliu/ExcitationNexus/12_Phase4_Multitask_OOD_Training/scripts/gate2a_evaluate_once.py:164: ConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  metrics["xgb_c0"]["similarity_error_spearman"] = {view: float(spearmanr(frame[f"nearest_train_{view}_morgan2048_chiral"], np.abs(predictions["xgb_c0"] - frame.primary_true)).statistic)
+/home/changliu/ExcitationNexus/12_Phase4_Multitask_OOD_Training/scripts/gate2a_evaluate_once.py:164: ConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  metrics["xgb_c0"]["similarity_error_spearman"] = {view: float(spearmanr(frame[f"nearest_train_{view}_morgan2048_chiral"], np.abs(predictions["xgb_c0"] - frame.primary_true)).statistic)
+{
+  "buffer_predictions": 0,
+  "completed_utc": "2026-07-20T10:03:19.363603+00:00",
+  "final673_accessed": false,
+  "metrics_sha256": "efcda52e7f57d5dab06520d91aa6f41417d8c5e15afb2717a9bbbb6a7afb338e",
+  "model_registry_sha256": "d7bbaa5158f42043455911f0277aaf7f066a0c6dda16e16cb7530a497ab5745c",
+  "models": 20,
+  "predictions_sha256": "69ce44003dac256ba5659bc54e54b923745aadd49f5fe755b28219c484729383",
+  "quarantine_predictions": 0,
+  "status": "GATE2A_DONE_OOD_BASELINES",
+  "test_evaluations": 1,
+  "test_unlock_sha256": "7a07b0b6e33a8ce30d182e18355f4d6e4449645d1d56e0e9bbaa8da458ba2fb7",
+  "union_arrow_target_reads": 1
+}

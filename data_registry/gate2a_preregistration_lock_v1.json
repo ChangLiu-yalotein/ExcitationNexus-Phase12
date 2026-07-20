@@ -1,0 +1,18 @@
+{
+  "gate": "2-A",
+  "status": "LOCKED_BEFORE_ANY_GATE2A_TRAINING_OR_TEST_TARGET_ACCESS",
+  "locked_utc": "2026-07-20T09:53:00Z",
+  "files": {
+    "configs/gate2a_ood_baselines_v1.json": "8cc80cb3a69e8a0594d846c3f64bb4e15ccf4c63cc01b6fa312b83fb95bb5096",
+    "configs/gate1b1_new_iid_cheap_baselines_v1.json": "f3bc6a8774846850cedadbb4da9717bc1b1c5ff4b8e6ecfb7cad2560a8d9dcb5",
+    "scripts/gate2a_train_ood_baselines.py": "5c8713dd97833d8549d9770ee46a1b45da84f8bd86036fb7c78c89c8551d32d6",
+    "scripts/gate2a_evaluate_once.py": "869ddb89ffdb8865e0a540b15c808c25e55a9a75274bff8552fa090f8aadb44a",
+    "tests/test_gate2a_contract.py": "1faf3114ae0161761f2ec6e24e9d15a954497feb0579cf0a4e4d6ee32aa84555"
+  },
+  "frozen_table_sha256": "e7587b1546039f099a4dbd0d352e98885bb2ebdbdcfa18884dd4355eed815a83",
+  "frozen_feature_cache_sha256": "7bb1a6af207364b186c072ab6d013d278e294633255b2235ef789e040e75d058",
+  "baseline_assets_planned": 20,
+  "xgboost_runs_planned": 10,
+  "test_target_accessed": false,
+  "final673_accessed": false
+}

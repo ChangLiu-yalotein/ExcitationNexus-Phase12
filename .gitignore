@@ -74,3 +74,8 @@ temp/
 *.tmp
 *.swp
 .DS_Store
+
+!runs/gate2a_ood_baselines/
+runs/gate2a_ood_baselines/**
+!runs/gate2a_ood_baselines/published/
+!runs/gate2a_ood_baselines/published/*.json

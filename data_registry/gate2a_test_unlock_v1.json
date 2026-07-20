@@ -1,0 +1,21 @@
+{
+  "arrow_target_reads_allowed": 1,
+  "arrow_target_reads_completed": 1,
+  "config_sha256": "8cc80cb3a69e8a0594d846c3f64bb4e15ccf4c63cc01b6fa312b83fb95bb5096",
+  "created_utc": "2026-07-20T10:02:58.183858+00:00",
+  "frozen_models": 20,
+  "frozen_preprocessors": 10,
+  "gate": "2-A",
+  "model_registry_sha256": "d7bbaa5158f42043455911f0277aaf7f066a0c6dda16e16cb7530a497ab5745c",
+  "per_split_test_counts": {
+    "acceptor_cold": 2237,
+    "both_cold": 587,
+    "donor_cold": 2251,
+    "full_scaffold_cold": 2250,
+    "pair_cold": 2309
+  },
+  "status": "UNIFIED_TEST_UNLOCK_CREATED_BEFORE_SINGLE_ARROW_READ",
+  "target_read_completed_utc": "2026-07-20T10:02:58.202453+00:00",
+  "test_guided_change": false,
+  "union_unique_molecule_count": 7669
+}

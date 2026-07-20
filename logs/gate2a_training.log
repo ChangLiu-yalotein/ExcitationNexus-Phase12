@@ -1,0 +1,13 @@
+[09:54:12] Can't kekulize mol.  Unkekulized atoms: 0 1 2 3 5
+Traceback (most recent call last):
+  File "/home/changliu/ExcitationNexus/12_Phase4_Multitask_OOD_Training/scripts/gate2a_train_ood_baselines.py", line 241, in <module>
+    main()
+  File "/home/changliu/ExcitationNexus/12_Phase4_Multitask_OOD_Training/scripts/gate2a_train_ood_baselines.py", line 237, in main
+    print(json.dumps(train_all(args.config, args.run_root), indent=2, sort_keys=True))
+  File "/home/changliu/ExcitationNexus/12_Phase4_Multitask_OOD_Training/scripts/gate2a_train_ood_baselines.py", line 175, in train_all
+    similarity_meta = build_similarity(config, manifests, ROOT / "data_registry/gate2a_ood_similarity_v1.parquet")
+  File "/home/changliu/ExcitationNexus/12_Phase4_Multitask_OOD_Training/scripts/gate2a_train_ood_baselines.py", line 156, in build_similarity
+    scores[view] = nearest_similarity(by_id.loc[test_ids, column].to_dict(), by_id.loc[train_ids, column].to_dict(), fp)
+  File "/home/changliu/ExcitationNexus/12_Phase4_Multitask_OOD_Training/scripts/gate2a_train_ood_baselines.py", line 120, in nearest_similarity
+    raise RuntimeError(f"fingerprint parse failed: {smiles[:80]}")
+RuntimeError: fingerprint parse failed: *1ccc[se]c1

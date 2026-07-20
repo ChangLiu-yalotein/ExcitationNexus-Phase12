@@ -1,0 +1,25 @@
+{
+  "gate": "2-A",
+  "status": "V3_LOCKED_BEFORE_ANY_MODEL_FIT_OR_TEST_TARGET_ACCESS",
+  "locked_utc": "2026-07-20T10:00:00Z",
+  "supersedes_execution_lock": "data_registry/gate2a_preregistration_lock_v2.json",
+  "v2_lock_sha256": "8561007be3129e4d2af92cc8d8d4b1ed2e171097c3aea45491036668383535cc",
+  "reason": "V2 froze target-free similarity then stopped before model fit because cross-protocol train/val union labels populated another protocol's test rows; V3 uses protocol-scoped train/val joins.",
+  "scientific_contract_changed": false,
+  "files": {
+    "configs/gate2a_ood_baselines_v1.json": "8cc80cb3a69e8a0594d846c3f64bb4e15ccf4c63cc01b6fa312b83fb95bb5096",
+    "scripts/gate2a_train_ood_baselines.py": "7a7e975aa048467bbfe946a9554220f00172555fedda80fd9710583bac956ae5",
+    "scripts/gate2a_evaluate_once.py": "869ddb89ffdb8865e0a540b15c808c25e55a9a75274bff8552fa090f8aadb44a",
+    "tests/test_gate2a_contract.py": "f111b81091b36d4e7668417e6997a2735c3385bf050b4aaef3ca0002814c7560",
+    "reports/gate2a_preregistration.md": "425a092e46e1c44c7e4dbd175b8db11c353a51ac017865a5e221c70f78fbe362",
+    "data_registry/gate2a_ood_similarity_v1.parquet": "68889243fa8e5f799148733662a0db3eab128ed3b783889700e71d097098cfcc"
+  },
+  "prior_failures": {
+    "v1": {"model_fits": 0, "test_target_reads": 0, "evidence": "logs/gate2a_training.log"},
+    "v2": {"model_fits": 0, "test_target_reads": 0, "target_free_similarity_completed": true, "evidence": "logs/gate2a_training_v2.log"}
+  },
+  "target_join_scope": "each_protocol_train_and_val_only",
+  "unified_test_union_read_after_model_freeze": true,
+  "test_target_accessed": false,
+  "final673_accessed": false
+}

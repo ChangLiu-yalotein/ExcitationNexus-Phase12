@@ -1,0 +1,403 @@
+{
+  "config_sha256": "8cc80cb3a69e8a0594d846c3f64bb4e15ccf4c63cc01b6fa312b83fb95bb5096",
+  "created_utc": "2026-07-20T10:01:35.599470+00:00",
+  "feature_cache_sha256": "7bb1a6af207364b186c072ab6d013d278e294633255b2235ef789e040e75d058",
+  "gate": "2-A",
+  "models": {
+    "acceptor_cold/ridge_c0": {
+      "kind": "ridge_c0",
+      "path": "/home/changliu/ExcitationNexus/12_Phase4_Multitask_OOD_Training/runs/gate2a_ood_baselines/acceptor_cold/ridge_c0.npz",
+      "sha256": "a6ea5dbc16bc6f0b074a169be279b2f9bf353560fe1c6d1128aa5531ba9b2124",
+      "validation": {
+        "group_macro_mae": 0.12310930935334372,
+        "group_macro_r2": 0.26400609213649373,
+        "group_macro_rmse": 0.1609294641965078,
+        "groups": 2205,
+        "record_mae": 0.12278395814918719,
+        "record_r2": 0.26858521708336003,
+        "record_rmse": 0.16051820101082265,
+        "records": 2235
+      }
+    },
+    "acceptor_cold/weighted_median": {
+      "kind": "weighted_median",
+      "path": "/home/changliu/ExcitationNexus/12_Phase4_Multitask_OOD_Training/runs/gate2a_ood_baselines/acceptor_cold/weighted_median.json",
+      "sha256": "4dfd99d3b027d5626f010e78a083598cf69c8fb493f10ba7f5bfda11c3952029"
+    },
+    "acceptor_cold/xgb_c0": {
+      "kind": "xgb_c0",
+      "path": "/home/changliu/ExcitationNexus/12_Phase4_Multitask_OOD_Training/runs/gate2a_ood_baselines/acceptor_cold/xgb_c0.json",
+      "seed": 42,
+      "sha256": "aa45aa8db38b36eeb89d35f33b6cb7bca3064a1e475271405397bb4a7ef652e5",
+      "training_wall_seconds": 0.9154598517343402,
+      "validation": {
+        "group_macro_mae": 0.09740212750459727,
+        "group_macro_r2": 0.5271033958261602,
+        "group_macro_rmse": 0.12899757711388277,
+        "groups": 2205,
+        "record_mae": 0.09708869812622607,
+        "record_r2": 0.5310030608408491,
+        "record_rmse": 0.1285367814668532,
+        "records": 2235
+      }
+    },
+    "acceptor_cold/xgb_c1p5_safe": {
+      "kind": "xgb_c1p5_safe",
+      "path": "/home/changliu/ExcitationNexus/12_Phase4_Multitask_OOD_Training/runs/gate2a_ood_baselines/acceptor_cold/xgb_c1p5_safe.json",
+      "seed": 42,
+      "sha256": "964e6cae291f9c71d833e5f9efdf816f6315fcfad5475c1ac65fdcf517a6af07",
+      "training_wall_seconds": 0.9936147541739047,
+      "validation": {
+        "group_macro_mae": 0.09387564563046082,
+        "group_macro_r2": 0.5531899769673141,
+        "group_macro_rmse": 0.12538913574882216,
+        "groups": 2205,
+        "record_mae": 0.09356877067269251,
+        "record_r2": 0.5570736368518303,
+        "record_rmse": 0.12491315626363096,
+        "records": 2235
+      }
+    },
+    "both_cold/ridge_c0": {
+      "kind": "ridge_c0",
+      "path": "/home/changliu/ExcitationNexus/12_Phase4_Multitask_OOD_Training/runs/gate2a_ood_baselines/both_cold/ridge_c0.npz",
+      "sha256": "801bce293a72e60bbc96eab414f34e0b2adbc7538c2ac7ca247d09f84d00cef4",
+      "validation": {
+        "group_macro_mae": 0.09569411912968437,
+        "group_macro_r2": 0.5454096118240025,
+        "group_macro_rmse": 0.12467523075841253,
+        "groups": 1622,
+        "record_mae": 0.09656511436561768,
+        "record_r2": 0.5370215476971458,
+        "record_rmse": 0.12542727776486168,
+        "records": 1792
+      }
+    },
+    "both_cold/weighted_median": {
+      "kind": "weighted_median",
+      "path": "/home/changliu/ExcitationNexus/12_Phase4_Multitask_OOD_Training/runs/gate2a_ood_baselines/both_cold/weighted_median.json",
+      "sha256": "71d175855222813ec62e781e70451314e1b67cd7c9489b1280f3e6ab908c011e"
+    },
+    "both_cold/xgb_c0": {
+      "kind": "xgb_c0",
+      "path": "/home/changliu/ExcitationNexus/12_Phase4_Multitask_OOD_Training/runs/gate2a_ood_baselines/both_cold/xgb_c0.json",
+      "seed": 42,
+      "sha256": "049b740d7354031b4e15b71a748928485b01dffa0913c21e6d77c46b5a9ed81e",
+      "training_wall_seconds": 1.0348945776931942,
+      "validation": {
+        "group_macro_mae": 0.08945588972808284,
+        "group_macro_r2": 0.581232639457723,
+        "group_macro_rmse": 0.11966205824558665,
+        "groups": 1622,
+        "record_mae": 0.09034658399216769,
+        "record_r2": 0.572925088471568,
+        "record_rmse": 0.12046576336000576,
+        "records": 1792
+      }
+    },
+    "both_cold/xgb_c1p5_safe": {
+      "kind": "xgb_c1p5_safe",
+      "path": "/home/changliu/ExcitationNexus/12_Phase4_Multitask_OOD_Training/runs/gate2a_ood_baselines/both_cold/xgb_c1p5_safe.json",
+      "seed": 42,
+      "sha256": "7471f31718b982321a43e55cab2c88cd15a55cbfb793d35d08b6d8e95a912368",
+      "training_wall_seconds": 0.9514252282679081,
+      "validation": {
+        "group_macro_mae": 0.0902258363156259,
+        "group_macro_r2": 0.5840669224751882,
+        "group_macro_rmse": 0.11925642496653356,
+        "groups": 1622,
+        "record_mae": 0.09086832599189466,
+        "record_r2": 0.5777322098475742,
+        "record_rmse": 0.11978586818899782,
+        "records": 1792
+      }
+    },
+    "donor_cold/ridge_c0": {
+      "kind": "ridge_c0",
+      "path": "/home/changliu/ExcitationNexus/12_Phase4_Multitask_OOD_Training/runs/gate2a_ood_baselines/donor_cold/ridge_c0.npz",
+      "sha256": "bc7f8fb60582b0086139a8d9fb749e79fc8b98795eba2f1c75acced58d759027",
+      "validation": {
+        "group_macro_mae": 0.1046641670913285,
+        "group_macro_r2": 0.23980895222098797,
+        "group_macro_rmse": 0.13564180157213504,
+        "groups": 2196,
+        "record_mae": 0.10461830485992699,
+        "record_r2": 0.23839653792665216,
+        "record_rmse": 0.13562075507521879,
+        "records": 2234
+      }
+    },
+    "donor_cold/weighted_median": {
+      "kind": "weighted_median",
+      "path": "/home/changliu/ExcitationNexus/12_Phase4_Multitask_OOD_Training/runs/gate2a_ood_baselines/donor_cold/weighted_median.json",
+      "sha256": "0f4402167d3a96607714785872a7a563c2b0c0f4f1dabf9a34e7d12ca9f93f38"
+    },
+    "donor_cold/xgb_c0": {
+      "kind": "xgb_c0",
+      "path": "/home/changliu/ExcitationNexus/12_Phase4_Multitask_OOD_Training/runs/gate2a_ood_baselines/donor_cold/xgb_c0.json",
+      "seed": 42,
+      "sha256": "e82546da433d76ebe3ff9a473cf576279aef30ca264ee20f9844cd118ad57386",
+      "training_wall_seconds": 1.6271012471988797,
+      "validation": {
+        "group_macro_mae": 0.0939709450075735,
+        "group_macro_r2": 0.3820297662142219,
+        "group_macro_rmse": 0.12229704181478818,
+        "groups": 2196,
+        "record_mae": 0.09384738223465643,
+        "record_r2": 0.3813210424692668,
+        "record_rmse": 0.12223466194018622,
+        "records": 2234
+      }
+    },
+    "donor_cold/xgb_c1p5_safe": {
+      "kind": "xgb_c1p5_safe",
+      "path": "/home/changliu/ExcitationNexus/12_Phase4_Multitask_OOD_Training/runs/gate2a_ood_baselines/donor_cold/xgb_c1p5_safe.json",
+      "seed": 42,
+      "sha256": "09dd1d8f3832d1f3815dd4ac93bbbcd8022b9ee26559ab083adcd3ccf7e5aaa1",
+      "training_wall_seconds": 0.9706740472465754,
+      "validation": {
+        "group_macro_mae": 0.09393801669957058,
+        "group_macro_r2": 0.3740177662829839,
+        "group_macro_rmse": 0.12308728083810053,
+        "groups": 2196,
+        "record_mae": 0.09394177790539027,
+        "record_r2": 0.37240065123051846,
+        "record_rmse": 0.12311272533293925,
+        "records": 2234
+      }
+    },
+    "full_scaffold_cold/ridge_c0": {
+      "kind": "ridge_c0",
+      "path": "/home/changliu/ExcitationNexus/12_Phase4_Multitask_OOD_Training/runs/gate2a_ood_baselines/full_scaffold_cold/ridge_c0.npz",
+      "sha256": "e1fcb6e2ec5749d098897ad9fadd5f9a0d3f750579a30ca2ce2867a0e448db59",
+      "validation": {
+        "group_macro_mae": 0.09350502065695228,
+        "group_macro_r2": 0.43384089158590533,
+        "group_macro_rmse": 0.12225802846847776,
+        "groups": 2195,
+        "record_mae": 0.09392261873908568,
+        "record_r2": 0.43178618338991914,
+        "record_rmse": 0.12262487499041151,
+        "records": 2254
+      }
+    },
+    "full_scaffold_cold/weighted_median": {
+      "kind": "weighted_median",
+      "path": "/home/changliu/ExcitationNexus/12_Phase4_Multitask_OOD_Training/runs/gate2a_ood_baselines/full_scaffold_cold/weighted_median.json",
+      "sha256": "1f08f8ebcff9732879aa160b9fe091c82aa959dd3b35281eaf4c123e4cb0fc5b"
+    },
+    "full_scaffold_cold/xgb_c0": {
+      "kind": "xgb_c0",
+      "path": "/home/changliu/ExcitationNexus/12_Phase4_Multitask_OOD_Training/runs/gate2a_ood_baselines/full_scaffold_cold/xgb_c0.json",
+      "seed": 42,
+      "sha256": "98b675001d67a0c7345d1ccdce20fbfaadad975ee78ba71347a7978e04b65963",
+      "training_wall_seconds": 1.032190843950957,
+      "validation": {
+        "group_macro_mae": 0.08753329770213872,
+        "group_macro_r2": 0.4736739061074937,
+        "group_macro_rmse": 0.11787876838371973,
+        "groups": 2195,
+        "record_mae": 0.08797503193767595,
+        "record_r2": 0.47110441416022397,
+        "record_rmse": 0.11830624057477648,
+        "records": 2254
+      }
+    },
+    "full_scaffold_cold/xgb_c1p5_safe": {
+      "kind": "xgb_c1p5_safe",
+      "path": "/home/changliu/ExcitationNexus/12_Phase4_Multitask_OOD_Training/runs/gate2a_ood_baselines/full_scaffold_cold/xgb_c1p5_safe.json",
+      "seed": 42,
+      "sha256": "7fe483e5fa7bc8fdaaefc68f0abd53e2ee8965015f320c478c3820158c17bd0e",
+      "training_wall_seconds": 0.936376933939755,
+      "validation": {
+        "group_macro_mae": 0.08772464531987902,
+        "group_macro_r2": 0.4699193633703309,
+        "group_macro_rmse": 0.11829846483692064,
+        "groups": 2195,
+        "record_mae": 0.08821127499960571,
+        "record_r2": 0.46659754192147507,
+        "record_rmse": 0.11880923215814461,
+        "records": 2254
+      }
+    },
+    "pair_cold/ridge_c0": {
+      "kind": "ridge_c0",
+      "path": "/home/changliu/ExcitationNexus/12_Phase4_Multitask_OOD_Training/runs/gate2a_ood_baselines/pair_cold/ridge_c0.npz",
+      "sha256": "f1a6f96e2287dda38edee10c50daf3fa118d2b58afedd8e430b6b3c31f92f346",
+      "validation": {
+        "group_macro_mae": 0.09120002624360121,
+        "group_macro_r2": 0.5171093487329692,
+        "group_macro_rmse": 0.12024867271058555,
+        "groups": 2190,
+        "record_mae": 0.09172368123107072,
+        "record_r2": 0.518039106410805,
+        "record_rmse": 0.12078790200707493,
+        "records": 2319
+      }
+    },
+    "pair_cold/weighted_median": {
+      "kind": "weighted_median",
+      "path": "/home/changliu/ExcitationNexus/12_Phase4_Multitask_OOD_Training/runs/gate2a_ood_baselines/pair_cold/weighted_median.json",
+      "sha256": "7dfd0b2adbf75b7f4773570d59fe70838478eb83e21ed5df348b07bdf1515ff9"
+    },
+    "pair_cold/xgb_c0": {
+      "kind": "xgb_c0",
+      "path": "/home/changliu/ExcitationNexus/12_Phase4_Multitask_OOD_Training/runs/gate2a_ood_baselines/pair_cold/xgb_c0.json",
+      "seed": 42,
+      "sha256": "36c6ac304ca04b267145ed5f35f017635f9f31dfb27669ec6ddc8aef92b18d90",
+      "training_wall_seconds": 0.9727992210537195,
+      "validation": {
+        "group_macro_mae": 0.0852734225659335,
+        "group_macro_r2": 0.5602546120653664,
+        "group_macro_rmse": 0.1147510159422887,
+        "groups": 2190,
+        "record_mae": 0.08585300954159454,
+        "record_r2": 0.5606998180490061,
+        "record_rmse": 0.11531829936389539,
+        "records": 2319
+      }
+    },
+    "pair_cold/xgb_c1p5_safe": {
+      "kind": "xgb_c1p5_safe",
+      "path": "/home/changliu/ExcitationNexus/12_Phase4_Multitask_OOD_Training/runs/gate2a_ood_baselines/pair_cold/xgb_c1p5_safe.json",
+      "seed": 42,
+      "sha256": "05b190d396eb7bac44b1ea5cf6af90e9692df88cebeba967edc9932715e7fbd9",
+      "training_wall_seconds": 0.951000636909157,
+      "validation": {
+        "group_macro_mae": 0.08594872196436705,
+        "group_macro_r2": 0.5527741019547673,
+        "group_macro_rmse": 0.11572291506514944,
+        "groups": 2190,
+        "record_mae": 0.08648862928379493,
+        "record_r2": 0.5531571294171813,
+        "record_rmse": 0.11630408102498706,
+        "records": 2319
+      }
+    }
+  },
+  "preprocessors": {
+    "acceptor_cold/c0": {
+      "columns": 532,
+      "fit_partition": "train",
+      "path": "/home/changliu/ExcitationNexus/12_Phase4_Multitask_OOD_Training/runs/gate2a_ood_baselines/acceptor_cold/preprocessor_c0.npz",
+      "sha256": "a5670e759a78452ee197d75333393bd6c2721534bedcf77fb1c6abf25922e0ae"
+    },
+    "acceptor_cold/c1p5_safe": {
+      "columns": 535,
+      "fit_partition": "train",
+      "path": "/home/changliu/ExcitationNexus/12_Phase4_Multitask_OOD_Training/runs/gate2a_ood_baselines/acceptor_cold/preprocessor_c1p5_safe.npz",
+      "sha256": "dfbdb05767076624c6b9f0337e8f3c956b207004c1aeb71866e1e1aa714e4615"
+    },
+    "both_cold/c0": {
+      "columns": 532,
+      "fit_partition": "train",
+      "path": "/home/changliu/ExcitationNexus/12_Phase4_Multitask_OOD_Training/runs/gate2a_ood_baselines/both_cold/preprocessor_c0.npz",
+      "sha256": "d9954e9aa992fccb494bca79ec72569dfef019d0720f5068027d3d081d009921"
+    },
+    "both_cold/c1p5_safe": {
+      "columns": 535,
+      "fit_partition": "train",
+      "path": "/home/changliu/ExcitationNexus/12_Phase4_Multitask_OOD_Training/runs/gate2a_ood_baselines/both_cold/preprocessor_c1p5_safe.npz",
+      "sha256": "7faa38d982d74d572da9f9cbca98dd2ec762c102ac4588631ab7f086b04dcced"
+    },
+    "donor_cold/c0": {
+      "columns": 532,
+      "fit_partition": "train",
+      "path": "/home/changliu/ExcitationNexus/12_Phase4_Multitask_OOD_Training/runs/gate2a_ood_baselines/donor_cold/preprocessor_c0.npz",
+      "sha256": "c86b2822baf456fdd5c3fccaeb89002a3c3e9d3ab7d31a83baaf15d468c3fefe"
+    },
+    "donor_cold/c1p5_safe": {
+      "columns": 535,
+      "fit_partition": "train",
+      "path": "/home/changliu/ExcitationNexus/12_Phase4_Multitask_OOD_Training/runs/gate2a_ood_baselines/donor_cold/preprocessor_c1p5_safe.npz",
+      "sha256": "b3bcbb1935a622ffba68e41490941d083d5592d67471ee35d7be7c4da8aad489"
+    },
+    "full_scaffold_cold/c0": {
+      "columns": 532,
+      "fit_partition": "train",
+      "path": "/home/changliu/ExcitationNexus/12_Phase4_Multitask_OOD_Training/runs/gate2a_ood_baselines/full_scaffold_cold/preprocessor_c0.npz",
+      "sha256": "06f40672f1fb382ba530e60132cc47ab1ade9570b3925ef2bcfa128b361edb73"
+    },
+    "full_scaffold_cold/c1p5_safe": {
+      "columns": 535,
+      "fit_partition": "train",
+      "path": "/home/changliu/ExcitationNexus/12_Phase4_Multitask_OOD_Training/runs/gate2a_ood_baselines/full_scaffold_cold/preprocessor_c1p5_safe.npz",
+      "sha256": "fed7b5c5c01d45fdccab047ac64fd4247acbffce5ddf07700af61b163e3d6773"
+    },
+    "pair_cold/c0": {
+      "columns": 532,
+      "fit_partition": "train",
+      "path": "/home/changliu/ExcitationNexus/12_Phase4_Multitask_OOD_Training/runs/gate2a_ood_baselines/pair_cold/preprocessor_c0.npz",
+      "sha256": "3e5009e77610a1be367c5f172bd99b7543c759551011d929ff185bcf62e2d664"
+    },
+    "pair_cold/c1p5_safe": {
+      "columns": 535,
+      "fit_partition": "train",
+      "path": "/home/changliu/ExcitationNexus/12_Phase4_Multitask_OOD_Training/runs/gate2a_ood_baselines/pair_cold/preprocessor_c1p5_safe.npz",
+      "sha256": "7cb7cb06549c071a0c7338fa9bbaa3a048748fb0e78fa2362b9009874440b30c"
+    }
+  },
+  "similarity": {
+    "fingerprint": {
+      "model_input": false,
+      "nBits": 2048,
+      "radius": 2,
+      "useChirality": true,
+      "views": [
+        "full_molecule",
+        "donor_component",
+        "acceptor_component"
+      ]
+    },
+    "path": "/home/changliu/ExcitationNexus/12_Phase4_Multitask_OOD_Training/data_registry/gate2a_ood_similarity_v1.parquet",
+    "rdkit": "2025.09.6",
+    "rows": 9634,
+    "sha256": "68889243fa8e5f799148733662a0db3eab128ed3b783889700e71d097098cfcc",
+    "target_columns": []
+  },
+  "status": "VALIDATION_AND_20_BASELINE_ARTIFACTS_FROZEN",
+  "table_sha256": "e7587b1546039f099a4dbd0d352e98885bb2ebdbdcfa18884dd4355eed815a83",
+  "test_target_accessed": false,
+  "validation_predictions": {
+    "acceptor_cold/xgb_c0": {
+      "path": "/home/changliu/ExcitationNexus/12_Phase4_Multitask_OOD_Training/runs/gate2a_ood_baselines/acceptor_cold/xgb_c0_val_predictions.csv",
+      "sha256": "d8b41483a788882f09f1104445d9db197728d4e0626914b25f15afbc558985b8"
+    },
+    "acceptor_cold/xgb_c1p5_safe": {
+      "path": "/home/changliu/ExcitationNexus/12_Phase4_Multitask_OOD_Training/runs/gate2a_ood_baselines/acceptor_cold/xgb_c1p5_safe_val_predictions.csv",
+      "sha256": "0e9af34a2c7743d7fddbc90229ff2a6b5cc937f3a3f9c42d637826c9c6514c52"
+    },
+    "both_cold/xgb_c0": {
+      "path": "/home/changliu/ExcitationNexus/12_Phase4_Multitask_OOD_Training/runs/gate2a_ood_baselines/both_cold/xgb_c0_val_predictions.csv",
+      "sha256": "470e2ee0c40899fa3bf3c9871be758f380baf6e5bb313ecc54b867a714fbf0c7"
+    },
+    "both_cold/xgb_c1p5_safe": {
+      "path": "/home/changliu/ExcitationNexus/12_Phase4_Multitask_OOD_Training/runs/gate2a_ood_baselines/both_cold/xgb_c1p5_safe_val_predictions.csv",
+      "sha256": "48ca746ad73e44d37f9f54d6f4d67df3ca0631e2617522eb2deaa71f2f0f1918"
+    },
+    "donor_cold/xgb_c0": {
+      "path": "/home/changliu/ExcitationNexus/12_Phase4_Multitask_OOD_Training/runs/gate2a_ood_baselines/donor_cold/xgb_c0_val_predictions.csv",
+      "sha256": "953df911b79f41f1b33ab7d50db234366331b298eeae718498b006eae41b55ae"
+    },
+    "donor_cold/xgb_c1p5_safe": {
+      "path": "/home/changliu/ExcitationNexus/12_Phase4_Multitask_OOD_Training/runs/gate2a_ood_baselines/donor_cold/xgb_c1p5_safe_val_predictions.csv",
+      "sha256": "e78c495fe304c6febace0b87d73ab2c2f8f54f450190549fdbb51a3df4ef2551"
+    },
+    "full_scaffold_cold/xgb_c0": {
+      "path": "/home/changliu/ExcitationNexus/12_Phase4_Multitask_OOD_Training/runs/gate2a_ood_baselines/full_scaffold_cold/xgb_c0_val_predictions.csv",
+      "sha256": "eae7430bf06d8ec1e90b917517079668adaec39b58e89cbf56a5748151d881d1"
+    },
+    "full_scaffold_cold/xgb_c1p5_safe": {
+      "path": "/home/changliu/ExcitationNexus/12_Phase4_Multitask_OOD_Training/runs/gate2a_ood_baselines/full_scaffold_cold/xgb_c1p5_safe_val_predictions.csv",
+      "sha256": "743ada077eac20340d8eabb0e7883fd339b558af9449d88ccaee17a7effe7d7c"
+    },
+    "pair_cold/xgb_c0": {
+      "path": "/home/changliu/ExcitationNexus/12_Phase4_Multitask_OOD_Training/runs/gate2a_ood_baselines/pair_cold/xgb_c0_val_predictions.csv",
+      "sha256": "83148530b8fbfcf93071dcf52d4d35bea67796fd3f05441399d81205bdc4aa99"
+    },
+    "pair_cold/xgb_c1p5_safe": {
+      "path": "/home/changliu/ExcitationNexus/12_Phase4_Multitask_OOD_Training/runs/gate2a_ood_baselines/pair_cold/xgb_c1p5_safe_val_predictions.csv",
+      "sha256": "3f2c3caa2d2c955fdd4f1d3b571c45899ac7b6922a56e14d8a17ad58b93c025e"
+    }
+  }
+}

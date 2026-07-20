@@ -59,7 +59,8 @@ git add -- .gitignore AGENTS.md README.md pyproject.toml \
   runs/gate1b1_new_iid_cheap_baselines/test_unlock_v1.json \
   runs/gate1b1_new_iid_cheap_baselines/published/*.json \
   runs/gate1b1_new_iid_cheap_baselines/published/*.csv \
-  runs/gate1b2_3d_admission/published/*.json
+  runs/gate1b2_3d_admission/published/*.json \
+  runs/gate2a_ood_baselines/published/*.json
 
 if git diff --cached --quiet; then
   echo "no changes; checkpoint skipped"
@@ -89,6 +90,8 @@ elif [[ "${GATE_ID,,}" == "gate1b3" ]]; then
   tag="gate1b3-iid-3d-baselines-$(date -u +%Y%m%d)"
 elif [[ "${GATE_ID,,}" == "gate1c1" ]]; then
   tag="gate1c1-error-mechanism-diagnosis-$(date -u +%Y%m%d)"
+elif [[ "${GATE_ID,,}" == "gate2a" ]]; then
+  tag="gate2a-ood-cheap-baselines-$(date -u +%Y%m%d)"
 else
   tag="$(printf '%s' "$GATE_ID" | tr '[:upper:]' '[:lower:]')-done-$(date -u +%Y%m%d)"
 fi
