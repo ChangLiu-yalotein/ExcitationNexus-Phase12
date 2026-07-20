@@ -119,3 +119,13 @@
 - Record acceptor-cold as the only clear C0 degradation; other protocol difference CIs cross zero.
 - Make no PM6 orbital gain claim; acceptor-cold C1.5-safe is significantly worse.
 - Preserve both-cold's 587-group limitation/3,291-record buffer and do not overstate the 75.60%-singleton scaffold protocol.
+
+## Gate 2-B decisions
+
+- Use held-out donor, acceptor, pair, or scaffold identity as the corresponding cold protocol's primary inference unit; structure-group inference is secondary.
+- Use two-way donor/acceptor pigeonhole multiplicity bootstrap for both-cold, plus donor-only and acceptor-only sensitivities.
+- Freeze `ACCEPTOR_OOD_FAILURE_CONFIRMED`: the 36-acceptor degradation CI remains wholly above zero and error rises as similarity falls.
+- Mark donor-cold and the donor side of both-cold `LOW_CLUSTER_POWER` at 15 identities; make no strong donor-OOD significance claim.
+- Freeze `BOTH_COLD_LOW_SKILL_WARNING`: narrow targets hide poor normalized error, R², median skill, and regression-to-mean.
+- Freeze `PM6_ORBITAL_SHIFT_RISK` as a warning only; LUMO/gap shift plus weak SHAP/error association is not causal and authorizes no feature change.
+- Future UQ coverage must respect the protocol's scientific inference unit rather than treating molecular records as independent.

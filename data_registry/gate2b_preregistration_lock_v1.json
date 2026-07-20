@@ -1,0 +1,25 @@
+{
+  "gate": "2-B",
+  "status": "LOCKED_BEFORE_REAL_ARTIFACT_STATISTICS",
+  "locked_utc": "2026-07-20T10:26:00Z",
+  "files": {
+    "configs/gate2b_hierarchical_ood_audit_v1.json": "84a97489eeb4b648dd2cc7142235be3f315f7d6d81d2ddf9f1d4b4639dccf288",
+    "scripts/gate2b_hierarchical_ood_audit.py": "a38cb906d4715549d93ef7ec8149491db93f27652a87641b714c620ac4b78d04",
+    "tests/test_gate2b_contract.py": "8468387025b963b246cf7d3f8b8e0c26379df761b13fbf55f1ad3d43cadc7445"
+  },
+  "bootstrap_replicates": 10000,
+  "bootstrap_seed": 20260720,
+  "primary_inference_units": {
+    "iid": "structure_group_id_v1",
+    "donor_cold": "donor_structure_group_id_v1",
+    "acceptor_cold": "acceptor_structure_group_id_v1",
+    "pair_cold": "pair_group_id_v1",
+    "both_cold": "two_way_donor_acceptor_pigeonhole",
+    "full_scaffold_cold": "full_scaffold_group_id_v1"
+  },
+  "input_prediction_sha256": "69ce44003dac256ba5659bc54e54b923745aadd49f5fe755b28219c484729383",
+  "main_parquet_accessed": false,
+  "new_predictions_generated": false,
+  "gate2a_evaluator_calls": 0,
+  "final673_accessed": false
+}

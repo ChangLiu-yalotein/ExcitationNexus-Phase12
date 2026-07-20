@@ -92,6 +92,8 @@ elif [[ "${GATE_ID,,}" == "gate1c1" ]]; then
   tag="gate1c1-error-mechanism-diagnosis-$(date -u +%Y%m%d)"
 elif [[ "${GATE_ID,,}" == "gate2a" ]]; then
   tag="gate2a-ood-cheap-baselines-$(date -u +%Y%m%d)"
+elif [[ "${GATE_ID,,}" == "gate2b" ]]; then
+  tag="gate2b-hierarchical-ood-audit-$(date -u +%Y%m%d)"
 else
   tag="$(printf '%s' "$GATE_ID" | tr '[:upper:]' '[:lower:]')-done-$(date -u +%Y%m%d)"
 fi

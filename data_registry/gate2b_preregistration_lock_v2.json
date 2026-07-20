@@ -1,0 +1,21 @@
+{
+  "gate": "2-B",
+  "status": "V2_LOCKED_BEFORE_DESCRIPTOR_COMPLETE_RERUN",
+  "locked_utc": "2026-07-20T13:16:00Z",
+  "v1_lock": "data_registry/gate2b_preregistration_lock_v1.json",
+  "v1_metrics_preserved": "logs/gate2b_hierarchical_metrics_v1_pre_descriptor_fix.json",
+  "v1_metrics_sha256": "0ec7c78525d5559a8ee1d56d1b601ad706e47970ea1b2a881066989b002e3870",
+  "reason": "Complete target-free acceptor descriptors with the frozen Gate 0-C non-kekulizing parser and add preregistered anonymous worst donor/acceptor identities for both-cold.",
+  "bootstrap_contract_changed": false,
+  "decision_thresholds_changed": false,
+  "input_predictions_changed": false,
+  "files": {
+    "configs/gate2b_hierarchical_ood_audit_v1.json": "84a97489eeb4b648dd2cc7142235be3f315f7d6d81d2ddf9f1d4b4639dccf288",
+    "scripts/gate2b_hierarchical_ood_audit.py": "f254d07ec9c8a4e6dd109709aaface954bae1b604c927d070416fa5bf86f3682",
+    "tests/test_gate2b_contract.py": "e23a12ed52f1e4ecce1b1dbc4f7dd8d0b9465775f7cab1f855ca476c6711a850"
+  },
+  "main_parquet_accessed": false,
+  "new_predictions_generated": false,
+  "gate2a_evaluator_calls": 0,
+  "final673_accessed": false
+}

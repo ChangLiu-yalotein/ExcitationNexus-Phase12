@@ -108,3 +108,13 @@ Project and EquiformerV3 directories are not Git worktrees; source commit proven
 - All 20 assets and ten preprocessors were frozen before one deduplicated 7,669-ID Arrow target read; the evaluator now fails closed.
 - Both-cold buffer and historical quarantine received no Dataset, prediction, or metric; `final673` remained sealed.
 - Final status: `GATE2A_DONE_OOD_BASELINES`.
+
+## Gate 2-B result
+
+- Cold-protocol primary inference now uses held-out identities; structure-group bootstrap remains secondary.
+- Acceptor-cold has 36 identities: XGBoost-C0 identity MAE 0.097319544 eV and independent IID difference CI [0.004276044, 0.023622853] eV. Similarity correlations are -0.545 acceptor and -0.583 full. Label: `ACCEPTOR_OOD_FAILURE_CONFIRMED`.
+- Donor-cold has only 15 identities and remains `LOW_CLUSTER_POWER`; its degradation CI crosses zero.
+- Both-cold crosses 15 donor/40 acceptor identities. MAE 0.084398558 eV masks normalized MAE 0.691, R² 0.253, median skill 0.070, and regression-to-mean slope 0.310. Label: `BOTH_COLD_LOW_SKILL_WARNING`.
+- PM6 LUMO/gap show locked acceptor-OOD shifts; weak frozen TreeSHAP/error association crosses the preregistered threshold. Label: `PM6_ORBITAL_SHIFT_RISK`, not causality.
+- No training, new prediction, main Parquet read, Gate 2-A evaluator call, or final673 access occurred.
+- Final status: `GATE2B_DONE_HIERARCHICAL_OOD_AUDIT`.

@@ -1,0 +1,38 @@
+{
+  "gate": "2-B",
+  "version": "v1",
+  "status": "PREREGISTERED_BEFORE_STATISTICAL_COMPUTATION",
+  "required_head": "c02efecd52ba6cfb29d90079c9c5f70f2c844c80",
+  "required_tag": "gate2a-ood-cheap-baselines-20260720",
+  "inputs": {
+    "iid_predictions": {"path": "runs/gate1b1_new_iid_cheap_baselines/published/gate1b1_test_predictions_once.csv", "sha256": "be9afad741bb97e0032a850753829f254e2cc34c1d19fb0e86af46f2f5e99908"},
+    "ood_predictions": {"path": "runs/gate2a_ood_baselines/published/gate2a_test_predictions_once.csv", "sha256": "69ce44003dac256ba5659bc54e54b923745aadd49f5fe755b28219c484729383"},
+    "ood_metrics": {"path": "runs/gate2a_ood_baselines/published/gate2a_metrics.json", "sha256": "7cf8761f6dc1d7f478930cbf93985971df6d4464d4773374aea51b08f18bf606"},
+    "ood_similarity": {"path": "data_registry/gate2a_ood_similarity_v1.parquet", "sha256": "68889243fa8e5f799148733662a0db3eab128ed3b783889700e71d097098cfcc"},
+    "test_unlock": {"path": "data_registry/gate2a_test_unlock_v1.json", "sha256": "7a07b0b6e33a8ce30d182e18355f4d6e4449645d1d56e0e9bbaa8da458ba2fb7"},
+    "feature_cache": {"path": "runs/gate1b1_new_iid_cheap_baselines/features_v1.parquet", "sha256": "7bb1a6af207364b186c072ab6d013d278e294633255b2235ef789e040e75d058"},
+    "component_identity": {"path": "manifests/component_identity_v1.csv", "sha256": "dca4a5e5661d7336226b16c87624ba3b457cdcd0379ccb2130a48d4f30306515"},
+    "structure_identity": {"path": "manifests/new15016_structure_groups_v1.parquet", "sha256": "23409d65486ed1f854c125b02769d02d945e3f6c219be8fb4e6f290f391a1a56"}
+  },
+  "manifests": {
+    "iid": {"path": "manifests/split_iid_group_seed42_v1.csv", "sha256": "f4572f2c1896d4228dd9eff67220adb7d0a02ad79b70c66766e6da876541c3f2", "cluster": "structure_group_id_v1"},
+    "donor_cold": {"path": "manifests/split_donor_cold_v1.csv", "sha256": "505e4bbe4ed20900ed66721d20df5442854c0f0ea04f5885df330bde111427cd", "cluster": "donor_structure_group_id_v1"},
+    "acceptor_cold": {"path": "manifests/split_acceptor_cold_v1.csv", "sha256": "659992cc7413094fd17da2281902aa74f261307d98648a973254bd472b5ecc65", "cluster": "acceptor_structure_group_id_v1"},
+    "pair_cold": {"path": "manifests/split_pair_cold_v1.csv", "sha256": "06aaee7d7756957bc42f7d4e221ffd5b20916be69b3116c3bbbe017eb02f4825", "cluster": "pair_group_id_v1"},
+    "both_cold": {"path": "manifests/split_both_cold_external_test_v1.csv", "sha256": "f74f40c4a2f5e7d91214ebdabc3e8f2d1a48a3c106509bb8ab7a3c846b83cb16", "cluster": "two_way_donor_acceptor"},
+    "full_scaffold_cold": {"path": "manifests/split_full_scaffold_cold_v1.csv", "sha256": "d395020eccfa6e8b73d50bc788a11261d308403a731a9e448040ffe7d238a897", "cluster": "full_scaffold_group_id_v1"}
+  },
+  "models": ["weighted_median", "ridge_c0", "xgb_c0", "xgb_c1p5_safe"],
+  "bootstrap": {"replicates": 10000, "seed": 20260720, "ci": [0.025, 0.975], "minimum_clusters_for_strong_claim": 30, "input_order_invariant": true},
+  "both_cold_bootstrap": {"method": "two_way_pigeonhole_multiplicity_weighting", "primary": true, "sensitivities": ["donor_cluster_only", "acceptor_cluster_only"]},
+  "decision_thresholds": {
+    "both_low_skill": {"normalized_mae_min": 0.5, "r2_max": 0.5, "skill_vs_median_max": 0.1, "minimum_conditions": 2},
+    "pm6_shift": {"absolute_standardized_shift_min": 0.5, "wasserstein_over_train_sd_min": 0.5, "out_of_train_range_fraction_min": 0.05, "minimum_shifted_features": 2, "absolute_shap_error_spearman_min": 0.1}
+  },
+  "pm6_features": ["pm6_homo_hartree", "pm6_lumo_hartree", "pm6_gap_ev"],
+  "artifact_only": true,
+  "main_parquet_access": false,
+  "new_predictions": false,
+  "gate2a_evaluator_calls": 0,
+  "final673_access": false
+}

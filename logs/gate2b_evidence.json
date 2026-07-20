@@ -1,0 +1,34 @@
+{
+  "acceptor_descriptor_parse_failures": 0,
+  "acceptor_identity_degradation_ci95": [
+    0.004276044049854374,
+    0.0236228533437702
+  ],
+  "all_models_have_record_structure_identity_layers": true,
+  "bootstrap_replicates": 10000,
+  "both_acceptor_cluster_count": 40,
+  "both_donor_cluster_count": 15,
+  "diagnostic_labels": [
+    "ACCEPTOR_OOD_FAILURE_CONFIRMED",
+    "BOTH_COLD_LOW_SKILL_WARNING",
+    "PM6_ORBITAL_SHIFT_RISK"
+  ],
+  "donor_cluster_count": 15,
+  "final673_accessed": false,
+  "gate2a_evaluator_calls": 0,
+  "gate2a_evaluator_still_locked": true,
+  "iid_models": 4,
+  "input_prediction_sha256": "69ce44003dac256ba5659bc54e54b923745aadd49f5fe755b28219c484729383",
+  "input_prediction_sha256_after": "69ce44003dac256ba5659bc54e54b923745aadd49f5fe755b28219c484729383",
+  "main_parquet_accessed": false,
+  "metrics_sha256": "9c9ec50451b090c2526e4d6a6e767b7855bfabd43bf9a46e799b092025218f30",
+  "new_predictions_generated": false,
+  "ood_protocols": 5,
+  "preregistration_lock_v1_sha256": "38b7b800edba2bad9bb8ca0ef1ae9cabc560a56108df031b8f3d40fa40921695",
+  "preregistration_lock_v2_sha256": "60a36ff50304f564423a1a211a8246a0cf71f3a963264fc0dd38e3db347a946b",
+  "preregistration_lock_v3_sha256": "6bd65b05073b0813844f746924b754de6ca33d9896a7634b2c430bcc6bde3d3c",
+  "real_input_order_invariance": "PASS",
+  "status": "GATE2B_DONE_HIERARCHICAL_OOD_AUDIT",
+  "v1_metrics_preserved_sha256": "0ec7c78525d5559a8ee1d56d1b601ad706e47970ea1b2a881066989b002e3870",
+  "v2_metrics_preserved_sha256": "b1035658d194d65bb3276c27ffe5d43b1b4a2f77188e448d5aefd3528c8b41aa"
+}

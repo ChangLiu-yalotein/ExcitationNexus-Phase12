@@ -1,0 +1,16 @@
+{
+  "diagnostic_labels": [
+    "ACCEPTOR_OOD_FAILURE_CONFIRMED",
+    "BOTH_COLD_LOW_SKILL_WARNING",
+    "PM6_ORBITAL_SHIFT_RISK"
+  ],
+  "final673_accessed": false,
+  "gate2a_evaluator_calls": 0,
+  "gate2a_evaluator_still_locked": true,
+  "input_prediction_sha256": "69ce44003dac256ba5659bc54e54b923745aadd49f5fe755b28219c484729383",
+  "input_prediction_sha256_after": "69ce44003dac256ba5659bc54e54b923745aadd49f5fe755b28219c484729383",
+  "main_parquet_accessed": false,
+  "metrics_sha256": "9c9ec50451b090c2526e4d6a6e767b7855bfabd43bf9a46e799b092025218f30",
+  "new_predictions_generated": false,
+  "status": "GATE2B_DONE_HIERARCHICAL_OOD_AUDIT"
+}

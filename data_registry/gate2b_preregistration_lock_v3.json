@@ -1,0 +1,22 @@
+{
+  "gate": "2-B",
+  "status": "V3_LOCKED_BEFORE_COMPLETE_HIERARCHY_RERUN",
+  "locked_utc": "2026-07-20T13:20:00Z",
+  "v2_lock": "data_registry/gate2b_preregistration_lock_v2.json",
+  "v2_metrics_preserved": "logs/gate2b_hierarchical_metrics_v2_pre_structure_sensitivity.json",
+  "v2_metrics_sha256": "b1035658d194d65bb3276c27ffe5d43b1b4a2f77188e448d5aefd3528c8b41aa",
+  "reason": "Add the preregistered structure-group secondary sensitivity for every OOD model and full four-model IID hierarchical reference.",
+  "primary_identity_inference_changed": false,
+  "bootstrap_replicates_changed": false,
+  "decision_thresholds_changed": false,
+  "input_predictions_changed": false,
+  "files": {
+    "configs/gate2b_hierarchical_ood_audit_v1.json": "84a97489eeb4b648dd2cc7142235be3f315f7d6d81d2ddf9f1d4b4639dccf288",
+    "scripts/gate2b_hierarchical_ood_audit.py": "0db525ef2c285fc4031ea414ab2aa3be66adbc7d27aa32cfc34fdc6ebd1d2804",
+    "tests/test_gate2b_contract.py": "b4c482fa850ba8997136f359c26df945344580f3c7c522b31997557b025a05f1"
+  },
+  "main_parquet_accessed": false,
+  "new_predictions_generated": false,
+  "gate2a_evaluator_calls": 0,
+  "final673_accessed": false
+}

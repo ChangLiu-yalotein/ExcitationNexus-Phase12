@@ -1,0 +1,22 @@
+[13:12:08] Can't kekulize mol.  Unkekulized atoms: 3 4 5 6 7 8 9 10 11
+[13:12:08] Can't kekulize mol.  Unkekulized atoms: 9 10 11 13 14 15 16 17 67 68 70 71 72 73 74
+[13:12:08] non-ring atom 0 marked aromatic
+[13:12:08] non-ring atom 0 marked aromatic
+[13:12:08] non-ring atom 0 marked aromatic
+[13:12:08] Can't kekulize mol.  Unkekulized atoms: 5 6 7 8 9
+{
+  "diagnostic_labels": [
+    "ACCEPTOR_OOD_FAILURE_CONFIRMED",
+    "BOTH_COLD_LOW_SKILL_WARNING",
+    "PM6_ORBITAL_SHIFT_RISK"
+  ],
+  "final673_accessed": false,
+  "gate2a_evaluator_calls": 0,
+  "gate2a_evaluator_still_locked": true,
+  "input_prediction_sha256": "69ce44003dac256ba5659bc54e54b923745aadd49f5fe755b28219c484729383",
+  "input_prediction_sha256_after": "69ce44003dac256ba5659bc54e54b923745aadd49f5fe755b28219c484729383",
+  "main_parquet_accessed": false,
+  "metrics_sha256": "0ec7c78525d5559a8ee1d56d1b601ad706e47970ea1b2a881066989b002e3870",
+  "new_predictions_generated": false,
+  "status": "GATE2B_DONE_HIERARCHICAL_OOD_AUDIT"
+}
