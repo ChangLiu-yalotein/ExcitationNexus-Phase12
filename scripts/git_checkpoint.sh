@@ -32,7 +32,7 @@ for candidate in "${publish_candidates[@]}"; do
     exit 6
   fi
 done
-if printf '%s\n' "${publish_candidates[@]}" | grep -Eqi '(^|/)(\.env($|\.)|.*(token|credential|private_key).*|id_(rsa|ed25519).*|.*\.(pem|key)$)'; then
+if printf '%s\n' "${publish_candidates[@]}" | grep -Eqi '(^|/)(\.env($|\.)|.*(access[_-]?token|auth[_-]?token|api[_-]?token|credential|private_key).*|id_(rsa|ed25519).*|.*\.(pem|key)$)'; then
   echo "sensitive filename detected" >&2; exit 6
 fi
 if printf '%s\n' "${publish_candidates[@]}" | grep -Eqi '(final673|final[_-]?blind|sealed[_-]?set|/(raw_compact|tables|checkpoints?)/|\.(pt|pth|ckpt|onnx|safetensors)$)'; then

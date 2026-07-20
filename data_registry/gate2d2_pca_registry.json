@@ -1,0 +1,83 @@
+{
+  "final673_accessed": false,
+  "main_parquet_accessed": false,
+  "mathematical_rule": "centered PCA identifiable rank <= n_unique_samples - 1",
+  "protocols": {
+    "acceptor_cold": {
+      "acceptor_pca_feasible": true,
+      "donor_pca_feasible": false,
+      "max_identifiable_acceptor_pcs": 283,
+      "max_identifiable_donor_pcs": 153,
+      "requested_acceptor_pcs": 256,
+      "requested_donor_pcs": 256,
+      "train_records": 10543,
+      "unique_acceptor_structures": 284,
+      "unique_donor_structures": 154
+    },
+    "both_cold": {
+      "acceptor_pca_feasible": true,
+      "donor_pca_feasible": false,
+      "max_identifiable_acceptor_pcs": 311,
+      "max_identifiable_donor_pcs": 138,
+      "requested_acceptor_pcs": 256,
+      "requested_donor_pcs": 256,
+      "train_records": 9345,
+      "unique_acceptor_structures": 312,
+      "unique_donor_structures": 139
+    },
+    "donor_cold": {
+      "acceptor_pca_feasible": true,
+      "donor_pca_feasible": false,
+      "max_identifiable_acceptor_pcs": 351,
+      "max_identifiable_donor_pcs": 123,
+      "requested_acceptor_pcs": 256,
+      "requested_donor_pcs": 256,
+      "train_records": 10530,
+      "unique_acceptor_structures": 352,
+      "unique_donor_structures": 124
+    },
+    "full_scaffold_cold": {
+      "acceptor_pca_feasible": true,
+      "donor_pca_feasible": false,
+      "max_identifiable_acceptor_pcs": 351,
+      "max_identifiable_donor_pcs": 153,
+      "requested_acceptor_pcs": 256,
+      "requested_donor_pcs": 256,
+      "train_records": 10511,
+      "unique_acceptor_structures": 352,
+      "unique_donor_structures": 154
+    },
+    "iid": {
+      "acceptor_pca_feasible": true,
+      "donor_pca_feasible": false,
+      "max_identifiable_acceptor_pcs": 350,
+      "max_identifiable_donor_pcs": 153,
+      "requested_acceptor_pcs": 256,
+      "requested_donor_pcs": 256,
+      "train_records": 10387,
+      "unique_acceptor_structures": 351,
+      "unique_donor_structures": 154
+    },
+    "pair_cold": {
+      "acceptor_pca_feasible": true,
+      "donor_pca_feasible": false,
+      "max_identifiable_acceptor_pcs": 351,
+      "max_identifiable_donor_pcs": 153,
+      "requested_acceptor_pcs": 256,
+      "requested_donor_pcs": 256,
+      "train_records": 10387,
+      "unique_acceptor_structures": 352,
+      "unique_donor_structures": 154
+    }
+  },
+  "reason": "The preregistered unique-component/equal-weight donor PCA requests 256 components, but every protocol has fewer than 257 unique train donor structures.",
+  "silent_fixes_forbidden": [
+    "duplicate donor rows to satisfy sklearn shape",
+    "zero-pad non-identifiable principal components",
+    "fit PCA on held-out protocol components",
+    "change 256/256 allocation after preregistration",
+    "substitute another encoder"
+  ],
+  "status": "BLOCKED_PREREGISTERED_PCA_INFEASIBLE",
+  "test_artifacts_accessed": false
+}

@@ -42,3 +42,5 @@
 - [x] Gate 2-C: freeze validation-only conformal calibrators and audit IID/OOD coverage plus target-free applicability-domain filtering.
 
 - [x] Gate 2-D1: test equal-budget role-separated donor/acceptor 2D fingerprints on validation only; decision `ROLE_AWARE_2D_NOT_ADMITTED`.
+
+- [!] Gate 2-D2: frozen continuous representation v1 is `BLOCKED_PREREGISTERED_PCA_INFEASIBLE`; donor PCA-256 cannot be fitted on 124-154 unique protocol-train donors. No embedding or validation model was run.

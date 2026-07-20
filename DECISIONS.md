@@ -151,3 +151,11 @@
 - Freeze `ROLE_AWARE_2D_NOT_ADMITTED`: acceptor-cold C−B has the wrong point direction and a CI crossing zero, although IID non-inferiority passes.
 - Do not interpret the negative admission as role irrelevance. The acceptor block has substantial gain/SHAP use, but fails specifically in the low-similarity acceptor regime.
 - Do not unlock test, add memory, expand 3D, fuse models, or add learned representations on the basis of this Gate.
+
+## Gate 2-D2 decisions
+
+- Lock MoLFormer to revision `a14249e5ad9e3e7c3b1bb604393e914cfcebd2c8`, Apache-2.0, safetensors, audited custom code, deterministic eval, mask-aware final-hidden-state mean pooling, and no truncation at max length 512.
+- Preserve the documented pretraining domain mismatch for inputs above 202 tokens; do not silently truncate or change molecular/component strings.
+- Freeze Gate 2-D2 v1 as `BLOCKED_PREREGISTERED_PCA_INFEASIBLE`: unique/equal-weight donor PCA-256 exceeds every protocol's identifiable rank.
+- Do not manufacture PCA dimensions by duplicating component rows, zero-padding non-identifiable components, using held-out structures, changing the 256/256 allocation after lock, or substituting another encoder.
+- Do not interpret the blocker as evidence against continuous representations. A future v2 requires a new preregistration and a mathematically feasible target-free compression rule; no v2 is authorized by this Gate.

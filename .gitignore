@@ -79,3 +79,4 @@ temp/
 runs/gate2a_ood_baselines/**
 !runs/gate2a_ood_baselines/published/
 !runs/gate2a_ood_baselines/published/*.json
+!reports/gate2d2_model_security_and_tokenizer_audit.md

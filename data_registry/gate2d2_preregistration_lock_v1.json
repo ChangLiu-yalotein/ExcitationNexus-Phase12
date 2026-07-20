@@ -1,0 +1,68 @@
+{
+  "admission": {
+    "acceptor_C_minus_A_ci_upper_max_eV": 0.0,
+    "acceptor_C_minus_A_max_eV": -0.003,
+    "acceptor_C_minus_B_ci_upper_max_eV": 0.0,
+    "acceptor_C_minus_B_max_eV": -0.001,
+    "iid_C_minus_A_ci_upper_max_eV": 0.002
+  },
+  "arms": {
+    "A_C0_512_reference": {
+      "columns": 532,
+      "descriptors": 20,
+      "frozen_morgan_bits": 512,
+      "reuse_frozen_validation_predictions": true
+    },
+    "B_MF_Full_512": {
+      "columns": 532,
+      "descriptors": 20,
+      "pca_dimensions": 512
+    },
+    "C_MF_Role_512": {
+      "acceptor_pca_dimensions": 256,
+      "columns": 532,
+      "descriptors": 20,
+      "donor_pca_dimensions": 256
+    }
+  },
+  "config_path": "configs/gate2d2_frozen_molformer_admission_v1.json",
+  "config_sha256": "370dc01bb8e9d5f31bb7ece601fa35a756048fafe7bd2f991dccc360fb99c7ad",
+  "created_utc": "2026-07-20T15:36:41.929732+00:00",
+  "inputs": {
+    "c0_feature_cache": {
+      "path": "runs/gate1b1_new_iid_cheap_baselines/features_v1.parquet",
+      "sha256": "7bb1a6af207364b186c072ab6d013d278e294633255b2235ef789e040e75d058"
+    },
+    "component_registry": {
+      "path": "manifests/component_identity_v1.csv",
+      "sha256": "dca4a5e5661d7336226b16c87624ba3b457cdcd0379ccb2130a48d4f30306515"
+    },
+    "gate2d1_config": {
+      "path": "configs/gate2d1_role_aware_2d_v1.json",
+      "sha256": "1be8c8d77f0bd6bc4d002580b3d713bc7d0b954c7fdf0196a6adb441a22289af"
+    },
+    "protocol_train_label_registry": {
+      "path": "data_registry/gate2d1_train_label_extraction_registry.json",
+      "sha256": "5219b89359a0964d059056822eb3e4917cdf2f402a44100bc31bdc95e0011f6d"
+    },
+    "structure_registry": {
+      "path": "manifests/new15016_structure_groups_v1.parquet",
+      "sha256": "23409d65486ed1f854c125b02769d02d945e3f6c219be8fb4e6f290f391a1a56"
+    },
+    "validation_labels": {
+      "path": "runs/gate2c_uq/calibration_labels_v1.parquet",
+      "sha256": "5d59314b515e2487efdc54061d6d6c368bb3f2e6e51dda09a4dea98cf959e1cc"
+    }
+  },
+  "model_asset_lock_path": "data_registry/gate2d2_model_asset_lock_v1.json",
+  "model_asset_lock_sha256": "444eb37a76b09f8d99ebda169b6be42d6ca251b904fb260796d6dfabb14c5093",
+  "model_revision": "a14249e5ad9e3e7c3b1bb604393e914cfcebd2c8",
+  "status": "GATE2D2_PREREGISTERED_BEFORE_EMBEDDINGS_OR_REGRESSION",
+  "test_firewall": {
+    "final673_access": false,
+    "main_parquet_access": false,
+    "test_artifact_access": false
+  },
+  "tokenizer_audit_path": "logs/gate2d2_embedding_audit.json",
+  "tokenizer_audit_sha256": "7f5d9d0db7a3449a616a485aee0ad2a76f9e1fd0389b659af944bcac5bdfb09b"
+}

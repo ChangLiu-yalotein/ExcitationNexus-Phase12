@@ -1,0 +1,172 @@
+{
+  "config": {
+    "deterministic_eval_in_repo": false,
+    "heads": 12,
+    "hidden_size": 768,
+    "layers": 12,
+    "max_position_embeddings": 202,
+    "required_runtime_override": {
+      "deterministic_eval": true
+    }
+  },
+  "custom_code_audit": {
+    "conversion_script_excluded_from_runtime": true,
+    "conversion_script_uses_torch_load_and_torch_save": true,
+    "dynamic_eval_exec_calls": 0,
+    "finding": "No network, subprocess, or dynamic execution in runtime configuration/model/tokenizer code.",
+    "network_calls": 0,
+    "runtime_file_writes_in_imported_model_or_tokenizer": 0,
+    "subprocess_calls": 0
+  },
+  "final673_accessed": false,
+  "input_sources": {
+    "component_registry": {
+      "path": "manifests/component_identity_v1.csv",
+      "sha256": "dca4a5e5661d7336226b16c87624ba3b457cdcd0379ccb2130a48d4f30306515"
+    },
+    "structure_registry": {
+      "path": "manifests/new15016_structure_groups_v1.parquet",
+      "sha256": "23409d65486ed1f854c125b02769d02d945e3f6c219be8fb4e6f290f391a1a56"
+    }
+  },
+  "input_strings_modified": false,
+  "license": "apache-2.0",
+  "main_parquet_accessed": false,
+  "max_sequence_length": 512,
+  "pooling": "attention-mask-aware mean pooling of final hidden state",
+  "remote_code_executed": false,
+  "repo_id": "ibm-research/MoLFormer-XL-both-10pct",
+  "revision": "a14249e5ad9e3e7c3b1bb604393e914cfcebd2c8",
+  "safetensors_available": true,
+  "safetensors_lfs_sha256": "0795977fe7192c4acdaf052f0e8464af57bc4bb59211271c5e61aaba2637b9c6",
+  "source_files": {
+    "README.md": {
+      "bytes": 6279,
+      "sha256": "fff331c6a973fa6995662ac31354c702ac0f4805d494e7506b979a3a6cee6f44"
+    },
+    "config.json": {
+      "bytes": 1015,
+      "sha256": "3ef9eaac8c7ca6282fd6256ed038d151bd4ff42a4ff855367e0d7197bbc1c284"
+    },
+    "configuration_molformer.py": {
+      "bytes": 7101,
+      "sha256": "b88ea8d4b7b5e54f4f186cc7a230eff308928020a030f153a038fd12c05e3bed"
+    },
+    "convert_molformer_original_checkpoint_to_pytorch.py": {
+      "bytes": 3545,
+      "sha256": "4ba7b844fe5430bfe8dcd12617156254746f0fded36b350166b544b17b178170"
+    },
+    "modeling_molformer.py": {
+      "bytes": 36884,
+      "sha256": "6f1ef72022de2c69e95661899422a7bb39a40a2cc5a6cb6216f14e9b7d84559c"
+    },
+    "special_tokens_map.json": {
+      "bytes": 125,
+      "sha256": "f0bb97cedb7e5d9eb744a3b2e499a9c464659e1a363853bfd6056ba126f5c16c"
+    },
+    "tokenization_molformer.py": {
+      "bytes": 9480,
+      "sha256": "a816f7b6e540f27544e7aa924104d6fc0d5cedcc62117ec9d31d35d0cefbd2e2"
+    },
+    "tokenization_molformer_fast.py": {
+      "bytes": 6503,
+      "sha256": "1921cf245ceb613a19e9a30ba4aa33e02b328ac6fdbbf63080b775bd8b4c8bdb"
+    },
+    "tokenizer.json": {
+      "bytes": 54010,
+      "sha256": "3df1f2219653c44fac9fa03b7f788b372eb2544ecc176737bb9aca8411b471a5"
+    },
+    "tokenizer_config.json": {
+      "bytes": 1294,
+      "sha256": "17e4fb4c6f77f2d9c482cf54fce528d97635e6bb9d0e2ab8b9638cc8a52e6fae"
+    },
+    "vocab.json": {
+      "bytes": 41641,
+      "sha256": "8592dced2879cb164332b9ec14e99164ba017949a6c05344cb64163d4839dbb2"
+    }
+  },
+  "status": "MODEL_ASSET_AND_TOKENIZER_ADMITTED",
+  "test_artifacts_accessed": false,
+  "tokenizer_algorithm": "audited upstream MolformerTokenizer regex plus frozen vocab; no remote code executed",
+  "tokenizer_audit": {
+    "acceptor": {
+      "empty_encodings": 0,
+      "input_set_sha256": "7926b2cf58fa8124287ddeacc3d1725bc41a0cebd913e6a96900ec9621b16961",
+      "max_length": 372,
+      "median_length": 164.5,
+      "min_length": 11,
+      "over_max_sequence_length": 0,
+      "p95_length": 219.89999999999998,
+      "parse_reconstruction_failures": 0,
+      "special_input_counts": {
+        "P": 0,
+        "Se": 0,
+        "Si": 5,
+        "charged_bracket": 6,
+        "wildcard": 352
+      },
+      "tokenizer_success": true,
+      "unique_inputs": 352,
+      "unknown_token_occurrences": 0,
+      "unknown_token_sequences": 0,
+      "unknown_token_type_count": 0,
+      "unknown_token_types_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "unmatched_character_occurrences": 0,
+      "unmatched_character_type_count": 0
+    },
+    "donor": {
+      "empty_encodings": 0,
+      "input_set_sha256": "e0f6085fc25cab25f2eb5856d9891c8831cccc4338e28618523d8182dfec241b",
+      "max_length": 208,
+      "median_length": 127.0,
+      "min_length": 10,
+      "over_max_sequence_length": 0,
+      "p95_length": 201.35,
+      "parse_reconstruction_failures": 0,
+      "special_input_counts": {
+        "P": 0,
+        "Se": 0,
+        "Si": 4,
+        "charged_bracket": 0,
+        "wildcard": 154
+      },
+      "tokenizer_success": true,
+      "unique_inputs": 154,
+      "unknown_token_occurrences": 0,
+      "unknown_token_sequences": 0,
+      "unknown_token_type_count": 0,
+      "unknown_token_types_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "unmatched_character_occurrences": 0,
+      "unmatched_character_type_count": 0
+    },
+    "full": {
+      "empty_encodings": 0,
+      "input_set_sha256": "c3aa80e3bc2007446614e8b8c887e007853fa01ffac8c78d58c6ee50d040359f",
+      "max_length": 399,
+      "median_length": 196.0,
+      "min_length": 79,
+      "over_max_sequence_length": 0,
+      "p95_length": 324.0,
+      "parse_reconstruction_failures": 0,
+      "special_input_counts": {
+        "P": 0,
+        "Se": 0,
+        "Si": 398,
+        "charged_bracket": 104,
+        "wildcard": 0
+      },
+      "tokenizer_success": true,
+      "unique_inputs": 14639,
+      "unknown_token_occurrences": 0,
+      "unknown_token_sequences": 0,
+      "unknown_token_type_count": 0,
+      "unknown_token_types_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "unmatched_character_occurrences": 0,
+      "unmatched_character_type_count": 0
+    }
+  },
+  "unexpected_truncation": 0,
+  "vocab_size": 2362,
+  "weights_downloaded": false,
+  "wildcards_replaced_with_carbon": false
+}

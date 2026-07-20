@@ -140,3 +140,11 @@ Project and EquiformerV3 directories are not Git worktrees; source commit proven
 - IID C−B is -0.000905 eV with CI [-0.002070, +0.000241], so IID non-inferiority passes but cannot rescue the failed primary endpoint.
 - The acceptor fingerprint block is used (gain fraction 0.405; absolute TreeSHAP fraction 0.204), yet the lowest-similarity acceptor quartile worsens by +0.020295 eV. Fixed RA2D therefore does not solve acceptor OOD.
 - Final decision: `ROLE_AWARE_2D_NOT_ADMITTED`. No test artifact, post-extraction source Parquet, or final673 asset was accessed.
+
+## Gate 2-D2 result
+
+- MoLFormer asset security and tokenizer gates passed at immutable revision `a14249e5ad9e3e7c3b1bb604393e914cfcebd2c8`; license is Apache-2.0 and safetensors is available.
+- Full/donor/acceptor tokenizer audit covered 14,639 / 154 / 352 unique strings with zero unknown tokens, reconstruction failures, or truncations at the preregistered max length 512.
+- Gate 2-D2 v1 stopped before executing remote code or extracting embeddings: the frozen Arm C requests 256 donor PCs from unique protocol-train donors, but only 124-154 unique donors exist (maximum centered PCA ranks 123-153).
+- No PCA, XGBoost model, validation prediction, test artifact, main Parquet, or final673 asset was accessed. This is a protocol blocker, not a negative MoLFormer result.
+- Final status: `BLOCKED_PREREGISTERED_PCA_INFEASIBLE`. Any retry requires an explicit v2 compression contract; v1 cannot be silently edited.

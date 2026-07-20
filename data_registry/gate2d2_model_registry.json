@@ -1,0 +1,8 @@
+{
+  "final673_accessed": false,
+  "main_parquet_accessed": false,
+  "new_models": 0,
+  "status": "NO_REGRESSION_MODELS_TRAINED_DUE_TO_PCA_CONTRACT_BLOCKER",
+  "test_artifacts_accessed": false,
+  "validation_predictions_created": 0
+}

@@ -1,0 +1,128 @@
+{
+  "audit_sha256": "7f5d9d0db7a3449a616a485aee0ad2a76f9e1fd0389b659af944bcac5bdfb09b",
+  "hub_client": "huggingface_hub 1.2.3 API fallback; hf CLI unavailable",
+  "hub_files": {
+    ".gitattributes": {
+      "bytes": 1519,
+      "git_blob": "a6344aac8c09253b3b630fb776ae94478aa0275b"
+    },
+    "README.md": {
+      "bytes": 6279,
+      "git_blob": "274e4069755c7eed9c3cda0a8fcfd6aa9415c416"
+    },
+    "config.json": {
+      "bytes": 1015,
+      "git_blob": "f24331e0bb3a00ca7557226d3dddc61c78b691f8"
+    },
+    "configuration_molformer.py": {
+      "bytes": 7101,
+      "git_blob": "9a0824bbc564297a7a8320626790eae2ca8c1ac8"
+    },
+    "convert_molformer_original_checkpoint_to_pytorch.py": {
+      "bytes": 3545,
+      "git_blob": "30159e4eaab336ab8bce3e17bb3caaddd590d846"
+    },
+    "model.safetensors": {
+      "bytes": 187248784,
+      "lfs_sha256": "0795977fe7192c4acdaf052f0e8464af57bc4bb59211271c5e61aaba2637b9c6"
+    },
+    "modeling_molformer.py": {
+      "bytes": 36884,
+      "git_blob": "fe26e4af404657b8bb2951d13797f71ad9284501"
+    },
+    "pipeline.jpeg": {
+      "bytes": 241085,
+      "git_blob": "e97233825700c8baea008c2ad8969c86b4626de0"
+    },
+    "pytorch_model.bin": {
+      "bytes": 187391645,
+      "lfs_sha256": "93e3fced64b896fcfea4934505ac80275db7afb7320d0b32ee0c691d99ab8678"
+    },
+    "special_tokens_map.json": {
+      "bytes": 125,
+      "git_blob": "43246c556f7d57aa9db7a8dbb2bc0530d25eb2e3"
+    },
+    "tokenization_molformer.py": {
+      "bytes": 9480,
+      "git_blob": "9a2f2ca032372baa7f439f60d245b7ca66069357"
+    },
+    "tokenization_molformer_fast.py": {
+      "bytes": 6503,
+      "git_blob": "a58a743c6ee41fc7ae4038a290d25e68b66d4cfd"
+    },
+    "tokenizer.json": {
+      "bytes": 54010,
+      "git_blob": "48105a2ff71e781579b2034852086db3e8b01906"
+    },
+    "tokenizer_config.json": {
+      "bytes": 1294,
+      "git_blob": "ba1a41edace11006ef54ec8b274b43645936ebb5"
+    },
+    "vocab.json": {
+      "bytes": 41641,
+      "git_blob": "09c8af343ba46874dea2d3aed48dc26409b87645"
+    }
+  },
+  "license": "apache-2.0",
+  "local_audit_files": {
+    "README.md": {
+      "bytes": 6279,
+      "sha256": "fff331c6a973fa6995662ac31354c702ac0f4805d494e7506b979a3a6cee6f44"
+    },
+    "config.json": {
+      "bytes": 1015,
+      "sha256": "3ef9eaac8c7ca6282fd6256ed038d151bd4ff42a4ff855367e0d7197bbc1c284"
+    },
+    "configuration_molformer.py": {
+      "bytes": 7101,
+      "sha256": "b88ea8d4b7b5e54f4f186cc7a230eff308928020a030f153a038fd12c05e3bed"
+    },
+    "convert_molformer_original_checkpoint_to_pytorch.py": {
+      "bytes": 3545,
+      "sha256": "4ba7b844fe5430bfe8dcd12617156254746f0fded36b350166b544b17b178170"
+    },
+    "modeling_molformer.py": {
+      "bytes": 36884,
+      "sha256": "6f1ef72022de2c69e95661899422a7bb39a40a2cc5a6cb6216f14e9b7d84559c"
+    },
+    "special_tokens_map.json": {
+      "bytes": 125,
+      "sha256": "f0bb97cedb7e5d9eb744a3b2e499a9c464659e1a363853bfd6056ba126f5c16c"
+    },
+    "tokenization_molformer.py": {
+      "bytes": 9480,
+      "sha256": "a816f7b6e540f27544e7aa924104d6fc0d5cedcc62117ec9d31d35d0cefbd2e2"
+    },
+    "tokenization_molformer_fast.py": {
+      "bytes": 6503,
+      "sha256": "1921cf245ceb613a19e9a30ba4aa33e02b328ac6fdbbf63080b775bd8b4c8bdb"
+    },
+    "tokenizer.json": {
+      "bytes": 54010,
+      "sha256": "3df1f2219653c44fac9fa03b7f788b372eb2544ecc176737bb9aca8411b471a5"
+    },
+    "tokenizer_config.json": {
+      "bytes": 1294,
+      "sha256": "17e4fb4c6f77f2d9c482cf54fce528d97635e6bb9d0e2ab8b9638cc8a52e6fae"
+    },
+    "vocab.json": {
+      "bytes": 41641,
+      "sha256": "8592dced2879cb164332b9ec14e99164ba017949a6c05344cb64163d4839dbb2"
+    }
+  },
+  "official_model_card_tested_transformers": "5.12.1",
+  "preferred_weights": "model.safetensors",
+  "repo_id": "ibm-research/MoLFormer-XL-both-10pct",
+  "revision": "a14249e5ad9e3e7c3b1bb604393e914cfcebd2c8",
+  "runtime_code_audited_before_execution": true,
+  "runtime_code_finding": {
+    "conversion_script_excluded_from_runtime": true,
+    "conversion_script_uses_torch_load_and_torch_save": true,
+    "dynamic_eval_exec_calls": 0,
+    "finding": "No network, subprocess, or dynamic execution in runtime configuration/model/tokenizer code.",
+    "network_calls": 0,
+    "runtime_file_writes_in_imported_model_or_tokenizer": 0,
+    "subprocess_calls": 0
+  },
+  "status": "GATE2D2_MODEL_ASSET_LOCKED"
+}

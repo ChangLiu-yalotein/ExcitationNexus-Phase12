@@ -1,0 +1,10 @@
+{
+  "final673_accessed": false,
+  "main_parquet_accessed": false,
+  "model_revision": "a14249e5ad9e3e7c3b1bb604393e914cfcebd2c8",
+  "raw_embeddings_created": false,
+  "remote_code_executed": false,
+  "status": "NOT_EXTRACTED_DUE_TO_PCA_CONTRACT_BLOCKER",
+  "test_artifacts_accessed": false,
+  "valid_weights_downloaded": false
+}
