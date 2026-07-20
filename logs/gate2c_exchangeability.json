@@ -1,0 +1,137 @@
+{
+  "coverage_results_seen": false,
+  "final673_accessed": false,
+  "protocols": {
+    "acceptor_cold": {
+      "calibration_cluster_count": 32,
+      "calibration_records": 2235,
+      "calibration_structure_groups": 2205,
+      "cluster_size": {
+        "max": 98,
+        "median": 66.0,
+        "min": 10,
+        "p90": 92.0
+      },
+      "exchangeability_status": "EXCHANGEABILITY_UNVERIFIED_OOD",
+      "max_attainable_nominal": 0.9696969696969697,
+      "nominal_attainable": {
+        "0.8": true,
+        "0.9": true,
+        "0.95": true
+      },
+      "primary_cluster": "acceptor_structure_group_id_v1",
+      "test_clusters": 36,
+      "test_records": 2237,
+      "validation_test_id_overlap": 0
+    },
+    "both_cold": {
+      "calibration_cluster_count": 138,
+      "calibration_records": 1792,
+      "calibration_structure_groups": 1622,
+      "cluster_size": {
+        "acceptor_clusters": 288,
+        "donor_clusters": 138
+      },
+      "exchangeability_status": "BLOCKED_CROSSED_CLUSTER_EXCHANGEABILITY",
+      "max_attainable_nominal": 0.9928057553956835,
+      "nominal_attainable": {
+        "0.8": true,
+        "0.9": true,
+        "0.95": true
+      },
+      "primary_cluster": "two_way_donor_acceptor",
+      "test_clusters": null,
+      "test_records": 587,
+      "validation_test_id_overlap": 0
+    },
+    "donor_cold": {
+      "calibration_cluster_count": 15,
+      "calibration_records": 2234,
+      "calibration_structure_groups": 2196,
+      "cluster_size": {
+        "max": 216,
+        "median": 159.0,
+        "min": 4,
+        "p90": 194.6
+      },
+      "exchangeability_status": "INSUFFICIENT_CALIBRATION_CLUSTERS",
+      "max_attainable_nominal": 0.9375,
+      "nominal_attainable": {
+        "0.8": true,
+        "0.9": true,
+        "0.95": false
+      },
+      "primary_cluster": "donor_structure_group_id_v1",
+      "test_clusters": 15,
+      "test_records": 2251,
+      "validation_test_id_overlap": 0
+    },
+    "full_scaffold_cold": {
+      "calibration_cluster_count": 731,
+      "calibration_records": 2254,
+      "calibration_structure_groups": 2195,
+      "cluster_size": {
+        "max": 22,
+        "median": 2.0,
+        "min": 1,
+        "p90": 5.0
+      },
+      "exchangeability_status": "EXCHANGEABILITY_UNVERIFIED_OOD",
+      "max_attainable_nominal": 0.9986338797814208,
+      "nominal_attainable": {
+        "0.8": true,
+        "0.9": true,
+        "0.95": true
+      },
+      "primary_cluster": "full_scaffold_group_id_v1",
+      "test_clusters": 672,
+      "test_records": 2250,
+      "validation_test_id_overlap": 0
+    },
+    "iid": {
+      "calibration_cluster_count": 2195,
+      "calibration_records": 2309,
+      "calibration_structure_groups": 2195,
+      "cluster_size": {
+        "max": 2,
+        "median": 1.0,
+        "min": 1,
+        "p90": 1.0
+      },
+      "exchangeability_status": "APPROXIMATE_EXCHANGEABILITY",
+      "max_attainable_nominal": 0.9995446265938069,
+      "nominal_attainable": {
+        "0.8": true,
+        "0.9": true,
+        "0.95": true
+      },
+      "primary_cluster": "structure_group_id_v1",
+      "test_clusters": 2195,
+      "test_records": 2319,
+      "validation_test_id_overlap": 0
+    },
+    "pair_cold": {
+      "calibration_cluster_count": 2275,
+      "calibration_records": 2319,
+      "calibration_structure_groups": 2190,
+      "cluster_size": {
+        "max": 2,
+        "median": 1.0,
+        "min": 1,
+        "p90": 1.0
+      },
+      "exchangeability_status": "EXCHANGEABILITY_UNVERIFIED_OOD",
+      "max_attainable_nominal": 0.9995606326889279,
+      "nominal_attainable": {
+        "0.8": true,
+        "0.9": true,
+        "0.95": true
+      },
+      "primary_cluster": "pair_group_id_v1",
+      "test_clusters": 2260,
+      "test_records": 2309,
+      "validation_test_id_overlap": 0
+    }
+  },
+  "status": "GATE2C_EXCHANGEABILITY_AUDITED"
+}

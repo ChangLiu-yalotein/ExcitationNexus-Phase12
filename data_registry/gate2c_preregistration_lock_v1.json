@@ -1,0 +1,14 @@
+{
+  "status": "LOCKED_BEFORE_CALIBRATION_AND_TEST_COVERAGE",
+  "locked_utc": "2026-07-20T14:16:00Z",
+  "config_path": "configs/gate2c_uq_applicability_audit_v1.json",
+  "config_sha256": "9d7ad57d63b0b64e8817c2c2ac48d9c4c094cf84b2616c1cd3265da0c0e2775b",
+  "validation_extraction_config_sha256": "53d9c68d2b5722f6cab8465bb038ab4eedda5216249cee2d8795084969ce7779",
+  "validation_extraction_script_sha256": "a263113fa16383e55d5356f6a459b16c5683f937c831a8c28e5177256a285f60",
+  "validation_label_artifact_sha256": "5d59314b515e2487efdc54061d6d6c368bb3f2e6e51dda09a4dea98cf959e1cc",
+  "authorization": "AUTHORIZED_MINIMAL_VALIDATION_LABEL_EXTRACTION",
+  "blocker_resolved": "BLOCKED_MISSING_CALIBRATION_LABEL_ARTIFACT",
+  "test_statistics_seen_before_lock": false,
+  "test_residuals_used_for_method_or_threshold_selection": false,
+  "amendment_policy": "Do not overwrite v1; create explicit v2 for any correction."
+}

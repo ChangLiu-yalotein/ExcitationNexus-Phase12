@@ -1,0 +1,429 @@
+{
+  "decision_labels": [
+    "AD_SCORE_NOT_VALIDATED"
+  ],
+  "protocols": {
+    "acceptor_cold": {
+      "ad_score_vs_absolute_error_spearman": -0.1287366344757182,
+      "aurc_record": 0.08833877524582266,
+      "fixed_validation_thresholds": {
+        "0.5": {
+          "identity_macro_mae": 0.08636573640029976,
+          "record_mae": 0.08803017750436024,
+          "retained_fraction": 0.402771569065713,
+          "retained_records": 901,
+          "threshold": 0.5121951219512195
+        },
+        "0.7": {
+          "identity_macro_mae": 0.08604179942318096,
+          "record_mae": 0.08748414642319187,
+          "retained_fraction": 0.5341975860527493,
+          "retained_records": 1195,
+          "threshold": 0.3888888888888889
+        },
+        "0.8": {
+          "identity_macro_mae": 0.08906040702880116,
+          "record_mae": 0.09031378809179652,
+          "retained_fraction": 0.6803755029056773,
+          "retained_records": 1522,
+          "threshold": 0.325
+        },
+        "0.9": {
+          "identity_macro_mae": 0.09607785014293438,
+          "record_mae": 0.09692575401076606,
+          "retained_fraction": 0.7711220384443451,
+          "retained_records": 1725,
+          "threshold": 0.2702702702702703
+        },
+        "1.0": {
+          "identity_macro_mae": 0.09731954402795145,
+          "record_mae": 0.09775977483683505,
+          "retained_fraction": 1.0,
+          "retained_records": 2237,
+          "threshold": null
+        }
+      },
+      "high_error_detection_roc_auc": 0.5609875775199406,
+      "high_error_fraction": 0.09119356280733125,
+      "high_error_threshold": 0.21491928571428576,
+      "preregistered_useful_rule_pass": true,
+      "test_diagnostic_curve": {
+        "0.5": {
+          "identity_macro_mae": 0.08658975187130817,
+          "record_mae": 0.08825980226094728,
+          "retained_records": 1119
+        },
+        "0.7": {
+          "identity_macro_mae": 0.09437103634137974,
+          "record_mae": 0.09415811195311073,
+          "retained_records": 1566
+        },
+        "0.8": {
+          "identity_macro_mae": 0.09527056694451655,
+          "record_mae": 0.09628951084916201,
+          "retained_records": 1790
+        },
+        "0.9": {
+          "identity_macro_mae": 0.0966595130840549,
+          "record_mae": 0.09651397405589446,
+          "retained_records": 2014
+        },
+        "1": {
+          "identity_macro_mae": 0.09731954402795145,
+          "record_mae": 0.09775977483683505,
+          "retained_records": 2237
+        }
+      }
+    },
+    "both_cold": {
+      "ad_score_vs_absolute_error_spearman": -0.006071939960380951,
+      "aurc_record": 0.0840544593287506,
+      "fixed_validation_thresholds": {
+        "0.5": {
+          "retained_records": 0,
+          "threshold": 1.0
+        },
+        "0.7": {
+          "retained_records": 0,
+          "threshold": 1.0
+        },
+        "0.8": {
+          "retained_records": 0,
+          "threshold": 1.0
+        },
+        "0.9": {
+          "retained_records": 0,
+          "threshold": 1.0
+        },
+        "1.0": {
+          "identity_macro_mae": 0.08437826068755827,
+          "record_mae": 0.08439855777074716,
+          "retained_fraction": 1.0,
+          "retained_records": 587,
+          "threshold": null
+        }
+      },
+      "high_error_detection_roc_auc": 0.47798525798525787,
+      "high_error_fraction": 0.06303236797274275,
+      "high_error_threshold": 0.20279892857142856,
+      "preregistered_useful_rule_pass": false,
+      "test_diagnostic_curve": {
+        "0.5": {
+          "identity_macro_mae": 0.08062352090445978,
+          "record_mae": 0.08082577505830904,
+          "retained_records": 294
+        },
+        "0.7": {
+          "identity_macro_mae": 0.0855288733004101,
+          "record_mae": 0.08528823766075773,
+          "retained_records": 411
+        },
+        "0.8": {
+          "identity_macro_mae": 0.08601918778369029,
+          "record_mae": 0.08593489085714284,
+          "retained_records": 470
+        },
+        "0.9": {
+          "identity_macro_mae": 0.08505818708961212,
+          "record_mae": 0.08492306513907644,
+          "retained_records": 529
+        },
+        "1": {
+          "identity_macro_mae": 0.08437826068755827,
+          "record_mae": 0.08439855777074716,
+          "retained_records": 587
+        }
+      }
+    },
+    "donor_cold": {
+      "ad_score_vs_absolute_error_spearman": 0.05862330388457706,
+      "aurc_record": 0.08815433771577794,
+      "fixed_validation_thresholds": {
+        "0.5": {
+          "identity_macro_mae": 0.0955424866082947,
+          "record_mae": 0.09098909032927611,
+          "retained_fraction": 0.4953354064860062,
+          "retained_records": 1115,
+          "threshold": 0.5072463768115942
+        },
+        "0.7": {
+          "identity_macro_mae": 0.08903357031591282,
+          "record_mae": 0.08501631628232566,
+          "retained_fraction": 0.7116836961350511,
+          "retained_records": 1602,
+          "threshold": 0.34177215189873417
+        },
+        "0.8": {
+          "identity_macro_mae": 0.08935728405423397,
+          "record_mae": 0.08585806051470002,
+          "retained_fraction": 0.7965348733896046,
+          "retained_records": 1793,
+          "threshold": 0.21428571428571427
+        },
+        "0.9": {
+          "identity_macro_mae": 0.08760853773627511,
+          "record_mae": 0.08464895246747478,
+          "retained_fraction": 1.0,
+          "retained_records": 2251,
+          "threshold": 0.14634146341463414
+        },
+        "1.0": {
+          "identity_macro_mae": 0.08760853773627511,
+          "record_mae": 0.08464895246747478,
+          "retained_fraction": 1.0,
+          "retained_records": 2251,
+          "threshold": null
+        }
+      },
+      "high_error_detection_roc_auc": 0.44709414186158375,
+      "high_error_fraction": 0.07641048422923145,
+      "high_error_threshold": 0.20555843571428578,
+      "preregistered_useful_rule_pass": false,
+      "test_diagnostic_curve": {
+        "0.5": {
+          "identity_macro_mae": 0.09324205116985503,
+          "record_mae": 0.0908313143529561,
+          "retained_records": 1126
+        },
+        "0.7": {
+          "identity_macro_mae": 0.08891200971376953,
+          "record_mae": 0.08516315116660625,
+          "retained_records": 1576
+        },
+        "0.8": {
+          "identity_macro_mae": 0.09265789837149069,
+          "record_mae": 0.08606420025779331,
+          "retained_records": 1801
+        },
+        "0.9": {
+          "identity_macro_mae": 0.08928981377506172,
+          "record_mae": 0.08646883621915104,
+          "retained_records": 2026
+        },
+        "1": {
+          "identity_macro_mae": 0.08760853773627511,
+          "record_mae": 0.08464895246747478,
+          "retained_records": 2251
+        }
+      }
+    },
+    "full_scaffold_cold": {
+      "ad_score_vs_absolute_error_spearman": -0.03231556140250891,
+      "aurc_record": 0.07926504580708256,
+      "fixed_validation_thresholds": {
+        "0.5": {
+          "identity_macro_mae": 0.08073761245544549,
+          "record_mae": 0.07926823484710942,
+          "retained_fraction": 0.5315555555555556,
+          "retained_records": 1196,
+          "threshold": 0.8433734939759037
+        },
+        "0.7": {
+          "identity_macro_mae": 0.07903171468408575,
+          "record_mae": 0.07800975950470218,
+          "retained_fraction": 0.7088888888888889,
+          "retained_records": 1595,
+          "threshold": 0.8125
+        },
+        "0.8": {
+          "identity_macro_mae": 0.07782027692214107,
+          "record_mae": 0.07750705150737851,
+          "retained_fraction": 0.8217777777777778,
+          "retained_records": 1849,
+          "threshold": 0.7888888888888889
+        },
+        "0.9": {
+          "identity_macro_mae": 0.07998408107195804,
+          "record_mae": 0.07983686680859918,
+          "retained_fraction": 0.9155555555555556,
+          "retained_records": 2060,
+          "threshold": 0.7532467532467533
+        },
+        "1.0": {
+          "identity_macro_mae": 0.08208696996291069,
+          "record_mae": 0.08198386850476191,
+          "retained_fraction": 1.0,
+          "retained_records": 2250,
+          "threshold": null
+        }
+      },
+      "high_error_detection_roc_auc": 0.5808035050056326,
+      "high_error_fraction": 0.08088888888888889,
+      "high_error_threshold": 0.19792014285714288,
+      "preregistered_useful_rule_pass": false,
+      "test_diagnostic_curve": {
+        "0.5": {
+          "identity_macro_mae": 0.08143107729210505,
+          "record_mae": 0.0793248004952381,
+          "retained_records": 1125
+        },
+        "0.7": {
+          "identity_macro_mae": 0.07894217403443946,
+          "record_mae": 0.07794786352562358,
+          "retained_records": 1575
+        },
+        "0.8": {
+          "identity_macro_mae": 0.07779597940668599,
+          "record_mae": 0.07758316387539682,
+          "retained_records": 1800
+        },
+        "0.9": {
+          "identity_macro_mae": 0.07964631192753664,
+          "record_mae": 0.07940297066102293,
+          "retained_records": 2025
+        },
+        "1": {
+          "identity_macro_mae": 0.08208696996291069,
+          "record_mae": 0.08198386850476191,
+          "retained_records": 2250
+        }
+      }
+    },
+    "iid": {
+      "ad_score_vs_absolute_error_spearman": 0.05450985028121425,
+      "aurc_record": 0.08993197885048455,
+      "fixed_validation_thresholds": {
+        "0.5": {
+          "identity_macro_mae": 0.08672329655641776,
+          "record_mae": 0.08807991368790112,
+          "retained_fraction": 0.5183268650280293,
+          "retained_records": 1202,
+          "threshold": 0.8811881188118812
+        },
+        "0.7": {
+          "identity_macro_mae": 0.0858055746098901,
+          "record_mae": 0.08701473834199136,
+          "retained_fraction": 0.7115135834411385,
+          "retained_records": 1650,
+          "threshold": 0.851063829787234
+        },
+        "0.8": {
+          "identity_macro_mae": 0.08512380163184642,
+          "record_mae": 0.08618971529479064,
+          "retained_fraction": 0.8076757222940922,
+          "retained_records": 1873,
+          "threshold": 0.83
+        },
+        "0.9": {
+          "identity_macro_mae": 0.08424744082400815,
+          "record_mae": 0.08524800502788295,
+          "retained_fraction": 0.8947822337214316,
+          "retained_records": 2075,
+          "threshold": 0.797979797979798
+        },
+        "1.0": {
+          "identity_macro_mae": 0.08418147496713312,
+          "record_mae": 0.08529916321998397,
+          "retained_fraction": 1.0,
+          "retained_records": 2319,
+          "threshold": null
+        }
+      },
+      "high_error_detection_roc_auc": 0.44145465923072696,
+      "high_error_fraction": 0.09745579991375593,
+      "high_error_threshold": 0.18879643428571427,
+      "preregistered_useful_rule_pass": false,
+      "test_diagnostic_curve": {
+        "0.5": {
+          "identity_macro_mae": 0.08685211965208223,
+          "record_mae": 0.08823788782266011,
+          "retained_records": 1160
+        },
+        "0.7": {
+          "identity_macro_mae": 0.0859446215802699,
+          "record_mae": 0.08719661925492611,
+          "retained_records": 1624
+        },
+        "0.8": {
+          "identity_macro_mae": 0.08502851633455434,
+          "record_mae": 0.08610480814886085,
+          "retained_records": 1856
+        },
+        "0.9": {
+          "identity_macro_mae": 0.08437429806323542,
+          "record_mae": 0.08536201036398468,
+          "retained_records": 2088
+        },
+        "1": {
+          "identity_macro_mae": 0.08418147496713312,
+          "record_mae": 0.08529916321998399,
+          "retained_records": 2319
+        }
+      }
+    },
+    "pair_cold": {
+      "ad_score_vs_absolute_error_spearman": 0.01658830980223621,
+      "aurc_record": 0.08826845913233117,
+      "fixed_validation_thresholds": {
+        "0.5": {
+          "identity_macro_mae": 0.08586513232495512,
+          "record_mae": 0.08670726426182092,
+          "retained_fraction": 0.4919878735383283,
+          "retained_records": 1136,
+          "threshold": 0.8837209302325582
+        },
+        "0.7": {
+          "identity_macro_mae": 0.08551448126605013,
+          "record_mae": 0.08627729918694886,
+          "retained_fraction": 0.7016024252923343,
+          "retained_records": 1620,
+          "threshold": 0.8529411764705882
+        },
+        "0.8": {
+          "identity_macro_mae": 0.08451951654497943,
+          "record_mae": 0.08527893421802056,
+          "retained_fraction": 0.7951494153313122,
+          "retained_records": 1836,
+          "threshold": 0.8333333333333334
+        },
+        "0.9": {
+          "identity_macro_mae": 0.08453415095776032,
+          "record_mae": 0.08526283669647157,
+          "retained_fraction": 0.8995236032914682,
+          "retained_records": 2077,
+          "threshold": 0.797752808988764
+        },
+        "1.0": {
+          "identity_macro_mae": 0.08529558978761063,
+          "record_mae": 0.08586724604961951,
+          "retained_fraction": 1.0,
+          "retained_records": 2309,
+          "threshold": null
+        }
+      },
+      "high_error_detection_roc_auc": 0.5176939255734514,
+      "high_error_fraction": 0.11346903421394543,
+      "high_error_threshold": 0.18240831428571436,
+      "preregistered_useful_rule_pass": false,
+      "test_diagnostic_curve": {
+        "0.5": {
+          "identity_macro_mae": 0.08596760859288238,
+          "record_mae": 0.08685664766110081,
+          "retained_records": 1155
+        },
+        "0.7": {
+          "identity_macro_mae": 0.0855427267434329,
+          "record_mae": 0.08630645334393497,
+          "retained_records": 1617
+        },
+        "0.8": {
+          "identity_macro_mae": 0.08439208094320327,
+          "record_mae": 0.08514877400974027,
+          "retained_records": 1848
+        },
+        "0.9": {
+          "identity_macro_mae": 0.08450060184564699,
+          "record_mae": 0.0852292482106782,
+          "retained_records": 2079
+        },
+        "1": {
+          "identity_macro_mae": 0.08529558978761063,
+          "record_mae": 0.08586724604961951,
+          "retained_records": 2309
+        }
+      }
+    }
+  },
+  "status": "GATE2C_AD_DIAGNOSTICS_FROM_FROZEN_AGGREGATES",
+  "test_artifacts_reopened": false
+}

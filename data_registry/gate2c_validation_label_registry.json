@@ -1,0 +1,61 @@
+{
+  "arrow_reads": 1,
+  "artifact_git_policy": "LOCAL_IGNORED",
+  "artifact_path": "/home/changliu/ExcitationNexus/12_Phase4_Multitask_OOD_Training/runs/gate2c_uq/calibration_labels_v1.parquet",
+  "artifact_sha256": "5d59314b515e2487efdc54061d6d6c368bb3f2e6e51dda09a4dea98cf959e1cc",
+  "authorization": "AUTHORIZED_MINIMAL_VALIDATION_LABEL_EXTRACTION",
+  "blocker_resolved": "BLOCKED_MISSING_CALIBRATION_LABEL_ARTIFACT",
+  "buffer_rows_requested": 0,
+  "completed_utc": "2026-07-20T14:14:39.325859+00:00",
+  "cross_protocol_note": "Allowed protocol reuse; every protocol has zero overlap between its own validation and test IDs.",
+  "cross_protocol_validation_vs_test_union_overlap_aggregate": 5074,
+  "final673_accessed": false,
+  "other_columns_read": 0,
+  "per_protocol": {
+    "acceptor_cold": {
+      "protocol_local_val_test_overlap": 0,
+      "sha256": "659992cc7413094fd17da2281902aa74f261307d98648a973254bd472b5ecc65",
+      "test_count": 2237,
+      "validation_count": 2235
+    },
+    "both_cold": {
+      "protocol_local_val_test_overlap": 0,
+      "sha256": "f74f40c4a2f5e7d91214ebdabc3e8f2d1a48a3c106509bb8ab7a3c846b83cb16",
+      "test_count": 587,
+      "validation_count": 1792
+    },
+    "donor_cold": {
+      "protocol_local_val_test_overlap": 0,
+      "sha256": "505e4bbe4ed20900ed66721d20df5442854c0f0ea04f5885df330bde111427cd",
+      "test_count": 2251,
+      "validation_count": 2234
+    },
+    "full_scaffold_cold": {
+      "protocol_local_val_test_overlap": 0,
+      "sha256": "d395020eccfa6e8b73d50bc788a11261d308403a731a9e448040ffe7d238a897",
+      "test_count": 2250,
+      "validation_count": 2254
+    },
+    "iid": {
+      "protocol_local_val_test_overlap": 0,
+      "sha256": "f4572f2c1896d4228dd9eff67220adb7d0a02ad79b70c66766e6da876541c3f2",
+      "test_count": 2319,
+      "validation_count": 2309
+    },
+    "pair_cold": {
+      "protocol_local_val_test_overlap": 0,
+      "sha256": "06aaee7d7756957bc42f7d4e221ffd5b20916be69b3116c3bbbe017eb02f4825",
+      "test_count": 2309,
+      "validation_count": 2319
+    }
+  },
+  "quarantine_rows_requested": 0,
+  "source_columns_read": [
+    "molecule_id",
+    "tddft_coulomb_attraction_eV_eps3p5_proxy"
+  ],
+  "source_table_sha256": "e7587b1546039f099a4dbd0d352e98885bb2ebdbdcfa18884dd4355eed815a83",
+  "status": "AUTHORIZED_MINIMAL_VALIDATION_LABEL_EXTRACTION_DONE",
+  "test_rows_requested_as_test": 0,
+  "union_validation_count": 9151
+}

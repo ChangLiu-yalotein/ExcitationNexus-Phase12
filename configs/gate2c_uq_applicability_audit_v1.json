@@ -1,0 +1,45 @@
+{
+  "version": "gate2c_uq_applicability_audit_v1",
+  "authorization": "AUTHORIZED_MINIMAL_VALIDATION_LABEL_EXTRACTION",
+  "blocker_resolved": "BLOCKED_MISSING_CALIBRATION_LABEL_ARTIFACT",
+  "primary_model": "xgb_c0",
+  "primary_target_report_name": "J_eh_screened_eV_eps3p5 proxy",
+  "nominal_coverage": [0.8, 0.9, 0.95],
+  "quantile": "ceil((n+1)*coverage), one-indexed; unattainable when rank>n",
+  "bootstrap": {"replicates": 10000, "seed": 20260720},
+  "fingerprint": {"radius": 2, "n_bits": 2048, "use_chirality": true},
+  "retained_fractions": [1.0, 0.9, 0.8, 0.7, 0.5],
+  "high_error_threshold": "validation absolute-residual 90th percentile",
+  "coverage_tolerance": {"iid_absolute_gap": 0.03, "ood_identity_90_gap": 0.05, "acceptor_ci_lower_min": 0.8, "worst_decile_min": 0.7},
+  "ad_useful_rule": "validation record and identity MAE both improve at fixed 80% retention, validation score-error Spearman <= -0.1, and frozen test improvements have the same sign",
+  "test_once": true,
+  "no_new_point_predictions": true,
+  "main_parquet_access_after_extraction": false,
+  "gate2a_evaluator_calls": 0,
+  "final673_access": false,
+  "protocols": {
+    "iid": {"manifest": "manifests/split_iid_group_seed42_v1.csv", "sha256": "f4572f2c1896d4228dd9eff67220adb7d0a02ad79b70c66766e6da876541c3f2", "cluster": "structure_group_id_v1", "ad": "full"},
+    "donor_cold": {"manifest": "manifests/split_donor_cold_v1.csv", "sha256": "505e4bbe4ed20900ed66721d20df5442854c0f0ea04f5885df330bde111427cd", "cluster": "donor_structure_group_id_v1", "ad": "donor"},
+    "acceptor_cold": {"manifest": "manifests/split_acceptor_cold_v1.csv", "sha256": "659992cc7413094fd17da2281902aa74f261307d98648a973254bd472b5ecc65", "cluster": "acceptor_structure_group_id_v1", "ad": "acceptor"},
+    "pair_cold": {"manifest": "manifests/split_pair_cold_v1.csv", "sha256": "06aaee7d7756957bc42f7d4e221ffd5b20916be69b3116c3bbbe017eb02f4825", "cluster": "pair_group_id_v1", "ad": "full"},
+    "both_cold": {"manifest": "manifests/split_both_cold_external_test_v1.csv", "sha256": "f74f40c4a2f5e7d91214ebdabc3e8f2d1a48a3c106509bb8ab7a3c846b83cb16", "cluster": "two_way_donor_acceptor", "ad": "min_donor_acceptor"},
+    "full_scaffold_cold": {"manifest": "manifests/split_full_scaffold_cold_v1.csv", "sha256": "d395020eccfa6e8b73d50bc788a11261d308403a731a9e448040ffe7d238a897", "cluster": "full_scaffold_group_id_v1", "ad": "full"}
+  },
+  "inputs": {
+    "validation_labels": {"path": "runs/gate2c_uq/calibration_labels_v1.parquet", "sha256": "5d59314b515e2487efdc54061d6d6c368bb3f2e6e51dda09a4dea98cf959e1cc"},
+    "validation_label_registry": {"path": "data_registry/gate2c_validation_label_registry.json", "sha256": "0cdccd083372b8d8bdbb3b90a5408fa61a24c87b8045736b560c28b161fdfb78"},
+    "iid_validation_predictions": {"path": "runs/gate1b1_new_iid_cheap_baselines/seed42/xgb_c0_val_predictions.csv", "sha256": "9444cc99c1afa4cd019762430dc6651f302e2fcebc0b3975d2e13bc9148e268f"},
+    "iid_test_predictions": {"path": "runs/gate1b1_new_iid_cheap_baselines/published/gate1b1_test_predictions_once.csv", "sha256": "be9afad741bb97e0032a850753829f254e2cc34c1d19fb0e86af46f2f5e99908"},
+    "ood_test_predictions": {"path": "runs/gate2a_ood_baselines/published/gate2a_test_predictions_once.csv", "sha256": "69ce44003dac256ba5659bc54e54b923745aadd49f5fe755b28219c484729383"},
+    "ood_test_similarity": {"path": "data_registry/gate2a_ood_similarity_v1.parquet", "sha256": "68889243fa8e5f799148733662a0db3eab128ed3b783889700e71d097098cfcc"},
+    "structure_registry": {"path": "manifests/new15016_structure_groups_v1.parquet", "sha256": "23409d65486ed1f854c125b02769d02d945e3f6c219be8fb4e6f290f391a1a56"},
+    "component_registry": {"path": "manifests/component_identity_v1.csv", "sha256": "dca4a5e5661d7336226b16c87624ba3b457cdcd0379ccb2130a48d4f30306515"}
+  },
+  "ood_validation_predictions": {
+    "donor_cold": {"path": "runs/gate2a_ood_baselines/donor_cold/xgb_c0_val_predictions.csv", "sha256": "953df911b79f41f1b33ab7d50db234366331b298eeae718498b006eae41b55ae"},
+    "acceptor_cold": {"path": "runs/gate2a_ood_baselines/acceptor_cold/xgb_c0_val_predictions.csv", "sha256": "d8b41483a788882f09f1104445d9db197728d4e0626914b25f15afbc558985b8"},
+    "pair_cold": {"path": "runs/gate2a_ood_baselines/pair_cold/xgb_c0_val_predictions.csv", "sha256": "83148530b8fbfcf93071dcf52d4d35bea67796fd3f05441399d81205bdc4aa99"},
+    "both_cold": {"path": "runs/gate2a_ood_baselines/both_cold/xgb_c0_val_predictions.csv", "sha256": "470e2ee0c40899fa3bf3c9871be758f380baf6e5bb313ecc54b867a714fbf0c7"},
+    "full_scaffold_cold": {"path": "runs/gate2a_ood_baselines/full_scaffold_cold/xgb_c0_val_predictions.csv", "sha256": "eae7430bf06d8ec1e90b917517079668adaec39b58e89cbf56a5748151d881d1"}
+  }
+}

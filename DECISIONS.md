@@ -129,3 +129,15 @@
 - Freeze `BOTH_COLD_LOW_SKILL_WARNING`: narrow targets hide poor normalized error, R², median skill, and regression-to-mean.
 - Freeze `PM6_ORBITAL_SHIFT_RISK` as a warning only; LUMO/gap shift plus weak SHAP/error association is not causal and authorizes no feature change.
 - Future UQ coverage must respect the protocol's scientific inference unit rather than treating molecular records as independent.
+
+
+## Gate 2-C decisions
+
+- Authorize exactly one minimal validation-label extraction from the frozen source Parquet: `molecule_id` plus the primary target for the six-protocol validation union only. Keep the row-level artifact local and Git-ignored.
+- Use finite-sample ranks without clipping. Report donor-cold 95% identity conformal as `UNATTAINABLE_FINITE_SAMPLE`; never substitute the maximum residual.
+- Treat IID as approximately exchangeable, OOD identity coverage as empirical with unverified exchangeability, and both-cold as crossed-cluster unsupported rather than assigning an exact conformal guarantee.
+- Freeze `UQ_EMPIRICALLY_CALIBRATED_OOD` for adequately powered identity protocols while preserving the exchangeability limitation. This does not repair acceptor-cold point-prediction degradation.
+- Do not assign `ACCEPTOR_UQ_UNDERCOVERAGE`: the preregistered acceptor-identity coverage criterion did not fail. Preserve the wide interval as the cost of empirical coverage.
+- Freeze `BOTH_COLD_UQ_UNSUPPORTED` despite acceptable marginal coverage, because 15 independent donors and crossed identities cannot support a reliable guarantee.
+- Freeze `AD_SCORE_NOT_VALIDATED`: validation-locked similarity cutoffs did not stably reduce record and identity risk across all six protocols; do not select a test-derived cutoff.
+- The first calibrator process exited after writing only a deterministic target-free similarity cache. Reuse was permitted only because no calibrator registry or quantile existed; the cache was schema/count checked and its hash frozen before calibration resumed.

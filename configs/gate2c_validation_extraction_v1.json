@@ -1,0 +1,20 @@
+{
+  "status": "AUTHORIZED_MINIMAL_VALIDATION_LABEL_EXTRACTION",
+  "table": "/home/changliu/ExcitationNexus_Data_v2/tables/molecule_values_v3.parquet",
+  "table_sha256": "e7587b1546039f099a4dbd0d352e98885bb2ebdbdcfa18884dd4355eed815a83",
+  "columns": ["molecule_id", "tddft_coulomb_attraction_eV_eps3p5_proxy"],
+  "output": "runs/gate2c_uq/calibration_labels_v1.parquet",
+  "manifests": {
+    "iid": ["manifests/split_iid_group_seed42_v1.csv", "f4572f2c1896d4228dd9eff67220adb7d0a02ad79b70c66766e6da876541c3f2", 2309],
+    "donor_cold": ["manifests/split_donor_cold_v1.csv", "505e4bbe4ed20900ed66721d20df5442854c0f0ea04f5885df330bde111427cd", 2234],
+    "acceptor_cold": ["manifests/split_acceptor_cold_v1.csv", "659992cc7413094fd17da2281902aa74f261307d98648a973254bd472b5ecc65", 2235],
+    "pair_cold": ["manifests/split_pair_cold_v1.csv", "06aaee7d7756957bc42f7d4e221ffd5b20916be69b3116c3bbbe017eb02f4825", 2319],
+    "both_cold": ["manifests/split_both_cold_external_test_v1.csv", "f74f40c4a2f5e7d91214ebdabc3e8f2d1a48a3c106509bb8ab7a3c846b83cb16", 1792],
+    "full_scaffold_cold": ["manifests/split_full_scaffold_cold_v1.csv", "d395020eccfa6e8b73d50bc788a11261d308403a731a9e448040ffe7d238a897", 2254]
+  },
+  "arrow_reads": 1,
+  "other_columns_allowed": false,
+  "protocol_local_validation_test_overlap_allowed": false,
+  "artifact_git_policy": "LOCAL_IGNORED",
+  "final673_access": false
+}

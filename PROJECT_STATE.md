@@ -118,3 +118,14 @@ Project and EquiformerV3 directories are not Git worktrees; source commit proven
 - PM6 LUMO/gap show locked acceptor-OOD shifts; weak frozen TreeSHAP/error association crosses the preregistered threshold. Label: `PM6_ORBITAL_SHIFT_RISK`, not causality.
 - No training, new prediction, main Parquet read, Gate 2-A evaluator call, or final673 access occurred.
 - Final status: `GATE2B_DONE_HIERARCHICAL_OOD_AUDIT`.
+
+
+## Gate 2-C result
+
+- The missing calibration-label artifact blocker was resolved through one authorized Arrow read of only `molecule_id` and the primary target for the 9,151-ID validation union. The row-level artifact remains local and Git-ignored.
+- IID is only approximately exchangeable; donor-cold has 15 calibration donor identities and cannot attain 95% identity conformal coverage; OOD exchangeability remains unverified; both-cold is a crossed design without an exact conformal guarantee.
+- The 90% acceptor-cold record interval covered 0.9093 of records. Its conservative acceptor-identity maximum-residual interval covered 0.9964 identity-macro with CI [0.9937, 0.9987], at width 0.9396 eV. `ACCEPTOR_UQ_UNDERCOVERAGE` was not triggered.
+- Both-cold achieved empirical 90% record coverage 0.9370 with a two-way CI [0.8948, 0.9693], but remains `BOTH_COLD_UQ_UNSUPPORTED` because crossed-cluster exchangeability and donor power are inadequate.
+- Validation-locked similarity filtering was not stable across all protocols; `AD_SCORE_NOT_VALIDATED` is frozen.
+- No point model was trained or modified, no new point prediction was generated, the Gate 2-A evaluator was not called, and final673 remained sealed.
+- Final status: `GATE2C_DONE_UQ_APPLICABILITY_AUDIT`; labels: `UQ_EMPIRICALLY_CALIBRATED_OOD`, `BOTH_COLD_UQ_UNSUPPORTED`, `AD_SCORE_NOT_VALIDATED`.

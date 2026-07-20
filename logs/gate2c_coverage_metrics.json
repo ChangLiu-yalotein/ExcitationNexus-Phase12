@@ -1,0 +1,2074 @@
+{
+  "decision_labels": [
+    "UQ_EMPIRICALLY_CALIBRATED_OOD",
+    "BOTH_COLD_UQ_UNSUPPORTED",
+    "AD_SCORE_NOT_VALIDATED"
+  ],
+  "final673_accessed": false,
+  "gate2a_evaluator_calls": 0,
+  "main_parquet_reads": 0,
+  "point_predictions_generated": false,
+  "protocols": {
+    "acceptor_cold": {
+      "applicability_domain": {
+        "ad_score_vs_absolute_error_spearman": -0.1287366344757182,
+        "aurc_record": 0.08833877524582266,
+        "fixed_validation_thresholds": {
+          "0.5": {
+            "identity_macro_mae": 0.08636573640029976,
+            "record_mae": 0.08803017750436024,
+            "retained_fraction": 0.402771569065713,
+            "retained_records": 901,
+            "threshold": 0.5121951219512195
+          },
+          "0.7": {
+            "identity_macro_mae": 0.08604179942318096,
+            "record_mae": 0.08748414642319187,
+            "retained_fraction": 0.5341975860527493,
+            "retained_records": 1195,
+            "threshold": 0.3888888888888889
+          },
+          "0.8": {
+            "identity_macro_mae": 0.08906040702880116,
+            "record_mae": 0.09031378809179652,
+            "retained_fraction": 0.6803755029056773,
+            "retained_records": 1522,
+            "threshold": 0.325
+          },
+          "0.9": {
+            "identity_macro_mae": 0.09607785014293438,
+            "record_mae": 0.09692575401076606,
+            "retained_fraction": 0.7711220384443451,
+            "retained_records": 1725,
+            "threshold": 0.2702702702702703
+          },
+          "1.0": {
+            "identity_macro_mae": 0.09731954402795145,
+            "record_mae": 0.09775977483683505,
+            "retained_fraction": 1.0,
+            "retained_records": 2237,
+            "threshold": null
+          }
+        },
+        "high_error_detection_roc_auc": 0.5609875775199406,
+        "high_error_fraction": 0.09119356280733125,
+        "high_error_threshold": 0.21491928571428576,
+        "preregistered_useful_rule_pass": true,
+        "test_diagnostic_curve": {
+          "0.5": {
+            "identity_macro_mae": 0.08658975187130817,
+            "record_mae": 0.08825980226094728,
+            "retained_records": 1119
+          },
+          "0.7": {
+            "identity_macro_mae": 0.09437103634137974,
+            "record_mae": 0.09415811195311073,
+            "retained_records": 1566
+          },
+          "0.8": {
+            "identity_macro_mae": 0.09527056694451655,
+            "record_mae": 0.09628951084916201,
+            "retained_records": 1790
+          },
+          "0.9": {
+            "identity_macro_mae": 0.0966595130840549,
+            "record_mae": 0.09651397405589446,
+            "retained_records": 2014
+          },
+          "1": {
+            "identity_macro_mae": 0.09731954402795145,
+            "record_mae": 0.09775977483683505,
+            "retained_records": 2237
+          }
+        }
+      },
+      "interval_methods": {
+        "identity": {
+          "0.8": {
+            "coverage": {
+              "cluster_simultaneous": 0.75,
+              "coverage_by_cluster_size_spearman": -0.16843433668380106,
+              "identity_clusters": 36,
+              "identity_macro": 0.9942014042298335,
+              "identity_macro_ci95": [
+                0.9904215465087857,
+                0.9974999132886895
+              ],
+              "record_marginal": 0.9937416182387125,
+              "records": 2237,
+              "structure_group_macro": 0.9936594202898551,
+              "structure_simultaneous": 0.9936594202898551,
+              "structures": 2208,
+              "worst_decile_identity_coverage": 0.9781362007168459
+            },
+            "interval_width": 0.8564459428571428,
+            "max_attainable": 0.9696969696969697,
+            "n": 32,
+            "normalized_width_over_target_iqr": 2.971435935257218,
+            "q": 0.4282229714285714,
+            "rank": 27,
+            "status": "ATTAINABLE",
+            "undercoverage_gap": -0.1937416182387125
+          },
+          "0.9": {
+            "coverage": {
+              "cluster_simultaneous": 0.8055555555555556,
+              "coverage_by_cluster_size_spearman": -0.24306473033965834,
+              "identity_clusters": 36,
+              "identity_macro": 0.9964136681164842,
+              "identity_macro_ci95": [
+                0.9936788356534044,
+                0.9987402284456588
+              ],
+              "record_marginal": 0.9959767545820295,
+              "records": 2237,
+              "structure_group_macro": 0.9959239130434783,
+              "structure_simultaneous": 0.9959239130434783,
+              "structures": 2208,
+              "worst_decile_identity_coverage": 0.9839907786885246
+            },
+            "interval_width": 0.9395587942857144,
+            "max_attainable": 0.9696969696969697,
+            "n": 32,
+            "normalized_width_over_target_iqr": 3.2597956565872845,
+            "q": 0.4697793971428572,
+            "rank": 30,
+            "status": "ATTAINABLE",
+            "undercoverage_gap": -0.09597675458202948
+          },
+          "0.95": {
+            "coverage": {
+              "cluster_simultaneous": 0.8055555555555556,
+              "coverage_by_cluster_size_spearman": -0.24306473033965834,
+              "identity_clusters": 36,
+              "identity_macro": 0.9964136681164842,
+              "identity_macro_ci95": [
+                0.993699271442308,
+                0.9987803320561941
+              ],
+              "record_marginal": 0.9959767545820295,
+              "records": 2237,
+              "structure_group_macro": 0.9959239130434783,
+              "structure_simultaneous": 0.9959239130434783,
+              "structures": 2208,
+              "worst_decile_identity_coverage": 0.9839907786885246
+            },
+            "interval_width": 0.9930266857142858,
+            "max_attainable": 0.9696969696969697,
+            "n": 32,
+            "normalized_width_over_target_iqr": 3.445302302159414,
+            "q": 0.4965133428571429,
+            "rank": 32,
+            "status": "ATTAINABLE",
+            "undercoverage_gap": -0.045976754582029544
+          }
+        },
+        "record": {
+          "0.8": {
+            "coverage": {
+              "cluster_simultaneous": 0.0,
+              "coverage_by_cluster_size_spearman": 0.04244897045976018,
+              "identity_clusters": 36,
+              "identity_macro": 0.7959394470434591,
+              "identity_macro_ci95": [
+                0.7499563160776285,
+                0.8318947746556197
+              ],
+              "record_marginal": 0.7988377291014752,
+              "records": 2237,
+              "structure_group_macro": 0.7977807971014492,
+              "structure_simultaneous": 0.7975543478260869,
+              "structures": 2208,
+              "worst_decile_identity_coverage": 0.6606060606060606
+            },
+            "interval_width": 0.3042467,
+            "max_attainable": 0.9995527728085868,
+            "n": 2235,
+            "normalized_width_over_target_iqr": 1.0555827663185273,
+            "q": 0.15212335,
+            "rank": 1789,
+            "status": "ATTAINABLE",
+            "undercoverage_gap": 0.001162270898524831
+          },
+          "0.9": {
+            "coverage": {
+              "cluster_simultaneous": 0.05555555555555555,
+              "coverage_by_cluster_size_spearman": -0.05290333854958668,
+              "identity_clusters": 36,
+              "identity_macro": 0.9107809722312771,
+              "identity_macro_ci95": [
+                0.8738436596324622,
+                0.9371781349318536
+              ],
+              "record_marginal": 0.9092534644613322,
+              "records": 2237,
+              "structure_group_macro": 0.9080615942028986,
+              "structure_simultaneous": 0.9080615942028986,
+              "structures": 2208,
+              "worst_decile_identity_coverage": 0.8566919191919192
+            },
+            "interval_width": 0.4304058571428573,
+            "max_attainable": 0.9995527728085868,
+            "n": 2235,
+            "normalized_width_over_target_iqr": 1.493291481296442,
+            "q": 0.21520292857142864,
+            "rank": 2013,
+            "status": "ATTAINABLE",
+            "undercoverage_gap": -0.009253464461332128
+          },
+          "0.95": {
+            "coverage": {
+              "cluster_simultaneous": 0.2222222222222222,
+              "coverage_by_cluster_size_spearman": -0.19717317328275644,
+              "identity_clusters": 36,
+              "identity_macro": 0.9586969141919545,
+              "identity_macro_ci95": [
+                0.9372965948912481,
+                0.9739421171273964
+              ],
+              "record_marginal": 0.9561913276709879,
+              "records": 2237,
+              "structure_group_macro": 0.9556159420289855,
+              "structure_simultaneous": 0.9556159420289855,
+              "structures": 2208,
+              "worst_decile_identity_coverage": 0.9265993265993266
+            },
+            "interval_width": 0.5542897142857144,
+            "max_attainable": 0.9995527728085868,
+            "n": 2235,
+            "normalized_width_over_target_iqr": 1.923106051594382,
+            "q": 0.2771448571428572,
+            "rank": 2125,
+            "status": "ATTAINABLE",
+            "undercoverage_gap": -0.006191327670987956
+          }
+        },
+        "structure": {
+          "0.8": {
+            "coverage": {
+              "cluster_simultaneous": 0.0,
+              "coverage_by_cluster_size_spearman": 0.0359977591436872,
+              "identity_clusters": 36,
+              "identity_macro": 0.7968998709547026,
+              "identity_macro_ci95": [
+                0.7518585700230204,
+                0.8323027752299388
+              ],
+              "record_marginal": 0.7997317836388019,
+              "records": 2237,
+              "structure_group_macro": 0.7986865942028986,
+              "structure_simultaneous": 0.7984601449275363,
+              "structures": 2208,
+              "worst_decile_identity_coverage": 0.6683848797250859
+            },
+            "interval_width": 0.30451420285714303,
+            "max_attainable": 0.9995466908431551,
+            "n": 2205,
+            "normalized_width_over_target_iqr": 1.056510866462066,
+            "q": 0.15225710142857152,
+            "rank": 1765,
+            "status": "ATTAINABLE",
+            "undercoverage_gap": 0.00026821636119811476
+          },
+          "0.9": {
+            "coverage": {
+              "cluster_simultaneous": 0.05555555555555555,
+              "coverage_by_cluster_size_spearman": -0.04794484745113562,
+              "identity_clusters": 36,
+              "identity_macro": 0.911166774700413,
+              "identity_macro_ci95": [
+                0.8731596424829773,
+                0.9379743997543646
+              ],
+              "record_marginal": 0.9097004917299956,
+              "records": 2237,
+              "structure_group_macro": 0.9085144927536232,
+              "structure_simultaneous": 0.9085144927536232,
+              "structures": 2208,
+              "worst_decile_identity_coverage": 0.8579545454545454
+            },
+            "interval_width": 0.43294450000000007,
+            "max_attainable": 0.9995466908431551,
+            "n": 2205,
+            "normalized_width_over_target_iqr": 1.502099293015805,
+            "q": 0.21647225000000003,
+            "rank": 1986,
+            "status": "ATTAINABLE",
+            "undercoverage_gap": -0.009700491729995542
+          },
+          "0.95": {
+            "coverage": {
+              "cluster_simultaneous": 0.2222222222222222,
+              "coverage_by_cluster_size_spearman": -0.19717317328275644,
+              "identity_clusters": 36,
+              "identity_macro": 0.9591929459379861,
+              "identity_macro_ci95": [
+                0.9387868316884855,
+                0.9740729638176959
+              ],
+              "record_marginal": 0.9566383549396513,
+              "records": 2237,
+              "structure_group_macro": 0.9560688405797102,
+              "structure_simultaneous": 0.9560688405797102,
+              "structures": 2208,
+              "worst_decile_identity_coverage": 0.9265993265993266
+            },
+            "interval_width": 0.5555055142857144,
+            "max_attainable": 0.9995466908431551,
+            "n": 2205,
+            "normalized_width_over_target_iqr": 1.9273242650615785,
+            "q": 0.2777527571428572,
+            "rank": 2096,
+            "status": "ATTAINABLE",
+            "undercoverage_gap": -0.00663835493965137
+          }
+        }
+      },
+      "primary_cluster": "acceptor_structure_group_id_v1",
+      "target_iqr": 0.28822628571428577,
+      "test_records": 2237
+    },
+    "both_cold": {
+      "applicability_domain": {
+        "ad_score_vs_absolute_error_spearman": -0.006071939960380951,
+        "aurc_record": 0.0840544593287506,
+        "fixed_validation_thresholds": {
+          "0.5": {
+            "retained_records": 0,
+            "threshold": 1.0
+          },
+          "0.7": {
+            "retained_records": 0,
+            "threshold": 1.0
+          },
+          "0.8": {
+            "retained_records": 0,
+            "threshold": 1.0
+          },
+          "0.9": {
+            "retained_records": 0,
+            "threshold": 1.0
+          },
+          "1.0": {
+            "identity_macro_mae": 0.08437826068755827,
+            "record_mae": 0.08439855777074716,
+            "retained_fraction": 1.0,
+            "retained_records": 587,
+            "threshold": null
+          }
+        },
+        "high_error_detection_roc_auc": 0.47798525798525787,
+        "high_error_fraction": 0.06303236797274275,
+        "high_error_threshold": 0.20279892857142856,
+        "preregistered_useful_rule_pass": false,
+        "test_diagnostic_curve": {
+          "0.5": {
+            "identity_macro_mae": 0.08062352090445978,
+            "record_mae": 0.08082577505830904,
+            "retained_records": 294
+          },
+          "0.7": {
+            "identity_macro_mae": 0.0855288733004101,
+            "record_mae": 0.08528823766075773,
+            "retained_records": 411
+          },
+          "0.8": {
+            "identity_macro_mae": 0.08601918778369029,
+            "record_mae": 0.08593489085714284,
+            "retained_records": 470
+          },
+          "0.9": {
+            "identity_macro_mae": 0.08505818708961212,
+            "record_mae": 0.08492306513907644,
+            "retained_records": 529
+          },
+          "1": {
+            "identity_macro_mae": 0.08437826068755827,
+            "record_mae": 0.08439855777074716,
+            "retained_records": 587
+          }
+        }
+      },
+      "interval_methods": {
+        "acceptor_identity_sensitivity": {
+          "0.8": {
+            "coverage": {
+              "acceptor_clusters": 40,
+              "acceptor_identity_macro": 0.9844047619047618,
+              "acceptor_only_ci95": [
+                0.9697500000000001,
+                0.9964285714285716
+              ],
+              "donor_clusters": 15,
+              "donor_identity_macro": 0.9848290598290599,
+              "donor_only_ci95": [
+                0.9747435897435897,
+                0.9932905982905982
+              ],
+              "record_marginal": 0.9846678023850085,
+              "records": 587,
+              "structure_group_macro": 0.9846678023850085,
+              "structure_simultaneous": 0.9846678023850085,
+              "structures": 587,
+              "two_way_record_coverage_ci95": [
+                0.9622641509433962,
+                0.9983050847457627
+              ],
+              "worst_decile_identity_coverage": 0.9328571428571428
+            },
+            "interval_width": 0.5143982285714286,
+            "max_attainable": 0.9965397923875432,
+            "n": 288,
+            "normalized_width_over_target_iqr": 4.210561051474544,
+            "q": 0.2571991142857143,
+            "rank": 232,
+            "status": "ATTAINABLE",
+            "undercoverage_gap": -0.18466780238500846
+          },
+          "0.9": {
+            "coverage": {
+              "acceptor_clusters": 40,
+              "acceptor_identity_macro": 0.993095238095238,
+              "acceptor_only_ci95": [
+                0.9840476190476192,
+                1.0
+              ],
+              "donor_clusters": 15,
+              "donor_identity_macro": 0.9932905982905982,
+              "donor_only_ci95": [
+                0.9881623931623931,
+                0.9983333333333333
+              ],
+              "record_marginal": 0.9931856899488927,
+              "records": 587,
+              "structure_group_macro": 0.9931856899488927,
+              "structure_simultaneous": 0.9931856899488927,
+              "structures": 587,
+              "two_way_record_coverage_ci95": [
+                0.979381443298969,
+                1.0
+              ],
+              "worst_decile_identity_coverage": 0.975
+            },
+            "interval_width": 0.6306276028571427,
+            "max_attainable": 0.9965397923875432,
+            "n": 288,
+            "normalized_width_over_target_iqr": 5.161946280315255,
+            "q": 0.31531380142857135,
+            "rank": 261,
+            "status": "ATTAINABLE",
+            "undercoverage_gap": -0.09318568994889265
+          },
+          "0.95": {
+            "coverage": {
+              "acceptor_clusters": 40,
+              "acceptor_identity_macro": 0.996547619047619,
+              "acceptor_only_ci95": [
+                0.9913095238095238,
+                1.0
+              ],
+              "donor_clusters": 15,
+              "donor_identity_macro": 0.9966666666666666,
+              "donor_only_ci95": [
+                0.9916666666666667,
+                1.0
+              ],
+              "record_marginal": 0.9965928449744463,
+              "records": 587,
+              "structure_group_macro": 0.9965928449744463,
+              "structure_simultaneous": 0.9965928449744463,
+              "structures": 587,
+              "two_way_record_coverage_ci95": [
+                0.9862778730703259,
+                1.0
+              ],
+              "worst_decile_identity_coverage": 0.985
+            },
+            "interval_width": 0.7396708285714285,
+            "max_attainable": 0.9965397923875432,
+            "n": 288,
+            "normalized_width_over_target_iqr": 6.054509927734513,
+            "q": 0.36983541428571426,
+            "rank": 275,
+            "status": "ATTAINABLE",
+            "undercoverage_gap": -0.04659284497444638
+          }
+        },
+        "donor_identity_sensitivity": {
+          "0.8": {
+            "coverage": {
+              "acceptor_clusters": 40,
+              "acceptor_identity_macro": 0.9913095238095238,
+              "acceptor_only_ci95": [
+                0.9810684523809523,
+                0.9983333333333334
+              ],
+              "donor_clusters": 15,
+              "donor_identity_macro": 0.9915811965811965,
+              "donor_only_ci95": [
+                0.9849145299145299,
+                0.9966666666666666
+              ],
+              "record_marginal": 0.9914821124361158,
+              "records": 587,
+              "structure_group_macro": 0.9914821124361158,
+              "structure_simultaneous": 0.9914821124361158,
+              "structures": 587,
+              "two_way_record_coverage_ci95": [
+                0.9761488973260228,
+                1.0
+              ],
+              "worst_decile_identity_coverage": 0.9746153846153846
+            },
+            "interval_width": 0.6085734971428571,
+            "max_attainable": 0.9928057553956835,
+            "n": 138,
+            "normalized_width_over_target_iqr": 4.981424355106528,
+            "q": 0.30428674857142857,
+            "rank": 112,
+            "status": "ATTAINABLE",
+            "undercoverage_gap": -0.1914821124361158
+          },
+          "0.9": {
+            "coverage": {
+              "acceptor_clusters": 40,
+              "acceptor_identity_macro": 0.996547619047619,
+              "acceptor_only_ci95": [
+                0.9913095238095238,
+                1.0
+              ],
+              "donor_clusters": 15,
+              "donor_identity_macro": 0.9966666666666666,
+              "donor_only_ci95": [
+                0.9916666666666667,
+                1.0
+              ],
+              "record_marginal": 0.9965928449744463,
+              "records": 587,
+              "structure_group_macro": 0.9965928449744463,
+              "structure_simultaneous": 0.9965928449744463,
+              "structures": 587,
+              "two_way_record_coverage_ci95": [
+                0.9864176570458404,
+                1.0
+              ],
+              "worst_decile_identity_coverage": 0.985
+            },
+            "interval_width": 0.733086057142857,
+            "max_attainable": 0.9928057553956835,
+            "n": 138,
+            "normalized_width_over_target_iqr": 6.000610865548773,
+            "q": 0.3665430285714285,
+            "rank": 126,
+            "status": "ATTAINABLE",
+            "undercoverage_gap": -0.09659284497444631
+          },
+          "0.95": {
+            "coverage": {
+              "acceptor_clusters": 40,
+              "acceptor_identity_macro": 0.9982142857142857,
+              "acceptor_only_ci95": [
+                0.9946428571428572,
+                1.0
+              ],
+              "donor_clusters": 15,
+              "donor_identity_macro": 0.9983333333333333,
+              "donor_only_ci95": [
+                0.9949999999999999,
+                1.0
+              ],
+              "record_marginal": 0.9982964224872232,
+              "records": 587,
+              "structure_group_macro": 0.9982964224872232,
+              "structure_simultaneous": 0.9982964224872232,
+              "structures": 587,
+              "two_way_record_coverage_ci95": [
+                0.9898305084745763,
+                1.0
+              ],
+              "worst_decile_identity_coverage": 1.0
+            },
+            "interval_width": 0.8866475085714286,
+            "max_attainable": 0.9928057553956835,
+            "n": 138,
+            "normalized_width_over_target_iqr": 7.257574498935898,
+            "q": 0.4433237542857143,
+            "rank": 133,
+            "status": "ATTAINABLE",
+            "undercoverage_gap": -0.04829642248722321
+          }
+        },
+        "record": {
+          "0.8": {
+            "coverage": {
+              "acceptor_clusters": 40,
+              "acceptor_identity_macro": 0.8417857142857145,
+              "acceptor_only_ci95": [
+                0.8040446428571427,
+                0.8763095238095238
+              ],
+              "donor_clusters": 15,
+              "donor_identity_macro": 0.8414749364749364,
+              "donor_only_ci95": [
+                0.7989639852403012,
+                0.8760916022297602
+              ],
+              "record_marginal": 0.8415672913117547,
+              "records": 587,
+              "structure_group_macro": 0.8415672913117547,
+              "structure_simultaneous": 0.8415672913117547,
+              "structures": 587,
+              "two_way_record_coverage_ci95": [
+                0.7770108351036319,
+                0.8967851099830795
+              ],
+              "worst_decile_identity_coverage": 0.6666666666666666
+            },
+            "interval_width": 0.2962437199999999,
+            "max_attainable": 0.9994422755158952,
+            "n": 1792,
+            "normalized_width_over_target_iqr": 2.4248766809326687,
+            "q": 0.14812185999999994,
+            "rank": 1435,
+            "status": "ATTAINABLE",
+            "undercoverage_gap": -0.04156729131175463
+          },
+          "0.9": {
+            "coverage": {
+              "acceptor_clusters": 40,
+              "acceptor_identity_macro": 0.9367857142857143,
+              "acceptor_only_ci95": [
+                0.9113065476190475,
+                0.9589285714285716
+              ],
+              "donor_clusters": 15,
+              "donor_identity_macro": 0.937163560321455,
+              "donor_only_ci95": [
+                0.9134140192824401,
+                0.957588956365272
+              ],
+              "record_marginal": 0.9369676320272572,
+              "records": 587,
+              "structure_group_macro": 0.9369676320272572,
+              "structure_simultaneous": 0.9369676320272572,
+              "structures": 587,
+              "two_way_record_coverage_ci95": [
+                0.8948275862068965,
+                0.969335604770017
+              ],
+              "worst_decile_identity_coverage": 0.8657142857142858
+            },
+            "interval_width": 0.40654539428571423,
+            "max_attainable": 0.9994422755158952,
+            "n": 1792,
+            "normalized_width_over_target_iqr": 3.327741247456676,
+            "q": 0.20327269714285712,
+            "rank": 1614,
+            "status": "ATTAINABLE",
+            "undercoverage_gap": -0.03696763202725717
+          },
+          "0.95": {
+            "coverage": {
+              "acceptor_clusters": 40,
+              "acceptor_identity_macro": 0.9742857142857144,
+              "acceptor_only_ci95": [
+                0.9545238095238094,
+                0.99
+              ],
+              "donor_clusters": 15,
+              "donor_identity_macro": 0.9745681511470984,
+              "donor_only_ci95": [
+                0.9641362460638775,
+                0.984694107062528
+              ],
+              "record_marginal": 0.9744463373083475,
+              "records": 587,
+              "structure_group_macro": 0.9744463373083475,
+              "structure_simultaneous": 0.9744463373083475,
+              "structures": 587,
+              "two_way_record_coverage_ci95": [
+                0.9460359977907175,
+                0.9932659932659933
+              ],
+              "worst_decile_identity_coverage": 0.9285714285714286
+            },
+            "interval_width": 0.49069211428571435,
+            "max_attainable": 0.9994422755158952,
+            "n": 1792,
+            "normalized_width_over_target_iqr": 4.016516756706192,
+            "q": 0.24534605714285718,
+            "rank": 1704,
+            "status": "ATTAINABLE",
+            "undercoverage_gap": -0.024446337308347554
+          }
+        },
+        "structure": {
+          "0.8": {
+            "coverage": {
+              "acceptor_clusters": 40,
+              "acceptor_identity_macro": 0.8334523809523811,
+              "acceptor_only_ci95": [
+                0.7932142857142856,
+                0.871547619047619
+              ],
+              "donor_clusters": 15,
+              "donor_identity_macro": 0.8329684137578874,
+              "donor_only_ci95": [
+                0.7917469073324336,
+                0.8677525182064657
+              ],
+              "record_marginal": 0.8330494037478705,
+              "records": 587,
+              "structure_group_macro": 0.8330494037478705,
+              "structure_simultaneous": 0.8330494037478705,
+              "structures": 587,
+              "two_way_record_coverage_ci95": [
+                0.7666098807495741,
+                0.8896434634974533
+              ],
+              "worst_decile_identity_coverage": 0.6666666666666666
+            },
+            "interval_width": 0.2909512285714285,
+            "max_attainable": 0.9993838570548367,
+            "n": 1622,
+            "normalized_width_over_target_iqr": 2.381555462007998,
+            "q": 0.14547561428571426,
+            "rank": 1299,
+            "status": "ATTAINABLE",
+            "undercoverage_gap": -0.033049403747870465
+          },
+          "0.9": {
+            "coverage": {
+              "acceptor_clusters": 40,
+              "acceptor_identity_macro": 0.9351190476190476,
+              "acceptor_only_ci95": [
+                0.9097619047619048,
+                0.9572619047619048
+              ],
+              "donor_clusters": 15,
+              "donor_identity_macro": 0.9354541586120533,
+              "donor_only_ci95": [
+                0.9114415113494062,
+                0.9558030814215024
+              ],
+              "record_marginal": 0.9352640545144804,
+              "records": 587,
+              "structure_group_macro": 0.9352640545144804,
+              "structure_simultaneous": 0.9352640545144804,
+              "structures": 587,
+              "two_way_record_coverage_ci95": [
+                0.8947368421052632,
+                0.967851250906454
+              ],
+              "worst_decile_identity_coverage": 0.8657142857142858
+            },
+            "interval_width": 0.39866325428571436,
+            "max_attainable": 0.9993838570548367,
+            "n": 1622,
+            "normalized_width_over_target_iqr": 3.26322268996001,
+            "q": 0.19933162714285718,
+            "rank": 1461,
+            "status": "ATTAINABLE",
+            "undercoverage_gap": -0.035264054514480336
+          },
+          "0.95": {
+            "coverage": {
+              "acceptor_clusters": 40,
+              "acceptor_identity_macro": 0.9776190476190477,
+              "acceptor_only_ci95": [
+                0.9586904761904762,
+                0.9916666666666668
+              ],
+              "donor_clusters": 15,
+              "donor_identity_macro": 0.9779014844804318,
+              "donor_only_ci95": [
+                0.9674718286099864,
+                0.9879847053531263
+              ],
+              "record_marginal": 0.9778534923339012,
+              "records": 587,
+              "structure_group_macro": 0.9778534923339012,
+              "structure_simultaneous": 0.9778534923339012,
+              "structures": 587,
+              "two_way_record_coverage_ci95": [
+                0.9500860585197934,
+                0.9949494949494949
+              ],
+              "worst_decile_identity_coverage": 0.9285714285714286
+            },
+            "interval_width": 0.4962950857142856,
+            "max_attainable": 0.9993838570548367,
+            "n": 1622,
+            "normalized_width_over_target_iqr": 4.062379382118384,
+            "q": 0.2481475428571428,
+            "rank": 1542,
+            "status": "ATTAINABLE",
+            "undercoverage_gap": -0.02785349233390122
+          }
+        }
+      },
+      "primary_cluster": "two_way_donor_acceptor",
+      "target_iqr": 0.1221685714285714,
+      "test_records": 587
+    },
+    "donor_cold": {
+      "applicability_domain": {
+        "ad_score_vs_absolute_error_spearman": 0.05862330388457706,
+        "aurc_record": 0.08815433771577794,
+        "fixed_validation_thresholds": {
+          "0.5": {
+            "identity_macro_mae": 0.0955424866082947,
+            "record_mae": 0.09098909032927611,
+            "retained_fraction": 0.4953354064860062,
+            "retained_records": 1115,
+            "threshold": 0.5072463768115942
+          },
+          "0.7": {
+            "identity_macro_mae": 0.08903357031591282,
+            "record_mae": 0.08501631628232566,
+            "retained_fraction": 0.7116836961350511,
+            "retained_records": 1602,
+            "threshold": 0.34177215189873417
+          },
+          "0.8": {
+            "identity_macro_mae": 0.08935728405423397,
+            "record_mae": 0.08585806051470002,
+            "retained_fraction": 0.7965348733896046,
+            "retained_records": 1793,
+            "threshold": 0.21428571428571427
+          },
+          "0.9": {
+            "identity_macro_mae": 0.08760853773627511,
+            "record_mae": 0.08464895246747478,
+            "retained_fraction": 1.0,
+            "retained_records": 2251,
+            "threshold": 0.14634146341463414
+          },
+          "1.0": {
+            "identity_macro_mae": 0.08760853773627511,
+            "record_mae": 0.08464895246747478,
+            "retained_fraction": 1.0,
+            "retained_records": 2251,
+            "threshold": null
+          }
+        },
+        "high_error_detection_roc_auc": 0.44709414186158375,
+        "high_error_fraction": 0.07641048422923145,
+        "high_error_threshold": 0.20555843571428578,
+        "preregistered_useful_rule_pass": false,
+        "test_diagnostic_curve": {
+          "0.5": {
+            "identity_macro_mae": 0.09324205116985503,
+            "record_mae": 0.0908313143529561,
+            "retained_records": 1126
+          },
+          "0.7": {
+            "identity_macro_mae": 0.08891200971376953,
+            "record_mae": 0.08516315116660625,
+            "retained_records": 1576
+          },
+          "0.8": {
+            "identity_macro_mae": 0.09265789837149069,
+            "record_mae": 0.08606420025779331,
+            "retained_records": 1801
+          },
+          "0.9": {
+            "identity_macro_mae": 0.08928981377506172,
+            "record_mae": 0.08646883621915104,
+            "retained_records": 2026
+          },
+          "1": {
+            "identity_macro_mae": 0.08760853773627511,
+            "record_mae": 0.08464895246747478,
+            "retained_records": 2251
+          }
+        }
+      },
+      "interval_methods": {
+        "identity": {
+          "0.8": {
+            "coverage": {
+              "cluster_simultaneous": 0.9333333333333333,
+              "coverage_by_cluster_size_spearman": 0.06185895741317418,
+              "identity_clusters": 15,
+              "identity_macro": 0.9995642701525055,
+              "identity_macro_ci95": [
+                0.9986928104575163,
+                1.0
+              ],
+              "record_marginal": 0.9995557529986673,
+              "records": 2251,
+              "structure_group_macro": 0.9995503597122302,
+              "structure_simultaneous": 0.9995503597122302,
+              "structures": 2224,
+              "worst_decile_identity_coverage": 1.0
+            },
+            "interval_width": 0.9134454885714285,
+            "max_attainable": 0.9375,
+            "n": 15,
+            "normalized_width_over_target_iqr": 4.3106019158025735,
+            "q": 0.45672274428571424,
+            "rank": 13,
+            "status": "ATTAINABLE",
+            "undercoverage_gap": -0.19955575299866724
+          },
+          "0.9": {
+            "coverage": {
+              "cluster_simultaneous": 1.0,
+              "coverage_by_cluster_size_spearman": null,
+              "identity_clusters": 15,
+              "identity_macro": 1.0,
+              "identity_macro_ci95": [
+                1.0,
+                1.0
+              ],
+              "record_marginal": 1.0,
+              "records": 2251,
+              "structure_group_macro": 1.0,
+              "structure_simultaneous": 1.0,
+              "structures": 2224,
+              "worst_decile_identity_coverage": 1.0
+            },
+            "interval_width": 1.01667134,
+            "max_attainable": 0.9375,
+            "n": 15,
+            "normalized_width_over_target_iqr": 4.797730659110782,
+            "q": 0.50833567,
+            "rank": 15,
+            "status": "ATTAINABLE",
+            "undercoverage_gap": -0.09999999999999998
+          },
+          "0.95": {
+            "coverage": null,
+            "max_attainable": 0.9375,
+            "n": 15,
+            "q": null,
+            "rank": 16,
+            "status": "UNATTAINABLE_FINITE_SAMPLE"
+          }
+        },
+        "record": {
+          "0.8": {
+            "coverage": {
+              "cluster_simultaneous": 0.0,
+              "coverage_by_cluster_size_spearman": 0.3178571428571428,
+              "identity_clusters": 15,
+              "identity_macro": 0.8333234911259992,
+              "identity_macro_ci95": [
+                0.787264361210757,
+                0.8721629774055046
+              ],
+              "record_marginal": 0.8476232785428698,
+              "records": 2251,
+              "structure_group_macro": 0.8484712230215827,
+              "structure_simultaneous": 0.8484712230215827,
+              "structures": 2224,
+              "worst_decile_identity_coverage": 0.736764705882353
+            },
+            "interval_width": 0.3044692857142858,
+            "max_attainable": 0.9995525727069351,
+            "n": 2234,
+            "normalized_width_over_target_iqr": 1.4368081103072987,
+            "q": 0.1522346428571429,
+            "rank": 1788,
+            "status": "ATTAINABLE",
+            "undercoverage_gap": -0.04762327854286974
+          },
+          "0.9": {
+            "coverage": {
+              "cluster_simultaneous": 0.0,
+              "coverage_by_cluster_size_spearman": 0.2285714285714285,
+              "identity_clusters": 15,
+              "identity_macro": 0.915970141984581,
+              "identity_macro_ci95": [
+                0.8841573009908872,
+                0.9423740176412381
+              ],
+              "record_marginal": 0.9240337627721013,
+              "records": 2251,
+              "structure_group_macro": 0.9251348920863309,
+              "structure_simultaneous": 0.924910071942446,
+              "structures": 2224,
+              "worst_decile_identity_coverage": 0.8298319327731093
+            },
+            "interval_width": 0.41131779999999996,
+            "max_attainable": 0.9995525727069351,
+            "n": 2234,
+            "normalized_width_over_target_iqr": 1.94103240846545,
+            "q": 0.20565889999999998,
+            "rank": 2012,
+            "status": "ATTAINABLE",
+            "undercoverage_gap": -0.02403376277210123
+          },
+          "0.95": {
+            "coverage": {
+              "cluster_simultaneous": 0.13333333333333333,
+              "coverage_by_cluster_size_spearman": 0.08579091897564933,
+              "identity_clusters": 15,
+              "identity_macro": 0.9638885310178377,
+              "identity_macro_ci95": [
+                0.9458537178910363,
+                0.9786846195254822
+              ],
+              "record_marginal": 0.9680142159040427,
+              "records": 2251,
+              "structure_group_macro": 0.9680755395683454,
+              "structure_simultaneous": 0.9680755395683454,
+              "structures": 2224,
+              "worst_decile_identity_coverage": 0.9320728291316527
+            },
+            "interval_width": 0.5103474571428571,
+            "max_attainable": 0.9995525727069351,
+            "n": 2234,
+            "normalized_width_over_target_iqr": 2.408359069051274,
+            "q": 0.25517372857142856,
+            "rank": 2124,
+            "status": "ATTAINABLE",
+            "undercoverage_gap": -0.01801421590404273
+          }
+        },
+        "structure": {
+          "0.8": {
+            "coverage": {
+              "cluster_simultaneous": 0.0,
+              "coverage_by_cluster_size_spearman": 0.3178571428571428,
+              "identity_clusters": 15,
+              "identity_macro": 0.8333234911259992,
+              "identity_macro_ci95": [
+                0.7871221106977441,
+                0.8726873996917908
+              ],
+              "record_marginal": 0.8476232785428698,
+              "records": 2251,
+              "structure_group_macro": 0.8484712230215827,
+              "structure_simultaneous": 0.8484712230215827,
+              "structures": 2224,
+              "worst_decile_identity_coverage": 0.736764705882353
+            },
+            "interval_width": 0.30454260285714274,
+            "max_attainable": 0.9995448338643604,
+            "n": 2196,
+            "normalized_width_over_target_iqr": 1.4371540981307807,
+            "q": 0.15227130142857137,
+            "rank": 1758,
+            "status": "ATTAINABLE",
+            "undercoverage_gap": -0.04762327854286974
+          },
+          "0.9": {
+            "coverage": {
+              "cluster_simultaneous": 0.0,
+              "coverage_by_cluster_size_spearman": 0.22142857142857136,
+              "identity_clusters": 15,
+              "identity_macro": 0.9152702246519826,
+              "identity_macro_ci95": [
+                0.8852725910259195,
+                0.9413537565248776
+              ],
+              "record_marginal": 0.9231452687694358,
+              "records": 2251,
+              "structure_group_macro": 0.9242356115107914,
+              "structure_simultaneous": 0.9240107913669064,
+              "structures": 2224,
+              "worst_decile_identity_coverage": 0.8298319327731093
+            },
+            "interval_width": 0.41059071428571425,
+            "max_attainable": 0.9995448338643604,
+            "n": 2196,
+            "normalized_width_over_target_iqr": 1.9376012490671433,
+            "q": 0.20529535714285713,
+            "rank": 1978,
+            "status": "ATTAINABLE",
+            "undercoverage_gap": -0.02314526876943579
+          },
+          "0.95": {
+            "coverage": {
+              "cluster_simultaneous": 0.13333333333333333,
+              "coverage_by_cluster_size_spearman": 0.08579091897564933,
+              "identity_clusters": 15,
+              "identity_macro": 0.9638885310178377,
+              "identity_macro_ci95": [
+                0.9460153803694686,
+                0.9789282156430139
+              ],
+              "record_marginal": 0.9680142159040427,
+              "records": 2251,
+              "structure_group_macro": 0.9680755395683454,
+              "structure_simultaneous": 0.9680755395683454,
+              "structures": 2224,
+              "worst_decile_identity_coverage": 0.9320728291316527
+            },
+            "interval_width": 0.5103474571428571,
+            "max_attainable": 0.9995448338643604,
+            "n": 2196,
+            "normalized_width_over_target_iqr": 2.408359069051274,
+            "q": 0.25517372857142856,
+            "rank": 2088,
+            "status": "ATTAINABLE",
+            "undercoverage_gap": -0.01801421590404273
+          }
+        }
+      },
+      "primary_cluster": "donor_structure_group_id_v1",
+      "target_iqr": 0.21190671428571428,
+      "test_records": 2251
+    },
+    "full_scaffold_cold": {
+      "applicability_domain": {
+        "ad_score_vs_absolute_error_spearman": -0.03231556140250891,
+        "aurc_record": 0.07926504580708256,
+        "fixed_validation_thresholds": {
+          "0.5": {
+            "identity_macro_mae": 0.08073761245544549,
+            "record_mae": 0.07926823484710942,
+            "retained_fraction": 0.5315555555555556,
+            "retained_records": 1196,
+            "threshold": 0.8433734939759037
+          },
+          "0.7": {
+            "identity_macro_mae": 0.07903171468408575,
+            "record_mae": 0.07800975950470218,
+            "retained_fraction": 0.7088888888888889,
+            "retained_records": 1595,
+            "threshold": 0.8125
+          },
+          "0.8": {
+            "identity_macro_mae": 0.07782027692214107,
+            "record_mae": 0.07750705150737851,
+            "retained_fraction": 0.8217777777777778,
+            "retained_records": 1849,
+            "threshold": 0.7888888888888889
+          },
+          "0.9": {
+            "identity_macro_mae": 0.07998408107195804,
+            "record_mae": 0.07983686680859918,
+            "retained_fraction": 0.9155555555555556,
+            "retained_records": 2060,
+            "threshold": 0.7532467532467533
+          },
+          "1.0": {
+            "identity_macro_mae": 0.08208696996291069,
+            "record_mae": 0.08198386850476191,
+            "retained_fraction": 1.0,
+            "retained_records": 2250,
+            "threshold": null
+          }
+        },
+        "high_error_detection_roc_auc": 0.5808035050056326,
+        "high_error_fraction": 0.08088888888888889,
+        "high_error_threshold": 0.19792014285714288,
+        "preregistered_useful_rule_pass": false,
+        "test_diagnostic_curve": {
+          "0.5": {
+            "identity_macro_mae": 0.08143107729210505,
+            "record_mae": 0.0793248004952381,
+            "retained_records": 1125
+          },
+          "0.7": {
+            "identity_macro_mae": 0.07894217403443946,
+            "record_mae": 0.07794786352562358,
+            "retained_records": 1575
+          },
+          "0.8": {
+            "identity_macro_mae": 0.07779597940668599,
+            "record_mae": 0.07758316387539682,
+            "retained_records": 1800
+          },
+          "0.9": {
+            "identity_macro_mae": 0.07964631192753664,
+            "record_mae": 0.07940297066102293,
+            "retained_records": 2025
+          },
+          "1": {
+            "identity_macro_mae": 0.08208696996291069,
+            "record_mae": 0.08198386850476191,
+            "retained_records": 2250
+          }
+        }
+      },
+      "interval_methods": {
+        "identity": {
+          "0.8": {
+            "coverage": {
+              "cluster_simultaneous": 0.8229166666666666,
+              "coverage_by_cluster_size_spearman": -0.08633060094513505,
+              "identity_clusters": 672,
+              "identity_macro": 0.9255047226252584,
+              "identity_macro_ci95": [
+                0.9109828801943757,
+                0.939463405580035
+              ],
+              "record_marginal": 0.9257777777777778,
+              "records": 2250,
+              "structure_group_macro": 0.9264906690942194,
+              "structure_simultaneous": 0.9262630860263996,
+              "structures": 2197,
+              "worst_decile_identity_coverage": 0.6666666666666666
+            },
+            "interval_width": 0.4068500857142857,
+            "max_attainable": 0.9986338797814208,
+            "n": 731,
+            "normalized_width_over_target_iqr": 1.8120647557153737,
+            "q": 0.20342504285714286,
+            "rank": 586,
+            "status": "ATTAINABLE",
+            "undercoverage_gap": -0.12577777777777777
+          },
+          "0.9": {
+            "coverage": {
+              "cluster_simultaneous": 0.9047619047619048,
+              "coverage_by_cluster_size_spearman": -0.08192089646212343,
+              "identity_clusters": 672,
+              "identity_macro": 0.9649298518941377,
+              "identity_macro_ci95": [
+                0.9550138208146021,
+                0.9740616442709076
+              ],
+              "record_marginal": 0.9653333333333334,
+              "records": 2250,
+              "structure_group_macro": 0.9649522075557578,
+              "structure_simultaneous": 0.9649522075557578,
+              "structures": 2197,
+              "worst_decile_identity_coverage": 1.0
+            },
+            "interval_width": 0.5319155457142857,
+            "max_attainable": 0.9986338797814208,
+            "n": 731,
+            "normalized_width_over_target_iqr": 2.369092319874427,
+            "q": 0.26595777285714284,
+            "rank": 659,
+            "status": "ATTAINABLE",
+            "undercoverage_gap": -0.06533333333333335
+          },
+          "0.95": {
+            "coverage": {
+              "cluster_simultaneous": 0.9568452380952381,
+              "coverage_by_cluster_size_spearman": -0.06937649344605085,
+              "identity_clusters": 672,
+              "identity_macro": 0.9843059098639456,
+              "identity_macro_ci95": [
+                0.9775173611111111,
+                0.9902035058815194
+              ],
+              "record_marginal": 0.9853333333333333,
+              "records": 2250,
+              "structure_group_macro": 0.9849795175238962,
+              "structure_simultaneous": 0.9849795175238962,
+              "structures": 2197,
+              "worst_decile_identity_coverage": 1.0
+            },
+            "interval_width": 0.6417212057142857,
+            "max_attainable": 0.9986338797814208,
+            "n": 731,
+            "normalized_width_over_target_iqr": 2.858154442387528,
+            "q": 0.32086060285714285,
+            "rank": 696,
+            "status": "ATTAINABLE",
+            "undercoverage_gap": -0.03533333333333333
+          }
+        },
+        "record": {
+          "0.8": {
+            "coverage": {
+              "cluster_simultaneous": 0.6294642857142857,
+              "coverage_by_cluster_size_spearman": -0.06674721029846846,
+              "identity_clusters": 672,
+              "identity_macro": 0.8282780611273259,
+              "identity_macro_ci95": [
+                0.807845605429672,
+                0.8481836372308733
+              ],
+              "record_marginal": 0.8306666666666667,
+              "records": 2250,
+              "structure_group_macro": 0.8319299044151115,
+              "structure_simultaneous": 0.8315885298133819,
+              "structures": 2197,
+              "worst_decile_identity_coverage": 0.5
+            },
+            "interval_width": 0.27843220000000013,
+            "max_attainable": 0.9995565410199556,
+            "n": 2254,
+            "normalized_width_over_target_iqr": 1.2401058625574686,
+            "q": 0.13921610000000006,
+            "rank": 1804,
+            "status": "ATTAINABLE",
+            "undercoverage_gap": -0.03066666666666662
+          },
+          "0.9": {
+            "coverage": {
+              "cluster_simultaneous": 0.8035714285714286,
+              "coverage_by_cluster_size_spearman": -0.09750337566647461,
+              "identity_clusters": 672,
+              "identity_macro": 0.9182089223607081,
+              "identity_macro_ci95": [
+                0.9029060217023387,
+                0.9323921851544619
+              ],
+              "record_marginal": 0.9191111111111111,
+              "records": 2250,
+              "structure_group_macro": 0.9196631770596267,
+              "structure_simultaneous": 0.919435593991807,
+              "structures": 2197,
+              "worst_decile_identity_coverage": 0.6666666666666666
+            },
+            "interval_width": 0.3961234857142858,
+            "max_attainable": 0.9995565410199556,
+            "n": 2254,
+            "normalized_width_over_target_iqr": 1.764289679609561,
+            "q": 0.1980617428571429,
+            "rank": 2030,
+            "status": "ATTAINABLE",
+            "undercoverage_gap": -0.01911111111111108
+          },
+          "0.95": {
+            "coverage": {
+              "cluster_simultaneous": 0.8898809523809523,
+              "coverage_by_cluster_size_spearman": -0.08933913287958536,
+              "identity_clusters": 672,
+              "identity_macro": 0.9586715846983703,
+              "identity_macro_ci95": [
+                0.9482231126594964,
+                0.968509991228183
+              ],
+              "record_marginal": 0.9586666666666667,
+              "records": 2250,
+              "structure_group_macro": 0.9581247155211652,
+              "structure_simultaneous": 0.9581247155211652,
+              "structures": 2197,
+              "worst_decile_identity_coverage": 0.9
+            },
+            "interval_width": 0.5091552285714287,
+            "max_attainable": 0.9995565410199556,
+            "n": 2254,
+            "normalized_width_over_target_iqr": 2.2677204141734193,
+            "q": 0.25457761428571435,
+            "rank": 2143,
+            "status": "ATTAINABLE",
+            "undercoverage_gap": -0.008666666666666711
+          }
+        },
+        "structure": {
+          "0.8": {
+            "coverage": {
+              "cluster_simultaneous": 0.625,
+              "coverage_by_cluster_size_spearman": -0.07119460478103759,
+              "identity_clusters": 672,
+              "identity_macro": 0.8254258785876435,
+              "identity_macro_ci95": [
+                0.8055800114686997,
+                0.8460430078888587
+              ],
+              "record_marginal": 0.828,
+              "records": 2250,
+              "structure_group_macro": 0.8291989076012745,
+              "structure_simultaneous": 0.8288575329995448,
+              "structures": 2197,
+              "worst_decile_identity_coverage": 0.5
+            },
+            "interval_width": 0.2764036885714285,
+            "max_attainable": 0.9995446265938069,
+            "n": 2195,
+            "normalized_width_over_target_iqr": 1.2310710996427032,
+            "q": 0.13820184428571425,
+            "rank": 1757,
+            "status": "ATTAINABLE",
+            "undercoverage_gap": -0.027999999999999914
+          },
+          "0.9": {
+            "coverage": {
+              "cluster_simultaneous": 0.8005952380952381,
+              "coverage_by_cluster_size_spearman": -0.09378082639435428,
+              "identity_clusters": 672,
+              "identity_macro": 0.9169688429956289,
+              "identity_macro_ci95": [
+                0.9020567087922,
+                0.9311021956920393
+              ],
+              "record_marginal": 0.9182222222222223,
+              "records": 2250,
+              "structure_group_macro": 0.9187528447883477,
+              "structure_simultaneous": 0.918525261720528,
+              "structures": 2197,
+              "worst_decile_identity_coverage": 0.6666666666666666
+            },
+            "interval_width": 0.3953997142857142,
+            "max_attainable": 0.9995446265938069,
+            "n": 2195,
+            "normalized_width_over_target_iqr": 1.7610660826558924,
+            "q": 0.1976998571428571,
+            "rank": 1977,
+            "status": "ATTAINABLE",
+            "undercoverage_gap": -0.01822222222222225
+          },
+          "0.95": {
+            "coverage": {
+              "cluster_simultaneous": 0.8898809523809523,
+              "coverage_by_cluster_size_spearman": -0.08933913287958536,
+              "identity_clusters": 672,
+              "identity_macro": 0.9586715846983703,
+              "identity_macro_ci95": [
+                0.9483784684644058,
+                0.9685029032847114
+              ],
+              "record_marginal": 0.9586666666666667,
+              "records": 2250,
+              "structure_group_macro": 0.9581247155211652,
+              "structure_simultaneous": 0.9581247155211652,
+              "structures": 2197,
+              "worst_decile_identity_coverage": 0.9
+            },
+            "interval_width": 0.5090215999999999,
+            "max_attainable": 0.9995446265938069,
+            "n": 2195,
+            "normalized_width_over_target_iqr": 2.2671252474691586,
+            "q": 0.2545107999999999,
+            "rank": 2087,
+            "status": "ATTAINABLE",
+            "undercoverage_gap": -0.008666666666666711
+          }
+        }
+      },
+      "primary_cluster": "full_scaffold_group_id_v1",
+      "target_iqr": 0.22452292857142842,
+      "test_records": 2250
+    },
+    "iid": {
+      "applicability_domain": {
+        "ad_score_vs_absolute_error_spearman": 0.05450985028121425,
+        "aurc_record": 0.08993197885048455,
+        "fixed_validation_thresholds": {
+          "0.5": {
+            "identity_macro_mae": 0.08672329655641776,
+            "record_mae": 0.08807991368790112,
+            "retained_fraction": 0.5183268650280293,
+            "retained_records": 1202,
+            "threshold": 0.8811881188118812
+          },
+          "0.7": {
+            "identity_macro_mae": 0.0858055746098901,
+            "record_mae": 0.08701473834199136,
+            "retained_fraction": 0.7115135834411385,
+            "retained_records": 1650,
+            "threshold": 0.851063829787234
+          },
+          "0.8": {
+            "identity_macro_mae": 0.08512380163184642,
+            "record_mae": 0.08618971529479064,
+            "retained_fraction": 0.8076757222940922,
+            "retained_records": 1873,
+            "threshold": 0.83
+          },
+          "0.9": {
+            "identity_macro_mae": 0.08424744082400815,
+            "record_mae": 0.08524800502788295,
+            "retained_fraction": 0.8947822337214316,
+            "retained_records": 2075,
+            "threshold": 0.797979797979798
+          },
+          "1.0": {
+            "identity_macro_mae": 0.08418147496713312,
+            "record_mae": 0.08529916321998397,
+            "retained_fraction": 1.0,
+            "retained_records": 2319,
+            "threshold": null
+          }
+        },
+        "high_error_detection_roc_auc": 0.44145465923072696,
+        "high_error_fraction": 0.09745579991375593,
+        "high_error_threshold": 0.18879643428571427,
+        "preregistered_useful_rule_pass": false,
+        "test_diagnostic_curve": {
+          "0.5": {
+            "identity_macro_mae": 0.08685211965208223,
+            "record_mae": 0.08823788782266011,
+            "retained_records": 1160
+          },
+          "0.7": {
+            "identity_macro_mae": 0.0859446215802699,
+            "record_mae": 0.08719661925492611,
+            "retained_records": 1624
+          },
+          "0.8": {
+            "identity_macro_mae": 0.08502851633455434,
+            "record_mae": 0.08610480814886085,
+            "retained_records": 1856
+          },
+          "0.9": {
+            "identity_macro_mae": 0.08437429806323542,
+            "record_mae": 0.08536201036398468,
+            "retained_records": 2088
+          },
+          "1": {
+            "identity_macro_mae": 0.08418147496713312,
+            "record_mae": 0.08529916321998399,
+            "retained_records": 2319
+          }
+        }
+      },
+      "interval_methods": {
+        "identity": {
+          "0.8": {
+            "coverage": {
+              "cluster_simultaneous": 0.8177676537585421,
+              "coverage_by_cluster_size_spearman": -0.05743523581724668,
+              "identity_clusters": 2195,
+              "identity_macro": 0.817995444191344,
+              "identity_macro_ci95": [
+                0.8015945330296128,
+                0.8339407744874715
+              ],
+              "record_marginal": 0.8132815868909012,
+              "records": 2319,
+              "structure_group_macro": 0.817995444191344,
+              "structure_simultaneous": 0.8177676537585421,
+              "structures": 2195,
+              "worst_decile_identity_coverage": 0.0
+            },
+            "interval_width": 0.2761396285714286,
+            "max_attainable": 0.9995446265938069,
+            "n": 2195,
+            "normalized_width_over_target_iqr": 1.1052753643077078,
+            "q": 0.1380698142857143,
+            "rank": 1757,
+            "status": "ATTAINABLE",
+            "undercoverage_gap": -0.013281586890901198
+          },
+          "0.9": {
+            "coverage": {
+              "cluster_simultaneous": 0.9052391799544419,
+              "coverage_by_cluster_size_spearman": -0.04884505126092683,
+              "identity_clusters": 2195,
+              "identity_macro": 0.9052391799544419,
+              "identity_macro_ci95": [
+                0.8929384965831435,
+                0.9175398633257403
+              ],
+              "record_marginal": 0.9021129797326434,
+              "records": 2319,
+              "structure_group_macro": 0.9052391799544419,
+              "structure_simultaneous": 0.9052391799544419,
+              "structures": 2195,
+              "worst_decile_identity_coverage": 1.0
+            },
+            "interval_width": 0.3752263714285714,
+            "max_attainable": 0.9995446265938069,
+            "n": 2195,
+            "normalized_width_over_target_iqr": 1.5018795618872807,
+            "q": 0.1876131857142857,
+            "rank": 1977,
+            "status": "ATTAINABLE",
+            "undercoverage_gap": -0.0021129797326433497
+          },
+          "0.95": {
+            "coverage": {
+              "cluster_simultaneous": 0.9580865603644647,
+              "coverage_by_cluster_size_spearman": -0.026845325584162087,
+              "identity_clusters": 2195,
+              "identity_macro": 0.9585421412300683,
+              "identity_macro_ci95": [
+                0.9498861047835991,
+                0.966742596810934
+              ],
+              "record_marginal": 0.9577404053471323,
+              "records": 2319,
+              "structure_group_macro": 0.9585421412300683,
+              "structure_simultaneous": 0.9580865603644647,
+              "structures": 2195,
+              "worst_decile_identity_coverage": 1.0
+            },
+            "interval_width": 0.5039960714285714,
+            "max_attainable": 0.9995446265938069,
+            "n": 2195,
+            "normalized_width_over_target_iqr": 2.017292644086307,
+            "q": 0.2519980357142857,
+            "rank": 2087,
+            "status": "ATTAINABLE",
+            "undercoverage_gap": -0.007740405347132384
+          }
+        },
+        "record": {
+          "0.8": {
+            "coverage": {
+              "cluster_simultaneous": 0.8182232346241458,
+              "coverage_by_cluster_size_spearman": -0.057782533495528234,
+              "identity_clusters": 2195,
+              "identity_macro": 0.8184510250569476,
+              "identity_macro_ci95": [
+                0.8018223234624146,
+                0.8343963553530752
+              ],
+              "record_marginal": 0.8137128072445019,
+              "records": 2319,
+              "structure_group_macro": 0.8184510250569476,
+              "structure_simultaneous": 0.8182232346241458,
+              "structures": 2195,
+              "worst_decile_identity_coverage": 0.0
+            },
+            "interval_width": 0.2767873999999999,
+            "max_attainable": 0.9995670995670995,
+            "n": 2309,
+            "normalized_width_over_target_iqr": 1.1078681316167907,
+            "q": 0.13839369999999995,
+            "rank": 1848,
+            "status": "ATTAINABLE",
+            "undercoverage_gap": -0.013712807244501857
+          },
+          "0.9": {
+            "coverage": {
+              "cluster_simultaneous": 0.9056947608200455,
+              "coverage_by_cluster_size_spearman": -0.04933201721913779,
+              "identity_clusters": 2195,
+              "identity_macro": 0.9056947608200455,
+              "identity_macro_ci95": [
+                0.8929384965831435,
+                0.9175398633257403
+              ],
+              "record_marginal": 0.902544200086244,
+              "records": 2319,
+              "structure_group_macro": 0.9056947608200455,
+              "structure_simultaneous": 0.9056947608200455,
+              "structures": 2195,
+              "worst_decile_identity_coverage": 1.0
+            },
+            "interval_width": 0.37759286857142854,
+            "max_attainable": 0.9995670995670995,
+            "n": 2309,
+            "normalized_width_over_target_iqr": 1.5113516938128437,
+            "q": 0.18879643428571427,
+            "rank": 2079,
+            "status": "ATTAINABLE",
+            "undercoverage_gap": -0.0025442000862440084
+          },
+          "0.95": {
+            "coverage": {
+              "cluster_simultaneous": 0.9580865603644647,
+              "coverage_by_cluster_size_spearman": -0.026845325584162087,
+              "identity_clusters": 2195,
+              "identity_macro": 0.9585421412300683,
+              "identity_macro_ci95": [
+                0.9501138952164009,
+                0.966742596810934
+              ],
+              "record_marginal": 0.9577404053471323,
+              "records": 2319,
+              "structure_group_macro": 0.9585421412300683,
+              "structure_simultaneous": 0.9580865603644647,
+              "structures": 2195,
+              "worst_decile_identity_coverage": 1.0
+            },
+            "interval_width": 0.5039960714285714,
+            "max_attainable": 0.9995670995670995,
+            "n": 2309,
+            "normalized_width_over_target_iqr": 2.017292644086307,
+            "q": 0.2519980357142857,
+            "rank": 2195,
+            "status": "ATTAINABLE",
+            "undercoverage_gap": -0.007740405347132384
+          }
+        },
+        "structure": {
+          "0.8": {
+            "coverage": {
+              "cluster_simultaneous": 0.8177676537585421,
+              "coverage_by_cluster_size_spearman": -0.05743523581724668,
+              "identity_clusters": 2195,
+              "identity_macro": 0.817995444191344,
+              "identity_macro_ci95": [
+                0.801366742596811,
+                0.8337129840546698
+              ],
+              "record_marginal": 0.8132815868909012,
+              "records": 2319,
+              "structure_group_macro": 0.817995444191344,
+              "structure_simultaneous": 0.8177676537585421,
+              "structures": 2195,
+              "worst_decile_identity_coverage": 0.0
+            },
+            "interval_width": 0.2761396285714286,
+            "max_attainable": 0.9995446265938069,
+            "n": 2195,
+            "normalized_width_over_target_iqr": 1.1052753643077078,
+            "q": 0.1380698142857143,
+            "rank": 1757,
+            "status": "ATTAINABLE",
+            "undercoverage_gap": -0.013281586890901198
+          },
+          "0.9": {
+            "coverage": {
+              "cluster_simultaneous": 0.9052391799544419,
+              "coverage_by_cluster_size_spearman": -0.04884505126092683,
+              "identity_clusters": 2195,
+              "identity_macro": 0.9052391799544419,
+              "identity_macro_ci95": [
+                0.8924829157175399,
+                0.9170842824601366
+              ],
+              "record_marginal": 0.9021129797326434,
+              "records": 2319,
+              "structure_group_macro": 0.9052391799544419,
+              "structure_simultaneous": 0.9052391799544419,
+              "structures": 2195,
+              "worst_decile_identity_coverage": 1.0
+            },
+            "interval_width": 0.3752263714285714,
+            "max_attainable": 0.9995446265938069,
+            "n": 2195,
+            "normalized_width_over_target_iqr": 1.5018795618872807,
+            "q": 0.1876131857142857,
+            "rank": 1977,
+            "status": "ATTAINABLE",
+            "undercoverage_gap": -0.0021129797326433497
+          },
+          "0.95": {
+            "coverage": {
+              "cluster_simultaneous": 0.9580865603644647,
+              "coverage_by_cluster_size_spearman": -0.026845325584162087,
+              "identity_clusters": 2195,
+              "identity_macro": 0.9585421412300683,
+              "identity_macro_ci95": [
+                0.9501138952164009,
+                0.9665148063781321
+              ],
+              "record_marginal": 0.9577404053471323,
+              "records": 2319,
+              "structure_group_macro": 0.9585421412300683,
+              "structure_simultaneous": 0.9580865603644647,
+              "structures": 2195,
+              "worst_decile_identity_coverage": 1.0
+            },
+            "interval_width": 0.5039960714285714,
+            "max_attainable": 0.9995446265938069,
+            "n": 2195,
+            "normalized_width_over_target_iqr": 2.017292644086307,
+            "q": 0.2519980357142857,
+            "rank": 2087,
+            "status": "ATTAINABLE",
+            "undercoverage_gap": -0.007740405347132384
+          }
+        }
+      },
+      "primary_cluster": "structure_group_id_v1",
+      "target_iqr": 0.24983785714285722,
+      "test_records": 2319
+    },
+    "pair_cold": {
+      "applicability_domain": {
+        "ad_score_vs_absolute_error_spearman": 0.01658830980223621,
+        "aurc_record": 0.08826845913233117,
+        "fixed_validation_thresholds": {
+          "0.5": {
+            "identity_macro_mae": 0.08586513232495512,
+            "record_mae": 0.08670726426182092,
+            "retained_fraction": 0.4919878735383283,
+            "retained_records": 1136,
+            "threshold": 0.8837209302325582
+          },
+          "0.7": {
+            "identity_macro_mae": 0.08551448126605013,
+            "record_mae": 0.08627729918694886,
+            "retained_fraction": 0.7016024252923343,
+            "retained_records": 1620,
+            "threshold": 0.8529411764705882
+          },
+          "0.8": {
+            "identity_macro_mae": 0.08451951654497943,
+            "record_mae": 0.08527893421802056,
+            "retained_fraction": 0.7951494153313122,
+            "retained_records": 1836,
+            "threshold": 0.8333333333333334
+          },
+          "0.9": {
+            "identity_macro_mae": 0.08453415095776032,
+            "record_mae": 0.08526283669647157,
+            "retained_fraction": 0.8995236032914682,
+            "retained_records": 2077,
+            "threshold": 0.797752808988764
+          },
+          "1.0": {
+            "identity_macro_mae": 0.08529558978761063,
+            "record_mae": 0.08586724604961951,
+            "retained_fraction": 1.0,
+            "retained_records": 2309,
+            "threshold": null
+          }
+        },
+        "high_error_detection_roc_auc": 0.5176939255734514,
+        "high_error_fraction": 0.11346903421394543,
+        "high_error_threshold": 0.18240831428571436,
+        "preregistered_useful_rule_pass": false,
+        "test_diagnostic_curve": {
+          "0.5": {
+            "identity_macro_mae": 0.08596760859288238,
+            "record_mae": 0.08685664766110081,
+            "retained_records": 1155
+          },
+          "0.7": {
+            "identity_macro_mae": 0.0855427267434329,
+            "record_mae": 0.08630645334393497,
+            "retained_records": 1617
+          },
+          "0.8": {
+            "identity_macro_mae": 0.08439208094320327,
+            "record_mae": 0.08514877400974027,
+            "retained_records": 1848
+          },
+          "0.9": {
+            "identity_macro_mae": 0.08450060184564699,
+            "record_mae": 0.0852292482106782,
+            "retained_records": 2079
+          },
+          "1": {
+            "identity_macro_mae": 0.08529558978761063,
+            "record_mae": 0.08586724604961951,
+            "retained_records": 2309
+          }
+        }
+      },
+      "interval_methods": {
+        "identity": {
+          "0.8": {
+            "coverage": {
+              "cluster_simultaneous": 0.802212389380531,
+              "coverage_by_cluster_size_spearman": -0.05428831368247359,
+              "identity_clusters": 2260,
+              "identity_macro": 0.8024336283185841,
+              "identity_macro_ci95": [
+                0.7860619469026549,
+                0.8185840707964602
+              ],
+              "record_marginal": 0.7994802944997834,
+              "records": 2309,
+              "structure_group_macro": 0.8010041077133729,
+              "structure_simultaneous": 0.8005476951163852,
+              "structures": 2191,
+              "worst_decile_identity_coverage": 0.0
+            },
+            "interval_width": 0.2693132285714286,
+            "max_attainable": 0.9995606326889279,
+            "n": 2275,
+            "normalized_width_over_target_iqr": 1.1167408715020257,
+            "q": 0.1346566142857143,
+            "rank": 1821,
+            "status": "ATTAINABLE",
+            "undercoverage_gap": 0.0005197055002166273
+          },
+          "0.9": {
+            "coverage": {
+              "cluster_simultaneous": 0.8867256637168142,
+              "coverage_by_cluster_size_spearman": -0.0522406326423586,
+              "identity_clusters": 2260,
+              "identity_macro": 0.8867256637168142,
+              "identity_macro_ci95": [
+                0.8738938053097345,
+                0.8991150442477877
+              ],
+              "record_marginal": 0.884365526201819,
+              "records": 2309,
+              "structure_group_macro": 0.8863532633500685,
+              "structure_simultaneous": 0.8863532633500685,
+              "structures": 2191,
+              "worst_decile_identity_coverage": 0.0
+            },
+            "interval_width": 0.3627989142857144,
+            "max_attainable": 0.9995606326889279,
+            "n": 2275,
+            "normalized_width_over_target_iqr": 1.5043909200767722,
+            "q": 0.1813994571428572,
+            "rank": 2049,
+            "status": "ATTAINABLE",
+            "undercoverage_gap": 0.01563447379818106
+          },
+          "0.95": {
+            "coverage": {
+              "cluster_simultaneous": 0.9482300884955752,
+              "coverage_by_cluster_size_spearman": -0.02006493546354637,
+              "identity_clusters": 2260,
+              "identity_macro": 0.9482300884955752,
+              "identity_macro_ci95": [
+                0.9389380530973451,
+                0.9570796460176991
+              ],
+              "record_marginal": 0.9475963620614984,
+              "records": 2309,
+              "structure_group_macro": 0.9479689639434048,
+              "structure_simultaneous": 0.9479689639434048,
+              "structures": 2191,
+              "worst_decile_identity_coverage": 1.0
+            },
+            "interval_width": 0.4781383857142858,
+            "max_attainable": 0.9995606326889279,
+            "n": 2275,
+            "normalized_width_over_target_iqr": 1.9826604151363647,
+            "q": 0.2390691928571429,
+            "rank": 2163,
+            "status": "ATTAINABLE",
+            "undercoverage_gap": 0.0024036379385015127
+          }
+        },
+        "record": {
+          "0.8": {
+            "coverage": {
+              "cluster_simultaneous": 0.804424778761062,
+              "coverage_by_cluster_size_spearman": -0.05536668450441008,
+              "identity_clusters": 2260,
+              "identity_macro": 0.804646017699115,
+              "identity_macro_ci95": [
+                0.7882743362831859,
+                0.8207964601769911
+              ],
+              "record_marginal": 0.8016457340840191,
+              "records": 2309,
+              "structure_group_macro": 0.8032861706983113,
+              "structure_simultaneous": 0.8028297581013236,
+              "structures": 2191,
+              "worst_decile_identity_coverage": 0.0
+            },
+            "interval_width": 0.2710864285714284,
+            "max_attainable": 0.9995689655172414,
+            "n": 2319,
+            "normalized_width_over_target_iqr": 1.1240936663270373,
+            "q": 0.1355432142857142,
+            "rank": 1856,
+            "status": "ATTAINABLE",
+            "undercoverage_gap": -0.0016457340840190238
+          },
+          "0.9": {
+            "coverage": {
+              "cluster_simultaneous": 0.8884955752212389,
+              "coverage_by_cluster_size_spearman": -0.04378587789132333,
+              "identity_clusters": 2260,
+              "identity_macro": 0.8884955752212389,
+              "identity_macro_ci95": [
+                0.8752212389380531,
+                0.9013274336283186
+              ],
+              "record_marginal": 0.8865309657860546,
+              "records": 2309,
+              "structure_group_macro": 0.8881789137380192,
+              "structure_simultaneous": 0.8881789137380192,
+              "structures": 2191,
+              "worst_decile_identity_coverage": 0.0
+            },
+            "interval_width": 0.3648166285714287,
+            "max_attainable": 0.9995689655172414,
+            "n": 2319,
+            "normalized_width_over_target_iqr": 1.5127576238656022,
+            "q": 0.18240831428571436,
+            "rank": 2088,
+            "status": "ATTAINABLE",
+            "undercoverage_gap": 0.013469034213945408
+          },
+          "0.95": {
+            "coverage": {
+              "cluster_simultaneous": 0.9482300884955752,
+              "coverage_by_cluster_size_spearman": -0.02006493546354637,
+              "identity_clusters": 2260,
+              "identity_macro": 0.9482300884955752,
+              "identity_macro_ci95": [
+                0.9389380530973451,
+                0.9570796460176991
+              ],
+              "record_marginal": 0.9475963620614984,
+              "records": 2309,
+              "structure_group_macro": 0.9479689639434048,
+              "structure_simultaneous": 0.9479689639434048,
+              "structures": 2191,
+              "worst_decile_identity_coverage": 1.0
+            },
+            "interval_width": 0.4781383857142858,
+            "max_attainable": 0.9995689655172414,
+            "n": 2319,
+            "normalized_width_over_target_iqr": 1.9826604151363647,
+            "q": 0.2390691928571429,
+            "rank": 2204,
+            "status": "ATTAINABLE",
+            "undercoverage_gap": 0.0024036379385015127
+          }
+        },
+        "structure": {
+          "0.8": {
+            "coverage": {
+              "cluster_simultaneous": 0.802212389380531,
+              "coverage_by_cluster_size_spearman": -0.05428831368247359,
+              "identity_clusters": 2260,
+              "identity_macro": 0.8024336283185841,
+              "identity_macro_ci95": [
+                0.7860619469026549,
+                0.8188053097345133
+              ],
+              "record_marginal": 0.7994802944997834,
+              "records": 2309,
+              "structure_group_macro": 0.8010041077133729,
+              "structure_simultaneous": 0.8005476951163852,
+              "structures": 2191,
+              "worst_decile_identity_coverage": 0.0
+            },
+            "interval_width": 0.2693132285714286,
+            "max_attainable": 0.9995435874030123,
+            "n": 2190,
+            "normalized_width_over_target_iqr": 1.1167408715020257,
+            "q": 0.1346566142857143,
+            "rank": 1753,
+            "status": "ATTAINABLE",
+            "undercoverage_gap": 0.0005197055002166273
+          },
+          "0.9": {
+            "coverage": {
+              "cluster_simultaneous": 0.8867256637168142,
+              "coverage_by_cluster_size_spearman": -0.0522406326423586,
+              "identity_clusters": 2260,
+              "identity_macro": 0.8867256637168142,
+              "identity_macro_ci95": [
+                0.8734513274336283,
+                0.8995575221238938
+              ],
+              "record_marginal": 0.884365526201819,
+              "records": 2309,
+              "structure_group_macro": 0.8863532633500685,
+              "structure_simultaneous": 0.8863532633500685,
+              "structures": 2191,
+              "worst_decile_identity_coverage": 0.0
+            },
+            "interval_width": 0.3627989142857144,
+            "max_attainable": 0.9995435874030123,
+            "n": 2190,
+            "normalized_width_over_target_iqr": 1.5043909200767722,
+            "q": 0.1813994571428572,
+            "rank": 1972,
+            "status": "ATTAINABLE",
+            "undercoverage_gap": 0.01563447379818106
+          },
+          "0.95": {
+            "coverage": {
+              "cluster_simultaneous": 0.9486725663716814,
+              "coverage_by_cluster_size_spearman": -0.020445048998955908,
+              "identity_clusters": 2260,
+              "identity_macro": 0.9486725663716814,
+              "identity_macro_ci95": [
+                0.9398230088495575,
+                0.9579646017699115
+              ],
+              "record_marginal": 0.9480294499783456,
+              "records": 2309,
+              "structure_group_macro": 0.9484253765403925,
+              "structure_simultaneous": 0.9484253765403925,
+              "structures": 2191,
+              "worst_decile_identity_coverage": 1.0
+            },
+            "interval_width": 0.4794969971428571,
+            "max_attainable": 0.9995435874030123,
+            "n": 2190,
+            "normalized_width_over_target_iqr": 1.9882940667725038,
+            "q": 0.23974849857142855,
+            "rank": 2082,
+            "status": "ATTAINABLE",
+            "undercoverage_gap": 0.0019705500216543603
+          }
+        }
+      },
+      "primary_cluster": "pair_group_id_v1",
+      "target_iqr": 0.24116000000000004,
+      "test_records": 2309
+    }
+  },
+  "status": "GATE2C_TEST_COVERAGE_EVALUATED_ONCE"
+}

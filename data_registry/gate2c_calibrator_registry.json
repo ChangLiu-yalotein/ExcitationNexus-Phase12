@@ -1,0 +1,667 @@
+{
+  "final673_accessed": false,
+  "methods": [
+    "record",
+    "structure",
+    "identity"
+  ],
+  "new_point_predictions": false,
+  "nominal_coverage": [
+    0.8,
+    0.9,
+    0.95
+  ],
+  "protocols": {
+    "acceptor_cold": {
+      "ad": {
+        "high_error_threshold": 0.21491928571428576,
+        "score": "acceptor",
+        "score_error_spearman": -0.10829572244988073,
+        "thresholds": {
+          "0.5": 0.5121951219512195,
+          "0.7": 0.3888888888888889,
+          "0.8": 0.325,
+          "0.9": 0.2702702702702703,
+          "1.0": null
+        },
+        "validation_all": {
+          "identity_macro_mae": 0.09652867191078515,
+          "record_mae": 0.09708869839054009
+        },
+        "validation_at_80pct_threshold": {
+          "identity_macro_mae": 0.0904399167720075,
+          "record_mae": 0.0909444721199937
+        },
+        "validation_retained_fraction": 0.810738255033557
+      },
+      "primary_cluster": "acceptor_structure_group_id_v1",
+      "quantiles": {
+        "identity": {
+          "0.8": {
+            "max_attainable": 0.9696969696969697,
+            "n": 32,
+            "q": 0.4282229714285714,
+            "rank": 27,
+            "status": "ATTAINABLE"
+          },
+          "0.9": {
+            "max_attainable": 0.9696969696969697,
+            "n": 32,
+            "q": 0.4697793971428572,
+            "rank": 30,
+            "status": "ATTAINABLE"
+          },
+          "0.95": {
+            "max_attainable": 0.9696969696969697,
+            "n": 32,
+            "q": 0.4965133428571429,
+            "rank": 32,
+            "status": "ATTAINABLE"
+          }
+        },
+        "record": {
+          "0.8": {
+            "max_attainable": 0.9995527728085868,
+            "n": 2235,
+            "q": 0.15212335,
+            "rank": 1789,
+            "status": "ATTAINABLE"
+          },
+          "0.9": {
+            "max_attainable": 0.9995527728085868,
+            "n": 2235,
+            "q": 0.21520292857142864,
+            "rank": 2013,
+            "status": "ATTAINABLE"
+          },
+          "0.95": {
+            "max_attainable": 0.9995527728085868,
+            "n": 2235,
+            "q": 0.2771448571428572,
+            "rank": 2125,
+            "status": "ATTAINABLE"
+          }
+        },
+        "structure": {
+          "0.8": {
+            "max_attainable": 0.9995466908431551,
+            "n": 2205,
+            "q": 0.15225710142857152,
+            "rank": 1765,
+            "status": "ATTAINABLE"
+          },
+          "0.9": {
+            "max_attainable": 0.9995466908431551,
+            "n": 2205,
+            "q": 0.21647225000000003,
+            "rank": 1986,
+            "status": "ATTAINABLE"
+          },
+          "0.95": {
+            "max_attainable": 0.9995466908431551,
+            "n": 2205,
+            "q": 0.2777527571428572,
+            "rank": 2096,
+            "status": "ATTAINABLE"
+          }
+        }
+      },
+      "score_counts": {
+        "identity": 32,
+        "record": 2235,
+        "structure": 2205
+      },
+      "validation_records": 2235
+    },
+    "both_cold": {
+      "ad": {
+        "high_error_threshold": 0.20279892857142856,
+        "score": "min_donor_acceptor",
+        "score_error_spearman": null,
+        "thresholds": {
+          "0.5": 1.0,
+          "0.7": 1.0,
+          "0.8": 1.0,
+          "0.9": 1.0,
+          "1.0": null
+        },
+        "validation_all": {
+          "identity_macro_mae": 0.08933487704332516,
+          "record_mae": 0.09034658404257015
+        },
+        "validation_at_80pct_threshold": {
+          "identity_macro_mae": 0.08933487704332516,
+          "record_mae": 0.09034658404257015
+        },
+        "validation_retained_fraction": 1.0
+      },
+      "primary_cluster": "two_way_donor_acceptor",
+      "quantiles": {
+        "acceptor_identity_sensitivity": {
+          "0.8": {
+            "max_attainable": 0.9965397923875432,
+            "n": 288,
+            "q": 0.2571991142857143,
+            "rank": 232,
+            "status": "ATTAINABLE"
+          },
+          "0.9": {
+            "max_attainable": 0.9965397923875432,
+            "n": 288,
+            "q": 0.31531380142857135,
+            "rank": 261,
+            "status": "ATTAINABLE"
+          },
+          "0.95": {
+            "max_attainable": 0.9965397923875432,
+            "n": 288,
+            "q": 0.36983541428571426,
+            "rank": 275,
+            "status": "ATTAINABLE"
+          }
+        },
+        "donor_identity_sensitivity": {
+          "0.8": {
+            "max_attainable": 0.9928057553956835,
+            "n": 138,
+            "q": 0.30428674857142857,
+            "rank": 112,
+            "status": "ATTAINABLE"
+          },
+          "0.9": {
+            "max_attainable": 0.9928057553956835,
+            "n": 138,
+            "q": 0.3665430285714285,
+            "rank": 126,
+            "status": "ATTAINABLE"
+          },
+          "0.95": {
+            "max_attainable": 0.9928057553956835,
+            "n": 138,
+            "q": 0.4433237542857143,
+            "rank": 133,
+            "status": "ATTAINABLE"
+          }
+        },
+        "record": {
+          "0.8": {
+            "max_attainable": 0.9994422755158952,
+            "n": 1792,
+            "q": 0.14812185999999994,
+            "rank": 1435,
+            "status": "ATTAINABLE"
+          },
+          "0.9": {
+            "max_attainable": 0.9994422755158952,
+            "n": 1792,
+            "q": 0.20327269714285712,
+            "rank": 1614,
+            "status": "ATTAINABLE"
+          },
+          "0.95": {
+            "max_attainable": 0.9994422755158952,
+            "n": 1792,
+            "q": 0.24534605714285718,
+            "rank": 1704,
+            "status": "ATTAINABLE"
+          }
+        },
+        "structure": {
+          "0.8": {
+            "max_attainable": 0.9993838570548367,
+            "n": 1622,
+            "q": 0.14547561428571426,
+            "rank": 1299,
+            "status": "ATTAINABLE"
+          },
+          "0.9": {
+            "max_attainable": 0.9993838570548367,
+            "n": 1622,
+            "q": 0.19933162714285718,
+            "rank": 1461,
+            "status": "ATTAINABLE"
+          },
+          "0.95": {
+            "max_attainable": 0.9993838570548367,
+            "n": 1622,
+            "q": 0.2481475428571428,
+            "rank": 1542,
+            "status": "ATTAINABLE"
+          }
+        }
+      },
+      "score_counts": {
+        "acceptor_identity_sensitivity": 288,
+        "donor_identity_sensitivity": 138,
+        "record": 1792,
+        "structure": 1622
+      },
+      "validation_records": 1792
+    },
+    "donor_cold": {
+      "ad": {
+        "high_error_threshold": 0.20555843571428578,
+        "score": "donor",
+        "score_error_spearman": 0.03986330807870942,
+        "thresholds": {
+          "0.5": 0.5072463768115942,
+          "0.7": 0.34177215189873417,
+          "0.8": 0.21428571428571427,
+          "0.9": 0.14634146341463414,
+          "1.0": null
+        },
+        "validation_all": {
+          "identity_macro_mae": 0.089734997576138,
+          "record_mae": 0.09384738240503901
+        },
+        "validation_at_80pct_threshold": {
+          "identity_macro_mae": 0.08899421714564817,
+          "record_mae": 0.09370728034073963
+        },
+        "validation_retained_fraction": 0.8576544315129812
+      },
+      "primary_cluster": "donor_structure_group_id_v1",
+      "quantiles": {
+        "identity": {
+          "0.8": {
+            "max_attainable": 0.9375,
+            "n": 15,
+            "q": 0.45672274428571424,
+            "rank": 13,
+            "status": "ATTAINABLE"
+          },
+          "0.9": {
+            "max_attainable": 0.9375,
+            "n": 15,
+            "q": 0.50833567,
+            "rank": 15,
+            "status": "ATTAINABLE"
+          },
+          "0.95": {
+            "max_attainable": 0.9375,
+            "n": 15,
+            "q": null,
+            "rank": 16,
+            "status": "UNATTAINABLE_FINITE_SAMPLE"
+          }
+        },
+        "record": {
+          "0.8": {
+            "max_attainable": 0.9995525727069351,
+            "n": 2234,
+            "q": 0.1522346428571429,
+            "rank": 1788,
+            "status": "ATTAINABLE"
+          },
+          "0.9": {
+            "max_attainable": 0.9995525727069351,
+            "n": 2234,
+            "q": 0.20565889999999998,
+            "rank": 2012,
+            "status": "ATTAINABLE"
+          },
+          "0.95": {
+            "max_attainable": 0.9995525727069351,
+            "n": 2234,
+            "q": 0.25517372857142856,
+            "rank": 2124,
+            "status": "ATTAINABLE"
+          }
+        },
+        "structure": {
+          "0.8": {
+            "max_attainable": 0.9995448338643604,
+            "n": 2196,
+            "q": 0.15227130142857137,
+            "rank": 1758,
+            "status": "ATTAINABLE"
+          },
+          "0.9": {
+            "max_attainable": 0.9995448338643604,
+            "n": 2196,
+            "q": 0.20529535714285713,
+            "rank": 1978,
+            "status": "ATTAINABLE"
+          },
+          "0.95": {
+            "max_attainable": 0.9995448338643604,
+            "n": 2196,
+            "q": 0.25517372857142856,
+            "rank": 2088,
+            "status": "ATTAINABLE"
+          }
+        }
+      },
+      "score_counts": {
+        "identity": 15,
+        "record": 2234,
+        "structure": 2196
+      },
+      "validation_records": 2234
+    },
+    "full_scaffold_cold": {
+      "ad": {
+        "high_error_threshold": 0.19792014285714288,
+        "score": "full",
+        "score_error_spearman": -0.018082397169939313,
+        "thresholds": {
+          "0.5": 0.8433734939759037,
+          "0.7": 0.8125,
+          "0.8": 0.7888888888888889,
+          "0.9": 0.7532467532467533,
+          "1.0": null
+        },
+        "validation_all": {
+          "identity_macro_mae": 0.08608736323035047,
+          "record_mae": 0.08797503202623908
+        },
+        "validation_at_80pct_threshold": {
+          "identity_macro_mae": 0.08548578622833021,
+          "record_mae": 0.08680313447882865
+        },
+        "validation_retained_fraction": 0.8007985803016859
+      },
+      "primary_cluster": "full_scaffold_group_id_v1",
+      "quantiles": {
+        "identity": {
+          "0.8": {
+            "max_attainable": 0.9986338797814208,
+            "n": 731,
+            "q": 0.20342504285714286,
+            "rank": 586,
+            "status": "ATTAINABLE"
+          },
+          "0.9": {
+            "max_attainable": 0.9986338797814208,
+            "n": 731,
+            "q": 0.26595777285714284,
+            "rank": 659,
+            "status": "ATTAINABLE"
+          },
+          "0.95": {
+            "max_attainable": 0.9986338797814208,
+            "n": 731,
+            "q": 0.32086060285714285,
+            "rank": 696,
+            "status": "ATTAINABLE"
+          }
+        },
+        "record": {
+          "0.8": {
+            "max_attainable": 0.9995565410199556,
+            "n": 2254,
+            "q": 0.13921610000000006,
+            "rank": 1804,
+            "status": "ATTAINABLE"
+          },
+          "0.9": {
+            "max_attainable": 0.9995565410199556,
+            "n": 2254,
+            "q": 0.1980617428571429,
+            "rank": 2030,
+            "status": "ATTAINABLE"
+          },
+          "0.95": {
+            "max_attainable": 0.9995565410199556,
+            "n": 2254,
+            "q": 0.25457761428571435,
+            "rank": 2143,
+            "status": "ATTAINABLE"
+          }
+        },
+        "structure": {
+          "0.8": {
+            "max_attainable": 0.9995446265938069,
+            "n": 2195,
+            "q": 0.13820184428571425,
+            "rank": 1757,
+            "status": "ATTAINABLE"
+          },
+          "0.9": {
+            "max_attainable": 0.9995446265938069,
+            "n": 2195,
+            "q": 0.1976998571428571,
+            "rank": 1977,
+            "status": "ATTAINABLE"
+          },
+          "0.95": {
+            "max_attainable": 0.9995446265938069,
+            "n": 2195,
+            "q": 0.2545107999999999,
+            "rank": 2087,
+            "status": "ATTAINABLE"
+          }
+        }
+      },
+      "score_counts": {
+        "identity": 731,
+        "record": 2254,
+        "structure": 2195
+      },
+      "validation_records": 2254
+    },
+    "iid": {
+      "ad": {
+        "high_error_threshold": 0.18879643428571427,
+        "score": "full",
+        "score_error_spearman": 0.0275210098731147,
+        "thresholds": {
+          "0.5": 0.8811881188118812,
+          "0.7": 0.851063829787234,
+          "0.8": 0.83,
+          "0.9": 0.797979797979798,
+          "1.0": null
+        },
+        "validation_all": {
+          "identity_macro_mae": 0.08666170353726001,
+          "record_mae": 0.08680688280331622
+        },
+        "validation_at_80pct_threshold": {
+          "identity_macro_mae": 0.0867785493913682,
+          "record_mae": 0.08715799118815708
+        },
+        "validation_retained_fraction": 0.8003464703334777
+      },
+      "primary_cluster": "structure_group_id_v1",
+      "quantiles": {
+        "identity": {
+          "0.8": {
+            "max_attainable": 0.9995446265938069,
+            "n": 2195,
+            "q": 0.1380698142857143,
+            "rank": 1757,
+            "status": "ATTAINABLE"
+          },
+          "0.9": {
+            "max_attainable": 0.9995446265938069,
+            "n": 2195,
+            "q": 0.1876131857142857,
+            "rank": 1977,
+            "status": "ATTAINABLE"
+          },
+          "0.95": {
+            "max_attainable": 0.9995446265938069,
+            "n": 2195,
+            "q": 0.2519980357142857,
+            "rank": 2087,
+            "status": "ATTAINABLE"
+          }
+        },
+        "record": {
+          "0.8": {
+            "max_attainable": 0.9995670995670995,
+            "n": 2309,
+            "q": 0.13839369999999995,
+            "rank": 1848,
+            "status": "ATTAINABLE"
+          },
+          "0.9": {
+            "max_attainable": 0.9995670995670995,
+            "n": 2309,
+            "q": 0.18879643428571427,
+            "rank": 2079,
+            "status": "ATTAINABLE"
+          },
+          "0.95": {
+            "max_attainable": 0.9995670995670995,
+            "n": 2309,
+            "q": 0.2519980357142857,
+            "rank": 2195,
+            "status": "ATTAINABLE"
+          }
+        },
+        "structure": {
+          "0.8": {
+            "max_attainable": 0.9995446265938069,
+            "n": 2195,
+            "q": 0.1380698142857143,
+            "rank": 1757,
+            "status": "ATTAINABLE"
+          },
+          "0.9": {
+            "max_attainable": 0.9995446265938069,
+            "n": 2195,
+            "q": 0.1876131857142857,
+            "rank": 1977,
+            "status": "ATTAINABLE"
+          },
+          "0.95": {
+            "max_attainable": 0.9995446265938069,
+            "n": 2195,
+            "q": 0.2519980357142857,
+            "rank": 2087,
+            "status": "ATTAINABLE"
+          }
+        }
+      },
+      "score_counts": {
+        "identity": 2195,
+        "record": 2309,
+        "structure": 2195
+      },
+      "validation_records": 2309
+    },
+    "pair_cold": {
+      "ad": {
+        "high_error_threshold": 0.18240831428571436,
+        "score": "full",
+        "score_error_spearman": 0.01581252553529619,
+        "thresholds": {
+          "0.5": 0.8837209302325582,
+          "0.7": 0.8529411764705882,
+          "0.8": 0.8333333333333334,
+          "0.9": 0.797752808988764,
+          "1.0": null
+        },
+        "validation_all": {
+          "identity_macro_mae": 0.08491739748822605,
+          "record_mae": 0.0858530097603647
+        },
+        "validation_at_80pct_threshold": {
+          "identity_macro_mae": 0.0839144193776289,
+          "record_mae": 0.08491898931600336
+        },
+        "validation_retained_fraction": 0.8033635187580854
+      },
+      "primary_cluster": "pair_group_id_v1",
+      "quantiles": {
+        "identity": {
+          "0.8": {
+            "max_attainable": 0.9995606326889279,
+            "n": 2275,
+            "q": 0.1346566142857143,
+            "rank": 1821,
+            "status": "ATTAINABLE"
+          },
+          "0.9": {
+            "max_attainable": 0.9995606326889279,
+            "n": 2275,
+            "q": 0.1813994571428572,
+            "rank": 2049,
+            "status": "ATTAINABLE"
+          },
+          "0.95": {
+            "max_attainable": 0.9995606326889279,
+            "n": 2275,
+            "q": 0.2390691928571429,
+            "rank": 2163,
+            "status": "ATTAINABLE"
+          }
+        },
+        "record": {
+          "0.8": {
+            "max_attainable": 0.9995689655172414,
+            "n": 2319,
+            "q": 0.1355432142857142,
+            "rank": 1856,
+            "status": "ATTAINABLE"
+          },
+          "0.9": {
+            "max_attainable": 0.9995689655172414,
+            "n": 2319,
+            "q": 0.18240831428571436,
+            "rank": 2088,
+            "status": "ATTAINABLE"
+          },
+          "0.95": {
+            "max_attainable": 0.9995689655172414,
+            "n": 2319,
+            "q": 0.2390691928571429,
+            "rank": 2204,
+            "status": "ATTAINABLE"
+          }
+        },
+        "structure": {
+          "0.8": {
+            "max_attainable": 0.9995435874030123,
+            "n": 2190,
+            "q": 0.1346566142857143,
+            "rank": 1753,
+            "status": "ATTAINABLE"
+          },
+          "0.9": {
+            "max_attainable": 0.9995435874030123,
+            "n": 2190,
+            "q": 0.1813994571428572,
+            "rank": 1972,
+            "status": "ATTAINABLE"
+          },
+          "0.95": {
+            "max_attainable": 0.9995435874030123,
+            "n": 2190,
+            "q": 0.23974849857142855,
+            "rank": 2082,
+            "status": "ATTAINABLE"
+          }
+        }
+      },
+      "score_counts": {
+        "identity": 2275,
+        "record": 2319,
+        "structure": 2190
+      },
+      "validation_records": 2319
+    }
+  },
+  "status": "GATE2C_VALIDATION_CALIBRATORS_FROZEN",
+  "test_residuals_used": false,
+  "validation_similarity": {
+    "fingerprint": {
+      "n_bits": 2048,
+      "radius": 2,
+      "use_chirality": true
+    },
+    "parse_failures": {
+      "acceptor_cold": 0,
+      "both_cold": 0,
+      "donor_cold": 0,
+      "full_scaffold_cold": 0,
+      "iid": 0,
+      "pair_cold": 0
+    },
+    "path": "runs/gate2c_uq/similarity_validation_and_iid_test_v1.parquet",
+    "resumed_after_precalibration_process_exit": true,
+    "rows": 15462,
+    "sha256": "dc8c0266d1b1068b6a04b88d2d987329e1db76905111a0a7fb1377b4a2279932"
+  }
+}

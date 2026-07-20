@@ -1,0 +1,32 @@
+{
+  "ad_miscoverage_correlation": "NOT_COMPUTED_FAIL_CLOSED",
+  "authorized_validation_extraction": true,
+  "calibrator_registry_sha256": "c52031aad76d9e6e616f5d6ea5113652f79432abcbee6cfa8b01ffdfab2d5333",
+  "coverage_metrics_sha256": "7c03cb5a8a3718e503f37ba468d2f0f3e086aebf5f773ac8701c4b84570af221",
+  "decision_labels": [
+    "UQ_EMPIRICALLY_CALIBRATED_OOD",
+    "BOTH_COLD_UQ_UNSUPPORTED",
+    "AD_SCORE_NOT_VALIDATED"
+  ],
+  "exchangeability": {
+    "acceptor_cold": "EXCHANGEABILITY_UNVERIFIED_OOD",
+    "both_cold": "BLOCKED_CROSSED_CLUSTER_EXCHANGEABILITY",
+    "donor_cold": "INSUFFICIENT_CALIBRATION_CLUSTERS",
+    "full_scaffold_cold": "EXCHANGEABILITY_UNVERIFIED_OOD",
+    "iid": "APPROXIMATE_EXCHANGEABILITY",
+    "pair_cold": "EXCHANGEABILITY_UNVERIFIED_OOD"
+  },
+  "final673_accessed": false,
+  "gate2a_evaluator_calls": 0,
+  "main_parquet_reads_after_extraction": 0,
+  "new_point_predictions": false,
+  "point_models_trained": false,
+  "second_evaluation_fail_closed": true,
+  "status": "GATE2C_DONE_UQ_APPLICABILITY_AUDIT",
+  "test_once_lock_consumed": true,
+  "tests": {
+    "full_suite": "125 passed, 4 warnings",
+    "gate2c_contract": "8 passed"
+  },
+  "validation_label_artifact_sha256": "5d59314b515e2487efdc54061d6d6c368bb3f2e6e51dda09a4dea98cf959e1cc"
+}
