@@ -1,0 +1,63 @@
+{
+  "decision": "ROLE_AWARE_2D_NOT_ADMITTED",
+  "execution_incidents": [
+    {
+      "cause": "object-dtype molecule_id in local NPZ rejected by allow_pickle=False",
+      "scientific_effect": "zero model/preprocessor/prediction outputs; loader fixed to use frozen structure-registry IDs; same preregistered run launched once",
+      "stage": "first training launch"
+    },
+    {
+      "cause": "numpy.float32 was not JSON serializable",
+      "scientific_effect": "models unchanged; NumPy scalar conversion added; identical validation-only analysis serialized deterministically",
+      "stage": "validation analysis serialization"
+    }
+  ],
+  "feature_artifact_sha256": "2acdb73cf1600722d97bf6bfad89675c1c9dfa1edecbfd3a24c0a8d18d45ebe4",
+  "final673_accessed": false,
+  "gpu": {
+    "compute_pid_before_launch": false,
+    "inventory_free": 7,
+    "memory_used_mib_before_launch": 15,
+    "physical_gpu": 0,
+    "utilization_before_launch_percent": 0
+  },
+  "main_parquet_accessed_after_authorized_extraction": false,
+  "model_registry_sha256": "36e51041cc8eb889dc20485d86a59caa54d351348294b4f79cbf8896d3ddcabb",
+  "new_models": 12,
+  "primary": {
+    "acceptor_C_minus_B": {
+      "ci95": [
+        -0.0037223009526630288,
+        0.010600915985288931
+      ],
+      "clusters": 32,
+      "point": 0.002325164652253536
+    },
+    "iid_C_minus_B": {
+      "ci95": [
+        -0.0020697091935289102,
+        0.0002410894711266546
+      ],
+      "clusters": 2195,
+      "point": -0.0009053189402416725
+    },
+    "thresholds": {
+      "acceptor_bootstrap_ci_upper_max_eV": 0.0,
+      "acceptor_point_delta_max_eV": -0.002,
+      "iid_noninferiority_ci_upper_max_eV": 0.002
+    }
+  },
+  "status": "GATE2D1_DONE",
+  "test_artifacts_accessed": false,
+  "tests": {
+    "full_suite": "133 passed, 4 warnings",
+    "gate2d1_contract": "8 passed"
+  },
+  "train_label_extraction": {
+    "arrow_reads": 1,
+    "authorization": "AUTHORIZED_MINIMAL_PROTOCOL_LOCAL_TRAIN_LABEL_EXTRACTION",
+    "registry_sha256": "5219b89359a0964d059056822eb3e4917cdf2f402a44100bc31bdc95e0011f6d",
+    "union_count": 1017
+  },
+  "validation_only": true
+}

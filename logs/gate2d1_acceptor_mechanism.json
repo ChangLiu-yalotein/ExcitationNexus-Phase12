@@ -1,0 +1,156 @@
+{
+  "acceptor_fingerprint_collision_structures": 2,
+  "acceptor_identities": 32,
+  "collision_blocker": false,
+  "collision_structures_in_validation": 0,
+  "delta_vs_heteroatom_fraction_spearman": 0.2509401937206338,
+  "delta_vs_identity_size_spearman": 0.019627632111189928,
+  "delta_vs_similarity_spearman": -0.2650536167304707,
+  "delta_vs_target_range_spearman": 0.0751466275659824,
+  "feature_importance_and_shap": {
+    "B_C0_Wide_1536": {
+      "blocks": {
+        "full_descriptors": {
+          "absolute_shap_fraction": 0.40324708819389343,
+          "gain_fraction": 0.0348638925270435,
+          "gain_sum": 2.085589673370123,
+          "mean_absolute_tree_shap": 0.00584216695278883
+        },
+        "full_fingerprint": {
+          "absolute_shap_fraction": 0.5967526435852051,
+          "gain_fraction": 0.9651361074729565,
+          "gain_sum": 57.73531735106371,
+          "mean_absolute_tree_shap": 0.00011257341975579038
+        }
+      },
+      "shap_path": "runs/gate2d1_role_aware_2d/models/acceptor_cold/B_C0_Wide_1536/validation_tree_shap.npz",
+      "shap_sha256": "4ec6aaf156d68c9018828e8c1e5c6c97ee4feb5a3d06ee1cf983487dd1a4752c"
+    },
+    "C_RA2D_1536": {
+      "blocks": {
+        "acceptor_fingerprint": {
+          "absolute_shap_fraction": 0.20442210137844086,
+          "gain_fraction": 0.40505593762288844,
+          "gain_sum": 35.725179841712816,
+          "mean_absolute_tree_shap": 0.0001326937781414017
+        },
+        "donor_fingerprint": {
+          "absolute_shap_fraction": 0.1808510571718216,
+          "gain_fraction": 0.2580160988348994,
+          "gain_sum": 22.75653971900465,
+          "mean_absolute_tree_shap": 0.00011739342880900949
+        },
+        "full_descriptors": {
+          "absolute_shap_fraction": 0.3523605763912201,
+          "gain_fraction": 0.02028218268930885,
+          "gain_sum": 1.7888507656753063,
+          "mean_absolute_tree_shap": 0.005855311639606953
+        },
+        "full_fingerprint": {
+          "absolute_shap_fraction": 0.2623663544654846,
+          "gain_fraction": 0.3166457808529033,
+          "gain_sum": 27.92756855627522,
+          "mean_absolute_tree_shap": 0.0001703063608147204
+        }
+      },
+      "shap_path": "runs/gate2d1_role_aware_2d/models/acceptor_cold/C_RA2D_1536/validation_tree_shap.npz",
+      "shap_sha256": "0cabd0a68b047c9e6e1516a4ce91634cee7c4a85660a2f489302caff752fdda4"
+    }
+  },
+  "identities_improved_fraction": 0.59375,
+  "low_similarity_quartile_mean_delta_CB": 0.020294592227934203,
+  "unique_acceptor_scaffolds": 26,
+  "worst_10_anonymous": [
+    {
+      "acceptor_structure_group_id_v1": "e22c200594e0f96990eb06db29a763f90dd24da6dc3113be4d7b122b4bb6a991",
+      "delta_CB": -0.008237191665048231,
+      "mae_B": 0.18246501713724636,
+      "mae_C": 0.1742278254721981,
+      "records": 63,
+      "similarity": 0.2647058823529412,
+      "target_range": 0.5291842857142858
+    },
+    {
+      "acceptor_structure_group_id_v1": "3ab0dc8e1430cd0692ceb594a1ff02ae7ac8705b73fa24130e5dce1c1cb5a001",
+      "delta_CB": -0.00024638066738436775,
+      "mae_B": 0.14947549968868754,
+      "mae_C": 0.14922911902130317,
+      "records": 92,
+      "similarity": 0.3055555555555556,
+      "target_range": 0.8909225714285716
+    },
+    {
+      "acceptor_structure_group_id_v1": "4372b6b5398a3530ddec940fd75b01b948aa41760eedd407da26bb93b9b0e484",
+      "delta_CB": 0.0514828130853275,
+      "mae_B": 0.13899568766389575,
+      "mae_C": 0.19047850074922323,
+      "records": 62,
+      "similarity": 0.3,
+      "target_range": 0.4732177142857143
+    },
+    {
+      "acceptor_structure_group_id_v1": "4e4b5160c69cd44b83bdd43fbdfca7716440b0f267a643da8e5811c1029612bb",
+      "delta_CB": -0.006228769319091529,
+      "mae_B": 0.1266164830602485,
+      "mae_C": 0.12038771374115695,
+      "records": 88,
+      "similarity": 0.5853658536585366,
+      "target_range": 0.7792874285714286
+    },
+    {
+      "acceptor_structure_group_id_v1": "5789615f329baa3e93578e0311fd46cb251008184ccd0d3173e9b311a9796905",
+      "delta_CB": 0.004309474130174387,
+      "mae_B": 0.12392549265917784,
+      "mae_C": 0.12823496678935223,
+      "records": 92,
+      "similarity": 0.3953488372093023,
+      "target_range": 0.837446
+    },
+    {
+      "acceptor_structure_group_id_v1": "b573cce04ebd370681523e4e6ab2950afae9539a8b804e6b7c658c78b6564f1e",
+      "delta_CB": 0.008253166972550897,
+      "mae_B": 0.12128603266662416,
+      "mae_C": 0.12953919963917507,
+      "records": 60,
+      "similarity": 0.7733333333333333,
+      "target_range": 0.8257314285714286
+    },
+    {
+      "acceptor_structure_group_id_v1": "7de942231a339ac933274e4d46fd665294bf05b93ca76e61fe2828f52926130a",
+      "delta_CB": -0.002426171817847659,
+      "mae_B": 0.11979693698431763,
+      "mae_C": 0.11737076516646996,
+      "records": 64,
+      "similarity": 0.27631578947368424,
+      "target_range": 0.7483982857142857
+    },
+    {
+      "acceptor_structure_group_id_v1": "332a4dbaf8abdf7c07b1b83002efd6dbe8f093f0ff2df2ebbc2311f8bc3303b8",
+      "delta_CB": 0.09358807884841006,
+      "mae_B": 0.11150234568036103,
+      "mae_C": 0.2050904245287711,
+      "records": 68,
+      "similarity": 0.3157894736842105,
+      "target_range": 0.5384288571428572
+    },
+    {
+      "acceptor_structure_group_id_v1": "f64b0ff6666ec6e65f99a0b83f2df1b19050916e68212947dda4fc0b07b3e2a5",
+      "delta_CB": -0.030509620153011046,
+      "mae_B": 0.10738111653280441,
+      "mae_C": 0.07687149637979336,
+      "records": 74,
+      "similarity": 0.475,
+      "target_range": 0.8235237142857141
+    },
+    {
+      "acceptor_structure_group_id_v1": "7215285a44dde676de126120297f4525b5405ab9be8810442f22abcdb10c058e",
+      "delta_CB": -0.0015881141382505972,
+      "mae_B": 0.10439157114944136,
+      "mae_C": 0.10280345701119077,
+      "records": 34,
+      "similarity": 0.7066666666666667,
+      "target_range": 0.714344857142857
+    }
+  ],
+  "worst_B_identities_improved": 6
+}

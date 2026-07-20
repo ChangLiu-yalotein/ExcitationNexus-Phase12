@@ -1,0 +1,84 @@
+{
+  "acceptor": {
+    "collision_count": 1,
+    "structures": 352,
+    "unique_fingerprints": 351
+  },
+  "alias_consistency": true,
+  "ambiguous_role_records_used_for_component_inference": 0,
+  "arms": {
+    "A_C0_512_reference": 532,
+    "B_C0_Wide_1536": 1556,
+    "C_RA2D_1536": 1556
+  },
+  "artifact_path": "runs/gate2d1_role_aware_2d/features/role_aware_features_v1.npz",
+  "artifact_sha256": "2acdb73cf1600722d97bf6bfad89675c1c9dfa1edecbfd3a24c0a8d18d45ebe4",
+  "bit_density": {
+    "acceptor512": 0.1065654968034097,
+    "donor512": 0.10837047253762654,
+    "full1536": 0.05782568905667288,
+    "full512": 0.16533432047482685
+  },
+  "blocks": {
+    "acceptor512": {
+      "sha256": "42aea8182d5633c1073a4ef1fcae6d2f2f5e0450d5d7398cd395760210465acf",
+      "shape": [
+        15016,
+        512
+      ]
+    },
+    "descriptors": {
+      "sha256": "9ab836ad9eb9834bfb11518e5b1119789b76a827343836d0c017f98737025f0d",
+      "shape": [
+        15016,
+        20
+      ]
+    },
+    "donor512": {
+      "sha256": "806be6cc7fb8b9f3df8ef18780eb24b91afc852e5335ee8ed05933111f777ea0",
+      "shape": [
+        15016,
+        512
+      ]
+    },
+    "full1536": {
+      "sha256": "a588e562881f1d1f61bef75b7aea6f16f3443b4c9221ae226069362f1b991e6c",
+      "shape": [
+        15016,
+        1536
+      ]
+    },
+    "full512": {
+      "sha256": "e31ddfcca7d4862a4f8fb86a66d9340a2cdc6bcaf78221c77d14cc4771994399",
+      "shape": [
+        15016,
+        512
+      ]
+    }
+  },
+  "c0_exact_match_records": 15016,
+  "content_sha256": "e6affd030a137e9d6be96f6f2acf043cedce87303d9422d91e61732d4a4f29e4",
+  "donor": {
+    "collision_count": 3,
+    "structures": 154,
+    "unique_fingerprints": 151
+  },
+  "input_order_invariant": true,
+  "parse": {
+    "acceptor_fallback_unique": 59,
+    "acceptor_success": 15016,
+    "acceptor_wildcard_records": 15016,
+    "donor_fallback_unique": 32,
+    "donor_success": 15016,
+    "donor_wildcard_records": 15016,
+    "full_fallback_unique": 0,
+    "full_success": 15016,
+    "wildcard_replaced_with_carbon": false
+  },
+  "radius": 2,
+  "rdkit_version": "2025.09.6",
+  "records": 15016,
+  "status": "GATE2D1_TARGET_FREE_FEATURES_FROZEN",
+  "target_columns": [],
+  "use_chirality": false
+}

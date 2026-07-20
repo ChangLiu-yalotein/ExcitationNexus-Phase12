@@ -1,0 +1,12 @@
+{
+  "status": "LOCKED_BEFORE_FEATURE_CONSTRUCTION_AND_MODEL_FITTING",
+  "locked_utc": "2026-07-20T15:03:00Z",
+  "config_path": "configs/gate2d1_role_aware_2d_v1.json",
+  "config_sha256": "1be8c8d77f0bd6bc4d002580b3d713bc7d0b954c7fdf0196a6adb441a22289af",
+  "preregistration_report_sha256": "f1985200bb5f3de64d12f2102dd2b2531b9ab59e3009716e4e175ad6e0b005b5",
+  "train_label_extraction_registry_sha256": "5219b89359a0964d059056822eb3e4917cdf2f402a44100bc31bdc95e0011f6d",
+  "authorization": "AUTHORIZED_MINIMAL_PROTOCOL_LOCAL_TRAIN_LABEL_EXTRACTION",
+  "test_results_seen_before_lock": false,
+  "validation_results_seen_before_lock": false,
+  "amendment_policy": "Never overwrite v1; any correction requires explicit v2."
+}

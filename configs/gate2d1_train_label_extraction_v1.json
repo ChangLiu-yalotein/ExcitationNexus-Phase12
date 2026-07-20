@@ -1,0 +1,24 @@
+{
+  "version": "gate2d1_train_label_extraction_v1",
+  "authorization": "AUTHORIZED_MINIMAL_PROTOCOL_LOCAL_TRAIN_LABEL_EXTRACTION",
+  "source_table": "/home/changliu/ExcitationNexus_Data_v2/tables/molecule_values_v3.parquet",
+  "source_table_sha256": "e7587b1546039f099a4dbd0d352e98885bb2ebdbdcfa18884dd4355eed815a83",
+  "columns": ["molecule_id", "tddft_coulomb_attraction_eV_eps3p5_proxy"],
+  "expected_union_count": 1017,
+  "existing_labels": {
+    "iid_train_val": {"path": "runs/gate1b2_3d_admission/prepared/train_val_targets.parquet", "sha256": "44d7243f5cbef1e2347c2b4983efc8c708600f57193593e1e6c9d966265d54f0"},
+    "gate2c_validation_union": {"path": "runs/gate2c_uq/calibration_labels_v1.parquet", "sha256": "5d59314b515e2487efdc54061d6d6c368bb3f2e6e51dda09a4dea98cf959e1cc"}
+  },
+  "protocols": {
+    "donor_cold": {"manifest": "manifests/split_donor_cold_v1.csv", "sha256": "505e4bbe4ed20900ed66721d20df5442854c0f0ea04f5885df330bde111427cd", "expected_missing_train": 833},
+    "acceptor_cold": {"manifest": "manifests/split_acceptor_cold_v1.csv", "sha256": "659992cc7413094fd17da2281902aa74f261307d98648a973254bd472b5ecc65", "expected_missing_train": 835},
+    "pair_cold": {"manifest": "manifests/split_pair_cold_v1.csv", "sha256": "06aaee7d7756957bc42f7d4e221ffd5b20916be69b3116c3bbbe017eb02f4825", "expected_missing_train": 837},
+    "both_cold": {"manifest": "manifests/split_both_cold_external_test_v1.csv", "sha256": "f74f40c4a2f5e7d91214ebdabc3e8f2d1a48a3c106509bb8ab7a3c846b83cb16", "expected_missing_train": 766},
+    "full_scaffold_cold": {"manifest": "manifests/split_full_scaffold_cold_v1.csv", "sha256": "d395020eccfa6e8b73d50bc788a11261d308403a731a9e448040ffe7d238a897", "expected_missing_train": 862}
+  },
+  "output_directory": "runs/gate2d1_role_aware_2d/train_label_supplements",
+  "registry": "data_registry/gate2d1_train_label_extraction_registry.json",
+  "arrow_reads": 1,
+  "generic_union_output_forbidden": true,
+  "final673_access": false
+}

@@ -40,3 +40,5 @@
 - [x] Gate 2-B: audit OOD uncertainty at held-out donor/acceptor/pair/scaffold and crossed-cluster inference units.
 
 - [x] Gate 2-C: freeze validation-only conformal calibrators and audit IID/OOD coverage plus target-free applicability-domain filtering.
+
+- [x] Gate 2-D1: test equal-budget role-separated donor/acceptor 2D fingerprints on validation only; decision `ROLE_AWARE_2D_NOT_ADMITTED`.

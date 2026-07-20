@@ -1,0 +1,80 @@
+{
+  "arrow_reads": 1,
+  "completed_utc": "2026-07-20T14:52:31.888498+00:00",
+  "final673_accessed": false,
+  "generic_union_file_written": false,
+  "protocols": {
+    "acceptor_cold": {
+      "artifact_path": "runs/gate2d1_role_aware_2d/train_label_supplements/acceptor_cold_train_labels.parquet",
+      "artifact_sha256": "4734d5c436433a36b682b2535d6fd3fd42d8f6c124e4bf3313a442558df56604",
+      "duplicates": 0,
+      "final_train_coverage": 10543,
+      "forbidden_partition_overlap": 0,
+      "input_order_invariant": true,
+      "manifest_sha256": "659992cc7413094fd17da2281902aa74f261307d98648a973254bd472b5ecc65",
+      "missing": 0,
+      "non_finite": 0,
+      "outside_manifest": 0,
+      "supplement_count": 835
+    },
+    "both_cold": {
+      "artifact_path": "runs/gate2d1_role_aware_2d/train_label_supplements/both_cold_train_labels.parquet",
+      "artifact_sha256": "dbe5237e78fe84a36bf1b40c2fa977c90948d78d046fc748af7a98ee3be2dcd7",
+      "duplicates": 0,
+      "final_train_coverage": 9345,
+      "forbidden_partition_overlap": 0,
+      "input_order_invariant": true,
+      "manifest_sha256": "f74f40c4a2f5e7d91214ebdabc3e8f2d1a48a3c106509bb8ab7a3c846b83cb16",
+      "missing": 0,
+      "non_finite": 0,
+      "outside_manifest": 0,
+      "supplement_count": 766
+    },
+    "donor_cold": {
+      "artifact_path": "runs/gate2d1_role_aware_2d/train_label_supplements/donor_cold_train_labels.parquet",
+      "artifact_sha256": "cb7824e2ad88d500c108ae021f56b07ca05046863bed00c7146e64bcb1d9f61c",
+      "duplicates": 0,
+      "final_train_coverage": 10530,
+      "forbidden_partition_overlap": 0,
+      "input_order_invariant": true,
+      "manifest_sha256": "505e4bbe4ed20900ed66721d20df5442854c0f0ea04f5885df330bde111427cd",
+      "missing": 0,
+      "non_finite": 0,
+      "outside_manifest": 0,
+      "supplement_count": 833
+    },
+    "full_scaffold_cold": {
+      "artifact_path": "runs/gate2d1_role_aware_2d/train_label_supplements/full_scaffold_cold_train_labels.parquet",
+      "artifact_sha256": "0f3771c02fa9e75f04f1488c1950d0d9f57450f3fdf1e91548211afb056fc383",
+      "duplicates": 0,
+      "final_train_coverage": 10511,
+      "forbidden_partition_overlap": 0,
+      "input_order_invariant": true,
+      "manifest_sha256": "d395020eccfa6e8b73d50bc788a11261d308403a731a9e448040ffe7d238a897",
+      "missing": 0,
+      "non_finite": 0,
+      "outside_manifest": 0,
+      "supplement_count": 862
+    },
+    "pair_cold": {
+      "artifact_path": "runs/gate2d1_role_aware_2d/train_label_supplements/pair_cold_train_labels.parquet",
+      "artifact_sha256": "8a5c87a84b22079239e6cadb802df726fc5ecd3c2109459f5def10875251d138",
+      "duplicates": 0,
+      "final_train_coverage": 10387,
+      "forbidden_partition_overlap": 0,
+      "input_order_invariant": true,
+      "manifest_sha256": "06aaee7d7756957bc42f7d4e221ffd5b20916be69b3116c3bbbe017eb02f4825",
+      "missing": 0,
+      "non_finite": 0,
+      "outside_manifest": 0,
+      "supplement_count": 837
+    }
+  },
+  "source_columns": [
+    "molecule_id",
+    "tddft_coulomb_attraction_eV_eps3p5_proxy"
+  ],
+  "source_sha256": "e7587b1546039f099a4dbd0d352e98885bb2ebdbdcfa18884dd4355eed815a83",
+  "status": "AUTHORIZED_MINIMAL_PROTOCOL_LOCAL_TRAIN_LABEL_EXTRACTION",
+  "union_count": 1017
+}

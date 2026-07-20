@@ -129,3 +129,14 @@ Project and EquiformerV3 directories are not Git worktrees; source commit proven
 - Validation-locked similarity filtering was not stable across all protocols; `AD_SCORE_NOT_VALIDATED` is frozen.
 - No point model was trained or modified, no new point prediction was generated, the Gate 2-A evaluator was not called, and final673 remained sealed.
 - Final status: `GATE2C_DONE_UQ_APPLICABILITY_AUDIT`; labels: `UQ_EMPIRICALLY_CALIBRATED_OOD`, `BOTH_COLD_UQ_UNSUPPORTED`, `AD_SCORE_NOT_VALIDATED`.
+
+
+## Gate 2-D1 result
+
+- One authorized two-column Arrow read supplied 1,017 protocol-local missing train labels. Every protocol reached 100% train-label coverage with zero local val/test/buffer/quarantine overlap; row-level artifacts remain local and ignored.
+- The three frozen representation arms contain 532 / 1,556 / 1,556 columns. Arm B and C have the same 1,536-bit budget, and Arm A exactly reproduces all 15,016 frozen C0-512 fingerprints.
+- Twelve independent XGBoost models were trained on physical GPU 0, one Arm B and one Arm C per protocol. No model, preprocessor, label-derived asset, or validation result was shared across protocols.
+- Acceptor-cold identity MAEs are 0.096529 / 0.097919 / 0.100244 eV for A/B/C. Primary C−B is +0.002325 eV with acceptor-cluster CI [-0.003722, +0.010601], failing the admission rule.
+- IID C−B is -0.000905 eV with CI [-0.002070, +0.000241], so IID non-inferiority passes but cannot rescue the failed primary endpoint.
+- The acceptor fingerprint block is used (gain fraction 0.405; absolute TreeSHAP fraction 0.204), yet the lowest-similarity acceptor quartile worsens by +0.020295 eV. Fixed RA2D therefore does not solve acceptor OOD.
+- Final decision: `ROLE_AWARE_2D_NOT_ADMITTED`. No test artifact, post-extraction source Parquet, or final673 asset was accessed.

@@ -1,0 +1,45 @@
+{
+  "version": "gate2d1_role_aware_2d_v1",
+  "scientific_question": "Does role-separated donor/acceptor 2D fingerprinting improve acceptor OOD beyond an equal-bit full-molecule capacity control?",
+  "validation_only": true,
+  "main_parquet_access_after_extraction": false,
+  "test_artifact_access": false,
+  "final673_access": false,
+  "primary_target": "tddft_coulomb_attraction_eV_eps3p5_proxy",
+  "representations": {
+    "A_C0_512_reference": {"descriptors": 20, "full_bits": 512, "donor_bits": 0, "acceptor_bits": 0, "columns": 532, "reuse_frozen_predictions": true},
+    "B_C0_Wide_1536": {"descriptors": 20, "full_bits": 1536, "donor_bits": 0, "acceptor_bits": 0, "columns": 1556, "reuse_frozen_predictions": false},
+    "C_RA2D_1536": {"descriptors": 20, "full_bits": 512, "donor_bits": 512, "acceptor_bits": 512, "columns": 1556, "reuse_frozen_predictions": false}
+  },
+  "fingerprint": {"algorithm": "RDKit Morgan", "radius": 2, "use_chirality": false, "training_bit_budget_B_C": 1536},
+  "component_parser": "frozen Gate 0-B canonical component strings; normal parse then sanitize=False with SANITIZE_ALL excluding KEKULIZE; preserve wildcard",
+  "descriptor_names": ["MolWt", "MolLogP", "MolMR", "TPSA", "NumHDonors", "NumHAcceptors", "NumRotatableBonds", "NumAromaticRings", "NumAliphaticRings", "NumAromaticHeterocycles", "NumAliphaticHeterocycles", "NumSaturatedRings", "NumHeteroatoms", "HeavyAtomCount", "NumValenceElectrons", "NHOHCount", "NOCount", "FractionCSP3", "RingCount", "HallKierAlpha"],
+  "xgboost": {"n_estimators": 500, "max_depth": 6, "learning_rate": 0.05, "tree_method": "hist", "device": "cuda", "verbosity": 0, "random_state": 42},
+  "preprocessing": "protocol-and-arm-specific train-only group-weighted median imputation and weighted mean/std scaling",
+  "bootstrap": {"replicates": 10000, "seed": 20260720},
+  "primary_endpoint": "acceptor_cold validation acceptor-identity-macro MAE",
+  "primary_comparison": "C_RA2D_1536 minus B_C0_Wide_1536",
+  "protocol_clusters": {"iid": "structure_group_id_v1", "donor_cold": "donor_structure_group_id_v1", "acceptor_cold": "acceptor_structure_group_id_v1", "pair_cold": "pair_group_id_v1", "both_cold": "two_way_donor_acceptor", "full_scaffold_cold": "full_scaffold_group_id_v1"},
+  "admission": {"acceptor_point_delta_max_eV": -0.002, "acceptor_bootstrap_ci_upper_max_eV": 0.0, "iid_noninferiority_ci_upper_max_eV": 0.002},
+  "mechanism_similarity": {"fingerprint": "acceptor Morgan", "radius": 2, "bits": 512, "use_chirality": false, "nearest_partition": "same-protocol train"},
+  "shap": {"protocol": "acceptor_cold", "partition": "validation", "arms": ["B_C0_Wide_1536", "C_RA2D_1536"], "selection": "all frozen validation rows"},
+  "inputs": {
+    "c0_feature_cache": {"path": "runs/gate1b1_new_iid_cheap_baselines/features_v1.parquet", "sha256": "7bb1a6af207364b186c072ab6d013d278e294633255b2235ef789e040e75d058"},
+    "structure_registry": {"path": "manifests/new15016_structure_groups_v1.parquet", "sha256": "23409d65486ed1f854c125b02769d02d945e3f6c219be8fb4e6f290f391a1a56"},
+    "component_registry": {"path": "manifests/component_identity_v1.csv", "sha256": "dca4a5e5661d7336226b16c87624ba3b457cdcd0379ccb2130a48d4f30306515"},
+    "base_train_labels": {"path": "runs/gate1b2_3d_admission/prepared/train_val_targets.parquet", "sha256": "44d7243f5cbef1e2347c2b4983efc8c708600f57193593e1e6c9d966265d54f0"},
+    "validation_labels": {"path": "runs/gate2c_uq/calibration_labels_v1.parquet", "sha256": "5d59314b515e2487efdc54061d6d6c368bb3f2e6e51dda09a4dea98cf959e1cc"},
+    "train_label_extraction_registry": {"path": "data_registry/gate2d1_train_label_extraction_registry.json", "sha256": "5219b89359a0964d059056822eb3e4917cdf2f402a44100bc31bdc95e0011f6d"}
+  },
+  "protocols": {
+    "iid": {"manifest": "manifests/split_iid_group_seed42_v1.csv", "sha256": "f4572f2c1896d4228dd9eff67220adb7d0a02ad79b70c66766e6da876541c3f2", "arm_a_validation": "runs/gate1b1_new_iid_cheap_baselines/seed42/xgb_c0_val_predictions.csv", "arm_a_sha256": "9444cc99c1afa4cd019762430dc6651f302e2fcebc0b3975d2e13bc9148e268f"},
+    "donor_cold": {"manifest": "manifests/split_donor_cold_v1.csv", "sha256": "505e4bbe4ed20900ed66721d20df5442854c0f0ea04f5885df330bde111427cd", "arm_a_validation": "runs/gate2a_ood_baselines/donor_cold/xgb_c0_val_predictions.csv", "arm_a_sha256": "953df911b79f41f1b33ab7d50db234366331b298eeae718498b006eae41b55ae"},
+    "acceptor_cold": {"manifest": "manifests/split_acceptor_cold_v1.csv", "sha256": "659992cc7413094fd17da2281902aa74f261307d98648a973254bd472b5ecc65", "arm_a_validation": "runs/gate2a_ood_baselines/acceptor_cold/xgb_c0_val_predictions.csv", "arm_a_sha256": "d8b41483a788882f09f1104445d9db197728d4e0626914b25f15afbc558985b8"},
+    "pair_cold": {"manifest": "manifests/split_pair_cold_v1.csv", "sha256": "06aaee7d7756957bc42f7d4e221ffd5b20916be69b3116c3bbbe017eb02f4825", "arm_a_validation": "runs/gate2a_ood_baselines/pair_cold/xgb_c0_val_predictions.csv", "arm_a_sha256": "83148530b8fbfcf93071dcf52d4d35bea67796fd3f05441399d81205bdc4aa99"},
+    "both_cold": {"manifest": "manifests/split_both_cold_external_test_v1.csv", "sha256": "f74f40c4a2f5e7d91214ebdabc3e8f2d1a48a3c106509bb8ab7a3c846b83cb16", "arm_a_validation": "runs/gate2a_ood_baselines/both_cold/xgb_c0_val_predictions.csv", "arm_a_sha256": "470e2ee0c40899fa3bf3c9871be758f380baf6e5bb313ecc54b867a714fbf0c7"},
+    "full_scaffold_cold": {"manifest": "manifests/split_full_scaffold_cold_v1.csv", "sha256": "d395020eccfa6e8b73d50bc788a11261d308403a731a9e448040ffe7d238a897", "arm_a_validation": "runs/gate2a_ood_baselines/full_scaffold_cold/xgb_c0_val_predictions.csv", "arm_a_sha256": "eae7430bf06d8ec1e90b917517079668adaec39b58e89cbf56a5748151d881d1"}
+  },
+  "local_feature_cache": "runs/gate2d1_role_aware_2d/features/role_aware_features_v1.npz",
+  "local_run_root": "runs/gate2d1_role_aware_2d/models",
+  "forbidden": ["test predictions", "test labels", "main Parquet", "final673", "PM6", "DFT", "TDDFT inputs", "3D coordinates", "chirality", "target encoding", "memory", "additional representation arms"]
+}

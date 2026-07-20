@@ -141,3 +141,13 @@
 - Freeze `BOTH_COLD_UQ_UNSUPPORTED` despite acceptable marginal coverage, because 15 independent donors and crossed identities cannot support a reliable guarantee.
 - Freeze `AD_SCORE_NOT_VALIDATED`: validation-locked similarity cutoffs did not stably reduce record and identity risk across all six protocols; do not select a test-derived cutoff.
 - The first calibrator process exited after writing only a deterministic target-free similarity cache. Reuse was permitted only because no calibrator registry or quantile existed; the cache was schema/count checked and its hash frozen before calibration resumed.
+
+
+## Gate 2-D1 decisions
+
+- Treat each split as a protocol-local experiment. Labels may be used when an ID is train in that protocol, even if the same ID is test elsewhere; models, preprocessors, residuals, and selection evidence remain strictly protocol-specific.
+- Freeze exactly three arms: C0-512 reference, full-molecule Wide-1536 capacity control, and equal-budget full/donor/acceptor RA2D-1536. Add no post hoc representation.
+- Record three donor and one acceptor 512-bit excess-structure collisions as fixed-representation limitations, not parser leakage. No acceptor-cold validation identity is involved in the acceptor collision.
+- Freeze `ROLE_AWARE_2D_NOT_ADMITTED`: acceptor-cold C−B has the wrong point direction and a CI crossing zero, although IID non-inferiority passes.
+- Do not interpret the negative admission as role irrelevance. The acceptor block has substantial gain/SHAP use, but fails specifically in the low-similarity acceptor regime.
+- Do not unlock test, add memory, expand 3D, fuse models, or add learned representations on the basis of this Gate.
