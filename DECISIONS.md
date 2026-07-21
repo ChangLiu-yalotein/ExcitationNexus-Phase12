@@ -168,3 +168,12 @@
 - Treat exact embedding aliases as frozen-tokenizer representation aliases because every collision has identical token IDs; do not drop structures or replace the tokenizer post hoc.
 - Freeze `REPRESENTATION_SIGNAL_INCONCLUSIVE`: C significantly improves over equal-budget full continuous embedding on acceptor-cold validation, but C versus C0 is below the preregistered effect threshold with CI crossing zero, and IID non-inferiority fails.
 - Do not unlock test or try another foundation encoder from this result. Any next intervention requires a new scientific Gate.
+
+## Gate 2-E0 decisions
+
+- Close generic representation replacement and retain frozen C0-512 as the default input.
+- Keep the screened Coulomb proxy as the sole optimized member of its algebra family.
+- Admit 11 secondary tasks; keep `t_index` report-only because `t = D - H_CT` within source rounding.
+- Retain all four fragment fractions as masked-only; never impute missing labels or erase unknown/unassigned contribution.
+- Freeze Gate 2-E1 weights before performance: primary 1.0, secondary total 0.5, masked total 0.25; no dynamic balancing.
+- Validation is coverage-only in E0; no test access or training is authorized.

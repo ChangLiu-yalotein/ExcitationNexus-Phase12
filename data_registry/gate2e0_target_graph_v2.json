@@ -1,0 +1,47 @@
+{
+  "disabled": [
+    "tddft_Q_A_to_D_au",
+    "tddft_net_CT_D_to_A_au",
+    "pm6_energy_raw"
+  ],
+  "dynamic_weighting": false,
+  "masked_auxiliary": [
+    "tddft_hole_on_donor_fraction",
+    "tddft_hole_on_acceptor_fraction",
+    "tddft_electron_on_donor_fraction",
+    "tddft_electron_on_acceptor_fraction"
+  ],
+  "masked_per_task_weight": 0.0625,
+  "masked_total_weight": 0.25,
+  "missing_policy": "mask_only",
+  "normalization": "protocol_train_only_group_weighted_observed_label_mean_std",
+  "primary": {
+    "column": "tddft_coulomb_attraction_eV_eps3p5_proxy",
+    "report_name": "J_eh_screened_eV_eps3p5 proxy",
+    "weight": 1.0
+  },
+  "report_only_deterministic": [
+    "tddft_wavelength_nm",
+    "tddft_coulomb_attraction_au",
+    "tddft_coulomb_attraction_eV"
+  ],
+  "report_only_redundant": [
+    "tddft_t_index_angstrom"
+  ],
+  "secondary_optimization": [
+    "tddft_excitation_energy_ev",
+    "tddft_oscillator_strength",
+    "tddft_transition_dipole_au",
+    "tddft_Sm",
+    "tddft_Sr",
+    "tddft_D_index_angstrom",
+    "tddft_H_CT_angstrom",
+    "tddft_HDI",
+    "tddft_EDI",
+    "tddft_Q_D_to_A_au",
+    "tddft_dipole_change_norm_au"
+  ],
+  "secondary_per_task_weight": 0.045454545454545456,
+  "secondary_total_weight": 0.5,
+  "version": "gate2e0_target_graph_v2"
+}

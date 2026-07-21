@@ -1,6 +1,6 @@
 # Phase 12 project state
 
-Current stage: **GATE1C1_DONE_STOP_PURE_3D**; IID error mechanisms and validation-only geometry counterfactuals are frozen.
+Current stage: **GATE2E0_DONE / MULTITASK_TARGET_GRAPH_ADMITTED**; the physics-guided multitask target graph is frozen without model training or test access.
 
 ## Frozen facts
 
@@ -158,3 +158,12 @@ Project and EquiformerV3 directories are not Git worktrees; source commit proven
 - Twelve protocol-local validation-only XGBoost models were frozen. Acceptor C−A is -0.0012744 eV with CI [-0.0054454, +0.0026585]; C−B is -0.0030333 eV with CI [-0.0059965, -0.0001475]. IID C−A CI upper is +0.0029984 eV.
 - Final v2 decision: `REPRESENTATION_SIGNAL_INCONCLUSIVE`. The role-separated continuous arm beats the full continuous control on acceptor-cold validation, but misses the frozen C0 effect threshold and IID non-inferiority rule.
 - No test artifact, source Parquet, buffer/quarantine, final673, encoder fine-tuning, projection search, or post-result model change was used.
+
+## Gate 2-E0 result
+
+- The generic representation-replacement route is closed; C0-512 remains the default structural input.
+- Exactly one authorized Arrow read selected molecule_id plus 16 auxiliary labels for the 15,015-ID six-protocol train/validation union. The primary was not reread; row-level artifacts remain local and ignored.
+- Eleven secondary targets are admitted. tddft_t_index_angstrom is report-only redundant because t = D - H_CT within 0.001 angstrom rounding.
+- All four fragment fractions remain masked-only because donor+acceptor is not strictly one for every jointly observed record.
+- Gate 2-E1 weights are frozen: primary 1.0, secondary total 0.5, masked total 0.25; no dynamic weighting.
+- Final decision: MULTITASK_TARGET_GRAPH_ADMITTED. No model, prediction, GPU, test artifact, buffer/quarantine, or final673 asset was used.

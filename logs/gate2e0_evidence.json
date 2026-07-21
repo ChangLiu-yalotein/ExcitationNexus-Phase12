@@ -1,0 +1,43 @@
+{
+  "acceptor_cold_validation_identity_counts": {
+    "tddft_D_index_angstrom": 32,
+    "tddft_EDI": 32,
+    "tddft_HDI": 32,
+    "tddft_H_CT_angstrom": 32,
+    "tddft_Q_D_to_A_au": 32,
+    "tddft_Sm": 32,
+    "tddft_Sr": 32,
+    "tddft_dipole_change_norm_au": 32,
+    "tddft_electron_on_acceptor_fraction": 32,
+    "tddft_electron_on_donor_fraction": 32,
+    "tddft_excitation_energy_ev": 32,
+    "tddft_hole_on_acceptor_fraction": 32,
+    "tddft_hole_on_donor_fraction": 32,
+    "tddft_oscillator_strength": 32,
+    "tddft_transition_dipole_au": 32
+  },
+  "admitted_masked": 4,
+  "admitted_secondary": 11,
+  "completed_utc": "2026-07-21T02:50:17.395599+00:00",
+  "final673_accessed": false,
+  "git_diff_check": "PASS",
+  "git_ignored_row_level_artifacts": true,
+  "gpu_used": false,
+  "large_files_over_20MiB": 0,
+  "masked_ge45pct": 4,
+  "model_training": false,
+  "prediction_generation": false,
+  "primary_equivalent_auxiliary_in_loss": false,
+  "pytest": {
+    "failed": 0,
+    "passed": 155,
+    "warnings": 4
+  },
+  "scientific_decision": "MULTITASK_TARGET_GRAPH_ADMITTED",
+  "secondary_ge95pct": 11,
+  "secret_scan_findings": 0,
+  "source_arrow_reads": 1,
+  "source_parquet_reads_after_extraction": 0,
+  "status": "GATE2E0_DONE",
+  "test_artifact_accessed": false
+}

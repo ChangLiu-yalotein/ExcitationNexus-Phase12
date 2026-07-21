@@ -1,0 +1,37 @@
+{
+  "completed_utc": "2026-07-21T02:40:35.894809+00:00",
+  "fraction_assignment_checks": {
+    "electron": {
+      "joint_nonmissing": 5376,
+      "max_abs_unassigned": 0.37660734492336195,
+      "median_unassigned": 1.1102230246251565e-16,
+      "p99_abs_unassigned": 0.02159210416939572,
+      "strictly_complementary_all_rows": false
+    },
+    "hole": {
+      "joint_nonmissing": 5376,
+      "max_abs_unassigned": 0.6191510150906522,
+      "median_unassigned": 1.1102230246251565e-16,
+      "p99_abs_unassigned": 0.06651692589604012,
+      "strictly_complementary_all_rows": false
+    }
+  },
+  "iid_train_records": 10387,
+  "optimization_counts": {
+    "DISABLED": 3,
+    "MASKED_ONLY": 4,
+    "OPTIMIZATION_ALLOWED": 11,
+    "PRIMARY": 1,
+    "REPORT_ONLY_DETERMINISTIC": 3,
+    "REPORT_ONLY_REDUNDANT": 1
+  },
+  "primary_equivalent_auxiliary_in_loss": false,
+  "primary_read_from_frozen_artifact": true,
+  "source_parquet_read": false,
+  "t_index_relation": {
+    "formula": "t = D - H_CT",
+    "max_abs_residual_angstrom": 0.0010000000000029985,
+    "p99_abs_residual_angstrom": 0.001000000000000778,
+    "rounding_tolerance_angstrom": 0.001
+  }
+}

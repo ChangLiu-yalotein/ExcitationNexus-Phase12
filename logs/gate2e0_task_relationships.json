@@ -1,0 +1,1124 @@
+{
+  "complete_secondary_records": 10387,
+  "completed_utc": "2026-07-21T02:41:33.527171+00:00",
+  "effective_number_of_secondary_tasks": 3.606763979004937,
+  "known_multivariate_relation": {
+    "tddft_t_index_angstrom": "t = D - H_CT within frozen source rounding"
+  },
+  "model_fitted": false,
+  "numeric_redundancy_gate_candidates": [],
+  "pairwise": [
+    {
+      "left": "tddft_coulomb_attraction_eV_eps3p5_proxy",
+      "pair_count": 10387,
+      "right": "tddft_excitation_energy_ev",
+      "standardized_linear_residual_rmse": 0.9517559914347088,
+      "weighted_pearson": 0.3068558827334658,
+      "weighted_spearman": 0.2762137961922438
+    },
+    {
+      "left": "tddft_coulomb_attraction_eV_eps3p5_proxy",
+      "pair_count": 10387,
+      "right": "tddft_oscillator_strength",
+      "standardized_linear_residual_rmse": 0.9471222523727513,
+      "weighted_pearson": -0.3208729328883421,
+      "weighted_spearman": -0.3401139727499925
+    },
+    {
+      "left": "tddft_coulomb_attraction_eV_eps3p5_proxy",
+      "pair_count": 10387,
+      "right": "tddft_transition_dipole_au",
+      "standardized_linear_residual_rmse": 0.9742203697729395,
+      "weighted_pearson": 0.22559847322062493,
+      "weighted_spearman": 0.20346584358034508
+    },
+    {
+      "left": "tddft_coulomb_attraction_eV_eps3p5_proxy",
+      "pair_count": 10387,
+      "right": "tddft_Sm",
+      "standardized_linear_residual_rmse": 0.8419142987184027,
+      "weighted_pearson": 0.5396112615703087,
+      "weighted_spearman": 0.5527572377590663
+    },
+    {
+      "left": "tddft_coulomb_attraction_eV_eps3p5_proxy",
+      "pair_count": 10387,
+      "right": "tddft_Sr",
+      "standardized_linear_residual_rmse": 0.8633075866719857,
+      "weighted_pearson": 0.504678125932353,
+      "weighted_spearman": 0.5543488297625813
+    },
+    {
+      "left": "tddft_coulomb_attraction_eV_eps3p5_proxy",
+      "pair_count": 10387,
+      "right": "tddft_D_index_angstrom",
+      "standardized_linear_residual_rmse": 0.7371033748512401,
+      "weighted_pearson": -0.6757800047226258,
+      "weighted_spearman": -0.58042379885714
+    },
+    {
+      "left": "tddft_coulomb_attraction_eV_eps3p5_proxy",
+      "pair_count": 10387,
+      "right": "tddft_H_CT_angstrom",
+      "standardized_linear_residual_rmse": 0.8920744872720551,
+      "weighted_pearson": -0.4518883813048305,
+      "weighted_spearman": -0.4542298541509559
+    },
+    {
+      "left": "tddft_coulomb_attraction_eV_eps3p5_proxy",
+      "pair_count": 10387,
+      "right": "tddft_t_index_angstrom",
+      "standardized_linear_residual_rmse": 0.9043983014078937,
+      "weighted_pearson": -0.42668924571696976,
+      "weighted_spearman": -0.27098138635569613
+    },
+    {
+      "left": "tddft_coulomb_attraction_eV_eps3p5_proxy",
+      "pair_count": 10387,
+      "right": "tddft_HDI",
+      "standardized_linear_residual_rmse": 0.9752888987013199,
+      "weighted_pearson": 0.2209333928358654,
+      "weighted_spearman": 0.4046717949474932
+    },
+    {
+      "left": "tddft_coulomb_attraction_eV_eps3p5_proxy",
+      "pair_count": 10387,
+      "right": "tddft_EDI",
+      "standardized_linear_residual_rmse": 0.9467234542183922,
+      "weighted_pearson": 0.3220476691932354,
+      "weighted_spearman": 0.3795597034358569
+    },
+    {
+      "left": "tddft_coulomb_attraction_eV_eps3p5_proxy",
+      "pair_count": 10387,
+      "right": "tddft_Q_D_to_A_au",
+      "standardized_linear_residual_rmse": 0.9554293387622238,
+      "weighted_pearson": -0.29521988183789427,
+      "weighted_spearman": -0.3393719909868375
+    },
+    {
+      "left": "tddft_coulomb_attraction_eV_eps3p5_proxy",
+      "pair_count": 10387,
+      "right": "tddft_dipole_change_norm_au",
+      "standardized_linear_residual_rmse": 0.7386352898988776,
+      "weighted_pearson": -0.674105265159679,
+      "weighted_spearman": -0.5786985429553253
+    },
+    {
+      "left": "tddft_coulomb_attraction_eV_eps3p5_proxy",
+      "pair_count": 5376,
+      "right": "tddft_hole_on_donor_fraction",
+      "standardized_linear_residual_rmse": 0.9999855561304575,
+      "weighted_pearson": 0.005374712128086519,
+      "weighted_spearman": -0.0013884254058306633
+    },
+    {
+      "left": "tddft_coulomb_attraction_eV_eps3p5_proxy",
+      "pair_count": 5376,
+      "right": "tddft_hole_on_acceptor_fraction",
+      "standardized_linear_residual_rmse": 0.9999639192667382,
+      "weighted_pearson": -0.008494713927152122,
+      "weighted_spearman": -0.002581749398754455
+    },
+    {
+      "left": "tddft_coulomb_attraction_eV_eps3p5_proxy",
+      "pair_count": 5376,
+      "right": "tddft_electron_on_donor_fraction",
+      "standardized_linear_residual_rmse": 0.9463996874412918,
+      "weighted_pearson": 0.3229978817438672,
+      "weighted_spearman": 0.2364136164673417
+    },
+    {
+      "left": "tddft_coulomb_attraction_eV_eps3p5_proxy",
+      "pair_count": 5376,
+      "right": "tddft_electron_on_acceptor_fraction",
+      "standardized_linear_residual_rmse": 0.9456430650406354,
+      "weighted_pearson": -0.32520638606975805,
+      "weighted_spearman": -0.2480469501053619
+    },
+    {
+      "left": "tddft_excitation_energy_ev",
+      "pair_count": 10387,
+      "right": "tddft_oscillator_strength",
+      "standardized_linear_residual_rmse": 0.9996609623533669,
+      "weighted_pearson": -0.026037671684321535,
+      "weighted_spearman": -0.08329610613859435
+    },
+    {
+      "left": "tddft_excitation_energy_ev",
+      "pair_count": 10387,
+      "right": "tddft_transition_dipole_au",
+      "standardized_linear_residual_rmse": 0.9959429434091492,
+      "weighted_pearson": -0.08998696279750766,
+      "weighted_spearman": -0.1272130896726567
+    },
+    {
+      "left": "tddft_excitation_energy_ev",
+      "pair_count": 10387,
+      "right": "tddft_Sm",
+      "standardized_linear_residual_rmse": 0.9591958081396702,
+      "weighted_pearson": 0.2827426420745291,
+      "weighted_spearman": 0.23794021107637656
+    },
+    {
+      "left": "tddft_excitation_energy_ev",
+      "pair_count": 10387,
+      "right": "tddft_Sr",
+      "standardized_linear_residual_rmse": 0.9577305749113909,
+      "weighted_pearson": 0.2876667270990801,
+      "weighted_spearman": 0.2353302851094728
+    },
+    {
+      "left": "tddft_excitation_energy_ev",
+      "pair_count": 10387,
+      "right": "tddft_D_index_angstrom",
+      "standardized_linear_residual_rmse": 0.9861756283355392,
+      "weighted_pearson": -0.16570344014837018,
+      "weighted_spearman": -0.12303082802805906
+    },
+    {
+      "left": "tddft_excitation_energy_ev",
+      "pair_count": 10387,
+      "right": "tddft_H_CT_angstrom",
+      "standardized_linear_residual_rmse": 0.993758822669211,
+      "weighted_pearson": -0.11154999940431956,
+      "weighted_spearman": -0.13721815921662572
+    },
+    {
+      "left": "tddft_excitation_energy_ev",
+      "pair_count": 10387,
+      "right": "tddft_t_index_angstrom",
+      "standardized_linear_residual_rmse": 0.9945507993269797,
+      "weighted_pearson": -0.10425309375776673,
+      "weighted_spearman": -0.017388497528720046
+    },
+    {
+      "left": "tddft_excitation_energy_ev",
+      "pair_count": 10387,
+      "right": "tddft_HDI",
+      "standardized_linear_residual_rmse": 0.9984230800407728,
+      "weighted_pearson": -0.056136915144105584,
+      "weighted_spearman": 0.05192746709087215
+    },
+    {
+      "left": "tddft_excitation_energy_ev",
+      "pair_count": 10387,
+      "right": "tddft_EDI",
+      "standardized_linear_residual_rmse": 0.9962185656127078,
+      "weighted_pearson": 0.08688250415681446,
+      "weighted_spearman": 0.18734007670568137
+    },
+    {
+      "left": "tddft_excitation_energy_ev",
+      "pair_count": 10387,
+      "right": "tddft_Q_D_to_A_au",
+      "standardized_linear_residual_rmse": 0.9967373305792269,
+      "weighted_pearson": -0.08071365330473641,
+      "weighted_spearman": -0.17858159015760744
+    },
+    {
+      "left": "tddft_excitation_energy_ev",
+      "pair_count": 10387,
+      "right": "tddft_dipole_change_norm_au",
+      "standardized_linear_residual_rmse": 0.9862382123249637,
+      "weighted_pearson": -0.16533054330661326,
+      "weighted_spearman": -0.12269451352706603
+    },
+    {
+      "left": "tddft_excitation_energy_ev",
+      "pair_count": 5376,
+      "right": "tddft_hole_on_donor_fraction",
+      "standardized_linear_residual_rmse": 0.9856666609165793,
+      "weighted_pearson": 0.1687045747973697,
+      "weighted_spearman": 0.258297982128545
+    },
+    {
+      "left": "tddft_excitation_energy_ev",
+      "pair_count": 5376,
+      "right": "tddft_hole_on_acceptor_fraction",
+      "standardized_linear_residual_rmse": 0.9853104035436978,
+      "weighted_pearson": -0.17077297405782688,
+      "weighted_spearman": -0.2619082786088328
+    },
+    {
+      "left": "tddft_excitation_energy_ev",
+      "pair_count": 5376,
+      "right": "tddft_electron_on_donor_fraction",
+      "standardized_linear_residual_rmse": 0.8958610723833947,
+      "weighted_pearson": 0.44433426492683853,
+      "weighted_spearman": 0.41434145811767
+    },
+    {
+      "left": "tddft_excitation_energy_ev",
+      "pair_count": 5376,
+      "right": "tddft_electron_on_acceptor_fraction",
+      "standardized_linear_residual_rmse": 0.8956622741425393,
+      "weighted_pearson": -0.4447348543546083,
+      "weighted_spearman": -0.4164622257384075
+    },
+    {
+      "left": "tddft_oscillator_strength",
+      "pair_count": 10387,
+      "right": "tddft_transition_dipole_au",
+      "standardized_linear_residual_rmse": 0.8410510165446089,
+      "weighted_pearson": 0.5409558092573551,
+      "weighted_spearman": 0.5518188751107044
+    },
+    {
+      "left": "tddft_oscillator_strength",
+      "pair_count": 10387,
+      "right": "tddft_Sm",
+      "standardized_linear_residual_rmse": 0.946371216660086,
+      "weighted_pearson": 0.32308129050953865,
+      "weighted_spearman": 0.23705848601063859
+    },
+    {
+      "left": "tddft_oscillator_strength",
+      "pair_count": 10387,
+      "right": "tddft_Sr",
+      "standardized_linear_residual_rmse": 0.9299862604297067,
+      "weighted_pearson": 0.367594280983763,
+      "weighted_spearman": 0.24180768761269925
+    },
+    {
+      "left": "tddft_oscillator_strength",
+      "pair_count": 10387,
+      "right": "tddft_D_index_angstrom",
+      "standardized_linear_residual_rmse": 0.9979551131545354,
+      "weighted_pearson": -0.06391863678707814,
+      "weighted_spearman": -0.13961933836200566
+    },
+    {
+      "left": "tddft_oscillator_strength",
+      "pair_count": 10387,
+      "right": "tddft_H_CT_angstrom",
+      "standardized_linear_residual_rmse": 0.6818173670795515,
+      "weighted_pearson": 0.7315224384451294,
+      "weighted_spearman": 0.7384279508988218
+    },
+    {
+      "left": "tddft_oscillator_strength",
+      "pair_count": 10387,
+      "right": "tddft_t_index_angstrom",
+      "standardized_linear_residual_rmse": 0.9039787701692382,
+      "weighted_pearson": -0.42757734163927724,
+      "weighted_spearman": -0.5090149547452335
+    },
+    {
+      "left": "tddft_oscillator_strength",
+      "pair_count": 10387,
+      "right": "tddft_HDI",
+      "standardized_linear_residual_rmse": 0.880279672970349,
+      "weighted_pearson": -0.4744551584240763,
+      "weighted_spearman": -0.5395655630981155
+    },
+    {
+      "left": "tddft_oscillator_strength",
+      "pair_count": 10387,
+      "right": "tddft_EDI",
+      "standardized_linear_residual_rmse": 0.7995816732058089,
+      "weighted_pearson": -0.6005573643486516,
+      "weighted_spearman": -0.6282451184394265
+    },
+    {
+      "left": "tddft_oscillator_strength",
+      "pair_count": 10387,
+      "right": "tddft_Q_D_to_A_au",
+      "standardized_linear_residual_rmse": 0.9938665805529406,
+      "weighted_pearson": 0.1105858040618468,
+      "weighted_spearman": 0.20836647045945633
+    },
+    {
+      "left": "tddft_oscillator_strength",
+      "pair_count": 10387,
+      "right": "tddft_dipole_change_norm_au",
+      "standardized_linear_residual_rmse": 0.9979812367393615,
+      "weighted_pearson": -0.06350945690347588,
+      "weighted_spearman": -0.13954597611443384
+    },
+    {
+      "left": "tddft_oscillator_strength",
+      "pair_count": 5376,
+      "right": "tddft_hole_on_donor_fraction",
+      "standardized_linear_residual_rmse": 0.9323657185812559,
+      "weighted_pearson": -0.36151648207856096,
+      "weighted_spearman": -0.31498701921795724
+    },
+    {
+      "left": "tddft_oscillator_strength",
+      "pair_count": 5376,
+      "right": "tddft_hole_on_acceptor_fraction",
+      "standardized_linear_residual_rmse": 0.9317797456988777,
+      "weighted_pearson": 0.3630241114655263,
+      "weighted_spearman": 0.31614468914887783
+    },
+    {
+      "left": "tddft_oscillator_strength",
+      "pair_count": 5376,
+      "right": "tddft_electron_on_donor_fraction",
+      "standardized_linear_residual_rmse": 0.9999465735566879,
+      "weighted_pearson": -0.01033682892570021,
+      "weighted_spearman": -0.13621970383027765
+    },
+    {
+      "left": "tddft_oscillator_strength",
+      "pair_count": 5376,
+      "right": "tddft_electron_on_acceptor_fraction",
+      "standardized_linear_residual_rmse": 0.9999459973400283,
+      "weighted_pearson": 0.010392420490730645,
+      "weighted_spearman": 0.13397141339423368
+    },
+    {
+      "left": "tddft_transition_dipole_au",
+      "pair_count": 10387,
+      "right": "tddft_Sm",
+      "standardized_linear_residual_rmse": 0.6944143041528757,
+      "weighted_pearson": 0.7195754124397786,
+      "weighted_spearman": 0.6628216449423594
+    },
+    {
+      "left": "tddft_transition_dipole_au",
+      "pair_count": 10387,
+      "right": "tddft_Sr",
+      "standardized_linear_residual_rmse": 0.6791372309606842,
+      "weighted_pearson": 0.7340113224760597,
+      "weighted_spearman": 0.6657374798398685
+    },
+    {
+      "left": "tddft_transition_dipole_au",
+      "pair_count": 10387,
+      "right": "tddft_D_index_angstrom",
+      "standardized_linear_residual_rmse": 0.7851454980872014,
+      "weighted_pearson": -0.6193113488653349,
+      "weighted_spearman": -0.6366967238380515
+    },
+    {
+      "left": "tddft_transition_dipole_au",
+      "pair_count": 10387,
+      "right": "tddft_H_CT_angstrom",
+      "standardized_linear_residual_rmse": 0.9538426640420089,
+      "weighted_pearson": 0.3003067968815278,
+      "weighted_spearman": 0.3333155112931835
+    },
+    {
+      "left": "tddft_transition_dipole_au",
+      "pair_count": 10387,
+      "right": "tddft_t_index_angstrom",
+      "standardized_linear_residual_rmse": 0.6633237743208104,
+      "weighted_pearson": -0.7483325266355821,
+      "weighted_spearman": -0.7769854433964388
+    },
+    {
+      "left": "tddft_transition_dipole_au",
+      "pair_count": 10387,
+      "right": "tddft_HDI",
+      "standardized_linear_residual_rmse": 0.8924347273485617,
+      "weighted_pearson": -0.45117652578818696,
+      "weighted_spearman": -0.3930992920101954
+    },
+    {
+      "left": "tddft_transition_dipole_au",
+      "pair_count": 10387,
+      "right": "tddft_EDI",
+      "standardized_linear_residual_rmse": 0.9181885705728814,
+      "weighted_pearson": -0.396143596274544,
+      "weighted_spearman": -0.4019163001382325
+    },
+    {
+      "left": "tddft_transition_dipole_au",
+      "pair_count": 10387,
+      "right": "tddft_Q_D_to_A_au",
+      "standardized_linear_residual_rmse": 0.9980329922558675,
+      "weighted_pearson": -0.0626908794706199,
+      "weighted_spearman": 0.016749348042703317
+    },
+    {
+      "left": "tddft_transition_dipole_au",
+      "pair_count": 10387,
+      "right": "tddft_dipole_change_norm_au",
+      "standardized_linear_residual_rmse": 0.7854680967705748,
+      "weighted_pearson": -0.6189021481265117,
+      "weighted_spearman": -0.6366147341604619
+    },
+    {
+      "left": "tddft_transition_dipole_au",
+      "pair_count": 5376,
+      "right": "tddft_hole_on_donor_fraction",
+      "standardized_linear_residual_rmse": 0.8823673281857083,
+      "weighted_pearson": -0.47056125865865195,
+      "weighted_spearman": -0.39425676871368404
+    },
+    {
+      "left": "tddft_transition_dipole_au",
+      "pair_count": 5376,
+      "right": "tddft_hole_on_acceptor_fraction",
+      "standardized_linear_residual_rmse": 0.8816121427687097,
+      "weighted_pearson": 0.47197460707411376,
+      "weighted_spearman": 0.39594736887086784
+    },
+    {
+      "left": "tddft_transition_dipole_au",
+      "pair_count": 5376,
+      "right": "tddft_electron_on_donor_fraction",
+      "standardized_linear_residual_rmse": 0.9958955719575222,
+      "weighted_pearson": 0.09050972188334017,
+      "weighted_spearman": -0.014565963175423597
+    },
+    {
+      "left": "tddft_transition_dipole_au",
+      "pair_count": 5376,
+      "right": "tddft_electron_on_acceptor_fraction",
+      "standardized_linear_residual_rmse": 0.9958009472148104,
+      "weighted_pearson": -0.09154492627167506,
+      "weighted_spearman": 0.005053469927991334
+    },
+    {
+      "left": "tddft_Sm",
+      "pair_count": 10387,
+      "right": "tddft_Sr",
+      "standardized_linear_residual_rmse": 0.2081536094435252,
+      "weighted_pearson": 0.9780961480732006,
+      "weighted_spearman": 0.992560132120929
+    },
+    {
+      "left": "tddft_Sm",
+      "pair_count": 10387,
+      "right": "tddft_D_index_angstrom",
+      "standardized_linear_residual_rmse": 0.6723243976214828,
+      "weighted_pearson": -0.7402566476316916,
+      "weighted_spearman": -0.7948875911478396
+    },
+    {
+      "left": "tddft_Sm",
+      "pair_count": 10387,
+      "right": "tddft_H_CT_angstrom",
+      "standardized_linear_residual_rmse": 0.9908478174118743,
+      "weighted_pearson": 0.13498371283278862,
+      "weighted_spearman": 0.06741274933205536
+    },
+    {
+      "left": "tddft_Sm",
+      "pair_count": 10387,
+      "right": "tddft_t_index_angstrom",
+      "standardized_linear_residual_rmse": 0.6226955868216991,
+      "weighted_pearson": -0.7824641884155336,
+      "weighted_spearman": -0.7125781384606276
+    },
+    {
+      "left": "tddft_Sm",
+      "pair_count": 10387,
+      "right": "tddft_HDI",
+      "standardized_linear_residual_rmse": 0.9199833875050871,
+      "weighted_pearson": -0.3919573531835637,
+      "weighted_spearman": -0.16438344304607394
+    },
+    {
+      "left": "tddft_Sm",
+      "pair_count": 10387,
+      "right": "tddft_EDI",
+      "standardized_linear_residual_rmse": 0.9521798807290992,
+      "weighted_pearson": -0.3055380086580364,
+      "weighted_spearman": -0.21143729720916477
+    },
+    {
+      "left": "tddft_Sm",
+      "pair_count": 10387,
+      "right": "tddft_Q_D_to_A_au",
+      "standardized_linear_residual_rmse": 0.9108191594858087,
+      "weighted_pearson": -0.4128055943341433,
+      "weighted_spearman": -0.3419892425645579
+    },
+    {
+      "left": "tddft_Sm",
+      "pair_count": 10387,
+      "right": "tddft_dipole_change_norm_au",
+      "standardized_linear_residual_rmse": 0.6734163441278802,
+      "weighted_pearson": -0.7392634357666018,
+      "weighted_spearman": -0.7939994956120681
+    },
+    {
+      "left": "tddft_Sm",
+      "pair_count": 5376,
+      "right": "tddft_hole_on_donor_fraction",
+      "standardized_linear_residual_rmse": 0.9396836452869729,
+      "weighted_pearson": -0.34204480229962075,
+      "weighted_spearman": -0.24578746212709995
+    },
+    {
+      "left": "tddft_Sm",
+      "pair_count": 5376,
+      "right": "tddft_hole_on_acceptor_fraction",
+      "standardized_linear_residual_rmse": 0.9399539639278978,
+      "weighted_pearson": 0.34130125358139557,
+      "weighted_spearman": 0.24451202340606254
+    },
+    {
+      "left": "tddft_Sm",
+      "pair_count": 5376,
+      "right": "tddft_electron_on_donor_fraction",
+      "standardized_linear_residual_rmse": 0.9431799037153168,
+      "weighted_pearson": 0.3322825141766654,
+      "weighted_spearman": 0.1906308122865094
+    },
+    {
+      "left": "tddft_Sm",
+      "pair_count": 5376,
+      "right": "tddft_electron_on_acceptor_fraction",
+      "standardized_linear_residual_rmse": 0.9424245408769619,
+      "weighted_pearson": -0.33441887619099414,
+      "weighted_spearman": -0.20202472067907742
+    },
+    {
+      "left": "tddft_Sr",
+      "pair_count": 10387,
+      "right": "tddft_D_index_angstrom",
+      "standardized_linear_residual_rmse": 0.690384866533197,
+      "weighted_pearson": -0.7234422824676063,
+      "weighted_spearman": -0.793340582413701
+    },
+    {
+      "left": "tddft_Sr",
+      "pair_count": 10387,
+      "right": "tddft_H_CT_angstrom",
+      "standardized_linear_residual_rmse": 0.9823457977071913,
+      "weighted_pearson": 0.18707413965329797,
+      "weighted_spearman": 0.07343816921831287
+    },
+    {
+      "left": "tddft_Sr",
+      "pair_count": 10387,
+      "right": "tddft_t_index_angstrom",
+      "standardized_linear_residual_rmse": 0.6101639589213388,
+      "weighted_pearson": -0.7922751688860624,
+      "weighted_spearman": -0.7165811229966988
+    },
+    {
+      "left": "tddft_Sr",
+      "pair_count": 10387,
+      "right": "tddft_HDI",
+      "standardized_linear_residual_rmse": 0.8875977390640234,
+      "weighted_pearson": -0.4606194238288632,
+      "weighted_spearman": -0.1635027398511639
+    },
+    {
+      "left": "tddft_Sr",
+      "pair_count": 10387,
+      "right": "tddft_EDI",
+      "standardized_linear_residual_rmse": 0.9475782360074089,
+      "weighted_pearson": -0.31952384362530345,
+      "weighted_spearman": -0.20571138474452313
+    },
+    {
+      "left": "tddft_Sr",
+      "pair_count": 10387,
+      "right": "tddft_Q_D_to_A_au",
+      "standardized_linear_residual_rmse": 0.9191542309990955,
+      "weighted_pearson": -0.39389782893088077,
+      "weighted_spearman": -0.32447452731091236
+    },
+    {
+      "left": "tddft_Sr",
+      "pair_count": 10387,
+      "right": "tddft_dipole_change_norm_au",
+      "standardized_linear_residual_rmse": 0.6917497273874136,
+      "weighted_pearson": -0.7221373239623049,
+      "weighted_spearman": -0.7918121859752615
+    },
+    {
+      "left": "tddft_Sr",
+      "pair_count": 5376,
+      "right": "tddft_hole_on_donor_fraction",
+      "standardized_linear_residual_rmse": 0.9325572583631168,
+      "weighted_pearson": -0.3610221044122743,
+      "weighted_spearman": -0.24320527143149678
+    },
+    {
+      "left": "tddft_Sr",
+      "pair_count": 5376,
+      "right": "tddft_hole_on_acceptor_fraction",
+      "standardized_linear_residual_rmse": 0.9327668447325,
+      "weighted_pearson": 0.36048025378344406,
+      "weighted_spearman": 0.2419531046915551
+    },
+    {
+      "left": "tddft_Sr",
+      "pair_count": 5376,
+      "right": "tddft_electron_on_donor_fraction",
+      "standardized_linear_residual_rmse": 0.9391442967094942,
+      "weighted_pearson": 0.3435229103830334,
+      "weighted_spearman": 0.2001381990707408
+    },
+    {
+      "left": "tddft_Sr",
+      "pair_count": 5376,
+      "right": "tddft_electron_on_acceptor_fraction",
+      "standardized_linear_residual_rmse": 0.9384477933686184,
+      "weighted_pearson": -0.3454211040477564,
+      "weighted_spearman": -0.21218959328108433
+    },
+    {
+      "left": "tddft_D_index_angstrom",
+      "pair_count": 10387,
+      "right": "tddft_H_CT_angstrom",
+      "standardized_linear_residual_rmse": 0.9819082816912224,
+      "weighted_pearson": 0.1893571396757752,
+      "weighted_spearman": 0.15312223394595278
+    },
+    {
+      "left": "tddft_D_index_angstrom",
+      "pair_count": 10387,
+      "right": "tddft_t_index_angstrom",
+      "standardized_linear_residual_rmse": 0.49106343146080694,
+      "weighted_pearson": 0.8711238179971533,
+      "weighted_spearman": 0.759624872687101
+    },
+    {
+      "left": "tddft_D_index_angstrom",
+      "pair_count": 10387,
+      "right": "tddft_HDI",
+      "standardized_linear_residual_rmse": 0.987986042005747,
+      "weighted_pearson": 0.1545431357318024,
+      "weighted_spearman": 0.09528096254216065
+    },
+    {
+      "left": "tddft_D_index_angstrom",
+      "pair_count": 10387,
+      "right": "tddft_EDI",
+      "standardized_linear_residual_rmse": 0.9913709617990677,
+      "weighted_pearson": 0.1310862925770319,
+      "weighted_spearman": 0.1591399241169467
+    },
+    {
+      "left": "tddft_D_index_angstrom",
+      "pair_count": 10387,
+      "right": "tddft_Q_D_to_A_au",
+      "standardized_linear_residual_rmse": 0.9861622548773878,
+      "weighted_pearson": 0.16578301196185954,
+      "weighted_spearman": 0.19028235703085808
+    },
+    {
+      "left": "tddft_D_index_angstrom",
+      "pair_count": 10387,
+      "right": "tddft_dipole_change_norm_au",
+      "standardized_linear_residual_rmse": 0.02249597199425561,
+      "weighted_pearson": 0.9997469336007156,
+      "weighted_spearman": 0.9998940561878056
+    },
+    {
+      "left": "tddft_D_index_angstrom",
+      "pair_count": 5376,
+      "right": "tddft_hole_on_donor_fraction",
+      "standardized_linear_residual_rmse": 0.9483359869123461,
+      "weighted_pearson": 0.3172677984400348,
+      "weighted_spearman": 0.28381244151817203
+    },
+    {
+      "left": "tddft_D_index_angstrom",
+      "pair_count": 5376,
+      "right": "tddft_hole_on_acceptor_fraction",
+      "standardized_linear_residual_rmse": 0.9484079212391847,
+      "weighted_pearson": -0.31705270055744417,
+      "weighted_spearman": -0.2827633652984312
+    },
+    {
+      "left": "tddft_D_index_angstrom",
+      "pair_count": 5376,
+      "right": "tddft_electron_on_donor_fraction",
+      "standardized_linear_residual_rmse": 0.9792433111556083,
+      "weighted_pearson": -0.20268827681195692,
+      "weighted_spearman": -0.07274869650910834
+    },
+    {
+      "left": "tddft_D_index_angstrom",
+      "pair_count": 5376,
+      "right": "tddft_electron_on_acceptor_fraction",
+      "standardized_linear_residual_rmse": 0.9789040696216804,
+      "weighted_pearson": 0.20432039173345448,
+      "weighted_spearman": 0.08657222990361615
+    },
+    {
+      "left": "tddft_H_CT_angstrom",
+      "pair_count": 10387,
+      "right": "tddft_t_index_angstrom",
+      "standardized_linear_residual_rmse": 0.9483500626417933,
+      "weighted_pearson": -0.3172257219824809,
+      "weighted_spearman": -0.43800908545757544
+    },
+    {
+      "left": "tddft_H_CT_angstrom",
+      "pair_count": 10387,
+      "right": "tddft_HDI",
+      "standardized_linear_residual_rmse": 0.8965756328999486,
+      "weighted_pearson": -0.4428906574878916,
+      "weighted_spearman": -0.5210199088876549
+    },
+    {
+      "left": "tddft_H_CT_angstrom",
+      "pair_count": 10387,
+      "right": "tddft_EDI",
+      "standardized_linear_residual_rmse": 0.8667171292869092,
+      "weighted_pearson": -0.4987999777472517,
+      "weighted_spearman": -0.5330216084473798
+    },
+    {
+      "left": "tddft_H_CT_angstrom",
+      "pair_count": 10387,
+      "right": "tddft_Q_D_to_A_au",
+      "standardized_linear_residual_rmse": 0.9949187855901008,
+      "weighted_pearson": 0.10068073340972053,
+      "weighted_spearman": 0.18051285911205409
+    },
+    {
+      "left": "tddft_H_CT_angstrom",
+      "pair_count": 10387,
+      "right": "tddft_dipole_change_norm_au",
+      "standardized_linear_residual_rmse": 0.981869072061248,
+      "weighted_pearson": 0.1895603474611287,
+      "weighted_spearman": 0.15312882730194688
+    },
+    {
+      "left": "tddft_H_CT_angstrom",
+      "pair_count": 5376,
+      "right": "tddft_hole_on_donor_fraction",
+      "standardized_linear_residual_rmse": 0.9632890146891121,
+      "weighted_pearson": -0.26846652338658467,
+      "weighted_spearman": -0.255625974032566
+    },
+    {
+      "left": "tddft_H_CT_angstrom",
+      "pair_count": 5376,
+      "right": "tddft_hole_on_acceptor_fraction",
+      "standardized_linear_residual_rmse": 0.9627940673499193,
+      "weighted_pearson": 0.27023616315326654,
+      "weighted_spearman": 0.2565034434439107
+    },
+    {
+      "left": "tddft_H_CT_angstrom",
+      "pair_count": 5376,
+      "right": "tddft_electron_on_donor_fraction",
+      "standardized_linear_residual_rmse": 0.9992807147110523,
+      "weighted_pearson": -0.037921671990678266,
+      "weighted_spearman": -0.12120669221080259
+    },
+    {
+      "left": "tddft_H_CT_angstrom",
+      "pair_count": 5376,
+      "right": "tddft_electron_on_acceptor_fraction",
+      "standardized_linear_residual_rmse": 0.9992636962159278,
+      "weighted_pearson": 0.0383675048039596,
+      "weighted_spearman": 0.11978999393918859
+    },
+    {
+      "left": "tddft_t_index_angstrom",
+      "pair_count": 10387,
+      "right": "tddft_HDI",
+      "standardized_linear_residual_rmse": 0.9287300495501847,
+      "weighted_pearson": 0.3707566520812697,
+      "weighted_spearman": 0.3922803891128146
+    },
+    {
+      "left": "tddft_t_index_angstrom",
+      "pair_count": 10387,
+      "right": "tddft_EDI",
+      "standardized_linear_residual_rmse": 0.9265945839370973,
+      "weighted_pearson": 0.37606179946710544,
+      "weighted_spearman": 0.42536959728071866
+    },
+    {
+      "left": "tddft_t_index_angstrom",
+      "pair_count": 10387,
+      "right": "tddft_Q_D_to_A_au",
+      "standardized_linear_residual_rmse": 0.9939574019444167,
+      "weighted_pearson": 0.1097664936121466,
+      "weighted_spearman": 0.007329711963444937
+    },
+    {
+      "left": "tddft_t_index_angstrom",
+      "pair_count": 10387,
+      "right": "tddft_dipole_change_norm_au",
+      "standardized_linear_residual_rmse": 0.49167680294799554,
+      "weighted_pearson": 0.8707777681147114,
+      "weighted_spearman": 0.7595642200283756
+    },
+    {
+      "left": "tddft_t_index_angstrom",
+      "pair_count": 5376,
+      "right": "tddft_hole_on_donor_fraction",
+      "standardized_linear_residual_rmse": 0.9041744972225456,
+      "weighted_pearson": 0.4271632926321699,
+      "weighted_spearman": 0.3710654096684674
+    },
+    {
+      "left": "tddft_t_index_angstrom",
+      "pair_count": 5376,
+      "right": "tddft_hole_on_acceptor_fraction",
+      "standardized_linear_residual_rmse": 0.9038705490244081,
+      "weighted_pearson": -0.42780606658428194,
+      "weighted_spearman": -0.3704982440869865
+    },
+    {
+      "left": "tddft_t_index_angstrom",
+      "pair_count": 5376,
+      "right": "tddft_electron_on_donor_fraction",
+      "standardized_linear_residual_rmse": 0.984950457739094,
+      "weighted_pearson": -0.17283690520126002,
+      "weighted_spearman": -0.0035355619201198145
+    },
+    {
+      "left": "tddft_t_index_angstrom",
+      "pair_count": 5376,
+      "right": "tddft_electron_on_acceptor_fraction",
+      "standardized_linear_residual_rmse": 0.9847171001453764,
+      "weighted_pearson": 0.17416151320334997,
+      "weighted_spearman": 0.015579952789659998
+    },
+    {
+      "left": "tddft_HDI",
+      "pair_count": 10387,
+      "right": "tddft_EDI",
+      "standardized_linear_residual_rmse": 0.9306977587834249,
+      "weighted_pearson": 0.3657891220300432,
+      "weighted_spearman": 0.5533985790057557
+    },
+    {
+      "left": "tddft_HDI",
+      "pair_count": 10387,
+      "right": "tddft_Q_D_to_A_au",
+      "standardized_linear_residual_rmse": 0.9993977892033522,
+      "weighted_pearson": 0.03469955238114988,
+      "weighted_spearman": -0.21840972493397767
+    },
+    {
+      "left": "tddft_HDI",
+      "pair_count": 10387,
+      "right": "tddft_dipole_change_norm_au",
+      "standardized_linear_residual_rmse": 0.987447701356552,
+      "weighted_pearson": 0.1579463107693931,
+      "weighted_spearman": 0.09749845928479853
+    },
+    {
+      "left": "tddft_HDI",
+      "pair_count": 5376,
+      "right": "tddft_hole_on_donor_fraction",
+      "standardized_linear_residual_rmse": 0.9683825378491736,
+      "weighted_pearson": 0.24946995889043183,
+      "weighted_spearman": 0.24606815166300072
+    },
+    {
+      "left": "tddft_HDI",
+      "pair_count": 5376,
+      "right": "tddft_hole_on_acceptor_fraction",
+      "standardized_linear_residual_rmse": 0.9677497451561011,
+      "weighted_pearson": -0.2519135382433846,
+      "weighted_spearman": -0.24761656257017256
+    },
+    {
+      "left": "tddft_HDI",
+      "pair_count": 5376,
+      "right": "tddft_electron_on_donor_fraction",
+      "standardized_linear_residual_rmse": 0.9894499255586701,
+      "weighted_pearson": -0.14487527329376246,
+      "weighted_spearman": 0.011274329644311066
+    },
+    {
+      "left": "tddft_HDI",
+      "pair_count": 5376,
+      "right": "tddft_electron_on_acceptor_fraction",
+      "standardized_linear_residual_rmse": 0.9894338750563217,
+      "weighted_pearson": 0.14498485055698418,
+      "weighted_spearman": -0.0075625624086139535
+    },
+    {
+      "left": "tddft_EDI",
+      "pair_count": 10387,
+      "right": "tddft_Q_D_to_A_au",
+      "standardized_linear_residual_rmse": 0.9916149865021722,
+      "weighted_pearson": -0.129227390843804,
+      "weighted_spearman": -0.2914643884331823
+    },
+    {
+      "left": "tddft_EDI",
+      "pair_count": 10387,
+      "right": "tddft_dipole_change_norm_au",
+      "standardized_linear_residual_rmse": 0.9909096530164594,
+      "weighted_pearson": 0.1345290286845182,
+      "weighted_spearman": 0.1618801610373037
+    },
+    {
+      "left": "tddft_EDI",
+      "pair_count": 5376,
+      "right": "tddft_hole_on_donor_fraction",
+      "standardized_linear_residual_rmse": 0.9227523165000102,
+      "weighted_pearson": 0.3853935162841549,
+      "weighted_spearman": 0.3953351658525897
+    },
+    {
+      "left": "tddft_EDI",
+      "pair_count": 5376,
+      "right": "tddft_hole_on_acceptor_fraction",
+      "standardized_linear_residual_rmse": 0.9221859524986297,
+      "weighted_pearson": -0.38674677634622256,
+      "weighted_spearman": -0.39688162040216746
+    },
+    {
+      "left": "tddft_EDI",
+      "pair_count": 5376,
+      "right": "tddft_electron_on_donor_fraction",
+      "standardized_linear_residual_rmse": 0.9837164321786457,
+      "weighted_pearson": 0.1797275189327335,
+      "weighted_spearman": 0.311934132830023
+    },
+    {
+      "left": "tddft_EDI",
+      "pair_count": 5376,
+      "right": "tddft_electron_on_acceptor_fraction",
+      "standardized_linear_residual_rmse": 0.9837490983414059,
+      "weighted_pearson": -0.17954863272236546,
+      "weighted_spearman": -0.31072858604177417
+    },
+    {
+      "left": "tddft_Q_D_to_A_au",
+      "pair_count": 10387,
+      "right": "tddft_dipole_change_norm_au",
+      "standardized_linear_residual_rmse": 0.9862087333690478,
+      "weighted_pearson": 0.16550629663737396,
+      "weighted_spearman": 0.19008405791739116
+    },
+    {
+      "left": "tddft_Q_D_to_A_au",
+      "pair_count": 5376,
+      "right": "tddft_hole_on_donor_fraction",
+      "standardized_linear_residual_rmse": 0.9906807120367789,
+      "weighted_pearson": 0.1362047238472325,
+      "weighted_spearman": 0.05979459201528487
+    },
+    {
+      "left": "tddft_Q_D_to_A_au",
+      "pair_count": 5376,
+      "right": "tddft_hole_on_acceptor_fraction",
+      "standardized_linear_residual_rmse": 0.9908563139939572,
+      "weighted_pearson": -0.1349213289969683,
+      "weighted_spearman": -0.05833995387671578
+    },
+    {
+      "left": "tddft_Q_D_to_A_au",
+      "pair_count": 5376,
+      "right": "tddft_electron_on_donor_fraction",
+      "standardized_linear_residual_rmse": 0.9696619233109331,
+      "weighted_pearson": -0.2444499017814118,
+      "weighted_spearman": -0.27091224257730734
+    },
+    {
+      "left": "tddft_Q_D_to_A_au",
+      "pair_count": 5376,
+      "right": "tddft_electron_on_acceptor_fraction",
+      "standardized_linear_residual_rmse": 0.9692621795955148,
+      "weighted_pearson": 0.24603013475131852,
+      "weighted_spearman": 0.2767664163896148
+    },
+    {
+      "left": "tddft_dipole_change_norm_au",
+      "pair_count": 5376,
+      "right": "tddft_hole_on_donor_fraction",
+      "standardized_linear_residual_rmse": 0.9484117994655656,
+      "weighted_pearson": 0.3170410992828655,
+      "weighted_spearman": 0.2837845956845375
+    },
+    {
+      "left": "tddft_dipole_change_norm_au",
+      "pair_count": 5376,
+      "right": "tddft_hole_on_acceptor_fraction",
+      "standardized_linear_residual_rmse": 0.9484938906972733,
+      "weighted_pearson": -0.31679542185762244,
+      "weighted_spearman": -0.28274701151092657
+    },
+    {
+      "left": "tddft_dipole_change_norm_au",
+      "pair_count": 5376,
+      "right": "tddft_electron_on_donor_fraction",
+      "standardized_linear_residual_rmse": 0.9792693116409038,
+      "weighted_pearson": -0.20256262063458413,
+      "weighted_spearman": -0.07267449392359934
+    },
+    {
+      "left": "tddft_dipole_change_norm_au",
+      "pair_count": 5376,
+      "right": "tddft_electron_on_acceptor_fraction",
+      "standardized_linear_residual_rmse": 0.9789309226496201,
+      "weighted_pearson": 0.20419169591431383,
+      "weighted_spearman": 0.08648758688459295
+    },
+    {
+      "left": "tddft_hole_on_donor_fraction",
+      "pair_count": 5376,
+      "right": "tddft_hole_on_acceptor_fraction",
+      "standardized_linear_residual_rmse": 0.04429320752847474,
+      "weighted_pearson": -0.9990185742852029,
+      "weighted_spearman": -0.9981400099645147
+    },
+    {
+      "left": "tddft_hole_on_donor_fraction",
+      "pair_count": 5376,
+      "right": "tddft_electron_on_donor_fraction",
+      "standardized_linear_residual_rmse": 0.8078782456944121,
+      "weighted_pearson": 0.5893494210854195,
+      "weighted_spearman": 0.682559768137125
+    },
+    {
+      "left": "tddft_hole_on_donor_fraction",
+      "pair_count": 5376,
+      "right": "tddft_electron_on_acceptor_fraction",
+      "standardized_linear_residual_rmse": 0.8087615556141938,
+      "weighted_pearson": -0.5881366730280548,
+      "weighted_spearman": -0.6685733202372006
+    },
+    {
+      "left": "tddft_hole_on_acceptor_fraction",
+      "pair_count": 5376,
+      "right": "tddft_electron_on_donor_fraction",
+      "standardized_linear_residual_rmse": 0.8080986730527728,
+      "weighted_pearson": -0.589047141246223,
+      "weighted_spearman": -0.6790338535839585
+    },
+    {
+      "left": "tddft_hole_on_acceptor_fraction",
+      "pair_count": 5376,
+      "right": "tddft_electron_on_acceptor_fraction",
+      "standardized_linear_residual_rmse": 0.8084938389378197,
+      "weighted_pearson": 0.5885046409329215,
+      "weighted_spearman": 0.6695390613132287
+    },
+    {
+      "left": "tddft_electron_on_donor_fraction",
+      "pair_count": 5376,
+      "right": "tddft_electron_on_acceptor_fraction",
+      "standardized_linear_residual_rmse": 0.029251093940683853,
+      "weighted_pearson": -0.9995720952003778,
+      "weighted_spearman": -0.9932776041366502
+    }
+  ],
+  "partition": "iid_train_only",
+  "primary_residual_generated": false,
+  "secondary_covariance_condition_number": 878832082.9273213,
+  "secondary_covariance_rank": 12,
+  "tasks": [
+    "tddft_coulomb_attraction_eV_eps3p5_proxy",
+    "tddft_excitation_energy_ev",
+    "tddft_oscillator_strength",
+    "tddft_transition_dipole_au",
+    "tddft_Sm",
+    "tddft_Sr",
+    "tddft_D_index_angstrom",
+    "tddft_H_CT_angstrom",
+    "tddft_t_index_angstrom",
+    "tddft_HDI",
+    "tddft_EDI",
+    "tddft_Q_D_to_A_au",
+    "tddft_dipole_change_norm_au",
+    "tddft_hole_on_donor_fraction",
+    "tddft_hole_on_acceptor_fraction",
+    "tddft_electron_on_donor_fraction",
+    "tddft_electron_on_acceptor_fraction"
+  ],
+  "validation_used": false
+}

@@ -1,0 +1,62 @@
+{
+  "version": "gate2e0_multitask_target_audit_v1",
+  "authorization": "AUTHORIZED_MINIMAL_AUXILIARY_LABEL_EXTRACTION",
+  "expected_head": "b6bbbf6ec5870459c41d482594ce511aa3af6564",
+  "source_table": "/home/changliu/ExcitationNexus_Data_v2/tables/molecule_values_v3.parquet",
+  "source_table_sha256": "e7587b1546039f099a4dbd0d352e98885bb2ebdbdcfa18884dd4355eed815a83",
+  "primary": "tddft_coulomb_attraction_eV_eps3p5_proxy",
+  "primary_report_name": "J_eh_screened_eV_eps3p5 proxy",
+  "secondary": [
+    "tddft_excitation_energy_ev",
+    "tddft_oscillator_strength",
+    "tddft_transition_dipole_au",
+    "tddft_Sm",
+    "tddft_Sr",
+    "tddft_D_index_angstrom",
+    "tddft_H_CT_angstrom",
+    "tddft_t_index_angstrom",
+    "tddft_HDI",
+    "tddft_EDI",
+    "tddft_Q_D_to_A_au",
+    "tddft_dipole_change_norm_au"
+  ],
+  "masked": [
+    "tddft_hole_on_donor_fraction",
+    "tddft_hole_on_acceptor_fraction",
+    "tddft_electron_on_donor_fraction",
+    "tddft_electron_on_acceptor_fraction"
+  ],
+  "report_only_deterministic": [
+    "tddft_wavelength_nm",
+    "tddft_coulomb_attraction_au",
+    "tddft_coulomb_attraction_eV"
+  ],
+  "disabled": [
+    "tddft_Q_A_to_D_au",
+    "tddft_net_CT_D_to_A_au",
+    "pm6_energy_raw"
+  ],
+  "protocols": {
+    "iid": {"manifest": "manifests/split_iid_group_seed42_v1.csv", "sha256": "f4572f2c1896d4228dd9eff67220adb7d0a02ad79b70c66766e6da876541c3f2", "train": 10387, "val": 2309},
+    "donor_cold": {"manifest": "manifests/split_donor_cold_v1.csv", "sha256": "505e4bbe4ed20900ed66721d20df5442854c0f0ea04f5885df330bde111427cd", "train": 10530, "val": 2234},
+    "acceptor_cold": {"manifest": "manifests/split_acceptor_cold_v1.csv", "sha256": "659992cc7413094fd17da2281902aa74f261307d98648a973254bd472b5ecc65", "train": 10543, "val": 2235},
+    "pair_cold": {"manifest": "manifests/split_pair_cold_v1.csv", "sha256": "06aaee7d7756957bc42f7d4e221ffd5b20916be69b3116c3bbbe017eb02f4825", "train": 10387, "val": 2319},
+    "both_cold": {"manifest": "manifests/split_both_cold_external_test_v1.csv", "sha256": "f74f40c4a2f5e7d91214ebdabc3e8f2d1a48a3c106509bb8ab7a3c846b83cb16", "train": 9345, "val": 1792},
+    "full_scaffold_cold": {"manifest": "manifests/split_full_scaffold_cold_v1.csv", "sha256": "d395020eccfa6e8b73d50bc788a11261d308403a731a9e448040ffe7d238a897", "train": 10511, "val": 2254}
+  },
+  "expected_train_validation_union": 15015,
+  "local_output_directory": "runs/gate2e0_multitask_target_audit/auxiliary_labels",
+  "primary_artifacts": {
+    "iid_train_val": {"path": "runs/gate1b2_3d_admission/prepared/train_val_targets.parquet", "sha256": "44d7243f5cbef1e2347c2b4983efc8c708600f57193593e1e6c9d966265d54f0"},
+    "validation_union": {"path": "runs/gate2c_uq/calibration_labels_v1.parquet", "sha256": "5d59314b515e2487efdc54061d6d6c368bb3f2e6e51dda09a4dea98cf959e1cc"},
+    "train_supplement_registry": "data_registry/gate2d1_train_label_extraction_registry.json"
+  },
+  "redundancy_gate": {"absolute_spearman_min": 0.9995, "standardized_linear_residual_rmse_max": 0.001, "requires_semantic_support": true},
+  "statistics": {"outlier_rule": "outside_Q1_minus_or_Q3_plus_3IQR", "row_order_seed": 20260720},
+  "gate2e1_weights": {"primary": 1.0, "secondary_total": 0.5, "masked_total": 0.25, "dynamic_weighting": false},
+  "forbidden_partitions": ["test", "buffer", "historical_quarantine"],
+  "validation_use": "integrity_and_coverage_only",
+  "test_artifact_access": false,
+  "final673_access": false,
+  "gpu_use": false
+}

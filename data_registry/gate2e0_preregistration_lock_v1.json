@@ -1,0 +1,35 @@
+{
+  "status": "LOCKED_BEFORE_AUXILIARY_EXTRACTION_AND_TARGET_AUDIT",
+  "locked_utc": "2026-07-21T02:35:49Z",
+  "config_path": "configs/gate2e0_multitask_target_audit_v1.json",
+  "config_sha256": "ed7045aff80775b90602e49d6a68653a48818696195ed4adee526a00961e45f2",
+  "common_script_sha256": "403c2898fe63c1c1278af2051f041f2ec2b5b535b6feefe1932adb112f1a5890",
+  "extraction_script_sha256": "e38f8a6d29ed9b8fb355d519c0cfcf0b429f41533844a0e8165594ad63c7a6bc",
+  "authorized_columns": 17,
+  "expected_train_validation_union": 15015,
+  "arrow_reads_allowed": 1,
+  "primary_read_allowed": false,
+  "validation_role": "integrity_and_coverage_only",
+  "task_selection_partition": "iid_train_or_protocol_train_only",
+  "redundancy_gate": {
+    "absolute_spearman_min": 0.9995,
+    "standardized_linear_residual_rmse_max": 0.001,
+    "requires_semantic_support": true
+  },
+  "gate2e1_candidate_weights": {
+    "primary": 1.0,
+    "secondary_total": 0.5,
+    "masked_total": 0.25,
+    "dynamic_weighting": false
+  },
+  "representation_route": {
+    "gate2d1": "ROLE_AWARE_2D_NOT_ADMITTED",
+    "gate2d2_v2": "REPRESENTATION_SIGNAL_INCONCLUSIVE",
+    "additional_foundation_encoders_allowed": false,
+    "default_input": "C0-512"
+  },
+  "test_artifact_access": false,
+  "final673_access": false,
+  "gpu_use": false,
+  "amendment_policy": "Do not overwrite v1; create an explicit versioned amendment."
+}
