@@ -52,3 +52,5 @@
 - [x] Gate 2-E1: freeze MULTITASK_SIGNAL_INCONCLUSIVE and MASKED_FRAGMENT_SIGNAL_INCONCLUSIVE from IID/acceptor-cold validation only.
 
 - [!] Gate 2-E1 correction: BLOCKED_MULTITASK_PIPELINE_INTEGRITY; acceptor inner split violated the frozen group-weighted quantile rule after validation was consumed.
+
+- [x] Gate 2-E2A: recover training-only cross-fit evidence with corrected group-weighted unit targets; decision MULTITASK_CROSSFIT_INCONCLUSIVE.

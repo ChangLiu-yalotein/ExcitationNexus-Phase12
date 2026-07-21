@@ -1,0 +1,30 @@
+{
+  "version": "gate2e2a_multitask_crossfit_recovery_v1",
+  "expected_head": "9fed06c3c294ece26cc4e9ad801ec3855df18a35",
+  "e1_status": "BLOCKED_MULTITASK_PIPELINE_INTEGRITY",
+  "evidence_scope": "TRAINING_ONLY_CROSSFIT_ROBUSTNESS_NOT_EXTERNAL_CONFIRMATION",
+  "protocols": {
+    "iid": {"manifest": "manifests/split_iid_group_seed42_v1.csv", "manifest_sha256": "f4572f2c1896d4228dd9eff67220adb7d0a02ad79b70c66766e6da876541c3f2", "unit": "structure_group_id_v1"},
+    "acceptor_cold": {"manifest": "manifests/split_acceptor_cold_v1.csv", "manifest_sha256": "659992cc7413094fd17da2281902aa74f261307d98648a973254bd472b5ecc65", "unit": "acceptor_structure_group_id_v1"}
+  },
+  "features": {"path": "runs/gate1b1_new_iid_cheap_baselines/features_v1.parquet", "sha256": "7bb1a6af207364b186c072ab6d013d278e294633255b2235ef789e040e75d058", "total": 532},
+  "primary_sources": {
+    "base": {"path": "runs/gate1b2_3d_admission/prepared/train_val_targets.parquet", "sha256": "44d7243f5cbef1e2347c2b4983efc8c708600f57193593e1e6c9d966265d54f0", "source_column": "target"},
+    "protocol_local_fallback": {"path": "runs/gate2c_uq/calibration_labels_v1.parquet", "sha256": "5d59314b515e2487efdc54061d6d6c368bb3f2e6e51dda09a4dea98cf959e1cc"},
+    "acceptor_cold_supplement": {"path": "runs/gate2d1_role_aware_2d/train_label_supplements/acceptor_cold_train_labels.parquet", "sha256": "4734d5c436433a36b682b2535d6fd3fd42d8f6c124e4bf3313a442558df56604"}
+  },
+  "target_graph": {"path": "data_registry/gate2e0_target_graph_v2.json", "sha256": "efb140a72c1d60e56f96f6c8dcebb2ff3721df35c20469b04f63dffb9382c6a5"},
+  "auxiliary_registry": "data_registry/gate2e0_auxiliary_extraction_registry.json",
+  "arms": ["S0", "M11"],
+  "seeds": [42, 123, 456],
+  "outer": {"folds": 5, "seed": 20260721, "quantile_bins": 10, "historical_overlap_always_train": true},
+  "inner": {"checkpoint_fraction": 0.15, "seed": 20260721, "quantile_bins": 10},
+  "architecture": {"input": 532, "hidden": 512, "residual_blocks": 2, "bottleneck": 256, "head_hidden": 128, "dropout": 0.10, "activation": "SiLU"},
+  "loss": {"primary_weight": 1.0, "secondary_total": 0.5, "secondary_per_task": 0.045454545454545456, "base": "group_weighted_MAE_normalized"},
+  "training": {"optimizer": "AdamW", "learning_rate": 0.0003, "weight_decay": 0.0001, "batch_size": 256, "gradient_clip_norm": 5.0, "scheduler": null, "max_epochs": 200, "minimum_epochs": 20, "patience": 20, "min_delta_eV": 0.0001, "drop_last": false},
+  "xgboost": {"n_estimators": 500, "max_depth": 6, "learning_rate": 0.05, "tree_method": "hist", "device": "cuda", "random_state": 42},
+  "bootstrap": {"replicates": 10000, "seed": 20260721},
+  "decisions": {"acceptor_M11_minus_S0_max": -0.003, "acceptor_M11_minus_XGB_max": -0.002, "iid_M11_minus_XGB_CI_upper_max": 0.002},
+  "forbidden": ["gate2e1 official validation", "test", "buffer", "historical_quarantine", "final673", "main parquet", "M15", "dynamic weighting", "PCGrad", "GradNorm"],
+  "local_root": "runs/gate2e2a_multitask_crossfit"
+}

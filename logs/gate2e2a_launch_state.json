@@ -1,0 +1,548 @@
+{
+  "active": [],
+  "done": [
+    {
+      "job": [
+        "iid",
+        0,
+        "S0",
+        42
+      ],
+      "status": "completed_before_resume"
+    },
+    {
+      "job": [
+        "iid",
+        0,
+        "S0",
+        123
+      ],
+      "status": "completed_before_resume"
+    },
+    {
+      "job": [
+        "iid",
+        0,
+        "S0",
+        456
+      ],
+      "status": "completed_before_resume"
+    },
+    {
+      "job": [
+        "iid",
+        0,
+        "M11",
+        42
+      ],
+      "status": "completed_before_resume"
+    },
+    {
+      "job": [
+        "iid",
+        0,
+        "M11",
+        123
+      ],
+      "status": "completed_before_resume"
+    },
+    {
+      "job": [
+        "iid",
+        0,
+        "M11",
+        456
+      ],
+      "status": "completed_before_resume"
+    },
+    {
+      "job": [
+        "iid",
+        1,
+        "S0",
+        42
+      ],
+      "status": "completed_before_resume"
+    },
+    {
+      "job": [
+        "iid",
+        1,
+        "S0",
+        123
+      ],
+      "status": "completed_before_resume"
+    },
+    {
+      "job": [
+        "iid",
+        1,
+        "S0",
+        456
+      ],
+      "status": "completed_before_resume"
+    },
+    {
+      "job": [
+        "iid",
+        1,
+        "M11",
+        42
+      ],
+      "status": "completed_before_resume"
+    },
+    {
+      "job": [
+        "iid",
+        1,
+        "M11",
+        123
+      ],
+      "status": "completed_before_resume"
+    },
+    {
+      "job": [
+        "iid",
+        1,
+        "M11",
+        456
+      ],
+      "status": "completed_before_resume"
+    },
+    {
+      "job": [
+        "iid",
+        2,
+        "S0",
+        42
+      ],
+      "status": "completed_before_resume"
+    },
+    {
+      "job": [
+        "iid",
+        2,
+        "S0",
+        123
+      ],
+      "status": "completed_before_resume"
+    },
+    {
+      "job": [
+        "iid",
+        2,
+        "S0",
+        456
+      ],
+      "status": "completed_before_resume"
+    },
+    {
+      "job": [
+        "iid",
+        2,
+        "M11",
+        42
+      ],
+      "status": "completed_before_resume"
+    },
+    {
+      "job": [
+        "iid",
+        2,
+        "M11",
+        123
+      ],
+      "status": "completed_before_resume"
+    },
+    {
+      "job": [
+        "iid",
+        2,
+        "M11",
+        456
+      ],
+      "status": "completed_before_resume"
+    },
+    {
+      "job": [
+        "iid",
+        3,
+        "S0",
+        42
+      ],
+      "status": "completed_before_resume"
+    },
+    {
+      "job": [
+        "iid",
+        3,
+        "S0",
+        123
+      ],
+      "status": "completed_before_resume"
+    },
+    {
+      "job": [
+        "iid",
+        3,
+        "S0",
+        456
+      ],
+      "status": "completed_before_resume"
+    },
+    {
+      "job": [
+        "iid",
+        3,
+        "M11",
+        42
+      ],
+      "status": "completed_before_resume"
+    },
+    {
+      "job": [
+        "iid",
+        3,
+        "M11",
+        123
+      ],
+      "status": "completed_before_resume"
+    },
+    {
+      "job": [
+        "iid",
+        3,
+        "M11",
+        456
+      ],
+      "status": "completed_before_resume"
+    },
+    {
+      "job": [
+        "iid",
+        4,
+        "S0",
+        42
+      ],
+      "status": "completed_before_resume"
+    },
+    {
+      "job": [
+        "iid",
+        4,
+        "S0",
+        123
+      ],
+      "status": "completed_before_resume"
+    },
+    {
+      "job": [
+        "iid",
+        4,
+        "S0",
+        456
+      ],
+      "status": "completed_before_resume"
+    },
+    {
+      "job": [
+        "iid",
+        4,
+        "M11",
+        42
+      ],
+      "status": "completed_before_resume"
+    },
+    {
+      "job": [
+        "iid",
+        4,
+        "M11",
+        123
+      ],
+      "status": "completed_before_resume"
+    },
+    {
+      "job": [
+        "iid",
+        4,
+        "M11",
+        456
+      ],
+      "status": "completed_before_resume"
+    },
+    {
+      "job": [
+        "acceptor_cold",
+        0,
+        "S0",
+        42
+      ],
+      "status": "completed_before_resume"
+    },
+    {
+      "job": [
+        "acceptor_cold",
+        0,
+        "S0",
+        123
+      ],
+      "status": "completed_before_resume"
+    },
+    {
+      "job": [
+        "acceptor_cold",
+        0,
+        "S0",
+        456
+      ],
+      "status": "completed_before_resume"
+    },
+    {
+      "job": [
+        "acceptor_cold",
+        0,
+        "M11",
+        42
+      ],
+      "status": "completed_before_resume"
+    },
+    {
+      "job": [
+        "acceptor_cold",
+        0,
+        "M11",
+        123
+      ],
+      "status": "completed_before_resume"
+    },
+    {
+      "job": [
+        "acceptor_cold",
+        0,
+        "M11",
+        456
+      ],
+      "status": "completed_before_resume"
+    },
+    {
+      "job": [
+        "acceptor_cold",
+        1,
+        "S0",
+        42
+      ],
+      "status": "completed_before_resume"
+    },
+    {
+      "job": [
+        "acceptor_cold",
+        1,
+        "S0",
+        123
+      ],
+      "status": "completed_before_resume"
+    },
+    {
+      "job": [
+        "acceptor_cold",
+        1,
+        "S0",
+        456
+      ],
+      "status": "completed_before_resume"
+    },
+    {
+      "job": [
+        "acceptor_cold",
+        1,
+        "M11",
+        42
+      ],
+      "status": "completed_before_resume"
+    },
+    {
+      "job": [
+        "acceptor_cold",
+        1,
+        "M11",
+        123
+      ],
+      "status": "completed_before_resume"
+    },
+    {
+      "job": [
+        "acceptor_cold",
+        1,
+        "M11",
+        456
+      ],
+      "status": "completed_before_resume"
+    },
+    {
+      "job": [
+        "acceptor_cold",
+        2,
+        "S0",
+        42
+      ],
+      "status": "completed_before_resume"
+    },
+    {
+      "job": [
+        "acceptor_cold",
+        2,
+        "S0",
+        123
+      ],
+      "status": "completed_before_resume"
+    },
+    {
+      "job": [
+        "acceptor_cold",
+        2,
+        "S0",
+        456
+      ],
+      "status": "completed_before_resume"
+    },
+    {
+      "job": [
+        "acceptor_cold",
+        2,
+        "M11",
+        42
+      ],
+      "status": "completed_before_resume"
+    },
+    {
+      "job": [
+        "acceptor_cold",
+        2,
+        "M11",
+        123
+      ],
+      "status": "completed_before_resume"
+    },
+    {
+      "job": [
+        "acceptor_cold",
+        2,
+        "M11",
+        456
+      ],
+      "status": "completed_before_resume"
+    },
+    {
+      "job": [
+        "acceptor_cold",
+        3,
+        "S0",
+        42
+      ],
+      "status": "completed_before_resume"
+    },
+    {
+      "job": [
+        "acceptor_cold",
+        3,
+        "S0",
+        123
+      ],
+      "status": "completed_before_resume"
+    },
+    {
+      "job": [
+        "acceptor_cold",
+        3,
+        "S0",
+        456
+      ],
+      "status": "completed_before_resume"
+    },
+    {
+      "job": [
+        "acceptor_cold",
+        3,
+        "M11",
+        42
+      ],
+      "status": "completed_before_resume"
+    },
+    {
+      "job": [
+        "acceptor_cold",
+        3,
+        "M11",
+        123
+      ],
+      "status": "completed_before_resume"
+    },
+    {
+      "job": [
+        "acceptor_cold",
+        3,
+        "M11",
+        456
+      ],
+      "status": "completed_before_resume"
+    },
+    {
+      "job": [
+        "acceptor_cold",
+        4,
+        "S0",
+        42
+      ],
+      "status": "completed_before_resume"
+    },
+    {
+      "job": [
+        "acceptor_cold",
+        4,
+        "S0",
+        123
+      ],
+      "status": "completed_before_resume"
+    },
+    {
+      "job": [
+        "acceptor_cold",
+        4,
+        "S0",
+        456
+      ],
+      "status": "completed_before_resume"
+    },
+    {
+      "job": [
+        "acceptor_cold",
+        4,
+        "M11",
+        42
+      ],
+      "status": "completed_before_resume"
+    },
+    {
+      "job": [
+        "acceptor_cold",
+        4,
+        "M11",
+        123
+      ],
+      "status": "completed_before_resume"
+    },
+    {
+      "job": [
+        "acceptor_cold",
+        4,
+        "M11",
+        456
+      ],
+      "status": "completed_before_resume"
+    }
+  ],
+  "explicit_free_gpu_pool": true,
+  "failed": [],
+  "pending": 0
+}

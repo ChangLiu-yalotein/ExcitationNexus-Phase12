@@ -1,0 +1,15 @@
+{
+  "config_sha256": "d6fdb6c195903e19e0b7cec10eba19dbfb437abdec2102d2c216de66eb9c154a",
+  "created_before_training": true,
+  "decision_thresholds": {
+    "acceptor_M11_minus_S0_max": -0.003,
+    "acceptor_M11_minus_XGB_max": -0.002,
+    "iid_M11_minus_XGB_CI_upper_max": 0.002
+  },
+  "expected_head": "9fed06c3c294ece26cc4e9ad801ec3855df18a35",
+  "final673_access": false,
+  "fold_registry_sha256": "f0d7a74c507ad14ab4d1166c04c9c411a9ea739ff717e144c6e0814b86a4414f",
+  "official_validation_access": false,
+  "test_access": false,
+  "version": "gate2e2a_preregistration_lock_v1"
+}

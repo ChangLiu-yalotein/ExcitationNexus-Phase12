@@ -1,0 +1,24 @@
+{
+  "completed_utc": "2026-07-21T05:40:44.688730+00:00",
+  "decision": "MULTITASK_CROSSFIT_INCONCLUSIVE",
+  "final673_accessed": false,
+  "main_parquet_accessed": false,
+  "neural_models": 60,
+  "official_validation_accessed": false,
+  "scheduler_overlap_incident": "EARLY_ENGINEERING_LAUNCH_RESTARTED_WITH_FIXED_GPU_LANES_NO_CONFIG_CHANGE",
+  "status": "GATE2E2A_DONE",
+  "test_accessed": false,
+  "training_only_crossfit": true,
+  "xgb_models": 10,
+  "pytest": {
+    "passed": 172,
+    "failed": 0,
+    "warnings": 4
+  },
+  "oof_coverage": "PASS",
+  "git_diff_check": "PASS",
+  "secret_scan_findings": 0,
+  "large_files_over_20MiB": 0,
+  "checkpoints_and_oof_git_ignored": true,
+  "unsafe_initial_launcher_published": false
+}

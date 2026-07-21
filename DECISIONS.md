@@ -191,3 +191,10 @@
 - Invalidate the earlier E1 admission labels: acceptor inner splitting used record mean instead of structure-group-weighted mean and changes 146 assignments under correct reconstruction.
 - Do not repair or rerun v1 after official validation exposure. Preserve all artifacts as diagnostic-only evidence.
 - Any future multitask admission requires a new preregistration and an unobserved evaluation boundary.
+
+## Gate 2-E2A decisions
+
+- Preserve Gate 2-E1 v1 as blocked and diagnostic-only. E2A does not repair or validate it.
+- Freeze MULTITASK_CROSSFIT_INCONCLUSIVE: the acceptor M11 improvement is small and the identity-cluster CI crosses zero.
+- Preserve the significant IID OOF improvement as secondary training-only evidence; it cannot override the acceptor-OOD primary endpoint.
+- Do not unlock official validation or test, run M15, modify task weights, or start dynamic weighting from this result.

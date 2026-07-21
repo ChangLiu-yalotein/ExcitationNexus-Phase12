@@ -182,3 +182,12 @@ Project and EquiformerV3 directories are not Git worktrees; source commit proven
 - The defect was found after official validation unlock. V1 cannot be repaired or retrained without post-validation contamination.
 - Final status is BLOCKED_MULTITASK_PIPELINE_INTEGRITY. Existing metrics are diagnostic only; no multitask admission or rejection conclusion is valid.
 - No rerun, test access, force push, or published tag rewrite occurred.
+
+## Gate 2-E2A result
+
+- Gate 2-E1 v1 remains permanently BLOCKED_MULTITASK_PIPELINE_INTEGRITY; no old artifact or tag was changed.
+- Training-only 5-fold cross-fitting produced 60 neural refits and 10 fold-matched XGBoost-C0 models using only IID and acceptor-cold official-train rows.
+- Acceptor M11-S0 is -0.000352594 eV with identity CI [-0.001056860, +0.000369232]; M11-XGB is -0.000328942 eV with CI [-0.001937995, +0.001382827].
+- IID M11-S0 is -0.000647392 eV and M11-XGB is -0.002402325 eV, with both structure-group CIs below zero. IID evidence does not replace the primary acceptor endpoint.
+- Final decision: MULTITASK_CROSSFIT_INCONCLUSIVE. This is development-time robustness evidence, not external confirmation, and it does not restore Gate 2-E1 v1.
+- Official validation, test, main Parquet, buffer, quarantine, and final673 were not accessed.

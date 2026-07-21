@@ -1,0 +1,11 @@
+# Gate 2-E2A cross-fit results
+
+Decision: `MULTITASK_CROSSFIT_INCONCLUSIVE`.
+
+Acceptor OOF identity-macro MAE: S0 0.086227864, M11 0.085875265, XGB-C0 0.086204208 eV.
+M11−S0: -0.000352594 eV, 95% CI [-0.0010568604705569495, 0.00036923151233398885].
+M11−XGB: -0.000328942 eV, 95% CI [-0.0019379947988260942, 0.00138282730818336].
+IID structure-macro MAE: S0 0.084357783, M11 0.083710387, XGB-C0 0.086112715 eV.
+IID M11−XGB: -0.002402325 eV, 95% CI [-0.003234769439909328, -0.0015579962016590973].
+
+This is training-only cross-fit robustness evidence, not unseen external confirmation, and it does not restore Gate 2-E1 v1.

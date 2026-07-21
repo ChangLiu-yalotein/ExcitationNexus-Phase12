@@ -1,0 +1,50 @@
+{
+  "main_parquet_accessed": false,
+  "official_validation_accessed": false,
+  "protocols": {
+    "acceptor_cold": {
+      "assignment_hash": "9a1f4362cdece6275e0290fa16e63f779a11a882bf2d7c5b5962d38c535b82ca",
+      "eligible_records": 10000,
+      "eligible_units": 277,
+      "fold_counts": {
+        "0": 1959,
+        "1": 2249,
+        "2": 2045,
+        "3": 1924,
+        "4": 1823
+      },
+      "forced_train_records": 543,
+      "inner_path": "runs/gate2e2a_multitask_crossfit/folds/acceptor_cold_inner_units.parquet",
+      "inner_sha256": "85b5bdd8d42c3665a09ab5301fa285e226d339e9e08b7ea544d670a5a0affc1e",
+      "outer_path": "runs/gate2e2a_multitask_crossfit/folds/acceptor_cold_outer.parquet",
+      "outer_sha256": "7f2d0801cb98a17518a23c849e5e97e0dc3fed0a5dc828004389aec89baa9797",
+      "production_reference_match": true,
+      "records": 10543,
+      "shuffle_invariant": true,
+      "units": 284
+    },
+    "iid": {
+      "assignment_hash": "a303b518315a0fc81987ce20f453c00d47045ba6eae11f37c349fc42107af9f9",
+      "eligible_records": 10370,
+      "eligible_units": 10231,
+      "fold_counts": {
+        "0": 2072,
+        "1": 2079,
+        "2": 2082,
+        "3": 2064,
+        "4": 2073
+      },
+      "forced_train_records": 17,
+      "inner_path": "runs/gate2e2a_multitask_crossfit/folds/iid_inner_units.parquet",
+      "inner_sha256": "23877dc5dc3e4d797dda9c7c3ea068496febac0e51a2fea29bb548b75ce84e7a",
+      "outer_path": "runs/gate2e2a_multitask_crossfit/folds/iid_outer.parquet",
+      "outer_sha256": "e3746b9ee49750bfe35a371be3ad154ef226037a9b4797dc218731c573742fe1",
+      "production_reference_match": true,
+      "records": 10387,
+      "shuffle_invariant": true,
+      "units": 10248
+    }
+  },
+  "test_accessed": false,
+  "version": "gate2e2a_fold_registry_v1"
+}
