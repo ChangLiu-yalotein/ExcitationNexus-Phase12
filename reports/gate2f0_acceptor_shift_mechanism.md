@@ -1,0 +1,3 @@
+# Gate 2-F0 acceptor shift mechanism
+
+The acceptor-cold diagnostic uses only official train/validation identities, frozen C0 validation predictions, validation labels already present in the local calibration artifact, and newly recomputed validation-only target-free similarity. It contains 284 train and 32 held-out validation acceptor identities. The largest absolute standardized mean shift across all audited features is 1.3797; it occurs in role/size composition rather than establishing a delta mechanism. Across admitted delta fields, the largest absolute SMD is 0.1545 and the largest absolute Spearman association with C0 validation error is 0.0891. These are diagnostic associations, not causal evidence, and did not select fields.

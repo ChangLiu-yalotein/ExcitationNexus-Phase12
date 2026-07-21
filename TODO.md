@@ -54,3 +54,4 @@
 - [!] Gate 2-E1 correction: BLOCKED_MULTITASK_PIPELINE_INTEGRITY; acceptor inner split violated the frozen group-weighted quantile rule after validation was consumed.
 
 - [x] Gate 2-E2A: recover training-only cross-fit evidence with corrected group-weighted unit targets; decision MULTITASK_CROSSFIT_INCONCLUSIVE.
+- [x] Gate 2-F0: audit PM6/DFT ground-state semantics, role/interface descriptors, matched deltas, duplicate dispersion, and acceptor-cold shift; decision `DELTA_FEATURE_GRAPH_ADMITTED`.

@@ -1,0 +1,87 @@
+{
+  "delta_sign_reproducible": true,
+  "energy_reason": "non-equivalent PM6 reported energy versus DFT SCF electronic energy",
+  "pairs": {
+    "dipole_magnitude_debye": {
+      "admitted": true,
+      "coverage": 1.0,
+      "delta_std": 1.3462633365326329,
+      "delta_to_dft_std_ratio": 0.4397172272707724,
+      "dft_field": "dft_dipole_magnitude_debye",
+      "dft_std": 3.061657021919727,
+      "duplicate_dispersion": {
+        "groups": 372,
+        "max_range": 1.6597,
+        "meaningful_range_gt_1e_6": 2,
+        "median_range": 0.0,
+        "p90_range": 0.0
+      },
+      "pm6_field": "pm6_dipole_magnitude_debye",
+      "pm6_std": 2.884414494980282,
+      "signed_rule": "dft_dipole_magnitude_debye - pm6_dipole_magnitude_debye",
+      "standardized_delta_policy": "protocol-train-only scaling; not a separate feature",
+      "unit": "debye"
+    },
+    "gap_hartree": {
+      "admitted": true,
+      "coverage": 1.0,
+      "delta_std": 0.011007831107780757,
+      "delta_to_dft_std_ratio": 0.6517503174062084,
+      "dft_field": "dft_gap_hartree",
+      "dft_std": 0.01688964441412008,
+      "duplicate_dispersion": {
+        "groups": 372,
+        "max_range": 0.0036900000000000266,
+        "meaningful_range_gt_1e_6": 2,
+        "median_range": 0.0,
+        "p90_range": 0.0
+      },
+      "pm6_field": "pm6_gap_hartree",
+      "pm6_std": 0.017236386006594023,
+      "signed_rule": "dft_gap_hartree - pm6_gap_hartree",
+      "standardized_delta_policy": "protocol-train-only scaling; not a separate feature",
+      "unit": "hartree"
+    },
+    "homo_hartree": {
+      "admitted": true,
+      "coverage": 1.0,
+      "delta_std": 0.005178285623853141,
+      "delta_to_dft_std_ratio": 0.5561840248799401,
+      "dft_field": "dft_homo_hartree",
+      "dft_std": 0.009310381802086,
+      "duplicate_dispersion": {
+        "groups": 372,
+        "max_range": 0.0012000000000000066,
+        "meaningful_range_gt_1e_6": 2,
+        "median_range": 0.0,
+        "p90_range": 0.0
+      },
+      "pm6_field": "pm6_homo_hartree",
+      "pm6_std": 0.010245933038980732,
+      "signed_rule": "dft_homo_hartree - pm6_homo_hartree",
+      "standardized_delta_policy": "protocol-train-only scaling; not a separate feature",
+      "unit": "hartree"
+    },
+    "lumo_hartree": {
+      "admitted": true,
+      "coverage": 1.0,
+      "delta_std": 0.010071390452377184,
+      "delta_to_dft_std_ratio": 0.6296136625990659,
+      "dft_field": "dft_lumo_hartree",
+      "dft_std": 0.015996143429928368,
+      "duplicate_dispersion": {
+        "groups": 372,
+        "max_range": 0.004820000000000005,
+        "meaningful_range_gt_1e_6": 2,
+        "median_range": 0.0,
+        "p90_range": 0.0
+      },
+      "pm6_field": "pm6_lumo_hartree",
+      "pm6_std": 0.015556961271025824,
+      "signed_rule": "dft_lumo_hartree - pm6_lumo_hartree",
+      "standardized_delta_policy": "protocol-train-only scaling; not a separate feature",
+      "unit": "hartree"
+    }
+  },
+  "rejected_energy_pair": true
+}

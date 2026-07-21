@@ -1,0 +1,76 @@
+{
+  "atom_order_match_rate": 1.0,
+  "decision": "DELTA_FEATURE_GRAPH_ADMITTED",
+  "empty_donor_records": 387,
+  "families": {
+    "ground_state_scalars": {
+      "admitted": true,
+      "fields": [
+        "dft_homo_hartree",
+        "dft_lumo_hartree",
+        "dft_gap_hartree",
+        "dft_dipole_magnitude_debye",
+        "pm6_homo_hartree",
+        "pm6_lumo_hartree",
+        "pm6_gap_hartree",
+        "pm6_dipole_magnitude_debye",
+        "electron_count",
+        "formal_charge"
+      ],
+      "minimum_coverage": 1.0
+    },
+    "pm6_dft_deltas": {
+      "admitted": true,
+      "fields": [
+        "delta_homo_hartree",
+        "delta_lumo_hartree",
+        "delta_gap_hartree",
+        "delta_dipole_magnitude_debye",
+        "abs_delta_homo_hartree",
+        "abs_delta_lumo_hartree",
+        "abs_delta_gap_hartree",
+        "abs_delta_dipole_magnitude_debye"
+      ],
+      "minimum_coverage": 1.0
+    },
+    "role_counts": {
+      "admitted": true,
+      "fields": [
+        "donor_atom_count",
+        "acceptor_atom_count",
+        "unknown_atom_count",
+        "donor_atom_fraction",
+        "acceptor_atom_fraction",
+        "unknown_atom_fraction",
+        "donor_present",
+        "acceptor_present",
+        "unknown_present"
+      ],
+      "minimum_coverage": 1.0
+    },
+    "role_interface_geometry": {
+      "admitted": false,
+      "fields": [
+        "da_min_distance",
+        "da_q25_distance",
+        "da_median_distance",
+        "da_q75_distance",
+        "da_centroid_distance",
+        "da_contacts_le_3.5A",
+        "da_contacts_le_4A",
+        "da_contacts_le_5A",
+        "donor_interface_atoms_4A",
+        "acceptor_interface_atoms_4A",
+        "unknown_acceptor_min_distance",
+        "unknown_donor_min_distance"
+      ],
+      "minimum_coverage": 0.0243740010655301
+    }
+  },
+  "local_feature_sha256": "cf9ee28eef60d05bdd6c16f73b8e61d00a278bb3161deb25927d10e843fdc6f7",
+  "prediction_generation": false,
+  "role_order_match_rate": 1.0,
+  "sidecar_conflict_records": 1,
+  "source_inventory_sha256": "c7c5d1d8d3f1d3118ad17c2e337dc72be28086e7d36988360d230ea88fbf4157",
+  "training": false
+}

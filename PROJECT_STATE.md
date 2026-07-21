@@ -191,3 +191,14 @@ Project and EquiformerV3 directories are not Git worktrees; source commit proven
 - IID M11-S0 is -0.000647392 eV and M11-XGB is -0.002402325 eV, with both structure-group CIs below zero. IID evidence does not replace the primary acceptor endpoint.
 - Final decision: MULTITASK_CROSSFIT_INCONCLUSIVE. This is development-time robustness evidence, not external confirmation, and it does not restore Gate 2-E1 v1.
 - Official validation, test, main Parquet, buffer, quarantine, and final673 were not accessed.
+
+## Gate 2-F0 result
+
+- A CPU-only audit covered all 15,016 paired PM6/DFT records with 100% source, finite matched-field, atom-order, and original-role-order coverage.
+- Semantically matched PM6/DFT pairs exist for HOMO, LUMO, gap, and dipole magnitude. Signed deltas are frozen as DFT minus PM6; their coverage is 100%.
+- PM6 reported energy remains rejected: it is not semantically equivalent to DFT S0 SCF electronic energy. Dipole component deltas are rejected because the two optimized geometries do not share a guaranteed global frame.
+- All 372 duplicate structure groups were audited. Only two groups show nonzero matched-delta dispersion above 1e-6; 219 role-inconsistent duplicate groups remain separate and are not averaged.
+- DFT S0 role/interface descriptors are reproducible, but donor-interface distances are undefined for the 387 retained empty-donor records and therefore do not reach the 99% family admission threshold. Role counts/presence flags remain complete.
+- The corrected acceptor validation analysis contains 284 train and 32 held-out acceptor identities. A target-free validation similarity amendment replaced a forbidden test-only Gate 2-A similarity asset before any valid shift statistic existed.
+- Final decision: `DELTA_FEATURE_GRAPH_ADMITTED`. This admits only a leakage-safe candidate feature graph for a future capacity-controlled validation experiment; it is not predictive evidence.
+- No training, GPU, new prediction, test artifact, main Parquet, Gate 2-E1 result, or final673 asset was accessed.

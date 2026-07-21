@@ -1,0 +1,16 @@
+{
+  "changes_feature_admission_rules": false,
+  "component_identity_sha256": "dca4a5e5661d7336226b16c87624ba3b457cdcd0379ccb2130a48d4f30306515",
+  "fingerprint": {
+    "metric": "nearest_train_tanimoto",
+    "n_bits": 2048,
+    "radius": 2,
+    "use_chirality": true
+  },
+  "reason": "Gate 2-A similarity asset was discovered to contain test partitions only and is forbidden here",
+  "replacement": "validation-only target-free nearest-train acceptor Morgan similarity recomputation",
+  "timing": "before any valid acceptor-shift statistic; prior attempted merge produced zero validation rows",
+  "uses_labels": false,
+  "uses_test": false,
+  "version": "gate2f0_validation_similarity_amendment_v1"
+}

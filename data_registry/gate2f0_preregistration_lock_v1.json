@@ -1,0 +1,22 @@
+{
+  "admission": {
+    "atom_order_match": 1.0,
+    "capacity_control_required": true,
+    "minimum_coverage": 0.99,
+    "target_equivalent_allowed": false,
+    "td_dft_allowed": false
+  },
+  "config_sha256": "394764430c2fd18fbd53ecf4ddd89c1328b520dc8f0d4fc078583cca1f00db60",
+  "created_before_full_scan": true,
+  "expected_head": "2a12d7061a381cf842143ad2c1d92e88c760011f",
+  "feature_families": [
+    "ground_state_scalars",
+    "role_counts",
+    "role_interface_geometry",
+    "pm6_dft_deltas"
+  ],
+  "final673_access": false,
+  "test_access": false,
+  "training": false,
+  "version": "gate2f0_preregistration_lock_v1"
+}

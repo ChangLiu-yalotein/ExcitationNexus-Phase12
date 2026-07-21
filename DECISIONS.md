@@ -198,3 +198,14 @@
 - Freeze MULTITASK_CROSSFIT_INCONCLUSIVE: the acceptor M11 improvement is small and the identity-cluster CI crosses zero.
 - Preserve the significant IID OOF improvement as secondary training-only evidence; it cannot override the acceptor-OOD primary endpoint.
 - Do not unlock official validation or test, run M15, modify task weights, or start dynamic weighting from this result.
+
+## Gate 2-F0 decisions
+
+- Stop the fixed-weight multitask route and retain XGBoost-C0 as the default deployable baseline.
+- Admit only four same-unit matched ground-state delta pairs: HOMO, LUMO, gap, and dipole magnitude, each defined as DFT minus PM6. Any standardized form must be fitted protocol-train-only and is not a separate information source.
+- Reject `pm6_energy_raw` and PM6/DFT energy delta because the PM6 reported positive energy is not proven equivalent to DFT SCF electronic energy.
+- Reject Cartesian dipole-component deltas as non-invariant; retain only dipole magnitude.
+- Do not impute D/A interface distances for the 387 empty-donor records, replace unknown roles, or use graph-supported role candidates as truth.
+- Preserve D81_A28 as sidecar-conflicted and keep the 219 role-inconsistent duplicate groups unaggregated.
+- Freeze `DELTA_FEATURE_GRAPH_ADMITTED` as feasibility only. A later Gate must compare equal-capacity C0, ground-state scalar, role/interface, and delta families on validation before any test access.
+- Treat the Gate 2-F0 validation similarity amendment as target-free: Gate 2-A's existing similarity file is test-only and was not used.
