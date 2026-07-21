@@ -1,0 +1,14 @@
+{
+  "version": "gate2d2_v2_token_length_correction",
+  "amends": "gate2d2_frozen_molformer_admission_v2",
+  "created_before_any_molecular_forward": true,
+  "created_before_embedding_or_validation": true,
+  "reason": "v1 regex token audit differed from the frozen model tokenizer",
+  "counting_rule": "len(frozen_tokenizer(text, add_special_tokens=True, truncation=False).input_ids)",
+  "v1_reported_maxima": {"full": 399, "donor": 208, "acceptor": 372},
+  "frozen_tokenizer_maxima": {"full": 417, "donor": 208, "acceptor": 378},
+  "bins": [[0, 202], [203, 256], [257, 320], [321, 417]],
+  "scientific_change": false,
+  "admission_threshold_change": false,
+  "model_or_input_change": false
+}

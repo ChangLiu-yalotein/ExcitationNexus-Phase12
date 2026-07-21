@@ -159,3 +159,12 @@
 - Freeze Gate 2-D2 v1 as `BLOCKED_PREREGISTERED_PCA_INFEASIBLE`: unique/equal-weight donor PCA-256 exceeds every protocol's identifiable rank.
 - Do not manufacture PCA dimensions by duplicating component rows, zero-padding non-identifiable components, using held-out structures, changing the 256/256 allocation after lock, or substituting another encoder.
 - Do not interpret the blocker as evidence against continuous representations. A future v2 requires a new preregistration and a mathematically feasible target-free compression rule; no v2 is authorized by this Gate.
+
+## Gate 2-D2 v2 decisions
+
+- Preserve v1 unchanged and authorize only fixed PCG64 Gaussian projections: 768×512 seed 20260720 and one shared 768×256 donor/acceptor matrix seed 20260721.
+- Correct the target-free sequence-length audit before any molecular forward: the immutable tokenizer gives maxima 417/208/378. Preserve the original v2 lock and the explicit correction lock.
+- Keep every >202-token input labeled `OUTSIDE_PRETRAINING_LENGTH_SUPPORT` despite successful forward execution.
+- Treat exact embedding aliases as frozen-tokenizer representation aliases because every collision has identical token IDs; do not drop structures or replace the tokenizer post hoc.
+- Freeze `REPRESENTATION_SIGNAL_INCONCLUSIVE`: C significantly improves over equal-budget full continuous embedding on acceptor-cold validation, but C versus C0 is below the preregistered effect threshold with CI crossing zero, and IID non-inferiority fails.
+- Do not unlock test or try another foundation encoder from this result. Any next intervention requires a new scientific Gate.

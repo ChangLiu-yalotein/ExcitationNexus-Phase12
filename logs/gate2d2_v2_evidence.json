@@ -1,0 +1,45 @@
+{
+  "decision": "REPRESENTATION_SIGNAL_INCONCLUSIVE",
+  "embedding_registry_sha256": "a75eda5aa999bfd30622b40449e4ef4fb86bb19e5eae69db618043e169823b5f",
+  "final673_accessed": false,
+  "long_sequence_gate": "PASSED",
+  "main_parquet_accessed": false,
+  "model_registry_sha256": "66e4ca279fc2629b6540ac650349ce3c87a903beb6c6d44b7f63f664813c3fa0",
+  "new_models": 12,
+  "primary": {
+    "acceptor_C_minus_A": {
+      "ci95": [
+        -0.005445439957307638,
+        0.002658489158518558
+      ],
+      "clusters": 32,
+      "point": -0.0012743977859558996
+    },
+    "acceptor_C_minus_B": {
+      "ci95": [
+        -0.005996529975795716,
+        -0.00014749916801554578
+      ],
+      "clusters": 32,
+      "point": -0.0030332795537072136
+    },
+    "iid_C_minus_A": {
+      "ci95": [
+        8.803258780654579e-05,
+        0.0029984058395145065
+      ],
+      "clusters": 2195,
+      "point": 0.0015469247342982902
+    },
+    "thresholds": {
+      "acceptor_C_minus_A_ci_upper_max_eV": 0.0,
+      "acceptor_C_minus_A_max_eV": -0.003,
+      "acceptor_C_minus_B_ci_upper_max_eV": 0.0,
+      "acceptor_C_minus_B_max_eV": -0.001,
+      "iid_C_minus_A_ci_upper_max_eV": 0.002
+    }
+  },
+  "status": "GATE2D2_V2_DONE",
+  "test_artifacts_accessed": false,
+  "validation_only": true
+}

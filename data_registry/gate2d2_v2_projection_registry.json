@@ -1,0 +1,31 @@
+{
+  "R_component": {
+    "content_sha256": "ca38275e6f6f0257ee82da4da75365a82fa4dd77b02aa44b03cdcae7376380e1",
+    "seed": 20260721,
+    "shape": [
+      768,
+      256
+    ],
+    "shared_by": [
+      "donor",
+      "acceptor"
+    ]
+  },
+  "R_full": {
+    "content_sha256": "f54af0415256ec02d903b2ea9d8dee50ad29ef193e72e5048505e2acc820c17c",
+    "seed": 20260720,
+    "shape": [
+      768,
+      512
+    ]
+  },
+  "distribution": "N(0,1/output_dimension)",
+  "generation_dtype": "float64",
+  "generator": "PCG64",
+  "npz_path": "data_registry/gate2d2_v2_fixed_projection_matrices.npz",
+  "npz_sha256": "521f3567236b8a0a88f4b2122981383b573bb9f26e5359242eb605564d45ffe1",
+  "numpy_version": "2.2.6",
+  "status": "GATE2D2_V2_FIXED_PROJECTIONS_FROZEN",
+  "storage_dtype": "float32",
+  "target_or_data_access": false
+}

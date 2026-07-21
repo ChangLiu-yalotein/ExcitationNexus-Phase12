@@ -148,3 +148,13 @@ Project and EquiformerV3 directories are not Git worktrees; source commit proven
 - Gate 2-D2 v1 stopped before executing remote code or extracting embeddings: the frozen Arm C requests 256 donor PCs from unique protocol-train donors, but only 124-154 unique donors exist (maximum centered PCA ranks 123-153).
 - No PCA, XGBoost model, validation prediction, test artifact, main Parquet, or final673 asset was accessed. This is a protocol blocker, not a negative MoLFormer result.
 - Final status: `BLOCKED_PREREGISTERED_PCA_INFEASIBLE`. Any retry requires an explicit v2 compression contract; v1 cannot be silently edited.
+
+## Gate 2-D2 v2 result
+
+- V1 remains frozen as `BLOCKED_PREREGISTERED_PCA_INFEASIBLE`; v2 replaces only the infeasible PCA with two fixed, target-free Gaussian random projections.
+- The immutable safetensors SHA matched. A target-free correction made before any molecular forward established true tokenizer maxima 417/208/378 rather than the earlier regex counts 399/208/372.
+- The long-sequence gate passed without truncation: repeat delta 0 and single-versus-padded-batch maximum delta 2.3544e-6. Inputs above 202 tokens remain outside documented pretraining length support.
+- Frozen embeddings cover 14,639 full, 154 donor, and 352 acceptor identities. All exact embedding aliases arise from identical tokenizer ID sequences; none joins distinct token sequences.
+- Twelve protocol-local validation-only XGBoost models were frozen. Acceptor C−A is -0.0012744 eV with CI [-0.0054454, +0.0026585]; C−B is -0.0030333 eV with CI [-0.0059965, -0.0001475]. IID C−A CI upper is +0.0029984 eV.
+- Final v2 decision: `REPRESENTATION_SIGNAL_INCONCLUSIVE`. The role-separated continuous arm beats the full continuous control on acceptor-cold validation, but misses the frozen C0 effect threshold and IID non-inferiority rule.
+- No test artifact, source Parquet, buffer/quarantine, final673, encoder fine-tuning, projection search, or post-result model change was used.

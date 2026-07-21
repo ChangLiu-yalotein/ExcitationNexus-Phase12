@@ -1,0 +1,834 @@
+{
+  "decision": "REPRESENTATION_SIGNAL_INCONCLUSIVE",
+  "final673_accessed": false,
+  "main_parquet_accessed": false,
+  "primary": {
+    "acceptor_C_minus_A": {
+      "ci95": [
+        -0.005445439957307638,
+        0.002658489158518558
+      ],
+      "clusters": 32,
+      "point": -0.0012743977859558996
+    },
+    "acceptor_C_minus_B": {
+      "ci95": [
+        -0.005996529975795716,
+        -0.00014749916801554578
+      ],
+      "clusters": 32,
+      "point": -0.0030332795537072136
+    },
+    "iid_C_minus_A": {
+      "ci95": [
+        8.803258780654579e-05,
+        0.0029984058395145065
+      ],
+      "clusters": 2195,
+      "point": 0.0015469247342982902
+    },
+    "thresholds": {
+      "acceptor_C_minus_A_ci_upper_max_eV": 0.0,
+      "acceptor_C_minus_A_max_eV": -0.003,
+      "acceptor_C_minus_B_ci_upper_max_eV": 0.0,
+      "acceptor_C_minus_B_max_eV": -0.001,
+      "iid_C_minus_A_ci_upper_max_eV": 0.002
+    }
+  },
+  "protocols": {
+    "acceptor_cold": {
+      "arms": {
+        "A_C0_512_reference": {
+          "prediction_sha256": "d8b41483a788882f09f1104445d9db197728d4e0626914b25f15afbc558985b8",
+          "validation": {
+            "identity_count": 32,
+            "identity_macro_mae": 0.09652867191078515,
+            "p90_absolute_error": 0.21487844000000003,
+            "record_mae": 0.09708869839054009,
+            "record_rmse": 0.12853678159898224,
+            "records": 2235,
+            "structure_group_macro_mae": 0.09740212771558147,
+            "worst_decile_identity_mae": 0.1453154757917903
+          }
+        },
+        "B_MF_Full_RP512": {
+          "descriptor_medians_sha256": "88b2192a36a2690a9fc52a2454828400079fdea234772c85dfd22301c352d770",
+          "feature_columns": 532,
+          "fit_partition": "train",
+          "inference_partition": "val",
+          "model_path": "runs/gate2d2_frozen_molformer/v2_models/acceptor_cold/B_MF_Full_RP512/model.json",
+          "model_sha256": "06ad0d70d04a9e0513a152bd6ffff7dcd9e2dab7336e0be44a87ab084364acbc",
+          "prediction_path": "runs/gate2d2_frozen_molformer/v2_models/acceptor_cold/B_MF_Full_RP512/validation_predictions.parquet",
+          "prediction_sha256": "d7780b672f071c93be525c94d23cca4f0ec5d1e91aa7a1661742778a04552728",
+          "test_accessed": false,
+          "training_wall_seconds": 3.107382598798722,
+          "validation": {
+            "identity_count": 32,
+            "identity_macro_mae": 0.09828755367853646,
+            "p90_absolute_error": 0.21918594704099378,
+            "record_mae": 0.09907435697176474,
+            "record_rmse": 0.13096213229464945,
+            "records": 2235,
+            "structure_group_macro_mae": 0.09946178700485167,
+            "worst_decile_identity_mae": 0.1482491194269844
+          }
+        },
+        "C_MF_Role_RP512": {
+          "descriptor_medians_sha256": "88b2192a36a2690a9fc52a2454828400079fdea234772c85dfd22301c352d770",
+          "feature_columns": 532,
+          "fit_partition": "train",
+          "inference_partition": "val",
+          "model_path": "runs/gate2d2_frozen_molformer/v2_models/acceptor_cold/C_MF_Role_RP512/model.json",
+          "model_sha256": "1cf66ebbaf03a8c474ffe64fab38712960316263006c526d52bf1a270fe33b6a",
+          "prediction_path": "runs/gate2d2_frozen_molformer/v2_models/acceptor_cold/C_MF_Role_RP512/validation_predictions.parquet",
+          "prediction_sha256": "d99734757a7643c134cfb6df9d0e90e71aa82f55d5f5192acd9ec38a877f0ac1",
+          "test_accessed": false,
+          "training_wall_seconds": 2.2658740910701454,
+          "validation": {
+            "identity_count": 32,
+            "identity_macro_mae": 0.09525427412482926,
+            "p90_absolute_error": 0.213520076172202,
+            "record_mae": 0.0962610138421557,
+            "record_rmse": 0.1295506712065642,
+            "records": 2235,
+            "structure_group_macro_mae": 0.0966343373424286,
+            "worst_decile_identity_mae": 0.13967224536189
+          }
+        }
+      },
+      "comparisons": {
+        "B_MF_Full_RP512_minus_A_C0_512_reference": {
+          "ci95": [
+            -0.002048520144128817,
+            0.006253580053804771
+          ],
+          "clusters": 32,
+          "point": 0.0017588817677513151
+        },
+        "C_MF_Role_RP512_minus_A_C0_512_reference": {
+          "ci95": [
+            -0.005445439957307638,
+            0.002658489158518558
+          ],
+          "clusters": 32,
+          "point": -0.0012743977859558996
+        },
+        "C_MF_Role_RP512_minus_B_MF_Full_RP512": {
+          "ci95": [
+            -0.005996529975795716,
+            -0.00014749916801554578
+          ],
+          "clusters": 32,
+          "point": -0.0030332795537072136
+        }
+      },
+      "length_strata": {
+        "acceptor_token_length": {
+          "at_most_202": {
+            "A_C0_512_reference_record_mae": 0.09716753340096308,
+            "B_MF_Full_RP512_record_mae": 0.09919425608439549,
+            "C_MF_Role_RP512_record_mae": 0.09639890761971598,
+            "records": 2225
+          },
+          "over_202": {
+            "A_C0_512_reference_record_mae": 0.0795479085714286,
+            "B_MF_Full_RP512_record_mae": 0.07239680441142493,
+            "C_MF_Role_RP512_record_mae": 0.06557964833499366,
+            "records": 10
+          }
+        },
+        "donor_token_length": {
+          "at_most_202": {
+            "A_C0_512_reference_record_mae": 0.09680632162733498,
+            "B_MF_Full_RP512_record_mae": 0.09899091418414492,
+            "C_MF_Role_RP512_record_mae": 0.09618859614373965,
+            "records": 2149
+          },
+          "over_202": {
+            "A_C0_512_reference_record_mae": 0.10414483401993357,
+            "B_MF_Full_RP512_record_mae": 0.10115945639728788,
+            "C_MF_Role_RP512_record_mae": 0.0980706142362962,
+            "records": 86
+          }
+        },
+        "token_length": {
+          "at_most_202": {
+            "A_C0_512_reference_record_mae": 0.09817734342251083,
+            "B_MF_Full_RP512_record_mae": 0.10040670126851697,
+            "C_MF_Role_RP512_record_mae": 0.09678451021159415,
+            "records": 1650
+          },
+          "over_202": {
+            "A_C0_512_reference_record_mae": 0.09401816112087912,
+            "B_MF_Full_RP512_record_mae": 0.09531646280143793,
+            "C_MF_Role_RP512_record_mae": 0.0947844856206626,
+            "records": 585
+          }
+        }
+      },
+      "primary_cluster": "acceptor_structure_group_id_v1"
+    },
+    "both_cold": {
+      "arms": {
+        "A_C0_512_reference": {
+          "prediction_sha256": "470e2ee0c40899fa3bf3c9871be758f380baf6e5bb313ecc54b867a714fbf0c7",
+          "validation": {
+            "acceptor_identity_macro_mae": 0.08444815195633654,
+            "donor_identity_macro_mae": 0.09422160213031379,
+            "p90_absolute_error": 0.20273854071428576,
+            "record_mae": 0.09034658404257015,
+            "record_rmse": 0.12046576349365132,
+            "records": 1792,
+            "structure_group_macro_mae": 0.08945588979038224
+          }
+        },
+        "B_MF_Full_RP512": {
+          "descriptor_medians_sha256": "faf335603e09bf9fb8c88c01eb25744d9c058a95381fe6fd4fb6cd3e90d88a2c",
+          "feature_columns": 532,
+          "fit_partition": "train",
+          "inference_partition": "val",
+          "model_path": "runs/gate2d2_frozen_molformer/v2_models/both_cold/B_MF_Full_RP512/model.json",
+          "model_sha256": "876fd36fcaf60b29aaac8541844a19555a7b004fe9aa161d8e2c3b491515b1d2",
+          "prediction_path": "runs/gate2d2_frozen_molformer/v2_models/both_cold/B_MF_Full_RP512/validation_predictions.parquet",
+          "prediction_sha256": "9778524eb85126685832216f3f3871fc9e48c92ee25ced9ba141144745b856ad",
+          "test_accessed": false,
+          "training_wall_seconds": 3.1055665761232376,
+          "validation": {
+            "acceptor_identity_macro_mae": 0.09019476926168281,
+            "donor_identity_macro_mae": 0.10010922355559088,
+            "p90_absolute_error": 0.2006865305910383,
+            "record_mae": 0.09560677153414397,
+            "record_rmse": 0.1252946067370404,
+            "records": 1792,
+            "structure_group_macro_mae": 0.09468672824555577
+          }
+        },
+        "C_MF_Role_RP512": {
+          "descriptor_medians_sha256": "faf335603e09bf9fb8c88c01eb25744d9c058a95381fe6fd4fb6cd3e90d88a2c",
+          "feature_columns": 532,
+          "fit_partition": "train",
+          "inference_partition": "val",
+          "model_path": "runs/gate2d2_frozen_molformer/v2_models/both_cold/C_MF_Role_RP512/model.json",
+          "model_sha256": "55ac69e7df86ac388a32366e732f2058cf220f4f34b444400352f678afc9b294",
+          "prediction_path": "runs/gate2d2_frozen_molformer/v2_models/both_cold/C_MF_Role_RP512/validation_predictions.parquet",
+          "prediction_sha256": "8c4dd52eccc6e6bbc5063fb1090832577475a031b44d3f099e86c09636f18d8b",
+          "test_accessed": false,
+          "training_wall_seconds": 2.251562556717545,
+          "validation": {
+            "acceptor_identity_macro_mae": 0.08545262528662448,
+            "donor_identity_macro_mae": 0.09502406043319578,
+            "p90_absolute_error": 0.205899175278364,
+            "record_mae": 0.09134803136417712,
+            "record_rmse": 0.12229935614537839,
+            "records": 1792,
+            "structure_group_macro_mae": 0.09032117167496453
+          }
+        }
+      },
+      "comparisons": {
+        "B_MF_Full_RP512_minus_A_C0_512_reference": {
+          "acceptor_clusters": 288,
+          "ci95": [
+            0.0008971266637365794,
+            0.009720991321259606
+          ],
+          "donor_clusters": 138,
+          "point": 0.005260187491573813
+        },
+        "C_MF_Role_RP512_minus_A_C0_512_reference": {
+          "acceptor_clusters": 288,
+          "ci95": [
+            -0.002148445158180995,
+            0.004278621859185986
+          ],
+          "donor_clusters": 138,
+          "point": 0.0010014473216069539
+        },
+        "C_MF_Role_RP512_minus_B_MF_Full_RP512": {
+          "acceptor_clusters": 288,
+          "ci95": [
+            -0.008669937473663883,
+            0.00020664512511675424
+          ],
+          "donor_clusters": 138,
+          "point": -0.004258740169966859
+        }
+      },
+      "length_strata": {
+        "acceptor_token_length": {
+          "at_most_202": {
+            "A_C0_512_reference_record_mae": 0.08979732145519595,
+            "B_MF_Full_RP512_record_mae": 0.09516981191558388,
+            "C_MF_Role_RP512_record_mae": 0.09110291006790877,
+            "records": 1717
+          },
+          "over_202": {
+            "A_C0_512_reference_record_mae": 0.10292103554285714,
+            "B_MF_Full_RP512_record_mae": 0.10561023373504638,
+            "C_MF_Role_RP512_record_mae": 0.09695967490674699,
+            "records": 75
+          }
+        },
+        "donor_token_length": {
+          "at_most_202": {
+            "A_C0_512_reference_record_mae": 0.0904867025108225,
+            "B_MF_Full_RP512_record_mae": 0.09570930545869559,
+            "C_MF_Role_RP512_record_mae": 0.0914873483661819,
+            "records": 1749
+          },
+          "over_202": {
+            "A_C0_512_reference_record_mae": 0.08464734681063123,
+            "B_MF_Full_RP512_record_mae": 0.09143626376575331,
+            "C_MF_Role_RP512_record_mae": 0.08568139330588939,
+            "records": 43
+          }
+        },
+        "token_length": {
+          "at_most_202": {
+            "A_C0_512_reference_record_mae": 0.09170175768269923,
+            "B_MF_Full_RP512_record_mae": 0.09900049116658544,
+            "C_MF_Role_RP512_record_mae": 0.09294093761327214,
+            "records": 995
+          },
+          "over_202": {
+            "A_C0_512_reference_record_mae": 0.08865474242158095,
+            "B_MF_Full_RP512_record_mae": 0.09136994464044353,
+            "C_MF_Role_RP512_record_mae": 0.0893593968373897,
+            "records": 797
+          }
+        }
+      },
+      "primary_cluster": "two_way_donor_acceptor"
+    },
+    "donor_cold": {
+      "arms": {
+        "A_C0_512_reference": {
+          "prediction_sha256": "953df911b79f41f1b33ab7d50db234366331b298eeae718498b006eae41b55ae",
+          "validation": {
+            "identity_count": 15,
+            "identity_macro_mae": 0.089734997576138,
+            "p90_absolute_error": 0.2054795121428572,
+            "record_mae": 0.09384738240503901,
+            "record_rmse": 0.12223466222013714,
+            "records": 2234,
+            "structure_group_macro_mae": 0.09397094521402549,
+            "worst_decile_identity_mae": 0.1253305656031775
+          }
+        },
+        "B_MF_Full_RP512": {
+          "descriptor_medians_sha256": "cba77ee09f0b72f6820c0d6eaf4b5f1b8dedde311c3a03efebbf29fe2c1c04ac",
+          "feature_columns": 532,
+          "fit_partition": "train",
+          "inference_partition": "val",
+          "model_path": "runs/gate2d2_frozen_molformer/v2_models/donor_cold/B_MF_Full_RP512/model.json",
+          "model_sha256": "e15e2be17875c3da51b099973b84ceff69b767bde014c9dae4ce91f499e6f666",
+          "prediction_path": "runs/gate2d2_frozen_molformer/v2_models/donor_cold/B_MF_Full_RP512/validation_predictions.parquet",
+          "prediction_sha256": "7d1cc507a1605748b20a3faee30ed7a84df1b8d5fbb56ee17a837de0edf2c2a5",
+          "test_accessed": false,
+          "training_wall_seconds": 3.160615329630673,
+          "validation": {
+            "identity_count": 15,
+            "identity_macro_mae": 0.0942109198413441,
+            "p90_absolute_error": 0.21466119812627518,
+            "record_mae": 0.09729515353137225,
+            "record_rmse": 0.12635451080267893,
+            "records": 2234,
+            "structure_group_macro_mae": 0.09739932215080911,
+            "worst_decile_identity_mae": 0.13329072736201836
+          }
+        },
+        "C_MF_Role_RP512": {
+          "descriptor_medians_sha256": "cba77ee09f0b72f6820c0d6eaf4b5f1b8dedde311c3a03efebbf29fe2c1c04ac",
+          "feature_columns": 532,
+          "fit_partition": "train",
+          "inference_partition": "val",
+          "model_path": "runs/gate2d2_frozen_molformer/v2_models/donor_cold/C_MF_Role_RP512/model.json",
+          "model_sha256": "001ceb53733fdac65dc7da0390550f087325b6f302eb131d304522d5b62a9607",
+          "prediction_path": "runs/gate2d2_frozen_molformer/v2_models/donor_cold/C_MF_Role_RP512/validation_predictions.parquet",
+          "prediction_sha256": "0bad04c64a7d88a9141f9b6f5be667c92e2c63fbd3d255299d827ee0f3db655b",
+          "test_accessed": false,
+          "training_wall_seconds": 2.2282349159941077,
+          "validation": {
+            "identity_count": 15,
+            "identity_macro_mae": 0.09375246878539034,
+            "p90_absolute_error": 0.2123799190058572,
+            "record_mae": 0.0982114943958904,
+            "record_rmse": 0.12779866363791523,
+            "records": 2234,
+            "structure_group_macro_mae": 0.09827229434708973,
+            "worst_decile_identity_mae": 0.13398140656067606
+          }
+        }
+      },
+      "comparisons": {
+        "B_MF_Full_RP512_minus_A_C0_512_reference": {
+          "ci95": [
+            0.0014373912944965655,
+            0.007972902526945186
+          ],
+          "clusters": 15,
+          "point": 0.00447592226520609
+        },
+        "C_MF_Role_RP512_minus_A_C0_512_reference": {
+          "ci95": [
+            0.001087582122572197,
+            0.007007462033338631
+          ],
+          "clusters": 15,
+          "point": 0.004017471209252341
+        },
+        "C_MF_Role_RP512_minus_B_MF_Full_RP512": {
+          "ci95": [
+            -0.005051550378083547,
+            0.00356514888417102
+          ],
+          "clusters": 15,
+          "point": -0.0004584510559537488
+        }
+      },
+      "length_strata": {
+        "acceptor_token_length": {
+          "at_most_202": {
+            "A_C0_512_reference_record_mae": 0.09315791330318002,
+            "B_MF_Full_RP512_record_mae": 0.09633258106492659,
+            "C_MF_Role_RP512_record_mae": 0.09753772497073747,
+            "records": 2053
+          },
+          "over_202": {
+            "A_C0_512_reference_record_mae": 0.1016677142620363,
+            "B_MF_Full_RP512_record_mae": 0.10821317161763139,
+            "C_MF_Role_RP512_record_mae": 0.10585375201931015,
+            "records": 181
+          }
+        },
+        "donor_token_length": {
+          "at_most_202": {
+            "A_C0_512_reference_record_mae": 0.09384738240503901,
+            "B_MF_Full_RP512_record_mae": 0.09729515353137225,
+            "C_MF_Role_RP512_record_mae": 0.0982114943958904,
+            "records": 2234
+          },
+          "over_202": {
+            "A_C0_512_reference_record_mae": null,
+            "B_MF_Full_RP512_record_mae": null,
+            "C_MF_Role_RP512_record_mae": null,
+            "records": 0
+          }
+        },
+        "token_length": {
+          "at_most_202": {
+            "A_C0_512_reference_record_mae": 0.09352514313686315,
+            "B_MF_Full_RP512_record_mae": 0.09820569431064083,
+            "C_MF_Role_RP512_record_mae": 0.09920910043358208,
+            "records": 1001
+          },
+          "over_202": {
+            "A_C0_512_reference_record_mae": 0.09410898946703743,
+            "B_MF_Full_RP512_record_mae": 0.0965559391598817,
+            "C_MF_Role_RP512_record_mae": 0.09740159687461761,
+            "records": 1233
+          }
+        }
+      },
+      "primary_cluster": "donor_structure_group_id_v1"
+    },
+    "full_scaffold_cold": {
+      "arms": {
+        "A_C0_512_reference": {
+          "prediction_sha256": "eae7430bf06d8ec1e90b917517079668adaec39b58e89cbf56a5748151d881d1",
+          "validation": {
+            "identity_count": 731,
+            "identity_macro_mae": 0.08608736323035047,
+            "p90_absolute_error": 0.19789043214285718,
+            "record_mae": 0.08797503202623908,
+            "record_rmse": 0.11830624067511981,
+            "records": 2254,
+            "structure_group_macro_mae": 0.08753329777806704,
+            "worst_decile_identity_mae": 0.21247856814186125
+          }
+        },
+        "B_MF_Full_RP512": {
+          "descriptor_medians_sha256": "b0e5c2f50f5dc262a1a90d09a2a1f28dd5eeebefbe5b2af8fb0f05244657ac8a",
+          "feature_columns": 532,
+          "fit_partition": "train",
+          "inference_partition": "val",
+          "model_path": "runs/gate2d2_frozen_molformer/v2_models/full_scaffold_cold/B_MF_Full_RP512/model.json",
+          "model_sha256": "d97109d28564065516cfe5577b426df8afe3625d9867d4b714f02c7704b020f2",
+          "prediction_path": "runs/gate2d2_frozen_molformer/v2_models/full_scaffold_cold/B_MF_Full_RP512/validation_predictions.parquet",
+          "prediction_sha256": "6b8e9016a023dc58a5dfa28dd4b9908818270730e1fd19292dc4f95c4027f726",
+          "test_accessed": false,
+          "training_wall_seconds": 3.187432734761387,
+          "validation": {
+            "identity_count": 731,
+            "identity_macro_mae": 0.09166855295809867,
+            "p90_absolute_error": 0.2084884854579381,
+            "record_mae": 0.09318561747443098,
+            "record_rmse": 0.1233912142988376,
+            "records": 2254,
+            "structure_group_macro_mae": 0.09267895609141548,
+            "worst_decile_identity_mae": 0.2247460772578811
+          }
+        },
+        "C_MF_Role_RP512": {
+          "descriptor_medians_sha256": "b0e5c2f50f5dc262a1a90d09a2a1f28dd5eeebefbe5b2af8fb0f05244657ac8a",
+          "feature_columns": 532,
+          "fit_partition": "train",
+          "inference_partition": "val",
+          "model_path": "runs/gate2d2_frozen_molformer/v2_models/full_scaffold_cold/C_MF_Role_RP512/model.json",
+          "model_sha256": "92c0a73809e5c80d99ec5992ff3f77fd70ab885c6e567c0b3bd2293a8c6705ff",
+          "prediction_path": "runs/gate2d2_frozen_molformer/v2_models/full_scaffold_cold/C_MF_Role_RP512/validation_predictions.parquet",
+          "prediction_sha256": "9e5076a00c8cd28c415959dd93192897fb34fb54adda733778ae35ca07e93abb",
+          "test_accessed": false,
+          "training_wall_seconds": 2.363511487841606,
+          "validation": {
+            "identity_count": 731,
+            "identity_macro_mae": 0.08575457578069644,
+            "p90_absolute_error": 0.199506959923717,
+            "record_mae": 0.08809063064407116,
+            "record_rmse": 0.11792753012455968,
+            "records": 2254,
+            "structure_group_macro_mae": 0.08770440865462846,
+            "worst_decile_identity_mae": 0.2062472152480505
+          }
+        }
+      },
+      "comparisons": {
+        "B_MF_Full_RP512_minus_A_C0_512_reference": {
+          "ci95": [
+            0.003247770608475459,
+            0.007995101765893234
+          ],
+          "clusters": 731,
+          "point": 0.005581189727748198
+        },
+        "C_MF_Role_RP512_minus_A_C0_512_reference": {
+          "ci95": [
+            -0.0022288015390031944,
+            0.0015967253741399053
+          ],
+          "clusters": 731,
+          "point": -0.0003327874496540462
+        },
+        "C_MF_Role_RP512_minus_B_MF_Full_RP512": {
+          "ci95": [
+            -0.008448820724556282,
+            -0.0033340193728572617
+          ],
+          "clusters": 731,
+          "point": -0.005913977177402247
+        }
+      },
+      "length_strata": {
+        "acceptor_token_length": {
+          "at_most_202": {
+            "A_C0_512_reference_record_mae": 0.08794449756891069,
+            "B_MF_Full_RP512_record_mae": 0.09291796739948291,
+            "C_MF_Role_RP512_record_mae": 0.08791349017474773,
+            "records": 2156
+          },
+          "over_202": {
+            "A_C0_512_reference_record_mae": 0.08864679008746355,
+            "B_MF_Full_RP512_record_mae": 0.09907391912328815,
+            "C_MF_Role_RP512_record_mae": 0.09198772096918623,
+            "records": 98
+          }
+        },
+        "donor_token_length": {
+          "at_most_202": {
+            "A_C0_512_reference_record_mae": 0.08801829872574758,
+            "B_MF_Full_RP512_record_mae": 0.0933162313269571,
+            "C_MF_Role_RP512_record_mae": 0.08805597367703324,
+            "records": 2231
+          },
+          "over_202": {
+            "A_C0_512_reference_record_mae": 0.08377816217391303,
+            "B_MF_Full_RP512_record_mae": 0.08051607377939639,
+            "C_MF_Role_RP512_record_mae": 0.09145235644674594,
+            "records": 23
+          }
+        },
+        "token_length": {
+          "at_most_202": {
+            "A_C0_512_reference_record_mae": 0.09157251086583013,
+            "B_MF_Full_RP512_record_mae": 0.09712349032068915,
+            "C_MF_Role_RP512_record_mae": 0.09213287158884156,
+            "records": 1480
+          },
+          "over_202": {
+            "A_C0_512_reference_record_mae": 0.08109613191952748,
+            "B_MF_Full_RP512_record_mae": 0.08565583477099155,
+            "C_MF_Role_RP512_record_mae": 0.08036128103391584,
+            "records": 774
+          }
+        }
+      },
+      "primary_cluster": "full_scaffold_group_id_v1"
+    },
+    "iid": {
+      "arms": {
+        "A_C0_512_reference": {
+          "prediction_sha256": "9444cc99c1afa4cd019762430dc6651f302e2fcebc0b3975d2e13bc9148e268f",
+          "validation": {
+            "identity_count": 2195,
+            "identity_macro_mae": 0.08666170353726001,
+            "p90_absolute_error": 0.18873999542857145,
+            "record_mae": 0.08680688280331622,
+            "record_rmse": 0.11643028815961314,
+            "records": 2309,
+            "structure_group_macro_mae": 0.08666170353726001,
+            "worst_decile_identity_mae": 0.26319629337012984
+          }
+        },
+        "B_MF_Full_RP512": {
+          "descriptor_medians_sha256": "6a4a16d90582331dc29e9f6fb7f8d85c987dac50fc894b2159d7471cca28af23",
+          "feature_columns": 532,
+          "fit_partition": "train",
+          "inference_partition": "val",
+          "model_path": "runs/gate2d2_frozen_molformer/v2_models/iid/B_MF_Full_RP512/model.json",
+          "model_sha256": "523c53376206793835773012262ad817b70979043d217ec3abea60f8ffa961b1",
+          "prediction_path": "runs/gate2d2_frozen_molformer/v2_models/iid/B_MF_Full_RP512/validation_predictions.parquet",
+          "prediction_sha256": "5a41549f8c337f974617eb84f9be078518be943b9e419db744c620b78b5dd460",
+          "test_accessed": false,
+          "training_wall_seconds": 3.787929971702397,
+          "validation": {
+            "identity_count": 2195,
+            "identity_macro_mae": 0.09124512439803395,
+            "p90_absolute_error": 0.2065984398041862,
+            "record_mae": 0.09133168365911024,
+            "record_rmse": 0.1223307109938341,
+            "records": 2309,
+            "structure_group_macro_mae": 0.09124512439803395,
+            "worst_decile_identity_mae": 0.2750635521317928
+          }
+        },
+        "C_MF_Role_RP512": {
+          "descriptor_medians_sha256": "6a4a16d90582331dc29e9f6fb7f8d85c987dac50fc894b2159d7471cca28af23",
+          "feature_columns": 532,
+          "fit_partition": "train",
+          "inference_partition": "val",
+          "model_path": "runs/gate2d2_frozen_molformer/v2_models/iid/C_MF_Role_RP512/model.json",
+          "model_sha256": "edba10b44b7fae9c9b10be4cb4081495a8315c32056ab6f107ac7bfd0cc8eea9",
+          "prediction_path": "runs/gate2d2_frozen_molformer/v2_models/iid/C_MF_Role_RP512/validation_predictions.parquet",
+          "prediction_sha256": "ecd06e05492c118a096d79ccfd1df901f8d278af042e72f93ed2381886a8524c",
+          "test_accessed": false,
+          "training_wall_seconds": 2.438470426015556,
+          "validation": {
+            "identity_count": 2195,
+            "identity_macro_mae": 0.0882086282715583,
+            "p90_absolute_error": 0.19975287454899388,
+            "record_mae": 0.08847840409546262,
+            "record_rmse": 0.1180874659885619,
+            "records": 2309,
+            "structure_group_macro_mae": 0.0882086282715583,
+            "worst_decile_identity_mae": 0.26484975826168183
+          }
+        }
+      },
+      "comparisons": {
+        "B_MF_Full_RP512_minus_A_C0_512_reference": {
+          "ci95": [
+            0.002522256420074152,
+            0.00662663037858935
+          ],
+          "clusters": 2195,
+          "point": 0.004583420860773933
+        },
+        "C_MF_Role_RP512_minus_A_C0_512_reference": {
+          "ci95": [
+            8.803258780654579e-05,
+            0.0029984058395145065
+          ],
+          "clusters": 2195,
+          "point": 0.0015469247342982902
+        },
+        "C_MF_Role_RP512_minus_B_MF_Full_RP512": {
+          "ci95": [
+            -0.005103662610877665,
+            -0.0009779370550851044
+          ],
+          "clusters": 2195,
+          "point": -0.003036496126475645
+        }
+      },
+      "length_strata": {
+        "acceptor_token_length": {
+          "at_most_202": {
+            "A_C0_512_reference_record_mae": 0.0868482628689168,
+            "B_MF_Full_RP512_record_mae": 0.09096063675198113,
+            "C_MF_Role_RP512_record_mae": 0.08839444269875042,
+            "records": 2184
+          },
+          "over_202": {
+            "A_C0_512_reference_record_mae": 0.08608389029714286,
+            "B_MF_Full_RP512_record_mae": 0.09781461522046986,
+            "C_MF_Role_RP512_record_mae": 0.089945377618818,
+            "records": 125
+          }
+        },
+        "donor_token_length": {
+          "at_most_202": {
+            "A_C0_512_reference_record_mae": 0.08709632936818067,
+            "B_MF_Full_RP512_record_mae": 0.09134871588103997,
+            "C_MF_Role_RP512_record_mae": 0.08873756693419706,
+            "records": 2252
+          },
+          "over_202": {
+            "A_C0_512_reference_record_mae": 0.07537120448621552,
+            "B_MF_Full_RP512_record_mae": 0.09065876148743018,
+            "C_MF_Role_RP512_record_mae": 0.07823919860721772,
+            "records": 57
+          }
+        },
+        "token_length": {
+          "at_most_202": {
+            "A_C0_512_reference_record_mae": 0.08933219117944115,
+            "B_MF_Full_RP512_record_mae": 0.09444497971686379,
+            "C_MF_Role_RP512_record_mae": 0.09111907045090917,
+            "records": 1273
+          },
+          "over_202": {
+            "A_C0_512_reference_record_mae": 0.08370387357280752,
+            "B_MF_Full_RP512_record_mae": 0.08750617605146518,
+            "C_MF_Role_RP512_record_mae": 0.08523364707762145,
+            "records": 1036
+          }
+        }
+      },
+      "primary_cluster": "structure_group_id_v1"
+    },
+    "pair_cold": {
+      "arms": {
+        "A_C0_512_reference": {
+          "prediction_sha256": "83148530b8fbfcf93071dcf52d4d35bea67796fd3f05441399d81205bdc4aa99",
+          "validation": {
+            "identity_count": 2275,
+            "identity_macro_mae": 0.08491739748822605,
+            "p90_absolute_error": 0.18211955085714296,
+            "record_mae": 0.0858530097603647,
+            "record_rmse": 0.11531829982438532,
+            "records": 2319,
+            "structure_group_macro_mae": 0.0852734227599478,
+            "worst_decile_identity_mae": 0.25842630048245613
+          }
+        },
+        "B_MF_Full_RP512": {
+          "descriptor_medians_sha256": "b2b354189bb4a4ee2291bf548ad734e3a15c72166548447ca8ebf423dc3c2af5",
+          "feature_columns": 532,
+          "fit_partition": "train",
+          "inference_partition": "val",
+          "model_path": "runs/gate2d2_frozen_molformer/v2_models/pair_cold/B_MF_Full_RP512/model.json",
+          "model_sha256": "8e318b0a9be3d92f8386c1f3f12b0f4ca7b193a999a3dd19cf5fb09b2be5be2e",
+          "prediction_path": "runs/gate2d2_frozen_molformer/v2_models/pair_cold/B_MF_Full_RP512/validation_predictions.parquet",
+          "prediction_sha256": "1b78c29d98ace061f1a4be0b2c210061ecfce0ea5fc719d6adfb81ebed1ed9da",
+          "test_accessed": false,
+          "training_wall_seconds": 3.189085428137332,
+          "validation": {
+            "identity_count": 2275,
+            "identity_macro_mae": 0.08874311310385173,
+            "p90_absolute_error": 0.19911959027502887,
+            "record_mae": 0.08945270364528153,
+            "record_rmse": 0.11991236725648151,
+            "records": 2319,
+            "structure_group_macro_mae": 0.08917587518247802,
+            "worst_decile_identity_mae": 0.2691368893928217
+          }
+        },
+        "C_MF_Role_RP512": {
+          "descriptor_medians_sha256": "b2b354189bb4a4ee2291bf548ad734e3a15c72166548447ca8ebf423dc3c2af5",
+          "feature_columns": 532,
+          "fit_partition": "train",
+          "inference_partition": "val",
+          "model_path": "runs/gate2d2_frozen_molformer/v2_models/pair_cold/C_MF_Role_RP512/model.json",
+          "model_sha256": "04f6cc4f54aba14e5b5b4cf27cc8f8c445be1b60e7cb12a396114b605e6f326d",
+          "prediction_path": "runs/gate2d2_frozen_molformer/v2_models/pair_cold/C_MF_Role_RP512/validation_predictions.parquet",
+          "prediction_sha256": "57f0831bfb7a260c4a3d6152cd7d4799ea194907e46a8c59e00208306cba6208",
+          "test_accessed": false,
+          "training_wall_seconds": 2.508846355602145,
+          "validation": {
+            "identity_count": 2275,
+            "identity_macro_mae": 0.08471810079703698,
+            "p90_absolute_error": 0.1853912909895761,
+            "record_mae": 0.08563760149400829,
+            "record_rmse": 0.11519176999492992,
+            "records": 2319,
+            "structure_group_macro_mae": 0.08508215835724368,
+            "worst_decile_identity_mae": 0.2587500529836282
+          }
+        }
+      },
+      "comparisons": {
+        "B_MF_Full_RP512_minus_A_C0_512_reference": {
+          "ci95": [
+            0.0018159785194508838,
+            0.00587721828783415
+          ],
+          "clusters": 2275,
+          "point": 0.003825715615625667
+        },
+        "C_MF_Role_RP512_minus_A_C0_512_reference": {
+          "ci95": [
+            -0.0016584870038508265,
+            0.0012738080749999943
+          ],
+          "clusters": 2275,
+          "point": -0.00019929669118908094
+        },
+        "C_MF_Role_RP512_minus_B_MF_Full_RP512": {
+          "ci95": [
+            -0.006014572282304891,
+            -0.002000903134232222
+          ],
+          "clusters": 2275,
+          "point": -0.004025012306814749
+        }
+      },
+      "length_strata": {
+        "acceptor_token_length": {
+          "at_most_202": {
+            "A_C0_512_reference_record_mae": 0.08593420005039736,
+            "B_MF_Full_RP512_record_mae": 0.08926734943319499,
+            "C_MF_Role_RP512_record_mae": 0.08573257636185577,
+            "records": 2211
+          },
+          "over_202": {
+            "A_C0_512_reference_record_mae": 0.08419086410052909,
+            "B_MF_Full_RP512_record_mae": 0.09324731626494219,
+            "C_MF_Role_RP512_record_mae": 0.08369325489390843,
+            "records": 108
+          }
+        },
+        "donor_token_length": {
+          "at_most_202": {
+            "A_C0_512_reference_record_mae": 0.08567885398333439,
+            "B_MF_Full_RP512_record_mae": 0.08933756433021955,
+            "C_MF_Role_RP512_record_mae": 0.0854599708475277,
+            "records": 2263
+          },
+          "over_202": {
+            "A_C0_512_reference_record_mae": 0.09289076910714285,
+            "B_MF_Full_RP512_record_mae": 0.09410556560930428,
+            "C_MF_Role_RP512_record_mae": 0.09281578279732197,
+            "records": 56
+          }
+        },
+        "token_length": {
+          "at_most_202": {
+            "A_C0_512_reference_record_mae": 0.08654166860780424,
+            "B_MF_Full_RP512_record_mae": 0.09024067225568237,
+            "C_MF_Role_RP512_record_mae": 0.08576461121546614,
+            "records": 1296
+          },
+          "over_202": {
+            "A_C0_512_reference_record_mae": 0.08498057391844713,
+            "B_MF_Full_RP512_record_mae": 0.08845445602154796,
+            "C_MF_Role_RP512_record_mae": 0.08547669768265995,
+            "records": 1023
+          }
+        }
+      },
+      "primary_cluster": "pair_group_id_v1"
+    }
+  },
+  "status": "GATE2D2_V2_VALIDATION_ANALYSIS_FROZEN",
+  "test_artifacts_accessed": false
+}

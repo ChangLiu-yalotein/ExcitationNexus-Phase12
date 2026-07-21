@@ -1,0 +1,412 @@
+{
+  "cuda_visible_devices": "0",
+  "final673_accessed": false,
+  "main_parquet_accessed": false,
+  "models_shared_between_protocols": false,
+  "new_models": 12,
+  "physical_gpu": 0,
+  "protocols": {
+    "acceptor_cold": {
+      "arms": {
+        "A_C0_512_reference": {
+          "prediction_sha256": "d8b41483a788882f09f1104445d9db197728d4e0626914b25f15afbc558985b8",
+          "validation": {
+            "identity_count": 32,
+            "identity_macro_mae": 0.09652867191078515,
+            "p90_absolute_error": 0.21487844000000003,
+            "record_mae": 0.09708869839054009,
+            "record_rmse": 0.12853678159898224,
+            "records": 2235,
+            "structure_group_macro_mae": 0.09740212771558147,
+            "worst_decile_identity_mae": 0.1453154757917903
+          }
+        },
+        "B_MF_Full_RP512": {
+          "descriptor_medians_sha256": "88b2192a36a2690a9fc52a2454828400079fdea234772c85dfd22301c352d770",
+          "feature_columns": 532,
+          "fit_partition": "train",
+          "inference_partition": "val",
+          "model_path": "runs/gate2d2_frozen_molformer/v2_models/acceptor_cold/B_MF_Full_RP512/model.json",
+          "model_sha256": "06ad0d70d04a9e0513a152bd6ffff7dcd9e2dab7336e0be44a87ab084364acbc",
+          "prediction_path": "runs/gate2d2_frozen_molformer/v2_models/acceptor_cold/B_MF_Full_RP512/validation_predictions.parquet",
+          "prediction_sha256": "d7780b672f071c93be525c94d23cca4f0ec5d1e91aa7a1661742778a04552728",
+          "test_accessed": false,
+          "training_wall_seconds": 3.107382598798722,
+          "validation": {
+            "identity_count": 32,
+            "identity_macro_mae": 0.09828755367853646,
+            "p90_absolute_error": 0.21918594704099378,
+            "record_mae": 0.09907435697176474,
+            "record_rmse": 0.13096213229464945,
+            "records": 2235,
+            "structure_group_macro_mae": 0.09946178700485167,
+            "worst_decile_identity_mae": 0.1482491194269844
+          }
+        },
+        "C_MF_Role_RP512": {
+          "descriptor_medians_sha256": "88b2192a36a2690a9fc52a2454828400079fdea234772c85dfd22301c352d770",
+          "feature_columns": 532,
+          "fit_partition": "train",
+          "inference_partition": "val",
+          "model_path": "runs/gate2d2_frozen_molformer/v2_models/acceptor_cold/C_MF_Role_RP512/model.json",
+          "model_sha256": "1cf66ebbaf03a8c474ffe64fab38712960316263006c526d52bf1a270fe33b6a",
+          "prediction_path": "runs/gate2d2_frozen_molformer/v2_models/acceptor_cold/C_MF_Role_RP512/validation_predictions.parquet",
+          "prediction_sha256": "d99734757a7643c134cfb6df9d0e90e71aa82f55d5f5192acd9ec38a877f0ac1",
+          "test_accessed": false,
+          "training_wall_seconds": 2.2658740910701454,
+          "validation": {
+            "identity_count": 32,
+            "identity_macro_mae": 0.09525427412482926,
+            "p90_absolute_error": 0.213520076172202,
+            "record_mae": 0.0962610138421557,
+            "record_rmse": 0.1295506712065642,
+            "records": 2235,
+            "structure_group_macro_mae": 0.0966343373424286,
+            "worst_decile_identity_mae": 0.13967224536189
+          }
+        }
+      },
+      "manifest_sha256": "659992cc7413094fd17da2281902aa74f261307d98648a973254bd472b5ecc65",
+      "paired_validation_path": "runs/gate2d2_frozen_molformer/v2_models/acceptor_cold/validation_paired.parquet",
+      "paired_validation_sha256": "5ac0a670b0d6ce7906d56ad5aaee9eaf72960b4d5e0e1af8d85bad3d8d0433b6",
+      "train_records": 10543,
+      "train_weight_sum": 10225.0,
+      "validation_records": 2235
+    },
+    "both_cold": {
+      "arms": {
+        "A_C0_512_reference": {
+          "prediction_sha256": "470e2ee0c40899fa3bf3c9871be758f380baf6e5bb313ecc54b867a714fbf0c7",
+          "validation": {
+            "acceptor_identity_macro_mae": 0.08444815195633654,
+            "donor_identity_macro_mae": 0.09422160213031379,
+            "p90_absolute_error": 0.20273854071428576,
+            "record_mae": 0.09034658404257015,
+            "record_rmse": 0.12046576349365132,
+            "records": 1792,
+            "structure_group_macro_mae": 0.08945588979038224
+          }
+        },
+        "B_MF_Full_RP512": {
+          "descriptor_medians_sha256": "faf335603e09bf9fb8c88c01eb25744d9c058a95381fe6fd4fb6cd3e90d88a2c",
+          "feature_columns": 532,
+          "fit_partition": "train",
+          "inference_partition": "val",
+          "model_path": "runs/gate2d2_frozen_molformer/v2_models/both_cold/B_MF_Full_RP512/model.json",
+          "model_sha256": "876fd36fcaf60b29aaac8541844a19555a7b004fe9aa161d8e2c3b491515b1d2",
+          "prediction_path": "runs/gate2d2_frozen_molformer/v2_models/both_cold/B_MF_Full_RP512/validation_predictions.parquet",
+          "prediction_sha256": "9778524eb85126685832216f3f3871fc9e48c92ee25ced9ba141144745b856ad",
+          "test_accessed": false,
+          "training_wall_seconds": 3.1055665761232376,
+          "validation": {
+            "acceptor_identity_macro_mae": 0.09019476926168281,
+            "donor_identity_macro_mae": 0.10010922355559088,
+            "p90_absolute_error": 0.2006865305910383,
+            "record_mae": 0.09560677153414397,
+            "record_rmse": 0.1252946067370404,
+            "records": 1792,
+            "structure_group_macro_mae": 0.09468672824555577
+          }
+        },
+        "C_MF_Role_RP512": {
+          "descriptor_medians_sha256": "faf335603e09bf9fb8c88c01eb25744d9c058a95381fe6fd4fb6cd3e90d88a2c",
+          "feature_columns": 532,
+          "fit_partition": "train",
+          "inference_partition": "val",
+          "model_path": "runs/gate2d2_frozen_molformer/v2_models/both_cold/C_MF_Role_RP512/model.json",
+          "model_sha256": "55ac69e7df86ac388a32366e732f2058cf220f4f34b444400352f678afc9b294",
+          "prediction_path": "runs/gate2d2_frozen_molformer/v2_models/both_cold/C_MF_Role_RP512/validation_predictions.parquet",
+          "prediction_sha256": "8c4dd52eccc6e6bbc5063fb1090832577475a031b44d3f099e86c09636f18d8b",
+          "test_accessed": false,
+          "training_wall_seconds": 2.251562556717545,
+          "validation": {
+            "acceptor_identity_macro_mae": 0.08545262528662448,
+            "donor_identity_macro_mae": 0.09502406043319578,
+            "p90_absolute_error": 0.205899175278364,
+            "record_mae": 0.09134803136417712,
+            "record_rmse": 0.12229935614537839,
+            "records": 1792,
+            "structure_group_macro_mae": 0.09032117167496453
+          }
+        }
+      },
+      "manifest_sha256": "f74f40c4a2f5e7d91214ebdabc3e8f2d1a48a3c106509bb8ab7a3c846b83cb16",
+      "paired_validation_path": "runs/gate2d2_frozen_molformer/v2_models/both_cold/validation_paired.parquet",
+      "paired_validation_sha256": "24ce06c552773f88bdd1f4a552b76e1695bdeb94186ef0271a8cab092d788088",
+      "train_records": 9345,
+      "train_weight_sum": 9195.0,
+      "validation_records": 1792
+    },
+    "donor_cold": {
+      "arms": {
+        "A_C0_512_reference": {
+          "prediction_sha256": "953df911b79f41f1b33ab7d50db234366331b298eeae718498b006eae41b55ae",
+          "validation": {
+            "identity_count": 15,
+            "identity_macro_mae": 0.089734997576138,
+            "p90_absolute_error": 0.2054795121428572,
+            "record_mae": 0.09384738240503901,
+            "record_rmse": 0.12223466222013714,
+            "records": 2234,
+            "structure_group_macro_mae": 0.09397094521402549,
+            "worst_decile_identity_mae": 0.1253305656031775
+          }
+        },
+        "B_MF_Full_RP512": {
+          "descriptor_medians_sha256": "cba77ee09f0b72f6820c0d6eaf4b5f1b8dedde311c3a03efebbf29fe2c1c04ac",
+          "feature_columns": 532,
+          "fit_partition": "train",
+          "inference_partition": "val",
+          "model_path": "runs/gate2d2_frozen_molformer/v2_models/donor_cold/B_MF_Full_RP512/model.json",
+          "model_sha256": "e15e2be17875c3da51b099973b84ceff69b767bde014c9dae4ce91f499e6f666",
+          "prediction_path": "runs/gate2d2_frozen_molformer/v2_models/donor_cold/B_MF_Full_RP512/validation_predictions.parquet",
+          "prediction_sha256": "7d1cc507a1605748b20a3faee30ed7a84df1b8d5fbb56ee17a837de0edf2c2a5",
+          "test_accessed": false,
+          "training_wall_seconds": 3.160615329630673,
+          "validation": {
+            "identity_count": 15,
+            "identity_macro_mae": 0.0942109198413441,
+            "p90_absolute_error": 0.21466119812627518,
+            "record_mae": 0.09729515353137225,
+            "record_rmse": 0.12635451080267893,
+            "records": 2234,
+            "structure_group_macro_mae": 0.09739932215080911,
+            "worst_decile_identity_mae": 0.13329072736201836
+          }
+        },
+        "C_MF_Role_RP512": {
+          "descriptor_medians_sha256": "cba77ee09f0b72f6820c0d6eaf4b5f1b8dedde311c3a03efebbf29fe2c1c04ac",
+          "feature_columns": 532,
+          "fit_partition": "train",
+          "inference_partition": "val",
+          "model_path": "runs/gate2d2_frozen_molformer/v2_models/donor_cold/C_MF_Role_RP512/model.json",
+          "model_sha256": "001ceb53733fdac65dc7da0390550f087325b6f302eb131d304522d5b62a9607",
+          "prediction_path": "runs/gate2d2_frozen_molformer/v2_models/donor_cold/C_MF_Role_RP512/validation_predictions.parquet",
+          "prediction_sha256": "0bad04c64a7d88a9141f9b6f5be667c92e2c63fbd3d255299d827ee0f3db655b",
+          "test_accessed": false,
+          "training_wall_seconds": 2.2282349159941077,
+          "validation": {
+            "identity_count": 15,
+            "identity_macro_mae": 0.09375246878539034,
+            "p90_absolute_error": 0.2123799190058572,
+            "record_mae": 0.0982114943958904,
+            "record_rmse": 0.12779866363791523,
+            "records": 2234,
+            "structure_group_macro_mae": 0.09827229434708973,
+            "worst_decile_identity_mae": 0.13398140656067606
+          }
+        }
+      },
+      "manifest_sha256": "505e4bbe4ed20900ed66721d20df5442854c0f0ea04f5885df330bde111427cd",
+      "paired_validation_path": "runs/gate2d2_frozen_molformer/v2_models/donor_cold/validation_paired.parquet",
+      "paired_validation_sha256": "3f1a50440a7e7c39519dc2c641e59150294d168560890b6383360d35ee66acdc",
+      "train_records": 10530,
+      "train_weight_sum": 10218.0,
+      "validation_records": 2234
+    },
+    "full_scaffold_cold": {
+      "arms": {
+        "A_C0_512_reference": {
+          "prediction_sha256": "eae7430bf06d8ec1e90b917517079668adaec39b58e89cbf56a5748151d881d1",
+          "validation": {
+            "identity_count": 731,
+            "identity_macro_mae": 0.08608736323035047,
+            "p90_absolute_error": 0.19789043214285718,
+            "record_mae": 0.08797503202623908,
+            "record_rmse": 0.11830624067511981,
+            "records": 2254,
+            "structure_group_macro_mae": 0.08753329777806704,
+            "worst_decile_identity_mae": 0.21247856814186125
+          }
+        },
+        "B_MF_Full_RP512": {
+          "descriptor_medians_sha256": "b0e5c2f50f5dc262a1a90d09a2a1f28dd5eeebefbe5b2af8fb0f05244657ac8a",
+          "feature_columns": 532,
+          "fit_partition": "train",
+          "inference_partition": "val",
+          "model_path": "runs/gate2d2_frozen_molformer/v2_models/full_scaffold_cold/B_MF_Full_RP512/model.json",
+          "model_sha256": "d97109d28564065516cfe5577b426df8afe3625d9867d4b714f02c7704b020f2",
+          "prediction_path": "runs/gate2d2_frozen_molformer/v2_models/full_scaffold_cold/B_MF_Full_RP512/validation_predictions.parquet",
+          "prediction_sha256": "6b8e9016a023dc58a5dfa28dd4b9908818270730e1fd19292dc4f95c4027f726",
+          "test_accessed": false,
+          "training_wall_seconds": 3.187432734761387,
+          "validation": {
+            "identity_count": 731,
+            "identity_macro_mae": 0.09166855295809867,
+            "p90_absolute_error": 0.2084884854579381,
+            "record_mae": 0.09318561747443098,
+            "record_rmse": 0.1233912142988376,
+            "records": 2254,
+            "structure_group_macro_mae": 0.09267895609141548,
+            "worst_decile_identity_mae": 0.2247460772578811
+          }
+        },
+        "C_MF_Role_RP512": {
+          "descriptor_medians_sha256": "b0e5c2f50f5dc262a1a90d09a2a1f28dd5eeebefbe5b2af8fb0f05244657ac8a",
+          "feature_columns": 532,
+          "fit_partition": "train",
+          "inference_partition": "val",
+          "model_path": "runs/gate2d2_frozen_molformer/v2_models/full_scaffold_cold/C_MF_Role_RP512/model.json",
+          "model_sha256": "92c0a73809e5c80d99ec5992ff3f77fd70ab885c6e567c0b3bd2293a8c6705ff",
+          "prediction_path": "runs/gate2d2_frozen_molformer/v2_models/full_scaffold_cold/C_MF_Role_RP512/validation_predictions.parquet",
+          "prediction_sha256": "9e5076a00c8cd28c415959dd93192897fb34fb54adda733778ae35ca07e93abb",
+          "test_accessed": false,
+          "training_wall_seconds": 2.363511487841606,
+          "validation": {
+            "identity_count": 731,
+            "identity_macro_mae": 0.08575457578069644,
+            "p90_absolute_error": 0.199506959923717,
+            "record_mae": 0.08809063064407116,
+            "record_rmse": 0.11792753012455968,
+            "records": 2254,
+            "structure_group_macro_mae": 0.08770440865462846,
+            "worst_decile_identity_mae": 0.2062472152480505
+          }
+        }
+      },
+      "manifest_sha256": "d395020eccfa6e8b73d50bc788a11261d308403a731a9e448040ffe7d238a897",
+      "paired_validation_path": "runs/gate2d2_frozen_molformer/v2_models/full_scaffold_cold/validation_paired.parquet",
+      "paired_validation_sha256": "f403bc6a7aaeff4dd3ee42b817c125bdeb623177e100471cbec45ffaad4a8d05",
+      "train_records": 10511,
+      "train_weight_sum": 10246.0,
+      "validation_records": 2254
+    },
+    "iid": {
+      "arms": {
+        "A_C0_512_reference": {
+          "prediction_sha256": "9444cc99c1afa4cd019762430dc6651f302e2fcebc0b3975d2e13bc9148e268f",
+          "validation": {
+            "identity_count": 2195,
+            "identity_macro_mae": 0.08666170353726001,
+            "p90_absolute_error": 0.18873999542857145,
+            "record_mae": 0.08680688280331622,
+            "record_rmse": 0.11643028815961314,
+            "records": 2309,
+            "structure_group_macro_mae": 0.08666170353726001,
+            "worst_decile_identity_mae": 0.26319629337012984
+          }
+        },
+        "B_MF_Full_RP512": {
+          "descriptor_medians_sha256": "6a4a16d90582331dc29e9f6fb7f8d85c987dac50fc894b2159d7471cca28af23",
+          "feature_columns": 532,
+          "fit_partition": "train",
+          "inference_partition": "val",
+          "model_path": "runs/gate2d2_frozen_molformer/v2_models/iid/B_MF_Full_RP512/model.json",
+          "model_sha256": "523c53376206793835773012262ad817b70979043d217ec3abea60f8ffa961b1",
+          "prediction_path": "runs/gate2d2_frozen_molformer/v2_models/iid/B_MF_Full_RP512/validation_predictions.parquet",
+          "prediction_sha256": "5a41549f8c337f974617eb84f9be078518be943b9e419db744c620b78b5dd460",
+          "test_accessed": false,
+          "training_wall_seconds": 3.787929971702397,
+          "validation": {
+            "identity_count": 2195,
+            "identity_macro_mae": 0.09124512439803395,
+            "p90_absolute_error": 0.2065984398041862,
+            "record_mae": 0.09133168365911024,
+            "record_rmse": 0.1223307109938341,
+            "records": 2309,
+            "structure_group_macro_mae": 0.09124512439803395,
+            "worst_decile_identity_mae": 0.2750635521317928
+          }
+        },
+        "C_MF_Role_RP512": {
+          "descriptor_medians_sha256": "6a4a16d90582331dc29e9f6fb7f8d85c987dac50fc894b2159d7471cca28af23",
+          "feature_columns": 532,
+          "fit_partition": "train",
+          "inference_partition": "val",
+          "model_path": "runs/gate2d2_frozen_molformer/v2_models/iid/C_MF_Role_RP512/model.json",
+          "model_sha256": "edba10b44b7fae9c9b10be4cb4081495a8315c32056ab6f107ac7bfd0cc8eea9",
+          "prediction_path": "runs/gate2d2_frozen_molformer/v2_models/iid/C_MF_Role_RP512/validation_predictions.parquet",
+          "prediction_sha256": "ecd06e05492c118a096d79ccfd1df901f8d278af042e72f93ed2381886a8524c",
+          "test_accessed": false,
+          "training_wall_seconds": 2.438470426015556,
+          "validation": {
+            "identity_count": 2195,
+            "identity_macro_mae": 0.0882086282715583,
+            "p90_absolute_error": 0.19975287454899388,
+            "record_mae": 0.08847840409546262,
+            "record_rmse": 0.1180874659885619,
+            "records": 2309,
+            "structure_group_macro_mae": 0.0882086282715583,
+            "worst_decile_identity_mae": 0.26484975826168183
+          }
+        }
+      },
+      "manifest_sha256": "f4572f2c1896d4228dd9eff67220adb7d0a02ad79b70c66766e6da876541c3f2",
+      "paired_validation_path": "runs/gate2d2_frozen_molformer/v2_models/iid/validation_paired.parquet",
+      "paired_validation_sha256": "950c98c17077ad7f5d4b69d3b42e786e55530f678ac48b4af14b88a0c427630f",
+      "train_records": 10387,
+      "train_weight_sum": 10248.0,
+      "validation_records": 2309
+    },
+    "pair_cold": {
+      "arms": {
+        "A_C0_512_reference": {
+          "prediction_sha256": "83148530b8fbfcf93071dcf52d4d35bea67796fd3f05441399d81205bdc4aa99",
+          "validation": {
+            "identity_count": 2275,
+            "identity_macro_mae": 0.08491739748822605,
+            "p90_absolute_error": 0.18211955085714296,
+            "record_mae": 0.0858530097603647,
+            "record_rmse": 0.11531829982438532,
+            "records": 2319,
+            "structure_group_macro_mae": 0.0852734227599478,
+            "worst_decile_identity_mae": 0.25842630048245613
+          }
+        },
+        "B_MF_Full_RP512": {
+          "descriptor_medians_sha256": "b2b354189bb4a4ee2291bf548ad734e3a15c72166548447ca8ebf423dc3c2af5",
+          "feature_columns": 532,
+          "fit_partition": "train",
+          "inference_partition": "val",
+          "model_path": "runs/gate2d2_frozen_molformer/v2_models/pair_cold/B_MF_Full_RP512/model.json",
+          "model_sha256": "8e318b0a9be3d92f8386c1f3f12b0f4ca7b193a999a3dd19cf5fb09b2be5be2e",
+          "prediction_path": "runs/gate2d2_frozen_molformer/v2_models/pair_cold/B_MF_Full_RP512/validation_predictions.parquet",
+          "prediction_sha256": "1b78c29d98ace061f1a4be0b2c210061ecfce0ea5fc719d6adfb81ebed1ed9da",
+          "test_accessed": false,
+          "training_wall_seconds": 3.189085428137332,
+          "validation": {
+            "identity_count": 2275,
+            "identity_macro_mae": 0.08874311310385173,
+            "p90_absolute_error": 0.19911959027502887,
+            "record_mae": 0.08945270364528153,
+            "record_rmse": 0.11991236725648151,
+            "records": 2319,
+            "structure_group_macro_mae": 0.08917587518247802,
+            "worst_decile_identity_mae": 0.2691368893928217
+          }
+        },
+        "C_MF_Role_RP512": {
+          "descriptor_medians_sha256": "b2b354189bb4a4ee2291bf548ad734e3a15c72166548447ca8ebf423dc3c2af5",
+          "feature_columns": 532,
+          "fit_partition": "train",
+          "inference_partition": "val",
+          "model_path": "runs/gate2d2_frozen_molformer/v2_models/pair_cold/C_MF_Role_RP512/model.json",
+          "model_sha256": "04f6cc4f54aba14e5b5b4cf27cc8f8c445be1b60e7cb12a396114b605e6f326d",
+          "prediction_path": "runs/gate2d2_frozen_molformer/v2_models/pair_cold/C_MF_Role_RP512/validation_predictions.parquet",
+          "prediction_sha256": "57f0831bfb7a260c4a3d6152cd7d4799ea194907e46a8c59e00208306cba6208",
+          "test_accessed": false,
+          "training_wall_seconds": 2.508846355602145,
+          "validation": {
+            "identity_count": 2275,
+            "identity_macro_mae": 0.08471810079703698,
+            "p90_absolute_error": 0.1853912909895761,
+            "record_mae": 0.08563760149400829,
+            "record_rmse": 0.11519176999492992,
+            "records": 2319,
+            "structure_group_macro_mae": 0.08508215835724368,
+            "worst_decile_identity_mae": 0.2587500529836282
+          }
+        }
+      },
+      "manifest_sha256": "06aaee7d7756957bc42f7d4e221ffd5b20916be69b3116c3bbbe017eb02f4825",
+      "paired_validation_path": "runs/gate2d2_frozen_molformer/v2_models/pair_cold/validation_paired.parquet",
+      "paired_validation_sha256": "0719523865ae7601ae7baeaa2366f4ec5ee4b271cd746049dd23bec958531e05",
+      "train_records": 10387,
+      "train_weight_sum": 10257.0,
+      "validation_records": 2319
+    }
+  },
+  "scaler_used": false,
+  "status": "GATE2D2_V2_VALIDATION_MODELS_FROZEN",
+  "test_artifacts_accessed": false
+}

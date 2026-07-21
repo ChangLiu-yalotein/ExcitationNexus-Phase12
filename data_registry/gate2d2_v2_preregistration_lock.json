@@ -1,0 +1,25 @@
+{
+  "admission": {
+    "acceptor_C_minus_A_ci_upper_max_eV": 0.0,
+    "acceptor_C_minus_A_max_eV": -0.003,
+    "acceptor_C_minus_B_ci_upper_max_eV": 0.0,
+    "acceptor_C_minus_B_max_eV": -0.001,
+    "iid_C_minus_A_ci_upper_max_eV": 0.002
+  },
+  "config_path": "configs/gate2d2_frozen_molformer_admission_v2.json",
+  "config_sha256": "19061bd8177c702ee158572b19eeb6739805d881649fdd9cc0e9fa46f7cc3a7a",
+  "created_utc": "2026-07-20T16:03:33.832884+00:00",
+  "projection_matrix_path": "data_registry/gate2d2_v2_fixed_projection_matrices.npz",
+  "projection_matrix_sha256": "521f3567236b8a0a88f4b2122981383b573bb9f26e5359242eb605564d45ffe1",
+  "projection_registry_path": "data_registry/gate2d2_v2_projection_registry.json",
+  "projection_registry_sha256": "e91f52defc9e07669f01f886024da1ae63cb911ac636afc0844667017b421ad9",
+  "status": "GATE2D2_V2_PREREGISTERED_BEFORE_MODEL_FORWARD",
+  "test_firewall": {
+    "final673": false,
+    "main_parquet": false,
+    "test_artifact": false
+  },
+  "v1_files_modified": false,
+  "v1_status": "BLOCKED_PREREGISTERED_PCA_INFEASIBLE",
+  "validation_performance_seen_before_method_choice": false
+}

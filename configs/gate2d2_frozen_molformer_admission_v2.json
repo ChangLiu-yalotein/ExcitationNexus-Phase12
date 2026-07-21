@@ -1,0 +1,60 @@
+{
+  "version": "gate2d2_frozen_molformer_admission_v2",
+  "amends": "gate2d2_frozen_molformer_admission_v1",
+  "amendment_scope": "replace mathematically infeasible protocol-fitted PCA with fixed target-free Gaussian random projection",
+  "validation_only": true,
+  "main_parquet_access": false,
+  "test_artifact_access": false,
+  "final673_access": false,
+  "model": {
+    "repo_id": "ibm-research/MoLFormer-XL-both-10pct",
+    "revision": "a14249e5ad9e3e7c3b1bb604393e914cfcebd2c8",
+    "license": "apache-2.0",
+    "weights_file": "model.safetensors",
+    "weights_sha256": "0795977fe7192c4acdaf052f0e8464af57bc4bb59211271c5e61aaba2637b9c6"
+  },
+  "encoder": {
+    "hidden_dimension": 768,
+    "deterministic_eval": true,
+    "eval_mode": true,
+    "inference_mode": true,
+    "requires_grad": false,
+    "optimizer_parameter_count": 0,
+    "pooling": "attention-mask-aware mean pooling of final hidden state",
+    "max_sequence_length": 512,
+    "truncation": false,
+    "remote_code_source": "pinned audited local snapshot only"
+  },
+  "projection": {
+    "generator": "numpy.random.Generator(PCG64)",
+    "numpy_version": "2.2.6",
+    "distribution": "N(0, 1/output_dimension)",
+    "generation_dtype": "float64",
+    "storage_dtype": "float32",
+    "R_full": {"shape": [768, 512], "seed": 20260720},
+    "R_component": {"shape": [768, 256], "seed": 20260721},
+    "donor_acceptor_share_component_matrix": true,
+    "protocol_specific": false,
+    "data_fitted": false,
+    "target_supervised": false
+  },
+  "feature_arms": {
+    "A_C0_512_reference": {"descriptors": 20, "frozen_morgan_bits": 512, "columns": 532, "reuse_frozen_validation_predictions": true},
+    "B_MF_Full_RP512": {"descriptors": 20, "full_projection": 512, "columns": 532},
+    "C_MF_Role_RP512": {"descriptors": 20, "donor_projection": 256, "acceptor_projection": 256, "columns": 532}
+  },
+  "long_sequence_gate": {
+    "bins": [[0, 202], [203, 256], [257, 320], [321, 399]],
+    "repeat_max_abs_tolerance": 1e-6,
+    "single_vs_padded_batch_max_abs_tolerance": 1e-5,
+    "required_maxima": {"full": 399, "donor": 208, "acceptor": 372},
+    "failure_status": "BLOCKED_LONG_SEQUENCE_MODEL_INTERFACE",
+    "over_202_label": "OUTSIDE_PRETRAINING_LENGTH_SUPPORT"
+  },
+  "xgboost": {"n_estimators": 500, "max_depth": 6, "learning_rate": 0.05, "tree_method": "hist", "device": "cuda", "random_state": 42, "row_subsampling": false, "feature_subsampling": false, "early_stopping": false},
+  "protocols": ["iid", "donor_cold", "acceptor_cold", "pair_cold", "both_cold", "full_scaffold_cold"],
+  "bootstrap": {"replicates": 10000, "seed": 20260720, "primary_cluster": "acceptor_structure_group_id_v1"},
+  "admission": {"acceptor_C_minus_A_max_eV": -0.003, "acceptor_C_minus_A_ci_upper_max_eV": 0.0, "acceptor_C_minus_B_max_eV": -0.001, "acceptor_C_minus_B_ci_upper_max_eV": 0.0, "iid_C_minus_A_ci_upper_max_eV": 0.002},
+  "v1_frozen": {"status": "BLOCKED_PREREGISTERED_PCA_INFEASIBLE", "config_sha256": "370dc01bb8e9d5f31bb7ece601fa35a756048fafe7bd2f991dccc360fb99c7ad", "model_asset_lock_sha256": "444eb37a76b09f8d99ebda169b6be42d6ca251b904fb260796d6dfabb14c5093", "validation_results_created": false, "embeddings_created": false, "models_created": false},
+  "forbidden": ["PCA", "SVD", "learned projection", "protocol-specific projection", "zero padding", "duplicated donor rows", "projection seed search", "full embedding in Arm C", "main Parquet", "test predictions", "test labels", "final673", "buffer", "quarantine", "foundation-model fine-tuning", "encoder substitution"]
+}

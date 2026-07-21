@@ -44,3 +44,5 @@
 - [x] Gate 2-D1: test equal-budget role-separated donor/acceptor 2D fingerprints on validation only; decision `ROLE_AWARE_2D_NOT_ADMITTED`.
 
 - [!] Gate 2-D2: frozen continuous representation v1 is `BLOCKED_PREREGISTERED_PCA_INFEASIBLE`; donor PCA-256 cannot be fitted on 124-154 unique protocol-train donors. No embedding or validation model was run.
+
+- [x] Gate 2-D2 v2: replace infeasible PCA with fixed Gaussian random projection, pass real 417/208/378-token forward and embedding integrity gates, freeze 12 validation-only models; decision `REPRESENTATION_SIGNAL_INCONCLUSIVE`.

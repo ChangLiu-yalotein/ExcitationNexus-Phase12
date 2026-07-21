@@ -1,0 +1,13 @@
+{
+  "config_path": "configs/gate2d2_v2_sequence_length_correction.json",
+  "config_sha256": "b3110ffd6708321307751428e94210e4f39a90597f9e706a82654278af5244ae",
+  "embedding_count_before_lock": 0,
+  "final673_accessed": false,
+  "main_parquet_accessed": false,
+  "molecular_forward_count_before_lock": 0,
+  "status": "GATE2D2_V2_TOKEN_LENGTH_CORRECTION_FROZEN_BEFORE_FORWARD",
+  "test_artifacts_accessed": false,
+  "v2_preregistration_lock_sha256": "f963ab78ac2664685e1a7d23d81c4d323d5fa72a3707368e66f044756bed9c70",
+  "validation_metric_count_before_lock": 0,
+  "validation_model_count_before_lock": 0
+}

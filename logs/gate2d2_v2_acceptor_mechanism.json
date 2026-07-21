@@ -1,0 +1,109 @@
+{
+  "acceptor_identities": 32,
+  "different_token_sequence_exact_embedding_collisions": 0,
+  "embedding_distance_vs_error_spearman": -0.17338709677419353,
+  "morgan_similarity_vs_error_spearman": -0.23554211445273499,
+  "outside_pretraining_length_support": {
+    "acceptor": 45,
+    "donor": 5,
+    "full": 6532
+  },
+  "quartiles": {
+    "Q1_low": {
+      "identities": 8,
+      "mean_embedding_distance": 0.12942546606063843,
+      "mean_error": 0.11082382486792536
+    },
+    "Q2": {
+      "identities": 8,
+      "mean_embedding_distance": 0.15493133664131165,
+      "mean_error": 0.08932114893244911
+    },
+    "Q3": {
+      "identities": 8,
+      "mean_embedding_distance": 0.07095948606729507,
+      "mean_error": 0.09085129666422588
+    },
+    "Q4_high": {
+      "identities": 8,
+      "mean_embedding_distance": 0.03076525777578354,
+      "mean_error": 0.09002082603471664
+    }
+  },
+  "tokenizer_aliases": {
+    "acceptor": {
+      "projected_exact_collision_count": 6,
+      "raw_exact_collision_count": 6
+    },
+    "donor": {
+      "projected_exact_collision_count": 1,
+      "raw_exact_collision_count": 1
+    },
+    "full": {
+      "projected_exact_collision_count": 212,
+      "raw_exact_collision_count": 358
+    }
+  },
+  "worst_10_anonymous": [
+    {
+      "abs_error": 0.1522677721648246,
+      "anonymous_identity_sha256": "ab0ad458ab586cc0954ac9560d947d4a4713ad91ad194cf20bbe7a9c782530cc",
+      "embedding_distance": 0.06545305252075195,
+      "morgan_similarity": 0.3055555555555556
+    },
+    {
+      "abs_error": 0.14002217462883,
+      "anonymous_identity_sha256": "9b6c5508d7df60a3826b2dbfb024422408241e01efb2024173d1a992a9455f21",
+      "embedding_distance": 0.004416704177856445,
+      "morgan_similarity": 0.7733333333333333
+    },
+    {
+      "abs_error": 0.1343523625392784,
+      "anonymous_identity_sha256": "5b1edb90e4413f3c88142e9d08ae51d48fa05c307c7cf70e36f67bc59a40432b",
+      "embedding_distance": 0.07786667346954346,
+      "morgan_similarity": 0.2647058823529412
+    },
+    {
+      "abs_error": 0.13204667211462695,
+      "anonymous_identity_sha256": "e0f1ef2a9b71b20a75566f19c2fd982c54e3fd1d55d05196eacefa5de135530d",
+      "embedding_distance": 0.11122012138366699,
+      "morgan_similarity": 0.3953488372093023
+    },
+    {
+      "abs_error": 0.12460064172333052,
+      "anonymous_identity_sha256": "0c1018ad83e961013e03aa99764114dd7826319bb7bf046c31fed7a4a13a622c",
+      "embedding_distance": 0.1898953914642334,
+      "morgan_similarity": 0.27631578947368424
+    },
+    {
+      "abs_error": 0.1196682388957321,
+      "anonymous_identity_sha256": "2fc50826fd66191fa9138daadf344eb2c80a9452590c7f42e5ad932d4530cfef",
+      "embedding_distance": 0.07675045728683472,
+      "morgan_similarity": 0.5853658536585366
+    },
+    {
+      "abs_error": 0.11330455497875536,
+      "anonymous_identity_sha256": "9531e1216f1d6301aed7e8375e203339f33b8479e0a9bcf1b7b3f49fdb3ec8e3",
+      "embedding_distance": 0.0462651252746582,
+      "morgan_similarity": 0.3157894736842105
+    },
+    {
+      "abs_error": 0.1050566079799195,
+      "anonymous_identity_sha256": "3c0fe525c3dada6c03e79224ea22778df864345379dae98f481ea0217ac917d3",
+      "embedding_distance": 0.050270020961761475,
+      "morgan_similarity": 0.3
+    },
+    {
+      "abs_error": 0.10157134301151947,
+      "anonymous_identity_sha256": "02ba6cf0e8bc17fdf5f9e822dfc2ac516d79807200c791107b98bf10b1395fa1",
+      "embedding_distance": 0.0077811479568481445,
+      "morgan_similarity": 0.7066666666666667
+    },
+    {
+      "abs_error": 0.09851645596220572,
+      "anonymous_identity_sha256": "01c98356afb98be1562ccca3266c7e802af78948aa003d5833adbb522d82433a",
+      "embedding_distance": 0.05885237455368042,
+      "morgan_similarity": 0.7105263157894737
+    }
+  ]
+}
