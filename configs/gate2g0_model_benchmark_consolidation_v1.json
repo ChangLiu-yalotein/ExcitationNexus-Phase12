@@ -1,0 +1,14 @@
+{
+  "version": "v1",
+  "status": "PREREGISTERED_BEFORE_MODEL_SMOKE",
+  "expected_head": "e18e6f2fd41ba8fe04a96bebbec4ab101608c8eb",
+  "primary_target": "J_eh_screened_eV_eps3p5 proxy",
+  "execution": "CPU_ONLY_NO_TRAINING_NO_TEST_EVALUATION",
+  "model_smoke_records": 4,
+  "historical_and_new15016_rankings_separate": true,
+  "shortlist_status": "EXPLORATORY_BASELINE_SHORTLIST_FROZEN",
+  "shortlist_experimental_progression": "PAUSED",
+  "checkpoint_policy": "local_only_git_ignored",
+  "final673_access": false,
+  "allowed_statuses": ["BENCHMARK_CONSOLIDATED_READY_FOR_MAIN_MODEL", "BLOCKED_MODEL_ASSET_INTEGRITY", "BLOCKED_BENCHMARK_PROTOCOL_INCONSISTENCY"]
+}

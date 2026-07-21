@@ -1,0 +1,17 @@
+{
+  "checkpoint_assets": 228,
+  "checkpoint_inventory": "data_registry/gate2g0_checkpoint_inventory.csv",
+  "historical_report_only_models": [
+    "cheap no-dipole champion",
+    "Paper A baseline",
+    "Smoothed Memory",
+    "B2-0 mapping unresolved"
+  ],
+  "scientific_boundaries": {
+    "gate2e1_blocked": true,
+    "proxy_only": true,
+    "separate_ledgers": true
+  },
+  "status": "BENCHMARK_CONSOLIDATED_READY_FOR_MAIN_MODEL",
+  "ubj_assets_audited": 80
+}

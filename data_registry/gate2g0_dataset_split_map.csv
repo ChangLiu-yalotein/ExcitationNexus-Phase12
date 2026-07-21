@@ -1,0 +1,3 @@
+comparison,dataset,ledger,models
+historical protocols only,Layer G / historical 7316,historical,"cheap, B2-0/B2-1/B2-2a"
+IID and five frozen OOD protocols,15016 calculations / 14639 structure groups,new15016,"median, Ridge, XGBoost, M3, validation/cross-fit admissions"

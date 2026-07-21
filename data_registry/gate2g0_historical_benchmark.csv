@@ -1,0 +1,7 @@
+checkpoint,mae_eV,model,protocol,status,std_eV,test_records
+CHECKPOINT_MISSING_REPORT_ONLY,0.07020991162281436,cheap no-dipole champion,Layer G paired 7313,REPRODUCED_NUMERIC,,1097
+PRESENT_3_SEEDS,0.07940903802712758,B2-1 historical ensemble,historical 7316,HISTORICAL_ASSET_VALID,0.0025025339119785065,1098
+PRESENT_3_SEEDS,0.078123,B2-1 new reproduction,historical 7316,FAILED_FROZEN_THRESHOLD_AGGREGATE,0.001317,1098
+CHECKPOINT_MAPPING_UNRESOLVED_REPORT_ONLY,report-only,B2-0,historical B2,REPORT_ONLY,,reported
+PRESENT_SEED42,different historical scope,B2-2a,historical B2-2a,PROTOCOL_NOT_ALIGNED_WITH_NEW15016,,reported
+CHECKPOINT_MISSING_REPORT_ONLY,report-only,Paper A / Smoothed Memory,historical external-dev,OWN_PROTOCOL_ONLY,,protocol-specific

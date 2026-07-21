@@ -60,3 +60,5 @@
 - [x] Gate 3-A1: score 36,523 seen-component/unseen-pair candidates once with frozen XGBoost-C0 and freeze an anonymous 4+4+4+4 computational shortlist.
 - [x] Gate 3-A2: preserve the 16-item shortlist and complete chemical-integrity, heuristic route/source, and experimental-handoff audits; decision `BLOCKED_REACTION_NOT_DEFINED`.
 - [!] Experimental closure: `BLOCKED_NO_EXPERIMENTAL_VALIDATION_PATH` until a laboratory, reaction, controls, material path, budget, personnel, and schedule are documented.
+- [x] Gate 2-G0: consolidate historical/new15016 benchmarks, audit local model assets, generate paper tables/figures, and freeze the exploratory shortlist pause.
+- [ ] Gate 2-G1: preregister strong 2D/3D baselines and the ReMEI architecture; do not start without a separate instruction.

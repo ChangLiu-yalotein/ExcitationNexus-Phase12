@@ -246,3 +246,14 @@ Project and EquiformerV3 directories are not Git worktrees; source commit proven
 - Candidate-specific external structure searches were not performed, so all literature/commercial/database source claims remain `SOURCE_UNVERIFIED` rather than being treated as absent.
 - None of 15 reaction-definition fields or 11 experimental-resource fields has written experimental-person confirmation.
 - Final decision: `BLOCKED_REACTION_NOT_DEFINED`, with parallel `BLOCKED_NO_EXPERIMENTAL_PARTNER` and `CHEMIST_REVIEW_REQUIRED`. `PROSPECTIVE_COMPUTATIONAL_SCREENING_ONLY` and `BLOCKED_NO_EXPERIMENTAL_VALIDATION_PATH` remain active.
+
+## Gate 2-G0 result
+
+- Route correction: Gate 3-A0/A1/A2 assets remain immutable, but the 16-item list is now `EXPLORATORY_BASELINE_SHORTLIST_FROZEN`; experimental progression is paused.
+- Historical Layer G and new15016 were consolidated as separate benchmark ledgers. They cannot be placed in one performance ranking.
+- The audit reconciled 228 local model/checkpoint assets with zero load failures after type-aware loading. Phase-12 XGBoost and PyTorch assets passed finite-forward smoke; historical B2 state dictionaries loaded and retain prior frozen inference evidence.
+- Historical cheap no-dipole, Paper A/Smoothed Memory, and unresolved B2-0 mappings remain explicitly report-only where a deployable checkpoint/model dump was not proven.
+- The strongest reliable new15016 IID result remains XGBoost-C0 at structure-group-macro MAE 0.084181475 eV. M3-Merged and M3-DAU-Shared are small negative 3D baselines, not ReMEI-Net or formal EquiformerV3.
+- Strong D-MPNN, PaiNN/TensorNet2, formal new15016 EquiformerV3, explicit interface cross-edge, PM6 FiLM/gating, ReMEI-Net, A0-A10, retrospective active learning, and paper-grade model/data cards remain `NOT_IMPLEMENTED`.
+- No training, test evaluator, new test inference, candidate rescoring, GPU, or final673 access occurred.
+- Final status: `BENCHMARK_CONSOLIDATED_READY_FOR_MAIN_MODEL`. The next permitted step is a separate Gate 2-G1 preregistration; it was not started.

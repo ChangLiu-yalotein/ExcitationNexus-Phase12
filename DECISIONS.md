@@ -248,3 +248,12 @@
 - Mark literature, database, and commercial source claims `SOURCE_UNVERIFIED` because candidate-specific structures were not disclosed to third-party search services. This is not evidence of absence.
 - Freeze `BLOCKED_REACTION_NOT_DEFINED` because no real photocatalytic reaction, endpoint, controls, analytical protocol, personnel, laboratory, budget, timeline, EHS owner, or data-return contract is documented.
 - Preserve `PROSPECTIVE_COMPUTATIONAL_SCREENING_ONLY` and `BLOCKED_NO_EXPERIMENTAL_VALIDATION_PATH`; only actual prospective experimental results can lift the latter.
+
+## Gate 2-G0 decisions
+
+- Reclassify the immutable Gate 3 shortlist as `EXPLORATORY_BASELINE_SHORTLIST_FROZEN` because it was produced by XGBoost-C0, not a completed main model.
+- Pause experimental handoff. Do not delete, replace, or rescore the 16 entries.
+- Keep Historical Layer G and new15016 in separate benchmark ledgers; never claim cross-ledger model improvement.
+- Treat missing model dumps as `CHECKPOINT_MISSING_REPORT_ONLY`, not as deployable assets.
+- Do not rename M3-DAU-Shared as ReMEI-Net or the small distance-only M3 backbone as EquiformerV3.
+- Freeze `BENCHMARK_CONSOLIDATED_READY_FOR_MAIN_MODEL`; only a separately preregistered Gate 2-G1 may begin the missing strong-baseline/main-model work.

@@ -1,0 +1,13 @@
+{
+  "version": "v1",
+  "status": "LOCKED_BEFORE_MODEL_SMOKE_AND_FIGURE_GENERATION",
+  "config": "configs/gate2g0_model_benchmark_consolidation_v1.json",
+  "scope": ["historical model inventory", "new15016 model inventory", "checkpoint existence/hash/loadability", "frozen benchmark tables", "frozen aggregate figures", "roadmap implementation gaps", "README correction"],
+  "prohibited": ["training", "test evaluator invocation", "new test inference", "final673 access", "candidate rescoring", "checkpoint publication", "cross-dataset ranking"],
+  "scientific_boundaries": {
+    "historical_layer_g_separate_from_new15016": true,
+    "primary_is_proxy_not_experimental_eb": true,
+    "gate2e1_v1_scientific_result_valid": false,
+    "gate3_shortlist_is_baseline_exploration_only": true
+  }
+}

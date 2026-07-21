@@ -1,0 +1,6 @@
+method,reason,status
+M3-Merged / M3-DAU,both weaker than XGBoost-C0 on frozen IID,NEGATIVE
+role-aware Morgan,lowest-similarity acceptors worsened,NOT_ADMITTED
+frozen MoLFormer,did not beat C0 and failed IID guard,INCONCLUSIVE
+fixed-weight multitask,corrected training-only cross-fit acceptor CI crossed zero,BLOCKED_THEN_INCONCLUSIVE
+ground-state multifidelity/delta,small cross-fit effect; delta reparameterization no gain,INCONCLUSIVE_NO_DELTA_GAIN

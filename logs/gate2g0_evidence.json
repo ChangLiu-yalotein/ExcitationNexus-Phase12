@@ -1,0 +1,34 @@
+{
+  "base_head": "e18e6f2fd41ba8fe04a96bebbec4ab101608c8eb",
+  "checkpoint_assets_audited": 228,
+  "cpu_only": true,
+  "figures": [
+    "reports/figures/gate2g0/iid_model_mae.pdf",
+    "reports/figures/gate2g0/iid_model_mae.png",
+    "reports/figures/gate2g0/iid_to_ood_degradation.pdf",
+    "reports/figures/gate2g0/iid_to_ood_degradation.png",
+    "reports/figures/gate2g0/ood_protocol_mae.pdf",
+    "reports/figures/gate2g0/ood_protocol_mae.png",
+    "reports/figures/gate2g0/parameter_count_vs_mae.pdf",
+    "reports/figures/gate2g0/parameter_count_vs_mae.png",
+    "reports/figures/gate2g0/roadmap_status_matrix.pdf",
+    "reports/figures/gate2g0/roadmap_status_matrix.png",
+    "reports/figures/gate2g0/uq_coverage_width.pdf",
+    "reports/figures/gate2g0/uq_coverage_width.png"
+  ],
+  "final673_accessed": false,
+  "load_failures": [],
+  "shortlist_status": "EXPLORATORY_BASELINE_SHORTLIST_FROZEN",
+  "status": "BENCHMARK_CONSOLIDATED_READY_FOR_MAIN_MODEL",
+  "supplemental_tables": [
+    "gate2g0_uq_benchmark.csv",
+    "gate2g0_parameter_inventory.csv",
+    "gate2g0_cost_inventory.csv",
+    "gate2g0_negative_results.csv",
+    "gate2g0_dataset_split_map.csv"
+  ],
+  "test_evaluator_called": false,
+  "test_inference_generated": false,
+  "training_performed": false,
+  "ubj_assets_audited": 80
+}

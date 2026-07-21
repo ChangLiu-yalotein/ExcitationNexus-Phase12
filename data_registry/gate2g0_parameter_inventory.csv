@@ -1,0 +1,5 @@
+iid_group_macro_mae_eV,model,parameter_status,trainable_parameters
+0.08766406500328516,M3-Merged,exact,36689
+0.08854613716585205,M3-DAU-Shared,exact,36461
+historical protocol only,B2-1 dual tower,historical exact; not plotted with new15016,1065570
+0.08418147504486073,XGBoost-C0,500 trees,not meaningfully comparable
