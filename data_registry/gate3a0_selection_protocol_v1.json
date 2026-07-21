@@ -1,0 +1,19 @@
+{
+  "candidate_failures_retained": true,
+  "candidate_list_generated": false,
+  "controls": "observed calculated near-neighbor pairs and middle-proxy references",
+  "diversity_constraint": "cover distinct donor, acceptor, and full-Morgan clusters before score tie-breaks",
+  "future_total": 16,
+  "max_per_acceptor": 2,
+  "max_per_donor": 2,
+  "property_prediction_run": false,
+  "sets": {
+    "diversity_exploration": 4,
+    "matched_controls": 4,
+    "predicted_high_proxy": 4,
+    "predicted_low_proxy": 4
+  },
+  "status": "FROZEN_BEFORE_PROPERTY_PREDICTION",
+  "version": "v1",
+  "wet_lab_count_requires_team_confirmation": true
+}

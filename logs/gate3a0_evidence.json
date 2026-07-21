@@ -1,0 +1,142 @@
+{
+  "assembly": {
+    "atom_origin_unverifiable_original_unknown_records": 753,
+    "attachment_ambiguity": 0.0,
+    "canonical_or_graph_isomorphic_match": 0.999200852424081,
+    "decision": "ASSEMBLY_ENGINE_ADMITTED",
+    "deterministic_repeat": true,
+    "input_order_invariant": true,
+    "record_coverage": 1.0,
+    "repeat_reversed_input_hash": "2a7ce1bf39b11f94d872171dca5cb9cb1fd1254bc511b8b83461dfde2cb19790",
+    "result_hash": "2a7ce1bf39b11f94d872171dca5cb9cb1fd1254bc511b8b83461dfde2cb19790",
+    "sanitize_success": 0.999200852424081,
+    "status_counts": {
+      "EXACT_CANONICAL_MATCH": 5512,
+      "GRAPH_ISOMORPHIC_MATCH": 9492,
+      "INVALID_VALENCE": 12
+    },
+    "verified_atom_origin_mismatch": 0,
+    "verified_atom_origin_records": 14263
+  },
+  "candidate_ranking": false,
+  "candidate_universe": {
+    "acceptor_structures": 352,
+    "acceptor_support": {
+      "count": 352,
+      "max": 72.0,
+      "mean": 29.508522727272727,
+      "median": 23.0,
+      "min": 1.0,
+      "q10": 13.0,
+      "q90": 51.900000000000034
+    },
+    "candidate_content_sha256": "9bace1dbea5f4d01df9a9fa8bd82c81bed7070a8f316030f9f79b9de033e488c",
+    "cartesian_pairs": 54208,
+    "diversity": {
+      "acceptor_nearest_observed_similarity": 1.0,
+      "alert_count": {
+        "count": 36523,
+        "max": 10.0,
+        "mean": 3.9000082140021357,
+        "median": 4.0,
+        "min": 0.0,
+        "q10": 1.0,
+        "q90": 6.0
+      },
+      "donor_nearest_observed_similarity": 1.0,
+      "formal_charge_counts": {
+        "0.0": 36523
+      },
+      "full_molecule_pairwise_morgan": {
+        "pair_count": 523776,
+        "quantiles": {
+          "0.0": 0.02142857142857143,
+          "0.1": 0.15025906735751296,
+          "0.25": 0.20610687022900764,
+          "0.5": 0.27956989247311825,
+          "0.75": 0.36942675159235666,
+          "0.9": 0.445859872611465,
+          "1.0": 1.0
+        },
+        "sample_size": 1024
+      },
+      "heavy_atom_count": {
+        "count": 36523,
+        "max": 332.0,
+        "mean": 161.06869643786106,
+        "median": 172.0,
+        "min": 10.0,
+        "q10": 64.0,
+        "q90": 224.0
+      },
+      "heteroatom_count": {
+        "count": 36523,
+        "max": 48.0,
+        "mean": 21.09183254387646,
+        "median": 22.0,
+        "min": 1.0,
+        "q10": 11.0,
+        "q90": 29.0
+      },
+      "in_domain_records": 36523,
+      "interpretation": "Target-free diversity only; alerts are not synthesis or safety proof.",
+      "molecular_weight": {
+        "count": 36523,
+        "max": 4755.903999999996,
+        "mean": 2320.781583248909,
+        "median": 2483.808999999998,
+        "min": 152.178,
+        "q10": 938.5242,
+        "q90": 3244.7089999999935
+      },
+      "unique_full_structure_hashes": 36523,
+      "unique_murcko_scaffolds": 21862
+    },
+    "donor_structures": 154,
+    "donor_support": {
+      "count": 154,
+      "max": 156.0,
+      "mean": 67.44805194805195,
+      "median": 57.5,
+      "min": 3.0,
+      "q10": 25.3,
+      "q90": 129.70000000000002
+    },
+    "in_domain_novel_pairs": 36523,
+    "local_artifact": "runs/gate3a0_prospective_pair_feasibility/candidate_universe_v1.parquet",
+    "local_artifact_sha256": "a858cbcf1133d7036c0ee0220eef77880a71e8b2b72a2b57af30d5366b77a566",
+    "low_support_acceptor_structures": 3,
+    "low_support_donor_structures": 3,
+    "observed_component_pairs": 14861,
+    "observed_full_structure_graphs": 14638,
+    "status": "GATE3A0_CANDIDATE_UNIVERSE_FROZEN",
+    "status_counts": {
+      "DUPLICATE_PRODUCT_FROM_DIFFERENT_ALIASES": 958,
+      "INVALID_VALENCE": 308,
+      "NOVEL_PAIR_KNOWN_COMPONENTS": 36523,
+      "OBSERVED_EXACT_STRUCTURE": 14957,
+      "OUTSIDE_COMPONENT_SUPPORT": 1462
+    }
+  },
+  "cpu_only": true,
+  "ended_utc": "2026-07-21T08:20:22.491999+00:00",
+  "experimental_path": "BLOCKED_NO_EXPERIMENTAL_VALIDATION_PATH",
+  "final673_access": false,
+  "prelock_probe_disclosure": {
+    "candidate_ranking_performed": false,
+    "candidate_universe_built": false,
+    "occurred": true,
+    "reason": "establish a reproducible interpretation of the historical custom [A] marker before freezing the production implementation",
+    "scope": "target-free parser/attachment implementation probes and observed reconstruction feasibility only",
+    "targets_or_predictions_opened": false,
+    "thresholds_changed": false
+  },
+  "property_prediction": false,
+  "raw_data_write": false,
+  "started_utc": "2026-07-21T08:04:55.404315+00:00",
+  "status": "PROSPECTIVE_COMPUTATIONAL_SCREENING_ONLY",
+  "target_access": false,
+  "test_artifact_access": false,
+  "training": false,
+  "wall_seconds": 927.087684
+}

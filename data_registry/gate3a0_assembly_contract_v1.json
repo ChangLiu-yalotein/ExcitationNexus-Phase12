@@ -1,0 +1,29 @@
+{
+  "admission_thresholds": {
+    "attachment_ambiguity_max": 0.001,
+    "canonical_or_graph_isomorphic_match_min": 0.995,
+    "deterministic_repeat_required": true,
+    "input_order_invariant_required": true,
+    "record_coverage_min": 1.0,
+    "sanitize_success_min": 0.999,
+    "verified_atom_origin_mismatch_max": 0
+  },
+  "allowed_bond": "single",
+  "atom_origin_policy": "Verify original roles only for pure explicit D/A rows; preserve unknown/empty-donor rows as unverifiable rather than relabeling.",
+  "full_product_lookup": false,
+  "marker_rule": {
+    "attachment_anchor_rule": "first RDKit neighbor of the dummy atom; equivalently the marker-preceding neighbor in frozen source serialization",
+    "clean_component_rule": "remove the literal [A] marker before RDKit parsing",
+    "expected_acceptor_structures": 352,
+    "expected_donor_structures": 154,
+    "placeholder": "[A]",
+    "placeholder_parse_replacement": "[*]",
+    "record_specific_mapping_forbidden": true,
+    "substitution_rule": "remove one explicit hydrogen from each anchor when present, then add one single bond",
+    "target_guided_connection_forbidden": true,
+    "use_structure_identity_not_numeric_id": true
+  },
+  "record_specific_hardcodes": false,
+  "target_access": false,
+  "version": "v1"
+}

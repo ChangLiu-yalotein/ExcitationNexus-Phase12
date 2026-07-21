@@ -1,0 +1,36 @@
+{
+  "component_source_summary_sha256": {
+    "acceptor": "dbff2d11b942f5bea4c531f136c1dc1a7e86b281a04e70833c47dcd0fa95ee85",
+    "donor": "be91f3b1cb178a66e8cbc053b8651545a178786e7443b4f3a6f081fe4f205133"
+  },
+  "local_artifact_sha256": "2928ba1a26154bd3dff27174664387c46c51574adb4e0bae478e5df6cdcf80fb",
+  "metrics": {
+    "atom_origin_unverifiable_original_unknown_records": 753,
+    "attachment_ambiguity": 0.0,
+    "canonical_or_graph_isomorphic_match": 0.999200852424081,
+    "decision": "ASSEMBLY_ENGINE_ADMITTED",
+    "deterministic_repeat": true,
+    "input_order_invariant": true,
+    "record_coverage": 1.0,
+    "repeat_reversed_input_hash": "2a7ce1bf39b11f94d872171dca5cb9cb1fd1254bc511b8b83461dfde2cb19790",
+    "result_hash": "2a7ce1bf39b11f94d872171dca5cb9cb1fd1254bc511b8b83461dfde2cb19790",
+    "sanitize_success": 0.999200852424081,
+    "status_counts": {
+      "EXACT_CANONICAL_MATCH": 5512,
+      "GRAPH_ISOMORPHIC_MATCH": 9492,
+      "INVALID_VALENCE": 12
+    },
+    "verified_atom_origin_mismatch": 0,
+    "verified_atom_origin_records": 14263
+  },
+  "prelock_probe_disclosed": {
+    "candidate_ranking_performed": false,
+    "candidate_universe_built": false,
+    "occurred": true,
+    "reason": "establish a reproducible interpretation of the historical custom [A] marker before freezing the production implementation",
+    "scope": "target-free parser/attachment implementation probes and observed reconstruction feasibility only",
+    "targets_or_predictions_opened": false,
+    "thresholds_changed": false
+  },
+  "status": "ASSEMBLY_ENGINE_ADMITTED"
+}

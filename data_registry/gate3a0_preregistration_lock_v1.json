@@ -1,0 +1,19 @@
+{
+  "status": "GATE3A0_PREREGISTRATION_LOCKED",
+  "version": "v1",
+  "locked_utc": "2026-07-21T07:51:21Z",
+  "config_path": "configs/gate3a0_prospective_pair_feasibility_v1.json",
+  "config_sha256": "3d71a2ca3cec8139c2c3161a734d45b71db873c54e117da7aff5db43041aa372",
+  "expected_parent_head": "d5baa3de19c649fe7f0fc8c2055e25332e2b128d",
+  "scientific_scope": "target-free combinatorial assembly and prospective unseen-pair/seen-components feasibility",
+  "prelock_probe_disclosure": {
+    "occurred": true,
+    "scope": "target-free parser/attachment implementation probes and observed reconstruction feasibility only",
+    "targets_or_predictions_opened": false,
+    "candidate_universe_built": false,
+    "candidate_ranking_performed": false,
+    "thresholds_changed": false,
+    "reason": "establish a reproducible interpretation of the historical custom [A] marker before freezing the production implementation"
+  },
+  "post_lock_policy": "No assembly threshold, domain threshold, diversity rule, or future selection count may change in v1."
+}

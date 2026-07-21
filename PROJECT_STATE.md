@@ -1,6 +1,6 @@
 # Phase 12 project state
 
-Current stage: **BLOCKED_MULTITASK_PIPELINE_INTEGRITY**; Gate 2-E1 metrics are diagnostic-only after a post-freeze inner-split weighting violation was found.
+Current stage: **PROSPECTIVE_COMPUTATIONAL_SCREENING_ONLY**; Gate 3-A0 admitted target-free unseen-pair assembly within known components, but no documented experimental validation path exists.
 
 ## Frozen facts
 
@@ -213,3 +213,14 @@ Project and EquiformerV3 directories are not Git worktrees; source commit proven
 - DFT-3 is better than PM6-3 by -0.001246649 eV with acceptor-identity CI [-0.001999384, -0.000484564], but DFT-3 versus C0 still crosses zero. Secondary label: `DFT_GROUND_STATE_SIGNAL_ONLY`.
 - In the 70 lowest-similarity acceptor identities, PAIR-6−C0 is +0.000104050 eV and DELTA-6−PAIR-6 is +0.000129442 eV; the primary failure is not rescued in that subgroup.
 - Official validation, test, main Parquet, buffer/quarantine, and final673 remained sealed. Gate 2-F1 is training-only cross-fit evidence and authorizes no confirmation unlock.
+
+## Gate 3-A0 result
+
+- A uniform, record-independent `[A]` attachment substitution rule reconstructed and sanitized 15,004/15,016 observed records (99.920085%); 5,512 were exact-canonical matches, 9,492 graph-isomorphic matches, and 12 remained invalid-valence/kekulization failures.
+- All 15,016 records were audited. The 14,263 pure explicit-role records had zero frozen atom-origin mismatches; 753 original unknown/empty-donor rows remain explicitly unverifiable and were not relabeled.
+- The frozen structural identities comprise 154 donors and 352 acceptors, yielding 54,208 target-free Cartesian pairs.
+- The audited universe contains 36,523 unique `NOVEL_PAIR_KNOWN_COMPONENTS` products that satisfy the frozen pair-cold support rule; no property prediction or candidate ranking was run.
+- The prospective scope is strictly seen-components/unseen-pair, not donor-OOD, acceptor-OOD, new-scaffold extrapolation, catalyst performance, or experimental discovery.
+- The future 16-candidate framework is frozen before prediction: 4 predicted-low, 4 predicted-high, 4 exploration, and 4 matched controls, with at most two selections per donor or acceptor.
+- Assembly is `ASSEMBLY_ENGINE_ADMITTED`, but the final status is `PROSPECTIVE_COMPUTATIONAL_SCREENING_ONLY` because no committed laboratory, reaction, procurement/synthesis plan, personnel, budget, or schedule is documented.
+- Preserve `BLOCKED_NO_EXPERIMENTAL_VALIDATION_PATH`; a Nature Catalysis-level catalyst-discovery claim is not supported without a prospective experimental reaction loop.

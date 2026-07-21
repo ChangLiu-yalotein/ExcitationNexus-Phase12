@@ -219,3 +219,13 @@
 - Freeze `DELTA_REPARAMETERIZATION_NO_GAIN`: DELTA-6 does not improve on information-equivalent PAIR-6 in acceptor or IID cross-fit.
 - Preserve `DFT_GROUND_STATE_SIGNAL_ONLY` as secondary: DFT-3 significantly beats PM6-3, but not C0, and therefore cannot replace the failed primary admission endpoint.
 - Do not unlock official validation or test. Stop this fixed ground-state/delta parameterization route unless a new scientific mechanism, not a post-hoc arm, is preregistered.
+
+## Gate 3-A0 decisions
+
+- Stop broad model search and retain frozen XGBoost-C0 as the default deployable point model.
+- Admit only the uniform `[A]`-marker component substitution rule; prohibit record-specific full-product lookup, target-guided connection choice, and manual failure exceptions.
+- Preserve all 12 observed reconstruction failures and all 753 unknown/empty-donor role rows without relabeling or silent deletion.
+- Limit prospective claims to unseen donor-acceptor pairs assembled from seen component structures with at least five training records of support per component.
+- Freeze the 16-candidate future selection framework before any property prediction; Gate 3-A0 itself creates no ranked or final candidate list.
+- Treat structural alerts as computational heuristics, never as synthesis feasibility or safety evidence.
+- Freeze `PROSPECTIVE_COMPUTATIONAL_SCREENING_ONLY` and `BLOCKED_NO_EXPERIMENTAL_VALIDATION_PATH`; do not claim catalyst discovery or Nature Catalysis-level experimental closure from proxy predictions.

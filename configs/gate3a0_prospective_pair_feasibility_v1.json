@@ -1,0 +1,81 @@
+{
+  "version": "gate3a0_prospective_pair_feasibility_v1",
+  "expected_head": "d5baa3de19c649fe7f0fc8c2055e25332e2b128d",
+  "execution": {
+    "cpu_only": true,
+    "training": false,
+    "property_prediction": false,
+    "candidate_ranking": false,
+    "target_access": false,
+    "test_artifact_access": false,
+    "final673_access": false,
+    "raw_data_write": false
+  },
+  "inputs": {
+    "full_structure_manifest": {"path": "manifests/new15016_structure_groups_v1.csv", "sha256": "9ebce9b2ab3be21963ec7b590795e87adcf55c4f6774779acfc5c8ec0b0437c9"},
+    "component_manifest": {"path": "manifests/component_identity_v1.csv", "sha256": "dca4a5e5661d7336226b16c87624ba3b457cdcd0379ccb2130a48d4f30306515"},
+    "pair_cold_manifest": {"path": "manifests/split_pair_cold_v1.csv", "sha256": "06aaee7d7756957bc42f7d4e221ffd5b20916be69b3116c3bbbe017eb02f4825"},
+    "identity_spec": {"path": "data_registry/structure_identity_spec_v1.json", "sha256": "f84fdd954a49a8492720ebae4350981af36ed7ce9333c2cdeba21a514f900e44"},
+    "dft_sidecar_root": "/home/changliu/ExcitationNexus_Data_v2/raw_compact/dft/results"
+  },
+  "component_identity": {
+    "use_structure_identity_not_numeric_id": true,
+    "expected_donor_structures": 154,
+    "expected_acceptor_structures": 352,
+    "placeholder": "[A]",
+    "placeholder_parse_replacement": "[*]",
+    "clean_component_rule": "remove the literal [A] marker before RDKit parsing",
+    "attachment_anchor_rule": "first RDKit neighbor of the dummy atom; equivalently the marker-preceding neighbor in frozen source serialization",
+    "substitution_rule": "remove one explicit hydrogen from each anchor when present, then add one single bond",
+    "record_specific_mapping_forbidden": true,
+    "target_guided_connection_forbidden": true
+  },
+  "assembly_admission": {
+    "record_coverage_min": 1.0,
+    "sanitize_success_min": 0.999,
+    "canonical_or_graph_isomorphic_match_min": 0.995,
+    "attachment_ambiguity_max": 0.001,
+    "verified_atom_origin_mismatch_max": 0,
+    "deterministic_repeat_required": true,
+    "input_order_invariant_required": true
+  },
+  "candidate_universe": {
+    "operation": "unique donor structure identities x unique acceptor structure identities",
+    "deduplicate_by": "nonisomeric canonical full-structure graph hash",
+    "observed_novelty_levels": ["full_structure", "component_pair"],
+    "classes": ["OBSERVED_EXACT_STRUCTURE", "OBSERVED_COMPONENT_PAIR", "NOVEL_PAIR_KNOWN_COMPONENTS", "DUPLICATE_PRODUCT_FROM_DIFFERENT_ALIASES", "INVALID_VALENCE", "AMBIGUOUS_ASSEMBLY", "OUTSIDE_COMPONENT_SUPPORT", "EXCLUDED_BY_STRUCTURE_INTEGRITY"]
+  },
+  "pair_cold_domain": {
+    "support_partition": "train",
+    "donor_min_calculation_records": 5,
+    "acceptor_min_calculation_records": 5,
+    "requires_observed_attachment_topology": true,
+    "requires_observed_component_charge_valence": true,
+    "requires_unique_full_structure": true,
+    "new_elements_or_bond_types_forbidden": true,
+    "scope": "unseen pair with seen donor and acceptor components; not donor-OOD, acceptor-OOD, or new-scaffold extrapolation"
+  },
+  "diversity": {
+    "morgan_radius": 2,
+    "morgan_bits": 2048,
+    "use_chirality": false,
+    "deterministic_pairwise_sample_max": 1024,
+    "murcko_scaffold": true,
+    "descriptors": ["molecular_weight", "heavy_atom_count", "heteroatom_count", "formal_charge", "element_inventory"],
+    "structural_alert_catalogs": ["PAINS_A", "PAINS_B", "PAINS_C", "BRENK"],
+    "alerts_are_heuristics_only": true
+  },
+  "future_selection": {
+    "total": 16,
+    "predicted_low_proxy": 4,
+    "predicted_high_proxy": 4,
+    "diversity_exploration": 4,
+    "matched_controls": 4,
+    "max_per_donor": 2,
+    "max_per_acceptor": 2,
+    "candidate_count_requires_experimental_team_confirmation": true,
+    "failed_synthesis_or_measurement_must_remain_reported": true,
+    "frozen_before_any_prediction": true
+  },
+  "lock_note": "User supplied thresholds and scientific scope were fixed before execution. Target-free implementation probes used to validate marker semantics before this lock are disclosed in Gate evidence; no candidate universe, property prediction, or ranking was inspected before lock."
+}
