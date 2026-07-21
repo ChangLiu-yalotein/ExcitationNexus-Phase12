@@ -1,0 +1,67 @@
+{
+  "aggregate_sha256": "51d8ad0f936345a1a6d74ce1b6a6fe7fe305edc76a7eb277c92747982eaa16b5",
+  "bootstrap_seeds": [
+    20260721,
+    20260722,
+    20260723,
+    20260724,
+    20260725,
+    20260726,
+    20260727,
+    20260728,
+    20260729,
+    20260730,
+    20260731,
+    20260732,
+    20260733,
+    20260734,
+    20260735,
+    20260736,
+    20260737,
+    20260738,
+    20260739,
+    20260740
+  ],
+  "deployment_label_coverage": {
+    "covered": 15015,
+    "cross_source_max_abs_difference": 0.0,
+    "eligible": 15015,
+    "extra": 0,
+    "main_parquet_read": false,
+    "missing": 0,
+    "source_count": 7,
+    "test_artifact_read": false
+  },
+  "eligible_candidate_count": 36523,
+  "files": {
+    "configs/gate3a1_prospective_scoring_v1.json": "0d3fa9bf1588f8fc2c1e9237b773429e8ff72da11246308b120e5ac0dbe84380",
+    "scripts/gate3a1_prospective_scoring.py": "67fce4fe8a70b5c6c4f2feba95bfe177506523a31e25be122f730e5d64850bba",
+    "src/excitationnexus_phase12/prospective_scoring.py": "da41e2a548cdd22afe393c792d2bed3c83ab163e9980f0fe1379e676ba8dff76",
+    "tests/test_gate3a1_contract.py": "67e02dfb4e8082a46a32800dae8fb7bfd08b4e9c1c9de3fd512ed3f148dcc7af"
+  },
+  "final673_access": false,
+  "gate3a0_status_counts": {
+    "DUPLICATE_PRODUCT_FROM_DIFFERENT_ALIASES": 958,
+    "INVALID_VALENCE": 308,
+    "NOVEL_PAIR_KNOWN_COMPONENTS": 36523,
+    "OBSERVED_EXACT_STRUCTURE": 14957,
+    "OUTSIDE_COMPONENT_SUPPORT": 1462
+  },
+  "locked_utc": "2026-07-21T10:43:40.731982+00:00",
+  "main_parquet_read": false,
+  "post_lock_policy": "Any scientific change requires explicit v2; v1 is never overwritten.",
+  "selection": {
+    "controls": "nearest observed full-Morgan structure to each exploration item under global identity caps; no target/error criterion",
+    "diversity_exploration": 4,
+    "exploration": "greedy full-Morgan max-min diversity; first choose minimum nearest-observed similarity; hash tie-break",
+    "extreme_order": "stable frequency gate, then final prediction, then pair hash",
+    "insufficient_policy": "do not lower the 0.80 stability threshold; shrink the affected group and return RANKING_UNSTABLE_NO_SHORTLIST",
+    "matched_observed_controls": 4,
+    "max_per_acceptor": 2,
+    "max_per_donor": 2,
+    "predicted_high_proxy": 4,
+    "predicted_low_proxy": 4
+  },
+  "status": "FROZEN_BEFORE_FEATURE_BUILD_MODEL_FIT_AND_CANDIDATE_SCORING",
+  "test_artifact_access": false
+}

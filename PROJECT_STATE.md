@@ -224,3 +224,15 @@ Project and EquiformerV3 directories are not Git worktrees; source commit proven
 - The future 16-candidate framework is frozen before prediction: 4 predicted-low, 4 predicted-high, 4 exploration, and 4 matched controls, with at most two selections per donor or acceptor.
 - Assembly is `ASSEMBLY_ENGINE_ADMITTED`, but the final status is `PROSPECTIVE_COMPUTATIONAL_SCREENING_ONLY` because no committed laboratory, reaction, procurement/synthesis plan, personnel, budget, or schedule is documented.
 - Preserve `BLOCKED_NO_EXPERIMENTAL_VALIDATION_PATH`; a Nature Catalysis-level catalyst-discovery claim is not supported without a prospective experimental reaction loop.
+
+## Gate 3-A1 result
+
+- Existing frozen label artifacts cover all 15,015 non-quarantine records exactly; Gate 3-A1 did not reopen the main Parquet or any test artifact.
+- The deployment scorer is exclusively the frozen C0 contract: 20 RDKit descriptors plus a 512-bit radius-2 non-chiral full-molecule Morgan fingerprint.
+- One full-data XGBoost-C0 and 20 fixed structure-group bootstrap stability models were frozen before the single candidate-scoring call.
+- All 36,523 in-domain unseen pairs produced finite 532-column features. Median nearest-observed full-Morgan similarity is 0.793814; 54.5684% have at least one descriptor outside the observed 1st-99th percentile band.
+- Bootstrap stability is not calibrated uncertainty. The frozen 1% extreme-pool / 80% inclusion gate retained 6 low-proxy and 98 high-proxy candidates.
+- The frozen shortlist contains 4 predicted-low proxy, 4 predicted-high proxy, 4 target-free diversity/exploration, and 4 matched observed controls. All 16 full structures are unique and donor/acceptor frequency caps are at most two.
+- Final decision: `COMPUTATIONAL_SHORTLIST_FROZEN`. It remains strictly `PROSPECTIVE_COMPUTATIONAL_SCREENING_ONLY`; low proxy is not catalytic efficiency, experimental activity, or a best-photocatalyst claim.
+- Per-candidate features, predictions, models, SMILES, structures, full ranking, and the local shortlist remain Git-ignored.
+- `BLOCKED_NO_EXPERIMENTAL_VALIDATION_PATH` remains active.

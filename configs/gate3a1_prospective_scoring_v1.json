@@ -1,0 +1,104 @@
+{
+  "gate": "3-A1",
+  "version": "v1",
+  "base_git_head": "45db4e8c888d9b6f61b16ba9aaf9552e88ed7156",
+  "required_tag": "gate3a0-prospective-pair-feasibility-20260721",
+  "primary_target": "tddft_coulomb_attraction_eV_eps3p5_proxy",
+  "primary_report_name": "J_eh_screened_eV_eps3p5 proxy",
+  "inputs": {
+    "gate1b1_config": {
+      "path": "configs/gate1b1_new_iid_cheap_baselines_v1.json",
+      "sha256": "f3bc6a8774846850cedadbb4da9717bc1b1c5ff4b8e6ecfb7cad2560a8d9dcb5"
+    },
+    "observed_features": {
+      "path": "runs/gate1b1_new_iid_cheap_baselines/features_v1.parquet",
+      "sha256": "7bb1a6af207364b186c072ab6d013d278e294633255b2235ef789e040e75d058"
+    },
+    "iid_manifest": {
+      "path": "manifests/split_iid_group_seed42_v1.csv",
+      "sha256": "f4572f2c1896d4228dd9eff67220adb7d0a02ad79b70c66766e6da876541c3f2"
+    },
+    "candidate_registry": {
+      "path": "data_registry/gate3a0_candidate_universe_registry.json",
+      "sha256": "b80aa9ec325fce2079b1a644ee91929232b3e87a8598d2f8aa1027a986090f4d"
+    },
+    "candidate_universe": {
+      "path": "runs/gate3a0_prospective_pair_feasibility/candidate_universe_v1.parquet",
+      "sha256": "a858cbcf1133d7036c0ee0220eef77880a71e8b2b72a2b57af30d5366b77a566"
+    },
+    "observed_reconstruction": {
+      "path": "runs/gate3a0_prospective_pair_feasibility/observed_reconstruction_v1.parquet",
+      "sha256": "2928ba1a26154bd3dff27174664387c46c51574adb4e0bae478e5df6cdcf80fb"
+    }
+  },
+  "label_sources": [
+    {"path": "runs/gate1b2_3d_admission/prepared/train_val_targets.parquet", "sha256": "44d7243f5cbef1e2347c2b4983efc8c708600f57193593e1e6c9d966265d54f0", "target_column": "target"},
+    {"path": "runs/gate2c_uq/calibration_labels_v1.parquet", "sha256": "5d59314b515e2487efdc54061d6d6c368bb3f2e6e51dda09a4dea98cf959e1cc", "target_column": "tddft_coulomb_attraction_eV_eps3p5_proxy"},
+    {"path": "runs/gate2d1_role_aware_2d/train_label_supplements/acceptor_cold_train_labels.parquet", "sha256": "4734d5c436433a36b682b2535d6fd3fd42d8f6c124e4bf3313a442558df56604", "target_column": "tddft_coulomb_attraction_eV_eps3p5_proxy"},
+    {"path": "runs/gate2d1_role_aware_2d/train_label_supplements/both_cold_train_labels.parquet", "sha256": "dbe5237e78fe84a36bf1b40c2fa977c90948d78d046fc748af7a98ee3be2dcd7", "target_column": "tddft_coulomb_attraction_eV_eps3p5_proxy"},
+    {"path": "runs/gate2d1_role_aware_2d/train_label_supplements/donor_cold_train_labels.parquet", "sha256": "cb7824e2ad88d500c108ae021f56b07ca05046863bed00c7146e64bcb1d9f61c", "target_column": "tddft_coulomb_attraction_eV_eps3p5_proxy"},
+    {"path": "runs/gate2d1_role_aware_2d/train_label_supplements/full_scaffold_cold_train_labels.parquet", "sha256": "0f3771c02fa9e75f04f1488c1950d0d9f57450f3fdf1e91548211afb056fc383", "target_column": "tddft_coulomb_attraction_eV_eps3p5_proxy"},
+    {"path": "runs/gate2d1_role_aware_2d/train_label_supplements/pair_cold_train_labels.parquet", "sha256": "8a5c87a84b22079239e6cadb802df726fc5ecd3c2109459f5def10875251d138", "target_column": "tddft_coulomb_attraction_eV_eps3p5_proxy"}
+  ],
+  "expected": {
+    "records_total": 15016,
+    "deployment_train_records": 15015,
+    "historical_quarantine": 1,
+    "candidate_universe_rows": 54208,
+    "novel_in_domain_candidates": 36523,
+    "observed_reconstruction_failures": 12,
+    "atom_origin_unverifiable_records": 753
+  },
+  "features": {
+    "descriptor_count": 20,
+    "morgan_radius": 2,
+    "morgan_bits": 512,
+    "include_chirality": false,
+    "column_count": 532,
+    "preprocessing": "deployment-train group-weighted median imputation and weighted mean/std scaling"
+  },
+  "xgboost": {
+    "n_estimators": 500,
+    "max_depth": 6,
+    "learning_rate": 0.05,
+    "tree_method": "hist",
+    "device": "cuda",
+    "verbosity": 0,
+    "random_state": 42,
+    "row_subsampling": false,
+    "column_subsampling": false
+  },
+  "stability": {
+    "bootstrap_unit": "structure_group_id_v1",
+    "models": 20,
+    "seeds": [20260721, 20260722, 20260723, 20260724, 20260725, 20260726, 20260727, 20260728, 20260729, 20260730, 20260731, 20260732, 20260733, 20260734, 20260735, 20260736, 20260737, 20260738, 20260739, 20260740],
+    "extreme_pool_fraction": 0.01,
+    "extreme_inclusion_frequency_min": 0.80,
+    "quantiles": [0.10, 0.90],
+    "interpretation": "ranking stability only; not calibrated uncertainty or a prediction interval"
+  },
+  "selection": {
+    "predicted_low_proxy": 4,
+    "predicted_high_proxy": 4,
+    "diversity_exploration": 4,
+    "matched_observed_controls": 4,
+    "max_per_donor": 2,
+    "max_per_acceptor": 2,
+    "extreme_order": "stable frequency gate, then final prediction, then pair hash",
+    "exploration": "greedy full-Morgan max-min diversity; first choose minimum nearest-observed similarity; hash tie-break",
+    "controls": "nearest observed full-Morgan structure to each exploration item under global identity caps; no target/error criterion",
+    "insufficient_policy": "do not lower the 0.80 stability threshold; shrink the affected group and return RANKING_UNSTABLE_NO_SHORTLIST"
+  },
+  "local_outputs": {
+    "root": "runs/gate3a1_prospective_scoring",
+    "candidate_features": "runs/gate3a1_prospective_scoring/candidate_c0_features_v1.parquet",
+    "observed_control_features": "runs/gate3a1_prospective_scoring/observed_control_features_v1.parquet",
+    "training_labels": "runs/gate3a1_prospective_scoring/deployment_train_labels_v1.parquet",
+    "models": "runs/gate3a1_prospective_scoring/models",
+    "scoring": "runs/gate3a1_prospective_scoring/candidate_scoring_v1.parquet",
+    "shortlist": "runs/gate3a1_prospective_scoring/computational_shortlist_v1.parquet",
+    "scoring_sentinel": "runs/gate3a1_prospective_scoring/SCORING_ONCE.lock"
+  },
+  "forbidden": ["final673", "test labels/predictions", "PM6/DFT/TDDFT inputs", "3D", "MoLFormer", "multitask", "delta", "role-separated fingerprints", "target-derived gating"],
+  "final_boundary": ["PROSPECTIVE_COMPUTATIONAL_SCREENING_ONLY", "BLOCKED_NO_EXPERIMENTAL_VALIDATION_PATH"]
+}

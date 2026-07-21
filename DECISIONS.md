@@ -229,3 +229,13 @@
 - Freeze the 16-candidate future selection framework before any property prediction; Gate 3-A0 itself creates no ranked or final candidate list.
 - Treat structural alerts as computational heuristics, never as synthesis feasibility or safety evidence.
 - Freeze `PROSPECTIVE_COMPUTATIONAL_SCREENING_ONLY` and `BLOCKED_NO_EXPERIMENTAL_VALIDATION_PATH`; do not claim catalyst discovery or Nature Catalysis-level experimental closure from proxy predictions.
+
+## Gate 3-A1 decisions
+
+- Use only the frozen XGBoost-C0 input/model contract for prospective scoring; do not reintroduce 3D, role-separated, MoLFormer, multitask, PM6-orbital, delta, or multifidelity arms.
+- Fit one deterministic final model to all 15,015 legal records with retained replicate weights; historical quarantine remains excluded.
+- Interpret 20 structure-group bootstrap models only as rank-stability perturbations, not conformal intervals, confidence intervals, calibrated uncertainty, or experimental confidence.
+- Freeze the single scoring invocation and the 4+4+4+4 anonymous computational shortlist; do not retrain or adjust seeds, thresholds, features, or selection rules from the output.
+- Keep the scope at seen-components/unseen-pair. It is not donor-OOD, acceptor-OOD, or evidence for a new chemical skeleton.
+- Describe low proxy only as predicted low screened electron-hole Coulomb proxy under the frozen model; never as catalytic efficiency, activity, charge separation, or a best catalyst.
+- Retain `BLOCKED_NO_EXPERIMENTAL_VALIDATION_PATH`; no candidate proceeds to a discovery claim without a preregistered experimental reaction loop.

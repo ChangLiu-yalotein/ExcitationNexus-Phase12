@@ -1,0 +1,130 @@
+{
+  "canonical_smiles_published": false,
+  "category_counts": {
+    "diversity_exploration": 4,
+    "matched_observed_control": 4,
+    "predicted_high_proxy": 4,
+    "predicted_low_proxy": 4
+  },
+  "full_ranking_published": false,
+  "identity_caps_pass": true,
+  "interpretation": "computational proxy shortlist only",
+  "items": [
+    {
+      "anonymous_full_structure_hash": "bd6aad16d0a0b7580360da3fc1029acedd321327b54663d81d666f5084012393",
+      "anonymous_pair_hash": "5d14d5534e16b60235f50cd8e09bb1a5ac78bf09f64ae2c0b4ed831d535e6749",
+      "category": "predicted_low_proxy",
+      "shortlist_id": "G3A1-01",
+      "stable_extreme_gate": true
+    },
+    {
+      "anonymous_full_structure_hash": "241c0e1053242a07a2d69f33ce28217ef3167bd5ca06167e2b9d6d8756266048",
+      "anonymous_pair_hash": "27c0174ad7b72ed91f90c6954bd1cabc25e210c989cd2ae3b4dbc81eeed5a5db",
+      "category": "predicted_low_proxy",
+      "shortlist_id": "G3A1-02",
+      "stable_extreme_gate": true
+    },
+    {
+      "anonymous_full_structure_hash": "a956a1baf20d9ead38bf0b5a62fe8dd9790b31397553f6751d550ba160df1218",
+      "anonymous_pair_hash": "fc529d8cc1d20169bf674f71a40e043db8253a7421ff3f548e69bc557ac97c1d",
+      "category": "predicted_low_proxy",
+      "shortlist_id": "G3A1-03",
+      "stable_extreme_gate": true
+    },
+    {
+      "anonymous_full_structure_hash": "9ff1e371cba8b7285bb69635051b8374f96667b9a9fff79433636c3bbe500e7f",
+      "anonymous_pair_hash": "0a6eb850b59bd54860712c4a620440f720e8ef41a4c6e3e67bf575acc9ff27f7",
+      "category": "predicted_low_proxy",
+      "shortlist_id": "G3A1-04",
+      "stable_extreme_gate": true
+    },
+    {
+      "anonymous_full_structure_hash": "170ed8b2b5cd098ddc8e414de88b2993410ab747ad94d7fa3b93361f25ad1dd5",
+      "anonymous_pair_hash": "eea52c10ab8f4a8a7e90e81728a2fec57c5a0ed904cb849bb011f012e05b59da",
+      "category": "predicted_high_proxy",
+      "shortlist_id": "G3A1-05",
+      "stable_extreme_gate": true
+    },
+    {
+      "anonymous_full_structure_hash": "fdb0741b81513297e5b7062f3e73297b21f4dc094371bd1e04e38cc931954d36",
+      "anonymous_pair_hash": "dc8d41c25b1cbe10595bcb113c8772a560c87310838d650619de5a97bc49f0ea",
+      "category": "predicted_high_proxy",
+      "shortlist_id": "G3A1-06",
+      "stable_extreme_gate": true
+    },
+    {
+      "anonymous_full_structure_hash": "e80d5bdaf6bc8f811050b19bbe146b9265f02eb50fc9a343672abce6f4b29736",
+      "anonymous_pair_hash": "e93b21571be505e42a598de6338d28360484503e567b6c2c3e6c231aca45edd7",
+      "category": "predicted_high_proxy",
+      "shortlist_id": "G3A1-07",
+      "stable_extreme_gate": true
+    },
+    {
+      "anonymous_full_structure_hash": "1562778c8335d687642284e1242830c1bbe8f120a7508f3df17deefaf2ed9187",
+      "anonymous_pair_hash": "366f15778ee4744ec42df2f38c8838bff2bafb80c9171221aa86851abb5e6c7a",
+      "category": "predicted_high_proxy",
+      "shortlist_id": "G3A1-08",
+      "stable_extreme_gate": true
+    },
+    {
+      "anonymous_full_structure_hash": "0595419ac166b26cb1dfc236599d74a24be261720233c303a748bc62303dc171",
+      "anonymous_pair_hash": "d81602ea39cddbac396211305502646fffcb0ec50746b12c106cb889f19478a7",
+      "category": "diversity_exploration",
+      "shortlist_id": "G3A1-09",
+      "stable_extreme_gate": true
+    },
+    {
+      "anonymous_full_structure_hash": "aec686a530cea1ab8dcbbdd7da9ccd024a99000114b0007dfdd7ce14e09763d4",
+      "anonymous_pair_hash": "db663fa31e6535bad912827e33939fbde0ae427438e602524cc0ebf781c9fe97",
+      "category": "diversity_exploration",
+      "shortlist_id": "G3A1-10",
+      "stable_extreme_gate": true
+    },
+    {
+      "anonymous_full_structure_hash": "81abb5014139b725048d4e069f78e682c5d5ca305dc2ea69135e7896d10a2a07",
+      "anonymous_pair_hash": "57ae60f28156926298ea5d6d2b8780ce2b5198977180bc78fa0e1f4b3d107810",
+      "category": "diversity_exploration",
+      "shortlist_id": "G3A1-11",
+      "stable_extreme_gate": true
+    },
+    {
+      "anonymous_full_structure_hash": "d105a847346c917783e19a5d296015a32137ff475523c4946fbab1f1561683ca",
+      "anonymous_pair_hash": "d4d7af8649d91bd99f08716832fbe5eb19696594515e6c57c07f9a9807927127",
+      "category": "diversity_exploration",
+      "shortlist_id": "G3A1-12",
+      "stable_extreme_gate": true
+    },
+    {
+      "anonymous_full_structure_hash": "465ada2d1e300a506b105e6f5cb08bc8559c086f29e9733f50fd58c630a53358",
+      "anonymous_pair_hash": "af33e29541440c7a80f14cc8a8bb45bbee5425ae2b7e0568e472a322f015ece3",
+      "category": "matched_observed_control",
+      "shortlist_id": "G3A1-13",
+      "stable_extreme_gate": true
+    },
+    {
+      "anonymous_full_structure_hash": "5e803563d921e3c205df7f9594134f7d12d38a0df1bfecbf36ed3d3a9417da91",
+      "anonymous_pair_hash": "13abf43b860dbc3f842ac73e788481c918f95f3c79d86d16a3a2fac7d4bcf74a",
+      "category": "matched_observed_control",
+      "shortlist_id": "G3A1-14",
+      "stable_extreme_gate": true
+    },
+    {
+      "anonymous_full_structure_hash": "7b0041409a2c11e7e3c4f9174ba80d2d575d017d2d3bf00a067038ccbb3b3641",
+      "anonymous_pair_hash": "a47fbdda92d70f1700693ea8aec72c5ad21a5e0b522cb5eb6dc134e7f750ebde",
+      "category": "matched_observed_control",
+      "shortlist_id": "G3A1-15",
+      "stable_extreme_gate": true
+    },
+    {
+      "anonymous_full_structure_hash": "0134bacfba9b7dff54f212a028907a1c2bfe9265813ba33194ae63fff33aa858",
+      "anonymous_pair_hash": "d4e657835608eb1bee04d5f48c3fd54565344e108134aec7211757a0dd8d9a8a",
+      "category": "matched_observed_control",
+      "shortlist_id": "G3A1-16",
+      "stable_extreme_gate": true
+    }
+  ],
+  "local_shortlist_path": "runs/gate3a1_prospective_scoring/computational_shortlist_v1.parquet",
+  "local_shortlist_sha256": "1d7056fe64f6b7922cbf0c6fc1e1413bf5898134f97e98482322ddc9c0ac1279",
+  "status": "COMPUTATIONAL_SHORTLIST_FROZEN",
+  "unique_full_structures": true
+}

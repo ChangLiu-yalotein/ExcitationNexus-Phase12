@@ -1,0 +1,28 @@
+{
+  "candidate_count": 36523,
+  "candidate_labels_read": false,
+  "category_counts": {
+    "diversity_exploration": 4,
+    "matched_observed_control": 4,
+    "predicted_high_proxy": 4,
+    "predicted_low_proxy": 4
+  },
+  "ended_utc": "2026-07-21T10:50:57.976549+00:00",
+  "feature_coverage": 1.0,
+  "final673_access": false,
+  "gpu_model_selection": false,
+  "identity_caps_pass": true,
+  "main_parquet_read": false,
+  "models_frozen_before_scoring": true,
+  "new_architecture_search": false,
+  "publication_boundary": [
+    "PROSPECTIVE_COMPUTATIONAL_SCREENING_ONLY",
+    "BLOCKED_NO_EXPERIMENTAL_VALIDATION_PATH"
+  ],
+  "scoring_once": true,
+  "shortlist_count": 16,
+  "status": "COMPUTATIONAL_SHORTLIST_FROZEN",
+  "test_artifact_access": false,
+  "training": "one final plus 20 fixed structure-group bootstrap XGBoost-C0 models",
+  "unique_structures": true
+}

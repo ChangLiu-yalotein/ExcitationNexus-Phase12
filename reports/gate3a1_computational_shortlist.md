@@ -1,0 +1,3 @@
+# Gate 3-A1 computational shortlist
+
+Status: **COMPUTATIONAL_SHORTLIST_FROZEN**. Category counts: {"diversity_exploration": 4, "matched_observed_control": 4, "predicted_high_proxy": 4, "predicted_low_proxy": 4}. The low group means only predicted low screened electron-hole Coulomb proxy under the frozen model. It does not mean high catalytic efficiency, best photocatalyst, superior charge separation, or experimental activity. High-proxy entries are computational controls, not experimental negatives. Public assets contain anonymous hashes only; SMILES, structures, full ranking, and per-candidate values remain local and Git-ignored.

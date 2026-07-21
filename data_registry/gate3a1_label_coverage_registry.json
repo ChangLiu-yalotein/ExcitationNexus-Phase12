@@ -1,0 +1,43 @@
+{
+  "covered": 15015,
+  "cross_source_max_abs_difference": 0.0,
+  "eligible": 15015,
+  "extra": 0,
+  "local_artifact": "runs/gate3a1_prospective_scoring/deployment_train_labels_v1.parquet",
+  "local_artifact_sha256": "133cb3e2883819e39297562ee303bde2a37450801ccd0f2b9866b8e307d844ac",
+  "main_parquet_read": false,
+  "missing": 0,
+  "source_artifacts": [
+    {
+      "path": "runs/gate1b2_3d_admission/prepared/train_val_targets.parquet",
+      "sha256": "44d7243f5cbef1e2347c2b4983efc8c708600f57193593e1e6c9d966265d54f0"
+    },
+    {
+      "path": "runs/gate2c_uq/calibration_labels_v1.parquet",
+      "sha256": "5d59314b515e2487efdc54061d6d6c368bb3f2e6e51dda09a4dea98cf959e1cc"
+    },
+    {
+      "path": "runs/gate2d1_role_aware_2d/train_label_supplements/acceptor_cold_train_labels.parquet",
+      "sha256": "4734d5c436433a36b682b2535d6fd3fd42d8f6c124e4bf3313a442558df56604"
+    },
+    {
+      "path": "runs/gate2d1_role_aware_2d/train_label_supplements/both_cold_train_labels.parquet",
+      "sha256": "dbe5237e78fe84a36bf1b40c2fa977c90948d78d046fc748af7a98ee3be2dcd7"
+    },
+    {
+      "path": "runs/gate2d1_role_aware_2d/train_label_supplements/donor_cold_train_labels.parquet",
+      "sha256": "cb7824e2ad88d500c108ae021f56b07ca05046863bed00c7146e64bcb1d9f61c"
+    },
+    {
+      "path": "runs/gate2d1_role_aware_2d/train_label_supplements/full_scaffold_cold_train_labels.parquet",
+      "sha256": "0f3771c02fa9e75f04f1488c1950d0d9f57450f3fdf1e91548211afb056fc383"
+    },
+    {
+      "path": "runs/gate2d1_role_aware_2d/train_label_supplements/pair_cold_train_labels.parquet",
+      "sha256": "8a5c87a84b22079239e6cadb802df726fc5ecd3c2109459f5def10875251d138"
+    }
+  ],
+  "source_count": 7,
+  "status": "FROZEN_LABEL_COVERAGE_COMPLETE",
+  "test_artifact_read": false
+}
