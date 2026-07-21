@@ -185,3 +185,9 @@
 - Freeze MASKED_FRAGMENT_SIGNAL_INCONCLUSIVE; M15 cannot become a post hoc primary champion.
 - Preserve gradient conflict as explanation only; do not reweight, remove tasks, use PCGrad/GradNorm, or rerun.
 - Do not unlock test or continue dynamic weighting, 3D, foundation encoders, fusion, memory, or retrieval from this result.
+
+## Gate 2-E1 post-freeze correction
+
+- Invalidate the earlier E1 admission labels: acceptor inner splitting used record mean instead of structure-group-weighted mean and changes 146 assignments under correct reconstruction.
+- Do not repair or rerun v1 after official validation exposure. Preserve all artifacts as diagnostic-only evidence.
+- Any future multitask admission requires a new preregistration and an unobserved evaluation boundary.

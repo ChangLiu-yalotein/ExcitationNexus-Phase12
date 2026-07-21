@@ -50,3 +50,5 @@
 - [x] Gate 2-E0: freeze `MULTITASK_TARGET_GRAPH_ADMITTED` with 11 secondary and 4 masked tasks after one protocol-local auxiliary-label extraction.
 
 - [x] Gate 2-E1: freeze MULTITASK_SIGNAL_INCONCLUSIVE and MASKED_FRAGMENT_SIGNAL_INCONCLUSIVE from IID/acceptor-cold validation only.
+
+- [!] Gate 2-E1 correction: BLOCKED_MULTITASK_PIPELINE_INTEGRITY; acceptor inner split violated the frozen group-weighted quantile rule after validation was consumed.

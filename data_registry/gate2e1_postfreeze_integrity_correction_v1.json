@@ -1,0 +1,29 @@
+{
+  "detected_after_official_validation_unlock": true,
+  "existing_metrics_status": "DIAGNOSTIC_ONLY_NOT_ADMISSION_EVIDENCE",
+  "final673_accessed": false,
+  "protocols": {
+    "acceptor_cold": {
+      "assignment_identical": false,
+      "correct_group_weighted_checkpoint_records": 1561,
+      "correct_only": 89,
+      "current_checkpoint_records": 1529,
+      "current_only": 57,
+      "symmetric_difference_records": 146
+    },
+    "iid": {
+      "assignment_identical": true,
+      "correct_group_weighted_checkpoint_records": 1556,
+      "correct_only": 0,
+      "current_checkpoint_records": 1556,
+      "current_only": 0,
+      "symmetric_difference_records": 0
+    }
+  },
+  "reason_no_rerun": "Official validation has already been observed; correcting and retraining v1 would be post-validation protocol repair.",
+  "rerun_permitted": false,
+  "root_cause": "Inner-unit quantile target used unweighted record mean instead of preregistered structure-group-weighted mean.",
+  "scientific_contract_changed": false,
+  "status": "BLOCKED_MULTITASK_PIPELINE_INTEGRITY",
+  "test_accessed": false
+}

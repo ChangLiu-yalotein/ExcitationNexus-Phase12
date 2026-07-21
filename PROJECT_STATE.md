@@ -1,6 +1,6 @@
 # Phase 12 project state
 
-Current stage: **GATE2E1_DONE / MULTITASK_SIGNAL_INCONCLUSIVE**; fixed-weight physics multitask supervision was evaluated once on IID and acceptor-cold validation only.
+Current stage: **BLOCKED_MULTITASK_PIPELINE_INTEGRITY**; Gate 2-E1 metrics are diagnostic-only after a post-freeze inner-split weighting violation was found.
 
 ## Frozen facts
 
@@ -175,3 +175,10 @@ Project and EquiformerV3 directories are not Git worktrees; source commit proven
 - Acceptor-cold M15-M11 is -0.003349093 eV with CI [-0.008248288, +0.000815910]. Masked decision: MASKED_FRAGMENT_SIGNAL_INCONCLUSIVE.
 - Train-only acceptor M11 aggregate-secondary cosine is -0.1426 with 63.6 percent negative task cosines; no weight or task changed.
 - Official validation ran once after all models froze; second invocation failed closed. Test, source Parquet, buffer, quarantine, and final673 remained inaccessible.
+
+## Gate 2-E1 post-freeze correction
+
+- The acceptor-cold inner split used record mean rather than the preregistered structure-group-weighted primary mean. Correct reconstruction changes 146 record assignments; IID is unchanged.
+- The defect was found after official validation unlock. V1 cannot be repaired or retrained without post-validation contamination.
+- Final status is BLOCKED_MULTITASK_PIPELINE_INTEGRITY. Existing metrics are diagnostic only; no multitask admission or rejection conclusion is valid.
+- No rerun, test access, force push, or published tag rewrite occurred.
