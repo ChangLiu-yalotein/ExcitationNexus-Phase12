@@ -1,0 +1,60 @@
+{
+  "algebra": {
+    "gap_relations_max_abs": {
+      "delta_gap": 5.551115123125783e-17,
+      "dft_gap": 2.7755575615628914e-17,
+      "pm6_gap": 0.0
+    },
+    "gap_status": "REPORT_ONLY_REDUNDANT",
+    "independent_basis": [
+      "homo_hartree",
+      "lumo_hartree",
+      "dipole_magnitude_debye"
+    ],
+    "pair_delta_relation": "SAME_INFORMATION_DIFFERENT_PARAMETERIZATION",
+    "reconstruction": {
+      "delta_from_pm6_dft_max_abs": 0.0,
+      "dft_from_pm6_delta_max_abs": 8.881784197001252e-16
+    },
+    "rounding_tolerance": 1e-12,
+    "status": "PASS",
+    "target_delta_learning": false
+  },
+  "arms": [
+    "C0",
+    "PM6_3",
+    "DFT_3",
+    "PAIR_6",
+    "DELTA_6",
+    "DELTA_3",
+    "ROLE_9"
+  ],
+  "bootstrap": {
+    "replicates": 10000,
+    "seed": 20260721
+  },
+  "config_sha256": "3cf695ab890eb1c8a1e8c3c22ad631309f9e98f9fac020a1725ff9f5965354fb",
+  "created_before_model_initialization": true,
+  "decisions": {
+    "acceptor_delta_minus_pair_ci_upper_max": 0.0,
+    "acceptor_delta_minus_pair_max": -0.001,
+    "acceptor_pair_minus_c0_ci_upper_max": 0.0,
+    "acceptor_pair_minus_c0_max": -0.003,
+    "iid_delta_minus_pair_ci_upper_max": 0.002,
+    "iid_pair_minus_c0_ci_upper_max": 0.002
+  },
+  "expected_head": "59398157b7aef2934ea004af461cda7850b5097f",
+  "final673_access": false,
+  "main_parquet_access": false,
+  "official_validation_access": false,
+  "outer_fold_hashes": {
+    "acceptor_cold": "9a1f4362cdece6275e0290fa16e63f779a11a882bf2d7c5b5962d38c535b82ca",
+    "iid": "a303b518315a0fc81987ce20f453c00d47045ba6eae11f37c349fc42107af9f9"
+  },
+  "primary_endpoints": [
+    "acceptor PAIR_6-C0",
+    "acceptor DELTA_6-PAIR_6"
+  ],
+  "test_access": false,
+  "version": "gate2f1_preregistration_lock_v1"
+}

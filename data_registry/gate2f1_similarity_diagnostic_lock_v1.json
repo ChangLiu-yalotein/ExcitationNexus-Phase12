@@ -1,0 +1,14 @@
+{
+  "component_identity_sha256": "dca4a5e5661d7336226b16c87624ba3b457cdcd0379ccb2130a48d4f30306515",
+  "fingerprint": {
+    "metric": "nearest_outer_train_tanimoto",
+    "n_bits": 2048,
+    "radius": 2,
+    "use_chirality": true
+  },
+  "model_or_primary_decision_change": false,
+  "scope": "user-preregistered secondary lowest-acceptor-similarity-quartile diagnostic",
+  "test_access": false,
+  "timing": "after model freeze and before target-free similarity computation",
+  "version": "gate2f1_similarity_diagnostic_lock_v1"
+}

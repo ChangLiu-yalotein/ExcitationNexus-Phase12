@@ -1,0 +1,16 @@
+{
+  "completed_utc": "2026-07-21T06:54:17.837637+00:00",
+  "decision": {
+    "delta_parameterization": "DELTA_REPARAMETERIZATION_NO_GAIN",
+    "delta_parameterization_admitted": false,
+    "dft_ground_state_secondary": "DFT_GROUND_STATE_SIGNAL_ONLY",
+    "multifidelity": "MULTIFIDELITY_SIGNAL_INCONCLUSIVE",
+    "multifidelity_admitted": false
+  },
+  "final673_accessed": false,
+  "main_parquet_accessed": false,
+  "models": 70,
+  "official_validation_accessed": false,
+  "status": "GATE2F1_DONE",
+  "test_accessed": false
+}

@@ -1,0 +1,3 @@
+# Gate 2-F1 acceptor identity analysis
+
+The primary protocol contains 277 held-out training-only acceptor identities. Paired primary inference uses 10,000 identity-cluster bootstrap replicates. The target-free lowest-similarity quartile contains 70 identities at a nearest-outer-train Tanimoto threshold of 0.710280; PAIR-6−C0 there is +0.000104050 eV and DELTA-6−PAIR-6 is +0.000129442 eV. This secondary subgroup was user-preregistered, did not select an arm, and does not alter the primary decision. Per-identity effects remain local and are represented publicly only by aggregate statistics and a file hash.

@@ -55,3 +55,4 @@
 
 - [x] Gate 2-E2A: recover training-only cross-fit evidence with corrected group-weighted unit targets; decision MULTITASK_CROSSFIT_INCONCLUSIVE.
 - [x] Gate 2-F0: audit PM6/DFT ground-state semantics, role/interface descriptors, matched deltas, duplicate dispersion, and acceptor-cold shift; decision `DELTA_FEATURE_GRAPH_ADMITTED`.
+- [x] Gate 2-F1: test seven equal-contract ground-state/delta arms on frozen training-only folds; decisions `MULTIFIDELITY_SIGNAL_INCONCLUSIVE` and `DELTA_REPARAMETERIZATION_NO_GAIN`.

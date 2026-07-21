@@ -1,0 +1,92 @@
+{
+  "algebra_registry_sha256": "5b63aab378b407ddc1f65df62beffdbb92d7cfdbdaa899ccfa185609478dd9e8",
+  "arms": {
+    "C0": {
+      "base": "C0-512",
+      "columns": 532,
+      "extra": [],
+      "gap_included": false,
+      "information_status": "DISTINCT_ABLATION"
+    },
+    "DELTA_3": {
+      "base": "C0-512",
+      "columns": 535,
+      "extra": [
+        "delta_homo_hartree",
+        "delta_lumo_hartree",
+        "delta_dipole_magnitude_debye"
+      ],
+      "gap_included": false,
+      "information_status": "DISTINCT_ABLATION"
+    },
+    "DELTA_6": {
+      "base": "C0-512",
+      "columns": 538,
+      "extra": [
+        "pm6_homo_hartree",
+        "pm6_lumo_hartree",
+        "pm6_dipole_magnitude_debye",
+        "delta_homo_hartree",
+        "delta_lumo_hartree",
+        "delta_dipole_magnitude_debye"
+      ],
+      "gap_included": false,
+      "information_status": "SAME_INFORMATION_DIFFERENT_PARAMETERIZATION"
+    },
+    "DFT_3": {
+      "base": "C0-512",
+      "columns": 535,
+      "extra": [
+        "dft_homo_hartree",
+        "dft_lumo_hartree",
+        "dft_dipole_magnitude_debye"
+      ],
+      "gap_included": false,
+      "information_status": "DISTINCT_ABLATION"
+    },
+    "PAIR_6": {
+      "base": "C0-512",
+      "columns": 538,
+      "extra": [
+        "pm6_homo_hartree",
+        "pm6_lumo_hartree",
+        "pm6_dipole_magnitude_debye",
+        "dft_homo_hartree",
+        "dft_lumo_hartree",
+        "dft_dipole_magnitude_debye"
+      ],
+      "gap_included": false,
+      "information_status": "SAME_INFORMATION_DIFFERENT_PARAMETERIZATION"
+    },
+    "PM6_3": {
+      "base": "C0-512",
+      "columns": 535,
+      "extra": [
+        "pm6_homo_hartree",
+        "pm6_lumo_hartree",
+        "pm6_dipole_magnitude_debye"
+      ],
+      "gap_included": false,
+      "information_status": "DISTINCT_ABLATION"
+    },
+    "ROLE_9": {
+      "base": "C0-512",
+      "columns": 541,
+      "extra": [
+        "donor_atom_count",
+        "acceptor_atom_count",
+        "unknown_atom_count",
+        "donor_atom_fraction",
+        "acceptor_atom_fraction",
+        "unknown_atom_fraction",
+        "donor_present",
+        "acceptor_present",
+        "unknown_present"
+      ],
+      "gap_included": false,
+      "information_status": "DISTINCT_ABLATION"
+    }
+  },
+  "no_imputation": true,
+  "outer_train_only_scalar_normalization": true
+}

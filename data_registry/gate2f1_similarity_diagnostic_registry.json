@@ -1,0 +1,28 @@
+{
+  "all_identity_macro": {
+    "C0": 0.08620136866329761,
+    "DELTA_3": 0.08651793523979726,
+    "DELTA_6": 0.08610232882508201,
+    "DFT_3": 0.08546710084539541,
+    "PAIR_6": 0.0858044087501038,
+    "PM6_3": 0.08671375002018632,
+    "ROLE_9": 0.08632789599118228
+  },
+  "identity_count": 277,
+  "local_identity_effects_sha256": "7e963f557e236ddbd5a0da6609b9ac0acad5790b6b15d6733267d72c6269bf4a",
+  "lowest_quartile_delta_minus_pair": 0.00012944176684612032,
+  "lowest_quartile_identities": 70,
+  "lowest_quartile_identity_macro": {
+    "C0": 0.10181259507326411,
+    "DELTA_3": 0.10346353444928846,
+    "DELTA_6": 0.10204608641328523,
+    "DFT_3": 0.1011499262655285,
+    "PAIR_6": 0.10191664464643913,
+    "PM6_3": 0.10301830434787711,
+    "ROLE_9": 0.10372357607223548
+  },
+  "lowest_quartile_pair_minus_c0": 0.00010404957317501748,
+  "lowest_quartile_threshold": 0.7102803738317757,
+  "selection_or_model_change": false,
+  "test_access": false
+}

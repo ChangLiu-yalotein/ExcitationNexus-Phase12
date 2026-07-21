@@ -209,3 +209,13 @@
 - Preserve D81_A28 as sidecar-conflicted and keep the 219 role-inconsistent duplicate groups unaggregated.
 - Freeze `DELTA_FEATURE_GRAPH_ADMITTED` as feasibility only. A later Gate must compare equal-capacity C0, ground-state scalar, role/interface, and delta families on validation before any test access.
 - Treat the Gate 2-F0 validation similarity amendment as target-free: Gate 2-A's existing similarity file is test-only and was not used.
+
+## Gate 2-F1 decisions
+
+- Freeze gap as report-only redundant: gap equals LUMO minus HOMO and delta-gap equals delta-LUMO minus delta-HOMO within machine precision.
+- Treat PAIR-6 and DELTA-6 as exactly reversible parameterizations of the same PM6+DFT information. Never describe delta coordinates as an added physical information source.
+- Call this multi-fidelity ground-state feature analysis, not TDDFT target-delta learning.
+- Freeze `MULTIFIDELITY_SIGNAL_INCONCLUSIVE`: PAIR-6 has a small favorable acceptor point estimate, but the identity CI crosses zero and misses the -0.003 eV admission threshold.
+- Freeze `DELTA_REPARAMETERIZATION_NO_GAIN`: DELTA-6 does not improve on information-equivalent PAIR-6 in acceptor or IID cross-fit.
+- Preserve `DFT_GROUND_STATE_SIGNAL_ONLY` as secondary: DFT-3 significantly beats PM6-3, but not C0, and therefore cannot replace the failed primary admission endpoint.
+- Do not unlock official validation or test. Stop this fixed ground-state/delta parameterization route unless a new scientific mechanism, not a post-hoc arm, is preregistered.

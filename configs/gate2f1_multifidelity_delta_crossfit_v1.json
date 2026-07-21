@@ -1,0 +1,33 @@
+{
+  "version": "gate2f1_multifidelity_delta_crossfit_v1",
+  "expected_head": "59398157b7aef2934ea004af461cda7850b5097f",
+  "evidence_scope": "TRAINING_ONLY_CROSSFIT_NOT_EXTERNAL_CONFIRMATION",
+  "protocols": {
+    "iid": {"unit": "structure_group_id_v1", "outer_path": "runs/gate2e2a_multitask_crossfit/folds/iid_outer.parquet", "outer_sha256": "e3746b9ee49750bfe35a371be3ad154ef226037a9b4797dc218731c573742fe1", "assignment_hash": "a303b518315a0fc81987ce20f453c00d47045ba6eae11f37c349fc42107af9f9"},
+    "acceptor_cold": {"unit": "acceptor_structure_group_id_v1", "outer_path": "runs/gate2e2a_multitask_crossfit/folds/acceptor_cold_outer.parquet", "outer_sha256": "7f2d0801cb98a17518a23c849e5e97e0dc3fed0a5dc828004389aec89baa9797", "assignment_hash": "9a1f4362cdece6275e0290fa16e63f779a11a882bf2d7c5b5962d38c535b82ca"}
+  },
+  "c0_features": {"path": "runs/gate1b1_new_iid_cheap_baselines/features_v1.parquet", "sha256": "7bb1a6af207364b186c072ab6d013d278e294633255b2235ef789e040e75d058", "columns": 532},
+  "ground_state_features": {"path": "runs/gate2f0_acceptor_delta_audit/features_v1.parquet", "sha256": "cf9ee28eef60d05bdd6c16f73b8e61d00a278bb3161deb25927d10e843fdc6f7"},
+  "primary_sources": {
+    "base": {"path": "runs/gate1b2_3d_admission/prepared/train_val_targets.parquet", "sha256": "44d7243f5cbef1e2347c2b4983efc8c708600f57193593e1e6c9d966265d54f0", "source_column": "target"},
+    "fallback": {"path": "runs/gate2c_uq/calibration_labels_v1.parquet", "sha256": "5d59314b515e2487efdc54061d6d6c368bb3f2e6e51dda09a4dea98cf959e1cc"},
+    "acceptor_supplement": {"path": "runs/gate2d1_role_aware_2d/train_label_supplements/acceptor_cold_train_labels.parquet", "sha256": "4734d5c436433a36b682b2535d6fd3fd42d8f6c124e4bf3313a442558df56604"}
+  },
+  "manifests": {
+    "iid": {"path": "manifests/split_iid_group_seed42_v1.csv", "sha256": "f4572f2c1896d4228dd9eff67220adb7d0a02ad79b70c66766e6da876541c3f2"},
+    "acceptor_cold": {"path": "manifests/split_acceptor_cold_v1.csv", "sha256": "659992cc7413094fd17da2281902aa74f261307d98648a973254bd472b5ecc65"}
+  },
+  "algebra": {"rounding_tolerance": 1e-12, "gap_status": "REPORT_ONLY_REDUNDANT", "independent_basis": ["homo_hartree", "lumo_hartree", "dipole_magnitude_debye"]},
+  "arms": ["C0", "PM6_3", "DFT_3", "PAIR_6", "DELTA_6", "DELTA_3", "ROLE_9"],
+  "xgboost": {"n_estimators": 500, "max_depth": 6, "learning_rate": 0.05, "tree_method": "hist", "device": "cuda", "random_state": 42},
+  "bootstrap": {"replicates": 10000, "seed": 20260721},
+  "decisions": {"acceptor_pair_minus_c0_max": -0.003, "acceptor_pair_minus_c0_ci_upper_max": 0.0, "iid_pair_minus_c0_ci_upper_max": 0.002, "acceptor_delta_minus_pair_max": -0.001, "acceptor_delta_minus_pair_ci_upper_max": 0.0, "iid_delta_minus_pair_ci_upper_max": 0.002},
+  "physical_gpu": 0,
+  "local_root": "runs/gate2f1_multifidelity_delta_crossfit",
+  "training": true,
+  "official_validation_access": false,
+  "test_access": false,
+  "main_parquet_access": false,
+  "final673_access": false,
+  "forbidden": ["gap feature", "total energy", "Cartesian dipole", "interface distance", "ID feature", "similarity feature", "partition feature", "provenance feature", "official validation", "test", "main Parquet", "final673"]
+}

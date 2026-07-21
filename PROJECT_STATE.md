@@ -202,3 +202,14 @@ Project and EquiformerV3 directories are not Git worktrees; source commit proven
 - The corrected acceptor validation analysis contains 284 train and 32 held-out acceptor identities. A target-free validation similarity amendment replaced a forbidden test-only Gate 2-A similarity asset before any valid shift statistic existed.
 - Final decision: `DELTA_FEATURE_GRAPH_ADMITTED`. This admits only a leakage-safe candidate feature graph for a future capacity-controlled validation experiment; it is not predictive evidence.
 - No training, GPU, new prediction, test artifact, main Parquet, Gate 2-E1 result, or final673 asset was accessed.
+
+## Gate 2-F1 result
+
+- The algebraic independence gate passed at 1e-12 tolerance. PM6/DFT/delta gap identities have maximum errors 0, 2.776e-17, and 5.551e-17, so gap is report-only and absent from every model arm.
+- PAIR-6 and DELTA-6 reconstruct one another with maximum error 8.882e-16 and are frozen as `SAME_INFORMATION_DIFFERENT_PARAMETERIZATION`; this is not target-delta learning.
+- Seventy deterministic XGBoost models used the unchanged Gate 2-E2A IID and acceptor-identity outer folds. C0 predictions reproduce the earlier fold-matched baseline exactly in both protocols.
+- Acceptor PAIR-6−C0 is -0.000396960 eV with identity CI [-0.001294992, +0.000517182]; IID is +0.000197599 eV with CI [-0.000381537, +0.000757505]. Primary decision: `MULTIFIDELITY_SIGNAL_INCONCLUSIVE`.
+- Acceptor DELTA-6−PAIR-6 is +0.000297920 eV with CI [-0.000449317, +0.001029107]. Parameterization decision: `DELTA_REPARAMETERIZATION_NO_GAIN`.
+- DFT-3 is better than PM6-3 by -0.001246649 eV with acceptor-identity CI [-0.001999384, -0.000484564], but DFT-3 versus C0 still crosses zero. Secondary label: `DFT_GROUND_STATE_SIGNAL_ONLY`.
+- In the 70 lowest-similarity acceptor identities, PAIR-6−C0 is +0.000104050 eV and DELTA-6−PAIR-6 is +0.000129442 eV; the primary failure is not rescued in that subgroup.
+- Official validation, test, main Parquet, buffer/quarantine, and final673 remained sealed. Gate 2-F1 is training-only cross-fit evidence and authorizes no confirmation unlock.

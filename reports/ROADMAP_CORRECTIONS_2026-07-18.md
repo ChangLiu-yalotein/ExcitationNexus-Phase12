@@ -15,3 +15,4 @@ This file supersedes conflicting operational claims without modifying the two so
 11. Legacy `13.5% improvement`, p-values, effect sizes, and `58% improved` require prediction-vector reconciliation and are `SUPERSEDED_PENDING_RECOMPUTATION`.
 12. The cheap-versus-B2-1 ensemble interval crosses zero; no significant-superiority claim is authorized.
 13. Fixed-weight multitask supervision is not supported for acceptor OOD; Gate 2-E2A is inconclusive. Gate 2-F0 admits a PM6/DFT ground-state delta feature graph for validation-only testing, not a delta-learning performance claim.
+14. Gate 2-F1 shows no admitted multi-fidelity or delta-parameterization gain under training-only cross-fitting. Gap is redundant, and PM6+delta is explicitly the same information as PM6+DFT.
