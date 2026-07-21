@@ -1,0 +1,93 @@
+{
+  "gate": "3-A2",
+  "version": "v1",
+  "base_git_head": "5f99e9e8da1e72fea60334da21d8722c5e8e7617",
+  "required_tag": "gate3a1-prospective-computational-shortlist-20260721",
+  "inputs": {
+    "gate3a1_sha_registry": {"path": "data_registry/gate3a1_sha256.txt", "sha256": "f911c5b95d28ac1b52968a8fd2ec321967b536e31c8975c21a1d635b78e3dd76"},
+    "shortlist_registry": {"path": "data_registry/gate3a1_shortlist_registry.json", "sha256": "bdcf46acca29789c60861e538de5012d6afd94e101e93f31287d77516781fa44"},
+    "scoring_unlock": {"path": "data_registry/gate3a1_scoring_unlock_v1.json", "sha256": "9da76be4b740e034a326fa44b321bbe7e904f4e9a50a57368dea486337e3be04"},
+    "local_shortlist": {"path": "runs/gate3a1_prospective_scoring/computational_shortlist_v1.parquet", "sha256": "1d7056fe64f6b7922cbf0c6fc1e1413bf5898134f97e98482322ddc9c0ac1279"},
+    "component_registry": {"path": "data_registry/gate3a0_component_registry.json", "sha256": "b9971a1a5195f6d0e3a5706e85362c9d941d5fe8a4f0c1ea043cffa09fd288f1"},
+    "candidate_universe": {"path": "runs/gate3a0_prospective_pair_feasibility/candidate_universe_v1.parquet", "sha256": "a858cbcf1133d7036c0ee0220eef77880a71e8b2b72a2b57af30d5366b77a566"},
+    "experimental_readiness": {"path": "reports/gate3a0_experimental_validation_readiness.md", "sha256": "c8d2887cb0881b88e5ff4bdee88e1c703ad36e208c5045e195e9af010e4e3dfa"}
+  },
+  "shortlist_contract": {
+    "total": 16,
+    "categories": {
+      "predicted_low_proxy": 4,
+      "predicted_high_proxy": 4,
+      "diversity_exploration": 4,
+      "matched_observed_control": 4
+    },
+    "novel_candidates": 12,
+    "observed_controls": 4,
+    "replacement_forbidden": true,
+    "rescoring_forbidden": true
+  },
+  "chemical_audit": {
+    "rdkit_sanitize_required": true,
+    "full_hash_reconciliation_required": true,
+    "component_hash_reconciliation_required": true,
+    "formed_bond_reconstruction_required_for_novel": true,
+    "heuristics": ["PAINS_A/B/C", "BRENK", "RDKit SA_Score", "tautomer enumeration capped at 100"],
+    "heuristic_not_experimental_fact": true,
+    "structure_risk_triggers": ["assembly/hash mismatch", "nonzero radical electrons", "multiple disconnected fragments", "invalid valence", "non-finite SA score"]
+  },
+  "route_policy": {
+    "suggestion_limit": 3,
+    "allowed_route_families": ["C-C cross-coupling", "Suzuki-type coupling", "Buchwald-Hartwig-type C-N coupling", "SNAr", "C-O cross-coupling", "condensation", "bond-forming route unresolved"],
+    "precursor_or_leaving_group_evidence_required_for_verified_route": true,
+    "yield_reagent_condition_claims_forbidden": true,
+    "default_without_chemist_confirmation": "ROUTE_UNRESOLVED_REQUIRES_CHEMIST_REVIEW"
+  },
+  "source_policy": {
+    "observed_component_evidence": "Gate 0/3 frozen component registry",
+    "candidate_specific_external_structure_queries": false,
+    "reason": "candidate structures and identities remain local-sensitive and are not transmitted to third-party search services",
+    "literature_status_without_stable_evidence": "SOURCE_UNVERIFIED",
+    "commercial_status_without_stable_evidence": "SOURCE_UNVERIFIED",
+    "source_unverified_does_not_mean_absent": true
+  },
+  "reaction_definition_fields": [
+    "reaction_type", "substrate", "product_or_conversion_goal", "solvent",
+    "light_wavelength_and_power", "catalyst_loading", "reaction_time",
+    "atmosphere", "temperature", "reference_photocatalysts",
+    "blank_no_light_no_catalyst_controls", "primary_experimental_endpoint",
+    "analytical_method", "replicate_count", "failure_retention_rule"
+  ],
+  "resource_fields": [
+    "experimental_partner_or_lab", "synthesis_owner", "catalysis_test_owner",
+    "confirmed_reaction", "instruments_and_characterization", "sample_count",
+    "budget_or_procurement_authority", "timeline", "EHS_owner",
+    "data_return_schema", "failed_synthesis_and_measurement_retention"
+  ],
+  "candidate_classifications": [
+    "READY_FOR_CHEMIST_REVIEW", "ROUTE_PLAUSIBLE_UNVERIFIED",
+    "ROUTE_UNRESOLVED", "STRUCTURAL_RISK", "SOURCE_UNVERIFIED",
+    "COMPUTATIONAL_CONTROL_ONLY"
+  ],
+  "decision_precedence": [
+    "BLOCKED_GATE3A1_SHORTLIST_INTEGRITY",
+    "BLOCKED_SYNTHETIC_FEASIBILITY",
+    "BLOCKED_REACTION_NOT_DEFINED",
+    "BLOCKED_NO_EXPERIMENTAL_PARTNER",
+    "CHEMIST_REVIEW_REQUIRED",
+    "EXPERIMENTAL_HANDOFF_READY"
+  ],
+  "local_output": "runs/gate3a2_experimental_handoff/candidate_chemical_audit_v1.parquet",
+  "publication_boundary": {
+    "canonical_smiles": false,
+    "atom_mapped_disconnections": false,
+    "specific_candidate_identity": false,
+    "procurement_notes": false,
+    "anonymous_hashes_and_aggregate_counts_only": true
+  },
+  "mandatory_status": "PROSPECTIVE_COMPUTATIONAL_SCREENING_ONLY",
+  "persistent_blocker": "BLOCKED_NO_EXPERIMENTAL_VALIDATION_PATH",
+  "training": false,
+  "prediction": false,
+  "gpu": false,
+  "test_access": false,
+  "final673_access": false
+}

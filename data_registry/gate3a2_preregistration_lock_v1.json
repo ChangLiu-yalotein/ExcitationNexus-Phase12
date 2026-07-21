@@ -1,0 +1,18 @@
+{
+  "aggregate_sha256": "20fa7e74ad5fd0ee6af3d62c4834801b860f2b4f9c35921bc14f81565f96b5da",
+  "external_candidate_structure_queries": false,
+  "files": {
+    "configs/gate3a2_experimental_handoff_audit_v1.json": "0277dd3a4718457901a56fd4ed53703068ed338a4ba2ac08ed18125bbb857d34",
+    "scripts/gate3a2_experimental_handoff_audit.py": "7d671adce4c3fe2c6ddc0eb7655cdf6b5763f7f80da0abf80696efbba55a514e",
+    "tests/test_gate3a2_contract.py": "bca5590cc6082671259eef42a3a444e70d152c3fd3f4d536342e45d08969f70a"
+  },
+  "final673_access": false,
+  "locked_utc": "2026-07-21T11:27:21.777247+00:00",
+  "post_lock_policy": "Any scientific rule change requires explicit v2; v1 is never overwritten.",
+  "replacement_forbidden": true,
+  "rescoring_forbidden": true,
+  "shortlist_count": 16,
+  "shortlist_pair_set_sha256": "ace0bda2a88ca4a69f899ad6f87f5576e5f2dc21b3c5dc1484a4eacead736202",
+  "status": "FROZEN_BEFORE_CANDIDATE_CHEMICAL_AUDIT",
+  "test_access": false
+}

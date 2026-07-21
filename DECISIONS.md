@@ -239,3 +239,12 @@
 - Keep the scope at seen-components/unseen-pair. It is not donor-OOD, acceptor-OOD, or evidence for a new chemical skeleton.
 - Describe low proxy only as predicted low screened electron-hole Coulomb proxy under the frozen model; never as catalytic efficiency, activity, charge separation, or a best catalyst.
 - Retain `BLOCKED_NO_EXPERIMENTAL_VALIDATION_PATH`; no candidate proceeds to a discovery claim without a preregistered experimental reaction loop.
+
+## Gate 3-A2 decisions
+
+- Preserve all 16 frozen shortlist entries. Chemical risks, unresolved routes, large molecular size, or source uncertainty cannot trigger replacement from the 36,523-candidate universe.
+- Treat PAINS/BRENK, SA score, tautomer/stereo/protonation flags, and route-family suggestions as computational heuristics requiring chemist review, never as experimental feasibility, safety, or activity evidence.
+- Keep all 12 novel pairs `ROUTE_UNRESOLVED_REQUIRES_CHEMIST_REVIEW`; no route is verified without precursor/handle evidence and experimental-chemist confirmation.
+- Mark literature, database, and commercial source claims `SOURCE_UNVERIFIED` because candidate-specific structures were not disclosed to third-party search services. This is not evidence of absence.
+- Freeze `BLOCKED_REACTION_NOT_DEFINED` because no real photocatalytic reaction, endpoint, controls, analytical protocol, personnel, laboratory, budget, timeline, EHS owner, or data-return contract is documented.
+- Preserve `PROSPECTIVE_COMPUTATIONAL_SCREENING_ONLY` and `BLOCKED_NO_EXPERIMENTAL_VALIDATION_PATH`; only actual prospective experimental results can lift the latter.

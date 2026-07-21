@@ -1,0 +1,220 @@
+{
+  "candidate_count": 16,
+  "classifications": {
+    "COMPUTATIONAL_CONTROL_ONLY": 4,
+    "ROUTE_UNRESOLVED": 12
+  },
+  "heuristic_only": true,
+  "items": [
+    {
+      "anonymous_pair_hash": "57ae60f28156926298ea5d6d2b8780ce2b5198977180bc78fa0e1f4b3d107810",
+      "assembly_match": true,
+      "audit_id": "G3A2-01",
+      "brenk_alert": false,
+      "category": "diversity_exploration",
+      "classification": "ROUTE_UNRESOLVED",
+      "observed_structure_overlap": false,
+      "pains_alert": false,
+      "source_status": "SOURCE_UNVERIFIED"
+    },
+    {
+      "anonymous_pair_hash": "d4d7af8649d91bd99f08716832fbe5eb19696594515e6c57c07f9a9807927127",
+      "assembly_match": true,
+      "audit_id": "G3A2-02",
+      "brenk_alert": false,
+      "category": "diversity_exploration",
+      "classification": "ROUTE_UNRESOLVED",
+      "observed_structure_overlap": false,
+      "pains_alert": false,
+      "source_status": "SOURCE_UNVERIFIED"
+    },
+    {
+      "anonymous_pair_hash": "d81602ea39cddbac396211305502646fffcb0ec50746b12c106cb889f19478a7",
+      "assembly_match": true,
+      "audit_id": "G3A2-03",
+      "brenk_alert": false,
+      "category": "diversity_exploration",
+      "classification": "ROUTE_UNRESOLVED",
+      "observed_structure_overlap": false,
+      "pains_alert": false,
+      "source_status": "SOURCE_UNVERIFIED"
+    },
+    {
+      "anonymous_pair_hash": "db663fa31e6535bad912827e33939fbde0ae427438e602524cc0ebf781c9fe97",
+      "assembly_match": true,
+      "audit_id": "G3A2-04",
+      "brenk_alert": true,
+      "category": "diversity_exploration",
+      "classification": "ROUTE_UNRESOLVED",
+      "observed_structure_overlap": false,
+      "pains_alert": true,
+      "source_status": "SOURCE_UNVERIFIED"
+    },
+    {
+      "anonymous_pair_hash": "13abf43b860dbc3f842ac73e788481c918f95f3c79d86d16a3a2fac7d4bcf74a",
+      "assembly_match": true,
+      "audit_id": "G3A2-05",
+      "brenk_alert": true,
+      "category": "matched_observed_control",
+      "classification": "COMPUTATIONAL_CONTROL_ONLY",
+      "observed_structure_overlap": true,
+      "pains_alert": true,
+      "source_status": "SOURCE_UNVERIFIED"
+    },
+    {
+      "anonymous_pair_hash": "a47fbdda92d70f1700693ea8aec72c5ad21a5e0b522cb5eb6dc134e7f750ebde",
+      "assembly_match": true,
+      "audit_id": "G3A2-06",
+      "brenk_alert": true,
+      "category": "matched_observed_control",
+      "classification": "COMPUTATIONAL_CONTROL_ONLY",
+      "observed_structure_overlap": true,
+      "pains_alert": true,
+      "source_status": "SOURCE_UNVERIFIED"
+    },
+    {
+      "anonymous_pair_hash": "af33e29541440c7a80f14cc8a8bb45bbee5425ae2b7e0568e472a322f015ece3",
+      "assembly_match": true,
+      "audit_id": "G3A2-07",
+      "brenk_alert": true,
+      "category": "matched_observed_control",
+      "classification": "COMPUTATIONAL_CONTROL_ONLY",
+      "observed_structure_overlap": true,
+      "pains_alert": false,
+      "source_status": "SOURCE_UNVERIFIED"
+    },
+    {
+      "anonymous_pair_hash": "d4e657835608eb1bee04d5f48c3fd54565344e108134aec7211757a0dd8d9a8a",
+      "assembly_match": true,
+      "audit_id": "G3A2-08",
+      "brenk_alert": true,
+      "category": "matched_observed_control",
+      "classification": "COMPUTATIONAL_CONTROL_ONLY",
+      "observed_structure_overlap": true,
+      "pains_alert": false,
+      "source_status": "SOURCE_UNVERIFIED"
+    },
+    {
+      "anonymous_pair_hash": "366f15778ee4744ec42df2f38c8838bff2bafb80c9171221aa86851abb5e6c7a",
+      "assembly_match": true,
+      "audit_id": "G3A2-09",
+      "brenk_alert": true,
+      "category": "predicted_high_proxy",
+      "classification": "ROUTE_UNRESOLVED",
+      "observed_structure_overlap": false,
+      "pains_alert": false,
+      "source_status": "SOURCE_UNVERIFIED"
+    },
+    {
+      "anonymous_pair_hash": "dc8d41c25b1cbe10595bcb113c8772a560c87310838d650619de5a97bc49f0ea",
+      "assembly_match": true,
+      "audit_id": "G3A2-10",
+      "brenk_alert": true,
+      "category": "predicted_high_proxy",
+      "classification": "ROUTE_UNRESOLVED",
+      "observed_structure_overlap": false,
+      "pains_alert": false,
+      "source_status": "SOURCE_UNVERIFIED"
+    },
+    {
+      "anonymous_pair_hash": "e93b21571be505e42a598de6338d28360484503e567b6c2c3e6c231aca45edd7",
+      "assembly_match": true,
+      "audit_id": "G3A2-11",
+      "brenk_alert": true,
+      "category": "predicted_high_proxy",
+      "classification": "ROUTE_UNRESOLVED",
+      "observed_structure_overlap": false,
+      "pains_alert": false,
+      "source_status": "SOURCE_UNVERIFIED"
+    },
+    {
+      "anonymous_pair_hash": "eea52c10ab8f4a8a7e90e81728a2fec57c5a0ed904cb849bb011f012e05b59da",
+      "assembly_match": true,
+      "audit_id": "G3A2-12",
+      "brenk_alert": true,
+      "category": "predicted_high_proxy",
+      "classification": "ROUTE_UNRESOLVED",
+      "observed_structure_overlap": false,
+      "pains_alert": false,
+      "source_status": "SOURCE_UNVERIFIED"
+    },
+    {
+      "anonymous_pair_hash": "0a6eb850b59bd54860712c4a620440f720e8ef41a4c6e3e67bf575acc9ff27f7",
+      "assembly_match": true,
+      "audit_id": "G3A2-13",
+      "brenk_alert": true,
+      "category": "predicted_low_proxy",
+      "classification": "ROUTE_UNRESOLVED",
+      "observed_structure_overlap": false,
+      "pains_alert": true,
+      "source_status": "SOURCE_UNVERIFIED"
+    },
+    {
+      "anonymous_pair_hash": "27c0174ad7b72ed91f90c6954bd1cabc25e210c989cd2ae3b4dbc81eeed5a5db",
+      "assembly_match": true,
+      "audit_id": "G3A2-14",
+      "brenk_alert": true,
+      "category": "predicted_low_proxy",
+      "classification": "ROUTE_UNRESOLVED",
+      "observed_structure_overlap": false,
+      "pains_alert": false,
+      "source_status": "SOURCE_UNVERIFIED"
+    },
+    {
+      "anonymous_pair_hash": "5d14d5534e16b60235f50cd8e09bb1a5ac78bf09f64ae2c0b4ed831d535e6749",
+      "assembly_match": true,
+      "audit_id": "G3A2-15",
+      "brenk_alert": true,
+      "category": "predicted_low_proxy",
+      "classification": "ROUTE_UNRESOLVED",
+      "observed_structure_overlap": false,
+      "pains_alert": true,
+      "source_status": "SOURCE_UNVERIFIED"
+    },
+    {
+      "anonymous_pair_hash": "fc529d8cc1d20169bf674f71a40e043db8253a7421ff3f548e69bc557ac97c1d",
+      "assembly_match": true,
+      "audit_id": "G3A2-16",
+      "brenk_alert": true,
+      "category": "predicted_low_proxy",
+      "classification": "ROUTE_UNRESOLVED",
+      "observed_structure_overlap": false,
+      "pains_alert": true,
+      "source_status": "SOURCE_UNVERIFIED"
+    }
+  ],
+  "local_artifact": "runs/gate3a2_experimental_handoff/candidate_chemical_audit_v1.parquet",
+  "local_artifact_sha256": "e2bd8ec23a43e618d8569a4299d4115b85d1d355af25fccb43c8aee47383c6be",
+  "mapped_disconnections_published": false,
+  "novel_candidates": 12,
+  "observed_controls": 4,
+  "risk_counts": {
+    "brenk_positive": 13,
+    "molecular_weight": {
+      "0": 251.293,
+      "0.5": 1364.7219999999998,
+      "0.9": 2896.4969999999967,
+      "1": 3263.035999999996
+    },
+    "multi_fragment": 0,
+    "pains_positive": 6,
+    "radical_positive": 0,
+    "sa_score": {
+      "0": 2.2454906907519945,
+      "0.5": 5.2897752890293415,
+      "0.9": 8.698258955510763,
+      "1": 9.190798825241682
+    },
+    "tautomer_multiple": 1,
+    "unassigned_stereo_positive": 12
+  },
+  "route_family_summary": {
+    "Buchwald-Hartwig-type C-N coupling": 3,
+    "C-C cross-coupling": 8,
+    "C-O cross-coupling": 1,
+    "SNAr": 4,
+    "Suzuki-type coupling": 8
+  },
+  "smiles_published": false,
+  "status": "SHORTLIST_CHEMICAL_AUDIT_FROZEN"
+}

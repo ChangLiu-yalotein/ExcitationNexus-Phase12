@@ -1,0 +1,17 @@
+{
+  "candidate_count": 16,
+  "candidate_labels_read": false,
+  "ended_utc": "2026-07-21T11:27:41.536368+00:00",
+  "final673_access": false,
+  "gpu": false,
+  "local_sensitive_artifact_git_ignored": true,
+  "persistent_blocker": "BLOCKED_NO_EXPERIMENTAL_VALIDATION_PATH",
+  "persistent_status": "PROSPECTIVE_COMPUTATIONAL_SCREENING_ONLY",
+  "prediction": false,
+  "replacement_candidates": 0,
+  "scorer_called": false,
+  "shortlist_changed": false,
+  "status": "BLOCKED_REACTION_NOT_DEFINED",
+  "test_access": false,
+  "training": false
+}

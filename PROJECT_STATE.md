@@ -1,6 +1,6 @@
 # Phase 12 project state
 
-Current stage: **PROSPECTIVE_COMPUTATIONAL_SCREENING_ONLY**; Gate 3-A0 admitted target-free unseen-pair assembly within known components, but no documented experimental validation path exists.
+Current stage: **PROSPECTIVE_COMPUTATIONAL_SCREENING_ONLY**; Gate 3-A2 preserved the 16-item computational shortlist but is `BLOCKED_REACTION_NOT_DEFINED`, with no documented experimental validation path.
 
 ## Frozen facts
 
@@ -236,3 +236,13 @@ Project and EquiformerV3 directories are not Git worktrees; source commit proven
 - Final decision: `COMPUTATIONAL_SHORTLIST_FROZEN`. It remains strictly `PROSPECTIVE_COMPUTATIONAL_SCREENING_ONLY`; low proxy is not catalytic efficiency, experimental activity, or a best-photocatalyst claim.
 - Per-candidate features, predictions, models, SMILES, structures, full ranking, and the local shortlist remain Git-ignored.
 - `BLOCKED_NO_EXPERIMENTAL_VALIDATION_PATH` remains active.
+
+## Gate 3-A2 result
+
+- The frozen 4+4+4+4 shortlist was audited without rescoring, replacement, prediction, GPU use, test access, or final673 access.
+- All 16 full/component hashes reconcile. The 12 novel pairs reproduce the frozen attachment bond; the four observed controls remain `COMPUTATIONAL_CONTROL_ONLY`.
+- All 12 novel candidates remain `ROUTE_UNRESOLVED_REQUIRES_CHEMIST_REVIEW`. Aggregate route families are heuristic only; no precursor handle, reagent, condition, yield, or literature route was established.
+- Heuristic screening found 6 PAINS-positive and 13 BRENK-positive entries, zero radicals or disconnected products, median SA score 5.290, and median molecular weight 1364.7. These are review flags, not synthesis, safety, stability, or activity evidence.
+- Candidate-specific external structure searches were not performed, so all literature/commercial/database source claims remain `SOURCE_UNVERIFIED` rather than being treated as absent.
+- None of 15 reaction-definition fields or 11 experimental-resource fields has written experimental-person confirmation.
+- Final decision: `BLOCKED_REACTION_NOT_DEFINED`, with parallel `BLOCKED_NO_EXPERIMENTAL_PARTNER` and `CHEMIST_REVIEW_REQUIRED`. `PROSPECTIVE_COMPUTATIONAL_SCREENING_ONLY` and `BLOCKED_NO_EXPERIMENTAL_VALIDATION_PATH` remain active.

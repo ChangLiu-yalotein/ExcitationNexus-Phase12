@@ -58,4 +58,5 @@
 - [x] Gate 2-F1: test seven equal-contract ground-state/delta arms on frozen training-only folds; decisions `MULTIFIDELITY_SIGNAL_INCONCLUSIVE` and `DELTA_REPARAMETERIZATION_NO_GAIN`.
 - [x] Gate 3-A0: admit a deterministic target-free component assembler and freeze 36,523 in-domain unseen pairs of known components; final status `PROSPECTIVE_COMPUTATIONAL_SCREENING_ONLY`.
 - [x] Gate 3-A1: score 36,523 seen-component/unseen-pair candidates once with frozen XGBoost-C0 and freeze an anonymous 4+4+4+4 computational shortlist.
+- [x] Gate 3-A2: preserve the 16-item shortlist and complete chemical-integrity, heuristic route/source, and experimental-handoff audits; decision `BLOCKED_REACTION_NOT_DEFINED`.
 - [!] Experimental closure: `BLOCKED_NO_EXPERIMENTAL_VALIDATION_PATH` until a laboratory, reaction, controls, material path, budget, personnel, and schedule are documented.

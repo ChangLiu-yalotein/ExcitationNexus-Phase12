@@ -1,0 +1,14 @@
+{
+  "commercially_confirmed": 0,
+  "database_only_confirmed": 0,
+  "external_candidate_structure_queries": 0,
+  "interpretation": "SOURCE_UNVERIFIED does not mean unavailable or unreported",
+  "literature_confirmed": 0,
+  "observed_component_registry_evidence": true,
+  "reason": "candidate structures and identities remain local-sensitive and are not transmitted to third-party search services",
+  "shortlist_unique_acceptor_components": 13,
+  "shortlist_unique_donor_components": 12,
+  "source_unverified_components": 25,
+  "stable_external_links": 0,
+  "status": "SOURCE_UNVERIFIED"
+}

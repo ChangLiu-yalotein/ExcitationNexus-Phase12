@@ -106,6 +106,8 @@ elif [[ "${GATE_ID,,}" == "gate3a0" ]]; then
   tag="gate3a0-prospective-pair-feasibility-$(date -u +%Y%m%d)"
 elif [[ "${GATE_ID,,}" == "gate3a1" ]]; then
   tag="gate3a1-prospective-computational-shortlist-$(date -u +%Y%m%d)"
+elif [[ "${GATE_ID,,}" == "gate3a2" ]]; then
+  tag="gate3a2-experimental-handoff-audit-$(date -u +%Y%m%d)"
 else
   tag="$(printf '%s' "$GATE_ID" | tr '[:upper:]' '[:lower:]')-done-$(date -u +%Y%m%d)"
 fi

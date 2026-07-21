@@ -1,0 +1,43 @@
+{
+  "codex_filled_experimental_details": false,
+  "parallel_blockers": [
+    "BLOCKED_NO_EXPERIMENTAL_PARTNER",
+    "CHEMIST_REVIEW_REQUIRED",
+    "BLOCKED_NO_EXPERIMENTAL_VALIDATION_PATH"
+  ],
+  "primary_decision": "BLOCKED_REACTION_NOT_DEFINED",
+  "reaction_definition": {
+    "analytical_method": "NOT_DOCUMENTED_OR_EXPERIMENTALLY_CONFIRMED",
+    "atmosphere": "NOT_DOCUMENTED_OR_EXPERIMENTALLY_CONFIRMED",
+    "blank_no_light_no_catalyst_controls": "NOT_DOCUMENTED_OR_EXPERIMENTALLY_CONFIRMED",
+    "catalyst_loading": "NOT_DOCUMENTED_OR_EXPERIMENTALLY_CONFIRMED",
+    "failure_retention_rule": "NOT_DOCUMENTED_OR_EXPERIMENTALLY_CONFIRMED",
+    "light_wavelength_and_power": "NOT_DOCUMENTED_OR_EXPERIMENTALLY_CONFIRMED",
+    "primary_experimental_endpoint": "NOT_DOCUMENTED_OR_EXPERIMENTALLY_CONFIRMED",
+    "product_or_conversion_goal": "NOT_DOCUMENTED_OR_EXPERIMENTALLY_CONFIRMED",
+    "reaction_time": "NOT_DOCUMENTED_OR_EXPERIMENTALLY_CONFIRMED",
+    "reaction_type": "NOT_DOCUMENTED_OR_EXPERIMENTALLY_CONFIRMED",
+    "reference_photocatalysts": "NOT_DOCUMENTED_OR_EXPERIMENTALLY_CONFIRMED",
+    "replicate_count": "NOT_DOCUMENTED_OR_EXPERIMENTALLY_CONFIRMED",
+    "solvent": "NOT_DOCUMENTED_OR_EXPERIMENTALLY_CONFIRMED",
+    "substrate": "NOT_DOCUMENTED_OR_EXPERIMENTALLY_CONFIRMED",
+    "temperature": "NOT_DOCUMENTED_OR_EXPERIMENTALLY_CONFIRMED"
+  },
+  "reaction_fields_confirmed": 0,
+  "reaction_fields_required": 15,
+  "resource_definition": {
+    "EHS_owner": "NOT_DOCUMENTED_OR_EXPERIMENTALLY_CONFIRMED",
+    "budget_or_procurement_authority": "NOT_DOCUMENTED_OR_EXPERIMENTALLY_CONFIRMED",
+    "catalysis_test_owner": "NOT_DOCUMENTED_OR_EXPERIMENTALLY_CONFIRMED",
+    "confirmed_reaction": "NOT_DOCUMENTED_OR_EXPERIMENTALLY_CONFIRMED",
+    "data_return_schema": "NOT_DOCUMENTED_OR_EXPERIMENTALLY_CONFIRMED",
+    "experimental_partner_or_lab": "NOT_DOCUMENTED_OR_EXPERIMENTALLY_CONFIRMED",
+    "failed_synthesis_and_measurement_retention": "NOT_DOCUMENTED_OR_EXPERIMENTALLY_CONFIRMED",
+    "instruments_and_characterization": "NOT_DOCUMENTED_OR_EXPERIMENTALLY_CONFIRMED",
+    "sample_count": "NOT_DOCUMENTED_OR_EXPERIMENTALLY_CONFIRMED",
+    "synthesis_owner": "NOT_DOCUMENTED_OR_EXPERIMENTALLY_CONFIRMED",
+    "timeline": "NOT_DOCUMENTED_OR_EXPERIMENTALLY_CONFIRMED"
+  },
+  "resource_fields_confirmed": 0,
+  "resource_fields_required": 11
+}
