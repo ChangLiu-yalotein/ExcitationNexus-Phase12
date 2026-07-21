@@ -177,3 +177,11 @@
 - Retain all four fragment fractions as masked-only; never impute missing labels or erase unknown/unassigned contribution.
 - Freeze Gate 2-E1 weights before performance: primary 1.0, secondary total 0.5, masked total 0.25; no dynamic balancing.
 - Validation is coverage-only in E0; no test access or training is authorized.
+
+## Gate 2-E1 decisions
+
+- Keep identical C0-512 inputs and primary paths across S0, M11, and M15.
+- Freeze MULTITASK_SIGNAL_INCONCLUSIVE because the favorable M11 acceptor point estimate has a CI crossing zero and does not beat XGBoost.
+- Freeze MASKED_FRAGMENT_SIGNAL_INCONCLUSIVE; M15 cannot become a post hoc primary champion.
+- Preserve gradient conflict as explanation only; do not reweight, remove tasks, use PCGrad/GradNorm, or rerun.
+- Do not unlock test or continue dynamic weighting, 3D, foundation encoders, fusion, memory, or retrieval from this result.

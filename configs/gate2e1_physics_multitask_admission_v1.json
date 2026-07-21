@@ -1,0 +1,69 @@
+{
+  "version": "gate2e1_physics_multitask_admission_v1",
+  "expected_head": "cc6cff1d6a96c4f41af0b45e85e6dfaf1f9a6d7c",
+  "protocols": {
+    "iid": {
+      "manifest": "manifests/split_iid_group_seed42_v1.csv",
+      "manifest_sha256": "f4572f2c1896d4228dd9eff67220adb7d0a02ad79b70c66766e6da876541c3f2",
+      "inner_unit": "structure_group_id_v1",
+      "validation_unit": "structure_group_id_v1",
+      "xgb_validation_predictions": "runs/gate1b1_new_iid_cheap_baselines/seed42/xgb_c0_val_predictions.csv",
+      "xgb_validation_sha256": "9444cc99c1afa4cd019762430dc6651f302e2fcebc0b3975d2e13bc9148e268f"
+    },
+    "acceptor_cold": {
+      "manifest": "manifests/split_acceptor_cold_v1.csv",
+      "manifest_sha256": "659992cc7413094fd17da2281902aa74f261307d98648a973254bd472b5ecc65",
+      "inner_unit": "acceptor_structure_group_id_v1",
+      "validation_unit": "acceptor_structure_group_id_v1",
+      "xgb_validation_predictions": "runs/gate2a_ood_baselines/acceptor_cold/xgb_c0_val_predictions.csv",
+      "xgb_validation_sha256": "d8b41483a788882f09f1104445d9db197728d4e0626914b25f15afbc558985b8"
+    }
+  },
+  "features": {
+    "path": "runs/gate1b1_new_iid_cheap_baselines/features_v1.parquet",
+    "sha256": "7bb1a6af207364b186c072ab6d013d278e294633255b2235ef789e040e75d058",
+    "descriptor_count": 20,
+    "morgan_count": 512,
+    "total": 532,
+    "descriptor_preprocessing": "protocol_stage_fit_only_group_weighted_mean_std",
+    "morgan_preprocessing": "none_binary"
+  },
+  "target_graph": {"path": "data_registry/gate2e0_target_graph_v2.json", "sha256": "efb140a72c1d60e56f96f6c8dcebb2ff3721df35c20469b04f63dffb9382c6a5"},
+  "primary_validation_labels": {"path": "runs/gate2c_uq/calibration_labels_v1.parquet", "sha256": "5d59314b515e2487efdc54061d6d6c368bb3f2e6e51dda09a4dea98cf959e1cc"},
+  "auxiliary_registry": "data_registry/gate2e0_auxiliary_extraction_registry.json",
+  "arms": {
+    "S0": {"secondary": false, "masked": false},
+    "M11": {"secondary": true, "masked": false},
+    "M15": {"secondary": true, "masked": true}
+  },
+  "architecture": {
+    "input": 532, "hidden": 512, "residual_blocks": 2, "bottleneck": 256,
+    "head_hidden": 128, "dropout": 0.10, "activation": "SiLU"
+  },
+  "loss": {
+    "base": "weighted_masked_MAE_normalized", "primary_weight": 1.0,
+    "secondary_total": 0.5, "secondary_per_task": 0.045454545454545456,
+    "masked_total": 0.25, "masked_per_task": 0.0625, "dynamic": false
+  },
+  "inner_split": {"fit_fraction": 0.85, "checkpoint_fraction": 0.15, "seed": 20260721, "primary_quantile_bins": 10, "historical_overlap_forced_fit": true},
+  "training": {
+    "seeds": [42, 123, 456], "optimizer": "AdamW", "learning_rate": 0.0003,
+    "weight_decay": 0.0001, "batch_size": 256, "gradient_clip_norm": 5.0,
+    "scheduler": null, "max_epochs": 200, "minimum_epochs": 20, "patience": 20,
+    "min_delta_eV": 0.0001, "drop_last": false,
+    "checkpoint_metric": "inner_checkpoint_primary_structure_group_macro_MAE",
+    "checkpoint_tie": "earliest_epoch"
+  },
+  "validation": {"unlock_once": true, "bootstrap_replicates": 10000, "bootstrap_seed": 20260721},
+  "decisions": {
+    "acceptor_M11_minus_S0_max": -0.003, "acceptor_M11_minus_XGB_max": -0.002,
+    "iid_M11_minus_XGB_CI_upper_max": 0.002, "masked_M15_minus_M11_max": -0.001,
+    "masked_iid_CI_upper_max": 0.002
+  },
+  "forbidden": ["test", "buffer", "historical_quarantine", "final673", "main_parquet", "MoLFormer", "3D", "PM6_scalar", "memory", "retrieval", "dynamic_weighting"],
+  "gpu_policy": {"maximum_parallel": 6, "minimum_free_reserved": 1},
+  "local_root": "runs/gate2e1_physics_multitask",
+  "official_validation_access_during_training": false,
+  "test_access": false,
+  "final673_access": false
+}

@@ -48,3 +48,5 @@
 - [x] Gate 2-D2 v2: replace infeasible PCA with fixed Gaussian random projection, pass real 417/208/378-token forward and embedding integrity gates, freeze 12 validation-only models; decision `REPRESENTATION_SIGNAL_INCONCLUSIVE`.
 
 - [x] Gate 2-E0: freeze `MULTITASK_TARGET_GRAPH_ADMITTED` with 11 secondary and 4 masked tasks after one protocol-local auxiliary-label extraction.
+
+- [x] Gate 2-E1: freeze MULTITASK_SIGNAL_INCONCLUSIVE and MASKED_FRAGMENT_SIGNAL_INCONCLUSIVE from IID/acceptor-cold validation only.

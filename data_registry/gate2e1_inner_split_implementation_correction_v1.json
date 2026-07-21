@@ -1,0 +1,9 @@
+{
+  "status": "IMPLEMENTATION_CORRECTION_BEFORE_ANY_SPLIT_OUTPUT_OR_MODEL_INITIALIZATION",
+  "failure": "IID inner unit and structure group are the same column, causing a duplicate-column Parquet write rejection.",
+  "scientific_contract_changed": false,
+  "data_or_validation_seen": false,
+  "split_output_written": false,
+  "model_initialized": false,
+  "correction": "Deduplicate the output column-name list while preserving the same assignment algorithm and fields."
+}

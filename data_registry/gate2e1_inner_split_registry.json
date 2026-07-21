@@ -1,0 +1,32 @@
+{
+  "official_validation_used": false,
+  "protocols": {
+    "acceptor_cold": {
+      "checkpoint_records": 1529,
+      "checkpoint_units": 40,
+      "fit_records": 9014,
+      "fit_units": 244,
+      "historical_overlap_checkpoint": 0,
+      "path": "runs/gate2e1_physics_multitask/inner_splits/acceptor_cold_inner_split.parquet",
+      "row_order_invariant": true,
+      "sha256": "e230091051617eae7d0ab38339a45d51faa8994726a53c18ebff22a2981bbdd3",
+      "unit": "acceptor_structure_group_id_v1",
+      "unit_overlap": 0
+    },
+    "iid": {
+      "checkpoint_records": 1556,
+      "checkpoint_units": 1535,
+      "fit_records": 8831,
+      "fit_units": 8713,
+      "historical_overlap_checkpoint": 0,
+      "path": "runs/gate2e1_physics_multitask/inner_splits/iid_inner_split.parquet",
+      "row_order_invariant": true,
+      "sha256": "24e37161fe75006fbb869014abdcf1e50e1ae3931c3101809d77fc2ff2e244c4",
+      "unit": "structure_group_id_v1",
+      "unit_overlap": 0
+    }
+  },
+  "seed": 20260721,
+  "test_access": false,
+  "version": "gate2e1_inner_split_registry_v1"
+}

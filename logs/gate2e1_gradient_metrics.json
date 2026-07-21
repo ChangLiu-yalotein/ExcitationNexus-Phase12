@@ -1,0 +1,117 @@
+{
+  "fixed_batch_rule": "first 256 train molecule_ids sorted",
+  "model_seed": 42,
+  "parameters_updated": false,
+  "protocols": {
+    "acceptor_cold": {
+      "M11": {
+        "aggregate_masked_norm_ratio": null,
+        "aggregate_secondary_norm_ratio": 1.3425261974334717,
+        "batch_records": 256,
+        "negative_cosine_task_fraction": 0.6363636363636364,
+        "parameters_updated": false,
+        "primary_norm": 0.8004144430160522,
+        "primary_vs_aggregate_masked": null,
+        "primary_vs_aggregate_secondary": -0.14258916676044464,
+        "seed": 42,
+        "task_cosines": {
+          "tddft_D_index_angstrom": 0.2098560780286789,
+          "tddft_EDI": -0.15311041474342346,
+          "tddft_HDI": 0.27902188897132874,
+          "tddft_H_CT_angstrom": -0.1528637558221817,
+          "tddft_Q_D_to_A_au": -0.22422605752944946,
+          "tddft_Sm": -0.16028551757335663,
+          "tddft_Sr": -0.18164099752902985,
+          "tddft_dipole_change_norm_au": 0.15553165972232819,
+          "tddft_excitation_energy_ev": -0.007175600156188011,
+          "tddft_oscillator_strength": -0.3055582344532013,
+          "tddft_transition_dipole_au": 0.14576154947280884
+        }
+      },
+      "M15": {
+        "aggregate_masked_norm_ratio": 1.072287678718567,
+        "aggregate_secondary_norm_ratio": 0.5849533677101135,
+        "batch_records": 256,
+        "negative_cosine_task_fraction": 0.4,
+        "parameters_updated": false,
+        "primary_norm": 1.4235384464263916,
+        "primary_vs_aggregate_masked": 0.042290493845939636,
+        "primary_vs_aggregate_secondary": 0.06274320185184479,
+        "seed": 42,
+        "task_cosines": {
+          "tddft_D_index_angstrom": 0.6476115584373474,
+          "tddft_EDI": -0.05995337292551994,
+          "tddft_HDI": 0.03315199539065361,
+          "tddft_H_CT_angstrom": -0.1335095912218094,
+          "tddft_Q_D_to_A_au": 0.005660193506628275,
+          "tddft_Sm": -0.004769627470523119,
+          "tddft_Sr": -0.06006314232945442,
+          "tddft_dipole_change_norm_au": 0.6397642493247986,
+          "tddft_electron_on_acceptor_fraction": 0.021629495546221733,
+          "tddft_electron_on_donor_fraction": 0.024049749597907066,
+          "tddft_excitation_energy_ev": 0.06308118999004364,
+          "tddft_hole_on_acceptor_fraction": 0.06664448976516724,
+          "tddft_hole_on_donor_fraction": 0.03894717991352081,
+          "tddft_oscillator_strength": -0.1803874671459198,
+          "tddft_transition_dipole_au": -0.1894082874059677
+        }
+      }
+    },
+    "iid": {
+      "M11": {
+        "aggregate_masked_norm_ratio": null,
+        "aggregate_secondary_norm_ratio": 1.6939302682876587,
+        "batch_records": 256,
+        "negative_cosine_task_fraction": 0.2727272727272727,
+        "parameters_updated": false,
+        "primary_norm": 0.6775043606758118,
+        "primary_vs_aggregate_masked": null,
+        "primary_vs_aggregate_secondary": 0.10088403522968292,
+        "seed": 42,
+        "task_cosines": {
+          "tddft_D_index_angstrom": 0.28062060475349426,
+          "tddft_EDI": 0.044000111520290375,
+          "tddft_HDI": 0.03727253898978233,
+          "tddft_H_CT_angstrom": 0.10584660619497299,
+          "tddft_Q_D_to_A_au": 0.07989185303449631,
+          "tddft_Sm": -0.013554474338889122,
+          "tddft_Sr": -0.05439063906669617,
+          "tddft_dipole_change_norm_au": 0.25955966114997864,
+          "tddft_excitation_energy_ev": 0.05687306448817253,
+          "tddft_oscillator_strength": 0.05809605494141579,
+          "tddft_transition_dipole_au": -0.02583014778792858
+        }
+      },
+      "M15": {
+        "aggregate_masked_norm_ratio": 1.5970075130462646,
+        "aggregate_secondary_norm_ratio": 1.2882765531539917,
+        "batch_records": 256,
+        "negative_cosine_task_fraction": 0.0,
+        "parameters_updated": false,
+        "primary_norm": 1.0645896196365356,
+        "primary_vs_aggregate_masked": 0.2554945647716522,
+        "primary_vs_aggregate_secondary": 0.32464003562927246,
+        "seed": 42,
+        "task_cosines": {
+          "tddft_D_index_angstrom": 0.4602935314178467,
+          "tddft_EDI": 0.19611622393131256,
+          "tddft_HDI": 0.15734505653381348,
+          "tddft_H_CT_angstrom": 0.15364135801792145,
+          "tddft_Q_D_to_A_au": 0.16111749410629272,
+          "tddft_Sm": 0.33094167709350586,
+          "tddft_Sr": 0.3356291651725769,
+          "tddft_dipole_change_norm_au": 0.4370254576206207,
+          "tddft_electron_on_acceptor_fraction": 0.0843125581741333,
+          "tddft_electron_on_donor_fraction": 0.08164612948894501,
+          "tddft_excitation_energy_ev": 0.001346146920695901,
+          "tddft_hole_on_acceptor_fraction": 0.2829740047454834,
+          "tddft_hole_on_donor_fraction": 0.27812251448631287,
+          "tddft_oscillator_strength": 0.18861053884029388,
+          "tddft_transition_dipole_au": 0.26870378851890564
+        }
+      }
+    }
+  },
+  "test_accessed": false,
+  "weights_or_tasks_changed": false
+}

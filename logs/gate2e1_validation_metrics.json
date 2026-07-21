@@ -1,0 +1,702 @@
+{
+  "auxiliary": {
+    "acceptor_cold": {
+      "M11": {
+        "tddft_D_index_angstrom": {
+          "mae": 2.5654861539618814,
+          "valid": 2235
+        },
+        "tddft_EDI": {
+          "mae": 0.6315628063108031,
+          "valid": 2235
+        },
+        "tddft_HDI": {
+          "mae": 0.40867620370425367,
+          "valid": 2235
+        },
+        "tddft_H_CT_angstrom": {
+          "mae": 1.0155091047355258,
+          "valid": 2235
+        },
+        "tddft_Q_D_to_A_au": {
+          "mae": 0.0006383556424868612,
+          "valid": 2235
+        },
+        "tddft_Sm": {
+          "mae": 0.09423046735875092,
+          "valid": 2235
+        },
+        "tddft_Sr": {
+          "mae": 0.10037389907426107,
+          "valid": 2235
+        },
+        "tddft_dipole_change_norm_au": {
+          "mae": 4.8550142525399504,
+          "valid": 2235
+        },
+        "tddft_excitation_energy_ev": {
+          "mae": 0.15174996789774373,
+          "valid": 2235
+        },
+        "tddft_oscillator_strength": {
+          "mae": 0.4114116294793699,
+          "valid": 2235
+        },
+        "tddft_transition_dipole_au": {
+          "mae": 1.3148441602487515,
+          "valid": 2235
+        }
+      },
+      "M15": {
+        "tddft_D_index_angstrom": {
+          "mae": 2.433835300389339,
+          "valid": 2235
+        },
+        "tddft_EDI": {
+          "mae": 0.5976741076006452,
+          "valid": 2235
+        },
+        "tddft_HDI": {
+          "mae": 0.3940395410482249,
+          "valid": 2235
+        },
+        "tddft_H_CT_angstrom": {
+          "mae": 0.984989227958867,
+          "valid": 2235
+        },
+        "tddft_Q_D_to_A_au": {
+          "mae": 0.0006130107250202267,
+          "valid": 2235
+        },
+        "tddft_Sm": {
+          "mae": 0.08917916220159793,
+          "valid": 2235
+        },
+        "tddft_Sr": {
+          "mae": 0.09475867784407528,
+          "valid": 2235
+        },
+        "tddft_dipole_change_norm_au": {
+          "mae": 4.587751451278173,
+          "valid": 2235
+        },
+        "tddft_electron_on_acceptor_fraction": {
+          "mae": 0.12438428656527839,
+          "valid": 1205
+        },
+        "tddft_electron_on_donor_fraction": {
+          "mae": 0.12485456097881506,
+          "valid": 1205
+        },
+        "tddft_excitation_energy_ev": {
+          "mae": 0.14594919686012353,
+          "valid": 2235
+        },
+        "tddft_hole_on_acceptor_fraction": {
+          "mae": 0.103573555723582,
+          "valid": 1205
+        },
+        "tddft_hole_on_donor_fraction": {
+          "mae": 0.10436316532445246,
+          "valid": 1205
+        },
+        "tddft_oscillator_strength": {
+          "mae": 0.384753185283495,
+          "valid": 2235
+        },
+        "tddft_transition_dipole_au": {
+          "mae": 1.2827142575641541,
+          "valid": 2235
+        }
+      }
+    },
+    "iid": {
+      "M11": {
+        "tddft_D_index_angstrom": {
+          "mae": 2.459816510226263,
+          "valid": 2309
+        },
+        "tddft_EDI": {
+          "mae": 0.47928732812533703,
+          "valid": 2309
+        },
+        "tddft_HDI": {
+          "mae": 0.5412152609736334,
+          "valid": 2309
+        },
+        "tddft_H_CT_angstrom": {
+          "mae": 1.0245272493122872,
+          "valid": 2309
+        },
+        "tddft_Q_D_to_A_au": {
+          "mae": 0.0004612659091582393,
+          "valid": 2309
+        },
+        "tddft_Sm": {
+          "mae": 0.08121898314048094,
+          "valid": 2309
+        },
+        "tddft_Sr": {
+          "mae": 0.08535076083538695,
+          "valid": 2309
+        },
+        "tddft_dipole_change_norm_au": {
+          "mae": 4.644036756692088,
+          "valid": 2309
+        },
+        "tddft_excitation_energy_ev": {
+          "mae": 0.0752898912736274,
+          "valid": 2309
+        },
+        "tddft_oscillator_strength": {
+          "mae": 0.3540003001465984,
+          "valid": 2309
+        },
+        "tddft_transition_dipole_au": {
+          "mae": 1.3679031716841152,
+          "valid": 2309
+        }
+      },
+      "M15": {
+        "tddft_D_index_angstrom": {
+          "mae": 2.462757769324321,
+          "valid": 2309
+        },
+        "tddft_EDI": {
+          "mae": 0.4740077688911871,
+          "valid": 2309
+        },
+        "tddft_HDI": {
+          "mae": 0.5309688812047696,
+          "valid": 2309
+        },
+        "tddft_H_CT_angstrom": {
+          "mae": 1.01668579956813,
+          "valid": 2309
+        },
+        "tddft_Q_D_to_A_au": {
+          "mae": 0.0004076224567063776,
+          "valid": 2309
+        },
+        "tddft_Sm": {
+          "mae": 0.07999201914412442,
+          "valid": 2309
+        },
+        "tddft_Sr": {
+          "mae": 0.08450627134205872,
+          "valid": 2309
+        },
+        "tddft_dipole_change_norm_au": {
+          "mae": 4.650463096005192,
+          "valid": 2309
+        },
+        "tddft_electron_on_acceptor_fraction": {
+          "mae": 0.0700033711038186,
+          "valid": 1167
+        },
+        "tddft_electron_on_donor_fraction": {
+          "mae": 0.0701175909426552,
+          "valid": 1167
+        },
+        "tddft_excitation_energy_ev": {
+          "mae": 0.06734604282651746,
+          "valid": 2309
+        },
+        "tddft_hole_on_acceptor_fraction": {
+          "mae": 0.12039908723592826,
+          "valid": 1167
+        },
+        "tddft_hole_on_donor_fraction": {
+          "mae": 0.12074833737007655,
+          "valid": 1167
+        },
+        "tddft_oscillator_strength": {
+          "mae": 0.33931540727000387,
+          "valid": 2309
+        },
+        "tddft_transition_dipole_au": {
+          "mae": 1.3682128663036919,
+          "valid": 2309
+        }
+      }
+    }
+  },
+  "comparisons": {
+    "acceptor_cold": {
+      "M11_minus_S0": {
+        "ci95": [
+          -0.0016236076434120738,
+          0.00037666357594496686
+        ],
+        "clusters": 32,
+        "point": -0.0006203055952731416,
+        "replicates": 10000
+      },
+      "M11_minus_XGBoost": {
+        "ci95": [
+          -0.0046824332739669955,
+          0.006624573980659191
+        ],
+        "clusters": 32,
+        "point": 0.0005696065872255007,
+        "replicates": 10000
+      },
+      "M15_minus_M11": {
+        "ci95": [
+          -0.008248287785245736,
+          0.0008159099098742613
+        ],
+        "clusters": 32,
+        "point": -0.003349093352994364,
+        "replicates": 10000
+      },
+      "improvement_fraction_M11_vs_S0": 0.5185682326621924
+    },
+    "iid": {
+      "M11_minus_S0": {
+        "ci95": [
+          -0.0014077983954117487,
+          0.0004101249579416686
+        ],
+        "clusters": 2195,
+        "point": -0.0005004298163452792,
+        "replicates": 10000
+      },
+      "M11_minus_XGBoost": {
+        "ci95": [
+          -0.003357484810904696,
+          -0.00012077111363845578
+        ],
+        "clusters": 2195,
+        "point": -0.0017442836698310276,
+        "replicates": 10000
+      },
+      "M15_minus_M11": {
+        "ci95": [
+          -0.0005181113035071537,
+          0.0016910484617799694
+        ],
+        "clusters": 2195,
+        "point": 0.0006084684663908509,
+        "replicates": 10000
+      },
+      "improvement_fraction_M11_vs_S0": 0.5149415331312256
+    }
+  },
+  "decision": "MULTITASK_SIGNAL_INCONCLUSIVE",
+  "final673_accessed": false,
+  "masked_decision": "MASKED_FRAGMENT_SIGNAL_INCONCLUSIVE",
+  "metrics": {
+    "acceptor_cold": {
+      "M11": {
+        "ensemble": {
+          "groups": 2205,
+          "identities": 32,
+          "identity_macro_mae": 0.09709827849801064,
+          "normalized_identity_mae": 0.3548743217671635,
+          "p90_absolute_error": 0.22880886678205226,
+          "record_mae": 0.0975801297828022,
+          "record_r2": 0.47399541781496624,
+          "record_rmse": 0.13612477678287146,
+          "records": 2235,
+          "seed_identity_mae_mean": 0.09864309481580517,
+          "seed_identity_mae_sd": 0.0010090513702621466,
+          "structure_group_macro_mae": 0.09787556836349628,
+          "structure_group_macro_rmse": 0.1366247950957908,
+          "worst_decile_identity_mae": 0.17926638305072137
+        },
+        "seeds": [
+          {
+            "groups": 2205,
+            "identities": 32,
+            "identity_macro_mae": 0.09936294501172793,
+            "normalized_identity_mae": 0.3631512140614043,
+            "p90_absolute_error": 0.23170587202366422,
+            "record_mae": 0.09983772829391623,
+            "record_r2": 0.4621546670200699,
+            "record_rmse": 0.13764838463994492,
+            "records": 2235,
+            "structure_group_macro_mae": 0.10012441389039402,
+            "structure_group_macro_rmse": 0.13812904658832198,
+            "worst_decile_identity_mae": 0.18688701206377759
+          },
+          {
+            "groups": 2205,
+            "identities": 32,
+            "identity_macro_mae": 0.09748973009228909,
+            "normalized_identity_mae": 0.3563049971732891,
+            "p90_absolute_error": 0.229608257473319,
+            "record_mae": 0.09795605619720113,
+            "record_r2": 0.47348878029051034,
+            "record_rmse": 0.1361903173918239,
+            "records": 2235,
+            "structure_group_macro_mae": 0.09823098126388342,
+            "structure_group_macro_rmse": 0.13666678816162325,
+            "worst_decile_identity_mae": 0.1702738479063861
+          },
+          {
+            "groups": 2205,
+            "identities": 32,
+            "identity_macro_mae": 0.0990766093433985,
+            "normalized_identity_mae": 0.3621047158364308,
+            "p90_absolute_error": 0.23464706672036312,
+            "record_mae": 0.09973616092418354,
+            "record_r2": 0.45144181986123166,
+            "record_rmse": 0.1390124715018219,
+            "records": 2235,
+            "structure_group_macro_mae": 0.1000988213433067,
+            "structure_group_macro_rmse": 0.13955681876565124,
+            "worst_decile_identity_mae": 0.18272872630717682
+          }
+        ]
+      },
+      "M15": {
+        "ensemble": {
+          "groups": 2205,
+          "identities": 32,
+          "identity_macro_mae": 0.09374918514501629,
+          "normalized_identity_mae": 0.34263407147062364,
+          "p90_absolute_error": 0.21911892710146227,
+          "record_mae": 0.09441625168239352,
+          "record_r2": 0.5326607612964095,
+          "record_rmse": 0.12830941953845915,
+          "records": 2235,
+          "seed_identity_mae_mean": 0.09628418837474051,
+          "seed_identity_mae_sd": 0.000860954059073216,
+          "structure_group_macro_mae": 0.09468290602130279,
+          "structure_group_macro_rmse": 0.12874678070581858,
+          "worst_decile_identity_mae": 0.14765032850556623
+        },
+        "seeds": [
+          {
+            "groups": 2205,
+            "identities": 32,
+            "identity_macro_mae": 0.09607468668095699,
+            "normalized_identity_mae": 0.351133303311818,
+            "p90_absolute_error": 0.21778534004113334,
+            "record_mae": 0.09696108831010784,
+            "record_r2": 0.5158360592998583,
+            "record_rmse": 0.13059863490860266,
+            "records": 2235,
+            "structure_group_macro_mae": 0.0972863966171513,
+            "structure_group_macro_rmse": 0.1310297472473696,
+            "worst_decile_identity_mae": 0.1443918353545695
+          },
+          {
+            "groups": 2205,
+            "identities": 32,
+            "identity_macro_mae": 0.09723055889349186,
+            "normalized_identity_mae": 0.3553577795210561,
+            "p90_absolute_error": 0.23124062225494385,
+            "record_mae": 0.09773233823380317,
+            "record_r2": 0.4800498140500413,
+            "record_rmse": 0.135339100530871,
+            "records": 2235,
+            "structure_group_macro_mae": 0.09797583136716434,
+            "structure_group_macro_rmse": 0.1357943258107188,
+            "worst_decile_identity_mae": 0.16473106352401137
+          },
+          {
+            "groups": 2205,
+            "identities": 32,
+            "identity_macro_mae": 0.0955473195497727,
+            "normalized_identity_mae": 0.34920588445438533,
+            "p90_absolute_error": 0.21197124443849835,
+            "record_mae": 0.09608562349456294,
+            "record_r2": 0.5342961640223847,
+            "record_rmse": 0.12808472037463522,
+            "records": 2235,
+            "structure_group_macro_mae": 0.09638107756714619,
+            "structure_group_macro_rmse": 0.12853578122623574,
+            "worst_decile_identity_mae": 0.14607440522929233
+          }
+        ]
+      },
+      "S0": {
+        "ensemble": {
+          "groups": 2205,
+          "identities": 32,
+          "identity_macro_mae": 0.0977185840932838,
+          "normalized_identity_mae": 0.35714141167664576,
+          "p90_absolute_error": 0.23139327926014516,
+          "record_mae": 0.09825267933730665,
+          "record_r2": 0.4711852112760566,
+          "record_rmse": 0.1364879192134162,
+          "records": 2235,
+          "seed_identity_mae_mean": 0.09969203505075042,
+          "seed_identity_mae_sd": 0.0013980850719798681,
+          "structure_group_macro_mae": 0.09856431173365858,
+          "structure_group_macro_rmse": 0.13699936223923057,
+          "worst_decile_identity_mae": 0.17786565558166229
+        },
+        "seeds": [
+          {
+            "groups": 2205,
+            "identities": 32,
+            "identity_macro_mae": 0.10025836577750757,
+            "normalized_identity_mae": 0.3664237935743232,
+            "p90_absolute_error": 0.23629055588847575,
+            "record_mae": 0.10045365763489349,
+            "record_r2": 0.4573552830237321,
+            "record_rmse": 0.1382611632584849,
+            "records": 2235,
+            "structure_group_macro_mae": 0.10078133542377594,
+            "structure_group_macro_rmse": 0.13875283488744408,
+            "worst_decile_identity_mae": 0.18203646286375064
+          },
+          {
+            "groups": 2205,
+            "identities": 32,
+            "identity_macro_mae": 0.09809963556031856,
+            "normalized_identity_mae": 0.3585340767476863,
+            "p90_absolute_error": 0.22943110540073947,
+            "record_mae": 0.09876288105117491,
+            "record_r2": 0.48134431179558457,
+            "record_rmse": 0.1351705215536834,
+            "records": 2235,
+            "structure_group_macro_mae": 0.09901339992899572,
+            "structure_group_macro_rmse": 0.13561973587881862,
+            "worst_decile_identity_mae": 0.16708196737492223
+          },
+          {
+            "groups": 2205,
+            "identities": 32,
+            "identity_macro_mae": 0.10071810381442514,
+            "normalized_identity_mae": 0.36810404194293905,
+            "p90_absolute_error": 0.24269002237210965,
+            "record_mae": 0.10144086544294957,
+            "record_r2": 0.43078292187731526,
+            "record_rmse": 0.14160590950269283,
+            "records": 2235,
+            "structure_group_macro_mae": 0.10178101959092413,
+            "structure_group_macro_rmse": 0.14216694035242924,
+            "worst_decile_identity_mae": 0.18550712853841259
+          }
+        ]
+      },
+      "XGBoost_C0": {
+        "ensemble": {
+          "groups": 2205,
+          "identities": 32,
+          "identity_macro_mae": 0.09652867191078515,
+          "normalized_identity_mae": 0.3527925263487216,
+          "p90_absolute_error": 0.21487844000000003,
+          "record_mae": 0.09708869839054009,
+          "record_r2": 0.5310030598766409,
+          "record_rmse": 0.12853678159898224,
+          "records": 2235,
+          "structure_group_macro_mae": 0.09740212771558147,
+          "structure_group_macro_rmse": 0.12899757721062452,
+          "worst_decile_identity_mae": 0.14531547579179033
+        }
+      }
+    },
+    "iid": {
+      "M11": {
+        "ensemble": {
+          "groups": 2195,
+          "identities": 2195,
+          "identity_macro_mae": 0.08491741986742898,
+          "normalized_identity_mae": 0.34415829022172756,
+          "p90_absolute_error": 0.19363229609298716,
+          "record_mae": 0.08528368970061631,
+          "record_r2": 0.5506775012911252,
+          "record_rmse": 0.11665266773646685,
+          "records": 2309,
+          "seed_identity_mae_mean": 0.08765576866405204,
+          "seed_identity_mae_sd": 0.0007575594993900541,
+          "structure_group_macro_mae": 0.08491741986742898,
+          "structure_group_macro_rmse": 0.11636808688187943,
+          "worst_decile_identity_mae": 0.2681626116089846
+        },
+        "seeds": [
+          {
+            "groups": 2195,
+            "identities": 2195,
+            "identity_macro_mae": 0.0876100909669281,
+            "normalized_identity_mae": 0.3550713052801199,
+            "p90_absolute_error": 0.1948419290298464,
+            "record_mae": 0.0878764207541887,
+            "record_r2": 0.529344637244882,
+            "record_rmse": 0.11938976523748329,
+            "records": 2309,
+            "structure_group_macro_mae": 0.0876100909669281,
+            "structure_group_macro_rmse": 0.11940792406649234,
+            "worst_decile_identity_mae": 0.2735977618125482
+          },
+          {
+            "groups": 2195,
+            "identities": 2195,
+            "identity_macro_mae": 0.08843513349108746,
+            "normalized_identity_mae": 0.35841508591921833,
+            "p90_absolute_error": 0.1982003300595966,
+            "record_mae": 0.08911777343621596,
+            "record_r2": 0.5210058164983451,
+            "record_rmse": 0.12044276369797766,
+            "records": 2309,
+            "structure_group_macro_mae": 0.08843513349108746,
+            "structure_group_macro_rmse": 0.11969386815774871,
+            "worst_decile_identity_mae": 0.2729393758276642
+          },
+          {
+            "groups": 2195,
+            "identities": 2195,
+            "identity_macro_mae": 0.08692208153414058,
+            "normalized_identity_mae": 0.35228290037551685,
+            "p90_absolute_error": 0.19374061056725642,
+            "record_mae": 0.08717517787871844,
+            "record_r2": 0.5262127166927528,
+            "record_rmse": 0.11978633914242669,
+            "records": 2309,
+            "structure_group_macro_mae": 0.08692208153414058,
+            "structure_group_macro_rmse": 0.11956932872264549,
+            "worst_decile_identity_mae": 0.27564733281271175
+          }
+        ]
+      },
+      "M15": {
+        "ensemble": {
+          "groups": 2195,
+          "identities": 2195,
+          "identity_macro_mae": 0.08552588833381983,
+          "normalized_identity_mae": 0.3466243268414675,
+          "p90_absolute_error": 0.19049850600444249,
+          "record_mae": 0.08568137439446655,
+          "record_r2": 0.5442498318142083,
+          "record_rmse": 0.11748407754616749,
+          "records": 2309,
+          "seed_identity_mae_mean": 0.08758671106353733,
+          "seed_identity_mae_sd": 0.0007021692934289649,
+          "structure_group_macro_mae": 0.08552588833381983,
+          "structure_group_macro_rmse": 0.11740741335081073,
+          "worst_decile_identity_mae": 0.2702636417935136
+        },
+        "seeds": [
+          {
+            "groups": 2195,
+            "identities": 2195,
+            "identity_macro_mae": 0.0867880987430205,
+            "normalized_identity_mae": 0.3517398870764434,
+            "p90_absolute_error": 0.19647628509194512,
+            "record_mae": 0.08684684294769209,
+            "record_r2": 0.5327323102996618,
+            "record_rmse": 0.11895931873084559,
+            "records": 2309,
+            "structure_group_macro_mae": 0.0867880987430205,
+            "structure_group_macro_rmse": 0.11899517023870905,
+            "worst_decile_identity_mae": 0.2736277881772029
+          },
+          {
+            "groups": 2195,
+            "identities": 2195,
+            "identity_macro_mae": 0.08810728340941062,
+            "normalized_identity_mae": 0.35708635591617416,
+            "p90_absolute_error": 0.19679223971982687,
+            "record_mae": 0.08817494789353508,
+            "record_r2": 0.5298468515080099,
+            "record_rmse": 0.1193260506267689,
+            "records": 2309,
+            "structure_group_macro_mae": 0.08810728340941062,
+            "structure_group_macro_rmse": 0.11940094726104966,
+            "worst_decile_identity_mae": 0.27353032201997957
+          },
+          {
+            "groups": 2195,
+            "identities": 2195,
+            "identity_macro_mae": 0.08786475103818084,
+            "normalized_identity_mae": 0.3561034065244454,
+            "p90_absolute_error": 0.19580812391804303,
+            "record_mae": 0.08818855513384707,
+            "record_r2": 0.5174720707350173,
+            "record_rmse": 0.12088622628935407,
+            "records": 2309,
+            "structure_group_macro_mae": 0.08786475103818084,
+            "structure_group_macro_rmse": 0.12064808266371117,
+            "worst_decile_identity_mae": 0.2776188747391081
+          }
+        ]
+      },
+      "S0": {
+        "ensemble": {
+          "groups": 2195,
+          "identities": 2195,
+          "identity_macro_mae": 0.08541784968377425,
+          "normalized_identity_mae": 0.34618646147608545,
+          "p90_absolute_error": 0.19482136120812574,
+          "record_mae": 0.08564870540543372,
+          "record_r2": 0.547443165237417,
+          "record_rmse": 0.11707176248328709,
+          "records": 2309,
+          "seed_identity_mae_mean": 0.08722310604884838,
+          "seed_identity_mae_sd": 0.0008507331360255209,
+          "structure_group_macro_mae": 0.08541784968377425,
+          "structure_group_macro_rmse": 0.11703106114389188,
+          "worst_decile_identity_mae": 0.26966945348385524
+        },
+        "seeds": [
+          {
+            "groups": 2195,
+            "identities": 2195,
+            "identity_macro_mae": 0.0872814407665579,
+            "normalized_identity_mae": 0.3537393325091971,
+            "p90_absolute_error": 0.19235646675861912,
+            "record_mae": 0.08760711066890386,
+            "record_r2": 0.5349721526544917,
+            "record_rmse": 0.1186738611650037,
+            "records": 2309,
+            "structure_group_macro_mae": 0.0872814407665579,
+            "structure_group_macro_rmse": 0.118655175139737,
+            "worst_decile_identity_mae": 0.2714971262712144
+          },
+          {
+            "groups": 2195,
+            "identities": 2195,
+            "identity_macro_mae": 0.08804317049831462,
+            "normalized_identity_mae": 0.3568265153569769,
+            "p90_absolute_error": 0.1987511895411901,
+            "record_mae": 0.08829191116264398,
+            "record_r2": 0.5100308747612594,
+            "record_rmse": 0.12181477003305533,
+            "records": 2309,
+            "structure_group_macro_mae": 0.08804317049831462,
+            "structure_group_macro_rmse": 0.1216407100596066,
+            "worst_decile_identity_mae": 0.28212854136598636
+          },
+          {
+            "groups": 2195,
+            "identities": 2195,
+            "identity_macro_mae": 0.08634470688167264,
+            "normalized_identity_mae": 0.34994288258504525,
+            "p90_absolute_error": 0.190382912324633,
+            "record_mae": 0.08645235540557893,
+            "record_r2": 0.547616065993408,
+            "record_rmse": 0.1170493965300925,
+            "records": 2309,
+            "structure_group_macro_mae": 0.08634470688167264,
+            "structure_group_macro_rmse": 0.11711323449929921,
+            "worst_decile_identity_mae": 0.2663073996239427
+          }
+        ]
+      },
+      "XGBoost_C0": {
+        "ensemble": {
+          "groups": 2195,
+          "identities": 2195,
+          "identity_macro_mae": 0.08666170353726001,
+          "normalized_identity_mae": 0.35122762518748507,
+          "p90_absolute_error": 0.18873999542857145,
+          "record_mae": 0.08680688280331622,
+          "record_r2": 0.552388990761773,
+          "record_rmse": 0.11643028815961314,
+          "records": 2309,
+          "structure_group_macro_mae": 0.08666170353726001,
+          "structure_group_macro_rmse": 0.11631562103604107,
+          "worst_decile_identity_mae": 0.2631962933701299
+        }
+      }
+    }
+  },
+  "model_registry_sha256": "75c8adfd48020b77f43fc603aaa6494e8e66cc855c9e23d13508523580e166df",
+  "status": "GATE2E1_VALIDATION_EVALUATED_ONCE",
+  "test_accessed": false
+}

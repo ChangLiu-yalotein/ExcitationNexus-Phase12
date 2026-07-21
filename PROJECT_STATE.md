@@ -1,6 +1,6 @@
 # Phase 12 project state
 
-Current stage: **GATE2E0_DONE / MULTITASK_TARGET_GRAPH_ADMITTED**; the physics-guided multitask target graph is frozen without model training or test access.
+Current stage: **GATE2E1_DONE / MULTITASK_SIGNAL_INCONCLUSIVE**; fixed-weight physics multitask supervision was evaluated once on IID and acceptor-cold validation only.
 
 ## Frozen facts
 
@@ -167,3 +167,11 @@ Project and EquiformerV3 directories are not Git worktrees; source commit proven
 - All four fragment fractions remain masked-only because donor+acceptor is not strictly one for every jointly observed record.
 - Gate 2-E1 weights are frozen: primary 1.0, secondary total 0.5, masked total 0.25; no dynamic weighting.
 - Final decision: MULTITASK_TARGET_GRAPH_ADMITTED. No model, prediction, GPU, test artifact, buffer/quarantine, or final673 asset was used.
+
+## Gate 2-E1 result
+
+- Eighteen inner-selection runs and 18 same-seed full-train refits compare S0, M11, and M15 on identical C0-512 inputs and primary paths.
+- Acceptor-cold M11-S0 is -0.000620306 eV with CI [-0.001623608, +0.000376664]; M11-XGBoost is +0.000569607 eV with CI crossing zero. Decision: MULTITASK_SIGNAL_INCONCLUSIVE.
+- Acceptor-cold M15-M11 is -0.003349093 eV with CI [-0.008248288, +0.000815910]. Masked decision: MASKED_FRAGMENT_SIGNAL_INCONCLUSIVE.
+- Train-only acceptor M11 aggregate-secondary cosine is -0.1426 with 63.6 percent negative task cosines; no weight or task changed.
+- Official validation ran once after all models froze; second invocation failed closed. Test, source Parquet, buffer, quarantine, and final673 remained inaccessible.

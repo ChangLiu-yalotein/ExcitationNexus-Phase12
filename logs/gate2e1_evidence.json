@@ -1,0 +1,25 @@
+{
+  "completed_utc": "2026-07-21T04:43:16.289517+00:00",
+  "final673_accessed": false,
+  "git_diff_check": "PASS",
+  "git_ignored_checkpoints_predictions_labels": true,
+  "gradient_diagnostics_no_update": true,
+  "inner_runs": 18,
+  "large_files_over_20MiB": 0,
+  "main_parquet_accessed": false,
+  "masked_decision": "MASKED_FRAGMENT_SIGNAL_INCONCLUSIVE",
+  "model_registry_sha256": "75c8adfd48020b77f43fc603aaa6494e8e66cc855c9e23d13508523580e166df",
+  "models": 18,
+  "official_validation_invocations": 1,
+  "parameter_fairness": true,
+  "pytest": {
+    "failed": 0,
+    "passed": 165,
+    "warnings": 4
+  },
+  "scientific_decision": "MULTITASK_SIGNAL_INCONCLUSIVE",
+  "second_invocation_fail_closed": true,
+  "secret_scan_findings": 0,
+  "status": "GATE2E1_DONE",
+  "test_accessed": false
+}

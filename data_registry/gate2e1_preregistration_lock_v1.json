@@ -1,0 +1,15 @@
+{
+  "status": "LOCKED_BEFORE_INNER_SPLIT_MODEL_INITIALIZATION_OR_TRAINING",
+  "locked_utc": "2026-07-21T04:23:37Z",
+  "config_sha256": "74fcdc64a41842130c9446ef6b26a00dac71e6663d238e936252c19291d6024a",
+  "common_code_sha256": "7b0c8e8294164fb6129c662f45ebf93c568db761e52f79dee606cf42c031a4f2",
+  "inner_split_code_sha256": "b4209da23af7868be69ee6be93f8ee47439808b31a352dc38f5afdbac552f1a0",
+  "contract_test_sha256": "0cf5f2f3fd6cd91e6aec3e1b8e0767ce282c7c3108152df5c30aa32e6bfe1cc2",
+  "arms": ["S0", "M11", "M15"],
+  "protocols": ["iid", "acceptor_cold"],
+  "seeds": [42, 123, 456],
+  "final_models": 18,
+  "official_validation_locked": true,
+  "test_access": false,
+  "amendment_policy": "No silent edit; any scientific correction requires explicit v2."
+}

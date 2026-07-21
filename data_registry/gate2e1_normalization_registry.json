@@ -1,0 +1,2362 @@
+{
+  "full_train_only": true,
+  "models": {
+    "acceptor_cold": {
+      "M11": {
+        "123": {
+          "feature": {
+            "columns": [
+              "pair_MolWt",
+              "pair_MolLogP",
+              "pair_MolMR",
+              "pair_TPSA",
+              "pair_NumHDonors",
+              "pair_NumHAcceptors",
+              "pair_NumRotatableBonds",
+              "pair_NumAromaticRings",
+              "pair_NumAliphaticRings",
+              "pair_NumAromaticHeterocycles",
+              "pair_NumAliphaticHeterocycles",
+              "pair_NumSaturatedRings",
+              "pair_NumHeteroatoms",
+              "pair_HeavyAtomCount",
+              "pair_NumValenceElectrons",
+              "pair_NHOHCount",
+              "pair_NOCount",
+              "pair_FractionCSP3",
+              "pair_RingCount",
+              "pair_HallKierAlpha"
+            ],
+            "mean": [
+              1820.7404224110348,
+              33.10585574488185,
+              539.8667504733583,
+              136.93269877942092,
+              0.13897310513447433,
+              14.328312958435207,
+              42.69975550122249,
+              12.689877750611245,
+              3.479119804400978,
+              6.914718826405868,
+              1.19080684596577,
+              0.25779951100244497,
+              16.934180929095355,
+              126.87403422982885,
+              653.1968704156478,
+              0.1388753056234719,
+              9.035794621026893,
+              0.3977089453530486,
+              16.168997555012226,
+              -9.202245963231858
+            ],
+            "std": [
+              493.0025207462848,
+              9.676124879530354,
+              148.16181030027082,
+              48.345719484586375,
+              0.47853885368326177,
+              4.400431779198185,
+              15.784025998231138,
+              3.7741833404400977,
+              1.8725606352893274,
+              3.0649311437700253,
+              1.5682901733499426,
+              0.6821826390038053,
+              5.057853113609954,
+              34.38287194572309,
+              178.96616027398318,
+              0.47826060823591543,
+              3.299179703466558,
+              0.091581840167508,
+              4.515184619607296,
+              3.127711802554605
+            ]
+          },
+          "target": {
+            "tddft_D_index_angstrom": {
+              "effective_weight": 10225.0,
+              "mean": 4.2558957946210265,
+              "std": 4.1210785034209225,
+              "valid": 10543
+            },
+            "tddft_EDI": {
+              "effective_weight": 10225.0,
+              "mean": 4.6995097799511,
+              "std": 1.0148090678944885,
+              "valid": 10543
+            },
+            "tddft_HDI": {
+              "effective_weight": 10225.0,
+              "mean": 4.804910187449063,
+              "std": 1.3841905867187378,
+              "valid": 10543
+            },
+            "tddft_H_CT_angstrom": {
+              "effective_weight": 10225.0,
+              "mean": 5.5352466177669095,
+              "std": 2.138678341398101,
+              "valid": 10543
+            },
+            "tddft_Q_D_to_A_au": {
+              "effective_weight": 10225.0,
+              "mean": -0.003058646047269763,
+              "std": 0.0015841725658684237,
+              "valid": 10543
+            },
+            "tddft_Sm": {
+              "effective_weight": 10225.0,
+              "mean": 0.3713392488182558,
+              "std": 0.14882905689661974,
+              "valid": 10543
+            },
+            "tddft_Sr": {
+              "effective_weight": 10225.0,
+              "mean": 0.6438687409942949,
+              "std": 0.1722915874028594,
+              "valid": 10543
+            },
+            "tddft_coulomb_attraction_eV_eps3p5_proxy": {
+              "effective_weight": 10225.0,
+              "mean": 0.6463653534753755,
+              "std": 0.1657041600148676,
+              "valid": 10543
+            },
+            "tddft_dipole_change_norm_au": {
+              "effective_weight": 10225.0,
+              "mean": 8.043917268198857,
+              "std": 7.7975363772572015,
+              "valid": 10543
+            },
+            "tddft_excitation_energy_ev": {
+              "effective_weight": 10225.0,
+              "mean": 2.44914345802771,
+              "std": 0.31067570679775547,
+              "valid": 10543
+            },
+            "tddft_oscillator_strength": {
+              "effective_weight": 10225.0,
+              "mean": 1.8683328321108394,
+              "std": 1.0328769997284768,
+              "valid": 10543
+            },
+            "tddft_transition_dipole_au": {
+              "effective_weight": 10225.0,
+              "mean": 4.742864080020176,
+              "std": 2.3928644922947124,
+              "valid": 10543
+            }
+          }
+        },
+        "42": {
+          "feature": {
+            "columns": [
+              "pair_MolWt",
+              "pair_MolLogP",
+              "pair_MolMR",
+              "pair_TPSA",
+              "pair_NumHDonors",
+              "pair_NumHAcceptors",
+              "pair_NumRotatableBonds",
+              "pair_NumAromaticRings",
+              "pair_NumAliphaticRings",
+              "pair_NumAromaticHeterocycles",
+              "pair_NumAliphaticHeterocycles",
+              "pair_NumSaturatedRings",
+              "pair_NumHeteroatoms",
+              "pair_HeavyAtomCount",
+              "pair_NumValenceElectrons",
+              "pair_NHOHCount",
+              "pair_NOCount",
+              "pair_FractionCSP3",
+              "pair_RingCount",
+              "pair_HallKierAlpha"
+            ],
+            "mean": [
+              1820.7404224110348,
+              33.10585574488185,
+              539.8667504733583,
+              136.93269877942092,
+              0.13897310513447433,
+              14.328312958435207,
+              42.69975550122249,
+              12.689877750611245,
+              3.479119804400978,
+              6.914718826405868,
+              1.19080684596577,
+              0.25779951100244497,
+              16.934180929095355,
+              126.87403422982885,
+              653.1968704156478,
+              0.1388753056234719,
+              9.035794621026893,
+              0.3977089453530486,
+              16.168997555012226,
+              -9.202245963231858
+            ],
+            "std": [
+              493.0025207462848,
+              9.676124879530354,
+              148.16181030027082,
+              48.345719484586375,
+              0.47853885368326177,
+              4.400431779198185,
+              15.784025998231138,
+              3.7741833404400977,
+              1.8725606352893274,
+              3.0649311437700253,
+              1.5682901733499426,
+              0.6821826390038053,
+              5.057853113609954,
+              34.38287194572309,
+              178.96616027398318,
+              0.47826060823591543,
+              3.299179703466558,
+              0.091581840167508,
+              4.515184619607296,
+              3.127711802554605
+            ]
+          },
+          "target": {
+            "tddft_D_index_angstrom": {
+              "effective_weight": 10225.0,
+              "mean": 4.2558957946210265,
+              "std": 4.1210785034209225,
+              "valid": 10543
+            },
+            "tddft_EDI": {
+              "effective_weight": 10225.0,
+              "mean": 4.6995097799511,
+              "std": 1.0148090678944885,
+              "valid": 10543
+            },
+            "tddft_HDI": {
+              "effective_weight": 10225.0,
+              "mean": 4.804910187449063,
+              "std": 1.3841905867187378,
+              "valid": 10543
+            },
+            "tddft_H_CT_angstrom": {
+              "effective_weight": 10225.0,
+              "mean": 5.5352466177669095,
+              "std": 2.138678341398101,
+              "valid": 10543
+            },
+            "tddft_Q_D_to_A_au": {
+              "effective_weight": 10225.0,
+              "mean": -0.003058646047269763,
+              "std": 0.0015841725658684237,
+              "valid": 10543
+            },
+            "tddft_Sm": {
+              "effective_weight": 10225.0,
+              "mean": 0.3713392488182558,
+              "std": 0.14882905689661974,
+              "valid": 10543
+            },
+            "tddft_Sr": {
+              "effective_weight": 10225.0,
+              "mean": 0.6438687409942949,
+              "std": 0.1722915874028594,
+              "valid": 10543
+            },
+            "tddft_coulomb_attraction_eV_eps3p5_proxy": {
+              "effective_weight": 10225.0,
+              "mean": 0.6463653534753755,
+              "std": 0.1657041600148676,
+              "valid": 10543
+            },
+            "tddft_dipole_change_norm_au": {
+              "effective_weight": 10225.0,
+              "mean": 8.043917268198857,
+              "std": 7.7975363772572015,
+              "valid": 10543
+            },
+            "tddft_excitation_energy_ev": {
+              "effective_weight": 10225.0,
+              "mean": 2.44914345802771,
+              "std": 0.31067570679775547,
+              "valid": 10543
+            },
+            "tddft_oscillator_strength": {
+              "effective_weight": 10225.0,
+              "mean": 1.8683328321108394,
+              "std": 1.0328769997284768,
+              "valid": 10543
+            },
+            "tddft_transition_dipole_au": {
+              "effective_weight": 10225.0,
+              "mean": 4.742864080020176,
+              "std": 2.3928644922947124,
+              "valid": 10543
+            }
+          }
+        },
+        "456": {
+          "feature": {
+            "columns": [
+              "pair_MolWt",
+              "pair_MolLogP",
+              "pair_MolMR",
+              "pair_TPSA",
+              "pair_NumHDonors",
+              "pair_NumHAcceptors",
+              "pair_NumRotatableBonds",
+              "pair_NumAromaticRings",
+              "pair_NumAliphaticRings",
+              "pair_NumAromaticHeterocycles",
+              "pair_NumAliphaticHeterocycles",
+              "pair_NumSaturatedRings",
+              "pair_NumHeteroatoms",
+              "pair_HeavyAtomCount",
+              "pair_NumValenceElectrons",
+              "pair_NHOHCount",
+              "pair_NOCount",
+              "pair_FractionCSP3",
+              "pair_RingCount",
+              "pair_HallKierAlpha"
+            ],
+            "mean": [
+              1820.7404224110348,
+              33.10585574488185,
+              539.8667504733583,
+              136.93269877942092,
+              0.13897310513447433,
+              14.328312958435207,
+              42.69975550122249,
+              12.689877750611245,
+              3.479119804400978,
+              6.914718826405868,
+              1.19080684596577,
+              0.25779951100244497,
+              16.934180929095355,
+              126.87403422982885,
+              653.1968704156478,
+              0.1388753056234719,
+              9.035794621026893,
+              0.3977089453530486,
+              16.168997555012226,
+              -9.202245963231858
+            ],
+            "std": [
+              493.0025207462848,
+              9.676124879530354,
+              148.16181030027082,
+              48.345719484586375,
+              0.47853885368326177,
+              4.400431779198185,
+              15.784025998231138,
+              3.7741833404400977,
+              1.8725606352893274,
+              3.0649311437700253,
+              1.5682901733499426,
+              0.6821826390038053,
+              5.057853113609954,
+              34.38287194572309,
+              178.96616027398318,
+              0.47826060823591543,
+              3.299179703466558,
+              0.091581840167508,
+              4.515184619607296,
+              3.127711802554605
+            ]
+          },
+          "target": {
+            "tddft_D_index_angstrom": {
+              "effective_weight": 10225.0,
+              "mean": 4.2558957946210265,
+              "std": 4.1210785034209225,
+              "valid": 10543
+            },
+            "tddft_EDI": {
+              "effective_weight": 10225.0,
+              "mean": 4.6995097799511,
+              "std": 1.0148090678944885,
+              "valid": 10543
+            },
+            "tddft_HDI": {
+              "effective_weight": 10225.0,
+              "mean": 4.804910187449063,
+              "std": 1.3841905867187378,
+              "valid": 10543
+            },
+            "tddft_H_CT_angstrom": {
+              "effective_weight": 10225.0,
+              "mean": 5.5352466177669095,
+              "std": 2.138678341398101,
+              "valid": 10543
+            },
+            "tddft_Q_D_to_A_au": {
+              "effective_weight": 10225.0,
+              "mean": -0.003058646047269763,
+              "std": 0.0015841725658684237,
+              "valid": 10543
+            },
+            "tddft_Sm": {
+              "effective_weight": 10225.0,
+              "mean": 0.3713392488182558,
+              "std": 0.14882905689661974,
+              "valid": 10543
+            },
+            "tddft_Sr": {
+              "effective_weight": 10225.0,
+              "mean": 0.6438687409942949,
+              "std": 0.1722915874028594,
+              "valid": 10543
+            },
+            "tddft_coulomb_attraction_eV_eps3p5_proxy": {
+              "effective_weight": 10225.0,
+              "mean": 0.6463653534753755,
+              "std": 0.1657041600148676,
+              "valid": 10543
+            },
+            "tddft_dipole_change_norm_au": {
+              "effective_weight": 10225.0,
+              "mean": 8.043917268198857,
+              "std": 7.7975363772572015,
+              "valid": 10543
+            },
+            "tddft_excitation_energy_ev": {
+              "effective_weight": 10225.0,
+              "mean": 2.44914345802771,
+              "std": 0.31067570679775547,
+              "valid": 10543
+            },
+            "tddft_oscillator_strength": {
+              "effective_weight": 10225.0,
+              "mean": 1.8683328321108394,
+              "std": 1.0328769997284768,
+              "valid": 10543
+            },
+            "tddft_transition_dipole_au": {
+              "effective_weight": 10225.0,
+              "mean": 4.742864080020176,
+              "std": 2.3928644922947124,
+              "valid": 10543
+            }
+          }
+        }
+      },
+      "M15": {
+        "123": {
+          "feature": {
+            "columns": [
+              "pair_MolWt",
+              "pair_MolLogP",
+              "pair_MolMR",
+              "pair_TPSA",
+              "pair_NumHDonors",
+              "pair_NumHAcceptors",
+              "pair_NumRotatableBonds",
+              "pair_NumAromaticRings",
+              "pair_NumAliphaticRings",
+              "pair_NumAromaticHeterocycles",
+              "pair_NumAliphaticHeterocycles",
+              "pair_NumSaturatedRings",
+              "pair_NumHeteroatoms",
+              "pair_HeavyAtomCount",
+              "pair_NumValenceElectrons",
+              "pair_NHOHCount",
+              "pair_NOCount",
+              "pair_FractionCSP3",
+              "pair_RingCount",
+              "pair_HallKierAlpha"
+            ],
+            "mean": [
+              1820.7404224110348,
+              33.10585574488185,
+              539.8667504733583,
+              136.93269877942092,
+              0.13897310513447433,
+              14.328312958435207,
+              42.69975550122249,
+              12.689877750611245,
+              3.479119804400978,
+              6.914718826405868,
+              1.19080684596577,
+              0.25779951100244497,
+              16.934180929095355,
+              126.87403422982885,
+              653.1968704156478,
+              0.1388753056234719,
+              9.035794621026893,
+              0.3977089453530486,
+              16.168997555012226,
+              -9.202245963231858
+            ],
+            "std": [
+              493.0025207462848,
+              9.676124879530354,
+              148.16181030027082,
+              48.345719484586375,
+              0.47853885368326177,
+              4.400431779198185,
+              15.784025998231138,
+              3.7741833404400977,
+              1.8725606352893274,
+              3.0649311437700253,
+              1.5682901733499426,
+              0.6821826390038053,
+              5.057853113609954,
+              34.38287194572309,
+              178.96616027398318,
+              0.47826060823591543,
+              3.299179703466558,
+              0.091581840167508,
+              4.515184619607296,
+              3.127711802554605
+            ]
+          },
+          "target": {
+            "tddft_D_index_angstrom": {
+              "effective_weight": 10225.0,
+              "mean": 4.2558957946210265,
+              "std": 4.1210785034209225,
+              "valid": 10543
+            },
+            "tddft_EDI": {
+              "effective_weight": 10225.0,
+              "mean": 4.6995097799511,
+              "std": 1.0148090678944885,
+              "valid": 10543
+            },
+            "tddft_HDI": {
+              "effective_weight": 10225.0,
+              "mean": 4.804910187449063,
+              "std": 1.3841905867187378,
+              "valid": 10543
+            },
+            "tddft_H_CT_angstrom": {
+              "effective_weight": 10225.0,
+              "mean": 5.5352466177669095,
+              "std": 2.138678341398101,
+              "valid": 10543
+            },
+            "tddft_Q_D_to_A_au": {
+              "effective_weight": 10225.0,
+              "mean": -0.003058646047269763,
+              "std": 0.0015841725658684237,
+              "valid": 10543
+            },
+            "tddft_Sm": {
+              "effective_weight": 10225.0,
+              "mean": 0.3713392488182558,
+              "std": 0.14882905689661974,
+              "valid": 10543
+            },
+            "tddft_Sr": {
+              "effective_weight": 10225.0,
+              "mean": 0.6438687409942949,
+              "std": 0.1722915874028594,
+              "valid": 10543
+            },
+            "tddft_coulomb_attraction_eV_eps3p5_proxy": {
+              "effective_weight": 10225.0,
+              "mean": 0.6463653534753755,
+              "std": 0.1657041600148676,
+              "valid": 10543
+            },
+            "tddft_dipole_change_norm_au": {
+              "effective_weight": 10225.0,
+              "mean": 8.043917268198857,
+              "std": 7.7975363772572015,
+              "valid": 10543
+            },
+            "tddft_electron_on_acceptor_fraction": {
+              "effective_weight": 5416.0,
+              "mean": 0.7452334454843826,
+              "std": 0.36835165419395927,
+              "valid": 5580
+            },
+            "tddft_electron_on_donor_fraction": {
+              "effective_weight": 5416.0,
+              "mean": 0.25350466341730615,
+              "std": 0.3679048778791374,
+              "valid": 5580
+            },
+            "tddft_excitation_energy_ev": {
+              "effective_weight": 10225.0,
+              "mean": 2.44914345802771,
+              "std": 0.31067570679775547,
+              "valid": 10543
+            },
+            "tddft_hole_on_acceptor_fraction": {
+              "effective_weight": 5416.0,
+              "mean": 0.4669366291133327,
+              "std": 0.38762313005648696,
+              "valid": 5580
+            },
+            "tddft_hole_on_donor_fraction": {
+              "effective_weight": 5416.0,
+              "mean": 0.5309074418511852,
+              "std": 0.38893547302248566,
+              "valid": 5580
+            },
+            "tddft_oscillator_strength": {
+              "effective_weight": 10225.0,
+              "mean": 1.8683328321108394,
+              "std": 1.0328769997284768,
+              "valid": 10543
+            },
+            "tddft_transition_dipole_au": {
+              "effective_weight": 10225.0,
+              "mean": 4.742864080020176,
+              "std": 2.3928644922947124,
+              "valid": 10543
+            }
+          }
+        },
+        "42": {
+          "feature": {
+            "columns": [
+              "pair_MolWt",
+              "pair_MolLogP",
+              "pair_MolMR",
+              "pair_TPSA",
+              "pair_NumHDonors",
+              "pair_NumHAcceptors",
+              "pair_NumRotatableBonds",
+              "pair_NumAromaticRings",
+              "pair_NumAliphaticRings",
+              "pair_NumAromaticHeterocycles",
+              "pair_NumAliphaticHeterocycles",
+              "pair_NumSaturatedRings",
+              "pair_NumHeteroatoms",
+              "pair_HeavyAtomCount",
+              "pair_NumValenceElectrons",
+              "pair_NHOHCount",
+              "pair_NOCount",
+              "pair_FractionCSP3",
+              "pair_RingCount",
+              "pair_HallKierAlpha"
+            ],
+            "mean": [
+              1820.7404224110348,
+              33.10585574488185,
+              539.8667504733583,
+              136.93269877942092,
+              0.13897310513447433,
+              14.328312958435207,
+              42.69975550122249,
+              12.689877750611245,
+              3.479119804400978,
+              6.914718826405868,
+              1.19080684596577,
+              0.25779951100244497,
+              16.934180929095355,
+              126.87403422982885,
+              653.1968704156478,
+              0.1388753056234719,
+              9.035794621026893,
+              0.3977089453530486,
+              16.168997555012226,
+              -9.202245963231858
+            ],
+            "std": [
+              493.0025207462848,
+              9.676124879530354,
+              148.16181030027082,
+              48.345719484586375,
+              0.47853885368326177,
+              4.400431779198185,
+              15.784025998231138,
+              3.7741833404400977,
+              1.8725606352893274,
+              3.0649311437700253,
+              1.5682901733499426,
+              0.6821826390038053,
+              5.057853113609954,
+              34.38287194572309,
+              178.96616027398318,
+              0.47826060823591543,
+              3.299179703466558,
+              0.091581840167508,
+              4.515184619607296,
+              3.127711802554605
+            ]
+          },
+          "target": {
+            "tddft_D_index_angstrom": {
+              "effective_weight": 10225.0,
+              "mean": 4.2558957946210265,
+              "std": 4.1210785034209225,
+              "valid": 10543
+            },
+            "tddft_EDI": {
+              "effective_weight": 10225.0,
+              "mean": 4.6995097799511,
+              "std": 1.0148090678944885,
+              "valid": 10543
+            },
+            "tddft_HDI": {
+              "effective_weight": 10225.0,
+              "mean": 4.804910187449063,
+              "std": 1.3841905867187378,
+              "valid": 10543
+            },
+            "tddft_H_CT_angstrom": {
+              "effective_weight": 10225.0,
+              "mean": 5.5352466177669095,
+              "std": 2.138678341398101,
+              "valid": 10543
+            },
+            "tddft_Q_D_to_A_au": {
+              "effective_weight": 10225.0,
+              "mean": -0.003058646047269763,
+              "std": 0.0015841725658684237,
+              "valid": 10543
+            },
+            "tddft_Sm": {
+              "effective_weight": 10225.0,
+              "mean": 0.3713392488182558,
+              "std": 0.14882905689661974,
+              "valid": 10543
+            },
+            "tddft_Sr": {
+              "effective_weight": 10225.0,
+              "mean": 0.6438687409942949,
+              "std": 0.1722915874028594,
+              "valid": 10543
+            },
+            "tddft_coulomb_attraction_eV_eps3p5_proxy": {
+              "effective_weight": 10225.0,
+              "mean": 0.6463653534753755,
+              "std": 0.1657041600148676,
+              "valid": 10543
+            },
+            "tddft_dipole_change_norm_au": {
+              "effective_weight": 10225.0,
+              "mean": 8.043917268198857,
+              "std": 7.7975363772572015,
+              "valid": 10543
+            },
+            "tddft_electron_on_acceptor_fraction": {
+              "effective_weight": 5416.0,
+              "mean": 0.7452334454843826,
+              "std": 0.36835165419395927,
+              "valid": 5580
+            },
+            "tddft_electron_on_donor_fraction": {
+              "effective_weight": 5416.0,
+              "mean": 0.25350466341730615,
+              "std": 0.3679048778791374,
+              "valid": 5580
+            },
+            "tddft_excitation_energy_ev": {
+              "effective_weight": 10225.0,
+              "mean": 2.44914345802771,
+              "std": 0.31067570679775547,
+              "valid": 10543
+            },
+            "tddft_hole_on_acceptor_fraction": {
+              "effective_weight": 5416.0,
+              "mean": 0.4669366291133327,
+              "std": 0.38762313005648696,
+              "valid": 5580
+            },
+            "tddft_hole_on_donor_fraction": {
+              "effective_weight": 5416.0,
+              "mean": 0.5309074418511852,
+              "std": 0.38893547302248566,
+              "valid": 5580
+            },
+            "tddft_oscillator_strength": {
+              "effective_weight": 10225.0,
+              "mean": 1.8683328321108394,
+              "std": 1.0328769997284768,
+              "valid": 10543
+            },
+            "tddft_transition_dipole_au": {
+              "effective_weight": 10225.0,
+              "mean": 4.742864080020176,
+              "std": 2.3928644922947124,
+              "valid": 10543
+            }
+          }
+        },
+        "456": {
+          "feature": {
+            "columns": [
+              "pair_MolWt",
+              "pair_MolLogP",
+              "pair_MolMR",
+              "pair_TPSA",
+              "pair_NumHDonors",
+              "pair_NumHAcceptors",
+              "pair_NumRotatableBonds",
+              "pair_NumAromaticRings",
+              "pair_NumAliphaticRings",
+              "pair_NumAromaticHeterocycles",
+              "pair_NumAliphaticHeterocycles",
+              "pair_NumSaturatedRings",
+              "pair_NumHeteroatoms",
+              "pair_HeavyAtomCount",
+              "pair_NumValenceElectrons",
+              "pair_NHOHCount",
+              "pair_NOCount",
+              "pair_FractionCSP3",
+              "pair_RingCount",
+              "pair_HallKierAlpha"
+            ],
+            "mean": [
+              1820.7404224110348,
+              33.10585574488185,
+              539.8667504733583,
+              136.93269877942092,
+              0.13897310513447433,
+              14.328312958435207,
+              42.69975550122249,
+              12.689877750611245,
+              3.479119804400978,
+              6.914718826405868,
+              1.19080684596577,
+              0.25779951100244497,
+              16.934180929095355,
+              126.87403422982885,
+              653.1968704156478,
+              0.1388753056234719,
+              9.035794621026893,
+              0.3977089453530486,
+              16.168997555012226,
+              -9.202245963231858
+            ],
+            "std": [
+              493.0025207462848,
+              9.676124879530354,
+              148.16181030027082,
+              48.345719484586375,
+              0.47853885368326177,
+              4.400431779198185,
+              15.784025998231138,
+              3.7741833404400977,
+              1.8725606352893274,
+              3.0649311437700253,
+              1.5682901733499426,
+              0.6821826390038053,
+              5.057853113609954,
+              34.38287194572309,
+              178.96616027398318,
+              0.47826060823591543,
+              3.299179703466558,
+              0.091581840167508,
+              4.515184619607296,
+              3.127711802554605
+            ]
+          },
+          "target": {
+            "tddft_D_index_angstrom": {
+              "effective_weight": 10225.0,
+              "mean": 4.2558957946210265,
+              "std": 4.1210785034209225,
+              "valid": 10543
+            },
+            "tddft_EDI": {
+              "effective_weight": 10225.0,
+              "mean": 4.6995097799511,
+              "std": 1.0148090678944885,
+              "valid": 10543
+            },
+            "tddft_HDI": {
+              "effective_weight": 10225.0,
+              "mean": 4.804910187449063,
+              "std": 1.3841905867187378,
+              "valid": 10543
+            },
+            "tddft_H_CT_angstrom": {
+              "effective_weight": 10225.0,
+              "mean": 5.5352466177669095,
+              "std": 2.138678341398101,
+              "valid": 10543
+            },
+            "tddft_Q_D_to_A_au": {
+              "effective_weight": 10225.0,
+              "mean": -0.003058646047269763,
+              "std": 0.0015841725658684237,
+              "valid": 10543
+            },
+            "tddft_Sm": {
+              "effective_weight": 10225.0,
+              "mean": 0.3713392488182558,
+              "std": 0.14882905689661974,
+              "valid": 10543
+            },
+            "tddft_Sr": {
+              "effective_weight": 10225.0,
+              "mean": 0.6438687409942949,
+              "std": 0.1722915874028594,
+              "valid": 10543
+            },
+            "tddft_coulomb_attraction_eV_eps3p5_proxy": {
+              "effective_weight": 10225.0,
+              "mean": 0.6463653534753755,
+              "std": 0.1657041600148676,
+              "valid": 10543
+            },
+            "tddft_dipole_change_norm_au": {
+              "effective_weight": 10225.0,
+              "mean": 8.043917268198857,
+              "std": 7.7975363772572015,
+              "valid": 10543
+            },
+            "tddft_electron_on_acceptor_fraction": {
+              "effective_weight": 5416.0,
+              "mean": 0.7452334454843826,
+              "std": 0.36835165419395927,
+              "valid": 5580
+            },
+            "tddft_electron_on_donor_fraction": {
+              "effective_weight": 5416.0,
+              "mean": 0.25350466341730615,
+              "std": 0.3679048778791374,
+              "valid": 5580
+            },
+            "tddft_excitation_energy_ev": {
+              "effective_weight": 10225.0,
+              "mean": 2.44914345802771,
+              "std": 0.31067570679775547,
+              "valid": 10543
+            },
+            "tddft_hole_on_acceptor_fraction": {
+              "effective_weight": 5416.0,
+              "mean": 0.4669366291133327,
+              "std": 0.38762313005648696,
+              "valid": 5580
+            },
+            "tddft_hole_on_donor_fraction": {
+              "effective_weight": 5416.0,
+              "mean": 0.5309074418511852,
+              "std": 0.38893547302248566,
+              "valid": 5580
+            },
+            "tddft_oscillator_strength": {
+              "effective_weight": 10225.0,
+              "mean": 1.8683328321108394,
+              "std": 1.0328769997284768,
+              "valid": 10543
+            },
+            "tddft_transition_dipole_au": {
+              "effective_weight": 10225.0,
+              "mean": 4.742864080020176,
+              "std": 2.3928644922947124,
+              "valid": 10543
+            }
+          }
+        }
+      },
+      "S0": {
+        "123": {
+          "feature": {
+            "columns": [
+              "pair_MolWt",
+              "pair_MolLogP",
+              "pair_MolMR",
+              "pair_TPSA",
+              "pair_NumHDonors",
+              "pair_NumHAcceptors",
+              "pair_NumRotatableBonds",
+              "pair_NumAromaticRings",
+              "pair_NumAliphaticRings",
+              "pair_NumAromaticHeterocycles",
+              "pair_NumAliphaticHeterocycles",
+              "pair_NumSaturatedRings",
+              "pair_NumHeteroatoms",
+              "pair_HeavyAtomCount",
+              "pair_NumValenceElectrons",
+              "pair_NHOHCount",
+              "pair_NOCount",
+              "pair_FractionCSP3",
+              "pair_RingCount",
+              "pair_HallKierAlpha"
+            ],
+            "mean": [
+              1820.7404224110348,
+              33.10585574488185,
+              539.8667504733583,
+              136.93269877942092,
+              0.13897310513447433,
+              14.328312958435207,
+              42.69975550122249,
+              12.689877750611245,
+              3.479119804400978,
+              6.914718826405868,
+              1.19080684596577,
+              0.25779951100244497,
+              16.934180929095355,
+              126.87403422982885,
+              653.1968704156478,
+              0.1388753056234719,
+              9.035794621026893,
+              0.3977089453530486,
+              16.168997555012226,
+              -9.202245963231858
+            ],
+            "std": [
+              493.0025207462848,
+              9.676124879530354,
+              148.16181030027082,
+              48.345719484586375,
+              0.47853885368326177,
+              4.400431779198185,
+              15.784025998231138,
+              3.7741833404400977,
+              1.8725606352893274,
+              3.0649311437700253,
+              1.5682901733499426,
+              0.6821826390038053,
+              5.057853113609954,
+              34.38287194572309,
+              178.96616027398318,
+              0.47826060823591543,
+              3.299179703466558,
+              0.091581840167508,
+              4.515184619607296,
+              3.127711802554605
+            ]
+          },
+          "target": {
+            "tddft_coulomb_attraction_eV_eps3p5_proxy": {
+              "effective_weight": 10225.0,
+              "mean": 0.6463653534753755,
+              "std": 0.1657041600148676,
+              "valid": 10543
+            }
+          }
+        },
+        "42": {
+          "feature": {
+            "columns": [
+              "pair_MolWt",
+              "pair_MolLogP",
+              "pair_MolMR",
+              "pair_TPSA",
+              "pair_NumHDonors",
+              "pair_NumHAcceptors",
+              "pair_NumRotatableBonds",
+              "pair_NumAromaticRings",
+              "pair_NumAliphaticRings",
+              "pair_NumAromaticHeterocycles",
+              "pair_NumAliphaticHeterocycles",
+              "pair_NumSaturatedRings",
+              "pair_NumHeteroatoms",
+              "pair_HeavyAtomCount",
+              "pair_NumValenceElectrons",
+              "pair_NHOHCount",
+              "pair_NOCount",
+              "pair_FractionCSP3",
+              "pair_RingCount",
+              "pair_HallKierAlpha"
+            ],
+            "mean": [
+              1820.7404224110348,
+              33.10585574488185,
+              539.8667504733583,
+              136.93269877942092,
+              0.13897310513447433,
+              14.328312958435207,
+              42.69975550122249,
+              12.689877750611245,
+              3.479119804400978,
+              6.914718826405868,
+              1.19080684596577,
+              0.25779951100244497,
+              16.934180929095355,
+              126.87403422982885,
+              653.1968704156478,
+              0.1388753056234719,
+              9.035794621026893,
+              0.3977089453530486,
+              16.168997555012226,
+              -9.202245963231858
+            ],
+            "std": [
+              493.0025207462848,
+              9.676124879530354,
+              148.16181030027082,
+              48.345719484586375,
+              0.47853885368326177,
+              4.400431779198185,
+              15.784025998231138,
+              3.7741833404400977,
+              1.8725606352893274,
+              3.0649311437700253,
+              1.5682901733499426,
+              0.6821826390038053,
+              5.057853113609954,
+              34.38287194572309,
+              178.96616027398318,
+              0.47826060823591543,
+              3.299179703466558,
+              0.091581840167508,
+              4.515184619607296,
+              3.127711802554605
+            ]
+          },
+          "target": {
+            "tddft_coulomb_attraction_eV_eps3p5_proxy": {
+              "effective_weight": 10225.0,
+              "mean": 0.6463653534753755,
+              "std": 0.1657041600148676,
+              "valid": 10543
+            }
+          }
+        },
+        "456": {
+          "feature": {
+            "columns": [
+              "pair_MolWt",
+              "pair_MolLogP",
+              "pair_MolMR",
+              "pair_TPSA",
+              "pair_NumHDonors",
+              "pair_NumHAcceptors",
+              "pair_NumRotatableBonds",
+              "pair_NumAromaticRings",
+              "pair_NumAliphaticRings",
+              "pair_NumAromaticHeterocycles",
+              "pair_NumAliphaticHeterocycles",
+              "pair_NumSaturatedRings",
+              "pair_NumHeteroatoms",
+              "pair_HeavyAtomCount",
+              "pair_NumValenceElectrons",
+              "pair_NHOHCount",
+              "pair_NOCount",
+              "pair_FractionCSP3",
+              "pair_RingCount",
+              "pair_HallKierAlpha"
+            ],
+            "mean": [
+              1820.7404224110348,
+              33.10585574488185,
+              539.8667504733583,
+              136.93269877942092,
+              0.13897310513447433,
+              14.328312958435207,
+              42.69975550122249,
+              12.689877750611245,
+              3.479119804400978,
+              6.914718826405868,
+              1.19080684596577,
+              0.25779951100244497,
+              16.934180929095355,
+              126.87403422982885,
+              653.1968704156478,
+              0.1388753056234719,
+              9.035794621026893,
+              0.3977089453530486,
+              16.168997555012226,
+              -9.202245963231858
+            ],
+            "std": [
+              493.0025207462848,
+              9.676124879530354,
+              148.16181030027082,
+              48.345719484586375,
+              0.47853885368326177,
+              4.400431779198185,
+              15.784025998231138,
+              3.7741833404400977,
+              1.8725606352893274,
+              3.0649311437700253,
+              1.5682901733499426,
+              0.6821826390038053,
+              5.057853113609954,
+              34.38287194572309,
+              178.96616027398318,
+              0.47826060823591543,
+              3.299179703466558,
+              0.091581840167508,
+              4.515184619607296,
+              3.127711802554605
+            ]
+          },
+          "target": {
+            "tddft_coulomb_attraction_eV_eps3p5_proxy": {
+              "effective_weight": 10225.0,
+              "mean": 0.6463653534753755,
+              "std": 0.1657041600148676,
+              "valid": 10543
+            }
+          }
+        }
+      }
+    },
+    "iid": {
+      "M11": {
+        "123": {
+          "feature": {
+            "columns": [
+              "pair_MolWt",
+              "pair_MolLogP",
+              "pair_MolMR",
+              "pair_TPSA",
+              "pair_NumHDonors",
+              "pair_NumHAcceptors",
+              "pair_NumRotatableBonds",
+              "pair_NumAromaticRings",
+              "pair_NumAliphaticRings",
+              "pair_NumAromaticHeterocycles",
+              "pair_NumAliphaticHeterocycles",
+              "pair_NumSaturatedRings",
+              "pair_NumHeteroatoms",
+              "pair_HeavyAtomCount",
+              "pair_NumValenceElectrons",
+              "pair_NHOHCount",
+              "pair_NOCount",
+              "pair_FractionCSP3",
+              "pair_RingCount",
+              "pair_HallKierAlpha"
+            ],
+            "mean": [
+              1749.9467828647873,
+              32.03801841451077,
+              517.823644495122,
+              127.54910673679177,
+              0.11729117876658861,
+              14.180815768930524,
+              42.29449648711943,
+              12.094164715066354,
+              3.0231264637002337,
+              7.071623731459797,
+              1.1245120999219356,
+              0.2814207650273224,
+              16.71692037470726,
+              121.09192037470726,
+              626.4808743169398,
+              0.1171935987509758,
+              8.561182669789225,
+              0.41465057864942234,
+              15.117291178766589,
+              -8.368801634075306
+            ],
+            "std": [
+              479.5147709875626,
+              9.230102050359434,
+              144.38980545182218,
+              50.71172413536474,
+              0.44077587578046856,
+              4.2868910020347695,
+              15.066950540671147,
+              3.6027102276728487,
+              1.9104543885515954,
+              2.87848197625379,
+              1.4876253337242586,
+              0.7061665564655785,
+              4.892439741920204,
+              33.65028770903398,
+              173.96451265666965,
+              0.44046965122633797,
+              3.3501960058072,
+              0.09271639153090121,
+              4.508936135549661,
+              3.221242199219103
+            ]
+          },
+          "target": {
+            "tddft_D_index_angstrom": {
+              "effective_weight": 10248.0,
+              "mean": 4.282885050741608,
+              "std": 4.125201178636372,
+              "valid": 10387
+            },
+            "tddft_EDI": {
+              "effective_weight": 10248.0,
+              "mean": 4.830779420374707,
+              "std": 1.0592258870694171,
+              "valid": 10387
+            },
+            "tddft_HDI": {
+              "effective_weight": 10248.0,
+              "mean": 4.789760603695029,
+              "std": 1.2792812883374984,
+              "valid": 10387
+            },
+            "tddft_H_CT_angstrom": {
+              "effective_weight": 10248.0,
+              "mean": 5.443555051392141,
+              "std": 2.136065210419622,
+              "valid": 10387
+            },
+            "tddft_Q_D_to_A_au": {
+              "effective_weight": 10248.0,
+              "mean": -0.0031025541406453287,
+              "std": 0.0015657573946913992,
+              "valid": 10387
+            },
+            "tddft_Sm": {
+              "effective_weight": 10248.0,
+              "mean": 0.3771537343058808,
+              "std": 0.15102141018455567,
+              "valid": 10387
+            },
+            "tddft_Sr": {
+              "effective_weight": 10248.0,
+              "mean": 0.6500700655412438,
+              "std": 0.17272302220399027,
+              "valid": 10387
+            },
+            "tddft_coulomb_attraction_eV_eps3p5_proxy": {
+              "effective_weight": 10248.0,
+              "mean": 0.6606121514720642,
+              "std": 0.17364160200951018,
+              "valid": 10387
+            },
+            "tddft_dipole_change_norm_au": {
+              "effective_weight": 10248.0,
+              "mean": 8.094999225539942,
+              "std": 7.804533025578476,
+              "valid": 10387
+            },
+            "tddft_excitation_energy_ev": {
+              "effective_weight": 10248.0,
+              "mean": 2.502650142304189,
+              "std": 0.33944788975191026,
+              "valid": 10387
+            },
+            "tddft_oscillator_strength": {
+              "effective_weight": 10248.0,
+              "mean": 1.809402552530575,
+              "std": 1.0108955497633259,
+              "valid": 10387
+            },
+            "tddft_transition_dipole_au": {
+              "effective_weight": 10248.0,
+              "mean": 4.65050127934485,
+              "std": 2.2897951442374977,
+              "valid": 10387
+            }
+          }
+        },
+        "42": {
+          "feature": {
+            "columns": [
+              "pair_MolWt",
+              "pair_MolLogP",
+              "pair_MolMR",
+              "pair_TPSA",
+              "pair_NumHDonors",
+              "pair_NumHAcceptors",
+              "pair_NumRotatableBonds",
+              "pair_NumAromaticRings",
+              "pair_NumAliphaticRings",
+              "pair_NumAromaticHeterocycles",
+              "pair_NumAliphaticHeterocycles",
+              "pair_NumSaturatedRings",
+              "pair_NumHeteroatoms",
+              "pair_HeavyAtomCount",
+              "pair_NumValenceElectrons",
+              "pair_NHOHCount",
+              "pair_NOCount",
+              "pair_FractionCSP3",
+              "pair_RingCount",
+              "pair_HallKierAlpha"
+            ],
+            "mean": [
+              1749.9467828647873,
+              32.03801841451077,
+              517.823644495122,
+              127.54910673679177,
+              0.11729117876658861,
+              14.180815768930524,
+              42.29449648711943,
+              12.094164715066354,
+              3.0231264637002337,
+              7.071623731459797,
+              1.1245120999219356,
+              0.2814207650273224,
+              16.71692037470726,
+              121.09192037470726,
+              626.4808743169398,
+              0.1171935987509758,
+              8.561182669789225,
+              0.41465057864942234,
+              15.117291178766589,
+              -8.368801634075306
+            ],
+            "std": [
+              479.5147709875626,
+              9.230102050359434,
+              144.38980545182218,
+              50.71172413536474,
+              0.44077587578046856,
+              4.2868910020347695,
+              15.066950540671147,
+              3.6027102276728487,
+              1.9104543885515954,
+              2.87848197625379,
+              1.4876253337242586,
+              0.7061665564655785,
+              4.892439741920204,
+              33.65028770903398,
+              173.96451265666965,
+              0.44046965122633797,
+              3.3501960058072,
+              0.09271639153090121,
+              4.508936135549661,
+              3.221242199219103
+            ]
+          },
+          "target": {
+            "tddft_D_index_angstrom": {
+              "effective_weight": 10248.0,
+              "mean": 4.282885050741608,
+              "std": 4.125201178636372,
+              "valid": 10387
+            },
+            "tddft_EDI": {
+              "effective_weight": 10248.0,
+              "mean": 4.830779420374707,
+              "std": 1.0592258870694171,
+              "valid": 10387
+            },
+            "tddft_HDI": {
+              "effective_weight": 10248.0,
+              "mean": 4.789760603695029,
+              "std": 1.2792812883374984,
+              "valid": 10387
+            },
+            "tddft_H_CT_angstrom": {
+              "effective_weight": 10248.0,
+              "mean": 5.443555051392141,
+              "std": 2.136065210419622,
+              "valid": 10387
+            },
+            "tddft_Q_D_to_A_au": {
+              "effective_weight": 10248.0,
+              "mean": -0.0031025541406453287,
+              "std": 0.0015657573946913992,
+              "valid": 10387
+            },
+            "tddft_Sm": {
+              "effective_weight": 10248.0,
+              "mean": 0.3771537343058808,
+              "std": 0.15102141018455567,
+              "valid": 10387
+            },
+            "tddft_Sr": {
+              "effective_weight": 10248.0,
+              "mean": 0.6500700655412438,
+              "std": 0.17272302220399027,
+              "valid": 10387
+            },
+            "tddft_coulomb_attraction_eV_eps3p5_proxy": {
+              "effective_weight": 10248.0,
+              "mean": 0.6606121514720642,
+              "std": 0.17364160200951018,
+              "valid": 10387
+            },
+            "tddft_dipole_change_norm_au": {
+              "effective_weight": 10248.0,
+              "mean": 8.094999225539942,
+              "std": 7.804533025578476,
+              "valid": 10387
+            },
+            "tddft_excitation_energy_ev": {
+              "effective_weight": 10248.0,
+              "mean": 2.502650142304189,
+              "std": 0.33944788975191026,
+              "valid": 10387
+            },
+            "tddft_oscillator_strength": {
+              "effective_weight": 10248.0,
+              "mean": 1.809402552530575,
+              "std": 1.0108955497633259,
+              "valid": 10387
+            },
+            "tddft_transition_dipole_au": {
+              "effective_weight": 10248.0,
+              "mean": 4.65050127934485,
+              "std": 2.2897951442374977,
+              "valid": 10387
+            }
+          }
+        },
+        "456": {
+          "feature": {
+            "columns": [
+              "pair_MolWt",
+              "pair_MolLogP",
+              "pair_MolMR",
+              "pair_TPSA",
+              "pair_NumHDonors",
+              "pair_NumHAcceptors",
+              "pair_NumRotatableBonds",
+              "pair_NumAromaticRings",
+              "pair_NumAliphaticRings",
+              "pair_NumAromaticHeterocycles",
+              "pair_NumAliphaticHeterocycles",
+              "pair_NumSaturatedRings",
+              "pair_NumHeteroatoms",
+              "pair_HeavyAtomCount",
+              "pair_NumValenceElectrons",
+              "pair_NHOHCount",
+              "pair_NOCount",
+              "pair_FractionCSP3",
+              "pair_RingCount",
+              "pair_HallKierAlpha"
+            ],
+            "mean": [
+              1749.9467828647873,
+              32.03801841451077,
+              517.823644495122,
+              127.54910673679177,
+              0.11729117876658861,
+              14.180815768930524,
+              42.29449648711943,
+              12.094164715066354,
+              3.0231264637002337,
+              7.071623731459797,
+              1.1245120999219356,
+              0.2814207650273224,
+              16.71692037470726,
+              121.09192037470726,
+              626.4808743169398,
+              0.1171935987509758,
+              8.561182669789225,
+              0.41465057864942234,
+              15.117291178766589,
+              -8.368801634075306
+            ],
+            "std": [
+              479.5147709875626,
+              9.230102050359434,
+              144.38980545182218,
+              50.71172413536474,
+              0.44077587578046856,
+              4.2868910020347695,
+              15.066950540671147,
+              3.6027102276728487,
+              1.9104543885515954,
+              2.87848197625379,
+              1.4876253337242586,
+              0.7061665564655785,
+              4.892439741920204,
+              33.65028770903398,
+              173.96451265666965,
+              0.44046965122633797,
+              3.3501960058072,
+              0.09271639153090121,
+              4.508936135549661,
+              3.221242199219103
+            ]
+          },
+          "target": {
+            "tddft_D_index_angstrom": {
+              "effective_weight": 10248.0,
+              "mean": 4.282885050741608,
+              "std": 4.125201178636372,
+              "valid": 10387
+            },
+            "tddft_EDI": {
+              "effective_weight": 10248.0,
+              "mean": 4.830779420374707,
+              "std": 1.0592258870694171,
+              "valid": 10387
+            },
+            "tddft_HDI": {
+              "effective_weight": 10248.0,
+              "mean": 4.789760603695029,
+              "std": 1.2792812883374984,
+              "valid": 10387
+            },
+            "tddft_H_CT_angstrom": {
+              "effective_weight": 10248.0,
+              "mean": 5.443555051392141,
+              "std": 2.136065210419622,
+              "valid": 10387
+            },
+            "tddft_Q_D_to_A_au": {
+              "effective_weight": 10248.0,
+              "mean": -0.0031025541406453287,
+              "std": 0.0015657573946913992,
+              "valid": 10387
+            },
+            "tddft_Sm": {
+              "effective_weight": 10248.0,
+              "mean": 0.3771537343058808,
+              "std": 0.15102141018455567,
+              "valid": 10387
+            },
+            "tddft_Sr": {
+              "effective_weight": 10248.0,
+              "mean": 0.6500700655412438,
+              "std": 0.17272302220399027,
+              "valid": 10387
+            },
+            "tddft_coulomb_attraction_eV_eps3p5_proxy": {
+              "effective_weight": 10248.0,
+              "mean": 0.6606121514720642,
+              "std": 0.17364160200951018,
+              "valid": 10387
+            },
+            "tddft_dipole_change_norm_au": {
+              "effective_weight": 10248.0,
+              "mean": 8.094999225539942,
+              "std": 7.804533025578476,
+              "valid": 10387
+            },
+            "tddft_excitation_energy_ev": {
+              "effective_weight": 10248.0,
+              "mean": 2.502650142304189,
+              "std": 0.33944788975191026,
+              "valid": 10387
+            },
+            "tddft_oscillator_strength": {
+              "effective_weight": 10248.0,
+              "mean": 1.809402552530575,
+              "std": 1.0108955497633259,
+              "valid": 10387
+            },
+            "tddft_transition_dipole_au": {
+              "effective_weight": 10248.0,
+              "mean": 4.65050127934485,
+              "std": 2.2897951442374977,
+              "valid": 10387
+            }
+          }
+        }
+      },
+      "M15": {
+        "123": {
+          "feature": {
+            "columns": [
+              "pair_MolWt",
+              "pair_MolLogP",
+              "pair_MolMR",
+              "pair_TPSA",
+              "pair_NumHDonors",
+              "pair_NumHAcceptors",
+              "pair_NumRotatableBonds",
+              "pair_NumAromaticRings",
+              "pair_NumAliphaticRings",
+              "pair_NumAromaticHeterocycles",
+              "pair_NumAliphaticHeterocycles",
+              "pair_NumSaturatedRings",
+              "pair_NumHeteroatoms",
+              "pair_HeavyAtomCount",
+              "pair_NumValenceElectrons",
+              "pair_NHOHCount",
+              "pair_NOCount",
+              "pair_FractionCSP3",
+              "pair_RingCount",
+              "pair_HallKierAlpha"
+            ],
+            "mean": [
+              1749.9467828647873,
+              32.03801841451077,
+              517.823644495122,
+              127.54910673679177,
+              0.11729117876658861,
+              14.180815768930524,
+              42.29449648711943,
+              12.094164715066354,
+              3.0231264637002337,
+              7.071623731459797,
+              1.1245120999219356,
+              0.2814207650273224,
+              16.71692037470726,
+              121.09192037470726,
+              626.4808743169398,
+              0.1171935987509758,
+              8.561182669789225,
+              0.41465057864942234,
+              15.117291178766589,
+              -8.368801634075306
+            ],
+            "std": [
+              479.5147709875626,
+              9.230102050359434,
+              144.38980545182218,
+              50.71172413536474,
+              0.44077587578046856,
+              4.2868910020347695,
+              15.066950540671147,
+              3.6027102276728487,
+              1.9104543885515954,
+              2.87848197625379,
+              1.4876253337242586,
+              0.7061665564655785,
+              4.892439741920204,
+              33.65028770903398,
+              173.96451265666965,
+              0.44046965122633797,
+              3.3501960058072,
+              0.09271639153090121,
+              4.508936135549661,
+              3.221242199219103
+            ]
+          },
+          "target": {
+            "tddft_D_index_angstrom": {
+              "effective_weight": 10248.0,
+              "mean": 4.282885050741608,
+              "std": 4.125201178636372,
+              "valid": 10387
+            },
+            "tddft_EDI": {
+              "effective_weight": 10248.0,
+              "mean": 4.830779420374707,
+              "std": 1.0592258870694171,
+              "valid": 10387
+            },
+            "tddft_HDI": {
+              "effective_weight": 10248.0,
+              "mean": 4.789760603695029,
+              "std": 1.2792812883374984,
+              "valid": 10387
+            },
+            "tddft_H_CT_angstrom": {
+              "effective_weight": 10248.0,
+              "mean": 5.443555051392141,
+              "std": 2.136065210419622,
+              "valid": 10387
+            },
+            "tddft_Q_D_to_A_au": {
+              "effective_weight": 10248.0,
+              "mean": -0.0031025541406453287,
+              "std": 0.0015657573946913992,
+              "valid": 10387
+            },
+            "tddft_Sm": {
+              "effective_weight": 10248.0,
+              "mean": 0.3771537343058808,
+              "std": 0.15102141018455567,
+              "valid": 10387
+            },
+            "tddft_Sr": {
+              "effective_weight": 10248.0,
+              "mean": 0.6500700655412438,
+              "std": 0.17272302220399027,
+              "valid": 10387
+            },
+            "tddft_coulomb_attraction_eV_eps3p5_proxy": {
+              "effective_weight": 10248.0,
+              "mean": 0.6606121514720642,
+              "std": 0.17364160200951018,
+              "valid": 10387
+            },
+            "tddft_dipole_change_norm_au": {
+              "effective_weight": 10248.0,
+              "mean": 8.094999225539942,
+              "std": 7.804533025578476,
+              "valid": 10387
+            },
+            "tddft_electron_on_acceptor_fraction": {
+              "effective_weight": 5308.0,
+              "mean": 0.670834561076925,
+              "std": 0.3965605630942458,
+              "valid": 5376
+            },
+            "tddft_electron_on_donor_fraction": {
+              "effective_weight": 5308.0,
+              "mean": 0.32809985947592807,
+              "std": 0.39639099920912424,
+              "valid": 5376
+            },
+            "tddft_excitation_energy_ev": {
+              "effective_weight": 10248.0,
+              "mean": 2.502650142304189,
+              "std": 0.33944788975191026,
+              "valid": 10387
+            },
+            "tddft_hole_on_acceptor_fraction": {
+              "effective_weight": 5308.0,
+              "mean": 0.3996613835712829,
+              "std": 0.38148563808538616,
+              "valid": 5376
+            },
+            "tddft_hole_on_donor_fraction": {
+              "effective_weight": 5308.0,
+              "mean": 0.5982399981353659,
+              "std": 0.3828596371566305,
+              "valid": 5376
+            },
+            "tddft_oscillator_strength": {
+              "effective_weight": 10248.0,
+              "mean": 1.809402552530575,
+              "std": 1.0108955497633259,
+              "valid": 10387
+            },
+            "tddft_transition_dipole_au": {
+              "effective_weight": 10248.0,
+              "mean": 4.65050127934485,
+              "std": 2.2897951442374977,
+              "valid": 10387
+            }
+          }
+        },
+        "42": {
+          "feature": {
+            "columns": [
+              "pair_MolWt",
+              "pair_MolLogP",
+              "pair_MolMR",
+              "pair_TPSA",
+              "pair_NumHDonors",
+              "pair_NumHAcceptors",
+              "pair_NumRotatableBonds",
+              "pair_NumAromaticRings",
+              "pair_NumAliphaticRings",
+              "pair_NumAromaticHeterocycles",
+              "pair_NumAliphaticHeterocycles",
+              "pair_NumSaturatedRings",
+              "pair_NumHeteroatoms",
+              "pair_HeavyAtomCount",
+              "pair_NumValenceElectrons",
+              "pair_NHOHCount",
+              "pair_NOCount",
+              "pair_FractionCSP3",
+              "pair_RingCount",
+              "pair_HallKierAlpha"
+            ],
+            "mean": [
+              1749.9467828647873,
+              32.03801841451077,
+              517.823644495122,
+              127.54910673679177,
+              0.11729117876658861,
+              14.180815768930524,
+              42.29449648711943,
+              12.094164715066354,
+              3.0231264637002337,
+              7.071623731459797,
+              1.1245120999219356,
+              0.2814207650273224,
+              16.71692037470726,
+              121.09192037470726,
+              626.4808743169398,
+              0.1171935987509758,
+              8.561182669789225,
+              0.41465057864942234,
+              15.117291178766589,
+              -8.368801634075306
+            ],
+            "std": [
+              479.5147709875626,
+              9.230102050359434,
+              144.38980545182218,
+              50.71172413536474,
+              0.44077587578046856,
+              4.2868910020347695,
+              15.066950540671147,
+              3.6027102276728487,
+              1.9104543885515954,
+              2.87848197625379,
+              1.4876253337242586,
+              0.7061665564655785,
+              4.892439741920204,
+              33.65028770903398,
+              173.96451265666965,
+              0.44046965122633797,
+              3.3501960058072,
+              0.09271639153090121,
+              4.508936135549661,
+              3.221242199219103
+            ]
+          },
+          "target": {
+            "tddft_D_index_angstrom": {
+              "effective_weight": 10248.0,
+              "mean": 4.282885050741608,
+              "std": 4.125201178636372,
+              "valid": 10387
+            },
+            "tddft_EDI": {
+              "effective_weight": 10248.0,
+              "mean": 4.830779420374707,
+              "std": 1.0592258870694171,
+              "valid": 10387
+            },
+            "tddft_HDI": {
+              "effective_weight": 10248.0,
+              "mean": 4.789760603695029,
+              "std": 1.2792812883374984,
+              "valid": 10387
+            },
+            "tddft_H_CT_angstrom": {
+              "effective_weight": 10248.0,
+              "mean": 5.443555051392141,
+              "std": 2.136065210419622,
+              "valid": 10387
+            },
+            "tddft_Q_D_to_A_au": {
+              "effective_weight": 10248.0,
+              "mean": -0.0031025541406453287,
+              "std": 0.0015657573946913992,
+              "valid": 10387
+            },
+            "tddft_Sm": {
+              "effective_weight": 10248.0,
+              "mean": 0.3771537343058808,
+              "std": 0.15102141018455567,
+              "valid": 10387
+            },
+            "tddft_Sr": {
+              "effective_weight": 10248.0,
+              "mean": 0.6500700655412438,
+              "std": 0.17272302220399027,
+              "valid": 10387
+            },
+            "tddft_coulomb_attraction_eV_eps3p5_proxy": {
+              "effective_weight": 10248.0,
+              "mean": 0.6606121514720642,
+              "std": 0.17364160200951018,
+              "valid": 10387
+            },
+            "tddft_dipole_change_norm_au": {
+              "effective_weight": 10248.0,
+              "mean": 8.094999225539942,
+              "std": 7.804533025578476,
+              "valid": 10387
+            },
+            "tddft_electron_on_acceptor_fraction": {
+              "effective_weight": 5308.0,
+              "mean": 0.670834561076925,
+              "std": 0.3965605630942458,
+              "valid": 5376
+            },
+            "tddft_electron_on_donor_fraction": {
+              "effective_weight": 5308.0,
+              "mean": 0.32809985947592807,
+              "std": 0.39639099920912424,
+              "valid": 5376
+            },
+            "tddft_excitation_energy_ev": {
+              "effective_weight": 10248.0,
+              "mean": 2.502650142304189,
+              "std": 0.33944788975191026,
+              "valid": 10387
+            },
+            "tddft_hole_on_acceptor_fraction": {
+              "effective_weight": 5308.0,
+              "mean": 0.3996613835712829,
+              "std": 0.38148563808538616,
+              "valid": 5376
+            },
+            "tddft_hole_on_donor_fraction": {
+              "effective_weight": 5308.0,
+              "mean": 0.5982399981353659,
+              "std": 0.3828596371566305,
+              "valid": 5376
+            },
+            "tddft_oscillator_strength": {
+              "effective_weight": 10248.0,
+              "mean": 1.809402552530575,
+              "std": 1.0108955497633259,
+              "valid": 10387
+            },
+            "tddft_transition_dipole_au": {
+              "effective_weight": 10248.0,
+              "mean": 4.65050127934485,
+              "std": 2.2897951442374977,
+              "valid": 10387
+            }
+          }
+        },
+        "456": {
+          "feature": {
+            "columns": [
+              "pair_MolWt",
+              "pair_MolLogP",
+              "pair_MolMR",
+              "pair_TPSA",
+              "pair_NumHDonors",
+              "pair_NumHAcceptors",
+              "pair_NumRotatableBonds",
+              "pair_NumAromaticRings",
+              "pair_NumAliphaticRings",
+              "pair_NumAromaticHeterocycles",
+              "pair_NumAliphaticHeterocycles",
+              "pair_NumSaturatedRings",
+              "pair_NumHeteroatoms",
+              "pair_HeavyAtomCount",
+              "pair_NumValenceElectrons",
+              "pair_NHOHCount",
+              "pair_NOCount",
+              "pair_FractionCSP3",
+              "pair_RingCount",
+              "pair_HallKierAlpha"
+            ],
+            "mean": [
+              1749.9467828647873,
+              32.03801841451077,
+              517.823644495122,
+              127.54910673679177,
+              0.11729117876658861,
+              14.180815768930524,
+              42.29449648711943,
+              12.094164715066354,
+              3.0231264637002337,
+              7.071623731459797,
+              1.1245120999219356,
+              0.2814207650273224,
+              16.71692037470726,
+              121.09192037470726,
+              626.4808743169398,
+              0.1171935987509758,
+              8.561182669789225,
+              0.41465057864942234,
+              15.117291178766589,
+              -8.368801634075306
+            ],
+            "std": [
+              479.5147709875626,
+              9.230102050359434,
+              144.38980545182218,
+              50.71172413536474,
+              0.44077587578046856,
+              4.2868910020347695,
+              15.066950540671147,
+              3.6027102276728487,
+              1.9104543885515954,
+              2.87848197625379,
+              1.4876253337242586,
+              0.7061665564655785,
+              4.892439741920204,
+              33.65028770903398,
+              173.96451265666965,
+              0.44046965122633797,
+              3.3501960058072,
+              0.09271639153090121,
+              4.508936135549661,
+              3.221242199219103
+            ]
+          },
+          "target": {
+            "tddft_D_index_angstrom": {
+              "effective_weight": 10248.0,
+              "mean": 4.282885050741608,
+              "std": 4.125201178636372,
+              "valid": 10387
+            },
+            "tddft_EDI": {
+              "effective_weight": 10248.0,
+              "mean": 4.830779420374707,
+              "std": 1.0592258870694171,
+              "valid": 10387
+            },
+            "tddft_HDI": {
+              "effective_weight": 10248.0,
+              "mean": 4.789760603695029,
+              "std": 1.2792812883374984,
+              "valid": 10387
+            },
+            "tddft_H_CT_angstrom": {
+              "effective_weight": 10248.0,
+              "mean": 5.443555051392141,
+              "std": 2.136065210419622,
+              "valid": 10387
+            },
+            "tddft_Q_D_to_A_au": {
+              "effective_weight": 10248.0,
+              "mean": -0.0031025541406453287,
+              "std": 0.0015657573946913992,
+              "valid": 10387
+            },
+            "tddft_Sm": {
+              "effective_weight": 10248.0,
+              "mean": 0.3771537343058808,
+              "std": 0.15102141018455567,
+              "valid": 10387
+            },
+            "tddft_Sr": {
+              "effective_weight": 10248.0,
+              "mean": 0.6500700655412438,
+              "std": 0.17272302220399027,
+              "valid": 10387
+            },
+            "tddft_coulomb_attraction_eV_eps3p5_proxy": {
+              "effective_weight": 10248.0,
+              "mean": 0.6606121514720642,
+              "std": 0.17364160200951018,
+              "valid": 10387
+            },
+            "tddft_dipole_change_norm_au": {
+              "effective_weight": 10248.0,
+              "mean": 8.094999225539942,
+              "std": 7.804533025578476,
+              "valid": 10387
+            },
+            "tddft_electron_on_acceptor_fraction": {
+              "effective_weight": 5308.0,
+              "mean": 0.670834561076925,
+              "std": 0.3965605630942458,
+              "valid": 5376
+            },
+            "tddft_electron_on_donor_fraction": {
+              "effective_weight": 5308.0,
+              "mean": 0.32809985947592807,
+              "std": 0.39639099920912424,
+              "valid": 5376
+            },
+            "tddft_excitation_energy_ev": {
+              "effective_weight": 10248.0,
+              "mean": 2.502650142304189,
+              "std": 0.33944788975191026,
+              "valid": 10387
+            },
+            "tddft_hole_on_acceptor_fraction": {
+              "effective_weight": 5308.0,
+              "mean": 0.3996613835712829,
+              "std": 0.38148563808538616,
+              "valid": 5376
+            },
+            "tddft_hole_on_donor_fraction": {
+              "effective_weight": 5308.0,
+              "mean": 0.5982399981353659,
+              "std": 0.3828596371566305,
+              "valid": 5376
+            },
+            "tddft_oscillator_strength": {
+              "effective_weight": 10248.0,
+              "mean": 1.809402552530575,
+              "std": 1.0108955497633259,
+              "valid": 10387
+            },
+            "tddft_transition_dipole_au": {
+              "effective_weight": 10248.0,
+              "mean": 4.65050127934485,
+              "std": 2.2897951442374977,
+              "valid": 10387
+            }
+          }
+        }
+      },
+      "S0": {
+        "123": {
+          "feature": {
+            "columns": [
+              "pair_MolWt",
+              "pair_MolLogP",
+              "pair_MolMR",
+              "pair_TPSA",
+              "pair_NumHDonors",
+              "pair_NumHAcceptors",
+              "pair_NumRotatableBonds",
+              "pair_NumAromaticRings",
+              "pair_NumAliphaticRings",
+              "pair_NumAromaticHeterocycles",
+              "pair_NumAliphaticHeterocycles",
+              "pair_NumSaturatedRings",
+              "pair_NumHeteroatoms",
+              "pair_HeavyAtomCount",
+              "pair_NumValenceElectrons",
+              "pair_NHOHCount",
+              "pair_NOCount",
+              "pair_FractionCSP3",
+              "pair_RingCount",
+              "pair_HallKierAlpha"
+            ],
+            "mean": [
+              1749.9467828647873,
+              32.03801841451077,
+              517.823644495122,
+              127.54910673679177,
+              0.11729117876658861,
+              14.180815768930524,
+              42.29449648711943,
+              12.094164715066354,
+              3.0231264637002337,
+              7.071623731459797,
+              1.1245120999219356,
+              0.2814207650273224,
+              16.71692037470726,
+              121.09192037470726,
+              626.4808743169398,
+              0.1171935987509758,
+              8.561182669789225,
+              0.41465057864942234,
+              15.117291178766589,
+              -8.368801634075306
+            ],
+            "std": [
+              479.5147709875626,
+              9.230102050359434,
+              144.38980545182218,
+              50.71172413536474,
+              0.44077587578046856,
+              4.2868910020347695,
+              15.066950540671147,
+              3.6027102276728487,
+              1.9104543885515954,
+              2.87848197625379,
+              1.4876253337242586,
+              0.7061665564655785,
+              4.892439741920204,
+              33.65028770903398,
+              173.96451265666965,
+              0.44046965122633797,
+              3.3501960058072,
+              0.09271639153090121,
+              4.508936135549661,
+              3.221242199219103
+            ]
+          },
+          "target": {
+            "tddft_coulomb_attraction_eV_eps3p5_proxy": {
+              "effective_weight": 10248.0,
+              "mean": 0.6606121514720642,
+              "std": 0.17364160200951018,
+              "valid": 10387
+            }
+          }
+        },
+        "42": {
+          "feature": {
+            "columns": [
+              "pair_MolWt",
+              "pair_MolLogP",
+              "pair_MolMR",
+              "pair_TPSA",
+              "pair_NumHDonors",
+              "pair_NumHAcceptors",
+              "pair_NumRotatableBonds",
+              "pair_NumAromaticRings",
+              "pair_NumAliphaticRings",
+              "pair_NumAromaticHeterocycles",
+              "pair_NumAliphaticHeterocycles",
+              "pair_NumSaturatedRings",
+              "pair_NumHeteroatoms",
+              "pair_HeavyAtomCount",
+              "pair_NumValenceElectrons",
+              "pair_NHOHCount",
+              "pair_NOCount",
+              "pair_FractionCSP3",
+              "pair_RingCount",
+              "pair_HallKierAlpha"
+            ],
+            "mean": [
+              1749.9467828647873,
+              32.03801841451077,
+              517.823644495122,
+              127.54910673679177,
+              0.11729117876658861,
+              14.180815768930524,
+              42.29449648711943,
+              12.094164715066354,
+              3.0231264637002337,
+              7.071623731459797,
+              1.1245120999219356,
+              0.2814207650273224,
+              16.71692037470726,
+              121.09192037470726,
+              626.4808743169398,
+              0.1171935987509758,
+              8.561182669789225,
+              0.41465057864942234,
+              15.117291178766589,
+              -8.368801634075306
+            ],
+            "std": [
+              479.5147709875626,
+              9.230102050359434,
+              144.38980545182218,
+              50.71172413536474,
+              0.44077587578046856,
+              4.2868910020347695,
+              15.066950540671147,
+              3.6027102276728487,
+              1.9104543885515954,
+              2.87848197625379,
+              1.4876253337242586,
+              0.7061665564655785,
+              4.892439741920204,
+              33.65028770903398,
+              173.96451265666965,
+              0.44046965122633797,
+              3.3501960058072,
+              0.09271639153090121,
+              4.508936135549661,
+              3.221242199219103
+            ]
+          },
+          "target": {
+            "tddft_coulomb_attraction_eV_eps3p5_proxy": {
+              "effective_weight": 10248.0,
+              "mean": 0.6606121514720642,
+              "std": 0.17364160200951018,
+              "valid": 10387
+            }
+          }
+        },
+        "456": {
+          "feature": {
+            "columns": [
+              "pair_MolWt",
+              "pair_MolLogP",
+              "pair_MolMR",
+              "pair_TPSA",
+              "pair_NumHDonors",
+              "pair_NumHAcceptors",
+              "pair_NumRotatableBonds",
+              "pair_NumAromaticRings",
+              "pair_NumAliphaticRings",
+              "pair_NumAromaticHeterocycles",
+              "pair_NumAliphaticHeterocycles",
+              "pair_NumSaturatedRings",
+              "pair_NumHeteroatoms",
+              "pair_HeavyAtomCount",
+              "pair_NumValenceElectrons",
+              "pair_NHOHCount",
+              "pair_NOCount",
+              "pair_FractionCSP3",
+              "pair_RingCount",
+              "pair_HallKierAlpha"
+            ],
+            "mean": [
+              1749.9467828647873,
+              32.03801841451077,
+              517.823644495122,
+              127.54910673679177,
+              0.11729117876658861,
+              14.180815768930524,
+              42.29449648711943,
+              12.094164715066354,
+              3.0231264637002337,
+              7.071623731459797,
+              1.1245120999219356,
+              0.2814207650273224,
+              16.71692037470726,
+              121.09192037470726,
+              626.4808743169398,
+              0.1171935987509758,
+              8.561182669789225,
+              0.41465057864942234,
+              15.117291178766589,
+              -8.368801634075306
+            ],
+            "std": [
+              479.5147709875626,
+              9.230102050359434,
+              144.38980545182218,
+              50.71172413536474,
+              0.44077587578046856,
+              4.2868910020347695,
+              15.066950540671147,
+              3.6027102276728487,
+              1.9104543885515954,
+              2.87848197625379,
+              1.4876253337242586,
+              0.7061665564655785,
+              4.892439741920204,
+              33.65028770903398,
+              173.96451265666965,
+              0.44046965122633797,
+              3.3501960058072,
+              0.09271639153090121,
+              4.508936135549661,
+              3.221242199219103
+            ]
+          },
+          "target": {
+            "tddft_coulomb_attraction_eV_eps3p5_proxy": {
+              "effective_weight": 10248.0,
+              "mean": 0.6606121514720642,
+              "std": 0.17364160200951018,
+              "valid": 10387
+            }
+          }
+        }
+      }
+    }
+  },
+  "protocol_local": true
+}
