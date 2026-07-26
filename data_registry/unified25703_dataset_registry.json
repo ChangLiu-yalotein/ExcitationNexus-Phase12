@@ -1,0 +1,90 @@
+{
+  "computed_structure_overlaps": {
+    "external_vs_final": 18,
+    "new_vs_external": 1,
+    "new_vs_final": 0,
+    "new_vs_old": 17,
+    "old_vs_external": 17
+  },
+  "development_records": 25030,
+  "failures": [],
+  "final_confirmation_records": 673,
+  "global_unique_structures": 25213,
+  "identity_method": {
+    "id_normalization": "D-<n>_A-<n> and D<n>_A<n> mapped to D<n>_A<n>",
+    "rdkit_version": "2025.09.6",
+    "structure_group": "RDKit RemoveHs canonical isomeric SMILES SHA-256"
+  },
+  "known_frozen_overlap_contract": {
+    "historical_ids_with_registry_smiles": 10687,
+    "historical_ids_without_registry_smiles": 0,
+    "historical_smiles_canonicalization_failures": 0,
+    "identity_method": [
+      "normalized molecule_id: D-<n>_A-<n> and D<n>_A<n> mapped to D<n>_A<n>",
+      "RDKit canonical SMILES after Chem.RemoveHs, isomericSmiles=True, SHA-256"
+    ],
+    "normalized_id_intersections": {
+      "external_final": 0,
+      "legacy_external": 2698,
+      "legacy_final": 673,
+      "new_external": 0,
+      "new_final": 0,
+      "new_legacy": 0,
+      "new_old": 0,
+      "old_external": 0
+    },
+    "rdkit_canonical_smiles_intersections": {
+      "external_final": 18,
+      "legacy_external": 2659,
+      "legacy_final": 670,
+      "new_external": 1,
+      "new_final": 0,
+      "new_legacy": 1,
+      "new_old": 17,
+      "old_external": 17
+    },
+    "rdkit_version": "2025.09.6",
+    "registry_malformed_rows": 0,
+    "registry_rows_parsed": 64543,
+    "row_level_identity_overlap": {
+      "external_rows_matching_final": 18,
+      "external_rows_matching_legacy": 2698,
+      "external_rows_matching_old": 17,
+      "final_rows_matching_external": 18,
+      "final_rows_matching_legacy": 673,
+      "legacy_rows_matching_external": 2716,
+      "legacy_rows_matching_final": 691,
+      "new_external": 1,
+      "new_final": 0,
+      "new_legacy": 1,
+      "new_old": 17,
+      "old_rows_matching_external": 17
+    },
+    "set_sizes": {
+      "external2698": 2698,
+      "final673": 673,
+      "legacy3371": 3371,
+      "new15016": 15016,
+      "old7316": 7316
+    }
+  },
+  "legacy3371_decomposition": {
+    "external2698": 2698,
+    "final673": 673,
+    "sum": 3371
+  },
+  "record_counts": {
+    "external2698": 2698,
+    "final673": 673,
+    "new15016": 15016,
+    "old7316": 7316
+  },
+  "status": "UNIFIED25703_SOURCE_AWARE_TRAINING_REQUIRED",
+  "structure_group_size_distribution": {
+    "1": 24728,
+    "2": 482,
+    "3": 1,
+    "4": 2
+  },
+  "total_records": 25703
+}

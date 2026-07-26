@@ -1,0 +1,33 @@
+{
+  "decision_reason": "Nominal target is compatible, but old/external parser and method lineage require source-aware training.",
+  "final673_boundary": {
+    "label_access": false,
+    "public_membership": "aggregate counts only",
+    "records": 673,
+    "training_eligibility": "FORBIDDEN_UNTIL_FROZEN_CONFIRMATION"
+  },
+  "gate3_shortlist_status": "EXPLORATORY_BASELINE_SHORTLIST_FROZEN",
+  "sources": {
+    "legacy3371_alias": {
+      "path": "/home/changliu/ExcitationNexus/equiformer_v3_model/data/external_3371/3371_total_manifest.csv",
+      "policy": "split into external2698 + final673, never appended separately",
+      "records": 3371,
+      "sha256": "266881493a799410c959f91a93b7534f0bd3c81c70b421acc163fd4054a0d5cc"
+    },
+    "new15016": {
+      "path": "/home/changliu/ExcitationNexus_Data_v2/tables/molecule_values_v3.parquet",
+      "records": 15016,
+      "sha256": "e7587b1546039f099a4dbd0d352e98885bb2ebdbdcfa18884dd4355eed815a83"
+    },
+    "old7316": {
+      "path": "/home/changliu/ExcitationNexus/DA_data/unified_dataset_7316.csv",
+      "records": 7316,
+      "sha256": "5fb28ad296b8420da7923f0e68c1fd094f0b84f9f6458c56d3656a8ddeae0e4f"
+    },
+    "structure_registry": {
+      "path": "/home/changliu/ExcitationNexus/DA_data/structure_60k_with_rg_sorted.csv",
+      "sha256": "d8e73e386612602de661ad9a1b883be5a1db1f71ab936eebe4cfbaaa3349bd8e"
+    }
+  },
+  "status": "UNIFIED25703_SOURCE_AWARE_TRAINING_REQUIRED"
+}

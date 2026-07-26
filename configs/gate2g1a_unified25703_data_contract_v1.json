@@ -1,0 +1,15 @@
+{
+  "base_commit": "95f70354dff0955882e852d4363b81df59378460",
+  "base_tag": "gate2g0-model-benchmark-consolidation-20260721",
+  "execution": "CPU_ONLY_DATA_GOVERNANCE_NO_TRAINING_NO_GPU",
+  "final673_label_access": false,
+  "final673_training_eligibility": "SEALED_CONFIRMATION_ONLY",
+  "gate3_shortlist_status": "EXPLORATORY_BASELINE_SHORTLIST_FROZEN",
+  "legacy3371_policy": "MEMBERSHIP_ALIAS_ONLY_DO_NOT_APPEND",
+  "universe_sources": {
+    "external2698": 2698,
+    "final673": 673,
+    "new15016": 15016,
+    "old7316": 7316
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "computed_structure_overlaps": {
+    "external_vs_final": 18,
+    "new_vs_external": 1,
+    "new_vs_final": 0,
+    "new_vs_old": 17,
+    "old_vs_external": 17
+  },
+  "frozen_contract": {
+    "external_final": 18,
+    "legacy_external": 2659,
+    "legacy_final": 670,
+    "new_external": 1,
+    "new_final": 0,
+    "new_legacy": 1,
+    "new_old": 17,
+    "old_external": 17
+  }
+}

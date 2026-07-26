@@ -1,0 +1,5 @@
+basis,geometry_fidelity,method,program,records,source_cohort
+6-31G(d),both,CAM-B3LYP,legacy_external_holdout_manifest,2698,external2698
+6-31G(d),both,CAM-B3LYP,legacy_external_holdout_manifest,673,final673
+6-31G(d),pm6_opt,CAM-B3LYP,"Gaussian 16, Revision C.01",15016,new15016
+legacy_6-31G(d)_assumed_from_external_protocol,legacy_dft_pm6,CAM-B3LYP,legacy_teacher_table,7316,old7316

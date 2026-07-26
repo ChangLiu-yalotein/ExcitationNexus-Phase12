@@ -4,9 +4,9 @@ Reproducible code, immutable split manifests, contracts, audit reports, and smal
 
 ## Current research state
 
-Current state: `BENCHMARK_CONSOLIDATED_READY_FOR_MAIN_MODEL`.
+Current state: `UNIFIED25703_SOURCE_AWARE_TRAINING_REQUIRED`.
 
-- The frozen dataset contains 15,016 calculation records and 14,639 canonical structure groups.
+- The Gate 2-G1A governed data universe contains 25,703 records: 15,016 new15016, 7,316 old7316, 2,698 external development, and 673 sealed final confirmation records. The development pool is 25,030 records; final673 remains sealed.
 - The reported target is **J_eh_screened_eV_eps3p5 proxy**. It is not experimental exciton binding energy, catalytic efficiency, or measured photocatalytic activity.
 - The strongest reliable new15016 IID baseline is XGBoost-C0 at structure-group-macro MAE 0.084181 eV.
 - The small M3-Merged and M3-DAU-Shared 3D ensembles are trained baselines, not ReMEI-Net, and are weaker than XGBoost-C0.
@@ -23,14 +23,17 @@ Current state: `BENCHMARK_CONSOLIDATED_READY_FOR_MAIN_MODEL`.
 - [new15016 OOD benchmark CSV](data_registry/gate2g0_new15016_ood_benchmark.csv)
 - [UQ benchmark CSV](data_registry/gate2g0_uq_benchmark.csv)
 - [Model registry](data_registry/gate2g0_model_registry.json)
+- [Unified 25,703 data contract](reports/gate2g1a_unified_data_summary.md)
+- [Gate 2-G1A final decision](reports/gate2g1a_final_decision.md)
+- [Unified source registry](data_registry/unified25703_source_registry.json)
 
-Historical Layer G and new15016 are separate benchmark ledgers. Results from different data and split protocols must not be ranked as model improvements.
+Historical Layer G and new15016 remain separate benchmark ledgers. The unified 25,703-record contract is a source-aware data governance layer, not a license to rank old and new metrics together or train on final673.
 
 ## Implemented and missing models
 
 Implemented assets include historical cheap/B2 reproduction evidence, new15016 median/Ridge/XGBoost baselines, six small M3 3D checkpoints, validation-only representation experiments, training-only multitask and multifidelity cross-fit assets, and the Gate 3-A1 deployment/stability XGBoost models.
 
-Not implemented: Chemprop v2 D-MPNN, PaiNN/TensorNet2, a formal EquiformerV3 molecular baseline on new15016, an explicit D/A interface cross-edge model, PM6 FiLM/gating, ReMEI-Net, and the A0-A10 parameter-matched ablation matrix.
+Not implemented: Chemprop v2 D-MPNN, PaiNN/TensorNet2, a formal EquiformerV3 molecular baseline on the governed 25,030-record development pool, an explicit D/A interface cross-edge model, PM6 FiLM/gating, ReMEI-Net, and the A0-A10 parameter-matched ablation matrix.
 
 ## Repository boundary
 
@@ -44,6 +47,7 @@ Checkpoints are intentionally absent from GitHub. `data_registry/gate2g0_checkpo
 export PYTHONPATH="$PWD/src:${PYTHONPATH:-}"
 /home/changliu/miniconda3/envs/ML/bin/python -m pytest -q tests
 sha256sum -c data_registry/gate2g0_sha256.txt
+sha256sum -c data_registry/gate2g1a_sha256.txt
 ```
 
 Safe CPU-only inventory smoke, which does not train or call a test evaluator:
@@ -54,6 +58,7 @@ CUDA_VISIBLE_DEVICES='' PYTHONPATH=src \
   scripts/gate2g0_consolidate_model_benchmarks.py
 /home/changliu/miniconda3/envs/ML/bin/python scripts/gate2g0_ubj_audit.py
 /home/changliu/miniconda3/envs/ML/bin/python scripts/gate2g0_supplemental.py
+CUDA_VISIBLE_DEVICES='' /home/changliu/miniconda3/envs/ML/bin/python scripts/gate2g1a_unified_data_contract.py
 ```
 
 Gate checkpoint publication occurs only after DONE status and all hash, test, secret, large-file, and Git checks pass.

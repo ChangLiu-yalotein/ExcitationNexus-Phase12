@@ -1,0 +1,5 @@
+{
+  "id_normalization": "D-<n>_A-<n> and D<n>_A<n> mapped to D<n>_A<n>",
+  "rdkit_version": "2025.09.6",
+  "structure_group": "RDKit RemoveHs canonical isomeric SMILES SHA-256"
+}

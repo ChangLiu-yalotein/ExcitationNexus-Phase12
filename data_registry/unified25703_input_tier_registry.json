@@ -1,0 +1,46 @@
+{
+  "U0": {
+    "cohort_counts": {
+      "external2698": 2698,
+      "new15016": 15016,
+      "old7316": 7316
+    },
+    "description": "2D structure and C0 descriptors/fingerprints",
+    "eligible_development_records": 25030,
+    "eligible_development_unique_structures": 24565,
+    "final673_input_coverage_records_without_label_access": 673
+  },
+  "U1": {
+    "cohort_counts": {
+      "external2698": 2698,
+      "new15016": 15016,
+      "old7316": 7316
+    },
+    "description": "U0 plus safe PM6 scalar features",
+    "eligible_development_records": 25030,
+    "eligible_development_unique_structures": 24565,
+    "final673_input_coverage_records_without_label_access": 673
+  },
+  "U2": {
+    "cohort_counts": {
+      "external2698": 2698,
+      "new15016": 15016,
+      "old7316": 7316
+    },
+    "description": "DFT/3D structure inputs",
+    "eligible_development_records": 25030,
+    "eligible_development_unique_structures": 24565,
+    "final673_input_coverage_records_without_label_access": 673
+  },
+  "U3": {
+    "cohort_counts": {
+      "external2698": 2698,
+      "new15016": 15016,
+      "old7316": 7316
+    },
+    "description": "full PM6+DFT+TDDFT multitask labels",
+    "eligible_development_records": 25030,
+    "eligible_development_unique_structures": 24565,
+    "final673_input_coverage_records_without_label_access": 673
+  }
+}

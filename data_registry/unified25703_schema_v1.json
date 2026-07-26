@@ -1,0 +1,36 @@
+{
+  "registry_columns": [
+    "global_record_id",
+    "source_cohort",
+    "original_molecule_id",
+    "normalized_molecule_id",
+    "canonical_structure_group_id",
+    "donor_structure_group_id",
+    "acceptor_structure_group_id",
+    "pair_group_id",
+    "original_historical_partition",
+    "method",
+    "basis",
+    "program",
+    "geometry_fidelity",
+    "label_source",
+    "epsilon",
+    "target_semantics_version",
+    "PM6_available",
+    "DFT_available",
+    "TDDFT_available",
+    "2D_available",
+    "3D_available",
+    "auxiliary_targets_available",
+    "sealed_status",
+    "training_eligibility",
+    "exclusion_reason",
+    "cohort_target_available_for_training",
+    "replicate_group_size",
+    "group_weight"
+  ],
+  "sensitive_local_assets": [
+    "runs/gate2g1a_unified_data/unified25703_master.parquet",
+    "runs/gate2g1a_unified_data/development25030.parquet"
+  ]
+}

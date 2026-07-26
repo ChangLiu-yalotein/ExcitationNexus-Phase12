@@ -1,0 +1,5 @@
+epsilon,raw_quantity,records,semantics,source_cohort,status,target_field,unit
+3.5,tddft_coulomb_attraction_eV / epsilon,15016,J_eh_screened_eV_eps3p5 proxy,new15016,COMPATIBLE_PROXY_NEW_PIPELINE,tddft_coulomb_attraction_eV_eps3p5_proxy,eV
+3.5,legacy screened Coulomb/EB proxy,7316,legacy screened proxy; same nominal epsilon but parser/method lineage differs,old7316,SOURCE_AWARE_REQUIRED,coulomb_attraction_screened_eV / eb_screened_eV,eV
+3.5,eb_screened_v1,2698,legacy external screened proxy; historical model-selection use means not blind,external2698,SOURCE_AWARE_REQUIRED,label_eV,eV
+3.5,sealed aggregate only,673,final confirmation labels remain sealed,final673,SEALED_CONFIRMATION_ONLY,REDACTED_NOT_READ_FOR_GATE2G1A,eV
