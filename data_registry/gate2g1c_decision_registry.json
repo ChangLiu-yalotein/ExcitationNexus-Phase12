@@ -1,0 +1,7 @@
+{
+  "chemprop_blocked": true,
+  "provenance_status": "PROVENANCE_CONDITIONING_NOT_ADMITTED_FOR_DEPLOYMENT_CHAMPION_IN_XGB_SUBSET",
+  "status": "GATE2G1C_BLOCKED_CHEMPROP_V2_UNAVAILABLE_XGB_SUBSET_DONE",
+  "xgb_acceptor_cold_delta_eV": -0.005825168158719737,
+  "xgb_unified_delta_eV": -0.0057303981419778854
+}

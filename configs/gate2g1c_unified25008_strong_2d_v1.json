@@ -1,0 +1,19 @@
+{
+  "base_commit": "940a9f88827b735db88893667cd836886c7d5988",
+  "base_tag": "gate2g1b-source-aware-splits-20260721",
+  "execution": "SPLIT_FROZEN_2D_BENCHMARK_NO_FINAL673_NO_CANDIDATES",
+  "eligible_development_records": 25008,
+  "eligible_development_structures": 24543,
+  "final673_label_access": false,
+  "candidate_rescoring": false,
+  "arms": {
+    "xgb_c0_blind": "RUN",
+    "xgb_c0_observable_provenance": "RUN",
+    "chemprop_v2_dmppn_blind": "REQUIRED_BUT_ENV_DEPENDENCY_GATED",
+    "chemprop_v2_dmppn_observable_provenance": "REQUIRED_BUT_ENV_DEPENDENCY_GATED"
+  },
+  "xgboost": {"n_estimators": 500, "max_depth": 6, "learning_rate": 0.05, "tree_method": "hist", "device": "cuda", "verbosity": 0, "random_state": 42},
+  "fingerprint": {"algorithm": "RDKit Morgan", "radius": 2, "n_bits": 512, "include_chirality": false},
+  "provenance_fields": ["method", "basis", "program", "geometry_fidelity", "target_semantics_version"],
+  "forbidden_inputs": ["final673 membership", "sealed-set ID", "historical split status", "file paths", "molecule ID shortcut", "candidate predictions", "Gate 3 rankings"]
+}

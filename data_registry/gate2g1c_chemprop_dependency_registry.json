@@ -1,0 +1,7 @@
+{
+  "attempted_env": "chemprop-v2-g1c",
+  "importable": false,
+  "pip_index_visible_versions": "1.6.1 only in current index before isolated install attempt",
+  "status": "BLOCKED_CHEMPROP_V2_UNAVAILABLE",
+  "v1_not_substituted_for_v2": true
+}
