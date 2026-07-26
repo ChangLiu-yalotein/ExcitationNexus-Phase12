@@ -1,0 +1,19 @@
+{
+  "local_manifest_columns": [
+    "acceptor_fold",
+    "acceptor_structure_group_id",
+    "canonical_structure_group_id",
+    "donor_fold",
+    "donor_structure_group_id",
+    "global_record_id",
+    "group_weight",
+    "inner_fold",
+    "outer_fold",
+    "pair_group_id",
+    "partition",
+    "protocol",
+    "scaffold_group_id",
+    "source_cohort"
+  ],
+  "public_boundary": "No molecule IDs, SMILES, final673 membership, predictions, or targets are committed."
+}

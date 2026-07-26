@@ -1,0 +1,15 @@
+# Gate 2-G1B source and method policy
+
+{
+  "final673_token_allowed": false,
+  "forbidden_model_inputs": [
+    "final673 membership",
+    "sealed-set ID",
+    "historical test/validation status",
+    "file paths",
+    "molecule ID derived cohort shortcuts"
+  ],
+  "observable_method_provenance_token_model_allowed": true,
+  "provenance_blind_model_required": true,
+  "raw_dataset_source_token": "diagnostic_ablation_only_not_automatic_deployment_champion"
+}

@@ -1,0 +1,15 @@
+{
+  "acceptor_cold_acceptor_leakage": 0,
+  "donor_cold_donor_leakage": 0,
+  "final673_label_reads": 0,
+  "final_overlap_quarantine_training_intersection": 0,
+  "gate2e1_record_mean_error_rejected": true,
+  "global_structure_leakage": 0,
+  "gpu_usage": 0,
+  "independent_implementation_assignment_hash_equal": true,
+  "missing_or_duplicate_unified_oof_assignment": 0,
+  "pair_cold_pair_leakage": 0,
+  "row_shuffle_assignment_hash_invariant": true,
+  "scaffold_cold_scaffold_leakage": 0,
+  "source_holdout_cross_source_structure_leakage": 0
+}

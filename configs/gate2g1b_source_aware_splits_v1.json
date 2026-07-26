@@ -1,0 +1,22 @@
+{
+  "base_commit": "53762d4a74fcc7424d9d95be044d12a7e7d6154d",
+  "base_tag": "gate2g1a-unified-25703-data-contract-20260721",
+  "execution": "CPU_ONLY_SPLIT_GOVERNANCE_NO_TRAINING_NO_GPU",
+  "final673_label_access": false,
+  "gate3_shortlist_status": "EXPLORATORY_BASELINE_SHORTLIST_FROZEN",
+  "primary_protocols": [
+    "unified_grouped_5fold_oof",
+    "source_stratified_acceptor_cold_5fold",
+    "pair_cold_5fold"
+  ],
+  "diagnostic_protocols": [
+    "leave_one_cohort_out_new15016",
+    "leave_one_cohort_out_old7316",
+    "leave_one_cohort_out_external2698"
+  ],
+  "secondary_protocols": [
+    "donor_cold_5fold",
+    "both_cold_5fold",
+    "scaffold_cold_5fold"
+  ]
+}

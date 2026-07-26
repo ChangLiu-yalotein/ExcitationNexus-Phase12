@@ -1,0 +1,10 @@
+{
+  "development_record_count": 22,
+  "development_record_count_by_source": {
+    "external2698": 18,
+    "old7316": 4
+  },
+  "sealed_filter_sha256": "9f0b65bf35224a874b9d81bf681af28d19769cecbb85e5e71c2eb03f3f7933b7",
+  "structure_group_count": 22,
+  "zero_overlap_assertion": true
+}

@@ -1,0 +1,17 @@
+{
+  "development_registry_records_before_quarantine": 25030,
+  "eligible_development_records_after_quarantine": 25008,
+  "eligible_development_unique_structures_after_quarantine": 24543,
+  "final673_records": 673,
+  "final673_structure_groups": 670,
+  "final673_structure_overlap_quarantine_development_records": 22,
+  "final673_structure_overlap_quarantine_development_records_by_source": {
+    "external2698": 18,
+    "old7316": 4
+  },
+  "final673_structure_overlap_quarantine_groups": 22,
+  "legacy3371_policy": "membership alias only; not appended",
+  "rdkit_version": "2025.09.6",
+  "status": "GATE2G1B_SOURCE_AWARE_SPLITS_FROZEN_READY_FOR_MAIN_MODEL",
+  "universe_records": 25703
+}
