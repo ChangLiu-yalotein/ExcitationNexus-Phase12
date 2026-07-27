@@ -33,3 +33,24 @@ def test_gate2g1c_dependency_truthfulness_when_present():
         decision = json.loads((ROOT / "data_registry/gate2g1c_decision_registry.json").read_text())
         assert decision["chemprop_blocked"] is True
         assert decision["status"] != "GATE2G1C_UNIFIED_STRONG_2D_BENCHMARK_DONE"
+
+
+def test_gate2g1c_dependency_recovery_amendment_when_present():
+    path = ROOT / "data_registry/gate2g1c_chemprop_dependency_recovery.json"
+    if not path.exists():
+        return
+    reg = json.loads(path.read_text())
+    assert reg["status"] == "GATE2G1C_CHEMPROP_V2_DEPENDENCY_RECOVERED"
+    assert reg["chemprop_version"] == "2.3.0"
+    assert reg["torch_version"] == "2.8.0+cu128"
+    assert reg["cuda_available"] is True
+    assert reg["cuda_device_count"] == 7
+    assert reg["pip_check"] == "No broken requirements found."
+    assert reg["chemprop_v1_used"] is False
+    assert reg["ml_environment_modified"] is False
+    assert reg["final673_label_reads"] == 0
+    assert reg["candidate_assets_accessed"] is False
+    assert reg["formal_g1c_chemprop_arms_started"] is False
+    assert reg["cpu_smoke"]["finite_test_rmse"] is True
+    assert reg["gpu_smoke"]["finite_test_rmse"] is True
+    assert reg["gpu_smoke"]["gpu6_used"] is False
