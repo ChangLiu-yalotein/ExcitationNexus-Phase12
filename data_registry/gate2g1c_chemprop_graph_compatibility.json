@@ -1,0 +1,18 @@
+{
+  "candidate_assets_accessed": false,
+  "chemprop_version": "2.3.0",
+  "determinism_hash_sha256": "891cc32c2a0a9d232f3ab660fd60fa0c38f8a7a98e5a2e97a829625eafb6d485",
+  "determinism_sample_count": 64,
+  "failure_examples_public": [],
+  "final673_label_reads": 0,
+  "graph_failures": 0,
+  "max_atoms": 294,
+  "max_bonds": 337,
+  "min_atoms": 10,
+  "min_bonds": 11,
+  "parse_failures": 0,
+  "rdkit_version_chemprop_env": "2026.03.4",
+  "rdkit_version_ml_env_gate2g1b": "2025.09.6",
+  "records_checked": 25008,
+  "status": "CHEMPROP_GRAPH_COMPATIBILITY_PASS"
+}

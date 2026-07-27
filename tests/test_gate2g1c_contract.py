@@ -54,3 +54,32 @@ def test_gate2g1c_dependency_recovery_amendment_when_present():
     assert reg["cpu_smoke"]["finite_test_rmse"] is True
     assert reg["gpu_smoke"]["finite_test_rmse"] is True
     assert reg["gpu_smoke"]["gpu6_used"] is False
+
+
+def test_gate2g1c_chemprop_formal_recovery_when_present():
+    input_path = ROOT / "data_registry/gate2g1c_chemprop_formal_input_registry.json"
+    graph_path = ROOT / "data_registry/gate2g1c_chemprop_graph_compatibility.json"
+    smoke_path = ROOT / "data_registry/gate2g1c_chemprop_formal_admission_smoke.json"
+    if not (input_path.exists() and graph_path.exists() and smoke_path.exists()):
+        return
+    inp = json.loads(input_path.read_text())
+    graph = json.loads(graph_path.read_text())
+    smoke = json.loads(smoke_path.read_text())
+    assert inp["status"] == "GATE2G1C_CHEMPROP_FORMAL_INPUTS_PREPARED"
+    assert inp["eligible_records"] == 25008
+    assert inp["quarantine_records_in_frame"] == 0
+    assert inp["final673_label_reads"] == 0
+    assert inp["raw_source_cohort_token_used"] is False
+    assert inp["formal_training_started"] is False
+    assert graph["status"] == "CHEMPROP_GRAPH_COMPATIBILITY_PASS"
+    assert graph["records_checked"] == 25008
+    assert graph["parse_failures"] == 0
+    assert graph["graph_failures"] == 0
+    assert graph["rdkit_version_chemprop_env"] != graph["rdkit_version_ml_env_gate2g1b"]
+    assert smoke["status"] == "GATE2G1C_CHEMPROP_FORMAL_ADMISSION_SMOKE_PASS"
+    assert smoke["outer_validation_records_used"] == 0
+    assert smoke["final673_label_reads"] == 0
+    assert smoke["candidate_assets_accessed"] is False
+    assert smoke["cpu_smoke"]["finite_validation_loss"] is True
+    assert smoke["gpu_smoke"]["finite_validation_loss"] is True
+    assert smoke["gpu_smoke"]["gpu6_used"] is False

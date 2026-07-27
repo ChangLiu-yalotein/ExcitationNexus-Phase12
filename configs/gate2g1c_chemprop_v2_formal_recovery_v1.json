@@ -1,0 +1,47 @@
+{
+  "status": "GATE2G1C_CHEMPROP_V2_FORMAL_RECOVERY_PREREGISTERED",
+  "base_dependency_recovery_commit": "124dd51a2731af3ab0ef2eee3c2ea3af02857b9e",
+  "chemprop_env": "/home/changliu/miniconda3/envs/chemprop-v2-g1c",
+  "chemprop_version": "2.3.0",
+  "torch_version": "2.8.0+cu128",
+  "protocols_initial_launch": ["unified_grouped_5fold_oof"],
+  "protocols_pending_inner_selection_policy": ["source_stratified_acceptor_cold_5fold", "pair_cold_5fold", "donor_cold_5fold", "scaffold_cold_5fold", "leave_one_cohort_out"],
+  "seeds": [42, 123, 456],
+  "arms": {
+    "chemprop_v2_dmppn_blind": {
+      "graph_input": "canonical full molecular structure only",
+      "descriptors_columns": []
+    },
+    "chemprop_v2_dmppn_observable_provenance": {
+      "graph_input": "canonical full molecular structure",
+      "conditioning": "one-hot observable method/basis/program/geometry_fidelity/target_semantics_version descriptors after graph readout",
+      "forbidden": ["source_cohort raw token", "final673 token", "molecule id", "file path", "historical split state"]
+    }
+  },
+  "chemprop_hyperparameters": {
+    "message_hidden_dim": 300,
+    "depth": 3,
+    "dropout": 0.0,
+    "aggregation": "norm",
+    "aggregation_norm": 100,
+    "ffn_hidden_dim": 300,
+    "ffn_num_layers": 1,
+    "batch_size": 64,
+    "epochs": 80,
+    "patience": 10,
+    "warmup_epochs": 2,
+    "init_lr": 0.0001,
+    "max_lr": 0.001,
+    "final_lr": 0.0001,
+    "metrics": ["rmse", "mae", "r2"],
+    "tracking_metric": "rmse",
+    "num_workers": 0
+  },
+  "split_policy": {
+    "source": "Gate 2-G1B frozen manifests",
+    "initial_unified_outer_fold": 0,
+    "initial_unified_inner_validation_policy": "for each outer fold f, train validation uses frozen inner_fold == f among outer-train records",
+    "outer_validation_role": "test split for Chemprop CLI prediction only; not used for checkpoint selection"
+  },
+  "forbidden_actions": ["final673 label read", "Gate 3 candidate access", "split regeneration", "XGBoost retraining", "hyperparameter changes after launch", "Chemprop v1 substitution", "ML environment modification"]
+}

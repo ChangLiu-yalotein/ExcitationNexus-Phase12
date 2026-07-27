@@ -1,0 +1,28 @@
+{
+  "status": "GATE2G1C_CHEMPROP_FORMAL_ADMISSION_SMOKE_PASS",
+  "dataset": "actual_outer_train_subset_only",
+  "smoke_csv": "runs/gate2g1c_chemprop_v2_formal/data/admission_smoke_actual_outer_train_only.csv",
+  "outer_validation_records_used": 0,
+  "final673_label_reads": 0,
+  "candidate_assets_accessed": false,
+  "cpu_smoke": {
+    "accelerator": "cpu",
+    "epochs": 1,
+    "train_batches": 2,
+    "finite_validation_loss": true,
+    "finite_test_rmse": true,
+    "test_rmse": 0.15585218369960785,
+    "output_dir": "/tmp/gate2g1c_chemprop_actual_cpu_smoke"
+  },
+  "gpu_smoke": {
+    "accelerator": "gpu",
+    "cuda_visible_devices": "0",
+    "epochs": 1,
+    "train_batches": 2,
+    "finite_validation_loss": true,
+    "finite_test_rmse": true,
+    "test_rmse": 0.19455985724925995,
+    "gpu6_used": false,
+    "output_dir": "/tmp/gate2g1c_chemprop_actual_gpu_smoke"
+  }
+}
